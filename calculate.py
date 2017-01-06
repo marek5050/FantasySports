@@ -16,7 +16,7 @@ injuries_file = 'data/injuries/'+today+'.json'
 community_file = 'data/targets/'+today+'.json'
 goldstats_file = 'data/goldstats/'+today+'.json'
 
-newestSalaries = max(glob.iglob('data/salaries/*.csv'), key=os.path.getctime)
+newestSalaries = max(glob.iglob('data/salaries/'+today+'.csv'), key=os.path.getctime)
 
 
 
@@ -25,11 +25,13 @@ with open(newest) as json_data:
     
 with open(injuries_file) as json_data:
     injuries = json.load(json_data)
+    
 try:    
     with open(community_file) as json_data:    
         community = json.load(json_data)
-except: 
+except Exception as e: 
         print("Failed to load community file")
+        print(e)
         community = []
     
 with open("data/calendar/full_schedule.json") as json_data:
@@ -87,6 +89,9 @@ class Player:
         self.goldStats = None
         self.injury = None
         self.fpWithBonus = fantasyPointAverage
+        self.seasonStats = None
+        self.seasonStatsWithDKFPS = None
+
 
     def setGoldStats(self, gs):
         self.goldStats = gs
@@ -119,8 +124,83 @@ class Player:
     def setFantasyAverage(self,avg):
         self.fantasyPointAverage= avg
         self.fpWithBonus = avg
-        return        
+        return   
         
+    def getSeasonStats(self):
+        '''
+            Point = +1 PT
+            Made 3pt. shot = +0.5 PTs
+            Rebound = +1.25 PTs
+            Assist = +1.5 PTs
+            Steal = +2 PTs
+            Block = +2 PTs
+            Turnover = -0.5 PTs
+            Double-Double = +1.5PTs (MAX 1 PER PLAYER: Points, Rebounds, Assists, Blocks, Steals)
+            Triple-Double = +3PTs (MAX 1 PER PLAYER: Points, Rebounds, Assists, Blocks, Steals)
+            '''
+            
+        from nba_py import player as players
+        from nba_py.player import get_player
+        name = self.name.split(" ")
+        try:
+            pid =  get_player(name[0],name[1])
+        except: 
+            print("Problem with player")
+            print(player.name )
+            return None
+            
+        c =  players.PlayerGameLogs(pid)
+        k = c.info()
+        
+        k.PTS = k.PTS.astype(float)
+        k.BLK = k.BLK.astype(float)
+        k.STL = k.STL.astype(float)
+        k.AST = k.AST.astype(float)
+        k.REB = k.REB.astype(float)
+        k.FG3M = k.FG3M.astype(float)
+        k.TOV = k.TOV.astype(float)
+        self.seasonStats = k
+        return 
+        
+    def getDKFPS(self):
+            if self.seasonStats is None:
+                self.getSeasonStats()
+            try:
+                p = self.seasonStats.filter(items=['GAME_DATE', 'PTS', 'BLK', 'STL','AST', 'REB','FG3M','TOV',"MATCHUP"])
+                p["Bonus"] = p[p >= 10].count(axis=1)
+                p.Bonus[p.Bonus <2] = 0.0
+                p.Bonus[p.Bonus==2] = 1.5
+                p.Bonus[p.Bonus>=3] = 3.0
+                p["DKFPS"] = 1*(p.PTS) + 0.5*(p.FG3M) + 1.25*(p.REB) + 1.5*(p.AST) + 2*(p.STL) + 2*(p.BLK) - 0.5*(p.TOV)
+                self.seasonStatsWithDKFPS = p
+            except:
+                pass
+            return 
+
+        
+    def get7DayAvg(self):
+            if self.seasonStats is None:
+                self.getSeasonStats()
+                self.getDKFPS()
+            try:
+                p = self.seasonStatsWithDKFPS
+                home =  p[p["MATCHUP"].str.contains("vs.")]["DKFPS"][:7].mean()
+                away =  p[p["MATCHUP"].str.contains("@")]["DKFPS"][:7].mean()
+            except:
+                home = 0.0
+                away = 0.0
+
+            return {"home": home, "away": away}
+            
+    def getSeasonAverage(self):
+            if self.seasonStats is None:
+                self.getSeasonStats()
+                self.getDKFPS()
+            
+            p = self.seasonStatsWithDKFPS            
+            seasonAverage = p["DKFPS"].mean()
+            return seasonAverage
+                 
 
     def __repr__(self):
          return "Player// "+self.name + ("(I)" if (self.injury!=None) else "")
@@ -400,7 +480,7 @@ efgs["atHome"]  = 0
 efgs["opponent"] = ""
 efgs["injured"] = 0
 efgs["fpWithBonus"] = 0.0
-efgs["4dayAvg"] = 0.0
+efgs["7dayAvg"] = 0.0
 for index,row in efgs.iterrows():
     player = teams.findPlayer(row[0])
     if player != None and player.team != '':
@@ -413,10 +493,8 @@ for index,row in efgs.iterrows():
             efgs["AvgPointsPerGame"][index] = player.fantasyPointAverage
             efgs["expectedScore"][index] = teams.teams[player.team].expectedScore
             efgs["fpWithBonus"][index] = player.fpWithBonus
-            try :
-                efgs["4dayAvg"] = player.goldStats[9]
-            except:
-                pass
+            SvnDayAvg = player.get7DayAvg()
+            efgs["7dayAvg"][index] = SvnDayAvg["home"] if (teams.teams[player.team].home) else SvnDayAvg["away"]
             
 notInjured = efgs[(efgs["injured"]==0) & (efgs["Salary"] != 0)]
 notInjured.rename(columns={1: 'Name'}, inplace=True)

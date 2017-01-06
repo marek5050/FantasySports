@@ -1,16 +1,24 @@
 # -*- coding: utf-8 -*-
 
-import scrapy
-import time
-
 from datetime import date
-from twisted.internet import reactor
 from scrapy.crawler import CrawlerProcess
 from ReferenceSpider import ReferenceSpider as rs
-from ReferenceSpider import InjurySpider
-from ReferenceSpider import NBATargets as targets
-from ReferenceSpider import GoldStats
+from InjurySpider import InjurySpider
+from NBATargets import NBATargets as targets
+from GoldStats import  GoldStats
 
+'''
+process = CrawlerProcess({
+    'USER_AGENT': 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1)',
+    'FEED_FORMAT': 'json',
+    'FEED_URI': 'data/temp/'+str(date.today())+'.json'
+})
+process.crawl(ReferenceSpider)
+#process.crawl(InjurySpider)
+#process.crawl(NBATargets)
+#process.crawl(GoldStats)
+process.start()
+'''
 '''
 process = CrawlerProcess({
     'USER_AGENT': 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1)',
@@ -41,7 +49,6 @@ targetsProcess = CrawlerProcess({
 
 targetsProcess.crawl(targets)
 targetsProcess.start()
-
 '''
 targetsProcess = CrawlerProcess({
     'USER_AGENT': 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1)',
