@@ -30,7 +30,7 @@ process.crawl(rs)
 process.start()
 
 '''
-'''
+
 injuryProcess = CrawlerProcess({
     'USER_AGENT': 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1)',
     'FEED_FORMAT': 'json',
@@ -39,8 +39,8 @@ injuryProcess = CrawlerProcess({
 
 injuryProcess.crawl(InjurySpider)
 injuryProcess.start()
-'''
 
+'''
 targetsProcess = CrawlerProcess({
     'USER_AGENT': 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1)',
     'FEED_FORMAT': 'json',
@@ -49,6 +49,7 @@ targetsProcess = CrawlerProcess({
 
 targetsProcess.crawl(targets)
 targetsProcess.start()
+'''
 '''
 targetsProcess = CrawlerProcess({
     'USER_AGENT': 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1)',
