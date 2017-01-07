@@ -6,6 +6,9 @@ from bs4 import BeautifulSoup
 from datetime import date
 
 import datetime
+from scrapy.crawler import CrawlerProcess
+
+
 now = datetime.datetime.now()
 
 
@@ -36,7 +39,18 @@ class GoldStats(scrapy.Spider):
                'stats': self.getStats(response)
                }        
         return
-        
+
+if __name__ == "__main__":
+    print("Starting goldstats extraction.")
+    process = CrawlerProcess({
+        'USER_AGENT': 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1)',
+        'FEED_FORMAT': 'json',
+        'FEED_URI': 'data/goldstats/' + str(date.today()) + '.json'
+    })
+
+    process.crawl(GoldStats)
+    process.start()
+    print("Finished goldstats extraction.")
 
   
 

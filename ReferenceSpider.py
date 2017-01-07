@@ -5,6 +5,9 @@ import scrapy
 from scrapy.selector import Selector
 
 import datetime
+from scrapy.crawler import CrawlerProcess
+
+
 now = datetime.datetime.now()
 from datetime import date
 
@@ -71,5 +74,14 @@ class ReferenceSpider(scrapy.Spider):
 
 
 
+if __name__ == "__main__":
+    print("Starting team data extraction.")
+    process = CrawlerProcess({
+        'USER_AGENT': 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1)',
+        'FEED_FORMAT': 'json',
+        'FEED_URI': 'data/teams/' + str(date.today()) + '.json'
+    })
 
-
+    process.crawl(ReferenceSpider)
+    process.start()
+    print("Finished team data extraction.")
