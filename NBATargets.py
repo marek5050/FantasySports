@@ -1,6 +1,8 @@
 # -*- coding: utf-8 -*-
 import scrapy
 from bs4 import BeautifulSoup
+from scrapy.crawler import CrawlerProcess
+
 
 import datetime
 from datetime import date
@@ -35,10 +37,10 @@ class NBATargets(scrapy.Spider):
             elif "WORST" in text:
                 newType = "WORST"
             elif "vs." in text and newType!=None:
-                org.append({"value":(2 if newType == "BEST" else -1), "name":text.split("($")[0].strip()})
+                org.append({"value":(4 if newType == "BEST" else -1), "name":text.split("($")[0].strip()})
                 newType = None
             else:
-                org.append({"value":1 , "name": text})                        
+                org.append({"value":2 , "name": text})
         return org
         
     def targets(self, page):
@@ -55,7 +57,7 @@ class NBATargets(scrapy.Spider):
                     soup = BeautifulSoup(name)
                     name = soup.get_text().split("($")[0]
                     name = name.replace("\u00f6","o")
-                    clean.append({"value":1, "name":name.strip()})                     
+                    clean.append({"value":3, "name":name.strip()})
                 val = 0
                 pass
             elif "Note:" in t:
@@ -63,10 +65,10 @@ class NBATargets(scrapy.Spider):
             elif "WATCH:" in t:                
                 val = 0
             elif "Stud" in t:
-                val = 2
+                val = 5
                 pass
             elif "Value" in t:
-                val = 2
+                val = 4
                 pass
     
             soup = BeautifulSoup(t)
@@ -97,3 +99,15 @@ class NBATargets(scrapy.Spider):
                      'cheatsheet': self.cheatSheet(response)            
                     }        
         return
+
+if __name__ == "__main__":
+    print("Starting recommendation extraction.")
+    targetsProcess = CrawlerProcess({
+        'USER_AGENT': 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1)',
+        'FEED_FORMAT': 'json',
+        'FEED_URI': 'data/targets/' + str(date.today()) + '.json'
+    })
+
+    targetsProcess.crawl(NBATargets)
+    targetsProcess.start()
+    print("Finished recommendations. ")

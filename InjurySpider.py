@@ -4,6 +4,9 @@ import scrapy
 from datetime import date
 
 import datetime
+
+from scrapy.crawler import CrawlerProcess
+
 now = datetime.datetime.now()
 
 ordinal = lambda n: "%d%s" % (n,"tsnrhtdd"[(n/10%10!=1)*(n%10<4)*n%10::4])
@@ -36,3 +39,14 @@ class InjurySpider(scrapy.Spider):
                         'player': row.css("td::text, td a::text, div::text").extract()
                      }
         return
+
+if __name__ == "__main__":
+    print("Starting injury extraction.")
+    injuryProcess = CrawlerProcess({
+        'USER_AGENT': 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1)',
+        'FEED_FORMAT': 'json',
+        'FEED_URI': 'data/injuries/' + str(date.today()) + '.json'
+    })
+
+    injuryProcess.crawl(InjurySpider)
+    injuryProcess.start()
