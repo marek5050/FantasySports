@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     19153,        504]
-NotebookOptionsPosition[     18454,        479]
-NotebookOutlinePosition[     18814,        495]
-CellTagsIndexPosition[     18771,        492]
+NotebookDataLength[     21962,        575]
+NotebookOptionsPosition[     21113,        544]
+NotebookOutlinePosition[     21473,        560]
+CellTagsIndexPosition[     21430,        557]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -24,13 +24,13 @@ Cell[BoxData[
    RowBox[{
     RowBox[{"Import", "[", 
      RowBox[{
-     "\"\</Users/laksh/Downloads/fantasy/FantasySports/data/output/2017-01-07.\
+     "\"\</Users/laksh/Downloads/fantasy/FantasySports/data/output/2017-01-08.\
 csv\>\"", ",", 
       RowBox[{"\"\<HeaderLines\>\"", "->", "1"}]}], "]"}], "//", 
     "TableForm"}]}], ";"}]], "Input",
  CellChangeTimes->{{3.692720271036812*^9, 3.6927203168815804`*^9}, {
   3.692720390577415*^9, 3.6927203914446497`*^9}, {3.692812667499934*^9, 
-  3.692812667873591*^9}}],
+  3.692812667873591*^9}, {3.692905187284258*^9, 3.692905188223035*^9}}],
 
 Cell[BoxData[
  RowBox[{
@@ -53,31 +53,30 @@ Cell[BoxData[
        RowBox[{"-", "1"}], " ", "*", " ", 
        RowBox[{"(", 
         RowBox[{
-         RowBox[{
-          RowBox[{"k1", "*", 
-           RowBox[{
-            RowBox[{"fantasyData", "[", 
-             RowBox[{"[", "1", "]"}], "]"}], "[", 
-            RowBox[{"[", 
-             RowBox[{"All", ",", " ", "5"}], "]"}], "]"}]}], " ", "+", " ", 
-          RowBox[{"k2", "*", 
-           RowBox[{
-            RowBox[{"fantasyData", "[", 
-             RowBox[{"[", "1", "]"}], "]"}], "[", 
-            RowBox[{"[", 
-             RowBox[{"All", ",", " ", "10"}], "]"}], "]"}]}], "+", "  ", 
-          RowBox[{"k3", "*", 
-           RowBox[{
-            RowBox[{"fantasyData", "[", 
-             RowBox[{"[", "1", "]"}], "]"}], "[", 
-            RowBox[{"[", 
-             RowBox[{"All", ",", " ", "11"}], "]"}], "]"}]}], " ", "+", " ", 
-          RowBox[{"k4", "*", 
-           RowBox[{
-            RowBox[{"fantasyData", "[", 
-             RowBox[{"[", "1", "]"}], "]"}], "[", 
-            RowBox[{"[", 
-             RowBox[{"All", ",", " ", "12"}], "]"}], "]"}]}]}], ",", " ", 
+         RowBox[{"k1", "*", 
+          RowBox[{
+           RowBox[{"fantasyData", "[", 
+            RowBox[{"[", "1", "]"}], "]"}], "[", 
+           RowBox[{"[", 
+            RowBox[{"All", ",", " ", "5"}], "]"}], "]"}]}], " ", "+", " ", 
+         RowBox[{"k2", "*", 
+          RowBox[{
+           RowBox[{"fantasyData", "[", 
+            RowBox[{"[", "1", "]"}], "]"}], "[", 
+           RowBox[{"[", 
+            RowBox[{"All", ",", " ", "10"}], "]"}], "]"}]}], "+", "  ", 
+         RowBox[{"k3", "*", 
+          RowBox[{
+           RowBox[{"fantasyData", "[", 
+            RowBox[{"[", "1", "]"}], "]"}], "[", 
+           RowBox[{"[", 
+            RowBox[{"All", ",", " ", "11"}], "]"}], "]"}]}], " ", "+", " ", 
+         RowBox[{"k4", "*", 
+          RowBox[{
+           RowBox[{"fantasyData", "[", 
+            RowBox[{"[", "1", "]"}], "]"}], "[", 
+           RowBox[{"[", 
+            RowBox[{"All", ",", " ", "12"}], "]"}], "]"}]}], "+", " ", 
          RowBox[{"k5", "*", 
           RowBox[{
            RowBox[{"fantasyData", "[", 
@@ -337,7 +336,10 @@ Cell[BoxData[
    3.692816711921844*^9}, {3.6928168350157623`*^9, 3.69281683515135*^9}, {
    3.6928170959877453`*^9, 3.692817144614914*^9}, {3.692817285401084*^9, 
    3.6928173422797203`*^9}, {3.692818384976446*^9, 3.692818395664172*^9}, {
-   3.6929046905140953`*^9, 3.6929047140629807`*^9}}],
+   3.6929046905140953`*^9, 3.6929047140629807`*^9}, {3.692905242703659*^9, 
+   3.6929052436419373`*^9}}],
+
+Cell[CellGroupData[{
 
 Cell[BoxData[
  RowBox[{
@@ -360,6 +362,39 @@ Cell[BoxData[
    3.69290408351228*^9}, {3.6929047268052998`*^9, 3.692904727768217*^9}}],
 
 Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{"\<\"Bismack Biyombo\"\>", ",", "3500", ",", "22.786`", 
+     ",", "\<\"C\"\>", ",", "\<\"ORL\"\>"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"Kevin Love\"\>", ",", "8000", ",", "39.607`", 
+     ",", "\<\"PF/C\"\>", ",", "\<\"CLE\"\>"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"Eric Bledsoe\"\>", ",", "6900", ",", "42.786`", 
+     ",", "\<\"PG\"\>", ",", "\<\"PHO\"\>"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"Brandon Knight\"\>", ",", "3900", ",", "19.357`", 
+     ",", "\<\"PG/SG\"\>", ",", "\<\"PHO\"\>"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"Jordan Clarkson\"\>", ",", "4300", ",", "16.893`", 
+     ",", "\<\"PG/SG\"\>", ",", "\<\"LAL\"\>"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"Rudy Gay\"\>", ",", "6100", ",", "30.357`", 
+     ",", "\<\"SF\"\>", ",", "\<\"SAC\"\>"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"Kevin Durant\"\>", ",", "9700", ",", "47.`", 
+     ",", "\<\"SF\"\>", ",", "\<\"GSW\"\>"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"Draymond Green\"\>", ",", "7500", ",", "38.393`", 
+     ",", "\<\"PF/C\"\>", ",", "\<\"GSW\"\>"}], "}"}]}], "}"}]], "Output",
+ CellChangeTimes->{3.692905197688534*^9, 3.692905249225842*^9, 
+  3.692905290042049*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
  RowBox[{
   RowBox[{"(*", 
    RowBox[{"Baseline", " ", "+", " ", "bonus"}], " ", "*)"}], 
@@ -371,6 +406,36 @@ Cell[BoxData[
    3.692821203049027*^9, 3.692821221730082*^9}, 3.692821378712027*^9, {
    3.692904089354701*^9, 3.692904113546895*^9}, {3.69290473006046*^9, 
    3.692904730820077*^9}}],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{"\<\"Bismack Biyombo\"\>", ",", "3500", ",", "22.786`", 
+     ",", "\<\"C\"\>", ",", "\<\"ORL\"\>"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"Kevin Love\"\>", ",", "8000", ",", "39.607`", 
+     ",", "\<\"PF/C\"\>", ",", "\<\"CLE\"\>"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"Eric Bledsoe\"\>", ",", "6900", ",", "42.786`", 
+     ",", "\<\"PG\"\>", ",", "\<\"PHO\"\>"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"Brandon Knight\"\>", ",", "3900", ",", "19.357`", 
+     ",", "\<\"PG/SG\"\>", ",", "\<\"PHO\"\>"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"Jordan Clarkson\"\>", ",", "4300", ",", "16.893`", 
+     ",", "\<\"PG/SG\"\>", ",", "\<\"LAL\"\>"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"Rudy Gay\"\>", ",", "6100", ",", "30.357`", 
+     ",", "\<\"SF\"\>", ",", "\<\"SAC\"\>"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"Kevin Durant\"\>", ",", "9700", ",", "47.`", 
+     ",", "\<\"SF\"\>", ",", "\<\"GSW\"\>"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"Draymond Green\"\>", ",", "7500", ",", "38.393`", 
+     ",", "\<\"PF/C\"\>", ",", "\<\"GSW\"\>"}], "}"}]}], "}"}]], "Output",
+ CellChangeTimes->{3.6929052949575233`*^9}]
+}, Open  ]],
 
 Cell[BoxData[
  RowBox[{
@@ -494,18 +559,24 @@ CellTagsIndex->{}
 *)
 (*NotebookFileOutline
 Notebook[{
-Cell[558, 20, 486, 12, 32, "Input"],
-Cell[1047, 34, 11699, 305, 537, "Input"],
-Cell[12749, 341, 1024, 18, 54, "Input"],
-Cell[13776, 361, 501, 11, 54, "Input"],
-Cell[14280, 374, 492, 11, 54, "Input"],
-Cell[14775, 387, 471, 10, 54, "Input"],
-Cell[15249, 399, 456, 10, 54, "Input"],
-Cell[15708, 411, 466, 10, 54, "Input"],
-Cell[16177, 423, 516, 11, 54, "Input"],
-Cell[16696, 436, 541, 12, 54, "Input"],
-Cell[17240, 450, 619, 13, 54, "Input"],
-Cell[17862, 465, 588, 12, 54, "Input"]
+Cell[558, 20, 532, 12, 32, "Input"],
+Cell[1093, 34, 11707, 305, 537, "Input"],
+Cell[CellGroupData[{
+Cell[12825, 343, 1024, 18, 54, "Input"],
+Cell[13852, 363, 1288, 28, 75, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[15177, 396, 501, 11, 54, "Input"],
+Cell[15681, 409, 1243, 27, 75, "Output"]
+}, Open  ]],
+Cell[16939, 439, 492, 11, 54, "Input"],
+Cell[17434, 452, 471, 10, 54, "Input"],
+Cell[17908, 464, 456, 10, 54, "Input"],
+Cell[18367, 476, 466, 10, 54, "Input"],
+Cell[18836, 488, 516, 11, 54, "Input"],
+Cell[19355, 501, 541, 12, 54, "Input"],
+Cell[19899, 515, 619, 13, 54, "Input"],
+Cell[20521, 530, 588, 12, 54, "Input"]
 }
 ]
 *)
