@@ -72,18 +72,18 @@ class NBATargets(scrapy.Spider):
                 pass
     
             soup = BeautifulSoup(t)
-            name = soup.get_text().split("($")[0]                
-            if val > 0 and not (name == "Stud" or name =="Studs" or name == "Value"):                    
-                if "\u2013" in name:
-                     name = name.split("\u2013")[0]
-                     
-                if "@" in name:
-                    name = name.split("@")[0]
-                
-                if "vs." in name:
-                    name = name.split("vs.")[0]
-                    
-                clean.append({"value": val,"name": name.strip()})
+            name = soup.get_text()
+            if val > 0 and not (name == "Stud" or name =="Studs" or name == "Value"):
+                    if "\u2013" in name:
+                         name = name.split("\u2013")[0]
+
+                    if "@" in name:
+                        name = name.split("@")[0]
+
+                    if "vs." in name:
+                        name = name.split("vs.")[0]
+
+                    clean.append({"value": val,"name": name.strip()})
 
         return clean
 

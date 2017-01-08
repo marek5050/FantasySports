@@ -172,7 +172,7 @@ class Player:
             return
 
 
-    def get7DayAvg(self):
+    def get7GameAvg(self):
             if self.seasonStats is None:
                 self.getSeasonStats()
                 self.getDKFPS()
@@ -185,6 +185,18 @@ class Player:
                 away = 0.0
 
             return {"home": home, "away": away}
+
+    def get4GameAvg(self):
+            if self.seasonStats is None:
+                self.getSeasonStats()
+                self.getDKFPS()
+            try:
+                p = self.seasonStatsWithDKFPS
+                avg =  p.loc[:3,"DKFPS"].mean()
+            except:
+                avg = 0.0
+
+            return avg
 
     def getFloorAverage(self):
             if self.seasonStats is None:
@@ -241,7 +253,6 @@ cal = Calendar()
 cal.load(calendar)
 
 class Team:
-
     def __init__(self,data = None):
         self.name = ""
         self.data = {}
@@ -486,9 +497,11 @@ efgs["expectedScore"] = 0
 efgs["atHome"]  = 0
 efgs["opponent"] = ""
 efgs["injured"] = 0
-efgs["7dayAvg"] = 0.0
+efgs["7GameAvg"] = 0.0
 efgs["floorAvg"] = 0.0
+efgs["4GameAvg"] = 0.0
 efgs["communityBonus"] = 0.0
+
 for index,row in efgs.iterrows():
     player = teams.findPlayer(row[0])
     if player != None and player.team != '':
@@ -500,12 +513,14 @@ for index,row in efgs.iterrows():
             efgs.loc[index,("atHome")] = teams.teams[player.team].home
             efgs.loc[index,("seasonAvg")] = player.fantasyPointAverage
             efgs.loc[index,("expectedScore")] = teams.teams[player.team].expectedScore
-            SvnDayAvg = player.get7DayAvg()
-            efgs.loc[index,("7dayAvg")] = (SvnDayAvg["home"] if (teams.teams[player.team].home) else SvnDayAvg["away"]) or 0.00
+            SvnGameAvg = player.get7GameAvg()
+            efgs.loc[index,("7GameAvg")] = (SvnGameAvg["home"] if (teams.teams[player.team].home) else SvnGameAvg["away"]) or 0.00
             efgs.loc[index,("floorAvg")] = player.getFloorAverage() or 0.00
-            efgs.loc[index,("communityBonus")] =  player.bonus + 0.0
+            efgs.loc[index,("4GameAvg")] = player.get4GameAvg() or 0.0
+            efgs.loc[index,("communityBonus")] =  player.bonus or 0.0
 
-notInjured = efgs[(efgs["injured"]==0) & (efgs["Salary"] != 0) & (efgs["7dayAvg"]>0)]
+
+notInjured = efgs[(efgs["injured"]==0) & (efgs["Salary"] != 0) & (efgs["7GameAvg"]>0)]
 notInjured.rename(columns={1: 'Name'}, inplace=True)
 #efgs = efgs.filter(items=['one', 'three'])
 notInjured.to_csv("data/output/"+str(date.today())+'.csv', sep=',', encoding='utf-8', index=False, float_format='%.3f')
