@@ -23,8 +23,6 @@ class InjurySpider(scrapy.Spider):
 #    def update_settings(self,settings):
 #        settings.set('FEED_URI','data/'+self.outputDirectory+'/'+str(date.today())+'.json')
 #        return settings
-    def __init__(self):
-        self.driver = webdriver.PhantomJS()
 
     def parse(self, response):
         injuries = []
