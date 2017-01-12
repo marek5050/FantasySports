@@ -12,7 +12,7 @@ from selenium.webdriver.common.action_chains import ActionChains
 
 
 now = datetime.datetime.now()
-
+#http://games.espn.com/fba/resources/playernews
 ordinal = lambda n: "%d%s" % (n,"tsnrhtdd"[(n/10%10!=1)*(n%10<4)*n%10::4])
 
 class InjurySpider(scrapy.Spider):

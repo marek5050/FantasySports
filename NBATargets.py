@@ -9,7 +9,8 @@ from datetime import date
 now = datetime.datetime.now()
 
 
-ordinal = lambda n: "%d%s" % (n,"tsnrhtdd"[(n/10%10!=1)*(n%10<4)*n%10::4])
+import math
+ordinal = lambda n: "%d%s" % (n,"tsnrhtdd"[(math.floor(n/10)%10!=1)*(n%10<4)*n%10::4])
 
 
 class NBATargets(scrapy.Spider):
@@ -37,10 +38,13 @@ class NBATargets(scrapy.Spider):
             elif "WORST" in text:
                 newType = "WORST"
             elif "vs." in text and newType!=None:
-                org.append({"value":(4 if newType == "BEST" else -1), "name":text.split("($")[0].strip()})
+                org.append({"value":(3 if newType == "BEST" else -2), "name":text.split("($")[0].strip()})
                 newType = None
             else:
-                org.append({"value":2 , "name": text})
+                if "($" in text:
+                    text = text.split("($")[0]
+
+                org.append({"value":2 , "name": text.strip()})
         return org
         
     def targets(self, page):
@@ -56,8 +60,10 @@ class NBATargets(scrapy.Spider):
                 for name in names: 
                     soup = BeautifulSoup(name)
                     name = soup.get_text().split("($")[0]
+                    if "$" in name:
+                        name= name.split("$")[0]
                     name = name.replace("\u00f6","o")
-                    clean.append({"value":3, "name":name.strip()})
+                    clean.append({"value":2, "name":name.strip()})
                 val = 0
                 pass
             elif "Note:" in t:
@@ -65,15 +71,18 @@ class NBATargets(scrapy.Spider):
             elif "WATCH:" in t:                
                 val = 0
             elif "Stud" in t:
-                val = 5
+                val = 4
                 pass
             elif "Value" in t:
-                val = 4
+                val = 3
                 pass
     
             soup = BeautifulSoup(t)
             name = soup.get_text()
             if val > 0 and not (name == "Stud" or name =="Studs" or name == "Value"):
+                    if "($" in name:
+                        name = name.split("($")[0]
+
                     if "\u2013" in name:
                          name = name.split("\u2013")[0]
 

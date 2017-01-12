@@ -501,11 +501,13 @@ efgs["7GameAvg"] = 0.0
 efgs["floorAvg"] = 0.0
 efgs["4GameAvg"] = 0.0
 efgs["communityBonus"] = 0.0
+efgs["penalty"] = 0.0
 
 for index,row in efgs.iterrows():
     player = teams.findPlayer(row[0])
     if player != None and player.team != '':
             efgs.loc[index,("injured")] = 1 if (player.injury) else 0
+            efgs.loc[index,("penalty")] = -99.0 if player.injury else 0.0
             efgs.loc[index,("Salary")] = player.salary
             efgs.loc[index,("Position")] = player.position
             efgs.loc[index,("team")] = player.team
@@ -520,7 +522,7 @@ for index,row in efgs.iterrows():
             efgs.loc[index,("communityBonus")] =  player.bonus or 0.0
 
 
-notInjured = efgs[(efgs["injured"]==0) & (efgs["Salary"] != 0) & (efgs["7GameAvg"]>0)]
+notInjured = efgs[(efgs["Salary"] != 0) & (efgs["7GameAvg"]>0)]
 notInjured.rename(columns={1: 'Name'}, inplace=True)
 #efgs = efgs.filter(items=['one', 'three'])
 notInjured.to_csv("data/output/"+str(date.today())+'.csv', sep=',', encoding='utf-8', index=False, float_format='%.3f')

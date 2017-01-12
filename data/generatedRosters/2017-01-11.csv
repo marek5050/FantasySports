@@ -1,0 +1,11 @@
+Strategy,p1,p2,p3,p4,p5,p6,p7,p8
+"floorAvgBonus",Kelly Olynyk,John Wall,Marcin Gortat,Vince Carter,James Harden,Bismack Biyombo,Evan Turner,Kevin Love
+"baselineBonus",Marcus Smart,Kelly Olynyk,Marcin Gortat,Marc Gasol,Vince Carter,James Harden,Evan Turner,Kevin Love
+"svnGameBonus",Isaiah Thomas,Al Horford,Ryan Anderson,Evan Turner,Jamal Crawford,Raymond Felton,LeBron James,Kristaps Porzingis
+"baselineFloorAvgBonus",Kelly Olynyk,John Wall,Marcin Gortat,Vince Carter,James Harden,Bismack Biyombo,Evan Turner,Kevin Love
+"baselineFloorAvg",John Wall,Bradley Beal,Marc Gasol,Vince Carter,Bismack Biyombo,Damian Lillard,Evan Turner,Kevin Love
+"baselineSvnGameAvg",Russell Westbrook,Al Horford,Bradley Beal,Marc Gasol,Ryan Anderson,Gorgui Dieng,Maurice Harkless,Evan Turner
+"baselineSvnGameAvgBonus",Russell Westbrook,Al Horford,Kelly Olynyk,Marc Gasol,Ryan Anderson,Evan Turner,Jamal Crawford,Kevin Love
+"frGameAvgBonus",Enes Kanter,Marcus Smart,Kelly Olynyk,Zach Randolph,James Harden,Mason Plumlee,DeAndre Jordan,Raymond Felton
+"baselineFrGameAvgBonus",Enes Kanter,Marcus Smart,Kelly Olynyk,Marcin Gortat,Mike Conley,James Harden,Mason Plumlee,Jamal Crawford
+"baselineFrGameAvg",Russell Westbrook,Steven Adams,Enes Kanter,Kelly Olynyk,Mike Conley,Vince Carter,Mason Plumlee,Carmelo Anthony
