@@ -6,7 +6,7 @@ from datetime import date
 import glob
 
 #today = str(date.yesterday())
-today = "2017-01-10"
+today = "2017-01-14"
 
 tmp = 'data/generatedRosters/tmp.csv'
 rosterscsv = 'data/generatedRosters/' + today+'.csv'
@@ -60,7 +60,6 @@ def getDKFPS(seasonStats):
             return p
 
 def updateResults():
-    newest = 'data/results/' + today + '.csv'
     history = 'data/HistoryWithResults/' + today + '.csv'
 
     try:
@@ -105,13 +104,19 @@ def displayResults():
 
     path = r'data/generatedRosters/'  # use your path
     allFiles = glob.glob(path + "/*.csv")
-    frame = pd.DataFrame()
     list_ = []
     for file_ in allFiles:
-        df = pd.read_csv(file_, index_col=None, header=0)
-        df["date"] = file_.split("/")[2].split(".csv")[0]
-        list_.append(df)
+        try:
+            df = pd.read_csv(file_, index_col=None, header=0)
+            _date = file_.split("/")[2].split(".csv")[0]
+            if "_" in _date:
+                _date = _date.split("_")[0]
+            df["date"] = _date
+            list_.append(df)
+        except:
+            pass
     frame = pd.concat(list_)
-    frame[(frame.Result == "Win")].groupby(["Strategy"]).agg(["mean", "count"])
+    print(frame[(frame.Result == "Win")].groupby(["Strategy"]).agg(["mean", "count"]))
     return
 
+displayResults()

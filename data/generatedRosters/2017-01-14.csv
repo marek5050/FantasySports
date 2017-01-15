@@ -1,0 +1,11 @@
+Strategy,p1,p2,p3,p4,p5,p6,p7,p8,DKFPS,Result
+floorAvgBonus,Chris Paul,Kawhi Leonard,DeAndre Jordan,Gordon Hayward,Rudy Gobert,Lou Williams,E'Twaun Moore,Trey Lyles,277.25,Win
+baselineBonus,Kawhi Leonard,Gordon Hayward,Otto Porter,Rudy Gobert,Eric Bledsoe,Devin Booker,Rajon Rondo,Lou Williams,253.0,Loss
+svnGameBonus,Chris Paul,Gordon Hayward,Otto Porter,Rudy Gobert,Nikola Vucevic,Devin Booker,Rajon Rondo,Trey Lyles,263.5,Loss
+baselineFloorAvgBonus,Kawhi Leonard,Gordon Hayward,Rudy Gobert,Eric Bledsoe,Nikola Vucevic,Devin Booker,Taj Gibson,Lou Williams,314.75,Win
+baselineFloorAvg,Kawhi Leonard,Gordon Hayward,Rudy Gobert,Eric Bledsoe,Nikola Vucevic,Devin Booker,Taj Gibson,Lou Williams,314.75,Win
+baselineSvnGameAvg,Kawhi Leonard,Gordon Hayward,Rudy Gobert,Eric Bledsoe,Nikola Vucevic,Devin Booker,Rajon Rondo,Dario Saric,272.75,Win
+baselineSvnGameAvgBonus,Kawhi Leonard,Gordon Hayward,Rudy Gobert,Eric Bledsoe,Nikola Vucevic,Devin Booker,Rajon Rondo,Dario Saric,272.75,Win
+frGameAvgBonus,Kawhi Leonard,DeAndre Jordan,Bradley Beal,Otto Porter,Nikola Vucevic,Devin Booker,Austin Rivers,Brandon Ingram,287.75,Win
+baselineFrGameAvgBonus,Kawhi Leonard,Gordon Hayward,Otto Porter,Eric Bledsoe,Nikola Vucevic,Devin Booker,Tyson Chandler,Rodney Hood,311.5,Win
+baselineFrGameAvg,Kawhi Leonard,Gordon Hayward,Otto Porter,Eric Bledsoe,Nikola Vucevic,Devin Booker,Tyson Chandler,Rodney Hood,311.5,Win

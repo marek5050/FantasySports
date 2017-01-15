@@ -1,0 +1,11 @@
+Strategy,p1,p2,p3,p4,p5,p6,p7,p8,DKFPS,Result
+floorAvgBonus,Dwyane Wade,Robin Lopez,Jrue Holiday,J.J. Barea,Kristaps Porzingis,Carmelo Anthony,Derrick Rose,Karl-Anthony Towns,215.25,Win
+baselineBonus,Dwyane Wade,Donatas Motiejunas,J.J. Barea,Dwight Powell,Kristaps Porzingis,Carmelo Anthony,Derrick Rose,Russell Westbrook,190.25,Loss
+svnGameBonus,Donatas Motiejunas,Deron Williams,Kristaps Porzingis,Carmelo Anthony,Derrick Rose,Enes Kanter,Zach LaVine,Karl-Anthony Towns,236.5,Win
+baselineFloorAvgBonus,Dwyane Wade,Robin Lopez,Jrue Holiday,J.J. Barea,Kristaps Porzingis,Carmelo Anthony,Derrick Rose,Karl-Anthony Towns,215.25,Win
+baselineFloorAvg,Dwyane Wade,Robin Lopez,J.J. Barea,Andrew Bogut,Dwight Powell,Carmelo Anthony,Russell Westbrook,Karl-Anthony Towns,215.5,Win
+baselineSvnGameAvg,Robin Lopez,Donatas Motiejunas,J.J. Barea,Dwight Powell,Carmelo Anthony,Russell Westbrook,Zach LaVine,Karl-Anthony Towns,203.5,Loss
+baselineSvnGameAvgBonus,Dwyane Wade,Donatas Motiejunas,J.J. Barea,Dwight Powell,Kristaps Porzingis,Carmelo Anthony,Derrick Rose,Russell Westbrook,190.25,Loss
+frGameAvgBonus,Nikola Mirotic,Buddy Hield,Donatas Motiejunas,Kristaps Porzingis,Carmelo Anthony,Courtney Lee,Russell Westbrook,Steven Adams,192.75,Loss
+baselineFrGameAvgBonus,Dwyane Wade,Donatas Motiejunas,J.J. Barea,Dwight Powell,Kristaps Porzingis,Carmelo Anthony,Russell Westbrook,Gorgui Dieng,184.0,Loss
+baselineFrGameAvg,Dwyane Wade,Donatas Motiejunas,J.J. Barea,Dwight Powell,Kristaps Porzingis,Carmelo Anthony,Russell Westbrook,Gorgui Dieng,184.0,Loss

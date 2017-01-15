@@ -1,0 +1,11 @@
+Strategy,p1,p2,p3,p4,p5,p6,p7,p8,DKFPS,Result
+floorAvgBonus,Marcin Gortat,James Harden,Rodney Hood,Draymond Green,Matthew Dellavedova,Kawhi Leonard,Robin Lopez,Taj Gibson,309.0,Win
+baselineBonus,Marcin Gortat,Dwight Howard,James Harden,Dion Waiters,Wayne Ellington,Kawhi Leonard,Rajon Rondo,Taj Gibson,291.25,Win
+svnGameBonus,John Wall,Marcin Gortat,James Harden,Trevor Ariza,Trey Lyles,Mason Plumlee,Isaiah Whitehead,Patrick Patterson,267.75,Loss
+baselineFloorAvgBonus,Marcin Gortat,James Harden,Rodney Hood,Kevin Love,Ish Smith,Kawhi Leonard,Lou Williams,Taj Gibson,277.25, Win
+baselineFloorAvg,Marcin Gortat,Dion Waiters,Gordon Hayward,LeBron James,Kevin Love,Ish Smith,Kyle Lowry,Lou Williams,255.0,Loss
+baselineSvnGameAvg,John Wall,Marcin Gortat,Dion Waiters,Rudy Gobert,Trey Lyles,LeBron James,Kevin Love,Ish Smith,264.0,Loss
+baselineSvnGameAvgBonus,Marcin Gortat,James Harden,Dion Waiters,Rodney Hood,Maurice Harkless,Mason Plumlee,DeMarcus Cousins,Patrick Patterson,285.0,Win
+frGameAvgBonus,Kyle Korver,James Harden,Willie Reed,Kyrie Irving,Allen Crabbe,Mason Plumlee,Justin Hamilton,Julius Randle,203.0,Loss
+baselineFrGameAvgBonus,Marcin Gortat,James Harden,Kyrie Irving,Allen Crabbe,Mason Plumlee,Kentavious Caldwell-Pope,Justin Hamilton,Taj Gibson,259.0,Loss
+baselineFrGameAvg,Paul Millsap,Dion Waiters,LeBron James,Kyrie Irving,Mason Plumlee,Darren Collison,Al Horford,Justin Hamilton,237.25,Loss
