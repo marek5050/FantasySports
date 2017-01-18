@@ -6,10 +6,9 @@ from datetime import date
 import glob
 
 #today = str(date.yesterday())
-today = "2017-01-14"
+today = "2017-01-17"
 
-tmp = 'data/generatedRosters/tmp.csv'
-rosterscsv = 'data/generatedRosters/' + today+'.csv'
+rosterscsv = 'data/generatedRosters/'+today+'.csv'
 
 def getSeasonStats(name):
         '''
@@ -31,7 +30,7 @@ def getSeasonStats(name):
             pid =  get_player(name[0],name[1])
         except:
             print("Problem with player")
-            print(name )
+            print(name)
             return None
 
         c =  players.PlayerGameLogs(pid)
@@ -60,11 +59,9 @@ def getDKFPS(seasonStats):
             return p
 
 def updateResults():
-    history = 'data/HistoryWithResults/' + today + '.csv'
+    history = 'data/HistoryWithResults/recent.csv'
 
     try:
-#        results = pd.DataFrame.from_csv(tmp)
-#        pplayers = results.iloc[:, 6:].dropna()
         rrosters = pd.DataFrame.from_csv(rosterscsv)
         history = pd.DataFrame.from_csv(history)
     except:
@@ -116,7 +113,10 @@ def displayResults():
         except:
             pass
     frame = pd.concat(list_)
-    print(frame[(frame.Result == "Win")].groupby(["Strategy"]).agg(["mean", "count"]))
+    loss = frame[(frame.Result == "Loss")].groupby(["Strategy"])["Result"].count()
+    win = frame[(frame.Result == "Win")].groupby(["Strategy"])["Result"].count()
+    grouped = frame.groupby(["Strategy"]).mean()
+    grouped["ratio"] = win / (loss+win)
     return
 
 displayResults()

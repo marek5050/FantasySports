@@ -42,6 +42,8 @@ class DefenseVsPosition(scrapy.Spider):
                     t = "SA"
                 elif "NYK" in t:
                     t = "NY"
+                elif "GSW" in t:
+                    t = "GS"
                 item["team"] = t
                 item["g"] = cells[1]
                 item["all"] = cells[2]

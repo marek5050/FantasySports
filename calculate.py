@@ -7,7 +7,8 @@ import numpy as np
 from datetime import date
 
 today = str(date.today())
-#today = "2017-01-13"
+#today = "2017-01-16"
+end_date = today
 
 newest = 'data/teams/'+today+'.json'
 injuries_file = 'data/injuries/'+today+'.json'
@@ -47,7 +48,6 @@ def fixTeam(abbr):
                 return "SAS"
     if (abbr == "GS"):
                 return "GSW"
-
     if (abbr == "BKN"):
                 return "BRK"
     if(abbr == "NO"):
@@ -86,6 +86,7 @@ class Player:
         self.bonus = 0.0
         self.players = None
         self.pid = None
+        self.error = 0
 
 
     def setHome(self):
@@ -131,7 +132,21 @@ class Player:
         self.bonus += val
         return
 
+    def getLastGame(self):
+        if self.seasonStats is None:
+            self.getSeasonStats()
+
+        try:
+            return self.seasonStatsWithDKFPS[:1]
+        except:
+            pass
+
+        return
+
+
     def getSeasonStats(self):
+        if self.error == 1:
+            return
         '''
             Point = +1 PT
             Made 3pt. shot = +0.5 PTs
@@ -146,18 +161,25 @@ class Player:
 
         from nba_py import player as players
         from nba_py.player import get_player
-        name = self.name.replace("Jr.","").split(" ",maxsplit=1)
+        name = self.name.replace("Jr.","")      \
+            .replace("J.J. Redick","JJ Redick") \
+            .replace("T.J. Warren","TJ Warren") \
+            .replace("P.J. Warren","PJ Warren") \
+            .replace("P.J. Tucker","PJ Tucker") \
+            .replace("J.R. Smith" ,"JR Smith")  \
+            .split(" ",maxsplit=1)
         try:
             pid =  get_player(name[0],name[1])
         except Exception as e:
-            print("Problem with player")
-            print(player.name )
-            print(e)
+            print("Problem with player " + player.name)
+            self.error = 1
             return None
 
         c =  players.PlayerGameLogs(pid)
         k = c.info()
-
+        k["GAME_DATE"] = pd.to_datetime(k["GAME_DATE"])
+        k.set_index("GAME_DATE",inplace=True)
+        k = k[end_date:'2016-01-01']
         k.PTS = k.PTS.astype(float)
         k.BLK = k.BLK.astype(float)
         k.STL = k.STL.astype(float)
@@ -169,7 +191,7 @@ class Player:
         return
 
     def getDKFPS(self):
-            if self.seasonStats is None:
+            if self.seasonStats is None and player.error == 0:
                 self.getSeasonStats()
             try:
                 p = self.seasonStats.filter(items=['MATCHUP',"GAME_DATE",'PTS', 'BLK', 'STL', 'AST', 'REB', 'FG3M', 'TOV'])
@@ -185,7 +207,7 @@ class Player:
 
 
     def get7GameAvg(self):
-            if self.seasonStats is None:
+            if self.seasonStats is None and player.error == 0:
                 self.getSeasonStats()
                 self.getDKFPS()
             try:
@@ -199,19 +221,19 @@ class Player:
             return {"home": home, "away": away}
 
     def get4GameAvg(self):
-            if self.seasonStats is None:
+            if self.seasonStats is None and player.error == 0:
                 self.getSeasonStats()
                 self.getDKFPS()
             try:
                 p = self.seasonStatsWithDKFPS
-                avg =  p.loc[:3,"DKFPS"].mean()
+                avg =  p.iloc[:4]["DKFPS"].mean()
             except:
                 avg = 0.0
 
             return avg
 
     def getFloorAverage(self):
-            if self.seasonStats is None:
+            if self.seasonStats is None and player.error == 0:
                 self.getSeasonStats()
                 self.getDKFPS()
             try:
@@ -224,7 +246,7 @@ class Player:
             return lowerMean
 
     def getSeasonAverage(self):
-            if self.seasonStats is None:
+            if self.seasonStats is None and player.error == 0:
                 self.getSeasonStats()
                 self.getDKFPS()
 
@@ -531,6 +553,7 @@ if __name__ == "__main__":
                 efgs.loc[index,("injured")] = 1 if (player.injury) else 0
                 SvnGameAvg = player.get7GameAvg()
                 efgs.loc[index,("atHome")]= player.home
+                efgs.loc[index, "teamAbbrev"] = player.team
                 efgs.loc[index,("7GameAvg")] = (SvnGameAvg["home"] if (player.home) else SvnGameAvg["away"]) or 0.00
                 efgs.loc[index,("FloorAvg")] = player.getFloorAverage() or 0.00
                 efgs.loc[index,("4GameAvg")] = player.get4GameAvg() or 0.0
@@ -538,7 +561,7 @@ if __name__ == "__main__":
                 efgs.loc[index,("dvp")] = player.dvp or 0.00
                 efgs.loc[index,('value')] = player.salary*0.001*6
                 efgs.loc[index,("O/U")] = vegas.loc[player.team]["overUnder"]
-                efgs.loc[index,("'+'/-")] = vegas.loc[player.team]["odds"]
+                efgs.loc[index,("±")] = vegas.loc[player.team]["odds"]
                 positions = player.position.lower().split("/")
                 #efgs.loc[index,("penalty")] =
                 penalty = 0
@@ -556,12 +579,35 @@ if __name__ == "__main__":
 
                 overUnderMean = vegas["overUnder"].mean()
                 oddsMean = vegas[(vegas["odds"] >= 0)]["odds"].mean()
-                if odds > oddsMean or overUnder < overUnderMean:
+                '''
+                    Bonus to ppl in high scoring games (215)    (220)/(220+205(mean)) (230-215)/(237-215)...
+                    Blowout definition : 4% = odds/overUnder ratio
+                    Penalize losing team in blowouts especially bench ...
+                    Penalize bench in tight games....
+                '''
+                if overUnder < overUnderMean:
+                    penalty += 100 * (overUnderMean-overUnder)/overUnderMean
+
+                #blowout
+                if odds / overUnder > 0.3 or odds > oddsMean:
+                    penalty += 10 #(odds-oddsMean)/oddsMean
+                #cheap players on losing team penalty
+                # if + and < 4500 -10%
+                if player.salary < 4500 and odds > oddsMean:
                     penalty += 10
+
+                lastGame = player.getLastGame()
+                try:
+                    std = player.seasonStatsWithDKFPS.loc[:,"DKFPS"].std()
+                    #if last game sucked
+                    if len(lastGame["DKFPS"]) > 0 and (lastGame["DKFPS"][0] < (player.fantasyPointAverage-std)):
+                       penalty += std
+                except:
+                    pass
 
                 penalty = -1 * player.fantasyPointAverage * (penalty/100)
 
-                efgs.loc[index, ("penalty")] = penalty
+                efgs.loc[index, "penalty"] = penalty
 
 
     #notInjured[(efgs["4GameAvg"] < efgs["7GameAvg"]) & (efgs["4GameAvg"] < efgs["AvgPtsPerGame"])]

@@ -17,8 +17,8 @@ class NBATargets(scrapy.Spider):
     name = 'NBATargets'
     start_urls = [
 #'https://playbook.draftkings.com/nba/nba-targets-january-3rd-2'
-'https://playbook.draftkings.com/nba/nba-targets-$MONTH-$DAY-2'.replace("$MONTH",now.strftime("%B")).replace("$DAY", ordinal(now.day))
-,'https://playbook.draftkings.com/nba/nba-cheat-sheet-$MONTH-$DAY-2'.replace("$MONTH",now.strftime("%B")).replace("$DAY", ordinal(now.day))
+'https://playbook.draftkings.com/nba/nba-targets-$MONTH-$DAY'.replace("$MONTH",now.strftime("%B")).replace("$DAY", ordinal(now.day))
+,'https://playbook.draftkings.com/nba/nba-cheat-sheet-$MONTH-$DAY'.replace("$MONTH",now.strftime("%B")).replace("$DAY", ordinal(now.day))
 ]
 #    outputDirectory = "targets"
 
