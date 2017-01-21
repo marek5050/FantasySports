@@ -38,8 +38,8 @@ class VegasOdds(scrapy.Spider):
             elif len(text) == 4:
                 home["odds"] = text[0]
                 away["odds"] = text[1]
-                home["team"] = (text[2].split(":")[0])[0:3].replace("PHX","PHO")
-                away["team"] = (text[3].split(":")[0])[0:3].replace("PHX","PHO")
+                home["team"] = (text[2].split(":")[0])[0:3].replace("PHX","PHO").replace("WSH","WAS")
+                away["team"] = (text[3].split(":")[0])[0:3].replace("PHX","PHO").replace("WSH","WAS")
 
             text = items[5].css("::text").extract()
             if len(text) == 1:

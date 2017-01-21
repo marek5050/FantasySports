@@ -6,7 +6,7 @@ from datetime import date
 import glob
 
 #today = str(date.yesterday())
-today = "2017-01-17"
+today = "2017-01-20"
 
 rosterscsv = 'data/generatedRosters/'+today+'.csv'
 
@@ -25,7 +25,7 @@ def getSeasonStats(name):
 
         from nba_py import player as players
         from nba_py.player import get_player
-        name = name.split(" ")
+        name = name.replace("C.J. McCollum","CJ McCollum").split(" ")
         try:
             pid =  get_player(name[0],name[1])
         except:
@@ -117,6 +117,7 @@ def displayResults():
     win = frame[(frame.Result == "Win")].groupby(["Strategy"])["Result"].count()
     grouped = frame.groupby(["Strategy"]).mean()
     grouped["ratio"] = win / (loss+win)
+    print(grouped)
     return
 
 displayResults()

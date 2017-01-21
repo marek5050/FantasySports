@@ -7,27 +7,41 @@ import numpy as np
 from datetime import date
 
 today = str(date.today())
-#today = "2017-01-16"
 end_date = today
 
+#today = "2017-01-20"
+#end_date = "2017-01-19"
 newest = 'data/teams/'+today+'.json'
 injuries_file = 'data/injuries/'+today+'.json'
 community_file = 'data/targets/'+today+'.json'
 newestSalaries = 'data/salaries/'+today+'.csv'
 
-vegas = pd.read_csv('data/vegas/'+today+'.csv')
-vegas = vegas.set_index("team")
+try:
+    blacklisted = pd.read_csv('data/blacklisted/list.csv')
+    dvp = pd.read_csv('data/Defense/'+today+'.csv')
+    dvp = dvp.set_index("team")
+    dvp.sort_values(by="all",inplace=True)
 
-dvp = pd.read_csv('data/Defense/'+today+'.csv')
-dvp = dvp.set_index("team")
-dvp.sort_values(by="all",inplace=True)
+    vegas = pd.read_csv('data/vegas/' + today + '.csv')
+    vegas = vegas.set_index("team")
+
+
+except Exception as e:
+        print("Failed to load community file.")
+        dvp = []
+        blacklisted = []
+        vegas = []
+
 # dvp.loc["BKN", :].values
 
 #with open(newest) as json_data:
 #    d = json.load(json_data)
-
-with open(injuries_file) as json_data:
-    injuries = json.load(json_data)
+try:
+    with open(injuries_file) as json_data:
+        injuries = json.load(json_data)
+except Exception as e:
+        print("Failed to load community file.")
+        injuries = []
 
 try:
     with open(community_file) as json_data:
@@ -36,9 +50,12 @@ except Exception as e:
         print("Failed to load community file.")
         community = []
 
-with open("data/calendar/full_schedule.json") as json_data:
-    calendar = json.load(json_data)
-
+try:
+    with open("data/calendar/full_schedule.json") as json_data:
+        calendar = json.load(json_data)
+except Exception as e:
+        print("Failed to load community file.")
+        calendar = []
 
 
 def fixTeam(abbr):
@@ -167,6 +184,11 @@ class Player:
             .replace("P.J. Warren","PJ Warren") \
             .replace("P.J. Tucker","PJ Tucker") \
             .replace("J.R. Smith" ,"JR Smith")  \
+            .replace("C.J. McCollum","CJ McCollum") \
+            .replace("C.J. Miles", "CJ Miles") \
+            .replace("C.J. Watson", "CJ Watson") \
+            .replace("C.J. Wilcox", "CJ Wilcox") \
+            .replace("K.J. McDaniels", "KJ McDaniels") \
             .split(" ",maxsplit=1)
         try:
             pid =  get_player(name[0],name[1])
@@ -511,11 +533,10 @@ if __name__ == "__main__":
             print("Could not find  "+row["Name"])
 
     for updates in community:
-        for update in updates:
-            for item in updates[update]:
-                player = teams.findPlayer(item['name'])
+        for target in updates["targets"]:
+                player = teams.findPlayer(target['name'])
                 if player != None and player.fantasyPointAverage > 0:
-                    player.addBonus(item["value"])
+                    player.addBonus(target["value"])
 
     #teamStats = teams.teamAndOppStats()
     '''
@@ -557,7 +578,14 @@ if __name__ == "__main__":
                 efgs.loc[index,("7GameAvg")] = (SvnGameAvg["home"] if (player.home) else SvnGameAvg["away"]) or 0.00
                 efgs.loc[index,("FloorAvg")] = player.getFloorAverage() or 0.00
                 efgs.loc[index,("4GameAvg")] = player.get4GameAvg() or 0.0
-                efgs.loc[index,("communityBonus")] =  player.bonus or 0.0
+
+                bonus = 0.0
+                if player.bonus > 0 and player.bonus <= 5:
+                    bonus = 0.10
+                elif player.bonus > 5:
+                    bonus = 0.25
+
+                efgs.loc[index,("communityBonus")] = bonus * player.fantasyPointAverage
                 efgs.loc[index,("dvp")] = player.dvp or 0.00
                 efgs.loc[index,('value')] = player.salary*0.001*6
                 efgs.loc[index,("O/U")] = vegas.loc[player.team]["overUnder"]
@@ -576,7 +604,7 @@ if __name__ == "__main__":
 
                 overUnder = vegas.loc[player.team]["overUnder"]
                 odds = abs(vegas.loc[player.team]["odds"])
-
+                s = ""
                 overUnderMean = vegas["overUnder"].mean()
                 oddsMean = vegas[(vegas["odds"] >= 0)]["odds"].mean()
                 '''
@@ -585,8 +613,8 @@ if __name__ == "__main__":
                     Penalize losing team in blowouts especially bench ...
                     Penalize bench in tight games....
                 '''
-                if overUnder < overUnderMean:
-                    penalty += 100 * (overUnderMean-overUnder)/overUnderMean
+                penalty += 200 * (overUnderMean-overUnder)/overUnderMean
+                s+= " o/u: "+ str((200 * (overUnderMean - overUnder)/overUnderMean))
 
                 #blowout
                 if odds / overUnder > 0.3 or odds > oddsMean:
@@ -595,13 +623,16 @@ if __name__ == "__main__":
                 # if + and < 4500 -10%
                 if player.salary < 4500 and odds > oddsMean:
                     penalty += 10
+                    s += " low player: " + str(10)
+
 
                 lastGame = player.getLastGame()
                 try:
                     std = player.seasonStatsWithDKFPS.loc[:,"DKFPS"].std()
                     #if last game sucked
                     if len(lastGame["DKFPS"]) > 0 and (lastGame["DKFPS"][0] < (player.fantasyPointAverage-std)):
-                       penalty += std
+                       penalty += std*10
+                       s+= " bad last game: " + str((std*10))
                 except:
                     pass
 
@@ -613,6 +644,10 @@ if __name__ == "__main__":
     #notInjured[(efgs["4GameAvg"] < efgs["7GameAvg"]) & (efgs["4GameAvg"] < efgs["AvgPtsPerGame"])]
     #notInjured = efgs[)]
     notInjured = efgs[(efgs["Salary"] != 0) & (efgs["7GameAvg"]>0) & (efgs["FloorAvg"]>0)]
+    # Blacklisted players
+    #df[~df['stn'].isin(remove_list)]
+    notInjured = notInjured[~notInjured["Name"].isin(blacklisted["name"])]
+
     #notInjured.rename(columns={1: 'Name'}, inplace=True)
     #efgs = efgs.filter(items=['one', 'three'])
     notInjured.to_csv("data/output/"+str(date.today())+'.csv', sep=',', encoding='utf-8', index=False, float_format='%.3f')
