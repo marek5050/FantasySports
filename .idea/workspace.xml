@@ -2,15 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="289189b2-db15-4b29-8e00-7ee0c0b6a1fa" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/extras/players.pickle" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/extras/teamBases.pickle" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/extras/teams.pickle" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/extras/test.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/extras/train.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/salaries/2017-01-21.csv" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/nba_cache.sqlite" afterPath="$PROJECT_DIR$/nba_cache.sqlite" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RosterGenerator.nb" afterPath="$PROJECT_DIR$/RosterGenerator.nb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/extras/players.pickle" afterPath="$PROJECT_DIR$/data/extras/players.pickle" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/extras/teamBases.pickle" afterPath="$PROJECT_DIR$/data/extras/teamBases.pickle" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/extras/teams.pickle" afterPath="$PROJECT_DIR$/data/extras/teams.pickle" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/extras/test.csv" afterPath="$PROJECT_DIR$/data/extras/test.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/extras/train.csv" afterPath="$PROJECT_DIR$/data/extras/train.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/temp2.py" afterPath="$PROJECT_DIR$/temp2.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -46,8 +45,8 @@
       <file leaf-file-name="calculate.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/calculate.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="144">
-              <caret line="652" column="123" lean-forward="false" selection-start-line="652" selection-start-column="4" selection-end-line="652" selection-end-column="123" />
+            <state relative-caret-position="174">
+              <caret line="654" column="33" lean-forward="true" selection-start-line="654" selection-start-column="33" selection-end-line="654" selection-end-column="33" />
               <folding>
                 <element signature="e#25#36#0" expanded="true" />
               </folding>
@@ -70,8 +69,8 @@
       <file leaf-file-name="temp2.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/temp2.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="103" column="32" lean-forward="false" selection-start-line="103" selection-start-column="32" selection-end-line="103" selection-end-column="32" />
+            <state relative-caret-position="255">
+              <caret line="119" column="136" lean-forward="true" selection-start-line="104" selection-start-column="0" selection-end-line="119" selection-end-column="136" />
               <folding>
                 <element signature="e#0#11#0" expanded="true" />
               </folding>
@@ -91,12 +90,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>ellis</find>
-      <find>mozg</find>
-      <find>CHA</find>
-      <find>hawes</find>
-      <find>CHI</find>
-      <find>hamilton</find>
       <find>jordan</find>
       <find>young</find>
       <find>Della</find>
@@ -121,6 +114,12 @@
       <find>concat</find>
       <find>save</find>
       <find>to_csv</find>
+      <find>rename</find>
+      <find>TEAM</find>
+      <find>teamLogs</find>
+      <find>teamLogs</find>
+      <find>Failed at</find>
+      <find>Korver</find>
     </findStrings>
     <replaceStrings>
       <replace>,0.00\n</replace>
@@ -798,7 +797,14 @@
       <option name="project" value="LOCAL" />
       <updated>1485023944860</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Adding test and training data sets.">
+      <created>1485045593503</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1485045593503</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TodoView">
@@ -815,9 +821,10 @@
     <editor active="false" />
     <layout>
       <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18168813" sideWeight="0.49170125" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32962447" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32914925" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.70990235" sideWeight="0.51287556" order="11" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32962447" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32775453" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.43375173" sideWeight="0.48712447" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32357043" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -831,7 +838,6 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32962447" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -847,7 +853,8 @@
     <MESSAGE value="Added Vegas odds and O/U into the penalties.&#10;Added Defence vs Position into penalties. &#10; &#10;Removed Basketball-reference dependency.&#10;Updated Mathematica to allow 3 from the same team. &#10;&#10;" />
     <MESSAGE value="Replaced HistoryWithResults with a single file -- it contains the full history. &#10;Newest Salary information&#10;&#10;Modified penalties based on Vegas data." />
     <MESSAGE value="Adding most recent output files." />
-    <option name="LAST_COMMIT_MESSAGE" value="Adding most recent output files." />
+    <MESSAGE value="Adding test and training data sets." />
+    <option name="LAST_COMMIT_MESSAGE" value="Adding test and training data sets." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -873,27 +880,11 @@
           </properties>
         </breakpoint>
       </default-breakpoints>
-      <option name="time" value="159" />
+      <option name="time" value="160" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/NBATargets.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-195">
-          <caret line="91" column="23" lean-forward="true" selection-start-line="91" selection-start-column="23" selection-end-line="91" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/vegas/2017-01-18.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="14" lean-forward="true" selection-start-line="11" selection-start-column="14" selection-end-line="11" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/data/generatedRosters/2017-01-18.csv">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
@@ -1216,16 +1207,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/calculate.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="652" column="123" lean-forward="false" selection-start-line="652" selection-start-column="4" selection-end-line="652" selection-end-column="123" />
-          <folding>
-            <element signature="e#25#36#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/data/extras/1610612737.csv">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
@@ -1250,6 +1231,30 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/data/extras/test_.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/extras/output.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="45" lean-forward="false" selection-start-line="3" selection-start-column="45" selection-end-line="3" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/extras/input.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="9" lean-forward="true" selection-start-line="6" selection-start-column="9" selection-end-line="6" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/resultsExplorer.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
@@ -1260,7 +1265,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/data/extras/test_.csv">
+    <entry file="file://$PROJECT_DIR$/calculate.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="174">
+          <caret line="654" column="33" lean-forward="true" selection-start-line="654" selection-start-column="33" selection-end-line="654" selection-end-column="33" />
+          <folding>
+            <element signature="e#25#36#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/extras/train.csv">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -1270,24 +1285,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/data/extras/test.csv">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/extras/train.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="30" lean-forward="true" selection-start-line="11" selection-start-column="30" selection-end-line="11" selection-end-column="30" />
+        <state relative-caret-position="75">
+          <caret line="5" column="60" lean-forward="true" selection-start-line="5" selection-start-column="60" selection-end-line="5" selection-end-column="60" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/temp2.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="103" column="32" lean-forward="false" selection-start-line="103" selection-start-column="32" selection-end-line="103" selection-end-column="32" />
+        <state relative-caret-position="255">
+          <caret line="119" column="136" lean-forward="true" selection-start-line="104" selection-start-column="0" selection-end-line="119" selection-end-column="136" />
           <folding>
             <element signature="e#0#11#0" expanded="true" />
           </folding>

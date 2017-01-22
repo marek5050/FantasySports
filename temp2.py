@@ -5,9 +5,12 @@ from datetime import date
 
 from nba_py import player
 from nba_py import team
-
 from nba_py.player import get_player
 
+import requests
+import requests_cache
+
+requests_cache.install_cache('demo_cache')
 
 # Preparing for NNs
 import pickle
@@ -39,7 +42,7 @@ def downloadPlayerData():
         p.loc[p["Bonus"] < 2, "Bonus"] = 0.0
         p.loc[p["Bonus"] == 2, "Bonus"] = 1.5
         p.loc[p["Bonus"] > 2, "Bonus"] = 4.5
-        players[key]["DKFPS"] = 1 * (p.PTS) + 0.5 * (p.FG3M) + 1.25 * (p.REB) + 1.5 * (p.AST) + 2 * (p.STL) + 2 * (p.BLK) - 0.5 * (p.TOV) + p.Bonus
+        players[key]["DKFPS"] = 1*(p.PTS) + 0.5*(p.FG3M) + 1.25*(p.REB) + 1.5*(p.AST) + 2*(p.STL) + 2*(p.BLK) - 0.5*(p.TOV) +p.Bonus
 
     output = open("data/extras/players.pickle", 'wb')
     pickle.dump(players,output)
@@ -56,22 +59,21 @@ def loadTeamBaseData():
 
 
 def downloadTeamBaseData():
-    for team in teamLogs:
-        teamLogs[team]["GAME_DATE"] = pd.to_datetime(teamLogs[team]["GAME_DATE"],utc=True)
+    for _team in teamLogs:
+        teamLogs[_team]["GAME_DATE"] = pd.to_datetime(teamLogs[_team]["GAME_DATE"],utc=True)
 
-    for player in players:
-        players[player]["GAME_DATE"]=pd.to_datetime(players[player]["GAME_DATE"],utc=True)
-        players[player].set_index("GAME_DATE",inplace=True)
+    for _player in players:
+        players[_player]["GAME_DATE"]=pd.to_datetime(players[_player]["GAME_DATE"],utc=True)
+        players[_player].set_index("GAME_DATE",inplace=True)
 
     teamBases =  {}
     for tIDX in teamLogs:
         teamBases[tIDX] = pd.DataFrame(teamLogs[tIDX]["GAME_DATE"])
         teamBases[tIDX].set_index("GAME_DATE",inplace=True)
         try:
-            playerList = team.TeamPlayers(tIDX).season_totals()
+            playerList = team.TeamCommonRoster(tIDX).roster()["PLAYER_ID"]
             print(str(tIDX) + " " + str(len(playerList)))
-            for playerId in playerList["PLAYER_ID"]:
-                print("Adding player: " + str(playerId))
+            for playerId in playerList:
                 teamBases[tIDX] = pd.concat([teamBases[tIDX],players[playerId]["DKFPS"]],axis=1, join='outer')
                 teamBases[tIDX] = teamBases[tIDX].rename(columns={"DKFPS":playerId})
         except Exception as e:
@@ -83,6 +85,9 @@ def downloadTeamBaseData():
 
 
 #downloadTeamData()
+#downloadPlayerData()
+#downloadTeamBaseData()
+
 players = loadPlayerData()
 teamLogs = loadTeamData()
 teamBases = loadTeamBaseData()
@@ -96,13 +101,26 @@ for _team in teamBases:
 
 k = teamBases[1610612766]
 
-mostRecent = {}
-restOfSeason = {}
+#mostRecent = {}
+testSeason = {}
+trainSeason = {}
 for _team in teamBases:
-    mostRecent[_team] = teamBases[_team][-1:]  # N
-    restOfSeason[_team] = teamBases[_team][-40:]  # All the way to N-1
-    mostRecent[_team].T.to_csv("data/extras/test.csv", sep=',', encoding='utf-8', index=True, float_format='%.1f',mode='a',header=False)
-    restOfSeason[_team].T.to_csv("data/extras/train.csv", sep=',', encoding='utf-8', index=True, float_format='%.1f',mode='a',header=False)
+#    mostRecent[_team] = teamBases[_team][-1:]  # N
+    trainSeason[_team] = teamBases[_team][-40:-1]  # All the way to N-1
+    players = list(trainSeason[_team].columns.values)
+    names = {x:player.PlayerSummary(x).info()["DISPLAY_FIRST_LAST"][0] for x in players}
+    trainSeason[_team] = trainSeason[_team].rename(columns=names)
+    trainSeason[_team].T.to_csv("data/extras/train.csv", sep=',', encoding='utf-8', index=True, float_format='%.1f',
+                            mode='a', header=False)
+for _team in teamBases:
+    testSeason[_team] = teamBases[_team][-39:]  # All the way to N-1
+    players = list(testSeason[_team].columns.values)
+    names = {x:player.PlayerSummary(x).info()["DISPLAY_FIRST_LAST"][0] for x in players}
+    testSeason[_team] = testSeason[_team].rename(columns=names)
+    testSeason[_team].T.to_csv("data/extras/test.csv", sep=',', encoding='utf-8', index=True, float_format='%.1f',mode='a',header=False)
+
+#    mostRecent[_team].T.to_csv("data/extras/test.csv", sep=',', encoding='utf-8', index=True, float_format='%.1f',mode='a',header=False)
+#    restOfSeason[_team].T.to_csv("data/extras/train.csv", sep=',', encoding='utf-8', index=True, float_format='%.1f',mode='a',header=False)
 
 # mostRecentFinal = pd.DataFrame()
 # restOfSeasonFinal = pd.DataFrame()
