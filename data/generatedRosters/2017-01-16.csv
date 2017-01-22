@@ -1,0 +1,11 @@
+Strategy,p1,p2,p3,p4,p5,p6,p7,p8,DKFPS,Result
+floorAvgBonus,LeBron James,Kyrie Irving,Draymond Green,Al Horford,Klay Thompson,Tristan Thompson,Channing Frye,Terry Rozier,221.5,None
+baselineBonus,LeBron James,Kyrie Irving,Draymond Green,Al Horford,Klay Thompson,Tristan Thompson,Channing Frye,Terry Rozier,221.5,None
+svnGameBonus,LeBron James,Draymond Green,Al Horford,Klay Thompson,Victor Oladipo,Michael Kidd-Gilchrist,Tristan Thompson,Raymond Felton,250.75,None
+baselineFloorAvgBonus,LeBron James,Kyrie Irving,Draymond Green,Al Horford,Klay Thompson,Tristan Thompson,Channing Frye,Terry Rozier,221.5,None
+baselineFloorAvg,LeBron James,Kyrie Irving,Draymond Green,Klay Thompson,Avery Bradley,Tristan Thompson,Frank Kaminsky,Marco Belinelli,212.0,None
+baselineSvnGameAvg,LeBron James,Kyrie Irving,Draymond Green,Al Horford,Avery Bradley,Tristan Thompson,Raymond Felton,Andre Iguodala,244.75,None
+baselineSvnGameAvgBonus,LeBron James,Draymond Green,Al Horford,Klay Thompson,Victor Oladipo,Michael Kidd-Gilchrist,Tristan Thompson,Raymond Felton,250.75,None
+frGameAvgBonus,Stephen Curry,DeAndre Jordan,Al Horford,Klay Thompson,Enes Kanter,Michael Kidd-Gilchrist,Austin Rivers,Spencer Hawes,257.5,None
+baselineFrGameAvgBonus,Kevin Durant,Kevin Love,Al Horford,Klay Thompson,Victor Oladipo,Austin Rivers,Tristan Thompson,Spencer Hawes,204.0,None
+baselineFrGameAvg,LeBron James,Kevin Durant,Stephen Curry,Avery Bradley,Tristan Thompson,Spencer Hawes,Marco Belinelli,Trey Lyles,197.5,None

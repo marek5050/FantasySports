@@ -1,0 +1,11 @@
+Strategy,p1,p2,p3,p4,p5,p6,p7,p8
+"floorAvgBonus",Russell Westbrook,DeMarcus Cousins,Victor Oladipo,Steven Adams,Marcus Morris,Darren Collison,Jordan Clarkson,Jerami Grant
+"baselineBonus",Russell Westbrook,DeMarcus Cousins,Victor Oladipo,Steven Adams,Marcus Morris,Darren Collison,Jordan Clarkson,Jerami Grant
+"svnGameBonus",DeMarcus Cousins,Andre Drummond,Julius Randle,D'Angelo Russell,Enes Kanter,Steven Adams,Darren Collison,Stanley Johnson
+"baselineFloorAvgBonus",Russell Westbrook,DeMarcus Cousins,Victor Oladipo,Steven Adams,Marcus Morris,Darren Collison,Jordan Clarkson,Jerami Grant
+"baselineFloorAvg",Russell Westbrook,DeMarcus Cousins,Victor Oladipo,Steven Adams,Marcus Morris,Darren Collison,Jordan Clarkson,Jerami Grant
+"baselineSvnGameAvg",DeMarcus Cousins,Andre Drummond,Julius Randle,D'Angelo Russell,Victor Oladipo,Steven Adams,Darren Collison,Vince Carter
+"baselineSvnGameAvgBonus",DeMarcus Cousins,Andre Drummond,Julius Randle,D'Angelo Russell,Victor Oladipo,Steven Adams,Darren Collison,James Ennis III
+"frGameAvgBonus",DeMarcus Cousins,Andre Drummond,Mike Conley,Enes Kanter,Zach Randolph,Marcus Morris,Darren Collison,Jordan Clarkson
+"baselineFrGameAvgBonus",DeMarcus Cousins,Andre Drummond,Mike Conley,Enes Kanter,Zach Randolph,Marcus Morris,Darren Collison,Jordan Clarkson
+"baselineFrGameAvg",DeMarcus Cousins,Andre Drummond,Mike Conley,Enes Kanter,Zach Randolph,Marcus Morris,Darren Collison,Jordan Clarkson
