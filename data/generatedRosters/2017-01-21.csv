@@ -1,11 +1,11 @@
-Strategy,p1,p2,p3,p4,p5,p6,p7,p8
-"floorAvgBonus",John Wall,Damian Lillard,Andre Drummond,Marc Gasol,Kristaps Porzingis,Marreese Speights,Courtney Lee,James Ennis III
-"baselineBonus",Damian Lillard,Mike Conley,Andre Drummond,Marc Gasol,Kristaps Porzingis,Trevor Booker,T.J. Warren,Courtney Lee
-"svnGameBonus",Damian Lillard,Carmelo Anthony,Nicolas Batum,Marc Gasol,Zach Randolph,Patrick Beverley,Marreese Speights,Frank Kaminsky
-"baselineFloorAvgBonus",John Wall,Damian Lillard,Andre Drummond,Marc Gasol,Kristaps Porzingis,T.J. Warren,Courtney Lee,James Ennis III
-"baselineFloorAvg",John Wall,Kemba Walker,DeAndre Jordan,Marc Gasol,Kristaps Porzingis,Marreese Speights,Courtney Lee,James Ennis III
-"baselineSvnGameAvg",Kemba Walker,Carmelo Anthony,DeAndre Jordan,Marc Gasol,Kristaps Porzingis,Patrick Beverley,Frank Kaminsky,Vince Carter
-"baselineSvnGameAvgBonus",Damian Lillard,Kemba Walker,Carmelo Anthony,Andre Drummond,Marc Gasol,Marreese Speights,Frank Kaminsky,Courtney Lee
-"frGameAvgBonus",DeAndre Jordan,Mike Conley,Devin Booker,Derrick Rose,Markieff Morris,Zach Randolph,Tyson Chandler,Marreese Speights
-"baselineFrGameAvgBonus",Carmelo Anthony,DeAndre Jordan,Mike Conley,Devin Booker,Derrick Rose,Tyson Chandler,T.J. Warren,Marreese Speights
-"baselineFrGameAvg",Carmelo Anthony,DeAndre Jordan,Mike Conley,Devin Booker,Derrick Rose,Tyson Chandler,T.J. Warren,Marreese Speights
+Strategy,p1,p2,p3,p4,p5,p6,p7,p8,DKFPS,Result
+floorAvgBonus,John Wall,Damian Lillard,Andre Drummond,Marc Gasol,Kristaps Porzingis,Marreese Speights,Courtney Lee,James Ennis III,241.5,Loss
+baselineBonus,Damian Lillard,Mike Conley,Andre Drummond,Marc Gasol,Kristaps Porzingis,Trevor Booker,T.J. Warren,Courtney Lee,222.75,Loss
+svnGameBonus,Damian Lillard,Carmelo Anthony,Nicolas Batum,Marc Gasol,Zach Randolph,Patrick Beverley,Marreese Speights,Frank Kaminsky,282.25,Win
+baselineFloorAvgBonus,John Wall,Damian Lillard,Andre Drummond,Marc Gasol,Kristaps Porzingis,T.J. Warren,Courtney Lee,James Ennis III,225.0,Loss
+baselineFloorAvg,John Wall,Kemba Walker,DeAndre Jordan,Marc Gasol,Kristaps Porzingis,Marreese Speights,Courtney Lee,James Ennis III,243.5,Loss
+baselineSvnGameAvg,Kemba Walker,Carmelo Anthony,DeAndre Jordan,Marc Gasol,Kristaps Porzingis,Patrick Beverley,Frank Kaminsky,Vince Carter,248.75,Loss
+baselineSvnGameAvgBonus,Damian Lillard,Kemba Walker,Carmelo Anthony,Andre Drummond,Marc Gasol,Marreese Speights,Frank Kaminsky,Courtney Lee,268.0,Win
+frGameAvgBonus,DeAndre Jordan,Mike Conley,Devin Booker,Derrick Rose,Markieff Morris,Zach Randolph,Tyson Chandler,Marreese Speights,257.25,Win
+baselineFrGameAvgBonus,Carmelo Anthony,DeAndre Jordan,Mike Conley,Devin Booker,Derrick Rose,Tyson Chandler,T.J. Warren,Marreese Speights,258.5,Win
+baselineFrGameAvg,Carmelo Anthony,DeAndre Jordan,Mike Conley,Devin Booker,Derrick Rose,Tyson Chandler,T.J. Warren,Marreese Speights,258.5,Win

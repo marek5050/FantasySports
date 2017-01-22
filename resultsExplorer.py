@@ -6,9 +6,27 @@ from datetime import date
 import glob
 
 #today = str(date.yesterday())
-today = "2017-01-20"
+today = "2017-01-21"
 
 rosterscsv = 'data/generatedRosters/'+today+'.csv'
+
+from nba_py import player as players
+from nba_py.player import get_player
+
+
+def getName(_name):
+    name = _name.replace("J.J. Redick", "JJ Redick") \
+        .replace("T.J. Warren", "TJ Warren") \
+        .replace("P.J. Warren", "PJ Warren") \
+        .replace("P.J. Tucker", "PJ Tucker") \
+        .replace("J.R. Smith", "JR Smith") \
+        .replace("C.J. McCollum", "CJ McCollum") \
+        .replace("C.J. Miles", "CJ Miles") \
+        .replace("C.J. Watson", "CJ Watson") \
+        .replace("C.J. Wilcox", "CJ Wilcox") \
+        .replace("K.J. McDaniels", "KJ McDaniels") \
+        .split(" ", maxsplit=1)
+    return name
 
 def getSeasonStats(name):
         '''
@@ -22,12 +40,9 @@ def getSeasonStats(name):
             Double-Double = +1.5PTs (MAX 1 PER PLAYER: Points, Rebounds, Assists, Blocks, Steals)
             Triple-Double = +3PTs (MAX 1 PER PLAYER: Points, Rebounds, Assists, Blocks, Steals)
             '''
-
-        from nba_py import player as players
-        from nba_py.player import get_player
-        name = name.replace("C.J. McCollum","CJ McCollum").split(" ")
+        first,last = getName(name)
         try:
-            pid =  get_player(name[0],name[1])
+            pid =  get_player(first,last)
         except:
             print("Problem with player")
             print(name)
@@ -118,6 +133,42 @@ def displayResults():
     grouped = frame.groupby(["Strategy"]).mean()
     grouped["ratio"] = win / (loss+win)
     print(grouped)
+    return
+
+pLogs = {}
+
+def calculateDKFPSforOutputFile(_date,_file):
+    df = pd.read_csv(_file, index_col=None, header=1)
+    df["Final"] = 0
+    for idx,row in df.iterrows():
+        first, last = getName(row["Name"])
+        pId = players.get_player(first, last)
+        if pId not in pLogs:
+            pLogs[pId] = players.PlayerGameLogs(pId).info()
+
+        logs = pLogs[pId]
+        logs["GAME_DATE"] = pd.to_datetime(logs["GAME_DATE"],utc=True)
+        _r = logs[logs["GAME_DATE"] == _date]
+        _rReturn = getDKFPS(_r)
+        row["Final"]=_rReturn["DKFPS"]
+
+    df.to_csv(_file)
+    return
+
+def calculateDKFPSforOutput():
+    #all = glob.iglob('data/generatedRosters/' + today + '.csv')
+    #results = pd.DataFrame.from_csv(all)
+
+    path = r'data/output/'  # use your path
+    allFiles = glob.glob(path + "/*.csv")
+    for _file in allFiles:
+        try:
+            _date = _file.split("/")[2].split(".csv")[0]
+            if "_" in _date:
+                _date = _date.split("_")[0]
+            calculateDKFPSforOutputFile(_date,_file)
+        except:
+            pass
     return
 
 displayResults()
