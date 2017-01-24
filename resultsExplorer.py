@@ -6,7 +6,7 @@ from datetime import date
 import glob
 
 #today = str(date.yesterday())
-today = "2017-01-21"
+today = "2017-01-23"
 
 rosterscsv = 'data/generatedRosters/'+today+'.csv'
 
@@ -14,8 +14,17 @@ from nba_py import player as players
 from nba_py.player import get_player
 
 
+
+#import requests
+#import requests_cache
+
+#requests_cache.install_cache('demo_cache')
+
+
+
 def getName(_name):
-    name = _name.replace("J.J. Redick", "JJ Redick") \
+    name = _name\
+        .replace("J.J. Redick", "JJ Redick") \
         .replace("T.J. Warren", "TJ Warren") \
         .replace("P.J. Warren", "PJ Warren") \
         .replace("P.J. Tucker", "PJ Tucker") \
@@ -25,7 +34,13 @@ def getName(_name):
         .replace("C.J. Watson", "CJ Watson") \
         .replace("C.J. Wilcox", "CJ Wilcox") \
         .replace("K.J. McDaniels", "KJ McDaniels") \
+        .replace("T.J. McConnell","TJ McConnell") \
+        .replace("A.J. Hammons","AJ Hammons") \
         .split(" ", maxsplit=1)
+    if "McAdoo" in name[1]:
+        name[0] = "James Michael"
+        name[1] = "McAdoo"
+
     return name
 
 def getSeasonStats(name):
@@ -65,12 +80,13 @@ def getDKFPS(seasonStats):
             try:
                 p = seasonStats.filter(items=['MATCHUP',"GAME_DATE",'PTS', 'BLK', 'STL', 'AST', 'REB', 'FG3M', 'TOV'])
                 p["Bonus"] = p[p >= 10].count(axis=1,numeric_only=True)
-                p.Bonus[p.Bonus < 2] = 0.0
-                p.Bonus[p.Bonus == 2] = 1.5
-                p.Bonus[p.Bonus >= 3] = 4.5
+                p.loc[p["Bonus"] < 2,"Bonus"] = 0.0
+                p.loc[p["Bonus"] == 2,"Bonus"] = 1.5
+                p.loc[p["Bonus"] > 2,"Bonus"] = 4.5
                 p["DKFPS"] = 1 * (p.PTS) + 0.5 * (p.FG3M) + 1.25 * (p.REB) + 1.5 * (p.AST) + 2 * (p.STL) + 2 * (p.BLK) - 0.5 * (p.TOV) + p.Bonus
             except:
                 pass
+
             return p
 
 def updateResults():
@@ -81,22 +97,22 @@ def updateResults():
         history = pd.DataFrame.from_csv(history)
     except:
         print("Failed to open file. ")
+    if "DKFPS" not in rrosters:
+        rrosters["DKFPS"] = 0.0
+        for index,row in rrosters.iterrows():
+            s = 0
+            for player in row[0:8]:
+                    stats = getSeasonStats(player)
+                    if stats is not None:
+                        pts = getDKFPS(stats)
+                        s += pts.loc[0,"DKFPS"]
+            rrosters.loc[index, "DKFPS"] = s
 
-    rrosters["DKFPS"] = 0.0
-    for index,row in rrosters.iterrows():
-        s = 0
-        for player in row[0:8]:
-                stats = getSeasonStats(player)
-                if stats is not None:
-                    pts = getDKFPS(stats)
-                    s += pts.loc[0,"DKFPS"]
-        rrosters.loc[index, "DKFPS"] = s
-
-    rrosters["Result"] = "None"
-    for index,row in rrosters.iterrows():
-        r = history[(history["Points"] == row["DKFPS"]) & (history["Contest_Date_EST"] == "2017-01-08 20:00:00")][:1]
-        if r is not None and len(r) > 0:
-            rrosters.loc[index,"Result"] = "Win" if r.loc["NBA","Place"] <= r.loc["NBA","Places_Paid"] else "Loss"
+        rrosters["Result"] = "None"
+        for index,row in rrosters.iterrows():
+            r = history[(history["Points"] == row["DKFPS"]) & (history["Contest_Date_EST"] == "2017-01-08 20:00:00")][:1]
+            if r is not None and len(r) > 0:
+                rrosters.loc[index,"Result"] = "Win" if r.loc["NBA","Place"] <= r.loc["NBA","Places_Paid"] else "Loss"
 
     rrosters.to_csv(rosterscsv)
 
@@ -138,26 +154,37 @@ def displayResults():
 pLogs = {}
 
 def calculateDKFPSforOutputFile(_date,_file):
-    df = pd.read_csv(_file, index_col=None, header=1)
-    df["Final"] = 0
+    df = pd.read_csv(_file, index_col=None, header=0)
+    if "Final" in df:
+        return
     for idx,row in df.iterrows():
-        first, last = getName(row["Name"])
-        pId = players.get_player(first, last)
-        if pId not in pLogs:
-            pLogs[pId] = players.PlayerGameLogs(pId).info()
+        try:
+            first, last = getName(row["Name"])
+            pId = players.get_player(first, last).values[0]
+            if pId not in pLogs:
+                pLogs[pId] = players.PlayerGameLogs(pId).info()
 
-        logs = pLogs[pId]
-        logs["GAME_DATE"] = pd.to_datetime(logs["GAME_DATE"],utc=True)
-        _r = logs[logs["GAME_DATE"] == _date]
-        _rReturn = getDKFPS(_r)
-        row["Final"]=_rReturn["DKFPS"]
+            logs = pLogs[pId]
+            logs["GAME_DATE"] = pd.to_datetime(logs["GAME_DATE"],utc=True)
+            _r = logs[logs["GAME_DATE"] == _date]
+            _rReturn = getDKFPS(_r)
 
-    df.to_csv(_file)
+            val = 0
+
+            if len(_rReturn) > 0:
+                val = _rReturn["DKFPS"].values[0]
+
+            df.loc[idx, ("Final")]= val
+        except Exception as e:
+            print("Failed to process " + row["Name"])
+            print(e)
+
+    df.to_csv(_file, sep=',', encoding='utf-8', index=False, float_format='%.3f')
     return
 
 def calculateDKFPSforOutput():
-    #all = glob.iglob('data/generatedRosters/' + today + '.csv')
-    #results = pd.DataFrame.from_csv(all)
+    # all = glob.iglob('data/generatedRosters/' + today + '.csv')
+    # results = pd.DataFrame.from_csv(all)
 
     path = r'data/output/'  # use your path
     allFiles = glob.glob(path + "/*.csv")
@@ -167,8 +194,43 @@ def calculateDKFPSforOutput():
             if "_" in _date:
                 _date = _date.split("_")[0]
             calculateDKFPSforOutputFile(_date,_file)
-        except:
+        except Exception as e:
+            print("failed something ")
+            print(e)
             pass
     return
 
+
+def addVegasForOutput():
+    # all = glob.iglob('data/generatedRosters/' + today + '.csv')
+    # results = pd.DataFrame.from_csv(all)
+
+    path = r'data/output/'  # use your path
+    allFiles = glob.glob(path + "/*.csv")
+    for _file in allFiles:
+        try:
+            _date = _file.split("/")[2].split(".csv")[0]
+            if "_" in _date:
+                _date = _date.split("_")[0]
+            df = pd.read_csv("data/output/"+_date+".csv",header=0, index_col=None)
+            vegas = pd.read_csv("data/vegas/"+_date+".csv")
+            vegas = vegas.set_index("team")
+            for idx, row in df.iterrows():
+                df.loc[idx, "O/U"] = vegas.loc[row["teamAbbrev"].upper()]["overUnder"]
+                df.loc[idx, "odds"] = vegas.loc[row["teamAbbrev"].upper()]["odds"]
+
+            df.to_csv("data/output/"+_date+".csv", sep=',', encoding='utf-8', index=False, float_format='%.3f')
+
+        except Exception as e:
+            print("Error with date: " + _date)
+            print(e)
+            pass
+
+    return
+
+
+
+updateResults()
 displayResults()
+# calculateDKFPSforOutput()
+#addVegasForOutput()

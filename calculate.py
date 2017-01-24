@@ -178,18 +178,21 @@ class Player:
 
         from nba_py import player as players
         from nba_py.player import get_player
-        name = self.name.replace("Jr.","")      \
-            .replace("J.J. Redick","JJ Redick") \
-            .replace("T.J. Warren","TJ Warren") \
-            .replace("P.J. Warren","PJ Warren") \
-            .replace("P.J. Tucker","PJ Tucker") \
-            .replace("J.R. Smith" ,"JR Smith")  \
-            .replace("C.J. McCollum","CJ McCollum") \
-            .replace("C.J. Miles", "CJ Miles") \
-            .replace("C.J. Watson", "CJ Watson") \
-            .replace("C.J. Wilcox", "CJ Wilcox") \
-            .replace("K.J. McDaniels", "KJ McDaniels") \
-            .split(" ",maxsplit=1)
+        name = self.name\
+        .replace("J.J. Redick", "JJ Redick") \
+        .replace("T.J. Warren", "TJ Warren") \
+        .replace("P.J. Warren", "PJ Warren") \
+        .replace("P.J. Tucker", "PJ Tucker") \
+        .replace("J.R. Smith", "JR Smith") \
+        .replace("C.J. McCollum", "CJ McCollum") \
+        .replace("C.J. Miles", "CJ Miles") \
+        .replace("C.J. Watson", "CJ Watson") \
+        .replace("C.J. Wilcox", "CJ Wilcox") \
+        .replace("K.J. McDaniels", "KJ McDaniels") \
+        .replace("T.J. McConnell","TJ McConnell") \
+        .replace("A.J. Hammons","AJ Hammons") \
+        .split(" ", maxsplit=1)
+
         try:
             pid =  get_player(name[0],name[1])
         except Exception as e:
@@ -589,7 +592,7 @@ if __name__ == "__main__":
                 efgs.loc[index,("dvp")] = player.dvp or 0.00
                 efgs.loc[index,('value')] = player.salary*0.001*6
                 efgs.loc[index,("O/U")] = vegas.loc[player.team]["overUnder"]
-                efgs.loc[index,("±")] = vegas.loc[player.team]["odds"]
+                efgs.loc[index,("odds")] = vegas.loc[player.team]["odds"]
                 positions = player.position.lower().split("/")
                 #efgs.loc[index,("penalty")] =
                 penalty = 0

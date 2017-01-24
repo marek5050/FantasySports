@@ -1,26 +1,17 @@
-import json
+import glob
 import pandas as pd
-import numpy as np
-from datetime import date
 
-from nba_py import player as players
-from nba_py.player import get_player
+path = r'data/output/'  # use your path
+allFiles = glob.glob(path + "/2*.csv")
+dfTemp = pd.DataFrame()
+features = ["Name", "Final", "AvgPointsPerGame", "O/U", "odds"]
 
-name = "Stephen Curry".split(" ")
-try:
-    pid = get_player(name[0], name[1])
-except:
-    print("Problem with player")
-    print(name)
+for file_ in allFiles:
+    try:
+        df1 = pd.read_csv(file_, index_col=None, header=0)
+        dfTemp = pd.concat([dfTemp, df1[features]])
+    except:
+        pass
 
-c = players.PlayerGameLogs(pid)
-k = c.info()
-
-k.PTS = k.PTS.astype(float)
-k.BLK = k.BLK.astype(float)
-k.STL = k.STL.astype(float)
-k.AST = k.AST.astype(float)
-k.REB = k.REB.astype(float)
-k.FG3M = k.FG3M.astype(float)
-k.TOV = k.TOV.astype(float)
-seasonStats = k
+df = dfTemp[features]
+df.loc[:, ("Name", "Final")]

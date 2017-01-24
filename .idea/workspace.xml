@@ -1,14 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="289189b2-db15-4b29-8e00-7ee0c0b6a1fa" name="Default" comment="Fixed training and test sets.">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TimeSeriesPredictions.ipynb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/extras/notebooks/international-airline-passengers.csv" />
+    <list default="true" id="289189b2-db15-4b29-8e00-7ee0c0b6a1fa" name="Default" comment="Calculating outputs DKFPS">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/output/3017-01-23_original.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/salaries/2017-01-23.csv" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/output/2017-01-10_modified.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/output/2017-01-11_modified.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/output/2017-01-12_modified.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/output/2017-01-15_early.csv" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/data/output/2017-01-15_late.csv" afterPath="$PROJECT_DIR$/data/output/2017-01-15.csv" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/data/output/2017-01-20_original.csv" afterPath="$PROJECT_DIR$/data/output/2017-01-20.csv" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/nba_cache.sqlite" afterPath="$PROJECT_DIR$/nba_cache.sqlite" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/NeuralNetsPrediction.ipynb" afterPath="$PROJECT_DIR$/NeuralNetsPrediction.ipynb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/generatedRosters/2017-01-21.csv" afterPath="$PROJECT_DIR$/data/generatedRosters/2017-01-21.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Notebook.ipynb" afterPath="$PROJECT_DIR$/Notebook.ipynb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RosterGenerator.nb" afterPath="$PROJECT_DIR$/RosterGenerator.nb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Vegas.py" afterPath="$PROJECT_DIR$/Vegas.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/calculate.py" afterPath="$PROJECT_DIR$/calculate.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/extras/test.csv" afterPath="$PROJECT_DIR$/data/extras/test.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/extras/train.csv" afterPath="$PROJECT_DIR$/data/extras/train.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/output/2017-01-03.csv" afterPath="$PROJECT_DIR$/data/output/2017-01-03.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/output/2017-01-04.csv" afterPath="$PROJECT_DIR$/data/output/2017-01-04.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/output/2017-01-05.csv" afterPath="$PROJECT_DIR$/data/output/2017-01-05.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/output/2017-01-06.csv" afterPath="$PROJECT_DIR$/data/output/2017-01-06.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/output/2017-01-08.csv" afterPath="$PROJECT_DIR$/data/output/2017-01-08.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/output/2017-01-10.csv" afterPath="$PROJECT_DIR$/data/output/2017-01-10.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/output/2017-01-11.csv" afterPath="$PROJECT_DIR$/data/output/2017-01-11.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/output/2017-01-12.csv" afterPath="$PROJECT_DIR$/data/output/2017-01-12.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/output/2017-01-13.csv" afterPath="$PROJECT_DIR$/data/output/2017-01-13.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/output/2017-01-14.csv" afterPath="$PROJECT_DIR$/data/output/2017-01-14.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/output/2017-01-16.csv" afterPath="$PROJECT_DIR$/data/output/2017-01-16.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/output/2017-01-17.csv" afterPath="$PROJECT_DIR$/data/output/2017-01-17.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/output/2017-01-18.csv" afterPath="$PROJECT_DIR$/data/output/2017-01-18.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/output/2017-01-19.csv" afterPath="$PROJECT_DIR$/data/output/2017-01-19.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/output/2017-01-21.csv" afterPath="$PROJECT_DIR$/data/output/2017-01-21.csv" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resultsExplorer.py" afterPath="$PROJECT_DIR$/resultsExplorer.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/temp.py" afterPath="$PROJECT_DIR$/temp.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -18,19 +45,21 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/NBA$Calculate_Averages_Simple.coverage" NAME="Calculate Averages Simple Coverage Results" MODIFIED="1485032143851" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/NBA$Calculate_Scores.coverage" NAME="Calculate Scores Coverage Results" MODIFIED="1485119257880" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/NBA$Calculate_Scores__1_.coverage" NAME="Calculate Scores (1) Coverage Results" MODIFIED="1485271659933" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/NBA$Calculate_Averages_Simple.coverage" NAME="Calculate Averages Simple Coverage Results" MODIFIED="1485206818396" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/NBA$Calculate_Scores.coverage" NAME="Calculate Scores Coverage Results" MODIFIED="1485267694189" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/NBA$Team_updates.coverage" NAME="Team updates Coverage Results" MODIFIED="1484343854608" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/NBA$HistoricalDFS.coverage" NAME="HistoricalDFS Coverage Results" MODIFIED="1484943316311" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/NBA$Injuries.coverage" NAME="Injuries Coverage Results" MODIFIED="1485032068348" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/NBA$Injuries.coverage" NAME="Injuries Coverage Results" MODIFIED="1485205450693" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/NBA$Unnamed.coverage" NAME="Calculate Coverage Results" MODIFIED="1483737105136" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/NBA$Targets.coverage" NAME="Targets Coverage Results" MODIFIED="1485032070000" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/NBA$Targets.coverage" NAME="Targets Coverage Results" MODIFIED="1485205452098" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/NBA$Updates.coverage" NAME="Team updates Coverage Results" MODIFIED="1483804883967" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/NBA$Calculate.coverage" NAME="Calculate Averages Coverage Results" MODIFIED="1484166049383" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/NBA$blah.coverage" NAME="blah Coverage Results" MODIFIED="1484965588491" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/NBA$Defense.coverage" NAME="Defense Coverage Results" MODIFIED="1485032072790" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/NBA$Calculate_Averages.coverage" NAME="Calculate Averages Coverage Results" MODIFIED="1485032077194" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/NBA$Vegas.coverage" NAME="Vegas Coverage Results" MODIFIED="1485032075789" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/NBA$Defense.coverage" NAME="Defense Coverage Results" MODIFIED="1485205454442" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/NBA$Calculate_Averages.coverage" NAME="Calculate Averages Coverage Results" MODIFIED="1485205458165" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/NBA$VegasOddsAll.coverage" NAME="VegasOddsAll Coverage Results" MODIFIED="1485225649261" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/NBA$Vegas.coverage" NAME="Vegas Coverage Results" MODIFIED="1485205457140" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
@@ -40,116 +69,68 @@
     <favorites_list name="NBA" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.5">
-      <split-first>
-        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="calculate.py" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/calculate.py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="144">
-                  <caret line="201" column="39" lean-forward="false" selection-start-line="201" selection-start-column="28" selection-end-line="201" selection-end-column="39" />
-                  <folding>
-                    <element signature="e#25#36#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="resultsExplorer.py" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/resultsExplorer.py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="18">
-                  <caret line="155" column="10" lean-forward="false" selection-start-line="155" selection-start-column="10" selection-end-line="155" selection-end-column="10" />
-                  <folding>
-                    <element signature="e#0#11#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="temp2.py" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/temp2.py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="144">
-                  <caret line="65" column="38" lean-forward="true" selection-start-line="65" selection-start-column="38" selection-end-line="65" selection-end-column="92" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="NeuralNetsPrediction.ipynb" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/NeuralNetsPrediction.ipynb">
-              <provider selected="true" editor-type-id="ipnb-editor">
-                <state>
-                  <selected id="5" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="1-1_Basic_NN-Titanic.ipynb" pinned="false" current-in-tab="false">
-            <entry file="file://$USER_HOME$/neural-networks/1-1_Basic_NN-Titanic.ipynb">
-              <provider selected="true" editor-type-id="ipnb-editor">
-                <state>
-                  <selected id="9" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="test.ipynb" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/test.ipynb">
-              <provider selected="true" editor-type-id="ipnb-editor">
-                <state>
-                  <selected id="1" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="TimeSeriesPredictions.ipynb" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/TimeSeriesPredictions.ipynb">
-              <provider selected="true" editor-type-id="ipnb-editor">
-                <state>
-                  <selected id="13" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="2017-01-20_original.csv" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/data/output/2017-01-20_original.csv">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="3600">
-                  <caret line="240" column="29" lean-forward="false" selection-start-line="240" selection-start-column="26" selection-end-line="240" selection-end-column="29" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="2017-01-15_early.csv" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/data/output/2017-01-15_early.csv">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="-586">
-                  <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-first>
-      <split-second>
-        <leaf>
-          <file leaf-file-name="2017-01-21.csv" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/data/output/2017-01-21.csv">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="15">
-                  <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-second>
-    </splitter>
+    <leaf>
+      <file leaf-file-name="temp2.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/temp2.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="285">
+              <caret line="50" column="21" lean-forward="true" selection-start-line="50" selection-start-column="21" selection-end-line="50" selection-end-column="21" />
+              <folding>
+                <element signature="e#0#11#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="temp.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/temp.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="11" lean-forward="true" selection-start-line="0" selection-start-column="11" selection-end-line="0" selection-end-column="11" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="2017-01-03.csv" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/data/output/2017-01-03.csv">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="322">
+              <caret line="117" column="57" lean-forward="false" selection-start-line="117" selection-start-column="57" selection-end-line="117" selection-end-column="57" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Notebook.ipynb" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Notebook.ipynb">
+          <provider selected="true" editor-type-id="ipnb-editor">
+            <state>
+              <selected id="8" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Vegas.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Vegas.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="297">
+              <caret line="70" column="26" lean-forward="true" selection-start-line="70" selection-start-column="26" selection-end-line="70" selection-end-column="26" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="NeuralNetsPrediction.ipynb" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/NeuralNetsPrediction.ipynb">
+          <provider selected="true" editor-type-id="ipnb-editor">
+            <state>
+              <selected id="10" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -161,40 +142,62 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>dfs</find>
-      <find>calcu</find>
+      <find>CHO</find>
+      <find>,CHO,</find>
+      <find>BKn</find>
+      <find>,BRK,</find>
+      <find>Ch</find>
+      <find>Cha</find>
+      <find>BRK</find>
+      <find>,Brk,</find>
+      <find>NO</find>
+      <find>NOP</find>
+      <find>Bkn</find>
+      <find>,NOP,</find>
+      <find>SAS</find>
+      <find>sas</find>
+      <find>,SAS,</find>
+      <find>0.000,,</find>
+      <find>,,</find>
+      <find>,SA,</find>
+      <find>penalty</find>
+      <find>pena</find>
+      <find>expectedScore</find>
+      <find>AvgPointsPerGame</find>
+      <find>,True,</find>
+      <find>,False,</find>
       <find>DKFP</find>
-      <find>strategy</find>
-      <find>team</find>
-      <find>lee</find>
-      <find>Lee</find>
-      <find>defe</find>
-      <find>vegas</find>
-      <find>*</find>
-      <find>op</find>
-      <find>OP</find>
-      <find>calendar</find>
-      <find>teamlogs</find>
-      <find>save</find>
-      <find>to_csv</find>
-      <find>rename</find>
-      <find>TEAM</find>
-      <find>teamLogs</find>
-      <find>Failed at</find>
-      <find>Korver</find>
-      <find>Demarcus</find>
-      <find>concat</find>
-      <find>Sefolosha</find>
-      <find>categorical_crossentropy</find>
-      <find>loss</find>
-      <find>CJ</find>
-      <find>ennis</find>
-      <find>iso</find>
-      <find>to_datetime</find>
+      <find>teague</find>
+      <find>glob</find>
+      <find>,[0-9]\.[0-9]*\n</find>
+      <find>,-?[0-9]+\.[0-9]*\n</find>
+      <find>1.00</find>
     </findStrings>
     <replaceStrings>
       <replace>,0.00\n</replace>
+      <replace>0</replace>
+      <replace>1</replace>
+      <replace>UTA</replace>
+      <replace>BRK</replace>
+      <replace>CHA</replace>
+      <replace>,CHA,</replace>
+      <replace>,BKN,</replace>
+      <replace>BKN</replace>
+      <replace>,Bkn,</replace>
+      <replace>NO</replace>
+      <replace>NOP</replace>
+      <replace>,NO,</replace>
+      <replace>SA</replace>
+      <replace>,SA,</replace>
+      <replace>,1,</replace>
+      <replace>,0,</replace>
+      <replace>,</replace>
+      <replace>\n</replace>
     </replaceStrings>
+    <dirStrings>
+      <dir>$PROJECT_DIR$/data/vegas</dir>
+      <dir>$PROJECT_DIR$/data/output</dir>
+    </dirStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -202,57 +205,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/DefenseVsPosition.py" />
-        <option value="$PROJECT_DIR$/data/Defense/2017-01-16.csv" />
-        <option value="$PROJECT_DIR$/data/targets/2017-01-16.json" />
-        <option value="$PROJECT_DIR$/data/vegas/2017-01-16.csv" />
-        <option value="$PROJECT_DIR$/data/vegas/2017-01-15.csv" />
-        <option value="$PROJECT_DIR$/data/injuries/2017-01-16.json" />
-        <option value="$PROJECT_DIR$/data/output/2017-01-16.csv" />
-        <option value="$PROJECT_DIR$/data/vegas/2017-01-17.csv" />
-        <option value="$PROJECT_DIR$/data/Defense/2017-01-17.csv" />
-        <option value="$PROJECT_DIR$/data/targets/2017-01-17.json" />
-        <option value="$PROJECT_DIR$/data/salaries/2017-01-17.csv" />
-        <option value="$PROJECT_DIR$/data/injuries/2017-01-17.json" />
-        <option value="$PROJECT_DIR$/data/output/2017-01-17.csv" />
-        <option value="$PROJECT_DIR$/data/generatedRosters/2017-01-17.csv" />
-        <option value="$PROJECT_DIR$/data/targets/2017-01-18.json" />
-        <option value="$PROJECT_DIR$/data/strategies/strategies.csv" />
-        <option value="$PROJECT_DIR$/Vegas.py" />
-        <option value="$PROJECT_DIR$/data/vegas/2017-01-18.csv" />
-        <option value="$PROJECT_DIR$/data/generatedRosters/2017-01-18_25years.csv" />
-        <option value="$PROJECT_DIR$/data/generatedRosters/2017-01-18_original.csv" />
-        <option value="$PROJECT_DIR$/data/output/2017-01-18.csv" />
-        <option value="$PROJECT_DIR$/data/vegas/2017-01-19.csv" />
-        <option value="$PROJECT_DIR$/data/injuries/2017-01-19.json" />
-        <option value="$PROJECT_DIR$/NBATargets.py" />
-        <option value="$PROJECT_DIR$/data/targets/2017-01-19.json" />
-        <option value="$PROJECT_DIR$/data/generatedRosters/2017-01-18.csv" />
-        <option value="$PROJECT_DIR$/data/blacklisted/list.csv" />
-        <option value="$PROJECT_DIR$/data/output/2017-01-19.csv" />
-        <option value="$PROJECT_DIR$/data/generatedRosters/2017-01-19.csv" />
-        <option value="$PROJECT_DIR$/data/historicalDFS/2017-01-20.csv" />
-        <option value="$PROJECT_DIR$/HistoricalDFS.py" />
-        <option value="$PROJECT_DIR$/data/vegas/2017-01-20.csv" />
-        <option value="$PROJECT_DIR$/blah.py" />
-        <option value="$PROJECT_DIR$/data/output/2017-01-20.csv" />
-        <option value="$PROJECT_DIR$/data/generatedRosters/2017-01-20.csv" />
-        <option value="$PROJECT_DIR$/data/extras/blah.pickle" />
-        <option value="$PROJECT_DIR$/data/vegas/2017-01-21.csv" />
-        <option value="$PROJECT_DIR$/calculate.py" />
-        <option value="$PROJECT_DIR$/data/extras/1610612737.csv" />
-        <option value="$PROJECT_DIR$/data/extras/test_.csv" />
-        <option value="$PROJECT_DIR$/temp2.py" />
-        <option value="$PROJECT_DIR$/data/extras/test.csv" />
         <option value="$PROJECT_DIR$/data/extras/train.csv" />
-        <option value="$PROJECT_DIR$/data/output/2017-01-21.csv" />
-        <option value="$PROJECT_DIR$/diabetes.data" />
+        <option value="$PROJECT_DIR$/data/extras/test.csv" />
+        <option value="$PROJECT_DIR$/data/vegas/2017-01-23.csv" />
+        <option value="$PROJECT_DIR$/data/output/2017-01-23.csv" />
         <option value="$PROJECT_DIR$/test.ipynb" />
-        <option value="$PROJECT_DIR$/TimeSeriesPredictions.ipynb" />
+        <option value="$PROJECT_DIR$/Vegas.py" />
+        <option value="$PROJECT_DIR$/data/vegas/2017-01-9.csv" />
+        <option value="$PROJECT_DIR$/data/vegas/2017-01-8.csv" />
+        <option value="$PROJECT_DIR$/data/vegas/2017-01-7.csv" />
+        <option value="$PROJECT_DIR$/data/vegas/2017-01-6.csv" />
+        <option value="$PROJECT_DIR$/data/vegas/2017-01-5.csv" />
+        <option value="$PROJECT_DIR$/data/vegas/2017-01-4.csv" />
+        <option value="$PROJECT_DIR$/data/vegas/2017-01-3.csv" />
+        <option value="$PROJECT_DIR$/data/vegas/2017-01-2.csv" />
+        <option value="$PROJECT_DIR$/data/vegas/2017-01-1.csv" />
+        <option value="$PROJECT_DIR$/data/output/2017-01-15_late.csv" />
+        <option value="$PROJECT_DIR$/data/output/2017-01-15_early.csv" />
+        <option value="$PROJECT_DIR$/data/vegas/2017-01-06.csv" />
+        <option value="$PROJECT_DIR$/data/vegas/2017-01-09.csv" />
+        <option value="$PROJECT_DIR$/data/vegas/2017-01-11.csv" />
+        <option value="$PROJECT_DIR$/data/vegas/2017-01-12.csv" />
+        <option value="$PROJECT_DIR$/data/vegas/2017-01-08.csv" />
+        <option value="$PROJECT_DIR$/data/vegas/2017-01-10.csv" />
+        <option value="$PROJECT_DIR$/data/vegas/2017-01-07.csv" />
+        <option value="$PROJECT_DIR$/data/vegas/2017-01-04.csv" />
+        <option value="$PROJECT_DIR$/data/vegas/2017-01-13.csv" />
+        <option value="$PROJECT_DIR$/data/vegas/2017-01-05.csv" />
+        <option value="$PROJECT_DIR$/data/vegas/2017-01-14.csv" />
+        <option value="$PROJECT_DIR$/data/vegas/2017-01-03.csv" />
+        <option value="$PROJECT_DIR$/data/output/2017-01-05.csv" />
+        <option value="$PROJECT_DIR$/data/output/2017-01-04.csv" />
+        <option value="$PROJECT_DIR$/data/output/2017-01-12.csv" />
+        <option value="$PROJECT_DIR$/data/output/2017-01-11.csv" />
+        <option value="$PROJECT_DIR$/data/output/2017-01-10.csv" />
+        <option value="$PROJECT_DIR$/data/output/2017-01-08.csv" />
+        <option value="$PROJECT_DIR$/data/output/2017-01-06.csv" />
+        <option value="$PROJECT_DIR$/data/output/2017-01-13.csv" />
         <option value="$PROJECT_DIR$/data/generatedRosters/2017-01-21.csv" />
-        <option value="$USER_HOME$/neural-networks/1-1_Basic_NN-Titanic.ipynb" />
-        <option value="$PROJECT_DIR$/NeuralNetsPrediction.ipynb" />
         <option value="$PROJECT_DIR$/resultsExplorer.py" />
+        <option value="$PROJECT_DIR$/data/generatedRosters/2017-01-23.csv" />
+        <option value="$PROJECT_DIR$/NeuralNetsPrediction.ipynb" />
+        <option value="$PROJECT_DIR$/data/output/3017-01-21.csv" />
+        <option value="$PROJECT_DIR$/data/output/2017-01-19.csv" />
+        <option value="$PROJECT_DIR$/data/output/2017-01-18.csv" />
+        <option value="$PROJECT_DIR$/data/output/2017-01-17.csv" />
+        <option value="$PROJECT_DIR$/data/output/2017-01-16.csv" />
+        <option value="$PROJECT_DIR$/data/output/2017-01-20.csv" />
+        <option value="$PROJECT_DIR$/data/output/2017-01-15.csv" />
+        <option value="$PROJECT_DIR$/Notebook.ipynb" />
+        <option value="$PROJECT_DIR$/temp.py" />
+        <option value="$PROJECT_DIR$/data/output/2017-01-03.csv" />
       </list>
     </option>
   </component>
@@ -269,8 +272,9 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
+    <option name="x" value="88" />
     <option name="y" value="23" />
-    <option name="width" value="1440" />
+    <option name="width" value="1352" />
     <option name="height" value="809" />
   </component>
   <component name="ProjectView">
@@ -288,7 +292,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -333,27 +336,10 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="NBA" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="NBA" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="data" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="generatedRosters" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
       <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -366,130 +352,20 @@
     <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file:///Users/marek5050/machinelearning/NBA/test.ipynb" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/data/output" />
+      <recent name="$PROJECT_DIR$/data/salaries" />
+      <recent name="$PROJECT_DIR$/data/extras/notebooks" />
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/data/generatedRosters" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/data/historicalDFS" />
       <recent name="$PROJECT_DIR$/data" />
       <recent name="$PROJECT_DIR$" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/data/extras/notebooks" />
-      <recent name="$PROJECT_DIR$/data/salaries" />
-      <recent name="$PROJECT_DIR$" />
-      <recent name="$PROJECT_DIR$/data/generatedRosters" />
-      <recent name="$PROJECT_DIR$/data/HistoryWithResults" />
-    </key>
   </component>
-  <component name="RestoreUpdateTree" date="Moments ago" ActionInfo="_Update">
-    <UpdatedFiles>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Updated from server" />
-        <option name="myStatusName" value="Changed on server" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="CHANGED_ON_SERVER" />
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Updated" />
-          <option name="myStatusName" value="Changed" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="UPDATED" />
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Created" />
-          <option name="myStatusName" value="Created" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="CREATED" />
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/NeuralNetsPrediction.ipynb</PATH>
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Deleted" />
-          <option name="myStatusName" value="Deleted" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="true" />
-          <option name="myId" value="REMOVED_FROM_REPOSITORY" />
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Restored" />
-          <option name="myStatusName" value="Will be restored" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="RESTORED" />
-        </FILE-GROUP>
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Modified" />
-        <option name="myStatusName" value="Modified" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="MODIFIED" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Skipped" />
-        <option name="myStatusName" value="Skipped" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="SKIPPED" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Merged with conflicts" />
-        <option name="myStatusName" value="Will be merged with conflicts" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="MERGED_WITH_CONFLICTS" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Merged with tree conflicts" />
-        <option name="myStatusName" value="Merged with tree conflicts" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="MERGED_WITH_TREE_CONFLICT" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Merged with property conflicts" />
-        <option name="myStatusName" value="Will be merged with property conflicts" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="MERGED_WITH_PROPERTY_CONFLICT" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Merged" />
-        <option name="myStatusName" value="Will be merged" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="MERGED" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Not in repository" />
-        <option name="myStatusName" value="Not in repository" />
-        <option name="mySupportsDeletion" value="true" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="UNKNOWN" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Locally added" />
-        <option name="myStatusName" value="Locally added" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="LOCALLY_ADDED" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Locally removed" />
-        <option name="myStatusName" value="Locally removed" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="LOCALLY_REMOVED" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Switched" />
-        <option name="myStatusName" value="Switched" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="SWITCHED" />
-      </FILE-GROUP>
-    </UpdatedFiles>
-  </component>
-  <component name="RunManager" selected="Python.Calculate Scores">
+  <component name="RunManager" selected="Python.Calculate Scores (1)">
     <configuration default="true" type="DjangoTestsConfigurationType" factoryName="Django tests">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -722,6 +598,24 @@
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
     </configuration>
+    <configuration default="false" name="Calculate Scores (1)" type="PythonConfigurationType" factoryName="Python">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="$USER_HOME$/anaconda/bin/python" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="NBA" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/temp.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
     <configuration default="false" name="temp" type="PythonConfigurationType" factoryName="Python">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -925,19 +819,39 @@
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
     </configuration>
-    <list size="12">
+    <configuration default="false" name="VegasOddsAll" type="PythonConfigurationType" factoryName="Python">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="$USER_HOME$/anaconda/bin/python" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="NBA" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Vegas.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <list size="14">
       <item index="0" class="java.lang.String" itemvalue="Python.Calculate Scores" />
-      <item index="1" class="java.lang.String" itemvalue="Python.temp" />
-      <item index="2" class="java.lang.String" itemvalue="Python.Defense" />
-      <item index="3" class="java.lang.String" itemvalue="Python.HistoricalDFS" />
-      <item index="4" class="java.lang.String" itemvalue="Python.Calculate Averages" />
-      <item index="5" class="java.lang.String" itemvalue="Python.Calculate Averages Simple" />
-      <item index="6" class="java.lang.String" itemvalue="Python.blah" />
-      <item index="7" class="java.lang.String" itemvalue="Python.News" />
-      <item index="8" class="java.lang.String" itemvalue="Python.Targets" />
-      <item index="9" class="java.lang.String" itemvalue="Python.Injuries" />
-      <item index="10" class="java.lang.String" itemvalue="Python.Team updates" />
-      <item index="11" class="java.lang.String" itemvalue="Python.Vegas" />
+      <item index="1" class="java.lang.String" itemvalue="Python.Calculate Scores (1)" />
+      <item index="2" class="java.lang.String" itemvalue="Python.temp" />
+      <item index="3" class="java.lang.String" itemvalue="Python.Defense" />
+      <item index="4" class="java.lang.String" itemvalue="Python.HistoricalDFS" />
+      <item index="5" class="java.lang.String" itemvalue="Python.Calculate Averages" />
+      <item index="6" class="java.lang.String" itemvalue="Python.Calculate Averages Simple" />
+      <item index="7" class="java.lang.String" itemvalue="Python.blah" />
+      <item index="8" class="java.lang.String" itemvalue="Python.News" />
+      <item index="9" class="java.lang.String" itemvalue="Python.Targets" />
+      <item index="10" class="java.lang.String" itemvalue="Python.Injuries" />
+      <item index="11" class="java.lang.String" itemvalue="Python.Team updates" />
+      <item index="12" class="java.lang.String" itemvalue="Python.Vegas" />
+      <item index="13" class="java.lang.String" itemvalue="Python.VegasOddsAll" />
     </list>
   </component>
   <component name="ShelveChangesManager" show_recycled="false">
@@ -993,7 +907,28 @@
       <option name="project" value="LOCAL" />
       <updated>1485051712389</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Calculating outputs DKFPS">
+      <created>1485120574718</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1485120574718</updated>
+    </task>
+    <task id="LOCAL-00008" summary="renamed files to help with DKFPS calculations">
+      <created>1485128679992</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1485128679992</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Saving the output with the actual scores for train and test.">
+      <created>1485136316462</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1485136316462</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TodoView">
@@ -1006,27 +941,27 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1440" height="809" extended-state="6" />
+    <frame x="88" y="23" width="1352" height="809" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18097281" sideWeight="0.49170125" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32914925" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.70990235" sideWeight="0.51287556" order="11" side_tool="true" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32775453" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.43375173" sideWeight="0.48712447" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32914925" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32775453" sideWeight="0.49668875" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22206303" sideWeight="0.50829875" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33333334" sideWeight="0.49668875" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.70990235" sideWeight="0.51287556" order="11" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32775453" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.43375173" sideWeight="0.48712447" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22315203" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.10878661" sideWeight="0.49668875" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2908397" sideWeight="0.49170125" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32914925" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22206303" sideWeight="0.50829875" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25383544" sideWeight="0.49668875" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32962447" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
@@ -1039,9 +974,9 @@
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32775453" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.43375173" sideWeight="0.48712447" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.0" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.13528591" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32775453" sideWeight="0.49668875" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20301507" sideWeight="0.49170125" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13140312" sideWeight="0.49170125" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32962447" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1054,6 +989,24 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="processedProjectFiles" value="true" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
@@ -1065,20 +1018,69 @@
     <MESSAGE value="Adding most recent output files." />
     <MESSAGE value="Adding test and training data sets." />
     <MESSAGE value="Fixed training and test sets." />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixed training and test sets." />
+    <MESSAGE value="Calculating outputs DKFPS" />
+    <MESSAGE value="renamed files to help with DKFPS calculations" />
+    <MESSAGE value="Saving the output with the actual scores for train and test." />
+    <option name="LAST_COMMIT_MESSAGE" value="Saving the output with the actual scores for train and test." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/calculate.py</url>
-          <line>652</line>
+          <line>655</line>
           <option name="timeStamp" value="89" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/blah.py</url>
           <line>13</line>
           <option name="timeStamp" value="158" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$USER_HOME$/anaconda/lib/python3.5/site-packages/nba_py/player.py</url>
+          <line>187</line>
+          <option name="timeStamp" value="166" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$USER_HOME$/anaconda/lib/python3.5/site-packages/nba_py/player.py</url>
+          <line>159</line>
+          <option name="timeStamp" value="167" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <condition expression="endpoint==''" language="Python" />
+          <url>file://$USER_HOME$/anaconda/lib/python3.5/site-packages/nba_py/__init__.py</url>
+          <line>80</line>
+          <option name="timeStamp" value="168" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/resultsExplorer.py</url>
+          <line>197</line>
+          <option name="timeStamp" value="174" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/temp2.py</url>
+          <option name="timeStamp" value="178" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/resultsExplorer.py</url>
+          <line>226</line>
+          <option name="timeStamp" value="191" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/resultsExplorer.py</url>
+          <line>122</line>
+          <option name="timeStamp" value="196" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/temp.py</url>
+          <line>16</line>
+          <option name="timeStamp" value="198" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <condition expression="df1[&quot;O/U&quot;].min()==1" language="Python" />
+          <url>file://$PROJECT_DIR$/temp.py</url>
+          <line>11</line>
+          <option name="timeStamp" value="200" />
         </line-breakpoint>
       </breakpoints>
       <breakpoints-dialog>
@@ -1091,205 +1093,116 @@
           </properties>
         </breakpoint>
       </default-breakpoints>
-      <option name="time" value="161" />
+      <option name="time" value="201" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/data/salaries/2017-01-20.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="53" lean-forward="false" selection-start-line="11" selection-start-column="53" selection-end-line="11" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/blah.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="21" lean-forward="true" selection-start-line="3" selection-start-column="21" selection-end-line="3" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/anaconda/lib/python3.5/codecs.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="159">
-          <caret line="310" column="0" lean-forward="false" selection-start-line="310" selection-start-column="0" selection-end-line="310" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/anaconda/lib/python3.5/pickle.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="1575" column="4" lean-forward="false" selection-start-line="1575" selection-start-column="4" selection-end-line="1575" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/extras/players.pickle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="12" lean-forward="true" selection-start-line="10" selection-start-column="12" selection-end-line="10" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/anaconda/lib/python3.5/site-packages/pandas/tseries/tools.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="170" column="4" lean-forward="false" selection-start-line="170" selection-start-column="4" selection-end-line="170" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/anaconda/lib/python3.5/site-packages/sklearn/preprocessing/imputation.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="324" column="59" lean-forward="false" selection-start-line="324" selection-start-column="51" selection-end-line="324" selection-end-column="59" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/HistoricalDFS.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="92" column="34" lean-forward="true" selection-start-line="92" selection-start-column="34" selection-end-line="92" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/Defense/2017-01-21.csv">
+    <entry file="file://$PROJECT_DIR$/data/output/2017-01-15_late.csv">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
-          <caret line="1" column="9" lean-forward="false" selection-start-line="1" selection-start-column="6" selection-end-line="1" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Vegas.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="22" column="29" lean-forward="false" selection-start-line="22" selection-start-column="29" selection-end-line="22" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/update.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/vegas/2017-01-21.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="23" column="0" lean-forward="true" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/generatedRosters/2017-01-20.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="0" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/historicalDFS/2017-01-20.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="34" lean-forward="true" selection-start-line="10" selection-start-column="34" selection-end-line="10" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/anaconda/lib/python3.5/site-packages/pandas/formats/format.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="96">
-          <caret line="2188" column="26" lean-forward="false" selection-start-line="2188" selection-start-column="26" selection-end-line="2188" selection-end-column="26" />
+          <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/anaconda/lib/python3.5/site-packages/pandas/tools/merge.py">
+    <entry file="file://$PROJECT_DIR$/data/vegas/2017-01-12.csv">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="789" column="4" lean-forward="false" selection-start-line="789" selection-start-column="4" selection-end-line="789" selection-end-column="4" />
+        <state relative-caret-position="75">
+          <caret line="5" column="2" lean-forward="false" selection-start-line="5" selection-start-column="2" selection-end-line="5" selection-end-column="2" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/data/vegas/2017-01-20.csv">
+    <entry file="file://$PROJECT_DIR$/data/vegas/2017-01-11.csv">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="14" lean-forward="false" selection-start-line="8" selection-start-column="14" selection-end-line="8" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/extras/1610612737.csv" />
-    <entry file="file://$PROJECT_DIR$/data/extras/test_1610612738.csv" />
-    <entry file="file://$PROJECT_DIR$/data/extras/test_1610612737.csv" />
-    <entry file="file://$PROJECT_DIR$/data/extras/test_.csv" />
-    <entry file="file://$PROJECT_DIR$/data/extras/output.csv" />
-    <entry file="file://$PROJECT_DIR$/data/extras/input.csv" />
-    <entry file="file://$PROJECT_DIR$/data/extras/train.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="90">
+          <caret line="6" column="3" lean-forward="false" selection-start-line="6" selection-start-column="3" selection-end-line="6" selection-end-column="3" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/data/extras/test.csv">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="14" column="56" lean-forward="true" selection-start-line="14" selection-start-column="56" selection-end-line="14" selection-end-column="56" />
+        <state relative-caret-position="0">
+          <caret line="0" column="57" lean-forward="false" selection-start-line="0" selection-start-column="47" selection-end-line="0" selection-end-column="57" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/data/salaries/2017-01-21.csv">
+    <entry file="file://$PROJECT_DIR$/data/vegas/2017-01-07.csv">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="152" column="40" lean-forward="true" selection-start-line="152" selection-start-column="40" selection-end-line="152" selection-end-column="40" />
+        <state relative-caret-position="45">
+          <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/data/output/2017-01-12-modified.csv">
+    <entry file="file://$PROJECT_DIR$/data/vegas/2017-01-06.csv">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="419">
-          <caret line="126" column="20" lean-forward="false" selection-start-line="126" selection-start-column="20" selection-end-line="126" selection-end-column="20" />
+        <state relative-caret-position="225">
+          <caret line="15" column="3" lean-forward="false" selection-start-line="15" selection-start-column="3" selection-end-line="15" selection-end-column="3" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/data/output/2017-01-13.csv">
+    <entry file="file://$PROJECT_DIR$/data/vegas/2017-01-08.csv">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3046">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="135">
+          <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/data/output/2017-01-12.csv">
+    <entry file="file://$PROJECT_DIR$/data/vegas/2017-01-09.csv">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1471">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="90">
+          <caret line="6" column="2" lean-forward="false" selection-start-line="6" selection-start-column="2" selection-end-line="6" selection-end-column="2" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/data/output/2017-01-19.csv">
+    <entry file="file://$PROJECT_DIR$/data/vegas/2017-01-10.csv">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="32" lean-forward="true" selection-start-line="10" selection-start-column="32" selection-end-line="10" selection-end-column="32" />
+        <state relative-caret-position="285">
+          <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/data/output/2017-01-17.csv">
+    <entry file="file://$PROJECT_DIR$/data/vegas/2017-01-04.csv">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="87" lean-forward="false" selection-start-line="18" selection-start-column="87" selection-end-line="18" selection-end-column="87" />
+        <state relative-caret-position="225">
+          <caret line="15" column="0" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/data/output/2017-01-18.csv">
+    <entry file="file://$PROJECT_DIR$/data/salaries/2017-01-05.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="15" column="32" lean-forward="false" selection-start-line="15" selection-start-column="30" selection-end-line="15" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/vegas/2017-01-05.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/vegas/2017-01-13.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="3" lean-forward="false" selection-start-line="3" selection-start-column="3" selection-end-line="3" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ReferenceSpider.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -1297,7 +1210,31 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/data/output/2017-01-16.csv">
+    <entry file="file://$PROJECT_DIR$/data/vegas/2017-01-14.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="2" lean-forward="false" selection-start-line="5" selection-start-column="2" selection-end-line="5" selection-end-column="2" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/vegas/2017-01-15.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="12" lean-forward="true" selection-start-line="6" selection-start-column="12" selection-end-line="6" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/vegas/2017-01-03.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="0" lean-forward="true" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/extras/train1.csv">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -1305,147 +1242,271 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/data/output/2017-01-15_late.csv">
+    <entry file="file://$PROJECT_DIR$/data/output/train1.csv">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="52665">
+          <caret line="3511" column="0" lean-forward="true" selection-start-line="3511" selection-start-column="0" selection-end-line="3511" selection-end-column="0" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/output/2017-01-14.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/output/2017-01-15_early.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-586">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Library/Caches/PyCharm2016.3/python_stubs/-20178883/builtins.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="693" column="18" lean-forward="true" selection-start-line="693" selection-start-column="18" selection-end-line="693" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/anaconda/lib/python3.5/site-packages/keras/engine/topology.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-431">
-          <caret line="217" column="16" lean-forward="false" selection-start-line="217" selection-start-column="16" selection-end-line="217" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/anaconda/lib/python3.5/site-packages/keras/engine/training.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="229">
-          <caret line="488" column="16" lean-forward="false" selection-start-line="488" selection-start-column="16" selection-end-line="488" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/diabetes.data">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="659">
-          <caret line="767" column="28" lean-forward="false" selection-start-line="767" selection-start-column="28" selection-end-line="767" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/anaconda/lib/python3.5/site-packages/keras/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="215" column="20" lean-forward="false" selection-start-line="215" selection-start-column="20" selection-end-line="215" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test.ipynb">
-      <provider selected="true" editor-type-id="ipnb-editor">
-        <state>
-          <selected id="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TimeSeriesPredictions.ipynb">
-      <provider selected="true" editor-type-id="ipnb-editor">
-        <state>
-          <selected id="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/output/2017-01-20_original.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3600">
-          <caret line="240" column="29" lean-forward="false" selection-start-line="240" selection-start-column="26" selection-end-line="240" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/generatedRosters/2017-01-21.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="0" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/neural-networks/1-1_Basic_NN-Titanic.ipynb">
-      <provider selected="true" editor-type-id="ipnb-editor">
-        <state>
-          <selected id="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/output/2017-01-21.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/NeuralNetsPrediction.ipynb">
-      <provider selected="true" editor-type-id="ipnb-editor">
-        <state>
-          <selected id="5" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/calculate.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="201" column="39" lean-forward="false" selection-start-line="201" selection-start-column="28" selection-end-line="201" selection-end-column="39" />
+        <state relative-caret-position="236">
+          <caret line="640" column="0" lean-forward="true" selection-start-line="640" selection-start-column="0" selection-end-line="640" selection-end-column="0" />
           <folding>
             <element signature="e#25#36#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/temp2.py">
+    <entry file="file://$PROJECT_DIR$/data/salaries/2017-01-23.csv">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="65" column="38" lean-forward="true" selection-start-line="65" selection-start-column="38" selection-end-line="65" selection-end-column="92" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/generatedRosters/2017-01-19.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/generatedRosters/2017-01-20.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/generatedRosters/2017-01-21.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="129" lean-forward="false" selection-start-line="9" selection-start-column="129" selection-end-line="9" selection-end-column="129" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/generatedRosters/2017-01-23.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" column="0" lean-forward="true" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/output/3017-01-23_original.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" column="64" lean-forward="true" selection-start-line="19" selection-start-column="64" selection-end-line="19" selection-end-column="64" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/output/2017-01-23.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="145" lean-forward="true" selection-start-line="3" selection-start-column="145" selection-end-line="3" selection-end-column="145" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/output/3017-01-23.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="18" lean-forward="false" selection-start-line="11" selection-start-column="18" selection-end-line="11" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/output/2017-01-04.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="36" lean-forward="false" selection-start-line="2" selection-start-column="36" selection-end-line="2" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/output/2017-01-05.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="71">
+          <caret line="13" column="28" lean-forward="false" selection-start-line="13" selection-start-column="28" selection-end-line="13" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/output/2017-01-21.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="21" column="39" lean-forward="false" selection-start-line="21" selection-start-column="39" selection-end-line="21" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/output/2017-01-20.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="311">
+          <caret line="228" column="30" lean-forward="true" selection-start-line="228" selection-start-column="30" selection-end-line="228" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/output/2017-01-19.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" column="22" lean-forward="true" selection-start-line="19" selection-start-column="22" selection-end-line="19" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/output/2017-01-18.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="243">
+          <caret line="219" column="25" lean-forward="true" selection-start-line="219" selection-start-column="25" selection-end-line="219" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/output/2017-01-06.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="26" column="39" lean-forward="false" selection-start-line="26" selection-start-column="39" selection-end-line="26" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/output/2017-01-08.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="35" lean-forward="false" selection-start-line="8" selection-start-column="35" selection-end-line="8" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/output/2017-01-10.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="55" lean-forward="false" selection-start-line="10" selection-start-column="55" selection-end-line="10" selection-end-column="55" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/output/2017-01-11.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" column="55" lean-forward="true" selection-start-line="13" selection-start-column="55" selection-end-line="13" selection-end-column="55" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/output/2017-01-12.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="75" column="19" lean-forward="true" selection-start-line="75" selection-start-column="19" selection-end-line="75" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/output/2017-01-13.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="20" lean-forward="false" selection-start-line="12" selection-start-column="20" selection-end-line="12" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/output/2017-01-14.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="88" column="28" lean-forward="true" selection-start-line="88" selection-start-column="28" selection-end-line="88" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/output/2017-01-15.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="141" column="14" lean-forward="true" selection-start-line="141" selection-start-column="14" selection-end-line="141" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/output/2017-01-16.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="28" lean-forward="true" selection-start-line="14" selection-start-column="28" selection-end-line="14" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/output/2017-01-17.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="39" lean-forward="false" selection-start-line="14" selection-start-column="39" selection-end-line="14" selection-end-column="39" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/resultsExplorer.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18">
-          <caret line="155" column="10" lean-forward="false" selection-start-line="155" selection-start-column="10" selection-end-line="155" selection-end-column="10" />
+        <state relative-caret-position="238">
+          <caret line="137" column="30" lean-forward="false" selection-start-line="137" selection-start-column="30" selection-end-line="137" selection-end-column="30" />
           <folding>
             <element signature="e#0#11#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Vegas.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="297">
+          <caret line="70" column="26" lean-forward="true" selection-start-line="70" selection-start-column="26" selection-end-line="70" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/temp2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="50" column="21" lean-forward="true" selection-start-line="50" selection-start-column="21" selection-end-line="50" selection-end-column="21" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/output/2017-01-03.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="322">
+          <caret line="117" column="57" lean-forward="false" selection-start-line="117" selection-start-column="57" selection-end-line="117" selection-end-column="57" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/temp.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="11" lean-forward="true" selection-start-line="0" selection-start-column="11" selection-end-line="0" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Notebook.ipynb">
+      <provider selected="true" editor-type-id="ipnb-editor">
+        <state>
+          <selected id="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/NeuralNetsPrediction.ipynb">
+      <provider selected="true" editor-type-id="ipnb-editor">
+        <state>
+          <selected id="10" />
         </state>
       </provider>
     </entry>
