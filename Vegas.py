@@ -87,7 +87,6 @@ class VegasInsiderOdds(scrapy.Spider):
                           float_format='%.3f')
         return
 
-
 if __name__ == "__main__":
     print("Starting DvP extraction.")
     injuryProcess = CrawlerProcess({
@@ -96,5 +95,5 @@ if __name__ == "__main__":
         'FEED_URI': 'data/vegas/' + str(date.today()) + '.csv'
     })
 
-    injuryProcess.crawl(VegasInsiderOdds)
+    injuryProcess.crawl(VegasOdds)
     injuryProcess.start()

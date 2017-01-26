@@ -6,7 +6,7 @@ from datetime import date
 import glob
 
 #today = str(date.yesterday())
-today = "2017-01-23"
+today = "2017-01-25"
 
 rosterscsv = 'data/generatedRosters/'+today+'.csv'
 
@@ -116,15 +116,6 @@ def updateResults():
 
     rrosters.to_csv(rosterscsv)
 
-results = []
-try:
-    results = pd.DataFrame.from_csv(rosterscsv)
-    if "DKFPS" not in results:
-        updateResults()
-        results = pd.DataFrame.from_csv(rosterscsv)
-except:
-    pass
-
 
 def displayResults():
     #all = glob.iglob('data/generatedRosters/' + today + '.csv')
@@ -187,7 +178,7 @@ def calculateDKFPSforOutput():
     # results = pd.DataFrame.from_csv(all)
 
     path = r'data/output/'  # use your path
-    allFiles = glob.glob(path + "/*.csv")
+    allFiles = glob.glob(path + "/2*.csv")
     for _file in allFiles:
         try:
             _date = _file.split("/")[2].split(".csv")[0]
@@ -228,9 +219,18 @@ def addVegasForOutput():
 
     return
 
+'''
+results = []
+try:
+    results = pd.DataFrame.from_csv(rosterscsv)
+    if "DKFPS" not in results:
+        updateResults()
+        results = pd.DataFrame.from_csv(rosterscsv)
+except:
+        pass
+'''
 
-
-updateResults()
+#updateResults()
 displayResults()
-# calculateDKFPSforOutput()
+#calculateDKFPSforOutput()
 #addVegasForOutput()

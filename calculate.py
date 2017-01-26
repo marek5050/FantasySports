@@ -6,58 +6,6 @@ import numpy as np
 
 from datetime import date
 
-today = str(date.today())
-end_date = today
-
-#today = "2017-01-20"
-#end_date = "2017-01-19"
-newest = 'data/teams/'+today+'.json'
-injuries_file = 'data/injuries/'+today+'.json'
-community_file = 'data/targets/'+today+'.json'
-newestSalaries = 'data/salaries/'+today+'.csv'
-
-try:
-    blacklisted = pd.read_csv('data/blacklisted/list.csv')
-    dvp = pd.read_csv('data/Defense/'+today+'.csv')
-    dvp = dvp.set_index("team")
-    dvp.sort_values(by="all",inplace=True)
-
-    vegas = pd.read_csv('data/vegas/' + today + '.csv')
-    vegas = vegas.set_index("team")
-
-
-except Exception as e:
-        print("Failed to load community file.")
-        dvp = []
-        blacklisted = []
-        vegas = []
-
-# dvp.loc["BKN", :].values
-
-#with open(newest) as json_data:
-#    d = json.load(json_data)
-try:
-    with open(injuries_file) as json_data:
-        injuries = json.load(json_data)
-except Exception as e:
-        print("Failed to load community file.")
-        injuries = []
-
-try:
-    with open(community_file) as json_data:
-        community = json.load(json_data)
-except Exception as e:
-        print("Failed to load community file.")
-        community = []
-
-try:
-    with open("data/calendar/full_schedule.json") as json_data:
-        calendar = json.load(json_data)
-except Exception as e:
-        print("Failed to load community file.")
-        calendar = []
-
-
 def fixTeam(abbr):
     if(abbr == "CHO"):
              return "CHA"
@@ -88,6 +36,13 @@ def fixTeam(abbr):
                 return"NYK"
     return abbr
 
+
+import requests
+import requests_cache
+
+requests_cache.install_cache('all_test_cache')
+
+
 class Player:
 
     def __init__(self,data):
@@ -104,7 +59,12 @@ class Player:
         self.players = None
         self.pid = None
         self.error = 0
+        if "dvp" in data:
+            self.dvp = data["dvp"]
 
+    def setEndDate(self, endDate):
+        self.endDate = endDate
+        return
 
     def setHome(self):
         where = self.gameInfo.split(" ")[0].upper().split("@")
@@ -128,11 +88,11 @@ class Player:
         return
 
     def setTeam(self,team):
-        self.team = team.upper()
+        self.team = team.upper().replace("NOP","NO")
         return
 
     def setOpponent(self, opp):
-        self.opponent = opp
+        self.opponent = opp.upper().replace("NOP","NO")
         return
 
     def setDvP(self,dvp):
@@ -161,7 +121,10 @@ class Player:
         return
 
 
-    def getSeasonStats(self):
+    def getSeasonStats(self,endDate = None):
+        if endDate is None :
+            endDate = self.endDate
+
         if self.error == 1:
             return
         '''
@@ -178,25 +141,29 @@ class Player:
 
         from nba_py import player as players
         from nba_py.player import get_player
-        name = self.name\
-        .replace("J.J. Redick", "JJ Redick") \
-        .replace("T.J. Warren", "TJ Warren") \
-        .replace("P.J. Warren", "PJ Warren") \
-        .replace("P.J. Tucker", "PJ Tucker") \
-        .replace("J.R. Smith", "JR Smith") \
-        .replace("C.J. McCollum", "CJ McCollum") \
-        .replace("C.J. Miles", "CJ Miles") \
-        .replace("C.J. Watson", "CJ Watson") \
-        .replace("C.J. Wilcox", "CJ Wilcox") \
-        .replace("K.J. McDaniels", "KJ McDaniels") \
-        .replace("T.J. McConnell","TJ McConnell") \
-        .replace("A.J. Hammons","AJ Hammons") \
-        .split(" ", maxsplit=1)
+        name = self.name \
+                .replace("J.J. Redick", "JJ Redick") \
+                .replace("T.J. Warren", "TJ Warren") \
+                .replace("P.J. Warren", "PJ Warren") \
+                .replace("P.J. Tucker", "PJ Tucker") \
+                .replace("J.R. Smith", "JR Smith") \
+                .replace("C.J. McCollum", "CJ McCollum") \
+                .replace("C.J. Miles", "CJ Miles") \
+                .replace("C.J. Watson", "CJ Watson") \
+                .replace("C.J. Wilcox", "CJ Wilcox") \
+                .replace("K.J. McDaniels", "KJ McDaniels") \
+                .replace("T.J. McConnell", "TJ McConnell") \
+                .replace("A.J. Hammons", "AJ Hammons") \
+                .split(" ", maxsplit=1)
+        if "McAdoo" in name[1]:
+                name[0] = "James Michael"
+                name[1] = "McAdoo"
 
         try:
             pid =  get_player(name[0],name[1])
         except Exception as e:
-            print("Problem with player " + player.name)
+            print("Problem with player " + self.name)
+            print(e)
             self.error = 1
             return None
 
@@ -204,7 +171,7 @@ class Player:
         k = c.info()
         k["GAME_DATE"] = pd.to_datetime(k["GAME_DATE"])
         k.set_index("GAME_DATE",inplace=True)
-        k = k[end_date:'2016-01-01']
+        k = k[endDate:'2016-01-01']
         k.PTS = k.PTS.astype(float)
         k.BLK = k.BLK.astype(float)
         k.STL = k.STL.astype(float)
@@ -216,7 +183,7 @@ class Player:
         return
 
     def getDKFPS(self):
-            if self.seasonStats is None and player.error == 0:
+            if self.seasonStats is None and self.error == 0:
                 self.getSeasonStats()
             try:
                 p = self.seasonStats.filter(items=['MATCHUP',"GAME_DATE",'PTS', 'BLK', 'STL', 'AST', 'REB', 'FG3M', 'TOV'])
@@ -232,7 +199,7 @@ class Player:
 
 
     def get7GameAvg(self):
-            if self.seasonStats is None and player.error == 0:
+            if self.seasonStats is None and self.error == 0:
                 self.getSeasonStats()
                 self.getDKFPS()
             try:
@@ -246,7 +213,7 @@ class Player:
             return {"home": home, "away": away}
 
     def get4GameAvg(self):
-            if self.seasonStats is None and player.error == 0:
+            if self.seasonStats is None and self.error == 0:
                 self.getSeasonStats()
                 self.getDKFPS()
             try:
@@ -258,7 +225,7 @@ class Player:
             return avg
 
     def getFloorAverage(self):
-            if self.seasonStats is None and player.error == 0:
+            if self.seasonStats is None and self.error == 0:
                 self.getSeasonStats()
                 self.getDKFPS()
             try:
@@ -271,7 +238,7 @@ class Player:
             return lowerMean
 
     def getSeasonAverage(self):
-            if self.seasonStats is None and player.error == 0:
+            if self.seasonStats is None and self.error == 0:
                 self.getSeasonStats()
                 self.getDKFPS()
 
@@ -350,24 +317,6 @@ class Team:
         self.opponent = opponent
         return
 
-
-    '''
-            self.name = data["team"]
-
-            for tables in data["data"]:
-                for tableName, table in tables.items():
-                    tableName = tableName.replace("-","_")
-    #                setattr(self, tableName, table)
-                    self.data[tableName] = table
-                    if(tableName == "all_roster"):
-                        for item in table:
-                            self.roster.append(Player(item[1]))
-    '''
-    def load(self,data):
-        print("loading")
-
-        return
-
     def findPlayer(self,player):
         try:
             return self.roster[self.roster.index(player)]
@@ -383,6 +332,15 @@ class Team:
 
     def getPerGame(self):
         return [] #self.data["all_per_game"]
+
+    def setEndDate(self, _date):
+        for player in self.roster:
+            try:
+                player.setEndDate(_date)
+            except ValueError:
+                pass
+        return
+
 
     def teamAndOppStats(self):
         return [] #(self.name, [self.data["all_team_and_opponent"][2],self.data["all_team_and_opponent"][6]])
@@ -406,17 +364,28 @@ class Teams:
 
     def load(self,data):
         self.teams = {}
-        for idx, team in data.iterrows():
-            abbr = team["teamAbbrev"].upper()
+        for idx, playerdata in data.iterrows():
+            abbr = playerdata["teamAbbrev"].upper()
             if abbr not in self.teams:
                 self.teams[abbr] = Team(abbr)
-            self.teams[abbr].addPlayer(Player(team))
+            self.teams[abbr].addPlayer(Player(playerdata))
+
         return
 
     def setInjuries(self, injuries):
         for injury in injuries:
             if injury["team"] in self.teams:
                 self.teams[injury['team']].setInjury(injury['player'])
+        return
+
+    def setEndDate(self, _date):
+        for key in self.teams:
+            try:
+                a = self.teams[key].setEndDate(_date)
+                if a!= None :
+                    return a
+            except ValueError:
+                pass
         return
 
     def findPlayer(self,player):
@@ -480,7 +449,67 @@ class Lineup:
                     self.playerTeam.append([player,team])
         return
 
-if __name__ == "__main__":
+today = str(date.today())
+end_date = today
+
+import os.path
+
+
+def calculate(_date):
+
+    # today = "2017-01-20"
+    # end_date = "2017-01-19"
+    injuries_file = 'data/injuries/' + _date + '.json'
+    community_file = 'data/targets/' + _date + '.json'
+    newestSalaries = 'data/salaries/' + _date + '.csv'
+    defense_file = 'data/Defense/' + _date + '.csv'
+    vegas_file = 'data/vegas/' + _date + '.csv'
+    calendar_file = "data/calendar/full_schedule.json"
+
+    try:
+        blacklisted = pd.read_csv('data/blacklisted/list.csv')
+        if os.path.isfile(defense_file):
+            dvp = pd.read_csv(defense_file)
+        else:
+            dvp = pd.read_csv(defense_file.replace(_date,today))
+            dvp = dvp.set_index("team")
+            dvp.sort_values(by="all", inplace=True)
+    except:
+        print("Failed to load DVP file.")
+        dvp = []
+
+    try:
+        vegas = pd.read_csv(vegas_file)
+        vegas = vegas.set_index("team")
+    except:
+        print("Failed to load vegas file.")
+
+    try:
+        if os.path.isfile(injuries_file):
+            with open(injuries_file) as json_data:
+                injuries = json.load(json_data)
+        else:
+            injuries = []
+    except:
+        print("Failed to load injuries file.")
+        injuries = []
+
+    try:
+        if os.path.isfile(community_file):
+             with open(community_file) as json_data:
+                   community = json.load(json_data)
+        else:
+            community = []
+    except Exception as e:
+        print("Failed to load community file.")
+        community = []
+
+    try:
+        with open(calendar_file) as json_data:
+            calendar = json.load(json_data)
+    except Exception as e:
+        print("Failed to load calendar file.")
+        calendar = []
 
     cal = Calendar()
     cal.load(calendar)
@@ -488,183 +517,85 @@ if __name__ == "__main__":
     teams = Teams()
     teams.load(t)
     teams.setInjuries(injuries)
-    #a = teams.getPerGameData()
-    cleanedData = []
-    header = None
-    '''
-    for item in a:
-        if header == None:
-            header = item[0]
-        del item[0]
-        cleanedData += item
+    teams.setEndDate(_date)
 
-    df = pd.DataFrame(cleanedData)
-    '''
-    '''
-    idx = header.index('eFG%')
+    if os.path.isfile(newestSalaries):
+        dataset = pd.read_csv(newestSalaries)
+    else:
+        Exception("Failed to load salaries")
 
-    efgs = df.iloc[:,[header.index('Player')]]
-
-    #efgs = pd.DataFrame(cleanedData)
-    #efgs = efgs.sort_values([header.index('eFG%'),header.index('PTS')],ascending=False)
-    #efgs[5] = efgs[5].apply(pd.to_numeric)
-    #efgs[15] = efgs[15].apply(pd.to_numeric)
-    #efgs[27] = efgs[27].apply(pd.to_numeric)
-    '''
-    '''
-    matchups = Matchups()
-    matchups.load(teams, cal.findByDate(today))
-    '''
-    # l = Lineup()
-    # l.load(matchups, ["John Wall","Zach LaVine","Otto Porter","Thaddeus Young","Steven Adams","Kyle Korver","Gorgui Dieng","Nikola Jokic"])
-    # print(l.playerTeam)
-
-    dataset = pd.read_csv(newestSalaries)
-#    dataset["matchup"] = 0.0
-#    dataset["GameInfo"].str.replace("","")
-#    dataset[(dataset["Position"].isin(['PG']) & dataset["teamAbbrev"].isin(["Cha"]))]["matchup"]=dvp.loc["CHA","pg"]
-
-
-
-    for index,row in dataset.iterrows():
+    for index, row in dataset.iterrows():
         p = teams.findPlayer(row["Name"])
-        if p != None:
-            p.setOpponent(row["GameInfo"].split(" ")[0].replace("@","").lower().replace(row["teamAbbrev"].lower(),"").upper())
+        if p is not None:
+            p.setOpponent(
+                row["GameInfo"].split(" ")[0].replace("@", "").lower().replace(p.team.lower(), "").upper())
             p.setDvP(dvp)
             p.setHome()
         else:
-            print("Could not find  "+row["Name"])
+            print("Could not find  " + row["Name"])
 
     for updates in community:
         for target in updates["targets"]:
-                player = teams.findPlayer(target['name'])
-                if player != None and player.fantasyPointAverage > 0:
-                    player.addBonus(target["value"])
+            player = teams.findPlayer(target['name'])
+            if player is not None and player.fantasyPointAverage > 0:
+                player.addBonus(target["value"])
 
-    #teamStats = teams.teamAndOppStats()
-    '''
-    for matchup in matchups.games:
-        v = matchup[0] # Visiting team
-        h = matchup[1] # Home team
-        homeStats = teamStats[h]
-        visitorStats = teamStats[v]
-
-        hTeamG = float(homeStats[0][23])
-        hTeamOG = float(homeStats[1][23])
-        vTeamG = float(visitorStats[0][23])
-        vTeamOG = float(visitorStats[1][23])
-        score = (hTeamG + hTeamOG + vTeamG + vTeamOG)/4
-        teams.teams[h].setExpectedScore(score)
-        teams.teams[h].setOpponent(v)
-        teams.teams[h].setHome(1)
-        teams.teams[v].setExpectedScore(score)
-        teams.teams[v].setOpponent(h)
-    '''
     efgs = dataset
-    efgs["atHome"]  = 0
+    efgs["atHome"] = 0
     efgs["injured"] = 0
     efgs["7GameAvg"] = 0.0
     efgs["FloorAvg"] = 0.0
     efgs["4GameAvg"] = 0.0
     efgs["communityBonus"] = 0.0
-    efgs["penalty"] = 0.0
     efgs["dvp"] = 0.0
     efgs["value"] = 0.0
 
-    for index,row in efgs.iterrows():
+    for index, row in efgs.iterrows():
         player = teams.findPlayer(row[1])
-        if player != None and player.team != '':
-                efgs.loc[index,("injured")] = 1 if (player.injury) else 0
-                SvnGameAvg = player.get7GameAvg()
-                efgs.loc[index,("atHome")]= player.home
-                efgs.loc[index, "teamAbbrev"] = player.team
-                efgs.loc[index,("7GameAvg")] = (SvnGameAvg["home"] if (player.home) else SvnGameAvg["away"]) or 0.00
-                efgs.loc[index,("FloorAvg")] = player.getFloorAverage() or 0.00
-                efgs.loc[index,("4GameAvg")] = player.get4GameAvg() or 0.0
+        if player is not None and player.team != '':
+            efgs.loc[index, ("injured")] = 1 if (player.injury) else 0
+            SvnGameAvg = player.get7GameAvg()
+            efgs.loc[index, ("atHome")] = 1 if player.home else 0
+            efgs.loc[index, "teamAbbrev"] = player.team
+            efgs.loc[index, ("7GameAvg")] = (SvnGameAvg["home"] if player.home else SvnGameAvg["away"]) or 0.00
+            efgs.loc[index, ("FloorAvg")] = player.getFloorAverage() or 0.00
+            efgs.loc[index, ("4GameAvg")] = player.get4GameAvg() or 0.0
 
-                bonus = 0.0
-                if player.bonus > 0 and player.bonus <= 5:
-                    bonus = 0.10
-                elif player.bonus > 5:
-                    bonus = 0.25
+            lg = player.getLastGame()
+            val = 0.00
+            if lg is not None and len(lg) > 0:
+                val = lg["DKFPS"][0]
+            efgs.loc[index, ("LastGame")] = val
 
-                efgs.loc[index,("communityBonus")] = bonus * player.fantasyPointAverage
-                efgs.loc[index,("dvp")] = player.dvp or 0.00
-                efgs.loc[index,('value')] = player.salary*0.001*6
-                efgs.loc[index,("O/U")] = vegas.loc[player.team]["overUnder"]
-                efgs.loc[index,("odds")] = vegas.loc[player.team]["odds"]
-                positions = player.position.lower().split("/")
-                #efgs.loc[index,("penalty")] =
-                penalty = 0
-                if player.injury:
-                     penalty = 9999.0
-                elif player.salary < 4500 and player.dvp <= 13:
-                    penalty = 9000.0
-                elif player.salary < 6500 and player.dvp <= 7:
-                    penalty = (10 + 10 / player.dvp)
-                elif player.salary > 4500 and player.dvp <= 7:
-                    penalty = (10 + 10 / player.dvp)
+            bonus = 0.0
+            if player.bonus > 0 and player.bonus <= 5:
+                bonus = 0.10
+            elif player.bonus > 5:
+                bonus = 0.25
+            efgs.loc[index, ("communityBonus")] = bonus * player.fantasyPointAverage
+            efgs.loc[index, ("dvp")] = player.dvp or 0.00
+            efgs.loc[index, ('value')] = player.salary * 0.001 * 6
+            efgs.loc[index, ("O/U")] = vegas.loc[player.team]["overUnder"]
+            efgs.loc[index, ("odds")] = vegas.loc[player.team]["odds"]
 
-                overUnder = vegas.loc[player.team]["overUnder"]
-                odds = abs(vegas.loc[player.team]["odds"])
-                s = ""
-                overUnderMean = vegas["overUnder"].mean()
-                oddsMean = vegas[(vegas["odds"] >= 0)]["odds"].mean()
-                '''
-                    Bonus to ppl in high scoring games (215)    (220)/(220+205(mean)) (230-215)/(237-215)...
-                    Blowout definition : 4% = odds/overUnder ratio
-                    Penalize losing team in blowouts especially bench ...
-                    Penalize bench in tight games....
-                '''
-                penalty += 200 * (overUnderMean-overUnder)/overUnderMean
-                s+= " o/u: "+ str((200 * (overUnderMean - overUnder)/overUnderMean))
-
-                #blowout
-                if odds / overUnder > 0.3 or odds > oddsMean:
-                    penalty += 10 #(odds-oddsMean)/oddsMean
-                #cheap players on losing team penalty
-                # if + and < 4500 -10%
-                if player.salary < 4500 and odds > oddsMean:
-                    penalty += 10
-                    s += " low player: " + str(10)
-
-
-                lastGame = player.getLastGame()
-                try:
-                    std = player.seasonStatsWithDKFPS.loc[:,"DKFPS"].std()
-                    #if last game sucked
-                    if len(lastGame["DKFPS"]) > 0 and (lastGame["DKFPS"][0] < (player.fantasyPointAverage-std)):
-                       penalty += std*10
-                       s+= " bad last game: " + str((std*10))
-                except:
-                    pass
-
-                penalty = -1 * player.fantasyPointAverage * (penalty/100)
-
-                efgs.loc[index, "penalty"] = penalty
-
-
-    #notInjured[(efgs["4GameAvg"] < efgs["7GameAvg"]) & (efgs["4GameAvg"] < efgs["AvgPtsPerGame"])]
-    #notInjured = efgs[)]
-    notInjured = efgs[(efgs["Salary"] != 0) & (efgs["7GameAvg"]>0) & (efgs["FloorAvg"]>0)]
-    # Blacklisted players
-    #df[~df['stn'].isin(remove_list)]
+    notInjured = efgs[(efgs["Salary"] != 0) & (efgs["7GameAvg"] > 0) & (efgs["FloorAvg"] > 0)]
     notInjured = notInjured[~notInjured["Name"].isin(blacklisted["name"])]
+    notInjured.to_csv("data/output/" + str(date.today()) + '.csv', sep=',', encoding='utf-8', index=False,
+                      float_format='%.3f')
 
-    #notInjured.rename(columns={1: 'Name'}, inplace=True)
-    #efgs = efgs.filter(items=['one', 'three'])
-    notInjured.to_csv("data/output/"+str(date.today())+'.csv', sep=',', encoding='utf-8', index=False, float_format='%.3f')
+import glob
+if __name__ == "__main__":
+#    calculate(today)
 
-    #efgs = efgs.loc[(efgs[5]>=efgs[5].mean()) &  (efgs[15]>=efgs[15].mean()) & (efgs[27]>=efgs[27].mean()) & (efgs["Salary"] > 0)]
-
-    #efgs["KeyStat"] = 0
-    #ESmean = efgs["expectedScore"].mean()
-    #for index,row in efgs.iterrows():
-    #    efgs["KeyStat"][index] = (row["Salary"]/(row[5]*row[15]*row["AvgPointsPerGame"]))
-
-    #stats = pd.DataFrame.from_dict(team.data["all_team_and_opponent"][1:])
-    #del stats[0]
-    #stats = stats.set_value(0,0,"header")
-    #stats = stats.set_index(stats.columns[0])
-    #stats.columns = stats[0:1].values[0]
-    #stats = stats[1:]
+    path = r'data/salaries/'  # use your path
+    allFiles = glob.glob(path + "/*.csv")
+    for _file in allFiles:
+       try:
+            _date = _file.split("/")[2].split(".csv")[0]
+            if "_" in _date:
+                _date = _date.split("_")[0]
+            calculate(_date)
+       except Exception as e:
+           print("Error with date: " + _date)
+           print(e)
+           raise

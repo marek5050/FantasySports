@@ -1,17 +1,55 @@
-import glob
+import numpy as np
 import pandas as pd
+from sklearn.preprocessing import StandardScaler
+from time import time
+
+np.random.seed(1337)
+
+
+from datetime import date
+
+today = str(date.today())
+end_date = today
+
+import glob
 
 path = r'data/output/'  # use your path
 allFiles = glob.glob(path + "/2*.csv")
-dfTemp = pd.DataFrame()
-features = ["Name", "Final", "AvgPointsPerGame", "O/U", "odds"]
 
-for file_ in allFiles:
+dftrain = pd.DataFrame()
+
+for _file in allFiles:
+        try:
+            dftrain = pd.concat([dftrain,pd.read_csv(_file,header=0)])
+        except:
+            pass
+
+dvp = pd.read_csv('data/Defense/'+today+'.csv')
+dvp = dvp.set_index("team")
+dvp.sort_values(by="all",inplace=True)
+
+for idx,row in dftrain.iterrows():
     try:
-        df1 = pd.read_csv(file_, index_col=None, header=0)
-        dfTemp = pd.concat([dfTemp, df1[features]])
-    except:
+        if "opponent" in row and isinstance(row["opponent"], str):
+            positions = row["Position"].lower().split("/")
+            _dvp = dvp.loc[:, positions].rank().loc[row["opponent"].upper(), positions].mean()
+        elif "GameInfo" in row:
+            positions = row["Position"].lower().split("/")
+            atHome = row["atHome"]
+            game = row["GameInfo"].split(" ")[0]
+
+            home, away = game.upper().split("@")
+
+            opponent = away if atHome else home
+
+            _dvp = dvp.loc[:, positions].rank().loc[opponent, positions].mean()
+
+        dftrain.loc[idx, "dvp"] = _dvp
+    except Exception as e:
+        print(e)
+        print("Somethng broke")
         pass
 
-df = dfTemp[features]
-df.loc[:, ("Name", "Final")]
+#dftrain = pd.read_csv('data/extras/train.csv', header=0)
+dftest = pd.read_csv('data/output/3017-01-24.csv', header=0)
+dfPredict1 = pd.read_csv('data/output/3017-01-24.csv', header=0)
