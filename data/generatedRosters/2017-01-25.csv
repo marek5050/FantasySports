@@ -1,0 +1,14 @@
+Strategy,p1,p2,p3,p4,p5,p6,p7,p8,DKFPS,Result
+floorAvgBonus,Kevin Durant,Stephen Curry,Al Horford,Brook Lopez,Jae Crowder,Eric Gordon,Ryan Anderson,Allen Crabbe,290.5,Win
+baselineBonus,James Harden,Kevin Durant,Paul Millsap,Brook Lopez,Joakim Noah,Sergio Rodriguez,E'Twaun Moore,Dwight Powell,255.0,Loss
+svnGameBonus,James Harden,Kevin Durant,Kyrie Irving,Greg Monroe,Ryan Anderson,Willie Reed,Allen Crabbe,Dante Cunningham,276.25,Loss
+baselineFloorAvgBonus,James Harden,Kevin Durant,Paul Millsap,Brook Lopez,Joakim Noah,Sergio Rodriguez,E'Twaun Moore,Dwight Powell,255.0,Loss
+baselineFloorAvg,Kevin Durant,Stephen Curry,DeMar DeRozan,Brook Lopez,Tyler Johnson,Trevor Booker,Clint Capela,Maurice Harkless,246.5,Loss
+baselineSvnGameAvg,Kevin Durant,Kyrie Irving,DeMar DeRozan,Enes Kanter,Tyler Johnson,Trevor Booker,Greg Monroe,Ryan Anderson,273.25,Loss
+baselineSvnGameAvgBonus,James Harden,Kevin Durant,Kyrie Irving,Greg Monroe,Ryan Anderson,Luol Deng,Sergio Rodriguez,Dwight Powell,247.75,Loss
+frGameAvgBonus,Kevin Durant,Paul Millsap,Marc Gasol,Brook Lopez,Lou Williams,Robert Covington,Iman Shumpert,Courtney Lee,330.5,Win
+baselineFrGameAvgBonus,DeMarcus Cousins,Kevin Durant,Paul Millsap,Brook Lopez,Ty Lawson,Joakim Noah,Sergio Rodriguez,Courtney Lee,266.75,Loss
+baselineFrGameAvg,Kevin Durant,DeMar DeRozan,Marc Gasol,Brook Lopez,Derrick Rose,Tyler Johnson,Frank Kaminsky,Andre Iguodala,272.75,Loss
+NeuralNetworkAvg,Kevin Durant,Joel Embiid,Marc Gasol,Derrick Rose,Lou Williams,Robert Covington,Frank Kaminsky,Courtney Lee,300.0,Win
+RandomForestAvg,Kemba Walker,Draymond Green,Al Horford,Klay Thompson,Jae Crowder,Trevor Ariza,Patrick Beverley,Cody Zeller,286.0,Loss
+NNRF,Isaiah Thomas,Nicolas Batum,Al Horford,Klay Thompson,Michael Kidd-Gilchrist,Marvin Williams,Sam Dekker,Montrezl Harrell,280.25,Loss

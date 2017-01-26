@@ -2,40 +2,91 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="289189b2-db15-4b29-8e00-7ee0c0b6a1fa" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/generatedRosters/2017-01-24.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/output/2017-01-24.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/salaries/2017-01-24.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/salaries/2017-01-25.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/penalties.py" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/extras/test.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/extras/train.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/output/3017-01-23_original.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/salaries/2017-01-15_late.csv" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/data/output/2017-01-03.csv" afterPath="$PROJECT_DIR$/data/output/needFix/2017-01-03.csv" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/data/output/2017-01-04.csv" afterPath="$PROJECT_DIR$/data/output/needFix/2017-01-04.csv" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/data/output/2017-01-05.csv" afterPath="$PROJECT_DIR$/data/output/needFix/2017-01-05.csv" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/data/output/2017-01-06.csv" afterPath="$PROJECT_DIR$/data/output/needFix/2017-01-06.csv" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/data/output/2017-01-08.csv" afterPath="$PROJECT_DIR$/data/output/needFix/2017-01-08.csv" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/data/output/2017-01-10.csv" afterPath="$PROJECT_DIR$/data/output/needFix/2017-01-10.csv" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/data/output/2017-01-11.csv" afterPath="$PROJECT_DIR$/data/output/needFix/2017-01-11.csv" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/data/output/2017-01-12.csv" afterPath="$PROJECT_DIR$/data/output/needFix/2017-01-12.csv" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/data/salaries/2016-12-24.csv" afterPath="$PROJECT_DIR$/data/salaries/2016-12-25.csv" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/data/salaries/2016-12-25.csv" afterPath="$PROJECT_DIR$/data/salaries/2016-12-26.csv" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/data/salaries/2017-01-15_early.csv" afterPath="$PROJECT_DIR$/data/salaries/2017-01-15.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/nba_cache.sqlite" afterPath="$PROJECT_DIR$/nba_cache.sqlite" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo_cache.sqlite" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.ipynb_checkpoints/Notebook-checkpoint.ipynb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/NeuralNets.nb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blah.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/Defense/2017-01-23.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/Defense/2017-01-24.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/Defense/2017-01-25.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/final/2017-01-13.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/final/2017-01-14.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/final/2017-01-15.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/final/2017-01-16.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/final/2017-01-17.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/final/2017-01-18.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/final/2017-01-19.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/final/2017-01-20.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/final/2017-01-21.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/final/2017-01-23.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/final/2017-01-24.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/final/2017-01-25.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/generatedRosters/2017-01-23.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/generatedRosters/2017-01-25.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/generatedRosters/4017-01-24.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/injuries/2017-01-23.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/injuries/2017-01-24.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/injuries/2017-01-25.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/output/2017-01-23.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/output/2017-01-24_original.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/output/2017-01-25.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/output/3017-01-24.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/output/4017-01-24.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/output/old/2017-01-25.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/targets/2017-01-23.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/targets/2017-01-24.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/targets/2017-01-25.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/vegas/2016-12-1.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/vegas/2016-12-10.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/vegas/2016-12-11.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/vegas/2016-12-12.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/vegas/2016-12-13.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/vegas/2016-12-14.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/vegas/2016-12-15.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/vegas/2016-12-16.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/vegas/2016-12-17.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/vegas/2016-12-18.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/vegas/2016-12-19.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/vegas/2016-12-2.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/vegas/2016-12-20.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/vegas/2016-12-21.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/vegas/2016-12-22.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/vegas/2016-12-23.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/vegas/2016-12-25.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/vegas/2016-12-26.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/vegas/2016-12-27.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/vegas/2016-12-28.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/vegas/2016-12-29.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/vegas/2016-12-3.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/vegas/2016-12-30.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/vegas/2016-12-31.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/vegas/2016-12-4.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/vegas/2016-12-5.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/vegas/2016-12-6.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/vegas/2016-12-7.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/vegas/2016-12-8.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/vegas/2016-12-9.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/vegas/2017-01-01.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/vegas/2017-01-02.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/vegas/2017-01-03.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/vegas/2017-01-04.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/vegas/2017-01-05.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/vegas/2017-01-06.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/vegas/2017-01-07.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/vegas/2017-01-08.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/vegas/2017-01-09.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/vegas/2017-01-10.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/vegas/2017-01-11.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/vegas/2017-01-12.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/vegas/2017-01-13.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/vegas/2017-01-14.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/vegas/2017-01-22.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/vegas/2017-01-23.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/vegas/2017-01-24.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/vegas/2017-01-25.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/diabetes.data" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test.ipynb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/NeuralNetsPrediction.ipynb" afterPath="$PROJECT_DIR$/NeuralNetsPrediction.ipynb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Notebook.ipynb" afterPath="$PROJECT_DIR$/Notebook.ipynb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RosterGenerator.nb" afterPath="$PROJECT_DIR$/RosterGenerator.nb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Vegas.py" afterPath="$PROJECT_DIR$/Vegas.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/calculate.py" afterPath="$PROJECT_DIR$/calculate.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/Defense/2017-01-13.csv" afterPath="$PROJECT_DIR$/data/Defense/2017-01-13.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/Defense/2017-01-14.csv" afterPath="$PROJECT_DIR$/data/Defense/2017-01-14.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/blacklisted/list.csv" afterPath="$PROJECT_DIR$/data/blacklisted/list.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/output/2017-01-13.csv" afterPath="$PROJECT_DIR$/data/output/2017-01-13.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/salaries/2016-12-21.csv" afterPath="$PROJECT_DIR$/data/salaries/2016-12-21.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resultsExplorer.py" afterPath="$PROJECT_DIR$/resultsExplorer.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/temp.py" afterPath="$PROJECT_DIR$/temp.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -278,24 +329,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="NBA" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="NBA" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="NBA" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="data" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="vegas" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -933,7 +966,14 @@
       <option name="project" value="LOCAL" />
       <updated>1485272779055</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Building a data pipeline. Extracted the penalties calculation.">
+      <created>1485439152213</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1485439152213</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TodoView">
@@ -1027,7 +1067,8 @@
     <MESSAGE value="renamed files to help with DKFPS calculations" />
     <MESSAGE value="Saving the output with the actual scores for train and test." />
     <MESSAGE value="Cleaned up datasets and NN example." />
-    <option name="LAST_COMMIT_MESSAGE" value="Cleaned up datasets and NN example." />
+    <MESSAGE value="Building a data pipeline. Extracted the penalties calculation." />
+    <option name="LAST_COMMIT_MESSAGE" value="Building a data pipeline. Extracted the penalties calculation." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
