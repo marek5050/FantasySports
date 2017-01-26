@@ -2,6 +2,7 @@
 
 import scrapy
 from datetime import date
+from calculate import fixTeam
 
 import datetime
 
@@ -38,8 +39,8 @@ class VegasOdds(scrapy.Spider):
             elif len(text) == 4:
                 home["odds"] = text[0]
                 away["odds"] = text[1]
-                home["team"] = (text[2].split(":")[0])[0:3].replace("PHX","PHO").replace("WSH","WAS")
-                away["team"] = (text[3].split(":")[0])[0:3].replace("PHX","PHO").replace("WSH","WAS")
+                home["team"] = fixTeam((text[2].split(":")[0])[0:3])
+                away["team"] = fixTeam((text[3].split(":")[0])[0:3])
 
             text = items[5].css("::text").extract()
             if len(text) == 1:
@@ -73,16 +74,18 @@ class VegasInsiderOdds(scrapy.Spider):
             odds = float(odds.replace("\xa0",""))
             overUnder = float(overUnder.replace("\xa0",""))
 
+            away["team"] = fixTeam(cells[0])
             away["odds"] = -1*odds if oddsIdx == 3 else odds
-            away["team"] = cells[0]
             away["overUnder"] = overUnder
-            arr.append(away.values())
+            arr.append([away["team"],away["odds"],away["overUnder"]])
+            home["team"] = fixTeam(cells[2])
             home["odds"] = odds if oddsIdx == 3 else -1*odds
-            home["team"] = cells[2]
             home["overUnder"] = overUnder
-            arr.append(home.values())
+            # yield(home)
+            # yield(away)
+            arr.append([home["team"], home["odds"], home["overUnder"]])
 
-        df = pd.DataFrame(arr)
+        df = pd.DataFrame(arr, columns=["team","odds","overUnder"])
         df.to_csv("data/vegas/2017-01-" + response.url.split("game_date/")[1].split("-")[1] + '.csv', sep=',', encoding='utf-8', index=False,
                           float_format='%.3f')
         return

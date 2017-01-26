@@ -143,6 +143,7 @@ def displayResults():
     return
 
 pLogs = {}
+from calculate import Player
 
 def calculateDKFPSforOutputFile(_date,_file):
     df = pd.read_csv(_file, index_col=None, header=0)
@@ -150,25 +151,23 @@ def calculateDKFPSforOutputFile(_date,_file):
         return
     for idx,row in df.iterrows():
         try:
-            first, last = getName(row["Name"])
-            pId = players.get_player(first, last).values[0]
-            if pId not in pLogs:
-                pLogs[pId] = players.PlayerGameLogs(pId).info()
-
-            logs = pLogs[pId]
-            logs["GAME_DATE"] = pd.to_datetime(logs["GAME_DATE"],utc=True)
-            _r = logs[logs["GAME_DATE"] == _date]
-            _rReturn = getDKFPS(_r)
-
+            p = Player(row)
+            p.setEndDate(today)
+            p.getSeasonAverage()
+            p.getDKFPS()
+            logs = p.seasonStatsWithDKFPS
+            #logs["GAME_DATE"] = pd.to_datetime(logs["GAME_DATE"],utc=True)
+            _r = logs[_date]["DKFPS"]
             val = 0
 
-            if len(_rReturn) > 0:
-                val = _rReturn["DKFPS"].values[0]
+            if len(_r) > 0:
+                val = _r[0]
 
             df.loc[idx, ("Final")]= val
         except Exception as e:
             print("Failed to process " + row["Name"])
             print(e)
+            raise
 
     df.to_csv(_file, sep=',', encoding='utf-8', index=False, float_format='%.3f')
     return
@@ -177,14 +176,16 @@ def calculateDKFPSforOutput():
     # all = glob.iglob('data/generatedRosters/' + today + '.csv')
     # results = pd.DataFrame.from_csv(all)
 
-    path = r'data/output/'  # use your path
+    path = r'data/final/'  # use your path
     allFiles = glob.glob(path + "/2*.csv")
     for _file in allFiles:
+        print("Starting to calculate finals for " + _file)
         try:
             _date = _file.split("/")[2].split(".csv")[0]
             if "_" in _date:
                 _date = _date.split("_")[0]
             calculateDKFPSforOutputFile(_date,_file)
+            print("Finished calculating finals for " + _file)
         except Exception as e:
             print("failed something ")
             print(e)
@@ -231,6 +232,6 @@ except:
 '''
 
 #updateResults()
-displayResults()
-#calculateDKFPSforOutput()
+#displayResults()
+calculateDKFPSforOutput()
 #addVegasForOutput()

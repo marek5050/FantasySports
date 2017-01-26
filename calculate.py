@@ -3,44 +3,41 @@
 import json
 import pandas as pd
 import numpy as np
+from nba_py import player as players
+from nba_py.player import get_player
+
 
 from datetime import date
 
 def fixTeam(abbr):
+    abbr = abbr.upper()
     if(abbr == "CHO"):
-             return "CHA"
-    if(abbr == "SA"):
-                return "SAS"
-    if (abbr == "GS"):
-                return "GSW"
-    if (abbr == "BKN"):
-                return "BRK"
-    if(abbr == "NO"):
-                return "NOP"
-    if(abbr == "NY"):
-                return "NYK"
+                return "CHA"
+    if(abbr == "SAS"):
+                return "SA"
+    if (abbr == "GSW"):
+                return "GS"
+    if (abbr == "BRK"):
+                return "BKN"
+    if(abbr == "NOP"):
+                return "NO"
+    if(abbr == "NOR"):
+                return "NO"
+    if(abbr == "NYK"):
+                return "NY"
     if(abbr == "LAK"):
-        return "LAL"
+                return "LAL"
     if(abbr == "MLW"):
-        return "MIL"
-    if(abbr == "CHA"):
-                return "CHO"
-    if(abbr == "SA"):
-                return "SAS"
-    if (abbr== "GS"):
-                return"GSW"
-
-    if(abbr == "NO"):
-               return "NOP"
-    if(abbr == "NY"):
-                return"NYK"
+                return "MIL"
+    if(abbr=="PHX"):
+                return "PHO"
     return abbr
 
 
-import requests
-import requests_cache
+#import requests
+#import requests_cache
 
-requests_cache.install_cache('all_test_cache')
+#requests_cache.install_cache('all_test_cache_1')
 
 
 class Player:
@@ -146,21 +143,34 @@ class Player:
                 .replace("T.J. Warren", "TJ Warren") \
                 .replace("P.J. Warren", "PJ Warren") \
                 .replace("P.J. Tucker", "PJ Tucker") \
-                .replace("J.R. Smith", "JR Smith") \
+                .replace("J.R. Smith", "JR Smith")   \
                 .replace("C.J. McCollum", "CJ McCollum") \
-                .replace("C.J. Miles", "CJ Miles") \
+                .replace("C.J. Miles", "CJ Miles")   \
                 .replace("C.J. Watson", "CJ Watson") \
                 .replace("C.J. Wilcox", "CJ Wilcox") \
                 .replace("K.J. McDaniels", "KJ McDaniels") \
                 .replace("T.J. McConnell", "TJ McConnell") \
                 .replace("A.J. Hammons", "AJ Hammons") \
+                .replace("R.J. Hunter", "RJ Hunter")   \
+                .replace("Guillermo Hernangomez","Willy Hernangomez") \
+                .replace("Juancho","Juan") \
+                .replace("Robinson III","Robinson") \
+                .replace("Zimmerman Jr.","Zimmerman") \
+                .replace("Luc Richard Mbah a Moute","Luc Mbah a Moute") \
                 .split(" ", maxsplit=1)
+        # Some other names that break everything...
         if "McAdoo" in name[1]:
                 name[0] = "James Michael"
                 name[1] = "McAdoo"
+        if "Derrick" in name[0] and "Jones" in  name[1]:
+                name[0] = "Derrick"
+                name[1] = "Jones, Jr."
 
         try:
-            pid =  get_player(name[0],name[1])
+            if "Nene" in name[0]:
+                pid = 2403
+            else:
+                pid =  get_player(name[0].strip(),name[1].strip())
         except Exception as e:
             print("Problem with player " + self.name)
             print(e)
@@ -452,19 +462,21 @@ class Lineup:
 today = str(date.today())
 end_date = today
 
+from scipy.stats import zscore
 import os.path
-
+import scipy.stats as st
 
 def calculate(_date):
 
     # today = "2017-01-20"
     # end_date = "2017-01-19"
-    injuries_file = 'data/injuries/' + _date + '.json'
-    community_file = 'data/targets/' + _date + '.json'
+    # injuries_file = 'data/injuries/' + _date + '.json'
+    # community_file = 'data/targets/' + _date + '.json'
     newestSalaries = 'data/salaries/' + _date + '.csv'
     defense_file = 'data/Defense/' + _date + '.csv'
     vegas_file = 'data/vegas/' + _date + '.csv'
     calendar_file = "data/calendar/full_schedule.json"
+    output_file = "data/output/"+_date+".csv"
 
     try:
         blacklisted = pd.read_csv('data/blacklisted/list.csv')
@@ -472,8 +484,8 @@ def calculate(_date):
             dvp = pd.read_csv(defense_file)
         else:
             dvp = pd.read_csv(defense_file.replace(_date,today))
-            dvp = dvp.set_index("team")
-            dvp.sort_values(by="all", inplace=True)
+        dvp = dvp.set_index("team")
+        dvp.sort_values(by="all", inplace=True)
     except:
         print("Failed to load DVP file.")
         dvp = []
@@ -483,31 +495,31 @@ def calculate(_date):
         vegas = vegas.set_index("team")
     except:
         print("Failed to load vegas file.")
-
-    try:
-        if os.path.isfile(injuries_file):
-            with open(injuries_file) as json_data:
-                injuries = json.load(json_data)
-        else:
-            injuries = []
-    except:
-        print("Failed to load injuries file.")
-        injuries = []
-
-    try:
-        if os.path.isfile(community_file):
-             with open(community_file) as json_data:
-                   community = json.load(json_data)
-        else:
-            community = []
-    except Exception as e:
-        print("Failed to load community file.")
-        community = []
+    #
+    # try:
+    #     if os.path.isfile(injuries_file):
+    #         with open(injuries_file) as json_data:
+    #             injuries = json.load(json_data)
+    #     else:
+    #         injuries = []
+    # except:
+    #     print("Failed to load injuries file.")
+    #     injuries = []
+    #
+    # try:
+    #     if os.path.isfile(community_file):
+    #          with open(community_file) as json_data:
+    #                community = json.load(json_data)
+    #     else:
+    #         community = []
+    # except Exception as e:
+    #     print("Failed to load community file.")
+    #     community = []
 
     try:
         with open(calendar_file) as json_data:
             calendar = json.load(json_data)
-    except Exception as e:
+    except:
         print("Failed to load calendar file.")
         calendar = []
 
@@ -516,7 +528,7 @@ def calculate(_date):
     t = pd.read_csv(newestSalaries)
     teams = Teams()
     teams.load(t)
-    teams.setInjuries(injuries)
+    # teams.setInjuries(injuries)
     teams.setEndDate(_date)
 
     if os.path.isfile(newestSalaries):
@@ -534,11 +546,11 @@ def calculate(_date):
         else:
             print("Could not find  " + row["Name"])
 
-    for updates in community:
-        for target in updates["targets"]:
-            player = teams.findPlayer(target['name'])
-            if player is not None and player.fantasyPointAverage > 0:
-                player.addBonus(target["value"])
+    # for updates in community:
+    #     for target in updates["targets"]:
+    #         player = teams.findPlayer(target['name'])
+    #         if player is not None and player.fantasyPointAverage > 0:
+    #             player.addBonus(target["value"])
 
     efgs = dataset
     efgs["atHome"] = 0
@@ -546,17 +558,21 @@ def calculate(_date):
     efgs["7GameAvg"] = 0.0
     efgs["FloorAvg"] = 0.0
     efgs["4GameAvg"] = 0.0
-    efgs["communityBonus"] = 0.0
+    # efgs["communityBonus"] = 0.0
     efgs["dvp"] = 0.0
     efgs["value"] = 0.0
 
     for index, row in efgs.iterrows():
-        player = teams.findPlayer(row[1])
+        try:
+            player = teams.findPlayer(row[1])
+        except:
+            print("failed to load player: " + row[1])
+            pass
+
         if player is not None and player.team != '':
             efgs.loc[index, ("injured")] = 1 if (player.injury) else 0
             SvnGameAvg = player.get7GameAvg()
             efgs.loc[index, ("atHome")] = 1 if player.home else 0
-            efgs.loc[index, "teamAbbrev"] = player.team
             efgs.loc[index, ("7GameAvg")] = (SvnGameAvg["home"] if player.home else SvnGameAvg["away"]) or 0.00
             efgs.loc[index, ("FloorAvg")] = player.getFloorAverage() or 0.00
             efgs.loc[index, ("4GameAvg")] = player.get4GameAvg() or 0.0
@@ -566,36 +582,45 @@ def calculate(_date):
             if lg is not None and len(lg) > 0:
                 val = lg["DKFPS"][0]
             efgs.loc[index, ("LastGame")] = val
-
-            bonus = 0.0
-            if player.bonus > 0 and player.bonus <= 5:
-                bonus = 0.10
-            elif player.bonus > 5:
-                bonus = 0.25
-            efgs.loc[index, ("communityBonus")] = bonus * player.fantasyPointAverage
+            ### Bonuses need to be moved out... we're just calculating averages....
+            # bonus = 0.0
+            # if player.bonus > 0 and player.bonus <= 5:
+            #     bonus = 0.10
+            # elif player.bonus > 5:
+            #     bonus = 0.25
+            # efgs.loc[index, ("communityBonus")] = bonus * player.fantasyPointAverage
+            playerValue = player.salary * 0.001 * 6
+            games= list(player.seasonStatsWithDKFPS["DKFPS"].values)
+            games.append(playerValue)
+            chanceOfHittingValue = st.norm.cdf(zscore(games))[-1:][0]
             efgs.loc[index, ("dvp")] = player.dvp or 0.00
-            efgs.loc[index, ('value')] = player.salary * 0.001 * 6
+            efgs.loc[index, ('value')] = playerValue
+            # CDF gives us the probability of it being < than X ...so 1- gives us more than
+            efgs.loc[index, ("fvalue")] = 1.0 - chanceOfHittingValue
             efgs.loc[index, ("O/U")] = vegas.loc[player.team]["overUnder"]
             efgs.loc[index, ("odds")] = vegas.loc[player.team]["odds"]
 
+    ### Something went wrong with these people
     notInjured = efgs[(efgs["Salary"] != 0) & (efgs["7GameAvg"] > 0) & (efgs["FloorAvg"] > 0)]
-    notInjured = notInjured[~notInjured["Name"].isin(blacklisted["name"])]
-    notInjured.to_csv("data/output/" + str(date.today()) + '.csv', sep=',', encoding='utf-8', index=False,
-                      float_format='%.3f')
+    # We'll filter out players somewhere else in the pipeline
+    #    notInjured = notInjured[~notInjured["Name"].isin(blacklisted["name"])]
+    notInjured.to_csv(output_file, sep=',', encoding='utf-8', index=False, float_format='%.3f')
 
 import glob
 if __name__ == "__main__":
-#    calculate(today)
+    calculate(today)
 
-    path = r'data/salaries/'  # use your path
-    allFiles = glob.glob(path + "/*.csv")
-    for _file in allFiles:
-       try:
-            _date = _file.split("/")[2].split(".csv")[0]
-            if "_" in _date:
-                _date = _date.split("_")[0]
-            calculate(_date)
-       except Exception as e:
-           print("Error with date: " + _date)
-           print(e)
-           raise
+    # path = r'data/salaries/'  # use your path
+    # allFiles = glob.glob(path + "/*.csv")
+    # for _file in allFiles:
+    #    try:
+    #         _date = _file.split("/")[2].split(".csv")[0]
+    #         print("Processing salaries for date " + _date )
+    #         if "_" in _date:
+    #             _date = _date.split("_")[0]
+    #         calculate(_date)
+    #         print("Finished processing salaries for date " + _date)
+    #    except Exception as e:
+    #        print("Error with date: " + _date)
+    #        print(e)
+    #        raise

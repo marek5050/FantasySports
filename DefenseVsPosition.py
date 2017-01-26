@@ -9,6 +9,7 @@ from scrapy.crawler import CrawlerProcess
 from scrapy.http import FormRequest, Request
 
 now = datetime.datetime.now()
+from calculate import fixTeam
 
 ordinal = lambda n: "%d%s" % (n,"tsnrhtdd"[(n/10%10!=1)*(n%10<4)*n%10::4])
 
@@ -36,15 +37,7 @@ class DefenseVsPosition(scrapy.Spider):
             if "vs" in cells[0]:
                 item = DefenseItem()
                 t = cells[0].split(" ")[1]
-                if "NOR" in t:
-                    t = "NO"
-                elif "SAS" in t:
-                    t = "SA"
-                elif "NYK" in t:
-                    t = "NY"
-                elif "GSW" in t:
-                    t = "GS"
-                item["team"] = t
+                item["team"] = fixTeam(t)
                 item["g"] = cells[1]
                 item["all"] = cells[2]
                 item["pg"] = cells[3]
