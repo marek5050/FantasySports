@@ -1,0 +1,14 @@
+Strategy,p1,p2,p3,p4,p5,p6,p7,p8
+"floorAvgBonus",John Wall,Paul George,Draymond Green,C.J. McCollum,Marcin Gortat,Patrick Beverley,Andrew Bogut,Patrick Patterson
+"baselineBonus",Damian Lillard,Paul George,Draymond Green,C.J. McCollum,Trevor Ariza,Patrick Beverley,Clint Capela,Zaza Pachulia
+"svnGameBonus",James Harden,C.J. McCollum,Myles Turner,Thaddeus Young,Trevor Ariza,Ryan Anderson,Allen Crabbe,Zaza Pachulia
+"baselineFloorAvgBonus",Damian Lillard,Paul George,Draymond Green,C.J. McCollum,Trevor Ariza,Patrick Beverley,Clint Capela,Zaza Pachulia
+"baselineFloorAvg",Damian Lillard,Paul George,Draymond Green,C.J. McCollum,Trevor Ariza,Patrick Beverley,Clint Capela,Zaza Pachulia
+"baselineSvnGameAvg",James Harden,C.J. McCollum,Mason Plumlee,Thaddeus Young,Trevor Ariza,Patrick Beverley,Ryan Anderson,Montrezl Harrell
+"baselineSvnGameAvgBonus",James Harden,C.J. McCollum,Mason Plumlee,Thaddeus Young,Trevor Ariza,Patrick Beverley,Ryan Anderson,Montrezl Harrell
+"frGameAvgBonus",James Harden,Kevin Durant,C.J. McCollum,Patrick Beverley,Clint Capela,Andre Iguodala,Nene Hilario,Noah Vonleh
+"baselineFrGameAvgBonus",Kevin Durant,Damian Lillard,C.J. McCollum,Thaddeus Young,Trevor Ariza,Patrick Beverley,Clint Capela,Andre Iguodala
+"baselineFrGameAvg",Kevin Durant,Damian Lillard,C.J. McCollum,Thaddeus Young,Trevor Ariza,Patrick Beverley,Clint Capela,Andre Iguodala
+NeuralNetworkAvg,Jeff Teague,C.J. McCollum,Dwyane Wade,LaMarcus Aldridge,Nerlens Noel,Mason Plumlee,Aaron Gordon,Robin Lopez
+RandomForestAvg,Jimmy Butler,Kawhi Leonard,C.J. McCollum,Dwyane Wade,Mason Plumlee,Jonas Valanciunas,Dante Cunningham,Patrick Patterson
+NNRF,Jimmy Butler,C.J. McCollum,Dwyane Wade,Myles Turner,Mason Plumlee,Thaddeus Young,Ryan Anderson,DeMarre Carroll

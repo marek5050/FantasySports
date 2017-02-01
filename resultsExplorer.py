@@ -6,88 +6,13 @@ from datetime import date
 import glob
 
 #today = str(date.yesterday())
-today = "2017-01-25"
+today = "2017-01-29"
 
 rosterscsv = 'data/generatedRosters/'+today+'.csv'
 
 from nba_py import player as players
 from nba_py.player import get_player
-
-
-
-#import requests
-#import requests_cache
-
-#requests_cache.install_cache('demo_cache')
-
-
-
-def getName(_name):
-    name = _name\
-        .replace("J.J. Redick", "JJ Redick") \
-        .replace("T.J. Warren", "TJ Warren") \
-        .replace("P.J. Warren", "PJ Warren") \
-        .replace("P.J. Tucker", "PJ Tucker") \
-        .replace("J.R. Smith", "JR Smith") \
-        .replace("C.J. McCollum", "CJ McCollum") \
-        .replace("C.J. Miles", "CJ Miles") \
-        .replace("C.J. Watson", "CJ Watson") \
-        .replace("C.J. Wilcox", "CJ Wilcox") \
-        .replace("K.J. McDaniels", "KJ McDaniels") \
-        .replace("T.J. McConnell","TJ McConnell") \
-        .replace("A.J. Hammons","AJ Hammons") \
-        .split(" ", maxsplit=1)
-    if "McAdoo" in name[1]:
-        name[0] = "James Michael"
-        name[1] = "McAdoo"
-
-    return name
-
-def getSeasonStats(name):
-        '''
-            Point = +1 PT
-            Made 3pt. shot = +0.5 PTs
-            Rebound = +1.25 PTs
-            Assist = +1.5 PTs
-            Steal = +2 PTs
-            Block = +2 PTs
-            Turnover = -0.5 PTs
-            Double-Double = +1.5PTs (MAX 1 PER PLAYER: Points, Rebounds, Assists, Blocks, Steals)
-            Triple-Double = +3PTs (MAX 1 PER PLAYER: Points, Rebounds, Assists, Blocks, Steals)
-            '''
-        first,last = getName(name)
-        try:
-            pid =  get_player(first,last)
-        except:
-            print("Problem with player")
-            print(name)
-            return None
-
-        c =  players.PlayerGameLogs(pid)
-        k = c.info()
-
-        k.PTS = k.PTS.astype(float)
-        k.BLK = k.BLK.astype(float)
-        k.STL = k.STL.astype(float)
-        k.AST = k.AST.astype(float)
-        k.REB = k.REB.astype(float)
-        k.FG3M = k.FG3M.astype(float)
-        k.TOV = k.TOV.astype(float)
-        return k
-
-
-def getDKFPS(seasonStats):
-            try:
-                p = seasonStats.filter(items=['MATCHUP',"GAME_DATE",'PTS', 'BLK', 'STL', 'AST', 'REB', 'FG3M', 'TOV'])
-                p["Bonus"] = p[p >= 10].count(axis=1,numeric_only=True)
-                p.loc[p["Bonus"] < 2,"Bonus"] = 0.0
-                p.loc[p["Bonus"] == 2,"Bonus"] = 1.5
-                p.loc[p["Bonus"] > 2,"Bonus"] = 4.5
-                p["DKFPS"] = 1 * (p.PTS) + 0.5 * (p.FG3M) + 1.25 * (p.REB) + 1.5 * (p.AST) + 2 * (p.STL) + 2 * (p.BLK) - 0.5 * (p.TOV) + p.Bonus
-            except:
-                pass
-
-            return p
+from calculate import Player
 
 def updateResults():
     history = 'data/HistoryWithResults/recent.csv'
@@ -101,11 +26,13 @@ def updateResults():
         rrosters["DKFPS"] = 0.0
         for index,row in rrosters.iterrows():
             s = 0
-            for player in row[0:8]:
-                    stats = getSeasonStats(player)
-                    if stats is not None:
-                        pts = getDKFPS(stats)
-                        s += pts.loc[0,"DKFPS"]
+            for name in row[0:8]:
+                    p = Player(name = name)
+                    p.getSeasonStats()
+                    p.getDKFPS()
+                    g = p.getLastGame()
+                    if "DKFPS" in g:
+                        s += g["DKFPS"][0]
             rrosters.loc[index, "DKFPS"] = s
 
         rrosters["Result"] = "None"
@@ -147,27 +74,26 @@ from calculate import Player
 
 def calculateDKFPSforOutputFile(_date,_file):
     df = pd.read_csv(_file, index_col=None, header=0)
-    if "Final" in df:
-        return
+    #if "Final" in df:
+    #   return
     for idx,row in df.iterrows():
         try:
-            p = Player(row)
-            p.setEndDate(today)
-            p.getSeasonAverage()
-            p.getDKFPS()
-            logs = p.seasonStatsWithDKFPS
-            #logs["GAME_DATE"] = pd.to_datetime(logs["GAME_DATE"],utc=True)
-            _r = logs[_date]["DKFPS"]
-            val = 0
-
-            if len(_r) > 0:
-                val = _r[0]
+            p = Player(data = row)
+            logs = p.getSeasonStats()
+            val = 0.00
+            if logs is not None \
+                    and len(logs) > 0 \
+                    and (_date in logs.index or pd.Timestamp(_date) in logs.index)\
+                    and "DKFPS" in logs.columns.values:
+                _r = logs[_date]
+                if len(_r) > 0:
+                    val = _r["DKFPS"].mean()
 
             df.loc[idx, ("Final")]= val
         except Exception as e:
             print("Failed to process " + row["Name"])
             print(e)
-            raise
+            pass
 
     df.to_csv(_file, sep=',', encoding='utf-8', index=False, float_format='%.3f')
     return
@@ -231,7 +157,8 @@ except:
         pass
 '''
 
+#calculateDKFPSforOutputFile("2017-01-31","data/final/2017-01-31.csv")
 #updateResults()
 #displayResults()
 calculateDKFPSforOutput()
-#addVegasForOutput()
+# addVegasForOutput()

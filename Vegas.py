@@ -52,10 +52,17 @@ class VegasOdds(scrapy.Spider):
 
 import pandas as pd
 
+
+today = str(date.today())
+
+#base = datetime.datetime.today()
+#date_list = [base - datetime.timedelta(days=x) for x in range(60, 90)]
+date_list = [datetime.datetime.today()]
+
 class VegasInsiderOdds(scrapy.Spider):
     name = "VegasInsiderOdds"
-    start_urls = ["http://www.vegasinsider.com/nba/scoreboard/scores.cfm/game_date/01-" + str(x) + "-2017" for x in
-     range(1, 15)]
+    start_urls = ["http://www.vegasinsider.com/nba/scoreboard/scores.cfm/game_date/"+x.strftime("%Y-%m-%d") for x in date_list]
+
     def parse(self, response):
         arr = []
         gamesPlayed = response.css("td.sportPicksBorder table")
@@ -86,17 +93,20 @@ class VegasInsiderOdds(scrapy.Spider):
             arr.append([home["team"], home["odds"], home["overUnder"]])
 
         df = pd.DataFrame(arr, columns=["team","odds","overUnder"])
-        df.to_csv("data/vegas/2017-01-" + response.url.split("game_date/")[1].split("-")[1] + '.csv', sep=',', encoding='utf-8', index=False,
+        try:
+            tod = response.url.split("game_date/")[1]
+        except:
+            tod = today
+        df.to_csv("data/vegas/"+tod+'.csv', sep=',', encoding='utf-8', index=False,
                           float_format='%.3f')
         return
 
 if __name__ == "__main__":
-    print("Starting DvP extraction.")
+    print("Starting Vegas extraction.")
     injuryProcess = CrawlerProcess({
         'USER_AGENT': '"Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1)',
-        'FEED_FORMAT': 'csv',
-        'FEED_URI': 'data/vegas/' + str(date.today()) + '.csv'
+        'FEED_FORMAT': 'csv'
     })
 
-    injuryProcess.crawl(VegasOdds)
+    injuryProcess.crawl(VegasInsiderOdds)
     injuryProcess.start()

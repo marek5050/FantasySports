@@ -1,0 +1,14 @@
+Strategy,p1,p2,p3,p4,p5,p6,p7,p8
+"floorAvgBonus",LeBron James,Kyrie Irving,Hassan Whiteside,Brook Lopez,Zach Randolph,Trevor Booker,Wesley Matthews,Ish Smith
+"baselineBonus",Isaiah Thomas,Goran Dragic,Hassan Whiteside,Brook Lopez,James Johnson,Marcus Smart,Wayne Ellington,Rodney McGruder
+"svnGameBonus",Isaiah Thomas,Andre Drummond,Goran Dragic,Dion Waiters,Brook Lopez,James Johnson,Randy Foye,Rodney McGruder
+"baselineFloorAvgBonus",Isaiah Thomas,Goran Dragic,Hassan Whiteside,Brook Lopez,James Johnson,Marcus Smart,Wesley Matthews,Rodney McGruder
+"baselineFloorAvg",Isaiah Thomas,Goran Dragic,Hassan Whiteside,Brook Lopez,James Johnson,Marcus Smart,Wesley Matthews,Rodney McGruder
+"baselineSvnGameAvg",Isaiah Thomas,Andre Drummond,Goran Dragic,Brook Lopez,James Johnson,Marcus Smart,Wayne Ellington,Rodney McGruder
+"baselineSvnGameAvgBonus",Isaiah Thomas,Andre Drummond,Goran Dragic,Brook Lopez,James Johnson,Marcus Smart,Wayne Ellington,Rodney McGruder
+"frGameAvgBonus",Isaiah Thomas,Marc Gasol,Goran Dragic,Dion Waiters,Reggie Jackson,Wayne Ellington,Caris LeVert,Jonas Jerebko
+"baselineFrGameAvgBonus",Isaiah Thomas,Marc Gasol,Goran Dragic,Brook Lopez,James Johnson,Marcus Morris,Wayne Ellington,Rodney McGruder
+"baselineFrGameAvg",Isaiah Thomas,Marc Gasol,Goran Dragic,Brook Lopez,James Johnson,Marcus Morris,Wayne Ellington,Rodney McGruder
+NeuralNetworkAvg,Kyrie Irving,Andrew Wiggins,Mike Conley,Nikola Vucevic,Harrison Barnes,Zach Randolph,Kentavious Caldwell-Pope,D.J. Augustin
+RandomForestAvg,Isaiah Thomas,Andre Drummond,Mike Conley,Brook Lopez,Harrison Barnes,Trevor Booker,Jon Leuer,Bojan Bogdanovic
+NNRF,Isaiah Thomas,Mike Conley,Brook Lopez,Nikola Vucevic,Harrison Barnes,Zach Randolph,Marcus Smart,Rodney McGruder

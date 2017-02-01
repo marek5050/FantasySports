@@ -9,31 +9,21 @@ from calculate import *
 today = str(date.today())
 end_date = today
 
-
-import requests
-import requests_cache
-
-#requests_cache.install_cache('all_test_cache_1')
-
 def calculatePenalties(_file):
     vegas = pd.read_csv(_file.replace("output","vegas"))
     vegas = vegas.set_index("team")
 
     df = pd.read_csv(_file)
 
-
     _date = _file.split("/")[2].split(".csv")[0]
     if "_" in _date:
         _date = _date.split("_")[0]
 
     for idx,row in df.iterrows():
-        player = Player(row)
+        player = Player(data = row)
         player.setEndDate(_date)
-        player.getSeasonStats()
-        player.getDKFPS()
-        player.getSeasonAverage()
-
-        if player is not None and player.team != '':
+        df.loc[idx, "penalty"] = 0
+        if player is not None and player.team != '' and player.seasonStats is not None:
             penalty = 0
             if player.injury:
                 penalty = 9999.0
@@ -70,19 +60,18 @@ def calculatePenalties(_file):
 
             lastGame = player.getLastGame()
             try:
-                std = player.seasonStatsWithDKFPS.loc[:, "DKFPS"].std()
+                std = player.seasonStats.loc[:, "DKFPS"].std()
                 # if last game sucked
                 if len(lastGame["DKFPS"]) > 0 and (lastGame["DKFPS"][0] < (player.fantasyPointAverage - std)):
                     penalty += std
                     s += " bad last game: " + str((std))
-            except:
+            except Exception as e:
+                penalty = penalty
                 print("Failed to get LastGame")
+                print(e)
                 pass
 
-            #penalty = -1 * player.fantasyPointAverage * (penalty / 100)
-            #print(s)
-            df.loc[idx, "penalty"] = -1*penalty
-            #df.loc[idx,"reasons"] = s
+            df.loc[idx, "penalty"] = -1*penalty or 0.0
 
     df.to_csv(_file.replace("output","final"), sep=',', encoding='utf-8', index=False, float_format='%.3f')
 
@@ -91,6 +80,7 @@ import glob
 if __name__ == "__main__":
     print("Calculating penalties for data")
     calculatePenalties('data/output/'+today+'.csv')
+
     # path = r'data/output/'  # use your path
     # allFiles = glob.glob(path + "/*.csv")
     # for _file in allFiles:

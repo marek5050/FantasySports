@@ -2,15 +2,22 @@
 
 import json
 import pandas as pd
-import numpy as np
-from nba_py import player as players
+import datetime
+from scipy.stats import zscore
+import os.path
+import scipy.stats as st
+import models.mysql as sql
+from sqlalchemy.sql import select
 from nba_py.player import get_player
 
+session = sql.get_session()
 
 from datetime import date
 
 def fixTeam(abbr):
     abbr = abbr.upper()
+    if "UTH" in abbr:
+                return "UTA"
     if(abbr == "CHO"):
                 return "CHA"
     if(abbr == "SAS"):
@@ -33,31 +40,116 @@ def fixTeam(abbr):
                 return "PHO"
     return abbr
 
-
-#import requests
-#import requests_cache
-
-#requests_cache.install_cache('all_test_cache_1')
-
-
 class Player:
+    pid = None
+    name = None
+    salary = None
+    position = None
+    gameInfo = None
+    team = None
+    fantasyPointAverage = 0
+    injury = None
+    seasonStats = None
+    bonus = 0.0
+    players = None
+    pid = None
+    error = 0
+    dvp = 0
+    endDate = None
+    logs = None
+    info = None
 
-    def __init__(self,data):
-        self.name = data["Name"]
-        self.salary = data["Salary"]
-        self.position = data["Position"]
-        self.gameInfo = data["GameInfo"]
-        self.team = data["teamAbbrev"].upper()
-        self.fantasyPointAverage = data["AvgPointsPerGame"]
-        self.injury = None
-        self.seasonStats = None
-        self.seasonStatsWithDKFPS = None
-        self.bonus = 0.0
-        self.players = None
-        self.pid = None
-        self.error = 0
-        if "dvp" in data:
-            self.dvp = data["dvp"]
+    @staticmethod
+    def fixName(name):
+        _name = name \
+            .replace("J.J. Redick", "JJ Redick") \
+            .replace("T.J. Warren", "TJ Warren") \
+            .replace("P.J. Warren", "PJ Warren") \
+            .replace("P.J. Tucker", "PJ Tucker") \
+            .replace("J.R. Smith", "JR Smith") \
+            .replace("C.J. McCollum", "CJ McCollum") \
+            .replace("C.J. Miles", "CJ Miles") \
+            .replace("C.J. Watson", "CJ Watson") \
+            .replace("C.J. Wilcox", "CJ Wilcox") \
+            .replace("K.J. McDaniels", "KJ McDaniels") \
+            .replace("T.J. McConnell", "TJ McConnell") \
+            .replace("A.J. Hammons", "AJ Hammons") \
+            .replace("R.J. Hunter", "RJ Hunter") \
+            .replace("Guillermo Hernangomez", "Willy Hernangomez") \
+            .replace("Juancho", "Juan") \
+            .replace("Robinson III", "Robinson") \
+            .replace("Zimmerman Jr.", "Zimmerman") \
+            .replace("Luc Richard Mbah a Moute", "Luc Mbah a Moute") \
+            .replace("Moe Harkless", "Maurice Harkless") \
+            .replace("Wes Johnson", "Wesley Johnson") \
+            .replace("DeAndre Bembry", "DeAndre\' Bembry") \
+            .split(" ", maxsplit=1)
+
+        # Some other names that break everything...
+        if "McAdoo" in _name[1]:
+            _name[0] = "James Michael"
+            _name[1] = "McAdoo"
+        if "Derrick" in _name[0] and "Jones" in _name[1]:
+            _name[0] = "Derrick"
+            _name[1] = "Jones, Jr."
+
+        return _name
+
+    def __init__(self,name=None, data=None):
+
+        if name is not None:
+            self.name = name
+
+        if data is not None:
+            self.name = data["Name"]
+            self.salary = data["Salary"]
+            self.position = data["Position"]
+            self.gameInfo = data["GameInfo"]
+            self.team = data["teamAbbrev"].upper()
+            self.fantasyPointAverage = data["AvgPointsPerGame"]
+            if "dvp" in data:
+                self.dvp = data["dvp"]
+
+            first, last = Player.fixName(self.name)
+
+            try:
+                if "Nene" in first:
+                    self.pid = 2403
+                else:
+                    self.pid = get_player(first, last, only_current=1)
+                    self.pid = self.pid.values[0]
+            except Exception as ee:
+                print("Problem with player " + self.name)
+                print(ee)
+                self.error = 1
+                self.db = 0
+                pass
+                return None
+
+            _info = session.execute(select([sql.Player]).where(sql.Player.PERSON_ID == self.pid))
+            self.info = pd.DataFrame(_info.fetchall(), _info.keys())
+
+            _logs2 = session.query(sql.PlayerLog).filter(sql.PlayerLog.Player_ID == self.pid).all()
+            _logs = [getattr(x,"__dict__") for x in _logs2]
+
+            _logs = pd.DataFrame.from_dict(_logs)
+
+            if "GAME_DATE" in _logs.columns.values:
+                _logs["GAME_DATE"] = pd.to_datetime(_logs["GAME_DATE"], utc=True)
+                _logs.set_index("GAME_DATE", inplace=True)
+                cols = ["PTS", "BLK", "STL", "AST", "REB", "FG3M", "TOV","DKFPS"]
+                _logs[cols] = _logs[cols].apply(pd.to_numeric)
+                self.seasonStats = _logs.sort_index(ascending=False)
+            else:
+                print("No GAME_DATE for " + self.name)
+                self.error = 1
+                self.logs = None
+                self.db = 0
+                pass
+
+            self.db = 1
+            return
+
 
     def setEndDate(self, endDate):
         self.endDate = endDate
@@ -102,120 +194,46 @@ class Player:
     def setFantasyAverage(self,avg):
         self.fantasyPointAverage= avg
         return
+
     def addBonus (self, val):
         self.bonus += val
         return
 
     def getLastGame(self):
-        if self.seasonStats is None:
-            self.getSeasonStats()
+        if self.error == 1 or self.db == 0:
+            return None
 
         try:
-            return self.seasonStatsWithDKFPS[:1]
+            return self.getSeasonStats()[:1]
         except:
             pass
 
         return
 
-
     def getSeasonStats(self,endDate = None):
-        if endDate is None :
-            endDate = self.endDate
-
         if self.error == 1:
             return
-        '''
-            Point = +1 PT
-            Made 3pt. shot = +0.5 PTs
-            Rebound = +1.25 PTs
-            Assist = +1.5 PTs
-            Steal = +2 PTs
-            Block = +2 PTs
-            Turnover = -0.5 PTs
-            Double-Double = +1.5PTs (MAX 1 PER PLAYER: Points, Rebounds, Assists, Blocks, Steals)
-            Triple-Double = +3PTs (MAX 1 PER PLAYER: Points, Rebounds, Assists, Blocks, Steals)
-            '''
 
-        from nba_py import player as players
-        from nba_py.player import get_player
-        name = self.name \
-                .replace("J.J. Redick", "JJ Redick") \
-                .replace("T.J. Warren", "TJ Warren") \
-                .replace("P.J. Warren", "PJ Warren") \
-                .replace("P.J. Tucker", "PJ Tucker") \
-                .replace("J.R. Smith", "JR Smith")   \
-                .replace("C.J. McCollum", "CJ McCollum") \
-                .replace("C.J. Miles", "CJ Miles")   \
-                .replace("C.J. Watson", "CJ Watson") \
-                .replace("C.J. Wilcox", "CJ Wilcox") \
-                .replace("K.J. McDaniels", "KJ McDaniels") \
-                .replace("T.J. McConnell", "TJ McConnell") \
-                .replace("A.J. Hammons", "AJ Hammons") \
-                .replace("R.J. Hunter", "RJ Hunter")   \
-                .replace("Guillermo Hernangomez","Willy Hernangomez") \
-                .replace("Juancho","Juan") \
-                .replace("Robinson III","Robinson") \
-                .replace("Zimmerman Jr.","Zimmerman") \
-                .replace("Luc Richard Mbah a Moute","Luc Mbah a Moute") \
-                .split(" ", maxsplit=1)
-        # Some other names that break everything...
-        if "McAdoo" in name[1]:
-                name[0] = "James Michael"
-                name[1] = "McAdoo"
-        if "Derrick" in name[0] and "Jones" in  name[1]:
-                name[0] = "Derrick"
-                name[1] = "Jones, Jr."
+        statsTillDate = self.seasonStats
 
-        try:
-            if "Nene" in name[0]:
-                pid = 2403
-            else:
-                pid =  get_player(name[0].strip(),name[1].strip())
-        except Exception as e:
-            print("Problem with player " + self.name)
-            print(e)
-            self.error = 1
-            return None
+        if endDate is not None and statsTillDate is not None:
+            statsTillDate = statsTillDate[endDate:'2016-01-01']
+        elif self.endDate is not None and statsTillDate is not None:
+            statsTillDate = statsTillDate[self.endDate:'2016-01-01']
 
-        c =  players.PlayerGameLogs(pid)
-        k = c.info()
-        k["GAME_DATE"] = pd.to_datetime(k["GAME_DATE"])
-        k.set_index("GAME_DATE",inplace=True)
-        k = k[endDate:'2016-01-01']
-        k.PTS = k.PTS.astype(float)
-        k.BLK = k.BLK.astype(float)
-        k.STL = k.STL.astype(float)
-        k.AST = k.AST.astype(float)
-        k.REB = k.REB.astype(float)
-        k.FG3M = k.FG3M.astype(float)
-        k.TOV = k.TOV.astype(float)
-        self.seasonStats = k
-        return
-
-    def getDKFPS(self):
-            if self.seasonStats is None and self.error == 0:
-                self.getSeasonStats()
-            try:
-                p = self.seasonStats.filter(items=['MATCHUP',"GAME_DATE",'PTS', 'BLK', 'STL', 'AST', 'REB', 'FG3M', 'TOV'])
-                p["Bonus"] = p[p >= 10].count(axis=1,numeric_only=True)
-                p.loc[p["Bonus"] < 2,"Bonus"] = 0.0
-                p.loc[p["Bonus"] == 2,"Bonus"] = 1.5
-                p.loc[p["Bonus"] > 2,"Bonus"] = 4.5
-                p["DKFPS"] = 1 * (p.PTS) + 0.5 * (p.FG3M) + 1.25 * (p.REB) + 1.5 * (p.AST) + 2 * (p.STL) + 2 * (p.BLK) - 0.5 * (p.TOV) + p.Bonus
-                self.seasonStatsWithDKFPS = p
-            except:
-                pass
-            return
-
+        return statsTillDate
 
     def get7GameAvg(self):
-            if self.seasonStats is None and self.error == 0:
-                self.getSeasonStats()
-                self.getDKFPS()
+            home = 0.0
+            away = 0.0
+
+            if self.error == 1 or self.db == 0:
+                return  {"home": home, "away": away}
+
             try:
-                p = self.seasonStatsWithDKFPS
-                home =  p[p["MATCHUP"].str.contains("vs.")]["DKFPS"][:7].mean()
-                away =  p[p["MATCHUP"].str.contains("@")]["DKFPS"][:7].mean()
+                p = self.getSeasonStats()
+                home = p[p["MATCHUP"].str.contains("vs.")]["DKFPS"][:7].mean()
+                away = p[p["MATCHUP"].str.contains("@")]["DKFPS"][:7].mean()
             except:
                 home = 0.0
                 away = 0.0
@@ -223,23 +241,23 @@ class Player:
             return {"home": home, "away": away}
 
     def get4GameAvg(self):
-            if self.seasonStats is None and self.error == 0:
-                self.getSeasonStats()
-                self.getDKFPS()
+            if self.error == 1 or self.db == 0:
+                return 0
+
             try:
-                p = self.seasonStatsWithDKFPS
-                avg =  p.iloc[:4]["DKFPS"].mean()
+                p = self.getSeasonStats()
+                avg = p.iloc[:4]["DKFPS"].mean()
             except:
                 avg = 0.0
 
             return avg
 
     def getFloorAverage(self):
-            if self.seasonStats is None and self.error == 0:
-                self.getSeasonStats()
-                self.getDKFPS()
+            if self.error == 1 or self.db == 0:
+                return 0
+
             try:
-                p = self.seasonStatsWithDKFPS
+                p = self.getSeasonStats()
                 lowerBound = p[(p.DKFPS < p.DKFPS.mean())]
                 lowerMean = lowerBound.DKFPS.mean()
             except:
@@ -248,12 +266,17 @@ class Player:
             return lowerMean
 
     def getSeasonAverage(self):
-            if self.seasonStats is None and self.error == 0:
-                self.getSeasonStats()
-                self.getDKFPS()
+        if self.error == 1 or self.db == 0:
+            return 0
 
-            p = self.seasonStatsWithDKFPS
-            seasonAverage = p["DKFPS"].mean()
+            p = self.getSeasonStats()
+            if p is not None:
+                seasonAverage = p["DKFPS"].mean()
+            else:
+                print("Could not find player..." + p.name)
+                self.error = 1
+                seasonAverage = 0
+
             return seasonAverage
 
 
@@ -268,7 +291,7 @@ class Player:
             return self.name == other.name
         return self.name == other
 
-#calendar["lscd"][0]["mscd"]["g"][0]
+
 class Calendar:
     schedule = []
 
@@ -307,7 +330,6 @@ class Team:
         else:
             print(self.name + " could not find player: " + injury[0])
         return
-
 
     def setInjuries(self, injuryList):
         for injury in injuryList:
@@ -367,6 +389,7 @@ class Team:
             return self.name == other.name
         return self.name == other
 
+
 class Teams:
     def __init__(self):
         self.teams = {}
@@ -378,7 +401,7 @@ class Teams:
             abbr = playerdata["teamAbbrev"].upper()
             if abbr not in self.teams:
                 self.teams[abbr] = Team(abbr)
-            self.teams[abbr].addPlayer(Player(playerdata))
+            self.teams[abbr].addPlayer(Player(data = playerdata))
 
         return
 
@@ -423,8 +446,8 @@ class Teams:
             '''
         return []
 
-class Matchups:
 
+class Matchups:
     def __init__(self):
         self.cal = []
         self.games = []
@@ -444,6 +467,7 @@ class Matchups:
     def findTeam(self, team):
         return self.teams[self.teams.index(team)]
 
+
 class Lineup:
     def __init__(self):
         self.players = []
@@ -462,15 +486,11 @@ class Lineup:
 today = str(date.today())
 end_date = today
 
-from scipy.stats import zscore
-import os.path
-import scipy.stats as st
-
 def calculate(_date):
 
     # today = "2017-01-20"
     # end_date = "2017-01-19"
-    # injuries_file = 'data/injuries/' + _date + '.json'
+    injuries_file = 'data/injuries/' + _date + '.json'
     # community_file = 'data/targets/' + _date + '.json'
     newestSalaries = 'data/salaries/' + _date + '.csv'
     defense_file = 'data/Defense/' + _date + '.csv'
@@ -495,26 +515,17 @@ def calculate(_date):
         vegas = vegas.set_index("team")
     except:
         print("Failed to load vegas file.")
-    #
-    # try:
-    #     if os.path.isfile(injuries_file):
-    #         with open(injuries_file) as json_data:
-    #             injuries = json.load(json_data)
-    #     else:
-    #         injuries = []
-    # except:
-    #     print("Failed to load injuries file.")
-    #     injuries = []
-    #
-    # try:
-    #     if os.path.isfile(community_file):
-    #          with open(community_file) as json_data:
-    #                community = json.load(json_data)
-    #     else:
-    #         community = []
-    # except Exception as e:
-    #     print("Failed to load community file.")
-    #     community = []
+
+    try:
+        if os.path.isfile(injuries_file):
+            with open(injuries_file) as json_data:
+                injuries = json.load(json_data)
+        else:
+            injuries = []
+    except:
+        print("Failed to load injuries file.")
+        injuries = []
+
 
     try:
         with open(calendar_file) as json_data:
@@ -525,11 +536,15 @@ def calculate(_date):
 
     cal = Calendar()
     cal.load(calendar)
-    t = pd.read_csv(newestSalaries)
+    all_players = pd.read_csv(newestSalaries)
     teams = Teams()
-    teams.load(t)
-    # teams.setInjuries(injuries)
-    teams.setEndDate(_date)
+    teams.load(all_players)
+    teams.setInjuries(injuries)
+
+    from dateutil import parser
+    dt = parser.parse(_date)
+    day = datetime.timedelta(days=1)
+    teams.setEndDate(dt - day)
 
     if os.path.isfile(newestSalaries):
         dataset = pd.read_csv(newestSalaries)
@@ -546,21 +561,18 @@ def calculate(_date):
         else:
             print("Could not find  " + row["Name"])
 
-    # for updates in community:
-    #     for target in updates["targets"]:
-    #         player = teams.findPlayer(target['name'])
-    #         if player is not None and player.fantasyPointAverage > 0:
-    #             player.addBonus(target["value"])
-
     efgs = dataset
     efgs["atHome"] = 0
     efgs["injured"] = 0
     efgs["7GameAvg"] = 0.0
     efgs["FloorAvg"] = 0.0
     efgs["4GameAvg"] = 0.0
-    # efgs["communityBonus"] = 0.0
+    efgs["LastGame"] = 0.0
     efgs["dvp"] = 0.0
     efgs["value"] = 0.0
+    efgs["fvalue"] = 0.0
+    efgs["odds"] = 0.0
+    efgs["O/U"] = 0.0
 
     for index, row in efgs.iterrows():
         try:
@@ -571,45 +583,73 @@ def calculate(_date):
 
         if player is not None and player.team != '':
             efgs.loc[index, ("injured")] = 1 if (player.injury) else 0
-            SvnGameAvg = player.get7GameAvg()
+
             efgs.loc[index, ("atHome")] = 1 if player.home else 0
-            efgs.loc[index, ("7GameAvg")] = (SvnGameAvg["home"] if player.home else SvnGameAvg["away"]) or 0.00
-            efgs.loc[index, ("FloorAvg")] = player.getFloorAverage() or 0.00
-            efgs.loc[index, ("4GameAvg")] = player.get4GameAvg() or 0.0
 
-            lg = player.getLastGame()
+            SvnGameAvg = player.get7GameAvg()
+
+            if player.home:
+                SvnGameAvg = SvnGameAvg["home"]
+            else:
+                SvnGameAvg = SvnGameAvg["away"]
+
+            if SvnGameAvg > 0:
+                efgs.loc[index, ("7GameAvg")] = SvnGameAvg
+
+            floorAvg = player.getFloorAverage()
+
+            if floorAvg > 0:
+                efgs.loc[index, ("FloorAvg")] =  floorAvg
+
+            frGameAvg = player.get4GameAvg()
+            if frGameAvg > 0:
+                efgs.loc[index, ("4GameAvg")] = frGameAvg
+
             val = 0.00
-            if lg is not None and len(lg) > 0:
-                val = lg["DKFPS"][0]
-            efgs.loc[index, ("LastGame")] = val
-            ### Bonuses need to be moved out... we're just calculating averages....
-            # bonus = 0.0
-            # if player.bonus > 0 and player.bonus <= 5:
-            #     bonus = 0.10
-            # elif player.bonus > 5:
-            #     bonus = 0.25
-            # efgs.loc[index, ("communityBonus")] = bonus * player.fantasyPointAverage
-            playerValue = player.salary * 0.001 * 6
-            games= list(player.seasonStatsWithDKFPS["DKFPS"].values)
-            games.append(playerValue)
-            chanceOfHittingValue = st.norm.cdf(zscore(games))[-1:][0]
-            efgs.loc[index, ("dvp")] = player.dvp or 0.00
-            efgs.loc[index, ('value')] = playerValue
-            # CDF gives us the probability of it being < than X ...so 1- gives us more than
-            efgs.loc[index, ("fvalue")] = 1.0 - chanceOfHittingValue
-            efgs.loc[index, ("O/U")] = vegas.loc[player.team]["overUnder"]
-            efgs.loc[index, ("odds")] = vegas.loc[player.team]["odds"]
+            lg = player.getLastGame()
 
-    ### Something went wrong with these people
-    notInjured = efgs[(efgs["Salary"] != 0) & (efgs["7GameAvg"] > 0) & (efgs["FloorAvg"] > 0)]
-    # We'll filter out players somewhere else in the pipeline
-    #    notInjured = notInjured[~notInjured["Name"].isin(blacklisted["name"])]
-    notInjured.to_csv(output_file, sep=',', encoding='utf-8', index=False, float_format='%.3f')
+            if player.error == 0 and player.db == 1 and lg is not None and "DKFPS" in lg.columns.values:
+                    val = lg["DKFPS"].mean()
+
+            efgs.loc[index, ("LastGame")] = val
+
+            playerValue = player.salary * 0.001 * 6
+
+            efgs.loc[index, ("fvalue")] = 0.0
+
+            if player.error == 0 and player.db == 1 and player.getSeasonStats() is not None and "DKFPS" in player.getSeasonStats().columns.values:
+                games= list(player.getSeasonStats()["DKFPS"].values)
+                games.append(playerValue)
+                chanceOfHittingValue = st.norm.cdf(zscore(games))[-1:][0]
+                # CDF gives us the probability of it being < than X ...so 1 - gives us more than
+                efgs.loc[index, ("fvalue")] = 1.0 - chanceOfHittingValue
+            else:
+                print("Failed to get seasonStats for " + player.name)
+
+            efgs.loc[index, ("dvp")] = player.dvp or 0.00
+            efgs.loc[index, ('value')] = playerValue or 0.00
+
+            ou = 0
+            odds = 0
+            if player.team.upper() in vegas.index.values:
+                ou = vegas.loc[player.team.upper()]["overUnder"]
+                odds = vegas.loc[player.team.upper()]["odds"]
+            else:
+                print("player not in vegas " + player.name + " " + player.team.upper())
+
+            if ou > 0:
+                efgs.loc[index, ("O/U")] = ou
+
+            if abs(odds) > 0:
+                efgs.loc[index, ("odds")] = odds
+
+    efgs.to_csv(output_file, sep=',', encoding='utf-8', index=False, float_format='%.3f')
 
 import glob
+
 if __name__ == "__main__":
     calculate(today)
-
+    # #calculate("2017-01-28")
     # path = r'data/salaries/'  # use your path
     # allFiles = glob.glob(path + "/*.csv")
     # for _file in allFiles:

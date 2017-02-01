@@ -40,6 +40,46 @@ class InjurySpider(scrapy.Spider):
                      }
         return
 
+import pandas as pd
+import glob
+
+class AllInjurySpider(scrapy.Spider):
+    name = 'AllInjurySpider'
+    start_urls = ['http://www.prosportstransactions.com/basketball/Search/SearchResults.php?Player=&Team=&BeginDate=2016-12-$DAY&EndDate=2016-12-$DAY&InjuriesChkBx=yes&PersonalChkBx=yes&Submit=Search'.replace("$DAY",str(x)) for x in range(1,32)]
+    outputDirectory = "injuries"
+
+    #    def update_settings(self,settings):
+    #        settings.set('FEED_URI','data/'+self.outputDirectory+'/'+str(date.today())+'.json')
+    #        return settings
+ #   def start_requests(self):
+ #       'http://www.prosportstransactions.com/basketball/Search/SearchResults.php?Player=&Team=&BeginDate=2016-12-01&EndDate=2017-01-31&InjuriesChkBx=yes&PersonalChkBx=yes&Submit=Search'
+
+    def grabInjuries(self, response):
+        injuries = ",".join(response.css("table.datatable tr td:nth-child(4n)::text").extract()).replace(" • ","").split(",")
+        return injuries
+
+
+    def parse(self, response):
+        path = r'data/output/'  # use your path
+        allFiles = glob.glob(path + "/*.csv")
+        for _file in allFiles:
+            try:
+                _date = _file.split("/")[2].split(".csv")[0]
+                if "_" in _date:
+                    _date = _date.split("_")[0]
+                injuries = self.grabInjuries(response)
+                df = pd.read_csv("data/output/" + _date + ".csv", header=0, index_col=None)
+
+                for injury in injuries:
+                    df.loc[(df.Name == injury)]["injury"] = 1.0
+            except Exception as e :
+                print("Some error")
+                print(e)
+                raise
+
+        return
+
+
 if __name__ == "__main__":
     print("Starting injury extraction.")
     injuryProcess = CrawlerProcess({
