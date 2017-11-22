@@ -1,0 +1,26 @@
+avg_pts,date,fantasy_pts,fpts_diff,nickname,player_id,player_name,pos_main,salary,salary_change,salary_change_html,salary_diff,salary_diff_percentage
+12.87,2017-05-20,24.04,+11.17,Spurs,553548,Jonathon Simmons,SF,16,23.1,"<td class=""width-15 green"" id=""salary-col"">+$3 (23.1%)</td>",3,23.1
+13.13,2017-05-20,13.47,+0.34,Warriors,333212,JaVale McGee,C,10,-16.7,"<td class=""width-15 red"" id=""salary-col"">-$2 (-16.7%)</td>",-2,-16.7
+21.31,2017-05-20,17.65,-3.66,Warriors,173004,Andre Iguodala,SF,14,-12.5,"<td class=""width-15 red"" id=""salary-col"">-$2 (-12.5%)</td>",-2,-12.5
+6.67,2017-05-20,10.86,+4.19,Spurs,884168,Dejounte Murray,PG,11,10.0,"<td class=""width-15 green"" id=""salary-col"">+$1 (10.0%)</td>",1,10.0
+32.24,2017-05-20,28.89,-3.35,Warriors,457611,Klay Thompson,SG,27,-3.6,"<td class=""width-15 red"" id=""salary-col"">-$1 (-3.6%)</td>",-1,-3.6
+11.48,2017-05-20,15.71,+4.23,Spurs,697720,Kyle Anderson,PG,10,0.0,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0,0.0
+17.14,2017-05-20,8.88,-8.26,Spurs,606642,Dewayne Dedmon,C,10,0.0,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0,0.0
+18.16,2017-05-20,25.53,+7.37,Spurs,411562,Patty Mills,PG,19,0.0,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0,0.0
+7.80,2017-05-20,2.03,-5.77,Warriors,609569,James Michael McAdoo,PF,10,0.0,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0,0.0
+5.56,2017-05-20,1.45,-4.11,Warriors,745922,Damian Jones,C,10,0.0,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0,0.0
+18.77,2017-05-20,4.49,-14.28,Warriors,168051,Matt Barnes,SF,10,0.0,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0,0.0
+11.71,2017-05-20,10.05,-1.66,Warriors,253980,Shaun Livingston,PG,10,0.0,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0,0.0
+18.53,2017-05-20,23.12,+4.59,Spurs,295922,Danny Green,SG,11,0.0,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0,0.0
+43.72,2017-05-20,44.15,+0.43,Warriors,338365,Stephen Curry,PG,47,0.0,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0,0.0
+38.03,2017-05-20,35.08,-2.95,Warriors,468895,Draymond Green,PF,38,0.0,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0,0.0
+11.58,2017-05-20,7.94,-3.64,Warriors,504523,Ian Clark,SG,10,0.0,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0,0.0
+8.98,2017-05-20,8.71,-0.27,Spurs,599814,Davis Bertans,SF,10,0.0,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0,0.0
+4.16,2017-05-20,4.00,-0.16,Spurs,699093,Bryn Forbes,PG,10,0.0,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0,0.0
+14.37,2017-05-20,13.43,-0.94,Warriors,57934,David West,PF,10,0.0,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0,0.0
+4.56,2017-05-20,3.13,-1.43,Spurs,265013,Joel Anthony,PF,10,0.0,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0,0.0
+8.81,2017-05-20,3.76,-5.05,Warriors,847005,Patrick McCaw,SG,10,0.0,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0,0.0
+33.12,2017-05-20,39.94,+6.82,Spurs,266554,LaMarcus Aldridge,PF,33,0.0,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0,0.0
+48.07,2017-05-20,42.26,-5.81,Warriors,329525,Kevin Durant,SF,48,0.0,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0,0.0
+17.09,2017-05-20,17.15,+0.06,Spurs,3361,Manu Ginobili,SG,12,0.0,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0,0.0
+28.45,2017-05-20,28.05,-0.40,Spurs,3494,Pau Gasol,C,17,0.0,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0,0.0

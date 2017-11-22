@@ -58,6 +58,7 @@ class Player:
     endDate = None
     logs = None
     info = None
+    db = 0
 
     @staticmethod
     def fixName(name):
@@ -110,45 +111,45 @@ class Player:
             if "dvp" in data:
                 self.dvp = data["dvp"]
 
-            first, last = Player.fixName(self.name)
+        first, last = Player.fixName(self.name)
 
-            try:
-                if "Nene" in first:
-                    self.pid = 2403
-                else:
-                    self.pid = get_player(first, last, only_current=1)
-                    self.pid = self.pid.values[0]
-            except Exception as ee:
-                print("Problem with player " + self.name)
-                print(ee)
-                self.error = 1
-                self.db = 0
-                pass
-                return None
-
-            _info = session.execute(select([sql.Player]).where(sql.Player.PERSON_ID == self.pid))
-            self.info = pd.DataFrame(_info.fetchall(), _info.keys())
-
-            _logs2 = session.query(sql.PlayerLog).filter(sql.PlayerLog.Player_ID == self.pid).all()
-            _logs = [getattr(x,"__dict__") for x in _logs2]
-
-            _logs = pd.DataFrame.from_dict(_logs)
-
-            if "GAME_DATE" in _logs.columns.values:
-                _logs["GAME_DATE"] = pd.to_datetime(_logs["GAME_DATE"], utc=True)
-                _logs.set_index("GAME_DATE", inplace=True)
-                cols = ["PTS", "BLK", "STL", "AST", "REB", "FG3M", "TOV","DKFPS"]
-                _logs[cols] = _logs[cols].apply(pd.to_numeric)
-                self.seasonStats = _logs.sort_index(ascending=False)
+        try:
+            if "Nene" in first:
+                self.pid = 2403
             else:
-                print("No GAME_DATE for " + self.name)
-                self.error = 1
-                self.logs = None
-                self.db = 0
-                pass
+                self.pid = get_player(first, last, only_current=1)
+                self.pid = self.pid.values[0]
+        except Exception as ee:
+            print("Problem with player " + self.name)
+            print(ee)
+            self.error = 1
+            self.db = 0
+            pass
+            return None
 
-            self.db = 1
-            return
+        _info = session.execute(select([sql.Player]).where(sql.Player.PERSON_ID == self.pid))
+        self.info = pd.DataFrame(_info.fetchall(), _info.keys())
+
+        _logs2 = session.query(sql.PlayerLog).filter(sql.PlayerLog.Player_ID == self.pid).all()
+        _logs = [getattr(x,"__dict__") for x in _logs2]
+
+        _logs = pd.DataFrame.from_dict(_logs)
+
+        if "GAME_DATE" in _logs.columns.values:
+            _logs["GAME_DATE"] = pd.to_datetime(_logs["GAME_DATE"], utc=True)
+            _logs.set_index("GAME_DATE", inplace=True)
+            cols = ["PTS", "BLK", "STL", "AST", "REB", "FG3M", "TOV","DKFPS"]
+            _logs[cols] = _logs[cols].apply(pd.to_numeric)
+            self.seasonStats = _logs.sort_index(ascending=False)
+        else:
+            print("No GAME_DATE for " + self.name)
+            self.error = 1
+            self.logs = None
+            self.db = 0
+            pass
+
+        self.db = 1
+        return
 
 
     def setEndDate(self, endDate):
@@ -190,6 +191,19 @@ class Player:
         self.dvp = dvp.loc[:, positions].rank().loc[self.opponent,positions].mean()
 
         return
+
+    def getGameWithDate(self,_date):
+        row = None
+        from dateutil import parser
+        _date = parser.parse(_date).strftime('%Y%m%d')
+
+        if self.db:
+            row = session.query(sql.PlayerLog).filter(sql.PlayerLog.Player_ID == self.pid,
+                                                      sql.PlayerLog.GAME_DATE == _date).first()
+            if row is not None:
+                row = pd.DataFrame.from_dict([row.__dict__])
+
+        return row
 
     def setFantasyAverage(self,avg):
         self.fantasyPointAverage= avg
@@ -488,10 +502,7 @@ end_date = today
 
 def calculate(_date):
 
-    # today = "2017-01-20"
-    # end_date = "2017-01-19"
     injuries_file = 'data/injuries/' + _date + '.json'
-    # community_file = 'data/targets/' + _date + '.json'
     newestSalaries = 'data/salaries/' + _date + '.csv'
     defense_file = 'data/Defense/' + _date + '.csv'
     vegas_file = 'data/vegas/' + _date + '.csv'

@@ -1,11 +1,11 @@
-Strategy,p1,p2,p3,p4,p5,p6,p7,p8
-"floorAvgBonus",James Harden,DeMar DeRozan,Goran Dragic,Eric Gordon,Wesley Matthews,Kenneth Faried,Lou Williams,Corey Brewer
-"baselineBonus",James Harden,DeMar DeRozan,Hassan Whiteside,Trevor Booker,Kenneth Faried,Lou Williams,Nick Young,Corey Brewer
-"svnGameBonus",Jimmy Butler,Hassan Whiteside,D'Angelo Russell,Goran Dragic,Harrison Barnes,Deron Williams,Jusuf Nurkic,Corey Brewer
-"baselineFloorAvgBonus",James Harden,DeMar DeRozan,Goran Dragic,Eric Gordon,Wesley Matthews,Kenneth Faried,Lou Williams,Corey Brewer
-"baselineFloorAvg",James Harden,DeMar DeRozan,Goran Dragic,Eric Gordon,Wesley Matthews,Kenneth Faried,Lou Williams,Corey Brewer
-"baselineSvnGameAvg",James Harden,Hassan Whiteside,Goran Dragic,Harrison Barnes,Will Barton,Lou Williams,Jusuf Nurkic,Corey Brewer
-"baselineSvnGameAvgBonus",James Harden,Hassan Whiteside,Goran Dragic,Harrison Barnes,Will Barton,Lou Williams,Jusuf Nurkic,Corey Brewer
-"frGameAvgBonus",James Harden,DeMar DeRozan,Nikola Jokic,Ricky Rubio,DeMarre Carroll,Brandon Ingram,Jameer Nelson,Corey Brewer
-"baselineFrGameAvgBonus",James Harden,DeMar DeRozan,Nikola Jokic,Trevor Ariza,DeMarre Carroll,Lou Williams,Jameer Nelson,Corey Brewer
-"baselineFrGameAvg",James Harden,DeMar DeRozan,Nikola Jokic,Trevor Ariza,DeMarre Carroll,Lou Williams,Jameer Nelson,Corey Brewer
+Strategy,p1,p2,p3,p4,p5,p6,p7,p8,DKFPS,Result
+floorAvgBonus,James Harden,DeMar DeRozan,Goran Dragic,Eric Gordon,Wesley Matthews,Kenneth Faried,Lou Williams,Corey Brewer,302.0,None
+baselineBonus,James Harden,DeMar DeRozan,Hassan Whiteside,Trevor Booker,Kenneth Faried,Lou Williams,Nick Young,Corey Brewer,321.75,None
+svnGameBonus,Jimmy Butler,Hassan Whiteside,D'Angelo Russell,Goran Dragic,Harrison Barnes,Deron Williams,Jusuf Nurkic,Corey Brewer,231.0,None
+baselineFloorAvgBonus,James Harden,DeMar DeRozan,Goran Dragic,Eric Gordon,Wesley Matthews,Kenneth Faried,Lou Williams,Corey Brewer,302.0,None
+baselineFloorAvg,James Harden,DeMar DeRozan,Goran Dragic,Eric Gordon,Wesley Matthews,Kenneth Faried,Lou Williams,Corey Brewer,302.0,None
+baselineSvnGameAvg,James Harden,Hassan Whiteside,Goran Dragic,Harrison Barnes,Will Barton,Lou Williams,Jusuf Nurkic,Corey Brewer,294.25,None
+baselineSvnGameAvgBonus,James Harden,Hassan Whiteside,Goran Dragic,Harrison Barnes,Will Barton,Lou Williams,Jusuf Nurkic,Corey Brewer,294.25,None
+frGameAvgBonus,James Harden,DeMar DeRozan,Nikola Jokic,Ricky Rubio,DeMarre Carroll,Brandon Ingram,Jameer Nelson,Corey Brewer,323.0,None
+baselineFrGameAvgBonus,James Harden,DeMar DeRozan,Nikola Jokic,Trevor Ariza,DeMarre Carroll,Lou Williams,Jameer Nelson,Corey Brewer,303.5,None
+baselineFrGameAvg,James Harden,DeMar DeRozan,Nikola Jokic,Trevor Ariza,DeMarre Carroll,Lou Williams,Jameer Nelson,Corey Brewer,303.5,None

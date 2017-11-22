@@ -1,363 +1,166 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="289189b2-db15-4b29-8e00-7ee0c0b6a1fa" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/models/nba_cache.sqlite" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/dataSources/1f000db8-4b6a-486a-a350-3cce0dce8dee.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/dataSources/1f000db8-4b6a-486a-a350-3cce0dce8dee/storage.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/dataSources/eda2e1f9-8853-4bb1-ab1e-341eb5f4558f.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/dataSources/eda2e1f9-8853-4bb1-ab1e-341eb5f4558f/storage.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Projections.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SalaryScraper.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/Defense/2017-01-27.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/Defense/2017-01-28.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/Defense/2017-01-29.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/Defense/2017-01-30.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/Defense/2017-01-31.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/Defense/2017-02-01.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/final/2017-01-27.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/final/2017-01-28.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/final/2017-01-29.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/final/2017-01-30.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/final/2017-01-31.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/final/2017-02-01.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/final/old/2016-12-19.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/final/old/2016-12-20.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/final/old/2016-12-21.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/final/old/2016-12-23.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/final/old/2016-12-25.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/final/old/2016-12-26.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/final/old/2016-12-27.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/final/old/2016-12-28.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/final/old/2016-12-29.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/final/old/2016-12-30.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/final/old/2016-12-31.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/final/old/2017-01-01.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/final/old/2017-01-02.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/final/old/2017-01-03.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/final/old/2017-01-04.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/final/old/2017-01-05.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/final/old/2017-01-06.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/final/old/2017-01-07.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/final/old/2017-01-08.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/final/old/2017-01-09.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/final/old/2017-01-10.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/final/old/2017-01-11.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/final/old/2017-01-12.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/final/old/2017-01-26.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/final/old/2017-01-27.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/final/old/2017-01-28.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/final/old/2017-01-29.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/final/old/2017-01-30.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/final/old/x2017-01-25.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/generatedRosters/2017-01-27.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/generatedRosters/2017-01-28.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/generatedRosters/2017-01-29.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/generatedRosters/2017-01-30.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/generatedRosters/2017-01-31.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/injuries/2017-01-27.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/injuries/2017-01-28.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/injuries/2017-01-29.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/injuries/2017-01-30.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/injuries/2017-01-31.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/injuries/2017-02-01.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/newSalaries/2016-11-02.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/newSalaries/2016-11-03.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/newSalaries/2016-11-04.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/newSalaries/2016-11-05.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/newSalaries/2016-11-06.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/newSalaries/2016-11-07.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/newSalaries/2016-11-08.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/newSalaries/2016-11-09.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/newSalaries/2016-11-10.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/newSalaries/2016-11-11.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/newSalaries/2016-11-12.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/newSalaries/2016-11-13.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/newSalaries/2016-11-14.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/newSalaries/2016-11-15.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/newSalaries/2016-11-16.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/newSalaries/2016-11-17.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/newSalaries/2016-11-18.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/newSalaries/2016-11-19.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/newSalaries/2016-11-20.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/newSalaries/2016-11-21.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/newSalaries/2016-11-22.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/newSalaries/2016-11-23.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/newSalaries/2016-11-25.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/newSalaries/2016-11-26.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/newSalaries/2016-11-27.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/newSalaries/2016-11-28.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/newSalaries/2016-11-29.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/newSalaries/2016-11-30.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/newSalaries/2016-12-01.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/newSalaries/2016-12-02.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/newSalaries/2016-12-03.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/newSalaries/2016-12-04.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/newSalaries/2016-12-05.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/newSalaries/2016-12-06.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/newSalaries/2016-12-07.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/newSalaries/2016-12-08.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/newSalaries/2016-12-09.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/newSalaries/2016-12-10.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/newSalaries/2016-12-11.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/newSalaries/2016-12-12.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/newSalaries/2016-12-13.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/newSalaries/2016-12-14.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/newSalaries/2016-12-15.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/newSalaries/2016-12-16.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/newSalaries/2016-12-17.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/newSalaries/2016-12-18.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/newSalaries/2016-12-19.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/newSalaries/2016-12-20.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/newSalaries/2016-12-21.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/newSalaries/2016-12-22.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/newSalaries/2016-12-23.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/newSalaries/2016-12-25.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/newSalaries/2016-12-26.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/newSalaries/2016-12-27.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/newSalaries/2016-12-28.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/newSalaries/2016-12-29.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/newSalaries/2016-12-30.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/newSalaries/2016-12-31.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/newSalaries/2017-01-01.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/newSalaries/2017-01-02.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/newSalaries/2017-01-03.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/newSalaries/2017-01-04.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/newSalaries/2017-01-05.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/newSalaries/2017-01-06.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/newSalaries/2017-01-07.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/newSalaries/2017-01-08.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/newSalaries/2017-01-09.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/newSalaries/2017-01-10.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/newSalaries/2017-01-11.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/newSalaries/2017-01-12.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/newSalaries/2017-01-13.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/newSalaries/2017-01-14.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/newSalaries/2017-01-15.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/newSalaries/2017-01-16.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/newSalaries/2017-01-17.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/newSalaries/2017-01-18.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/newSalaries/2017-01-19.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/newSalaries/2017-01-20.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/newSalaries/2017-01-21.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/newSalaries/2017-01-22.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/newSalaries/2017-01-23.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/newSalaries/2017-01-24.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/newSalaries/2017-01-25.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/newSalaries/2017-01-26.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/newSalaries/2017-01-27.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/newSalaries/2017-01-28.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/newSalaries/2017-01-29.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/newSalaries/2017-01-30.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/newSalaries/2017-01-31.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/output/2017-01-27.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/output/2017-01-28.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/output/2017-01-29.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/output/2017-01-30.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/output/2017-01-31.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/output/2017-02-01.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/output/old/2016-12-19.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/output/old/2016-12-20.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/output/old/2016-12-21.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/output/old/2016-12-23.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/output/old/2016-12-25.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/output/old/2016-12-26.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/output/old/2016-12-27.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/output/old/2016-12-28.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/output/old/2016-12-29.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/output/old/2016-12-30.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/output/old/2016-12-31.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/output/old/2017-01-01.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/output/old/2017-01-02.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/output/old/2017-01-03.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/output/old/2017-01-04.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/output/old/2017-01-05.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/output/old/2017-01-06.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/output/old/2017-01-07.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/output/old/2017-01-08.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/output/old/2017-01-09.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/output/old/2017-01-10.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/output/old/2017-01-11.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/output/old/2017-01-12.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/output/old/2017-01-26.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/output/old/2017-01-27.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/output/old/2017-01-28.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/output/old/2017-01-29.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/output/old/2017-01-30.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/predictions/2017-01-28.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/predictions/final_2017-01-28.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/salaries/2017-01-27.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/salaries/2017-01-28.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/salaries/2017-01-29.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/salaries/2017-01-30.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/salaries/2017-01-31.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/salaries/2017-02-01.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/targets/2017-01-27.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/targets/2017-01-28.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/targets/2017-01-29.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/targets/2017-01-30.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/targets/2017-01-31.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/targets/2017-02-01.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/vegas/2016-11-02.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/vegas/2016-11-03.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/vegas/2016-11-04.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/vegas/2016-11-05.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/vegas/2016-11-06.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/vegas/2016-11-07.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/vegas/2016-11-08.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/vegas/2016-11-09.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/vegas/2016-11-10.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/vegas/2016-11-11.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/vegas/2016-11-12.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/vegas/2016-11-13.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/vegas/2016-11-14.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/vegas/2016-11-15.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/vegas/2016-11-16.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/vegas/2016-11-17.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/vegas/2016-11-18.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/vegas/2016-11-19.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/vegas/2016-11-20.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/vegas/2016-11-21.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/vegas/2016-11-22.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/vegas/2016-11-23.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/vegas/2016-11-24.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/vegas/2016-11-25.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/vegas/2016-11-26.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/vegas/2016-11-27.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/vegas/2016-11-28.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/vegas/2016-11-29.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/vegas/2016-11-30.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/vegas/2016-12-01.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/vegas/2016-12-02.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/vegas/2017-01-27.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/vegas/2017-01-28.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/vegas/2017-01-29.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/vegas/2017-01-30.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/vegas/2017-01-31.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/vegas/2017-02-01.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/models/buildDatabase.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/models/models.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/models/mysql.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/models/queryDatabase.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/models/updateDatabase.py" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/all_test_cache_1.sqlite" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/blah.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/blogs.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/final/2017-01-14.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/generatedRosters/4017-01-24.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/demo_cache.sqlite" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/diabetes.data" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/data/final2/2017-01-26.csv" afterPath="$PROJECT_DIR$/data/final/old/x2017-01-26.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/nba_cache.sqlite" afterPath="$PROJECT_DIR$/nba_cache.sqlite" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
+    <list default="true" id="289189b2-db15-4b29-8e00-7ee0c0b6a1fa" name="Default" comment="Added ORM support for storing stats.">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CalculateLSTM.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CalculatePlayer.ipynb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/GameInjurySpider.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/InjuryScheduler.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PlayerCalculations.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/RotoNews.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SalaryScrape.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/final2/2017-11-18.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/final2/2017-11-18_2.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/final2/2017-11-18_3.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/final2/2017-11-18_4.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/final2/2017-11-18_5.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/final2/2017-11-19_1.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/generatedRosters2/predictions.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/play/DKSalaries_nov_18.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/play/DKSalaries_nov_18_2.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/play/DKSalaries_nov_19.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/play/DKSalaries_nov_19_2.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/play/DKSalaries_nov_20.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/play/DKSalaries_nov_21.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/predictions/2017-11-20.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/salaries/2017-02-03.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extras.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/response.json" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/GoldStats.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/vegas/2016-11-02.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/vegas/2016-11-03.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/vegas/2016-11-04.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/vegas/2016-11-05.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/vegas/2016-11-06.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/vegas/2016-11-07.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/vegas/2016-11-08.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/vegas/2016-11-09.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/vegas/2016-11-10.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/vegas/2016-11-11.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/vegas/2016-11-12.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/vegas/2016-11-13.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/vegas/2016-11-14.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/vegas/2016-11-15.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/vegas/2016-11-16.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/vegas/2016-11-17.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/vegas/2016-11-18.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/vegas/2016-11-19.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/vegas/2016-11-20.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/vegas/2016-11-21.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/vegas/2016-11-22.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/vegas/2016-11-23.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/vegas/2016-11-24.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/vegas/2016-11-25.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/vegas/2016-11-26.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/vegas/2016-11-27.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/vegas/2016-11-28.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/vegas/2016-11-29.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/vegas/2016-11-30.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/vegas/2016-12-01.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/vegas/2016-12-02.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/vegas/2016-12-1.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/vegas/2016-12-10.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/vegas/2016-12-11.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/vegas/2016-12-12.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/vegas/2016-12-13.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/vegas/2016-12-14.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/vegas/2016-12-15.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/vegas/2016-12-16.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/vegas/2016-12-17.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/vegas/2016-12-18.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/vegas/2016-12-19.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/vegas/2016-12-2.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/vegas/2016-12-20.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/vegas/2016-12-21.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/vegas/2016-12-22.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/vegas/2016-12-23.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/vegas/2016-12-25.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/vegas/2016-12-26.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/vegas/2016-12-27.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/vegas/2016-12-28.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/vegas/2016-12-29.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/vegas/2016-12-3.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/vegas/2016-12-30.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/vegas/2016-12-31.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/vegas/2016-12-4.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/vegas/2016-12-5.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/vegas/2016-12-6.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/vegas/2016-12-7.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/vegas/2016-12-8.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/vegas/2016-12-9.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/vegas/2017-01-01.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/vegas/2017-01-02.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/vegas/2017-01-03.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/vegas/2017-01-04.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/vegas/2017-01-05.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/vegas/2017-01-06.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/vegas/2017-01-07.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/vegas/2017-01-08.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/vegas/2017-01-09.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/vegas/2017-01-10.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/vegas/2017-01-11.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/vegas/2017-01-12.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/vegas/2017-01-13.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/vegas/2017-01-14.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/vegas/2017-01-15.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/vegas/2017-01-16.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/vegas/2017-01-17.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/vegas/2017-01-18.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/vegas/2017-01-19.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/vegas/2017-01-20.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/vegas/2017-01-21.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/vegas/2017-01-22.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/vegas/2017-01-23.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/vegas/2017-01-24.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/vegas/2017-01-25.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/vegas/2017-01-26.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/vegas/2017-01-27.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/vegas/2017-01-28.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/vegas/2017-01-29.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/vegas/2017-01-30.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/vegas/2017-01-31.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/vegas/2017-02-01.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/nba_cache.sqlite" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/data/generatedRosters/2017-01-10-1.csv" afterPath="$PROJECT_DIR$/data/generatedRosters/2017-01-10_1.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/models/nba_cache.sqlite" afterPath="$PROJECT_DIR$/models/nba_cache.sqlite" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources/1f000db8-4b6a-486a-a350-3cce0dce8dee.xml" afterPath="$PROJECT_DIR$/.idea/dataSources/1f000db8-4b6a-486a-a350-3cce0dce8dee.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.ipynb_checkpoints/NeuralNetsPrediction-checkpoint.ipynb" afterPath="$PROJECT_DIR$/.ipynb_checkpoints/NeuralNetsPrediction-checkpoint.ipynb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/InjurySpider.py" afterPath="$PROJECT_DIR$/InjurySpider.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/NeuralNetsPrediction.ipynb" afterPath="$PROJECT_DIR$/NeuralNetsPrediction.ipynb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RosterGenerator.nb" afterPath="$PROJECT_DIR$/RosterGenerator.nb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SalaryScraper.py" afterPath="$PROJECT_DIR$/SalaryScraper.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TimeSeriesPredictions.ipynb" afterPath="$PROJECT_DIR$/TimeSeriesPredictions.ipynb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Vegas.py" afterPath="$PROJECT_DIR$/Vegas.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/calculate.py" afterPath="$PROJECT_DIR$/calculate.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/final/2016-12-19.csv" afterPath="$PROJECT_DIR$/data/final/2016-12-19.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/final/2016-12-20.csv" afterPath="$PROJECT_DIR$/data/final/2016-12-20.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/final/2016-12-21.csv" afterPath="$PROJECT_DIR$/data/final/2016-12-21.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/final/2016-12-23.csv" afterPath="$PROJECT_DIR$/data/final/2016-12-23.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/final/2016-12-25.csv" afterPath="$PROJECT_DIR$/data/final/2016-12-25.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/final/2016-12-26.csv" afterPath="$PROJECT_DIR$/data/final/2016-12-26.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/final/2016-12-27.csv" afterPath="$PROJECT_DIR$/data/final/2016-12-27.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/final/2016-12-28.csv" afterPath="$PROJECT_DIR$/data/final/2016-12-28.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/final/2016-12-29.csv" afterPath="$PROJECT_DIR$/data/final/2016-12-29.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/final/2016-12-30.csv" afterPath="$PROJECT_DIR$/data/final/2016-12-30.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/final/2016-12-31.csv" afterPath="$PROJECT_DIR$/data/final/2016-12-31.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/final/2017-01-01.csv" afterPath="$PROJECT_DIR$/data/final/2017-01-01.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/final/2017-01-02.csv" afterPath="$PROJECT_DIR$/data/final/2017-01-02.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/final/2017-01-03.csv" afterPath="$PROJECT_DIR$/data/final/2017-01-03.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/final/2017-01-04.csv" afterPath="$PROJECT_DIR$/data/final/2017-01-04.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/final/2017-01-05.csv" afterPath="$PROJECT_DIR$/data/final/2017-01-05.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/final/2017-01-06.csv" afterPath="$PROJECT_DIR$/data/final/2017-01-06.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/final/2017-01-07.csv" afterPath="$PROJECT_DIR$/data/final/2017-01-07.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/final/2017-01-08.csv" afterPath="$PROJECT_DIR$/data/final/2017-01-08.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/final/2017-01-09.csv" afterPath="$PROJECT_DIR$/data/final/2017-01-09.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/final/2017-01-10.csv" afterPath="$PROJECT_DIR$/data/final/2017-01-10.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/final/2017-01-11.csv" afterPath="$PROJECT_DIR$/data/final/2017-01-11.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/final/2017-01-12.csv" afterPath="$PROJECT_DIR$/data/final/2017-01-12.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/final/2017-01-13.csv" afterPath="$PROJECT_DIR$/data/final/2017-01-13.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/final/2017-01-15.csv" afterPath="$PROJECT_DIR$/data/final/2017-01-15.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/final/2017-01-16.csv" afterPath="$PROJECT_DIR$/data/final/2017-01-16.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/final/2017-01-17.csv" afterPath="$PROJECT_DIR$/data/final/2017-01-17.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/final/2017-01-18.csv" afterPath="$PROJECT_DIR$/data/final/2017-01-18.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/final/2017-01-19.csv" afterPath="$PROJECT_DIR$/data/final/2017-01-19.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/final/2017-01-20.csv" afterPath="$PROJECT_DIR$/data/final/2017-01-20.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/final/2017-01-21.csv" afterPath="$PROJECT_DIR$/data/final/2017-01-21.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/final/2017-01-23.csv" afterPath="$PROJECT_DIR$/data/final/2017-01-23.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/final/2017-01-24.csv" afterPath="$PROJECT_DIR$/data/final/2017-01-24.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/final/2017-01-25.csv" afterPath="$PROJECT_DIR$/data/final/2017-01-25.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/final/2017-01-26.csv" afterPath="$PROJECT_DIR$/data/final/2017-01-26.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/final/old/2017-01-13.csv" afterPath="$PROJECT_DIR$/data/final/old/2017-01-13.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/final/old/2017-01-15.csv" afterPath="$PROJECT_DIR$/data/final/old/2017-01-15.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/final/old/2017-01-16.csv" afterPath="$PROJECT_DIR$/data/final/old/2017-01-16.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/final/old/2017-01-17.csv" afterPath="$PROJECT_DIR$/data/final/old/2017-01-17.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/final/old/2017-01-18.csv" afterPath="$PROJECT_DIR$/data/final/old/2017-01-18.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/final/old/2017-01-19.csv" afterPath="$PROJECT_DIR$/data/final/old/2017-01-19.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/final/old/2017-01-20.csv" afterPath="$PROJECT_DIR$/data/final/old/2017-01-20.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/final/old/2017-01-21.csv" afterPath="$PROJECT_DIR$/data/final/old/2017-01-21.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/final/old/2017-01-23.csv" afterPath="$PROJECT_DIR$/data/final/old/2017-01-23.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/final/old/2017-01-24.csv" afterPath="$PROJECT_DIR$/data/final/old/2017-01-24.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/final/old/2017-01-25.csv" afterPath="$PROJECT_DIR$/data/final/old/2017-01-25.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/generatedRosters/2017-01-26.csv" afterPath="$PROJECT_DIR$/data/generatedRosters/2017-01-26.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/injuries/2017-01-05.json" afterPath="$PROJECT_DIR$/data/injuries/2017-01-05.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/output/2016-12-19.csv" afterPath="$PROJECT_DIR$/data/output/2016-12-19.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/output/2016-12-20.csv" afterPath="$PROJECT_DIR$/data/output/2016-12-20.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/output/2016-12-21.csv" afterPath="$PROJECT_DIR$/data/output/2016-12-21.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/output/2016-12-23.csv" afterPath="$PROJECT_DIR$/data/output/2016-12-23.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/output/2016-12-25.csv" afterPath="$PROJECT_DIR$/data/output/2016-12-25.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/output/2016-12-26.csv" afterPath="$PROJECT_DIR$/data/output/2016-12-26.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/output/2016-12-27.csv" afterPath="$PROJECT_DIR$/data/output/2016-12-27.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/output/2016-12-28.csv" afterPath="$PROJECT_DIR$/data/output/2016-12-28.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/output/2016-12-29.csv" afterPath="$PROJECT_DIR$/data/output/2016-12-29.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/output/2016-12-30.csv" afterPath="$PROJECT_DIR$/data/output/2016-12-30.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/output/2016-12-31.csv" afterPath="$PROJECT_DIR$/data/output/2016-12-31.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/output/2017-01-01.csv" afterPath="$PROJECT_DIR$/data/output/2017-01-01.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/output/2017-01-02.csv" afterPath="$PROJECT_DIR$/data/output/2017-01-02.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/output/2017-01-03.csv" afterPath="$PROJECT_DIR$/data/output/2017-01-03.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/output/2017-01-04.csv" afterPath="$PROJECT_DIR$/data/output/2017-01-04.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/output/2017-01-05.csv" afterPath="$PROJECT_DIR$/data/output/2017-01-05.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/output/2017-01-06.csv" afterPath="$PROJECT_DIR$/data/output/2017-01-06.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/output/2017-01-07.csv" afterPath="$PROJECT_DIR$/data/output/2017-01-07.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/output/2017-01-08.csv" afterPath="$PROJECT_DIR$/data/output/2017-01-08.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/output/2017-01-09.csv" afterPath="$PROJECT_DIR$/data/output/2017-01-09.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/output/2017-01-10.csv" afterPath="$PROJECT_DIR$/data/output/2017-01-10.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/output/2017-01-11.csv" afterPath="$PROJECT_DIR$/data/output/2017-01-11.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/output/2017-01-12.csv" afterPath="$PROJECT_DIR$/data/output/2017-01-12.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/output/2017-01-13.csv" afterPath="$PROJECT_DIR$/data/output/2017-01-13.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/output/2017-01-15.csv" afterPath="$PROJECT_DIR$/data/output/2017-01-15.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/output/2017-01-16.csv" afterPath="$PROJECT_DIR$/data/output/2017-01-16.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/output/2017-01-17.csv" afterPath="$PROJECT_DIR$/data/output/2017-01-17.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/output/2017-01-18.csv" afterPath="$PROJECT_DIR$/data/output/2017-01-18.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/output/2017-01-19.csv" afterPath="$PROJECT_DIR$/data/output/2017-01-19.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/output/2017-01-20.csv" afterPath="$PROJECT_DIR$/data/output/2017-01-20.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/output/2017-01-21.csv" afterPath="$PROJECT_DIR$/data/output/2017-01-21.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/output/2017-01-23.csv" afterPath="$PROJECT_DIR$/data/output/2017-01-23.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/output/2017-01-24.csv" afterPath="$PROJECT_DIR$/data/output/2017-01-24.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/output/2017-01-25.csv" afterPath="$PROJECT_DIR$/data/output/2017-01-25.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/output/2017-01-26.csv" afterPath="$PROJECT_DIR$/data/output/2017-01-26.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/output/old/2017-01-13.csv" afterPath="$PROJECT_DIR$/data/output/old/2017-01-13.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/output/old/2017-01-15.csv" afterPath="$PROJECT_DIR$/data/output/old/2017-01-15.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/output/old/2017-01-16.csv" afterPath="$PROJECT_DIR$/data/output/old/2017-01-16.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/output/old/2017-01-17.csv" afterPath="$PROJECT_DIR$/data/output/old/2017-01-17.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/output/old/2017-01-18.csv" afterPath="$PROJECT_DIR$/data/output/old/2017-01-18.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/output/old/2017-01-19.csv" afterPath="$PROJECT_DIR$/data/output/old/2017-01-19.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/output/old/2017-01-20.csv" afterPath="$PROJECT_DIR$/data/output/old/2017-01-20.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/output/old/2017-01-21.csv" afterPath="$PROJECT_DIR$/data/output/old/2017-01-21.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/output/old/2017-01-23.csv" afterPath="$PROJECT_DIR$/data/output/old/2017-01-23.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/output/old/2017-01-24.csv" afterPath="$PROJECT_DIR$/data/output/old/2017-01-24.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/output/old/2017-01-25.csv" afterPath="$PROJECT_DIR$/data/output/old/2017-01-25.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/vegas/2017-01-26.csv" afterPath="$PROJECT_DIR$/data/vegas/2017-01-26.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/penalties.py" afterPath="$PROJECT_DIR$/penalties.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/final/2017-02-01.csv" afterPath="$PROJECT_DIR$/data/final/2017-02-01.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/generatedRosters/2017-01-08.csv" afterPath="$PROJECT_DIR$/data/generatedRosters/2017-01-08.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/generatedRosters/2017-01-09.csv" afterPath="$PROJECT_DIR$/data/generatedRosters/2017-01-09.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/generatedRosters/2017-01-10.csv" afterPath="$PROJECT_DIR$/data/generatedRosters/2017-01-10.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/generatedRosters/2017-01-11.csv" afterPath="$PROJECT_DIR$/data/generatedRosters/2017-01-11.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/generatedRosters/2017-01-12.csv" afterPath="$PROJECT_DIR$/data/generatedRosters/2017-01-12.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/generatedRosters/2017-01-13.csv" afterPath="$PROJECT_DIR$/data/generatedRosters/2017-01-13.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/generatedRosters/2017-01-14.csv" afterPath="$PROJECT_DIR$/data/generatedRosters/2017-01-14.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/generatedRosters/2017-01-15.csv" afterPath="$PROJECT_DIR$/data/generatedRosters/2017-01-15.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/generatedRosters/2017-01-16.csv" afterPath="$PROJECT_DIR$/data/generatedRosters/2017-01-16.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/generatedRosters/2017-01-17.csv" afterPath="$PROJECT_DIR$/data/generatedRosters/2017-01-17.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/generatedRosters/2017-01-18.csv" afterPath="$PROJECT_DIR$/data/generatedRosters/2017-01-18.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/generatedRosters/2017-01-19.csv" afterPath="$PROJECT_DIR$/data/generatedRosters/2017-01-19.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/generatedRosters/2017-01-20.csv" afterPath="$PROJECT_DIR$/data/generatedRosters/2017-01-20.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/generatedRosters/2017-01-21.csv" afterPath="$PROJECT_DIR$/data/generatedRosters/2017-01-21.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/generatedRosters/2017-01-23.csv" afterPath="$PROJECT_DIR$/data/generatedRosters/2017-01-23.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/generatedRosters/2017-01-24.csv" afterPath="$PROJECT_DIR$/data/generatedRosters/2017-01-24.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/generatedRosters/2017-01-25.csv" afterPath="$PROJECT_DIR$/data/generatedRosters/2017-01-25.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/generatedRosters/2017-01-27.csv" afterPath="$PROJECT_DIR$/data/generatedRosters/2017-01-27.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/generatedRosters/2017-01-28.csv" afterPath="$PROJECT_DIR$/data/generatedRosters/2017-01-28.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/generatedRosters/2017-01-29.csv" afterPath="$PROJECT_DIR$/data/generatedRosters/2017-01-29.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/generatedRosters/2017-01-30.csv" afterPath="$PROJECT_DIR$/data/generatedRosters/2017-01-30.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/generatedRosters/2017-01-31.csv" afterPath="$PROJECT_DIR$/data/generatedRosters/2017-01-31.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/models/buildDatabase.py" afterPath="$PROJECT_DIR$/models/buildDatabase.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/models/mysql.py" afterPath="$PROJECT_DIR$/models/mysql.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/models/updateDatabase.py" afterPath="$PROJECT_DIR$/models/updateDatabase.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resultsExplorer.py" afterPath="$PROJECT_DIR$/resultsExplorer.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/temp.py" afterPath="$PROJECT_DIR$/temp.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -368,27 +171,31 @@
   </component>
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/NBA$Calculate_Scores__1_.coverage" NAME="Calculate Scores (1) Coverage Results" MODIFIED="1485271659933" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/NBA$SalaryScraper.coverage" NAME="SalaryScraper Coverage Results" MODIFIED="1485811048808" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/NBA$SalaryScraper.coverage" NAME="SalaryScraper Coverage Results" MODIFIED="1511320252322" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/NBA$QueryDatabase.coverage" NAME="QueryDatabase Coverage Results" MODIFIED="1485872084633" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/models" />
     <SUITE FILE_PATH="coverage/NBA$Calculate_Averages_Simple.coverage" NAME="Calculate Averages Simple Coverage Results" MODIFIED="1485978440345" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/NBA$Calculate_Penalties.coverage" NAME="Calculate Penalties Coverage Results" MODIFIED="1485978539756" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/NBA$Build_Database.coverage" NAME="Build Database Coverage Results" MODIFIED="1485899428307" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/models" />
-    <SUITE FILE_PATH="coverage/NBA$Calculate_Scores.coverage" NAME="Calculate Scores Coverage Results" MODIFIED="1485966240330" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/NBA$Build_Database.coverage" NAME="Build Database Coverage Results" MODIFIED="1511324536619" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/models" />
     <SUITE FILE_PATH="coverage/NBA$Team_updates.coverage" NAME="Team updates Coverage Results" MODIFIED="1484343854608" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/NBA$HistoricalDFS.coverage" NAME="HistoricalDFS Coverage Results" MODIFIED="1484943316311" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/NBA$DB_Update.coverage" NAME="DB Update Coverage Results" MODIFIED="1485901205775" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/models" />
-    <SUITE FILE_PATH="coverage/NBA$Injuries.coverage" NAME="Injuries Coverage Results" MODIFIED="1485978349528" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/NBA$Projections.coverage" NAME="Projections Coverage Results" MODIFIED="1485812911884" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/NBA$Injuries.coverage" NAME="Injuries Coverage Results" MODIFIED="1511214894527" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/NBA$Setup_CRON_jobs.coverage" NAME="Setup CRON jobs Coverage Results" MODIFIED="1509828165161" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/NBA$Unnamed.coverage" NAME="Calculate Coverage Results" MODIFIED="1483737105136" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/NBA$Targets.coverage" NAME="Targets Coverage Results" MODIFIED="1485978352114" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/NBA$Targets.coverage" NAME="Targets Coverage Results" MODIFIED="1510374001759" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/NBA$RotoNews.coverage" NAME="RotoNews Coverage Results" MODIFIED="1511324041659" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/NBA$Updates.coverage" NAME="Team updates Coverage Results" MODIFIED="1483804883967" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/NBA$Calculate.coverage" NAME="Calculate Averages Coverage Results" MODIFIED="1484166049383" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/NBA$blah.coverage" NAME="blah Coverage Results" MODIFIED="1484965588491" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/NBA$Defense.coverage" NAME="Defense Coverage Results" MODIFIED="1485978354916" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/NBA$Calculate_Averages.coverage" NAME="Calculate Averages Coverage Results" MODIFIED="1485978362516" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/NBA$VegasOddsAll.coverage" NAME="VegasOddsAll Coverage Results" MODIFIED="1485903546408" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/NBA$Defense.coverage" NAME="Defense Coverage Results" MODIFIED="1510374004990" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/NBA$VegasOddsAll.coverage" NAME="VegasOddsAll Coverage Results" MODIFIED="1486067222019" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/NBA$Temp.coverage" NAME="Temp Coverage Results" MODIFIED="1485298432278" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/NBA$Vegas.coverage" NAME="Vegas Coverage Results" MODIFIED="1485978359519" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/NBA$Calculate_Penalties.coverage" NAME="Calculate Penalties Coverage Results" MODIFIED="1485978539756" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/NBA$Calculate_Scores.coverage" NAME="Calculate Scores Coverage Results" MODIFIED="1511270856805" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/NBA$HistoricalDFS.coverage" NAME="HistoricalDFS Coverage Results" MODIFIED="1484943316311" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/NBA$DB_Update.coverage" NAME="DB Update Coverage Results" MODIFIED="1486050412251" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/models" />
+    <SUITE FILE_PATH="coverage/NBA$Projections.coverage" NAME="Projections Coverage Results" MODIFIED="1485812911884" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/NBA$blah.coverage" NAME="blah Coverage Results" MODIFIED="1484965588491" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/NBA$Calculate_Averages.coverage" NAME="Calculate Averages Coverage Results" MODIFIED="1510374014770" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/NBA$Daily_Injuries.coverage" NAME="Daily Injuries Coverage Results" MODIFIED="1509825020112" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/NBA$Append_LSTM.coverage" NAME="Append LSTM Coverage Results" MODIFIED="1486067927046" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/NBA$Vegas.coverage" NAME="Vegas Coverage Results" MODIFIED="1511311664421" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
@@ -400,68 +207,100 @@
     <option name="SHOW_TABLE_DETAILS" value="true" />
     <option name="SHOW_EMPTY_GROUPS" value="false" />
     <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
-    <PATH>
-      <PATH_ELEMENT>
-        <option name="myItemId" />
-        <option name="myItemType" value="com.intellij.database.view.DatabaseStructure$Root" />
-      </PATH_ELEMENT>
-      <PATH_ELEMENT>
-        <option name="myItemId" value="fantasy@localhost" />
-        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
-      </PATH_ELEMENT>
-    </PATH>
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FavoritesManager">
     <favorites_list name="NBA" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="calculate.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/calculate.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="154">
-              <caret line="650" column="0" lean-forward="false" selection-start-line="650" selection-start-column="0" selection-end-line="651" selection-end-column="0" />
-              <folding>
-                <element signature="e#25#36#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="2017-02-01.csv" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/data/vegas/2017-02-01.csv">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="16" column="18" lean-forward="true" selection-start-line="16" selection-start-column="18" selection-end-line="16" selection-end-column="18" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="resultsExplorer.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resultsExplorer.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="191">
-              <caret line="102" column="34" lean-forward="false" selection-start-line="102" selection-start-column="34" selection-end-line="102" selection-end-column="34" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="penalties.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/penalties.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="199">
-              <caret line="81" column="16" lean-forward="false" selection-start-line="81" selection-start-column="16" selection-end-line="81" selection-end-column="16" />
-              <folding>
-                <marker date="1485978169000" expanded="true" signature="470:2685" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <splitter split-orientation="horizontal" split-proportion="0.7364203">
+      <split-first>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+          <file leaf-file-name="Vegas.py" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/Vegas.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="268">
+                  <caret line="168" column="0" lean-forward="false" selection-start-line="168" selection-start-column="0" selection-end-line="168" selection-end-column="0" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="2017-11-212.csv" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/data/injuries/2017-11-212.csv">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="0">
+                  <caret line="0" column="242" lean-forward="false" selection-start-line="0" selection-start-column="231" selection-end-line="0" selection-end-column="242" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="InjuryScheduler.py" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/InjuryScheduler.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="90">
+                  <caret line="21" column="36" lean-forward="true" selection-start-line="21" selection-start-column="36" selection-end-line="21" selection-end-column="36" />
+                  <folding>
+                    <element signature="e#0#27#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="RotoNews.py" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/RotoNews.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="333">
+                  <caret line="28" column="33" lean-forward="true" selection-start-line="28" selection-start-column="33" selection-end-line="28" selection-end-column="33" />
+                  <folding>
+                    <element signature="e#76#103#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="mysql.py" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/models/mysql.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="-702">
+                  <caret line="60" column="61" lean-forward="false" selection-start-line="60" selection-start-column="61" selection-end-line="60" selection-end-column="61" />
+                  <folding>
+                    <element signature="e#23#78#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="buildDatabase.py" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/models/buildDatabase.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="225">
+                  <caret line="26" column="0" lean-forward="true" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+                  <folding>
+                    <element signature="e#0#19#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-first>
+      <split-second>
+        <leaf>
+          <file leaf-file-name="extras.json" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/extras.json">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="285">
+                  <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="30" selection-end-column="27" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-second>
+    </splitter>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -473,40 +312,38 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>getS</find>
-      <find>lastgame</find>
-      <find>NO GAME</find>
-      <find>seasonStatsWithDKFPS</find>
-      <find>__dict</find>
-      <find>print</find>
-      <find>getSeasonStats</find>
-      <find>Player</find>
-      <find>select</find>
-      <find>PlayerLog</find>
-      <find>drop</find>
-      <find>get_session</find>
-      <find>session</find>
-      <find>engine</find>
-      <find>bindbind</find>
-      <find>bind</find>
-      <find>rudy</find>
-      <find>frazier</find>
-      <find>fixName</find>
-      <find>error</find>
-      <find>lastGame</find>
-      <find>Failed</find>
+      <find>vailable for Sa</find>
+      <find>bulk</find>
+      <find>fta</find>
+      <find>201156</find>
+      <find>bogut</find>
+      <find>andrew</find>
+      <find>bog</find>
+      <find>Bryant</find>
+      <find>Brya</find>
+      <find>booker</find>
+      <find>grant</find>
+      <find>ball</find>
+      <find>espn</find>
+      <find>,,</find>
+      <find>preview</find>
+      <find>\n</find>
+      <find>&quot;</find>
+      <find>\</find>
+      <find>ga</find>
+      <find>news</find>
+      <find>rev</find>
+      <find>},</find>
+      <find>Millsap is slated to undergo surge</find>
+      <find>&quot;: &quot;</find>
       <find>datetime</find>
-      <find>Lastgame</find>
-      <find>endDate</find>
-      <find>getLastGame</find>
-      <find>seasonStats</find>
-      <find>sel</find>
-      <find>self.name=</find>
-      <find>SA</find>
+      <find>Date</find>
+      <find>DATE</find>
+      <find>create</find>
+      <find>date</find>
+      <find>foreign</find>
     </findStrings>
     <replaceStrings>
-      <replace>BRK</replace>
-      <replace>CHA</replace>
       <replace>,CHA,</replace>
       <replace>BKN</replace>
       <replace>,Bkn,</replace>
@@ -515,7 +352,6 @@
       <replace>SA</replace>
       <replace>,SA,</replace>
       <replace>,1,</replace>
-      <replace>,0,</replace>
       <replace>,</replace>
       <replace>\n</replace>
       <replace>1</replace>
@@ -535,6 +371,9 @@
       <replace>,0.0000</replace>
       <replace>,0.0000,</replace>
       <replace>= Column(String(32)) \n</replace>
+      <replace>,0,</replace>
+      <replace />
+      <replace>=</replace>
     </replaceStrings>
     <dirStrings>
       <dir>$PROJECT_DIR$/data/defense</dir>
@@ -549,41 +388,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/data/extras/titanic/test.csv" />
-        <option value="$PROJECT_DIR$/TitanicNotebook.ipynb" />
-        <option value="$PROJECT_DIR$/twitter.csv" />
-        <option value="$PROJECT_DIR$/data/final2/2017-01-26.csv" />
-        <option value="$PROJECT_DIR$/data/generatedRosters/2017-01-26.csv" />
-        <option value="$PROJECT_DIR$/data/vegas/2017-01-27.csv" />
-        <option value="$PROJECT_DIR$/data/injuries/2017-01-28.json" />
-        <option value="$PROJECT_DIR$/temp.py" />
-        <option value="$PROJECT_DIR$/data/predictions/final_2017-01-28.csv" />
-        <option value="$PROJECT_DIR$/data/final2/2017-01-28.csv" />
-        <option value="$PROJECT_DIR$/data/generatedRosters/proj_2017-01-28.csv" />
-        <option value="$PROJECT_DIR$/InjurySpider.py" />
-        <option value="$PROJECT_DIR$/data/generatedRosters/2017-01-28.csv" />
-        <option value="$PROJECT_DIR$/data/Defense/2017-01-29.csv" />
-        <option value="$PROJECT_DIR$/data/vegas/2017-01-26.csv" />
-        <option value="$PROJECT_DIR$/data/injuries/2017-01-29.json" />
-        <option value="$PROJECT_DIR$/data/targets/2017-01-29.json" />
-        <option value="$PROJECT_DIR$/data/vegas/2017-01-28.csv" />
-        <option value="$PROJECT_DIR$/data/vegas/2017-01-29.csv" />
-        <option value="$PROJECT_DIR$/data/final/2017-01-26.csv" />
-        <option value="$PROJECT_DIR$/data/final/2017-01-28.csv" />
-        <option value="$PROJECT_DIR$/data/final/2017-01-27.csv" />
-        <option value="$PROJECT_DIR$/data/final2/2017-01-29.csv" />
-        <option value="$PROJECT_DIR$/NeuralNetsPrediction.ipynb" />
-        <option value="$PROJECT_DIR$/data/output/2017-01-10.csv" />
-        <option value="$PROJECT_DIR$/data/output/2017-01-18.csv" />
-        <option value="$PROJECT_DIR$/data/output/2017-01-19.csv" />
-        <option value="$PROJECT_DIR$/data/output/2017-01-29.csv" />
-        <option value="$PROJECT_DIR$/data/output/2017-01-27.csv" />
-        <option value="$PROJECT_DIR$/SalaryScraper.py" />
-        <option value="$PROJECT_DIR$/data/final/2016-12-21.csv" />
-        <option value="$PROJECT_DIR$/data/final2/2017-01-30.csv" />
-        <option value="$PROJECT_DIR$/data/injuries/2017-01-30.json" />
-        <option value="$PROJECT_DIR$/models/.conf.py" />
-        <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/Projections.py" />
         <option value="$PROJECT_DIR$/models/models.py" />
         <option value="$PROJECT_DIR$/models/PlayerLog.py" />
@@ -591,15 +395,50 @@
         <option value="$PROJECT_DIR$/data/Defense/2017-01-31.csv" />
         <option value="$PROJECT_DIR$/data/injuries/2017-01-31.json" />
         <option value="$PROJECT_DIR$/data/targets/2017-01-31.json" />
-        <option value="$PROJECT_DIR$/models/buildDatabase.py" />
-        <option value="$PROJECT_DIR$/models/mysql.py" />
-        <option value="$PROJECT_DIR$/models/updateDatabase.py" />
-        <option value="$PROJECT_DIR$/Vegas.py" />
         <option value="$PROJECT_DIR$/data/final/2017-01-31.csv" />
         <option value="$USER_HOME$/anaconda/lib/python3.5/site-packages/nba_py/__init__.py" />
-        <option value="$PROJECT_DIR$/resultsExplorer.py" />
         <option value="$PROJECT_DIR$/penalties.py" />
+        <option value="$PROJECT_DIR$/data/generatedRosters/2017-01-27.csv" />
+        <option value="$PROJECT_DIR$/data/generatedRosters/2017-02-01.csv" />
+        <option value="$PROJECT_DIR$/models/updateDatabase.py" />
+        <option value="$PROJECT_DIR$/CalculateLSTM.py" />
         <option value="$PROJECT_DIR$/calculate.py" />
+        <option value="$PROJECT_DIR$/lalaLand.py" />
+        <option value="$PROJECT_DIR$/InjuryUpdates.py" />
+        <option value="$PROJECT_DIR$/GoldenState_2017_calendar.json" />
+        <option value="$PROJECT_DIR$/data/injuries/2017-11-04/gswatden.json" />
+        <option value="$PROJECT_DIR$/InjuryScheduler.py" />
+        <option value="$PROJECT_DIR$/models/temp.json" />
+        <option value="$USER_HOME$/anaconda/lib/python3.5/site-packages/nba_py/player.py" />
+        <option value="$USER_HOME$/anaconda/lib/python3.5/site-packages/nba_py/constants.py" />
+        <option value="$PROJECT_DIR$/data/vegas/2016-12-13.csv" />
+        <option value="$PROJECT_DIR$/save_player.csv" />
+        <option value="$PROJECT_DIR$/predict.csv" />
+        <option value="$PROJECT_DIR$/GameInjurySpider.py" />
+        <option value="$PROJECT_DIR$/data/injuries/2017-11-18.json" />
+        <option value="$PROJECT_DIR$/InjurySpider.py" />
+        <option value="$PROJECT_DIR$/data/final2/2017-11-18.csv" />
+        <option value="$PROJECT_DIR$/data/final2/2017-11-18_2.csv" />
+        <option value="$PROJECT_DIR$/data/final2/2017-11-18_3.csv" />
+        <option value="$PROJECT_DIR$/data/final2/2017-11-18_4.csv" />
+        <option value="$PROJECT_DIR$/data/injuries/2017-11-182.csv" />
+        <option value="$PROJECT_DIR$/data/final2/2017-11-18_5.csv" />
+        <option value="$PROJECT_DIR$/CalculatePlayer.ipynb" />
+        <option value="$PROJECT_DIR$/data/final2/2017-11-19_1.csv" />
+        <option value="$PROJECT_DIR$/predict_me.csv" />
+        <option value="$PROJECT_DIR$/data/final2/2017-02-01.csv" />
+        <option value="$PROJECT_DIR$/data/injuries/2017-11-202.csv" />
+        <option value="$PROJECT_DIR$/predictions.csv" />
+        <option value="$PROJECT_DIR$/data/generatedRosters2/2017-11-20.csv" />
+        <option value="$PROJECT_DIR$/resultsExplorer.py" />
+        <option value="$PROJECT_DIR$/Vegas.py" />
+        <option value="$PROJECT_DIR$/SalaryScrape.py" />
+        <option value="$PROJECT_DIR$/SalaryScraper.py" />
+        <option value="$PROJECT_DIR$/response.json" />
+        <option value="$PROJECT_DIR$/extras.json" />
+        <option value="$PROJECT_DIR$/RotoNews.py" />
+        <option value="$PROJECT_DIR$/models/mysql.py" />
+        <option value="$PROJECT_DIR$/models/buildDatabase.py" />
       </list>
     </option>
   </component>
@@ -618,7 +457,7 @@
   <component name="ProjectFrameBounds">
     <option name="y" value="23" />
     <option name="width" value="1440" />
-    <option name="height" value="809" />
+    <option name="height" value="808" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -647,42 +486,10 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="NBA" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="NBA" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="data" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="NBA" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="NBA" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="data" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="salaries" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -691,17 +498,17 @@
     <property name="nodejs_interpreter_path" value="/usr/local/bin/node" />
     <property name="js.eslint.eslintPackage" value="" />
     <property name="js-jscs-nodeInterpreter" value="/usr/local/bin/node" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="settings.editor.selected.configurable" value="terminal" />
     <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file:///Users/marek5050/machinelearning/NBA/test.ipynb" />
     <property name="com.intellij.database.dataSource.DataSourceTemplate" value="MySQL" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/data/salaries" />
-      <recent name="$PROJECT_DIR$/models" />
+      <recent name="$PROJECT_DIR$/data/play" />
+      <recent name="$PROJECT_DIR$/data/predictions" />
+      <recent name="$PROJECT_DIR$/data" />
+      <recent name="$PROJECT_DIR$/data/final2" />
       <recent name="$PROJECT_DIR$" />
-      <recent name="$PROJECT_DIR$/data/output" />
-      <recent name="$PROJECT_DIR$/data/generatedRosters" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/models" />
@@ -711,7 +518,7 @@
       <recent name="$PROJECT_DIR$/data/final" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.Calculate Penalties">
+  <component name="RunManager" selected="Python.Build Database">
     <configuration default="true" type="DjangoTestsConfigurationType" factoryName="Django tests">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -980,6 +787,24 @@
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
     </configuration>
+    <configuration default="false" name="Append LSTM" type="PythonConfigurationType" factoryName="Python">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="$USER_HOME$/anaconda/bin/python" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="NBA" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/CalculateLSTM.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
     <configuration default="false" name="Build Database" type="PythonConfigurationType" factoryName="Python">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -1219,6 +1044,60 @@
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
     </configuration>
+    <configuration default="false" name="RotoNews" type="PythonConfigurationType" factoryName="Python">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="$USER_HOME$/anaconda/bin/python" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="NBA" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/RotoNews.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="Daily Injuries" type="PythonConfigurationType" factoryName="Python">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="$USER_HOME$/anaconda/bin/python" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="NBA" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/GameInjurySpider.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="Setup CRON jobs" type="PythonConfigurationType" factoryName="Python">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="$USER_HOME$/anaconda/bin/python" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="NBA" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/InjuryScheduler.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
     <configuration default="false" name="Team updates" type="PythonConfigurationType" factoryName="Python">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -1291,27 +1170,31 @@
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
     </configuration>
-    <list size="20">
+    <list size="24">
       <item index="0" class="java.lang.String" itemvalue="Python.Calculate Scores" />
       <item index="1" class="java.lang.String" itemvalue="Python.Projections" />
       <item index="2" class="java.lang.String" itemvalue="Python.Calculate Penalties" />
-      <item index="3" class="java.lang.String" itemvalue="Python.Build Database" />
-      <item index="4" class="java.lang.String" itemvalue="Python.DB Update" />
-      <item index="5" class="java.lang.String" itemvalue="Python.QueryDatabase" />
-      <item index="6" class="java.lang.String" itemvalue="Python.Temp" />
-      <item index="7" class="java.lang.String" itemvalue="Python.temp" />
-      <item index="8" class="java.lang.String" itemvalue="Python.Defense" />
-      <item index="9" class="java.lang.String" itemvalue="Python.HistoricalDFS" />
-      <item index="10" class="java.lang.String" itemvalue="Python.Calculate Averages" />
-      <item index="11" class="java.lang.String" itemvalue="Python.Calculate Averages Simple" />
-      <item index="12" class="java.lang.String" itemvalue="Python.blah" />
-      <item index="13" class="java.lang.String" itemvalue="Python.News" />
-      <item index="14" class="java.lang.String" itemvalue="Python.Targets" />
-      <item index="15" class="java.lang.String" itemvalue="Python.Injuries" />
-      <item index="16" class="java.lang.String" itemvalue="Python.Team updates" />
-      <item index="17" class="java.lang.String" itemvalue="Python.Vegas" />
-      <item index="18" class="java.lang.String" itemvalue="Python.SalaryScraper" />
-      <item index="19" class="java.lang.String" itemvalue="Python.VegasOddsAll" />
+      <item index="3" class="java.lang.String" itemvalue="Python.Append LSTM" />
+      <item index="4" class="java.lang.String" itemvalue="Python.Build Database" />
+      <item index="5" class="java.lang.String" itemvalue="Python.DB Update" />
+      <item index="6" class="java.lang.String" itemvalue="Python.QueryDatabase" />
+      <item index="7" class="java.lang.String" itemvalue="Python.Temp" />
+      <item index="8" class="java.lang.String" itemvalue="Python.temp" />
+      <item index="9" class="java.lang.String" itemvalue="Python.Defense" />
+      <item index="10" class="java.lang.String" itemvalue="Python.HistoricalDFS" />
+      <item index="11" class="java.lang.String" itemvalue="Python.Calculate Averages" />
+      <item index="12" class="java.lang.String" itemvalue="Python.Calculate Averages Simple" />
+      <item index="13" class="java.lang.String" itemvalue="Python.blah" />
+      <item index="14" class="java.lang.String" itemvalue="Python.News" />
+      <item index="15" class="java.lang.String" itemvalue="Python.Targets" />
+      <item index="16" class="java.lang.String" itemvalue="Python.Injuries" />
+      <item index="17" class="java.lang.String" itemvalue="Python.RotoNews" />
+      <item index="18" class="java.lang.String" itemvalue="Python.Daily Injuries" />
+      <item index="19" class="java.lang.String" itemvalue="Python.Setup CRON jobs" />
+      <item index="20" class="java.lang.String" itemvalue="Python.Team updates" />
+      <item index="21" class="java.lang.String" itemvalue="Python.Vegas" />
+      <item index="22" class="java.lang.String" itemvalue="Python.SalaryScraper" />
+      <item index="23" class="java.lang.String" itemvalue="Python.VegasOddsAll" />
     </list>
   </component>
   <component name="ShelveChangesManager" show_recycled="false">
@@ -1444,7 +1327,14 @@
       <option name="project" value="LOCAL" />
       <updated>1485479554735</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="Added ORM support for storing stats.">
+      <created>1485978735441</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1485978735441</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TodoView">
@@ -1457,27 +1347,27 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1440" height="809" extended-state="0" />
-    <editor active="false" />
+    <frame x="0" y="23" width="1440" height="808" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17668097" sideWeight="0.49170125" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14377682" sideWeight="0.49170125" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32914925" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28591353" sideWeight="0.3769671" order="11" side_tool="true" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20529328" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32775453" sideWeight="0.48569384" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32771084" sideWeight="0.47424892" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.27196652" sideWeight="0.48712447" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28591353" sideWeight="0.6230329" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.29707113" sideWeight="0.49356222" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.29608938" sideWeight="0.5178827" order="11" side_tool="true" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.05293276" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32635984" sideWeight="0.47138768" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.27094972" sideWeight="0.481402" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3282123" sideWeight="0.7052933" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24964234" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.29608938" sideWeight="0.48211733" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22206303" sideWeight="0.50829875" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.44769874" sideWeight="0.5829757" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.43575418" sideWeight="0.7703863" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32681563" sideWeight="0.4828326" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
@@ -1504,6 +1394,9 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="processedProjectFiles" value="true" />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName="*.csv" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -1545,7 +1438,8 @@
     <MESSAGE value="Updated Mathematica and NN at 87.9%" />
     <MESSAGE value="NN at 89%" />
     <MESSAGE value="Updated gitignore and adding twitter posting information" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated gitignore and adding twitter posting information" />
+    <MESSAGE value="Added ORM support for storing stats." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added ORM support for storing stats." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1576,7 +1470,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/resultsExplorer.py</url>
-          <line>144</line>
+          <line>154</line>
           <option name="timeStamp" value="216" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
@@ -1585,23 +1479,18 @@
           <option name="timeStamp" value="221" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/resultsExplorer.py</url>
-          <line>24</line>
-          <option name="timeStamp" value="265" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/Projections.py</url>
           <line>49</line>
           <option name="timeStamp" value="272" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/InjurySpider.py</url>
-          <line>79</line>
+          <line>85</line>
           <option name="timeStamp" value="275" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/InjurySpider.py</url>
-          <line>72</line>
+          <line>78</line>
           <option name="timeStamp" value="276" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
@@ -1616,23 +1505,13 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/calculate.py</url>
-          <line>275</line>
+          <line>289</line>
           <option name="timeStamp" value="328" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/SalaryScraper.py</url>
-          <line>40</line>
-          <option name="timeStamp" value="331" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/calculate.py</url>
-          <line>637</line>
+          <line>648</line>
           <option name="timeStamp" value="342" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/models/buildDatabase.py</url>
-          <line>16</line>
-          <option name="timeStamp" value="343" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/models/queryDatabase.py</url>
@@ -1641,25 +1520,64 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/resultsExplorer.py</url>
-          <line>117</line>
+          <line>127</line>
           <option name="timeStamp" value="400" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/resultsExplorer.py</url>
-          <line>94</line>
+          <line>104</line>
           <option name="timeStamp" value="405" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <condition expression="self.name == &quot;Rusell Westbrook&quot;" language="Python" />
-          <url>file://$PROJECT_DIR$/calculate.py</url>
-          <line>134</line>
-          <option name="timeStamp" value="419" />
         </line-breakpoint>
         <line-breakpoint suspend="THREAD" type="python-line">
           <condition expression="data[&quot;name&quot;]==&quot;Russell Westbrook&quot;" language="Python" />
           <url>file://$PROJECT_DIR$/calculate.py</url>
-          <line>102</line>
+          <line>103</line>
           <option name="timeStamp" value="421" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/resultsExplorer.py</url>
+          <line>107</line>
+          <option name="timeStamp" value="432" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/GameInjurySpider.py</url>
+          <line>77</line>
+          <option name="timeStamp" value="466" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/GameInjurySpider.py</url>
+          <line>128</line>
+          <option name="timeStamp" value="467" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/calculate.py</url>
+          <line>135</line>
+          <option name="timeStamp" value="479" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/GameInjurySpider.py</url>
+          <line>46</line>
+          <option name="timeStamp" value="481" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/models/mysql.py</url>
+          <line>89</line>
+          <option name="timeStamp" value="485" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/resultsExplorer.py</url>
+          <line>29</line>
+          <option name="timeStamp" value="486" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/models/mysql.py</url>
+          <line>173</line>
+          <option name="timeStamp" value="492" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/models/buildDatabase.py</url>
+          <line>15</line>
+          <option name="timeStamp" value="493" />
         </line-breakpoint>
       </breakpoints>
       <breakpoints-dialog>
@@ -1672,150 +1590,419 @@
           </properties>
         </breakpoint>
       </default-breakpoints>
-      <option name="time" value="425" />
+      <option name="time" value="494" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$USER_HOME$/anaconda/lib/python3.5/site-packages/sqlalchemy/sql/schema.py">
+    <entry file="file://$PROJECT_DIR$/data/vegas/2011-01-14.csv">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-9680">
-          <caret line="860" column="8" lean-forward="false" selection-start-line="860" selection-start-column="8" selection-end-line="860" selection-end-column="8" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/anaconda/lib/python3.5/site-packages/sqlalchemy/ext/declarative/base.py">
+    <entry file="file://$PROJECT_DIR$/data/vegas/2011-01-17.csv">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="310">
-          <caret line="649" column="35" lean-forward="true" selection-start-line="649" selection-start-column="8" selection-end-line="649" selection-end-column="35" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/anaconda/lib/python3.5/site-packages/sqlalchemy/util/langhelpers.py">
+    <entry file="file://$PROJECT_DIR$/data/vegas/2010-12-24.csv">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="265">
-          <caret line="222" column="26" lean-forward="false" selection-start-line="222" selection-start-column="26" selection-end-line="222" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/anaconda/lib/python3.5/site-packages/sqlalchemy/sql/expression.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="62" column="12" lean-forward="false" selection-start-line="62" selection-start-column="12" selection-end-line="62" selection-end-column="12" />
+        <state relative-caret-position="15">
+          <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/anaconda/lib/python3.5/site-packages/pandas/tools/util.py">
+    <entry file="file://$PROJECT_DIR$/data/vegas/2010-05-12.csv">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="100" column="0" lean-forward="false" selection-start-line="100" selection-start-column="0" selection-end-line="100" selection-end-column="0" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/anaconda/lib/python3.5/site-packages/pandas/core/frame.py">
+    <entry file="file://$PROJECT_DIR$/data/vegas/2010-05-15.csv">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="205">
-          <caret line="785" column="45" lean-forward="false" selection-start-line="785" selection-start-column="45" selection-end-line="785" selection-end-column="45" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/anaconda/lib/python3.5/site-packages/pandas/indexes/base.py">
+    <entry file="file://$PROJECT_DIR$/data/vegas/2010-06-01.csv">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="1950" column="46" lean-forward="false" selection-start-line="1950" selection-start-column="46" selection-end-line="1950" selection-end-column="46" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/anaconda/lib/python3.5/site-packages/sqlalchemy/ext/hybrid.py">
+    <entry file="file://$PROJECT_DIR$/data/vegas/2010-06-22.csv">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="716" column="0" lean-forward="true" selection-start-line="716" selection-start-column="0" selection-end-line="716" selection-end-column="0" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/anaconda/lib/python3.5/site-packages/sqlalchemy/orm/state.py">
+    <entry file="file://$PROJECT_DIR$/data/vegas/2010-06-27.csv">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="205">
-          <caret line="302" column="0" lean-forward="false" selection-start-line="302" selection-start-column="0" selection-end-line="302" selection-end-column="0" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/Library/Caches/PyCharm2016.3/python_stubs/-20178883/builtins.py">
+    <entry file="file://$PROJECT_DIR$/data/vegas/2010-07-16.csv">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="598">
-          <caret line="817" column="10" lean-forward="false" selection-start-line="817" selection-start-column="4" selection-end-line="817" selection-end-column="10" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/data/salaries/2017-01-31.csv">
+    <entry file="file://$PROJECT_DIR$/data/vegas/2010-08-09.csv">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="26" column="35" lean-forward="false" selection-start-line="26" selection-start-column="35" selection-end-line="26" selection-end-column="35" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/anaconda/lib/python3.5/site-packages/numpy/core/_methods.py">
+    <entry file="file://$PROJECT_DIR$/data/vegas/2010-04-16.csv">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="441">
-          <caret line="81" column="28" lean-forward="false" selection-start-line="81" selection-start-column="28" selection-end-line="81" selection-end-column="28" />
+        <state relative-caret-position="15">
+          <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/data/injuries/2017-01-31.json">
+    <entry file="file://$PROJECT_DIR$/data/vegas/2010-04-05.csv">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="795">
-          <caret line="53" column="24" lean-forward="false" selection-start-line="53" selection-start-column="24" selection-end-line="53" selection-end-column="24" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/data/Defense/2017-01-31.csv">
+    <entry file="file://$PROJECT_DIR$/data/vegas/2010-10-25.csv">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="30" column="37" lean-forward="false" selection-start-line="30" selection-start-column="37" selection-end-line="30" selection-end-column="37" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/data/targets/2017-01-31.json">
+    <entry file="file://$PROJECT_DIR$/data/vegas/2010-10-03.csv">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="1" lean-forward="false" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/anaconda/lib/python3.5/site-packages/sqlalchemy/ext/declarative/api.py">
+    <entry file="file://$PROJECT_DIR$/data/vegas/2010-09-29.csv">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="970">
-          <caret line="572" column="15" lean-forward="false" selection-start-line="572" selection-start-column="15" selection-end-line="572" selection-end-column="15" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/vegas/2010-09-26.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/vegas/2010-08-12.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/vegas/2011-01-07.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/vegas/2011-01-05.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/vegas/2011-01-03.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/old_salaries/2016-11-03.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/old_salaries/2016-11-11.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/old_salaries/2017-04-09.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/old_salaries/2017-07-15.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/old_salaries/2017-11-12.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/old_salaries/2017-11-21.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SalaryScrape.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="2562" column="8" lean-forward="true" selection-start-line="2562" selection-start-column="8" selection-end-line="2562" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/old_salaries/2017-11-02.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/old_salaries/2017-11-20.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/old_salaries/fd_2017-11-20.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="283">
+          <caret line="275" column="30" lean-forward="false" selection-start-line="275" selection-start-column="30" selection-end-line="275" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/old_salaries/dk_2017-11-20.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/anaconda/lib/python3.5/site-packages/twisted/internet/defer.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="164">
+          <caret line="650" column="0" lean-forward="false" selection-start-line="650" selection-start-column="0" selection-end-line="650" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/old_salaries/dk_2016-12-03.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/old_salaries/dk_2016-11-07.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/old_salaries/dk_2016-10-28.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/old_salaries/yah_2016-10-25.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/old_salaries/dk_2016-10-25.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="30" lean-forward="false" selection-start-line="6" selection-start-column="30" selection-end-line="6" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/anaconda/lib/python3.5/site-packages/nba_py/player.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#53#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/response.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="27" column="43" lean-forward="true" selection-start-line="27" selection-start-column="43" selection-end-line="27" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="48" column="23" lean-forward="true" selection-start-line="48" selection-start-column="23" selection-end-line="48" selection-end-column="23" />
+          <folding>
+            <element signature="e#0#15#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/anaconda/lib/python3.5/site-packages/nba_py/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="30" lean-forward="true" selection-start-line="18" selection-start-column="30" selection-end-line="18" selection-end-column="30" />
+          <folding>
+            <element signature="e#0#24#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/anaconda/lib/python3.5/site-packages/sqlalchemy/sql/sqltypes.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-451">
+          <caret line="386" column="6" lean-forward="false" selection-start-line="386" selection-start-column="6" selection-end-line="386" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SalaryScraper.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-197">
+          <caret line="15" column="0" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+          <folding>
+            <element signature="e#25#38#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/extras.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="30" selection-end-column="27" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$USER_HOME$/anaconda/lib/python3.5/site-packages/sqlalchemy/orm/session.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="205">
-          <caret line="1033" column="16" lean-forward="false" selection-start-line="1033" selection-start-column="12" selection-end-line="1033" selection-end-column="16" />
+        <state relative-caret-position="125">
+          <caret line="1692" column="8" lean-forward="false" selection-start-line="1692" selection-start-column="8" selection-end-line="1692" selection-end-column="8" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/InjuryScheduler.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="21" column="36" lean-forward="true" selection-start-line="21" selection-start-column="36" selection-end-line="21" selection-end-column="36" />
+          <folding>
+            <element signature="e#0#27#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/injuries/2017-11-212.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="242" lean-forward="false" selection-start-line="0" selection-start-column="231" selection-end-line="0" selection-end-column="242" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Vegas.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="268">
+          <caret line="168" column="0" lean-forward="false" selection-start-line="168" selection-start-column="0" selection-end-line="168" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RotoNews.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="333">
+          <caret line="28" column="33" lean-forward="true" selection-start-line="28" selection-start-column="33" selection-end-line="28" selection-end-column="33" />
+          <folding>
+            <element signature="e#76#103#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/models/mysql.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="202">
-          <caret line="148" column="0" lean-forward="true" selection-start-line="148" selection-start-column="0" selection-end-line="148" selection-end-column="0" />
+        <state relative-caret-position="-702">
+          <caret line="60" column="61" lean-forward="false" selection-start-line="60" selection-start-column="61" selection-end-line="60" selection-end-column="61" />
           <folding>
             <element signature="e#23#78#0" expanded="true" />
           </folding>
@@ -1824,288 +2011,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/models/buildDatabase.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="0" lean-forward="true" selection-start-line="14" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+        <state relative-caret-position="225">
+          <caret line="26" column="0" lean-forward="true" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
           <folding>
             <element signature="e#0#19#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/models/updateDatabase.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="0" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#19#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/models/queryDatabase.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="16" lean-forward="true" selection-start-line="14" selection-start-column="16" selection-end-line="14" selection-end-column="16" />
-          <folding>
-            <element signature="e#0#19#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Vegas.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="307">
-          <caret line="100" column="46" lean-forward="false" selection-start-line="100" selection-start-column="46" selection-end-line="100" selection-end-column="46" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/vegas/2017-01-30.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="18" lean-forward="true" selection-start-line="6" selection-start-column="18" selection-end-line="6" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/anaconda/lib/python3.5/enum.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="70">
-          <caret line="132" column="22" lean-forward="false" selection-start-line="132" selection-start-column="22" selection-end-line="132" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/final/2016-12-30.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/final/2016-12-31.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="103" lean-forward="false" selection-start-line="8" selection-start-column="103" selection-end-line="8" selection-end-column="103" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/anaconda/lib/python3.5/site-packages/nba_py/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="12" column="70" lean-forward="false" selection-start-line="12" selection-start-column="70" selection-end-line="12" selection-end-column="70" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/anaconda/lib/python3.5/site-packages/nba_py/player.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="70" column="0" lean-forward="true" selection-start-line="70" selection-start-column="0" selection-end-line="70" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/final/2016-12-29.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="72" lean-forward="false" selection-start-line="12" selection-start-column="72" selection-end-line="12" selection-end-column="72" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/final/2017-01-31.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="122" lean-forward="false" selection-start-line="6" selection-start-column="122" selection-end-line="6" selection-end-column="122" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/final/2017-01-26.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="50" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="118" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/final/2017-01-24.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="38" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="177" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/final/2017-01-19.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="43" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="148" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/final/2017-01-12.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="100" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="147" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/final/2017-01-29.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" column="57" lean-forward="false" selection-start-line="19" selection-start-column="57" selection-end-line="19" selection-end-column="57" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/final/2017-01-30.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="63" lean-forward="true" selection-start-line="14" selection-start-column="63" selection-end-line="14" selection-end-column="63" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/final/2017-01-28.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="88" lean-forward="false" selection-start-line="5" selection-start-column="88" selection-end-line="5" selection-end-column="88" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/final/2016-12-21.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="39" lean-forward="true" selection-start-line="14" selection-start-column="39" selection-end-line="14" selection-end-column="39" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="dbDummy://dbtable:/7a8c6158/1f000db8-4b6a-486a-a350-3cce0dce8dee/fantasy.playerlogs">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true">
-            <filter text="Player_ID='201566'" />
-          </filtering>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/anaconda/lib/python3.5/site-packages/pandas/core/internals.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="122">
-          <caret line="2682" column="0" lean-forward="false" selection-start-line="2682" selection-start-column="0" selection-end-line="2682" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="uml://AlchemyModelDependency/#NBA">
-      <provider selected="true" editor-type-id="UmlEditorProvider">
-        <state>
-          <ID>AlchemyModelDependency</ID>
-          <OriginalElement>#NBA</OriginalElement>
-          <nodes />
-          <notes />
-          <edges />
-          <settings layout="Hierarchic Group" zoom="1.0" x="432.0" y="228.5" />
-          <SelectedNodes />
-          <Categories />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/final/2016-12-25.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="13" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="151" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/final/2016-12-27.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="48" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="121" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/output/2017-01-13.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="34" lean-forward="false" selection-start-line="10" selection-start-column="34" selection-end-line="10" selection-end-column="34" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/output/2016-12-20.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="68" lean-forward="false" selection-start-line="2" selection-start-column="68" selection-end-line="2" selection-end-column="68" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/final/2017-01-06.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="23" column="44" lean-forward="false" selection-start-line="23" selection-start-column="44" selection-end-line="23" selection-end-column="44" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resultsExplorer.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="191">
-          <caret line="102" column="34" lean-forward="false" selection-start-line="102" selection-start-column="34" selection-end-line="102" selection-end-column="34" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/penalties.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="199">
-          <caret line="81" column="16" lean-forward="false" selection-start-line="81" selection-start-column="16" selection-end-line="81" selection-end-column="16" />
-          <folding>
-            <marker date="1485978169000" expanded="true" signature="470:2685" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/calculate.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="650" column="0" lean-forward="false" selection-start-line="650" selection-start-column="0" selection-end-line="651" selection-end-column="0" />
-          <folding>
-            <element signature="e#25#36#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/salaries/2017-02-01.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/vegas/2017-02-01.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="18" lean-forward="true" selection-start-line="16" selection-start-column="18" selection-end-line="16" selection-end-column="18" />
-          <folding />
         </state>
       </provider>
     </entry>

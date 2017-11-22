@@ -1,0 +1,14 @@
+Strategy,p1,p2,p3,p4,p5,p6,p7,p8,DKFPS,Result
+floorAvgBonus,Kevin Durant,Kemba Walker,Al Horford,Klay Thompson,Brook Lopez,Trevor Booker,Rondae Hollis-Jefferson,Isaiah Whitehead,233.5,None
+baselineBonus,Kevin Durant,Kemba Walker,Carmelo Anthony,Brook Lopez,Marvin Williams,Trevor Booker,Sean Kilpatrick,Bojan Bogdanovic,184.0,None
+svnGameBonus,Kevin Durant,Kyrie Irving,Kemba Walker,Mike Conley,Trevor Booker,Courtney Lee,Rondae Hollis-Jefferson,Marreese Speights,230.25,None
+baselineFloorAvgBonus,Kevin Durant,Kemba Walker,Carmelo Anthony,Brook Lopez,Marvin Williams,Trevor Booker,Sean Kilpatrick,Bojan Bogdanovic,184.0,None
+baselineFloorAvg,Kevin Durant,Kemba Walker,Carmelo Anthony,Brook Lopez,Marvin Williams,Trevor Booker,Sean Kilpatrick,Bojan Bogdanovic,184.0,None
+baselineSvnGameAvg,Kevin Durant,Kyrie Irving,Kemba Walker,Brook Lopez,Trevor Booker,Sean Kilpatrick,Courtney Lee,Rondae Hollis-Jefferson,209.75,None
+baselineSvnGameAvgBonus,Kevin Durant,Kyrie Irving,Kemba Walker,Brook Lopez,Trevor Booker,Sean Kilpatrick,Courtney Lee,Rondae Hollis-Jefferson,209.75,None
+frGameAvgBonus,Kemba Walker,Marc Gasol,Jrue Holiday,Carmelo Anthony,Jae Crowder,Courtney Lee,Andre Iguodala,Bojan Bogdanovic,207.25,None
+baselineFrGameAvgBonus,Kevin Durant,Kemba Walker,Carmelo Anthony,Brook Lopez,Marvin Williams,Trevor Booker,Courtney Lee,Bojan Bogdanovic,193.25,None
+baselineFrGameAvg,Kevin Durant,Kemba Walker,Carmelo Anthony,Brook Lopez,Marvin Williams,Trevor Booker,Courtney Lee,Bojan Bogdanovic,193.25,None
+NeuralNetworkAvg,Russell Westbrook,Jrue Holiday,Carmelo Anthony,Nikola Vucevic,Wesley Matthews,Courtney Lee,Rodney Hood,Rodney McGruder,220.5,None
+RandomForestAvg,Isaiah Thomas,Kemba Walker,Andre Drummond,Dwyane Wade,Zach Randolph,Tobias Harris,Monta Ellis,Joe Johnson,242.0,Loss
+NNRF,Kyle Lowry,Kemba Walker,Andre Drummond,Jae Crowder,Zach Randolph,Tobias Harris,Courtney Lee,Isaiah Whitehead,209.75,None

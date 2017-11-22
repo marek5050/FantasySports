@@ -3,10 +3,11 @@
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
-from sqlalchemy import Column, DateTime, String, Integer, ForeignKey, func
+from sqlalchemy import Column, DateTime, String, Integer, ForeignKey, func,Date,Float, Numeric
 from sqlalchemy.sql import select
 from sqlalchemy.ext.hybrid import hybrid_property,hybrid_method
 from sqlalchemy import UniqueConstraint
+from dateutil import parser
 
 settings = {
     "mysql_user": "root",
@@ -20,6 +21,7 @@ import pandas as pd
 
 class Player(MysqlBase):
     __tablename__ ='playerlist'
+
     PERSON_ID = Column(Integer, primary_key=True, unique=True)
     DISPLAY_LAST_COMMA_FIRST = Column(String(32))
     DISPLAY_FIRST_LAST = Column(String(32))
@@ -52,44 +54,43 @@ class PlayerLog(MysqlBase,object):
     __columns__ = ['SEASON_ID' 'Player_ID' 'Game_ID' 'MATCHUP' 'WL' 'MIN' 'FGM' 'FGA'
  'FG_PCT' 'FG3M' 'FG3A' 'FG3_PCT' 'FTM' 'FTA' 'FT_PCT' 'OREB' 'DREB' 'REB'
  'AST' 'STL' 'BLK' 'TOV' 'PF' 'PTS' 'PLUS_MINUS' 'VIDEO_AVAILABLE',"DKFPS"]
-    __table_args__ = (UniqueConstraint('Player_ID', 'Game_ID', name='_player_per_game'), )
+    __table_args__ = (UniqueConstraint('Player_ID', 'Game_ID','SEASON_ID', name='_player_per_game_per_season'), )
 
     id = Column(Integer, primary_key=True)
     SEASON_ID = Column(String(32))
-    Player_ID = Column(String(32))
+    Player_ID = Column(Integer, ForeignKey(Player.PERSON_ID))
     Game_ID = Column(String(32))
-    GAME_DATE = Column(String(32))
+    GAME_DATE = Column(Date)
     MATCHUP = Column(String(32))
     WL = Column(String(32))
-    MIN = Column(String(32))
-    FGM = Column(String(32))
-    FGA = Column(String(32))
-    FG_PCT = Column(String(32))
-    FG3M = Column(String(32))
-    FG3A = Column(String(32))
-    FG3_PCT = Column(String(32))
-    FTM = Column(String(32))
-    FTA = Column(String(32))
-    FT_PCT = Column(String(32))
-    OREB = Column(String(32))
-    DREB = Column(String(32))
-    REB = Column(String(32))
-    AST = Column(String(32))
-    STL = Column(String(32))
-    BLK = Column(String(32))
-    TOV = Column(String(32))
-    PF = Column(String(32))
-    PTS = Column(String(32))
+    MIN = Column(Integer)
+    FGM = Column(Integer)
+    FGA = Column(Integer)
+    FG_PCT = Column(Float)
+    FG3M = Column(Integer)
+    FG3A = Column(Integer)
+    FG3_PCT = Column(Float)
+    FTM = Column(Integer)
+    FTA = Column(Integer)
+    FT_PCT = Column(Float)
+    OREB = Column(Integer)
+    DREB = Column(Integer)
+    REB = Column(Integer)
+    AST = Column(Integer)
+    STL = Column(Integer)
+    BLK = Column(Integer)
+    TOV = Column(Integer)
+    PF = Column(Integer)
+    PTS = Column(Integer)
     PLUS_MINUS = Column(String(32))
     VIDEO_AVAILABLE = Column(String(32))
-    DKFPS = Column(String(32))
+    DKFPS = Column(Float)
     valid = 1
 
-
-
-    def __init__(self,row = None):
+    def __init__(self,**row):
+        row["GAME_DATE"] = parser.parse(row["GAME_DATE"]).date()
         if row is not None:
-            super().__init__(**row.to_dict())
+            super().__init__(**row)
         self.DKFPS = self.calculateDKFPS()
         return
 
@@ -134,12 +135,52 @@ class PlayerLog(MysqlBase,object):
 
         return
 
-
-
     def __repr__(self):
         return'<PlayerLog {0} {1}: {2}>'.format(self.Player_ID,
                                                self.GAME_DATE,
                                                self.PTS)
+
+
+
+
+class PlayerNews(MysqlBase):
+    __tablename__ ='playernews'
+    id=Column(Integer, primary_key=True, unique=True)
+
+    ListItemCaption = Column(String(400))
+    ListItemDescription = Column(String(800))
+    ListItemPubDate = Column(DateTime)
+    lastUpdate = Column(DateTime)
+    UpdateId = Column(String(32))
+    RotoId = Column(String(32))
+    PlayerID = Column(Integer, ForeignKey(Player.PERSON_ID))
+    FirstName = Column(String(32))
+    LastName = Column(String(32))
+    Position = Column(String(32))
+    Team = Column(String(32))
+    TeamCode = Column(String(32))
+    Date = Column(String(32))
+    Priority= Column(Integer)
+    Headline= Column(String(500))
+    Injured= Column(String(32))
+    Injured_Status= Column(String(32))
+    Injury_Location= Column(String(32))
+    Injury_Type= Column(String(32))
+    Injury_Detail= Column(String(32))
+    Injury_Side=Column(String(32))
+
+    def __init__(self,**row):
+        row["ListItemPubDate"] = parser.parse(row["ListItemPubDate"])
+        row["lastUpdate"] = parser.parse(row["lastUpdate"])
+        if row is not None:
+            super().__init__(**row)
+        # self.DKFPS = self.calculateDKFPS()
+        return
+
+    def __repr__(self):
+        return'<PlayerNews {0} {1}: {2}>'.format(self.ListItemCaption,
+                                               self.ListItemPubDate,
+                                               self.LastName)
 
 
 _session = None

@@ -15,31 +15,49 @@ now = datetime.datetime.now()
 ordinal = lambda n: "%d%s" % (n,"tsnrhtdd"[(n/10%10!=1)*(n%10<4)*n%10::4])
 
 base = datetime.datetime.today()
-date_list = [base - datetime.timedelta(days=x) for x in range(0, 90)]
-datelist = pd.date_range(pd.datetime.today(), periods=100).tolist()
+# date_list = [base - datetime.timedelta(days=x) for x in range(0, 90)]
+#date_list = pd.date_range(pd.datetime.today(), periods=1200).tolist()
+date_list = [base - datetime.timedelta(days=x) for x in range(0, 2000)]
 
+import collections
+import re
+import json
+
+
+#  Only to 2016-10-25
 class SalaryScraper(scrapy.Spider):
     name = "SalaryScraper"
     start_urls = ["https://swishanalytics.com/optimus/nba/daily-fantasy-salary-changes?date="+x.strftime("%Y-%m-%d") for x in date_list]
 
     def parse(self, response):
         items = []
-        df = pd.DataFrame()
-        rows = response.css("tr.salary-row")
-        for row in rows:
-            cols = row.css("td")
-            item = PlayerItem()
-            item["pos"] = cols[0]
-            item["name"]=cols[1]
-            item["price"]=cols[2]
-            item["change"]=cols[3]
-            item["projected"]=cols[4]
-            item["avg"]=cols[5]
-            item["diff"]=cols[6]
-            items.append(item)
+        text =response.body.decode(response.encoding)
 
-        df.to_csv("data/newSalaries/"+response.url.split("=")[1]+'.csv', sep=',', encoding='utf-8', index=False,
+        # find = re.search('\[\{.+\}\]', text, re.MULTILINE)
+        finder = re.compile('\[\{.+\}\]')
+        _find1 = finder.search(text)
+        if _find1 :
+            dic = json.loads(_find1.group())
+            df = pd.DataFrame(dic)
+            df.to_csv("data/old_salaries/dk_"+response.url.split("=")[1]+'.csv', sep=',', encoding='utf-8', index=False,
                           float_format='%.3f')
+            _find2 = finder.search(text, _find1.end())
+            if _find2:
+                dic = json.loads(_find2.group())
+                df = pd.DataFrame(dic)
+                df.to_csv("data/old_salaries/fd_" + response.url.split("=")[1] + '.csv', sep=',', encoding='utf-8',
+                          index=False,
+                          float_format='%.3f')
+
+                _find3 = finder.search(text, _find2.end())
+                if _find3:
+                    dic = json.loads(_find3.group())
+                    df = pd.DataFrame(dic)
+                    df.to_csv("data/old_salaries/yah_" + response.url.split("=")[1] + '.csv', sep=',', encoding='utf-8',
+                              index=False,
+                              float_format='%.3f')
+
+
         return
 
 if __name__ == "__main__":

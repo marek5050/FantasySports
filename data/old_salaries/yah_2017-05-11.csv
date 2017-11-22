@@ -1,0 +1,27 @@
+avg_pts,date,fantasy_pts,fpts_diff,nickname,player_id,player_name,pos_main,salary,salary_change,salary_change_html,salary_diff,salary_diff_percentage
+17.09,2017-05-09,20.17,+3.08,Spurs,3361,Manu Ginobili,SG,13,30.0,"<td class=""width-15 green"" id=""salary-col"">+$3 (30.0%)</td>",3,30.0
+28.45,2017-05-09,30.18,+1.73,Spurs,3494,Pau Gasol,C,17,13.3,"<td class=""width-15 green"" id=""salary-col"">+$2 (13.3%)</td>",2,13.3
+26.71,2017-05-09,20.97,-5.74,Rockets,292401,Lou Williams,PG,14,-12.5,"<td class=""width-15 red"" id=""salary-col"">-$2 (-12.5%)</td>",-2,-12.5
+25.10,2017-05-09,24.67,-0.43,Rockets,401085,Eric Gordon,SG,18,12.5,"<td class=""width-15 green"" id=""salary-col"">+$2 (12.5%)</td>",2,12.5
+12.87,2017-05-09,23.64,+10.77,Spurs,553548,Jonathon Simmons,SF,11,10.0,"<td class=""width-15 green"" id=""salary-col"">+$1 (10.0%)</td>",1,10.0
+27.15,2017-05-09,26.07,-1.08,Rockets,229738,Trevor Ariza,SF,20,0.0,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0,0.0
+21.65,2017-05-09,19.62,-2.03,Rockets,329715,Ryan Anderson,PF,20,0.0,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0,0.0
+55.80,2017-05-09,56.19,+0.39,Rockets,395388,James Harden,SG,60,0.0,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0,0.0
+18.16,2017-05-09,29.62,+11.46,Spurs,411562,Patty Mills,PG,15,0.0,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0,0.0
+8.98,2017-05-09,3.20,-5.78,Spurs,599814,Davis Bertans,PF,10,0.0,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0,0.0
+14.24,2017-05-09,2.90,-11.34,Rockets,691518,Sam Dekker,SF,10,0.0,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0,0.0
+27.67,2017-05-09,30.02,+2.35,Rockets,830647,Clint Capela,C,19,0.0,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0,0.0
+12.84,2017-05-09,1.71,-11.13,Rockets,786399,Troy Williams,SF,10,0.0,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0,0.0
+17.14,2017-05-09,5.90,-11.24,Spurs,606642,Dewayne Dedmon,C,10,0.0,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0,0.0
+11.48,2017-05-09,11.40,-0.08,Spurs,697720,Kyle Anderson,SF,10,0.0,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0,0.0
+4.56,2017-05-09,1.69,-2.87,Spurs,265013,Joel Anthony,PF,10,0.0,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0,0.0
+33.12,2017-05-09,38.59,+5.47,Spurs,266554,LaMarcus Aldridge,PF,29,0.0,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0,0.0
+18.53,2017-05-09,24.27,+5.74,Spurs,295922,Danny Green,SG,10,0.0,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0,0.0
+27.00,2017-05-09,26.29,-0.71,Rockets,332691,Patrick Beverley,PG,19,0.0,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0,0.0
+17.90,2017-05-09,14.78,-3.12,Spurs,65840,David Lee,PF,10,0.0,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0,0.0
+17.72,2017-05-09,3.62,-14.10,Rockets,698651,Montrezl Harrell,C,10,0.0,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0,0.0
+3.53,2017-05-09,1.98,-1.55,Rockets,242307,Bobby Brown,SG,10,0.0,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0,0.0
+6.67,2017-05-09,2.47,-4.20,Spurs,884168,Dejounte Murray,PG,10,0.0,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0,0.0
+4.16,2017-05-09,2.58,-1.58,Spurs,699093,Bryn Forbes,PG,10,0.0,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0,0.0
+7.70,2017-05-09,1.87,-5.83,Rockets,846386,Chinanu Onuaku,C,10,0.0,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0,0.0
+4.28,2017-05-09,2.76,-1.52,Rockets,795435,Isaiah Taylor,PG,10,0.0,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0,0.0

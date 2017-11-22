@@ -1,0 +1,147 @@
+avg_pts,date,fantasy_pts,fpts_diff,nickname,player_id,player_name,pos_main,salary,salary_change,salary_change_html,salary_diff,salary_diff_percentage
+11.43,2016-12-06,17.97,+6.54,Grizzlies,513526,Troy Daniels,SG,12,20.0,"<td class=""width-15 green"" id=""salary-col"">+$2 (20.0%)</td>",2,20.0
+18.16,2016-12-06,16.10,-2.06,Spurs,411562,Patty Mills,PG,13,18.2,"<td class=""width-15 green"" id=""salary-col"">+$2 (18.2%)</td>",2,18.2
+20.41,2016-12-07,27.86,+7.45,Trail Blazers,398068,Evan Turner,SF,13,18.2,"<td class=""width-15 green"" id=""salary-col"">+$2 (18.2%)</td>",2,18.2
+22.31,2016-12-06,17.78,-4.53,Bulls,599809,Nikola Mirotic,PF,13,-13.3,"<td class=""width-15 red"" id=""salary-col"">-$2 (-13.3%)</td>",-2,-13.3
+29.77,2016-12-06,22.45,-7.32,76ers,525052,Robert Covington,SF,15,-11.8,"<td class=""width-15 red"" id=""salary-col"">-$2 (-11.8%)</td>",-2,-11.8
+25.04,2016-12-07,19.92,-5.12,Nuggets,830642,Jusuf Nurkic,C,16,-11.1,"<td class=""width-15 red"" id=""salary-col"">-$2 (-11.1%)</td>",-2,-11.1
+20.96,2016-12-06,24.86,+3.90,Grizzlies,460833,JaMychal Green,PF,20,11.1,"<td class=""width-15 green"" id=""salary-col"">+$2 (11.1%)</td>",2,11.1
+23.48,2016-12-06,23.02,-0.46,Bulls,330050,Robin Lopez,C,19,-9.5,"<td class=""width-15 red"" id=""salary-col"">-$2 (-9.5%)</td>",-2,-9.5
+26.22,2016-12-07,26.33,+0.11,Nuggets,551760,Will Barton,SG,23,9.5,"<td class=""width-15 green"" id=""salary-col"">+$2 (9.5%)</td>",2,9.5
+27.74,2016-12-06,30.58,+2.84,Wizards,292408,Marcin Gortat,C,25,8.7,"<td class=""width-15 green"" id=""salary-col"">+$2 (8.7%)</td>",2,8.7
+27.00,2016-12-05,25.41,-1.59,Raptors,599780,Jonas Valanciunas,C,22,-8.3,"<td class=""width-15 red"" id=""salary-col"">-$2 (-8.3%)</td>",-2,-8.3
+28.56,2016-12-07,26.43,-2.13,Nuggets,295941,Wilson Chandler,SF,28,7.7,"<td class=""width-15 green"" id=""salary-col"">+$2 (7.7%)</td>",2,7.7
+34.12,2016-12-06,30.93,-3.19,Wizards,606912,Bradley Beal,SG,30,7.1,"<td class=""width-15 green"" id=""salary-col"">+$2 (7.1%)</td>",2,7.1
+38.88,2016-12-06,31.63,-7.25,76ers,794508,Joel Embiid,C,31,6.9,"<td class=""width-15 green"" id=""salary-col"">+$2 (6.9%)</td>",2,6.9
+43.14,2016-12-06,37.40,-5.74,Spurs,512591,Kawhi Leonard,SF,40,-4.8,"<td class=""width-15 red"" id=""salary-col"">-$2 (-4.8%)</td>",-2,-4.8
+40.53,2016-12-05,37.09,-3.44,Raptors,457594,DeMar DeRozan,SG,40,-4.8,"<td class=""width-15 red"" id=""salary-col"">-$2 (-4.8%)</td>",-2,-4.8
+42.57,2016-12-07,42.99,+0.42,Trail Blazers,463121,Damian Lillard,PG,43,-4.4,"<td class=""width-15 red"" id=""salary-col"">-$2 (-4.4%)</td>",-2,-4.4
+8.75,2016-12-06,14.07,+5.32,Grizzlies,845888,Wade Baldwin IV,PG,10,0.0,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0,0.0
+4.15,2016-12-07,2.68,-1.47,Trail Blazers,698664,Jake Layman,PF,10,0.0,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0,0.0
+4.72,2016-12-06,4.10,-0.62,Jazz,679722,Joel Bolomboy,PF,10,0.0,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0,0.0
+11.36,2016-12-06,5.28,-6.08,76ers,920091,Timothe Luwawu-Cabarrot,SG,10,0.0,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0,0.0
+13.33,2016-12-06,15.16,+1.83,Grizzlies,262894,Toney Douglas,SG,10,0.0,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0,0.0
+38.21,2016-12-07,19.74,-18.47,Nuggets,830650,Nikola Jokic,C,19,0.0,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0,0.0
+12.83,2016-12-06,3.52,-9.31,Bulls,839018,Cristiano Felicio,C,10,0.0,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0,0.0
+17.56,2016-12-07,16.40,-1.16,Nuggets,891352,Jamal Murray,PG,11,0.0,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0,0.0
+5.56,2016-12-07,4.86,-0.70,Warriors,745922,Damian Jones,C,10,0.0,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0,0.0
+47.16,2016-12-06,39.36,-7.80,Timberwolves,837030,Karl-Anthony Towns,C,41,0.0,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0,0.0
+1.20,2016-12-06,1.22,+0.02,Wizards,692110,Danuel House,SG,10,0.0,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0,0.0
+5.39,2016-12-07,0.90,-4.49,Warriors,254009,Anderson Varejao,PF,10,0.0,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0,0.0
+26.42,2016-12-06,27.52,+1.10,Bulls,262882,Rajon Rondo,PG,27,0.0,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0,0.0
+18.53,2016-12-06,15.35,-3.18,Spurs,295922,Danny Green,SG,13,0.0,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0,0.0
+22.56,2016-12-06,24.37,+1.81,Bulls,330057,Taj Gibson,PF,22,0.0,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0,0.0
+28.45,2016-12-06,27.55,-0.90,Spurs,3494,Pau Gasol,C,21,0.0,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0,0.0
+44.38,2016-12-06,37.81,-6.57,Bulls,458730,Jimmy Butler,SF,45,0.0,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0,0.0
+12.87,2016-12-06,10.49,-2.38,Spurs,553548,Jonathon Simmons,SG,10,0.0,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0,0.0
+17.90,2016-12-06,11.19,-6.71,Spurs,65840,David Lee,PF,10,0.0,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0,0.0
+12.96,2016-12-06,10.11,-2.85,Wizards,263894,Jason Smith,PF,10,0.0,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0,0.0
+12.42,2016-12-06,12.66,+0.24,Wizards,398590,Marcus Thornton,SG,10,0.0,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0,0.0
+29.02,2016-12-07,25.45,-3.57,Nuggets,456448,Danilo Gallinari,SF,22,0.0,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0,0.0
+48.05,2016-12-06,47.16,-0.89,Wizards,509456,John Wall,PG,44,0.0,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0,0.0
+20.62,2016-12-07,25.29,+4.67,Nuggets,61934,Jameer Nelson,PG,10,0.0,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0,0.0
+38.37,2016-12-06,41.15,+2.78,Grizzlies,393441,Marc Gasol,C,31,0.0,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0,0.0
+23.68,2016-12-07,18.47,-5.21,Trail Blazers,457688,Al-Farouq Aminu,PF,19,0.0,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0,0.0
+13.24,2016-12-07,16.91,+3.67,Trail Blazers,462458,Ed Davis,C,10,0.0,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0,0.0
+34.90,2016-12-07,32.87,-2.03,Trail Blazers,522878,C.J. McCollum,SG,32,0.0,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0,0.0
+8.58,2016-12-07,3.15,-5.43,Trail Blazers,552982,Shabazz Napier,PG,10,0.0,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0,0.0
+14.21,2016-12-06,22.03,+7.82,Grizzlies,786409,Andrew Harrison,PG,15,0.0,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0,0.0
+10.64,2016-12-06,17.69,+7.05,Jazz,214157,Boris Diaw,C,10,0.0,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0,0.0
+48.07,2016-12-07,41.75,-6.32,Warriors,329525,Kevin Durant,SF,52,0.0,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0,0.0
+16.80,2016-12-06,28.85,+12.05,Jazz,3501,Joe Johnson,SG,11,0.0,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0,0.0
+32.24,2016-12-07,27.17,-5.07,Warriors,457611,Klay Thompson,SG,29,0.0,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0,0.0
+17.49,2016-12-06,17.52,+0.03,Jazz,553306,Joe Ingles,SF,10,0.0,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0,0.0
+39.14,2016-12-06,38.16,-0.98,Jazz,739960,Rudy Gobert,C,27,0.0,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0,0.0
+18.81,2016-12-05,18.15,-0.66,Raptors,262890,DeMarre Carroll,SF,13,0.0,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0,0.0
+10.39,2016-12-06,1.33,-9.06,Timberwolves,303807,Brandon Rush,SG,10,0.0,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0,0.0
+16.41,2016-12-05,17.96,+1.55,Raptors,399599,Patrick Patterson,PF,12,0.0,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0,0.0
+32.55,2016-12-06,23.12,-9.43,Timberwolves,503689,Ricky Rubio,PG,21,0.0,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0,0.0
+14.44,2016-12-06,13.32,-1.12,Timberwolves,550431,Nemanja Bjelica,PF,10,0.0,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0,0.0
+27.69,2016-12-06,22.79,-4.90,Timberwolves,553158,Gorgui Dieng,PF,23,0.0,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0,0.0
+17.20,2016-12-05,13.34,-3.86,Raptors,639296,Lucas Nogueira,C,10,0.0,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0,0.0
+13.19,2016-12-06,8.64,-4.55,Timberwolves,698968,Kris Dunn,PG,10,0.0,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0,0.0
+33.56,2016-12-06,28.16,-5.40,Timberwolves,794503,Andrew Wiggins,SF,29,0.0,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0,0.0
+8.61,2016-12-05,3.08,-5.53,Raptors,844478,Jakob Poeltl,C,10,0.0,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0,0.0
+24.31,2016-12-06,24.71,+0.40,76ers,292396,Ersan Ilyasova,PF,16,0.0,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0,0.0
+16.03,2016-12-06,15.99,-0.04,76ers,329887,Gerald Henderson,SG,10,0.0,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0,0.0
+10.77,2016-12-05,9.53,-1.24,Pelicans,456453,Omer Asik,C,10,0.0,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0,0.0
+11.41,2016-12-06,12.16,+0.75,76ers,513268,Hollis Thompson,SF,10,0.0,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0,0.0
+13.87,2016-12-05,20.45,+6.58,Pelicans,551321,Langston Galloway,PG,10,0.0,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0,0.0
+23.32,2016-12-05,19.90,-3.42,Pelicans,553573,Terrence Jones,PF,16,0.0,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0,0.0
+21.90,2016-12-06,14.15,-7.75,76ers,695069,Richaun Holmes,PF,10,0.0,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0,0.0
+17.60,2016-12-06,16.45,-1.15,76ers,698985,Nik Stauskas,SG,10,0.0,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0,0.0
+24.79,2016-12-06,18.87,-5.92,76ers,830641,Dario Saric,PF,10,0.0,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0,0.0
+13.83,2016-12-06,5.62,-8.21,Bulls,750703,Bobby Portis,PF,10,0.0,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0,0.0
+10.10,2016-12-06,12.59,+2.49,Grizzlies,744245,Jarell Martin,PF,10,0.0,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0,0.0
+8.98,2016-12-06,3.55,-5.43,Spurs,599814,Davis Bertans,SF,10,0.0,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0,0.0
+6.78,2016-12-05,2.55,-4.23,Raptors,707832,Fred VanVleet,PG,10,0.0,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0,0.0
+8.79,2016-12-06,12.93,+4.14,Bulls,509094,Isaiah Canaan,SG,10,0.0,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0,0.0
+27.53,2016-12-06,27.73,+0.21,Wizards,469085,Markieff Morris,PF,22,0.0,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0,0.0
+29.09,2016-12-07,14.40,-14.69,Trail Blazers,510790,Mason Plumlee,C,23,0.0,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0,0.0
+15.63,2016-12-06,27.36,+11.73,Jazz,477669,Shelvin Mack,PG,10,0.0,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0,0.0
+11.51,2016-12-06,18.32,+6.81,Jazz,830636,Dante Exum,PG,10,0.0,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0,0.0
+10.67,2016-12-06,4.10,-6.57,Timberwolves,842297,Tyus Jones,PG,10,0.0,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0,0.0
+11.36,2016-12-06,0.56,-10.80,Bulls,920098,Paul Zipser,SF,10,0.0,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0,0.0
+12.84,2016-12-06,19.62,+6.78,Grizzlies,786399,Troy Williams,SF,11,0.0,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0,0.0
+17.87,2016-12-07,17.00,-0.87,Trail Blazers,548610,Allen Crabbe,SG,10,0.0,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0,0.0
+6.06,2016-12-06,2.66,-3.40,Spurs,661006,Nicolas Laprovittola,PG,10,0.0,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0,0.0
+6.18,2016-12-06,5.36,-0.82,Jazz,739966,Raul Neto,PG,10,0.0,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0,0.0
+4.98,2016-12-07,0.28,-4.70,Nuggets,3385,Mike Miller,SG,10,0.0,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0,0.0
+27.06,2016-12-06,11.19,-15.87,Grizzlies,3512,Zach Randolph,C,22,0.0,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0,0.0
+11.48,2016-12-06,5.62,-5.86,Spurs,697720,Kyle Anderson,SG,10,0.0,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0,0.0
+8.60,2016-12-06,5.80,-2.80,Wizards,605708,Trey Burke,PG,10,0.0,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0,0.0
+4.27,2016-12-07,1.95,-2.32,Trail Blazers,745827,Tim Quarterman,PG,10,0.0,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0,0.0
+8.81,2016-12-07,5.43,-3.38,Warriors,847005,Patrick McCaw,SG,10,0.0,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0,0.0
+3.05,2016-12-06,1.31,-1.74,Wizards,697949,Daniel Ochefu,C,10,0.0,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0,0.0
+6.04,2016-12-07,1.76,-4.28,Nuggets,879503,Malik Beasley,PG,10,0.0,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0,0.0
+5.37,2016-12-07,1.49,-3.88,Trail Blazers,601514,Pat Connaughton,SG,10,0.0,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0,0.0
+19.39,2016-12-06,17.70,-1.69,Spurs,3508,Tony Parker,PG,11,0.0,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0,0.0
+33.12,2016-12-06,29.53,-3.59,Spurs,266554,LaMarcus Aldridge,PF,28,0.0,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0,0.0
+17.09,2016-12-06,10.48,-6.61,Spurs,3361,Manu Ginobili,SG,10,0.0,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0,0.0
+12.81,2016-12-06,6.12,-6.69,Bulls,552319,Jerian Grant,PG,10,0.0,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0,0.0
+13.80,2016-12-06,10.12,-3.68,Bulls,554804,Doug McDermott,SF,10,0.0,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0,0.0
+33.47,2016-12-06,30.71,-2.76,Bulls,61849,Dwyane Wade,SG,26,0.0,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0,0.0
+11.03,2016-12-06,3.68,-7.35,Bulls,712595,Denzel Valentine,SF,10,0.0,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0,0.0
+13.25,2016-12-07,17.56,+4.31,Nuggets,330347,Darrell Arthur,PF,10,0.0,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0,0.0
+23.12,2016-12-07,16.44,-6.68,Nuggets,411111,Kenneth Faried,PF,20,0.0,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0,0.0
+6.24,2016-12-06,4.52,-1.72,Wizards,462970,Andrew Nicholson,PF,10,0.0,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0,0.0
+28.76,2016-12-06,27.04,-1.72,Wizards,609256,Otto Porter,SF,28,0.0,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0,0.0
+7.87,2016-12-06,5.65,-2.22,Wizards,659772,Tomas Satoransky,PG,10,0.0,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0,0.0
+22.36,2016-12-06,23.02,+0.66,Grizzlies,172922,Tony Allen,SG,12,0.0,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0,0.0
+11.81,2016-12-07,18.20,+6.39,Trail Blazers,550131,Meyers Leonard,PF,10,0.0,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0,0.0
+12.83,2016-12-07,3.70,-9.13,Trail Blazers,786397,Noah Vonleh,PF,10,0.0,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0,0.0
+21.31,2016-12-07,17.37,-3.94,Warriors,173004,Andre Iguodala,SF,10,0.0,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0,0.0
+18.52,2016-12-07,13.09,-5.43,Warriors,214168,Zaza Pachulia,C,10,0.0,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0,0.0
+43.72,2016-12-07,36.27,-7.45,Warriors,338365,Stephen Curry,PG,48,0.0,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0,0.0
+8.45,2016-12-06,10.60,+2.15,Jazz,457334,Jeff Withey,C,10,0.0,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0,0.0
+38.03,2016-12-07,32.61,-5.42,Warriors,468895,Draymond Green,PF,38,0.0,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0,0.0
+14.37,2016-12-07,7.34,-7.03,Warriors,57934,David West,PF,10,0.0,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0,0.0
+12.69,2016-12-06,24.68,+11.99,Jazz,845596,Trey Lyles,PF,12,0.0,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0,0.0
+41.14,2016-12-05,36.43,-4.71,Raptors,266394,Kyle Lowry,PG,38,0.0,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0,0.0
+7.50,2016-12-06,10.85,+3.35,Timberwolves,398443,Cole Aldrich,C,10,0.0,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0,0.0
+19.64,2016-12-05,14.30,-5.34,Raptors,550049,Terrence Ross,SG,10,0.0,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0,0.0
+19.35,2016-12-05,17.17,-2.18,Raptors,552805,Cory Joseph,PG,10,0.0,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0,0.0
+8.34,2016-12-06,0.58,-7.76,Timberwolves,553607,Adreian Payne,PF,10,0.0,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0,0.0
+14.21,2016-12-05,6.23,-7.98,Raptors,609861,Norman Powell,SF,10,0.0,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0,0.0
+14.32,2016-12-06,11.93,-2.39,Timberwolves,697722,Shabazz Muhammad,SF,10,0.0,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0,0.0
+29.00,2016-12-06,26.21,-2.79,Timberwolves,743777,Zach LaVine,SG,27,0.0,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0,0.0
+4.33,2016-12-05,2.12,-2.21,Raptors,830646,Bruno Caboclo,SF,10,0.0,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0,0.0
+11.91,2016-12-05,14.97,+3.06,Raptors,853408,Pascal Siakam,PF,10,0.0,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0,0.0
+18.66,2016-12-06,23.68,+5.02,76ers,329189,Sergio Rodriguez,PG,17,0.0,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0,0.0
+13.59,2016-12-05,20.40,+6.81,Pelicans,456449,Alexis Ajinca,C,10,0.0,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0,0.0
+17.06,2016-12-05,19.28,+2.22,Pelicans,509169,Solomon Hill,SF,10,0.0,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0,0.0
+19.19,2016-12-05,31.04,+11.85,Pelicans,513606,Tim Frazier,PG,22,0.0,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0,0.0
+23.89,2016-12-06,14.33,-9.56,76ers,551787,T.J. McConnell,PG,10,0.0,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0,0.0
+53.74,2016-12-05,52.43,-1.31,Pelicans,603096,Anthony Davis,PF,56,0.0,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0,0.0
+17.25,2016-12-05,22.13,+4.88,Pelicans,697086,Buddy Hield,SG,10,0.0,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0,0.0
+12.15,2016-12-05,1.62,-10.53,Pelicans,887902,Cheick Diallo,PF,10,0.0,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0,0.0
+13.38,2016-12-06,12.76,-0.62,Wizards,843271,Kelly Oubre Jr.,SF,10,0.0,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0,0.0
+1.90,2016-12-06,-0.01,-1.91,Timberwolves,65759,John Lucas III,PG,10,0.0,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0,0.0
+3.91,2016-12-07,2.55,-1.36,Nuggets,296605,Alonzo Gee,SG,10,0.0,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0,0.0
+9.69,2016-12-05,11.12,+1.43,Pelicans,552305,Anthony Brown,SF,10,0.0,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0,0.0
+17.14,2016-12-06,11.00,-6.14,Spurs,606642,Dewayne Dedmon,C,10,0.0,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0,0.0
+10.78,2016-12-07,2.18,-8.60,Nuggets,920082,Juancho Hernangomez,SF,10,0.0,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0,0.0
+5.22,2016-12-06,5.82,+0.60,Grizzlies,891177,Deyonta Davis,C,10,0.0,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0,0.0
+11.58,2016-12-07,9.32,-2.26,Warriors,504523,Ian Clark,SG,10,0.0,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0,0.0
+7.61,2016-12-07,5.23,-2.38,Warriors,846499,Kevon Looney,PF,10,0.0,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0,0.0
+13.13,2016-12-07,6.09,-7.04,Warriors,333212,JaVale McGee,C,10,0.0,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0,0.0

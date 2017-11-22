@@ -1,0 +1,53 @@
+avg_pts,date,fantasy_pts,fpts_diff,nickname,player_id,player_name,pos_main,salary,salary_change,salary_change_html,salary_diff,salary_diff_percentage
+4.93,2017-04-15,1.50,-3.43,Cavaliers,58360,James Jones,SG,"2,500",-30.6,"<td class=""width-15 red"" id=""salary-col"">-$1100 (-30.6%)</td>",-1100,-30.6
+8.98,2017-04-15,4.48,-4.50,Spurs,599814,Dave Bertans,SF,"2,500",-28.6,"<td class=""width-15 red"" id=""salary-col"">-$1000 (-28.6%)</td>",-1000,-28.6
+8.48,2017-04-15,12.28,+3.80,Grizzlies,794506,Wayne Selden Jr.,SG,"2,500",-28.6,"<td class=""width-15 red"" id=""salary-col"">-$1000 (-28.6%)</td>",-1000,-28.6
+11.90,2017-04-15,1.23,-10.67,Cavaliers,55160,Dahntay Jones,SG,"2,500",-28.6,"<td class=""width-15 red"" id=""salary-col"">-$1000 (-28.6%)</td>",-1000,-28.6
+4.16,2017-04-15,3.28,-0.88,Spurs,699093,Bryn Forbes,SG,"2,500",-28.6,"<td class=""width-15 red"" id=""salary-col"">-$1000 (-28.6%)</td>",-1000,-28.6
+15.18,2017-04-15,14.44,-0.74,Pacers,511057,Lance Stephenson,SG,"4,700",23.7,"<td class=""width-15 green"" id=""salary-col"">+$900 (23.7%)</td>",900,23.7
+12.87,2017-04-15,8.23,-4.64,Spurs,553548,Jonathon Simmons,SF,"2,700",-22.9,"<td class=""width-15 red"" id=""salary-col"">-$800 (-22.9%)</td>",-800,-22.9
+11.48,2017-04-15,10.25,-1.23,Spurs,697720,Kyle Anderson,SF,"2,800",-22.2,"<td class=""width-15 red"" id=""salary-col"">-$800 (-22.2%)</td>",-800,-22.2
+10.92,2017-04-15,7.52,-3.40,Cavaliers,3504,Richard Jefferson,SF,"2,900",-17.1,"<td class=""width-15 red"" id=""salary-col"">-$600 (-17.1%)</td>",-600,-17.1
+11.43,2017-04-15,8.26,-3.17,Grizzlies,513526,Troy Daniels,SG,"2,900",-17.1,"<td class=""width-15 red"" id=""salary-col"">-$600 (-17.1%)</td>",-600,-17.1
+14.21,2017-04-15,9.35,-4.86,Grizzlies,786409,Andrew Harrison,SG,"3,000",-16.7,"<td class=""width-15 red"" id=""salary-col"">-$600 (-16.7%)</td>",-600,-16.7
+17.74,2017-04-15,17.31,-0.43,Grizzlies,3230,Vince Carter,SF,"3,000",-14.3,"<td class=""width-15 red"" id=""salary-col"">-$500 (-14.3%)</td>",-500,-14.3
+17.57,2017-04-15,12.12,-5.45,Pacers,292394,C.J. Miles,SF,"3,000",-14.3,"<td class=""width-15 red"" id=""salary-col"">-$500 (-14.3%)</td>",-500,-14.3
+17.32,2017-04-15,11.11,-6.21,Cavaliers,58293,Kyle Korver,SG,"3,200",-13.5,"<td class=""width-15 red"" id=""salary-col"">-$500 (-13.5%)</td>",-500,-13.5
+15.22,2017-04-15,6.79,-8.43,Grizzlies,602135,James Ennis,SF,"3,200",-8.6,"<td class=""width-15 red"" id=""salary-col"">-$300 (-8.6%)</td>",-300,-8.6
+38.37,2017-04-15,36.49,-1.88,Grizzlies,393441,Marc Gasol,C,"7,600",8.6,"<td class=""width-15 green"" id=""salary-col"">+$600 (8.6%)</td>",600,8.6
+13.59,2017-04-15,3.64,-9.95,Pacers,698979,Glenn Robinson III,SF,"3,200",-8.6,"<td class=""width-15 red"" id=""salary-col"">-$300 (-8.6%)</td>",-300,-8.6
+15.60,2017-04-15,4.77,-10.83,Cavaliers,457186,Iman Shumpert,SG,"3,300",-8.3,"<td class=""width-15 red"" id=""salary-col"">-$300 (-8.3%)</td>",-300,-8.3
+25.13,2017-04-15,23.92,-1.21,Pacers,329683,Thaddeus Young,PF,"4,800",-7.7,"<td class=""width-15 red"" id=""salary-col"">-$400 (-7.7%)</td>",-400,-7.7
+19.39,2017-04-15,16.36,-3.03,Spurs,3508,Tony Parker,PG,"4,400",7.3,"<td class=""width-15 green"" id=""salary-col"">+$300 (7.3%)</td>",300,7.3
+18.16,2017-04-15,12.65,-5.51,Spurs,411562,Patrick Mills,PG,"3,600",-5.3,"<td class=""width-15 red"" id=""salary-col"">-$200 (-5.3%)</td>",-200,-5.3
+17.09,2017-04-15,10.68,-6.41,Spurs,3361,Manu Ginobili,SG,"3,700",-5.1,"<td class=""width-15 red"" id=""salary-col"">-$200 (-5.1%)</td>",-200,-5.1
+21.86,2017-04-15,8.91,-12.95,Cavaliers,172537,Deron Williams,PG,"3,800",-5.0,"<td class=""width-15 red"" id=""salary-col"">-$200 (-5.0%)</td>",-200,-5.0
+43.14,2017-04-15,40.76,-2.38,Spurs,512591,Kawhi Leonard,SF,"8,700",4.8,"<td class=""width-15 green"" id=""salary-col"">+$400 (4.8%)</td>",400,4.8
+37.07,2017-04-15,34.82,-2.25,Cavaliers,395374,Kevin Love,PF,"7,900",-4.8,"<td class=""width-15 red"" id=""salary-col"">-$400 (-4.8%)</td>",-400,-4.8
+51.25,2017-04-15,51.30,+0.05,Cavaliers,214152,LeBron James,SF,"11,500",4.5,"<td class=""width-15 green"" id=""salary-col"">+$500 (4.5%)</td>",500,4.5
+34.11,2017-04-15,29.85,-4.26,Pacers,398043,Jeff Teague,PG,"6,700",-4.3,"<td class=""width-15 red"" id=""salary-col"">-$300 (-4.3%)</td>",-300,-4.3
+28.45,2017-04-15,20.11,-8.34,Spurs,3494,Pau Gasol,C,"5,000",-3.8,"<td class=""width-15 red"" id=""salary-col"">-$200 (-3.8%)</td>",-200,-3.8
+27.06,2017-04-15,22.31,-4.75,Grizzlies,3512,Zach Randolph,PF,"5,300",-3.6,"<td class=""width-15 red"" id=""salary-col"">-$200 (-3.6%)</td>",-200,-3.6
+39.76,2017-04-15,36.14,-3.62,Cavaliers,551768,Kyrie Irving,PG,"8,700",-3.3,"<td class=""width-15 red"" id=""salary-col"">-$300 (-3.3%)</td>",-300,-3.3
+33.12,2017-04-15,30.66,-2.46,Spurs,266554,LaMarcus Aldridge,PF,"6,500",3.2,"<td class=""width-15 green"" id=""salary-col"">+$200 (3.2%)</td>",200,3.2
+32.98,2017-04-15,27.17,-5.81,Pacers,843762,Myles Turner,C,"6,700",-2.9,"<td class=""width-15 red"" id=""salary-col"">-$200 (-2.9%)</td>",-200,-2.9
+17.90,2017-04-15,13.99,-3.91,Spurs,65840,David Lee,PF,"3,500",-2.8,"<td class=""width-15 red"" id=""salary-col"">-$100 (-2.8%)</td>",-100,-2.8
+17.23,2017-04-15,17.45,+0.22,Cavaliers,253997,J.R. Smith,SG,"3,600",-2.7,"<td class=""width-15 red"" id=""salary-col"">-$100 (-2.7%)</td>",-100,-2.7
+39.51,2017-04-15,41.96,+2.45,Pacers,469218,Paul George,SF,"9,900",-1.0,"<td class=""width-15 red"" id=""salary-col"">-$100 (-1.0%)</td>",-100,-1.0
+9.68,2017-04-15,4.86,-4.82,Pacers,229726,Aaron Brooks,PG,"3,500",0.0,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0,0.0
+18.99,2017-04-15,19.24,+0.25,Pacers,292397,Monta Ellis,SG,"4,000",0.0,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0,0.0
+10.76,2017-04-15,2.18,-8.58,Cavaliers,509168,Derrick Williams,PF,"3,600",0.0,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0,0.0
+5.26,2017-04-15,0.56,-4.70,Pacers,609792,Rakeem Christmas,C,"3,500",0.0,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0,0.0
+13.82,2017-04-15,6.27,-7.55,Grizzlies,329675,Brandan Wright,C,"3,500",0.0,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0,0.0
+5.22,2017-04-15,2.07,-3.15,Grizzlies,891177,Deyonta Davis,PF,"3,500",0.0,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0,0.0
+10.10,2017-04-15,1.44,-8.66,Grizzlies,744245,Jarell Martin,PF,"3,500",0.0,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0,0.0
+17.14,2017-04-15,12.60,-4.54,Spurs,606642,Dewayne Dedmon,C,"3,500",0.0,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0,0.0
+15.50,2017-04-15,5.90,-9.60,Pacers,253995,Al Jefferson,C,"3,600",0.0,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0,0.0
+10.32,2017-04-15,2.59,-7.73,Pacers,402984,Lavoy Allen,PF,"3,500",0.0,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0,0.0
+24.52,2017-04-15,19.59,-4.93,Cavaliers,552806,Tristan Thompson,C,"4,700",0.0,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0,0.0
+16.89,2017-04-15,9.57,-7.32,Cavaliers,65871,Channing Frye,PF,"3,700",0.0,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0,0.0
+18.53,2017-04-15,15.36,-3.17,Spurs,295922,Danny Green,SG,"3,800",0.0,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0,0.0
+36.72,2017-04-15,35.71,-1.01,Grizzlies,329468,Mike Conley,PG,"7,200",0.0,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0,0.0
+20.96,2017-04-15,14.17,-6.79,Grizzlies,460833,JaMychal Green,PF,"3,500",0.0,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0,0.0
+8.75,2017-04-15,3.32,-5.43,Grizzlies,845888,Wade Baldwin IV,PG,"3,500",0.0,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0,0.0
+10.03,2017-04-15,6.63,-3.40,Pacers,550427,Kevin Seraphin,PF,"3,500",0.0,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0,0.0

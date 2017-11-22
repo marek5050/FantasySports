@@ -1,13 +1,13 @@
 Strategy,p1,p2,p3,p4,p5,p6,p7,p8,DKFPS,Result
-floorAvgBonus,Chris Paul,Kevin Love,Blake Griffin,Paul George,Rudy Gobert,Eric Gordon,Jeremy Lin,Justise Winslow,273.25,Win
-baselineBonus,DeMarcus Cousins,Chris Paul,Kevin Love,Gordon Hayward,Eric Gordon,Clint Capela,Rajon Rondo,Justise Winslow,235.25,Loss
-svnGameBonus,Jimmy Butler,Kyrie Irving,Carmelo Anthony,Kevin Love,Gordon Hayward,Garrett Temple,Kosta Koufos,Justise Winslow,287.25,Win
-baselineFloorAvgBonus,DeMarcus Cousins,Chris Paul,Kevin Love,Gordon Hayward,Eric Gordon,Clint Capela,Rajon Rondo,Justise Winslow,235.25,Loss
-baselineFloorAvg,James Harden,Chris Paul,Blake Griffin,Paul George,Jeremy Lin,Tristan Thompson,Clint Capela,Justise Winslow,273.25,Win
-baselineSvnGameAvg,James Harden,Jimmy Butler,Kevin Love,C.J. McCollum,Pau Gasol,Rajon Rondo,Kosta Koufos,Justise Winslow,265.25,Loss
-baselineSvnGameAvgBonus,Chris Paul,Paul Millsap,Kevin Love,Marc Gasol,Gordon Hayward,Eric Gordon,Rajon Rondo,Justise Winslow,255.25,loss
-frGameAvgBonus,DeMarcus Cousins,DeAndre Jordan,Gordon Hayward,Rudy Gobert,Patrick Beverley,Emmanuel Mudiay,Rodney Hood,Justise Winslow,243.0,Loss
-baselineFrGameAvgBonus,DeMarcus Cousins,Marc Gasol,Gordon Hayward,Rudy Gobert,Patrick Beverley,Jeremy Lin,Rodney Hood,Justise Winslow,274.25,Win
-baselineFrGameAvg,James Harden,Blake Griffin,Rudy Gobert,Wilson Chandler,Tyler Johnson,Tyson Chandler,Patrick Beverley,Justise Winslow,292.0,Win
-NeuralNetworkAvg,Kemba Walker,Paul Millsap,Nicolas Batum,Dwight Howard,Rudy Gobert,Michael Kidd-Gilchrist,Marco Belinelli,Frank Kaminsky,240.0,Loss
-RandomForestAvg,LeBron James,Nikola Jokic,Kawhi Leonard,Timothe Luwawu-Cabarrot,Mike Muscala,Tomas Satoransky,Bobby Brown,Tyler Ennis,173.0,Loss
+floorAvgBonus,Chris Paul,Kevin Love,Blake Griffin,Paul George,Rudy Gobert,Eric Gordon,Jeremy Lin,Justise Winslow,150.25,None
+baselineBonus,DeMarcus Cousins,Chris Paul,Kevin Love,Gordon Hayward,Eric Gordon,Clint Capela,Rajon Rondo,Justise Winslow,173.5,None
+svnGameBonus,Jimmy Butler,Kyrie Irving,Carmelo Anthony,Kevin Love,Gordon Hayward,Garrett Temple,Kosta Koufos,Justise Winslow,215.25,None
+baselineFloorAvgBonus,DeMarcus Cousins,Chris Paul,Kevin Love,Gordon Hayward,Eric Gordon,Clint Capela,Rajon Rondo,Justise Winslow,173.5,None
+baselineFloorAvg,James Harden,Chris Paul,Blake Griffin,Paul George,Jeremy Lin,Tristan Thompson,Clint Capela,Justise Winslow,144.25,None
+baselineSvnGameAvg,James Harden,Jimmy Butler,Kevin Love,C.J. McCollum,Pau Gasol,Rajon Rondo,Kosta Koufos,Justise Winslow,122.75,None
+baselineSvnGameAvgBonus,Chris Paul,Paul Millsap,Kevin Love,Marc Gasol,Gordon Hayward,Eric Gordon,Rajon Rondo,Justise Winslow,144.5,None
+frGameAvgBonus,DeMarcus Cousins,DeAndre Jordan,Gordon Hayward,Rudy Gobert,Patrick Beverley,Emmanuel Mudiay,Rodney Hood,Justise Winslow,180.75,None
+baselineFrGameAvgBonus,DeMarcus Cousins,Marc Gasol,Gordon Hayward,Rudy Gobert,Patrick Beverley,Jeremy Lin,Rodney Hood,Justise Winslow,146.75,None
+baselineFrGameAvg,James Harden,Blake Griffin,Rudy Gobert,Wilson Chandler,Tyler Johnson,Tyson Chandler,Patrick Beverley,Justise Winslow,123.5,None
+NeuralNetworkAvg,Kemba Walker,Paul Millsap,Nicolas Batum,Dwight Howard,Rudy Gobert,Michael Kidd-Gilchrist,Marco Belinelli,Frank Kaminsky,240.75,None
+RandomForestAvg,LeBron James,Nikola Jokic,Kawhi Leonard,Timothe Luwawu-Cabarrot,Mike Muscala,Tomas Satoransky,Bobby Brown,Tyler Ennis,62.5,None

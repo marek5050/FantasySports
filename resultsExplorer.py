@@ -6,40 +6,56 @@ from datetime import date
 import glob
 
 #today = str(date.yesterday())
-today = "2017-01-29"
+today = "2017-02-01"
 
-rosterscsv = 'data/generatedRosters/'+today+'.csv'
 
 from nba_py import player as players
 from nba_py.player import get_player
 from calculate import Player
 
-def updateResults():
-    history = 'data/HistoryWithResults/recent.csv'
+from models.mysql import *
 
+from nba_py import player
+from nba_py.player import get_player
+
+
+from sqlalchemy.sql import select
+from nba_py.player import get_player
+
+
+session = get_session()
+_players = session.query(Player)
+_players = _players.filter(Player.DISPLAY_FIRST_LAST.in_(["Gordon Hayward","Kemba Walker","Kawhi Leonard","Andre Drummond","Harrison Barnes","Tim Hardaway Jr.","Jabari Parker","Willie Cauley-Stein"]))
+_players = _players.all()
+logs = player.PlayerGameLogs(_player.PERSON_ID).info()
+
+
+def updateResults(_date):
+    history = 'data/HistoryWithResults/recent.csv'
+    rosterscsv = 'data/generatedRosters/' + _date + '.csv'
     try:
         rrosters = pd.DataFrame.from_csv(rosterscsv)
         history = pd.DataFrame.from_csv(history)
-    except:
+    except Exception as e:
         print("Failed to open file. ")
-    if "DKFPS" not in rrosters:
-        rrosters["DKFPS"] = 0.0
-        for index,row in rrosters.iterrows():
-            s = 0
-            for name in row[0:8]:
-                    p = Player(name = name)
-                    p.getSeasonStats()
-                    p.getDKFPS()
-                    g = p.getLastGame()
-                    if "DKFPS" in g:
-                        s += g["DKFPS"][0]
-            rrosters.loc[index, "DKFPS"] = s
+        print(e)
 
-        rrosters["Result"] = "None"
-        for index,row in rrosters.iterrows():
-            r = history[(history["Points"] == row["DKFPS"]) & (history["Contest_Date_EST"] == "2017-01-08 20:00:00")][:1]
-            if r is not None and len(r) > 0:
-                rrosters.loc[index,"Result"] = "Win" if r.loc["NBA","Place"] <= r.loc["NBA","Places_Paid"] else "Loss"
+    #if "DKFPS" not in rrosters:
+    rrosters["DKFPS"] = 0.0
+    for index,row in rrosters.iterrows():
+        s = 0
+        for name in row[0:8]:
+                p = Player(name = name)
+                g = p.getGameWithDate(_date)
+                if g is not None and "DKFPS" in g:
+                    s += g["DKFPS"][0]
+        rrosters.loc[index, "DKFPS"] = s
+
+    rrosters["Result"] = "None"
+    for index,row in rrosters.iterrows():
+        r = history[(history["Points"] == row["DKFPS"]) & (history["Contest_Date_EST"] == "2017-01-08 20:00:00")][:1]
+        if r is not None and len(r) > 0:
+            rrosters.loc[index,"Result"] = "Win" if r.loc["NBA","Place"] <= r.loc["NBA","Places_Paid"] else "Loss"
 
     rrosters.to_csv(rosterscsv)
 
@@ -74,21 +90,15 @@ from calculate import Player
 
 def calculateDKFPSforOutputFile(_date,_file):
     df = pd.read_csv(_file, index_col=None, header=0)
-    #if "Final" in df:
-    #   return
+    if "Final" in df:
+      return
     for idx,row in df.iterrows():
         try:
             p = Player(data = row)
-            logs = p.getSeasonStats()
-            val = 0.00
-            if logs is not None \
-                    and len(logs) > 0 \
-                    and (_date in logs.index or pd.Timestamp(_date) in logs.index)\
-                    and "DKFPS" in logs.columns.values:
-                _r = logs[_date]
-                if len(_r) > 0:
-                    val = _r["DKFPS"].mean()
-
+            l = p.getGameWithDate(_date)
+            val = 0
+            if l is not None:
+                    val = l["DKFPS"].mean()
             df.loc[idx, ("Final")]= val
         except Exception as e:
             print("Failed to process " + row["Name"])
@@ -157,8 +167,24 @@ except:
         pass
 '''
 
-#calculateDKFPSforOutputFile("2017-01-31","data/final/2017-01-31.csv")
-#updateResults()
-#displayResults()
-calculateDKFPSforOutput()
+#calculateDKFPSforOutputFile("2017-02-01","data/final/2017-02-01.csv")
+
+
+# path = r'data/generatedRosters/'  # use your path
+# allFiles = glob.glob(path + "/*.csv")
+# for _file in allFiles:
+#    try:
+#         _date = _file.split("/")[2].split(".csv")[0]
+#         print("Processing salaries for date " + _date )
+#         if "_" in _date:
+#             _date = _date.split("_")[0]
+#         updateResults(_date)
+#         print("Finished processing salaries for date " + _date)
+#    except Exception as e:
+#        print("Error with date: " + _date)
+#        print(e)
+#        raise
+
+# calculateDKFPSforOutput()
+displayResults()
 # addVegasForOutput()

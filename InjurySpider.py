@@ -32,12 +32,17 @@ class InjurySpider(scrapy.Spider):
             teamIdxStart = teamRaw.index('icons/')+6
             teamIdx = teamRaw.index('.gif')
             team = teamRaw[teamIdxStart:teamIdx]
-            
+            header = table.css("tr")[0].css("td b::text").extract()
             for row in table.css("tr")[1:]:
-                yield  {
-                        'team':team,
-                        'player': row.css("td::text, td a::text, div::text").extract()
-                     }
+                playerInfo = row.css("td::text, td a::text, div::text").extract()
+                playerInfo.append(team)
+                # {key: value for (key, value) in iterable}
+
+                yield {header[key]: playerInfo[key] for key in range(len(header))}
+                # yield  {
+                #         'team':team,
+                #         'player': row.css("td::text, td a::text, div::text").extract()
+                #      }
         return
 
 import pandas as pd
@@ -45,6 +50,7 @@ import glob
 
 class AllInjurySpider(scrapy.Spider):
     name = 'AllInjurySpider'
+
     start_urls = ['http://www.prosportstransactions.com/basketball/Search/SearchResults.php?Player=&Team=&BeginDate=2016-12-$DAY&EndDate=2016-12-$DAY&InjuriesChkBx=yes&PersonalChkBx=yes&Submit=Search'.replace("$DAY",str(x)) for x in range(1,32)]
     outputDirectory = "injuries"
 

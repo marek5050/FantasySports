@@ -1,11 +1,11 @@
 Strategy,p1,p2,p3,p4,p5,p6,p7,p8,DKFPS,Result
-floorAvgBonus,John Wall,Hassan Whiteside,Markieff Morris,Zach LaVine,Otto Porter,Marcin Gortat,Wesley Matthews,Manu Ginobili,274.25,Win
-baselineBonus,John Wall,Hassan Whiteside,Markieff Morris,Zach LaVine,Otto Porter,Marcin Gortat,Emmanuel Mudiay,PJ Tucker,246.75,Loss
-svnGameBonus,Hassan Whiteside,Carmelo Anthony,DeAndre Jordan,Harrison Barnes,Otto Porter,Deron Williams,Austin Rivers,Danny Green,275.0,Win
-baselineFloorAvgBonus,John Wall,Hassan Whiteside,Markieff Morris,Zach LaVine,Otto Porter,Marcin Gortat,Wesley Matthews,Manu Ginobili,274.25,Win
-baselineFloorAvg,John Wall,Carmelo Anthony,Markieff Morris,Zach LaVine,Otto Porter,Marcin Gortat,Wesley Matthews,Tristan Thompson,283.5,Win
-baselineSvnGameAvg,John Wall,Carmelo Anthony,DeAndre Jordan,Harrison Barnes,Zach LaVine,Otto Porter,Danny Green,Dewayne Dedmon,299.75,Win
-baselineSvnGameAvgBonus,John Wall,Hassan Whiteside,Andrew Wiggins,Markieff Morris,Otto Porter,Marcin Gortat,Wesley Matthews,Danny Green,279.75,Win
-frGameAvgBonus,Hassan Whiteside,DeAndre Jordan,Ricky Rubio,Devin Booker,Markieff Morris,Deron Williams,Kenneth Faried,Mindaugas Kuzminskas,213.5,Loss
-baselineFrGameAvgBonus,John Wall,Hassan Whiteside,DeAndre Jordan,Devin Booker,Markieff Morris,Emmanuel Mudiay,TJ Warren,PJ Tucker,280.25,Win
-baselineFrGameAvg,John Wall,Eric Bledsoe,DeAndre Jordan,Devin Booker,Markieff Morris,Otto Porter,TJ Warren,Jason Smith,328.75,Win
+floorAvgBonus,John Wall,Hassan Whiteside,Markieff Morris,Zach LaVine,Otto Porter,Marcin Gortat,Wesley Matthews,Manu Ginobili,274.25,None
+baselineBonus,John Wall,Hassan Whiteside,Markieff Morris,Zach LaVine,Otto Porter,Marcin Gortat,Emmanuel Mudiay,PJ Tucker,246.75,None
+svnGameBonus,Hassan Whiteside,Carmelo Anthony,DeAndre Jordan,Harrison Barnes,Otto Porter,Deron Williams,Austin Rivers,Danny Green,271.75,None
+baselineFloorAvgBonus,John Wall,Hassan Whiteside,Markieff Morris,Zach LaVine,Otto Porter,Marcin Gortat,Wesley Matthews,Manu Ginobili,274.25,None
+baselineFloorAvg,John Wall,Carmelo Anthony,Markieff Morris,Zach LaVine,Otto Porter,Marcin Gortat,Wesley Matthews,Tristan Thompson,283.5,None
+baselineSvnGameAvg,John Wall,Carmelo Anthony,DeAndre Jordan,Harrison Barnes,Zach LaVine,Otto Porter,Danny Green,Dewayne Dedmon,296.5,None
+baselineSvnGameAvgBonus,John Wall,Hassan Whiteside,Andrew Wiggins,Markieff Morris,Otto Porter,Marcin Gortat,Wesley Matthews,Danny Green,279.75,None
+frGameAvgBonus,Hassan Whiteside,DeAndre Jordan,Ricky Rubio,Devin Booker,Markieff Morris,Deron Williams,Kenneth Faried,Mindaugas Kuzminskas,213.5,None
+baselineFrGameAvgBonus,John Wall,Hassan Whiteside,DeAndre Jordan,Devin Booker,Markieff Morris,Emmanuel Mudiay,TJ Warren,PJ Tucker,280.25,None
+baselineFrGameAvg,John Wall,Eric Bledsoe,DeAndre Jordan,Devin Booker,Markieff Morris,Otto Porter,TJ Warren,Jason Smith,325.5,None

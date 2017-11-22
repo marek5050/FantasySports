@@ -1,11 +1,11 @@
 Strategy,p1,p2,p3,p4,p5,p6,p7,p8,DKFPS,Result
-floorAvgBonus,DeMarcus Cousins,LeBron James,Kyle Lowry,Jonas Valanciunas,Dion Waiters,Darren Collison,Sergio Rodriguez,John Henson,258.25,None
-baselineBonus,DeMarcus Cousins,LeBron James,Kyle Lowry,Jonas Valanciunas,Dion Waiters,Maurice Harkless,Sergio Rodriguez,John Henson,261.75,None
-svnGameBonus,LeBron James,Kyle Lowry,Paul Millsap,Jabari Parker,Jonas Valanciunas,Allen Crabbe,Cory Joseph,Trey Lyles,266.0,None
-baselineFloorAvgBonus,DeMarcus Cousins,LeBron James,Kyle Lowry,Marc Gasol,Dion Waiters,Sergio Rodriguez,Cory Joseph,John Henson,271.5,None
-baselineFloorAvg,LeBron James,Damian Lillard,Kevin Love,Brook Lopez,Rudy Gay,Darren Collison,Sergio Rodriguez,John Henson,273.5,None
-baselineSvnGameAvg,James Harden,LeBron James,Paul Millsap,Nikola Vucevic,Evan Turner,Sergio Rodriguez,Cory Joseph,Trey Lyles,281.0,None
-baselineSvnGameAvgBonus,James Harden,LeBron James,Paul Millsap,Nikola Vucevic,Evan Turner,Sergio Rodriguez,Cory Joseph,Trey Lyles,281.0,None
+floorAvgBonus,DeMarcus Cousins,LeBron James,Kyle Lowry,Jonas Valanciunas,Dion Waiters,Darren Collison,Sergio Rodriguez,John Henson,257.0,None
+baselineBonus,DeMarcus Cousins,LeBron James,Kyle Lowry,Jonas Valanciunas,Dion Waiters,Maurice Harkless,Sergio Rodriguez,John Henson,236.25,None
+svnGameBonus,LeBron James,Kyle Lowry,Paul Millsap,Jabari Parker,Jonas Valanciunas,Allen Crabbe,Cory Joseph,Trey Lyles,268.0,None
+baselineFloorAvgBonus,DeMarcus Cousins,LeBron James,Kyle Lowry,Marc Gasol,Dion Waiters,Sergio Rodriguez,Cory Joseph,John Henson,270.25,None
+baselineFloorAvg,LeBron James,Damian Lillard,Kevin Love,Brook Lopez,Rudy Gay,Darren Collison,Sergio Rodriguez,John Henson,272.25,Win
+baselineSvnGameAvg,James Harden,LeBron James,Paul Millsap,Nikola Vucevic,Evan Turner,Sergio Rodriguez,Cory Joseph,Trey Lyles,283.0,None
+baselineSvnGameAvgBonus,James Harden,LeBron James,Paul Millsap,Nikola Vucevic,Evan Turner,Sergio Rodriguez,Cory Joseph,Trey Lyles,283.0,None
 frGameAvgBonus,DeMar DeRozan,Kyle Lowry,Paul Millsap,Ricky Rubio,Zach Randolph,Enes Kanter,DeMarre Carroll,Lucas Nogueira,306.75,None
-baselineFrGameAvgBonus,DeMarcus Cousins,DeMar DeRozan,Kyle Lowry,Zach Randolph,Enes Kanter,DeMarre Carroll,Cory Joseph,Lucas Nogueira,307.5,None
-baselineFrGameAvg,James Harden,Mike Conley,Nikola Vucevic,Rudy Gay,Ricky Rubio,Zach Randolph,Lucas Nogueira,Trey Lyles,322.75,None
+baselineFrGameAvgBonus,DeMarcus Cousins,DeMar DeRozan,Kyle Lowry,Zach Randolph,Enes Kanter,DeMarre Carroll,Cory Joseph,Lucas Nogueira,306.25,None
+baselineFrGameAvg,James Harden,Mike Conley,Nikola Vucevic,Rudy Gay,Ricky Rubio,Zach Randolph,Lucas Nogueira,Trey Lyles,324.75,None

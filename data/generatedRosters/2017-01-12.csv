@@ -1,11 +1,11 @@
 Strategy,p1,p2,p3,p4,p5,p6,p7,p8,DKFPS,Result
-floorAvgBonus,Wesley Matthews,J.J. Barea,Eric Bledsoe,Brook Lopez,Tim Frazier,Kevin Durant,Draymond Green,Carmelo Anthony,235.75,Loss
-baselineBonus,J.J. Barea,Eric Bledsoe,Brook Lopez,Tim Frazier,Kevin Durant,Draymond Green,Lou Williams,Carmelo Anthony,219.75,Loss
-svnGameBonus,Wesley Matthews,Devin Booker,Eric Bledsoe,Tim Frazier,Kevin Durant,Draymond Green,Luol Deng,Carmelo Anthony,246.5,Loss
-baselineFloorAvgBonus,J.J. Barea,Eric Bledsoe,Brook Lopez,Tim Frazier,Kevin Durant,Draymond Green,Lou Williams,Carmelo Anthony,219.75,Loss
-baselineFloorAvg,J.J. Barea,Eric Bledsoe,Tim Frazier,Kevin Durant,Draymond Green,Lou Williams,Kristaps Porzingis,Carmelo Anthony,204.0,Loss
-baselineSvnGameAvg,Eric Bledsoe,Tim Frazier,Stephen Curry,Draymond Green,Andre Drummond,Luol Deng,Lou Williams,Carmelo Anthony,210.25,Loss
-baselineSvnGameAvgBonus,Eric Bledsoe,Brook Lopez,Tim Frazier,Kevin Durant,Draymond Green,Luol Deng,Lou Williams,Carmelo Anthony,217.75,Loss
-frGameAvgBonus,LaMarcus Aldridge,Harrison Barnes,Eric Bledsoe,Caris LeVert,Stephen Curry,Zaza Pachulia,Andre Drummond,D'Angelo Russell,221.25,Loss
-baselineFrGameAvgBonus,Eric Bledsoe,Justin Hamilton,Kevin Durant,Stephen Curry,Andre Drummond,D'Angelo Russell,Lou Williams,Kyle O'Quinn,236.0,Loss
-baselineFrGameAvg,Eric Bledsoe,Justin Hamilton,Kevin Durant,Stephen Curry,Andre Drummond,D'Angelo Russell,Lou Williams,Kyle O'Quinn,236.0,Loss
+floorAvgBonus,Wesley Matthews,J.J. Barea,Eric Bledsoe,Brook Lopez,Tim Frazier,Kevin Durant,Draymond Green,Carmelo Anthony,231.75,None
+baselineBonus,J.J. Barea,Eric Bledsoe,Brook Lopez,Tim Frazier,Kevin Durant,Draymond Green,Lou Williams,Carmelo Anthony,217.75,None
+svnGameBonus,Wesley Matthews,Devin Booker,Eric Bledsoe,Tim Frazier,Kevin Durant,Draymond Green,Luol Deng,Carmelo Anthony,242.5,None
+baselineFloorAvgBonus,J.J. Barea,Eric Bledsoe,Brook Lopez,Tim Frazier,Kevin Durant,Draymond Green,Lou Williams,Carmelo Anthony,217.75,None
+baselineFloorAvg,J.J. Barea,Eric Bledsoe,Tim Frazier,Kevin Durant,Draymond Green,Lou Williams,Kristaps Porzingis,Carmelo Anthony,184.25,None
+baselineSvnGameAvg,Eric Bledsoe,Tim Frazier,Stephen Curry,Draymond Green,Andre Drummond,Luol Deng,Lou Williams,Carmelo Anthony,209.75,None
+baselineSvnGameAvgBonus,Eric Bledsoe,Brook Lopez,Tim Frazier,Kevin Durant,Draymond Green,Luol Deng,Lou Williams,Carmelo Anthony,215.75,None
+frGameAvgBonus,LaMarcus Aldridge,Harrison Barnes,Eric Bledsoe,Caris LeVert,Stephen Curry,Zaza Pachulia,Andre Drummond,D'Angelo Russell,221.25,None
+baselineFrGameAvgBonus,Eric Bledsoe,Justin Hamilton,Kevin Durant,Stephen Curry,Andre Drummond,D'Angelo Russell,Lou Williams,Kyle O'Quinn,237.5,None
+baselineFrGameAvg,Eric Bledsoe,Justin Hamilton,Kevin Durant,Stephen Curry,Andre Drummond,D'Angelo Russell,Lou Williams,Kyle O'Quinn,237.5,None

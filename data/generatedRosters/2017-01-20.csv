@@ -1,11 +1,11 @@
 Strategy,p1,p2,p3,p4,p5,p6,p7,p8,DKFPS,Result
-floorAvgBonus,Kevin Durant,Kemba Walker,Draymond Green,C.J. McCollum,Patrick Beverley,Clint Capela,Frank Kaminsky,Timofey Mozgov,314.5,Win
-baselineBonus,Kevin Durant,Draymond Green,Paul Millsap,C.J. McCollum,Patrick Beverley,Evan Turner,Clint Capela,Al Jefferson,280.75,Win
-svnGameBonus,Kevin Durant,Kemba Walker,Paul Millsap,C.J. McCollum,Montrezl Harrell,Clint Capela,Terrence Ross,Frank Kaminsky,284.5,Win
-baselineFloorAvgBonus,Kevin Durant,Kemba Walker,Draymond Green,C.J. McCollum,Patrick Beverley,Clint Capela,Frank Kaminsky,Timofey Mozgov,314.5,Win
-baselineFloorAvg,Kevin Durant,Stephen Curry,Kemba Walker,Patrick Beverley,Mason Plumlee,Evan Turner,Clint Capela,Frank Kaminsky,305.0,Win
-baselineSvnGameAvg,Kevin Durant,Stephen Curry,Kemba Walker,Patrick Beverley,Mason Plumlee,Evan Turner,Clint Capela,Frank Kaminsky,305.0,Win
-baselineSvnGameAvgBonus,Kevin Durant,Stephen Curry,Paul Millsap,C.J. McCollum,Mason Plumlee,Clint Capela,Frank Kaminsky,Langston Galloway,297.75,Win
-frGameAvgBonus,Kevin Durant,Draymond Green,Paul Millsap,Elfrid Payton,Patrick Beverley,Ersan Ilyasova,Terrence Ross,Jeff Green,288.75,Win
-baselineFrGameAvgBonus,Kevin Durant,Draymond Green,Paul Millsap,C.J. McCollum,Patrick Beverley,Clint Capela,Terrence Ross,Jeff Green,283.75,Win
-baselineFrGameAvg,Kevin Durant,Kemba Walker,Draymond Green,Brook Lopez,Patrick Beverley,Evan Turner,Clint Capela,Jeff Green,312.75,Win
+floorAvgBonus,Kevin Durant,Kemba Walker,Draymond Green,C.J. McCollum,Patrick Beverley,Clint Capela,Frank Kaminsky,Timofey Mozgov,313.25,None
+baselineBonus,Kevin Durant,Draymond Green,Paul Millsap,C.J. McCollum,Patrick Beverley,Evan Turner,Clint Capela,Al Jefferson,281.5,None
+svnGameBonus,Kevin Durant,Kemba Walker,Paul Millsap,C.J. McCollum,Montrezl Harrell,Clint Capela,Terrence Ross,Frank Kaminsky,282.5,None
+baselineFloorAvgBonus,Kevin Durant,Kemba Walker,Draymond Green,C.J. McCollum,Patrick Beverley,Clint Capela,Frank Kaminsky,Timofey Mozgov,313.25,None
+baselineFloorAvg,Kevin Durant,Stephen Curry,Kemba Walker,Patrick Beverley,Mason Plumlee,Evan Turner,Clint Capela,Frank Kaminsky,305.0,None
+baselineSvnGameAvg,Kevin Durant,Stephen Curry,Kemba Walker,Patrick Beverley,Mason Plumlee,Evan Turner,Clint Capela,Frank Kaminsky,305.0,None
+baselineSvnGameAvgBonus,Kevin Durant,Stephen Curry,Paul Millsap,C.J. McCollum,Mason Plumlee,Clint Capela,Frank Kaminsky,Langston Galloway,295.75,None
+frGameAvgBonus,Kevin Durant,Draymond Green,Paul Millsap,Elfrid Payton,Patrick Beverley,Ersan Ilyasova,Terrence Ross,Jeff Green,291.5,None
+baselineFrGameAvgBonus,Kevin Durant,Draymond Green,Paul Millsap,C.J. McCollum,Patrick Beverley,Clint Capela,Terrence Ross,Jeff Green,284.5,None
+baselineFrGameAvg,Kevin Durant,Kemba Walker,Draymond Green,Brook Lopez,Patrick Beverley,Evan Turner,Clint Capela,Jeff Green,315.5,None
