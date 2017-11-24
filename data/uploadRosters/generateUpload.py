@@ -1,9 +1,6 @@
-import json
-import pandas as pd
-import numpy as np
-
 from datetime import date
-import glob
+
+import pandas as pd
 
 #today = str(date.yesterday())
 today = "2017-01-11"

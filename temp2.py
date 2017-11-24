@@ -1,14 +1,9 @@
 import json
-import pandas as pd
-import numpy as np
-from datetime import date
 
+import pandas as pd
+import requests_cache
 from nba_py import player
 from nba_py import team
-from nba_py.player import get_player
-
-import requests
-import requests_cache
 
 requests_cache.install_cache('demo_cache')
 

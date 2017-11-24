@@ -1,11 +1,6 @@
-import json
-import pandas as pd
-import numpy as np
-
-from datetime import date
-from calculate import *
 import glob
 
+from calculate import *
 
 today = str(date.today())
 end_date = today

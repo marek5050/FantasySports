@@ -6,11 +6,6 @@ Created on Sat Jan  7 10:14:27 2017
 @author: marek5050
 """
 
-import json
-import pandas as pd
-import numpy as np
-from datetime import date
-
 from nba_py import player as players
 from nba_py.player import get_player
 

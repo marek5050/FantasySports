@@ -1,10 +1,12 @@
-from mysql import *
-from nba_py import player
-from sqlalchemy.sql import select
-import utils
-
+import json
 import urllib
-import urllib.request, json
+import urllib.request
+
+from nba_py import player
+
+import utils
+from mysql import *
+
 
 def create_players_table(seasons):
     session = get_session()

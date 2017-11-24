@@ -1,8 +1,10 @@
 news_link="https://stats-prod.nba.com/wp-json/statscms/v1/rotowire/player/"
-import urllib.request, json
+import json
+import urllib.request
 from datetime import date
+
 from mysql import *
-import pandas as pd
+
 injuries = None
 
 import utils

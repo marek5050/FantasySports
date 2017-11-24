@@ -1,13 +1,13 @@
 # -*- coding: utf-8 -*-
 
-import scrapy
-from datetime import date
-from calculate import fixTeam
-
-from scrapy.crawler import CrawlerProcess
 import datetime
+from datetime import date
+
+import scrapy
+from scrapy.crawler import CrawlerProcess
 
 import utils
+from calculate import fixTeam
 
 now = datetime.datetime.now()
 

@@ -1,15 +1,10 @@
 # -*- coding: utf-8 -*-
 
-import scrapy
+import datetime
 from datetime import date
 
-import datetime
-
+import scrapy
 from scrapy.crawler import CrawlerProcess
-
-from selenium import webdriver
-from selenium.webdriver.common.action_chains import ActionChains
-
 
 now = datetime.datetime.now()
 #http://games.espn.com/fba/resources/playernews

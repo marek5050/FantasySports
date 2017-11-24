@@ -1,14 +1,11 @@
 # -*- coding: utf-8 -*-
 
-import json
-import pandas as pd
 import datetime
-from scipy.stats import zscore
-import os.path
-import scipy.stats as st
-import mysql as sql
+
+import pandas as pd
 from sqlalchemy.sql import select
-from nba_py.player import get_player
+
+import mysql as sql
 
 
 def get_all_players():

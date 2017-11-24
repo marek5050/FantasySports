@@ -1,12 +1,10 @@
 # -*- coding: utf-8 -*-
 
-import scrapy
+import datetime
 from datetime import date
 
-import datetime
-
+import scrapy
 from scrapy.crawler import CrawlerProcess
-from scrapy.http import FormRequest, Request
 
 now = datetime.datetime.now()
 from calculate import fixTeam

@@ -54,11 +54,9 @@
 # dftest = pd.read_csv('data/output/3017-01-24.csv', header=0)
 # dfPredict1 = pd.read_csv('data/output/3017-01-24.csv', header=0)
 
-from nba_py import player
-from nba_py.player import get_player
 from nba_py import game
 from nba_py import team
-
+from nba_py.player import get_player
 
 pid = get_player("LeBron","James")
 #sc = Scoreboard(month=1, year=2017, day=27)

@@ -1,12 +1,9 @@
-from bs4 import BeautifulSoup
-import requests
-import json
-from io import StringIO
-import pandas as pd
-import os
 import glob
-
 from datetime import date
+from io import StringIO
+
+import requests
+from bs4 import BeautifulSoup
 
 today = str(date.today())
 end_date = today
@@ -99,7 +96,6 @@ from calculate import *
 def grabSalariesForDays(days):
 
     import datetime
-    from datetime import date
 
     now = datetime.datetime.now()
 

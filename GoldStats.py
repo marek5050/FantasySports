@@ -1,13 +1,12 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
-import scrapy
-from bs4 import BeautifulSoup
+import datetime
 from datetime import date
 
-import datetime
+import scrapy
+from bs4 import BeautifulSoup
 from scrapy.crawler import CrawlerProcess
-
 
 now = datetime.datetime.now()
 

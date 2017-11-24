@@ -1,15 +1,11 @@
-import scrapy
-from datetime import date
-
 import datetime
-
-from scrapy.crawler import CrawlerProcess
-
+import json
+import os
+from datetime import date
 from datetime import timezone
 
-import json
-import pandas as pd
-import os
+import scrapy
+from scrapy.crawler import CrawlerProcess
 
 
 def utc_to_local(utc_dt):

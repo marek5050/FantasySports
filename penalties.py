@@ -1,9 +1,3 @@
-import json
-import pandas as pd
-import numpy as np
-
-from datetime import date
-from calculate import Player
 from calculate import *
 
 today = str(date.today())
@@ -75,7 +69,6 @@ def calculatePenalties(_file):
 
     df.to_csv(_file.replace("output","final"), sep=',', encoding='utf-8', index=False, float_format='%.3f')
 
-import glob
 
 if __name__ == "__main__":
     print("Calculating penalties for data")

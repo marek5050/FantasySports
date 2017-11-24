@@ -1,14 +1,15 @@
 # -*- coding: utf-8 -*-
 
-import json
-import pandas as pd
 import datetime
-from scipy.stats import zscore
+import json
 import os.path
-import scipy.stats as st
+
 import models.mysql as sql
-from sqlalchemy.sql import select
+import pandas as pd
+import scipy.stats as st
 from nba_py.player import get_player
+from scipy.stats import zscore
+from sqlalchemy.sql import select
 
 session = sql.get_session()
 
@@ -656,7 +657,6 @@ def calculate(_date):
 
     efgs.to_csv(output_file, sep=',', encoding='utf-8', index=False, float_format='%.3f')
 
-import glob
 
 if __name__ == "__main__":
     calculate(today)

@@ -1,27 +1,15 @@
-import json
-import pandas as pd
-import numpy as np
-
-from datetime import date
 import glob
+
+import pandas as pd
 
 #today = str(date.yesterday())
 today = "2017-02-01"
 
-
-from nba_py import player as players
-from nba_py.player import get_player
 from calculate import Player
 
 from models.mysql import *
 
 from nba_py import player
-from nba_py.player import get_player
-
-
-from sqlalchemy.sql import select
-from nba_py.player import get_player
-
 
 session = get_session()
 _players = session.query(Player)

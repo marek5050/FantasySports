@@ -1,11 +1,10 @@
 # -*- coding: utf-8 -*-
 
 from datetime import date
+
 from scrapy.crawler import CrawlerProcess
-from ReferenceSpider import ReferenceSpider as rs
+
 from InjurySpider import InjurySpider
-from NBATargets import NBATargets as targets
-from GoldStats import  GoldStats
 
 '''
 process = CrawlerProcess({

@@ -1,12 +1,11 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
-import scrapy
-from scrapy.selector import Selector
-
 import datetime
-from scrapy.crawler import CrawlerProcess
 
+import scrapy
+from scrapy.crawler import CrawlerProcess
+from scrapy.selector import Selector
 
 now = datetime.datetime.now()
 from datetime import date

@@ -1,17 +1,12 @@
 # -*- coding: utf-8 -*-
 
-import scrapy
+import datetime
 from datetime import date
 
-import datetime
-
-from scrapy.crawler import CrawlerProcess
-from scrapy.http import FormRequest, Request
-
-from nba_py import player as players
-from nba_py.player import get_player
+import scrapy
 from bs4 import BeautifulSoup
-
+from scrapy.crawler import CrawlerProcess
+from scrapy.http import Request
 
 now = datetime.datetime.now()
 

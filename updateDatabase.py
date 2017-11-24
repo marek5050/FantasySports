@@ -1,8 +1,6 @@
-from mysql import *
-
 from nba_py import player
-from nba_py.player import get_player
-from dateutil import parser
+
+from mysql import *
 
 
 session = get_session()

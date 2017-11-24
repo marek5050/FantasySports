@@ -1,10 +1,9 @@
 # -*- coding: utf-8 -*-
 
-import scrapy
+import datetime
 from datetime import date
 
-import datetime
-
+import scrapy
 from scrapy.crawler import CrawlerProcess
 
 now = datetime.datetime.now()

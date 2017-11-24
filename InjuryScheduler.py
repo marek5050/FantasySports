@@ -1,9 +1,8 @@
-from crontab import CronTab
+import json
+from datetime import datetime
 
 import pandas as pd
-import json
-
-from datetime import datetime
+from crontab import CronTab
 from dateutil import tz
 
 today = datetime.now()
