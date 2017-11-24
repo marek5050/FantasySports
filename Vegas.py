@@ -8,7 +8,6 @@ from scrapy.crawler import CrawlerProcess
 
 import buildDatabase
 import utils
-from calculate import fixTeam
 
 now = datetime.datetime.now()
 
@@ -40,8 +39,8 @@ class VegasOdds(scrapy.Spider):
             elif len(text) == 4:
                 home["odds"] = text[0]
                 away["odds"] = text[1]
-                home["team"] = fixTeam((text[2].split(":")[0])[0:3])
-                away["team"] = fixTeam((text[3].split(":")[0])[0:3])
+                home["team"] = utils.fixTeam((text[2].split(":")[0])[0:3])
+                away["team"] = utils.fixTeam((text[3].split(":")[0])[0:3])
 
             text = items[5].css("::text").extract()
             if len(text) == 1:
@@ -90,11 +89,11 @@ class VegasInsiderOdds(scrapy.Spider):
             odds = float(odds.replace("\xa0",""))
             overUnder = float(overUnder.replace("\xa0",""))
 
-            away["team"] = fixTeam(cells[0])
+            away["team"] = utils.fixTeam(cells[0])
             away["odds"] = -1*odds if oddsIdx == 3 else odds
             away["overUnder"] = overUnder
             arr.append([away["team"],away["odds"],away["overUnder"]])
-            home["team"] = fixTeam(cells[2])
+            home["team"] = utils.fixTeam(cells[2])
             home["odds"] = odds if oddsIdx == 3 else -1*odds
             home["overUnder"] = overUnder
             arr.append([home["team"], home["odds"], home["overUnder"]])
@@ -142,11 +141,11 @@ class ESPNDailyLine(scrapy.Spider):
             odds = float(odds.replace("\xa0", ""))
             overUnder = float(overUnder.replace("\xa0", ""))
 
-            away["team"] = fixTeam(cells[0])
+            away["team"] = utils.fixTeam(cells[0])
             away["odds"] = -1 * odds if oddsIdx == 3 else odds
             away["overUnder"] = overUnder
             arr.append([away["team"], away["odds"], away["overUnder"]])
-            home["team"] = fixTeam(cells[2])
+            home["team"] = utils.fixTeam(cells[2])
             home["odds"] = odds if oddsIdx == 3 else -1 * odds
             home["overUnder"] = overUnder
             # yield(home)

@@ -184,25 +184,12 @@ def build_vegas(_date):
 
     return _vegas
 
-
 def create_vegas_table(_date):
     import datetime
     df = build_vegas(_date)
     session = get_session()
     for idx,item in df.iterrows():
-        if item["team"] == "SA":
-            item["team"] = "SAS"
-        if item["team"] == "NO":
-            item["team"] = "NOP"
-
-        if item["team"] == "NY":
-            item["team"] = "NYK"
-        if item["team"] == "GS":
-            item["team"] = "GSW"
-
-        if item["team"] == "PHO":
-            item["team"] = "PHX"
-
+        item["team"] = utils.fixTeam(item["team"])
         try:
            game = utils.get_game(date=item["GAME_DATE"],team=item["team"])
            if len(game) == 0:

@@ -124,3 +124,19 @@ def get_game(date=None, team=None, to_date=None):
     game = q.all()
     session.close()
     return game
+
+
+def fixTeam(abb):
+    if abb == "SA":
+        return "SAS"
+    if abb == "NOR":
+        return "NOP"
+    if abb == "NO":
+        return "NOP"
+    if abb == "NY":
+        return "NYK"
+    if abb == "GS":
+        return "GSW"
+    if abb == "PHO":
+        return "PHX"
+    return abb
