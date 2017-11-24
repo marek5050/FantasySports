@@ -6,7 +6,7 @@ import datetime
 from scipy.stats import zscore
 import os.path
 import scipy.stats as st
-import models.mysql as sql
+import mysql as sql
 from sqlalchemy.sql import select
 from nba_py.player import get_player
 

@@ -1,9 +1,6 @@
 # -*- coding: utf-8 -*-
 
 import scrapy
-from datetime import date
-from calculate import fixTeam
-
 import datetime
 
 from scrapy.crawler import CrawlerProcess
@@ -17,12 +14,11 @@ ordinal = lambda n: "%d%s" % (n,"tsnrhtdd"[(n/10%10!=1)*(n%10<4)*n%10::4])
 base = datetime.datetime.today()
 # date_list = [base - datetime.timedelta(days=x) for x in range(0, 90)]
 #date_list = pd.date_range(pd.datetime.today(), periods=1200).tolist()
-date_list = [base - datetime.timedelta(days=x) for x in range(0, 2000)]
+date_list = [base - datetime.timedelta(days=x) for x in range(0, 2)]
 
-import collections
 import re
 import json
-
+import buildDatabase
 
 #  Only to 2016-10-25
 class SalaryScraper(scrapy.Spider):
@@ -34,12 +30,13 @@ class SalaryScraper(scrapy.Spider):
         text =response.body.decode(response.encoding)
 
         # find = re.search('\[\{.+\}\]', text, re.MULTILINE)
-        finder = re.compile('\[\{.+\}\]')
+        finder = re.compile('\[\{.+\}\]') ## Grab the DK, FD, and YAH salaries
         _find1 = finder.search(text)
+        now = response.url.split("=")[1]
         if _find1 :
             dic = json.loads(_find1.group())
             df = pd.DataFrame(dic)
-            df.to_csv("data/old_salaries/dk_"+response.url.split("=")[1]+'.csv', sep=',', encoding='utf-8', index=False,
+            df.to_csv("data/old_salaries/dk_"+now+'.csv', sep=',', encoding='utf-8', index=False,
                           float_format='%.3f')
             _find2 = finder.search(text, _find1.end())
             if _find2:
@@ -67,5 +64,11 @@ if __name__ == "__main__":
         'FEED_FORMAT': 'csv'
     })
 
-    injuryProcess.crawl(SalaryScraper)
-    injuryProcess.start()
+    # injuryProcess.crawl(SalaryScraper)
+    # injuryProcess.start()
+
+    for date in date_list:
+        # print(date)
+        df = buildDatabase.build_salary(date.date())
+        if len(df)>0:
+            buildDatabase.create_salary_table(df)
