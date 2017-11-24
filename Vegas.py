@@ -4,12 +4,14 @@ import scrapy
 from datetime import date
 from calculate import fixTeam
 
+from scrapy.crawler import CrawlerProcess
 import datetime
 
-from scrapy.crawler import CrawlerProcess
-from scrapy.http import FormRequest, Request
+import utils
 
 now = datetime.datetime.now()
+
+date_list = utils.get_dates("2017-18")
 
 ordinal = lambda n: "%d%s" % (n,"tsnrhtdd"[(n/10%10!=1)*(n%10<4)*n%10::4])
 
@@ -30,8 +32,6 @@ class VegasOdds(scrapy.Spider):
             home = VegasItem()
             away = VegasItem()
             items = match.xpath("following-sibling::tr[2]").css("td")
-            #items[0] # Name
-            #items[1] # Odds + -
             text = items[1].css("::text").extract()
             if "EVEN" in text:
                 home["odds"] = 1
@@ -56,7 +56,7 @@ import pandas as pd
 today = str(date.today())
 
 base = datetime.datetime.today()
-date_list = [base - datetime.timedelta(days=x) for x in range(2000, 3000)]
+# date_list = [base - datetime.timedelta(days=x) for x in range(0, 10)]
 # date_list = [datetime.datetime.today()]
 
 class VegasInsiderOdds(scrapy.Spider):

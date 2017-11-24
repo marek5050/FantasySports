@@ -2,8 +2,8 @@
 
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy import create_engine
-from sqlalchemy.orm import sessionmaker
-from sqlalchemy import Column, DateTime, String, Integer, ForeignKey, func,Date,Float, Numeric
+from sqlalchemy.orm import sessionmaker, relationship
+from sqlalchemy import Column, DateTime, String, Integer, ForeignKey, func,Date,Float, Numeric, Boolean
 from sqlalchemy.sql import select
 from sqlalchemy.ext.hybrid import hybrid_property,hybrid_method
 from sqlalchemy import UniqueConstraint
@@ -35,18 +35,92 @@ class Player(MysqlBase):
     TEAM_ABBREVIATION = Column(String(32))
     TEAM_CODE = Column(String(32))
     GAMES_PLAYED_FLAG = Column(String(32))
-    logs = []
+    logs = None
+    __logs = relationship("PlayerLog", lazy='joined')
+    news = relationship("PlayerNews", lazy='joined')
+    # df_logs = None
 
     def __repr__(self):
-        return'<PlayerLog {0} {1}: {2}>'.format(self.Player_ID,
-                                               self.GAME_DATE,
-                                               self.PTS)
+        return'<Player {0} {1}: {2}>'.format(self.PERSON_ID,
+                                             self.DISPLAY_FIRST_LAST,
+                                             self.TEAM_ABBREVIATION)
+
     def getLogs(self,session = None):
         if not session:
             session = get_session()
         _logs = session.execute(select([PlayerLog]).where(PlayerLog.Player_ID == self.PERSON_ID))
         self.logs = pd.DataFrame(data=_logs.fetchall(), columns=_logs.keys())
         return self.logs
+
+
+
+class Season(MysqlBase):
+    __tablename__ ='season'
+    SEASON_ID = Column(Integer, primary_key = True)
+    SEASON_IDS = Column(String(32))
+    start = Column(Integer)
+    end   =  Column(Integer)
+
+    # "SELECT * FROM fantasy.game where id > 21700000 AND id <= 21701000;"
+    def __init__(self,season):
+        year = int(season.split("-")[1])-1
+        self.SEASON_ID = 22000 + year
+        self.SEASON_IDS = season
+        self.start =  20000000+(year*10**5)
+        self.end   = self.start + 1000
+        super().__init__()
+        return
+
+#http://data.nba.net/json/cms/2017/league/nba_games.json
+# {"h_abrv": "MIA", "v_abrv": "CHA", "id": 1421700001, "dt": "2017-07-01 11:00:00.0", "r_reg": "", "is_lp": true, "sg": true}
+class Game(MysqlBase):
+    __tablename__ = 'game'
+
+    id = Column(Integer,primary_key=True)
+    h_abrv = Column(String(32))
+    v_abrv = Column(String(32))
+    dt = Column(DateTime)
+    r_reg = Column(String(32))
+    is_lp = Column(Boolean)
+    sg = Column(Boolean)
+
+    def __repr__(self):
+        return'<Game {0} {1}: {2}@{3}>'.format(self.id,
+                                               self.dt,
+                                               self.h_abrv,
+                                               self.v_abrv)
+
+
+class Salary(MysqlBase):
+    __tablename__ ='salary'
+    __table_args__ = (UniqueConstraint('GAME_ID', 'Player_ID', name='_player_per_game_per_season'),)
+
+
+    id = Column(Integer, primary_key=True, unique=True)
+    avg_pts = Column(Integer)
+    fantasy_pts = Column(Integer)
+    salary = Column(Integer)
+    GAME_ID = Column(Integer, ForeignKey(Game.id))
+    Player_ID = Column(Integer, ForeignKey(Player.PERSON_ID))
+
+
+
+    def __repr__(self):
+        return'<Salary Player: {0} $>'.format(self.GAME_DATE,self.FAV,self.ODDS,self.OU)
+
+class Vegas(MysqlBase):
+    __tablename__ ='vegas'
+    __table_args__ = (UniqueConstraint('GAME_ID', 'team', name='_team_per_game_'),)
+
+    id = Column(Integer, primary_key=True, unique=True)
+    GAME_DATE = Column(Date)
+    team = Column(String(32))
+    ou  = Column(Integer)
+    odds = Column(Integer)
+    GAME_ID = Column(Integer, ForeignKey(Game.id))
+
+    def __repr__(self):
+        return'<Vegas DT: {0} FAV: {1} ODDS:{2} OU:{3}>'.format(self.GAME_DATE,self.FAV,self.ODDS,self.OU)
 
 
 class PlayerLog(MysqlBase,object):
@@ -57,9 +131,9 @@ class PlayerLog(MysqlBase,object):
     __table_args__ = (UniqueConstraint('Player_ID', 'Game_ID','SEASON_ID', name='_player_per_game_per_season'), )
 
     id = Column(Integer, primary_key=True)
-    SEASON_ID = Column(String(32))
+    SEASON_ID = Column(Integer, ForeignKey(Season.SEASON_ID))
     Player_ID = Column(Integer, ForeignKey(Player.PERSON_ID))
-    Game_ID = Column(String(32))
+    Game_ID = Column(Integer, ForeignKey(Game.id))
     GAME_DATE = Column(Date)
     MATCHUP = Column(String(32))
     WL = Column(String(32))
@@ -145,10 +219,11 @@ class PlayerLog(MysqlBase,object):
 
 class PlayerNews(MysqlBase):
     __tablename__ ='playernews'
-    id=Column(Integer, primary_key=True, unique=True)
+    __table_args__ = (UniqueConstraint('RotoId', 'UpdateId', name='_roto_id_per_update_id'),)
 
-    ListItemCaption = Column(String(400))
-    ListItemDescription = Column(String(800))
+    id=Column(Integer, primary_key=True, unique=True)
+    ListItemCaption = Column(String(600))
+    ListItemDescription = Column(String(3000))
     ListItemPubDate = Column(DateTime)
     lastUpdate = Column(DateTime)
     UpdateId = Column(String(32))

@@ -5,6 +5,8 @@ from models.mysql import *
 import pandas as pd
 injuries = None
 
+import utils
+
 session = get_session()
 
 with urllib.request.urlopen(news_link) as url:
@@ -24,7 +26,16 @@ with urllib.request.urlopen(news_link) as url:
 
     for idx,update in recent_news.iterrows():
            try:
-               session.add(PlayerNews(**update))
+               pn = PlayerNews(**update)
+               if pn.PlayerID == "":
+                   find = utils.get_player(firstName = pn.FirstName,lastName = pn.LastName)
+                   if find is not None:
+                       pn.PlayerID = find.PERSON_ID
+
+               session.add(pn)
                session.commit()
            except Exception as e:
                session.rollback()
+               print(e)
+
+session.close()
