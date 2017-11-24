@@ -1,19 +1,16 @@
 # -*- coding: utf-8 -*-
 
-import scrapy
 import datetime
 
-from scrapy.crawler import CrawlerProcess
-from scrapy.http import FormRequest, Request
 import pandas as pd
+import scrapy
+from scrapy.crawler import CrawlerProcess
 
 now = datetime.datetime.now()
 
 ordinal = lambda n: "%d%s" % (n,"tsnrhtdd"[(n/10%10!=1)*(n%10<4)*n%10::4])
 
 base = datetime.datetime.today()
-# date_list = [base - datetime.timedelta(days=x) for x in range(0, 90)]
-#date_list = pd.date_range(pd.datetime.today(), periods=1200).tolist()
 date_list = [base - datetime.timedelta(days=x) for x in range(0, 2)]
 
 import re
