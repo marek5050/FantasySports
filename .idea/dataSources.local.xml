@@ -6,6 +6,7 @@
       <case-sensitivity plain-identifiers="mixed" quoted-identifiers="mixed" />
       <secret-storage>master_key</secret-storage>
       <auth-required>false</auth-required>
+      <introspection-schemas>*:</introspection-schemas>
     </data-source>
     <data-source name="fantasy@localhost" uuid="1f000db8-4b6a-486a-a350-3cce0dce8dee">
       <database-info product="MySQL" version="5.7.17" jdbc-version="4.0" driver-name="MySQL Connector Java" driver-version="mysql-connector-java-5.1.35 ( Revision: 5fb9c5849535c13917c2cf9baaece6ef9693ef27 )">
@@ -15,7 +16,9 @@
       <case-sensitivity plain-identifiers="mixed" quoted-identifiers="upper" />
       <secret-storage>master_key</secret-storage>
       <user-name>root</user-name>
+      <introspection-schemas>*:fantasy</introspection-schemas>
       <resolve-scope>fantasy:</resolve-scope>
+      <unqualified-resolve-schemas>fantasy:</unqualified-resolve-schemas>
     </data-source>
   </component>
 </project>

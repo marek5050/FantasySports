@@ -12,10 +12,18 @@ from sqlalchemy.sql import select
 
 settings = {
     "mysql_user": "root",
-    "mysql_pwd": os.environ['MYSQL_PASSWORD'] or "",
+    "mysql_pwd": os.getenv('MYSQL_PASSWORD', ""),
     "mysql_host":"127.0.0.1",
     "mysql_db": "fantasy"
 }
+# settings = {
+#     "mysql_user": "root",
+#     "mysql_pwd": "snowDIhawk123$$!",
+#     "mysql_host":"192.241.219.36",
+#     "mysql_db": "fantasy"
+# }
+
+
 MysqlBase = declarative_base()
 
 import pandas as pd

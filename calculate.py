@@ -4,42 +4,57 @@ import datetime
 import json
 import os.path
 
-import models.mysql as sql
 import pandas as pd
 import scipy.stats as st
 from nba_py.player import get_player
 from scipy.stats import zscore
 from sqlalchemy.sql import select
 
+import mysql as sql
+
 session = sql.get_session()
 
 from datetime import date
 
+
+# if item["team"] == "SA":
+#     item["team"] = "SAS"
+# if item["team"] == "NO":
+#     item["team"] = "NOP"
+#
+# if item["team"] == "NY":
+#     item["team"] = "NYK"
+# if item["team"] == "GS":
+#     item["team"] = "GSW"
+#
+# if item["team"] == "PHO":
+#     item["team"] = "PHX"
 def fixTeam(abbr):
     abbr = abbr.upper()
     if "UTH" in abbr:
                 return "UTA"
-    if(abbr == "CHO"):
+    if abbr == "CHO":
                 return "CHA"
-    if(abbr == "SAS"):
-                return "SA"
-    if (abbr == "GSW"):
-                return "GS"
-    if (abbr == "BRK"):
+    if abbr == "SA":
+        return "SAS"
+    if abbr == "GS":
+        return "GSW"
+    if abbr == "BRK":
                 return "BKN"
-    if(abbr == "NOP"):
-                return "NO"
-    if(abbr == "NOR"):
-                return "NO"
-    if(abbr == "NYK"):
-                return "NY"
-    if(abbr == "LAK"):
+    if abbr == "NO":
+        return "NOP"
+    if abbr == "NOR":
+        return "NOP"
+    if abbr == "NY":
+        return "NYK"
+    if abbr == "LAK":
                 return "LAL"
-    if(abbr == "MLW"):
+    if abbr == "MLW":
                 return "MIL"
-    if(abbr=="PHX"):
+    if abbr == "PHX":
                 return "PHO"
     return abbr
+
 
 class Player:
     pid = None

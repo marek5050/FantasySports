@@ -159,15 +159,16 @@ def build_salary(_date):
 
     return main
 
-def build_vegas():
+
+def build_vegas(_date):
     import glob
     import pandas as pd
     print("build_vegas")
     _vegas = pd.DataFrame()
     found = 0
     notfound = 0
-    path = r'../data/vegas'  # use your path
-    allFiles = glob.glob(path + "/*.csv")
+    path = r'./data/vegas'  # use your path
+    allFiles = glob.glob("%s/%s.csv" % (path, _date))
     print("Number of files: %d" % (len(allFiles)))
     for _file in allFiles:
         try:
@@ -178,15 +179,15 @@ def build_vegas():
         except Exception as e:
             print("Error with date: " + _date)
             print(e)
+    if len(allFiles) > 0:
+        _vegas["GAME_DATE"] = pd.to_datetime(_vegas["GAME_DATE"])
+
     return _vegas
 
-def create_vegas_table():
-    import datetime
-    import pandas as pd
 
-    df = build_vegas()
-    df["GAME_DATE"]=pd.to_datetime(df["GAME_DATE"])
-    # df = df[df["odds"]<=0] ## Favorites have -
+def create_vegas_table(_date):
+    import datetime
+    df = build_vegas(_date)
     session = get_session()
     for idx,item in df.iterrows():
         if item["team"] == "SA":
@@ -297,9 +298,9 @@ def create_salary_table(df):
     # seasons = ["2016-17","2017-18"]
     # create_seasons_table(seasons)
     # create_game_table(seasons)
-    # create_players_table()
+    # create_players_table(seasons)
     # create_player_logs(seasons)
 
-# create_vegas_table()
+    # create_vegas_table("*")
 # create_game_table()
 # create_salary_table()

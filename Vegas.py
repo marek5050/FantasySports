@@ -6,12 +6,13 @@ from datetime import date
 import scrapy
 from scrapy.crawler import CrawlerProcess
 
+import buildDatabase
 import utils
 from calculate import fixTeam
 
 now = datetime.datetime.now()
 
-date_list = utils.get_dates("2017-18")
+date_list = []
 
 ordinal = lambda n: "%d%s" % (n,"tsnrhtdd"[(n/10%10!=1)*(n%10<4)*n%10::4])
 
@@ -61,7 +62,6 @@ base = datetime.datetime.today()
 
 class VegasInsiderOdds(scrapy.Spider):
     name = "VegasInsiderOdds"
-    start_urls = ["http://www.vegasinsider.com/nba/scoreboard/scores.cfm/game_date/"+x.strftime("%Y-%m-%d") for x in date_list]
 
     def parse(self, response):
         try:
@@ -97,8 +97,6 @@ class VegasInsiderOdds(scrapy.Spider):
             home["team"] = fixTeam(cells[2])
             home["odds"] = odds if oddsIdx == 3 else -1*odds
             home["overUnder"] = overUnder
-            # yield(home)
-            # yield(away)
             arr.append([home["team"], home["odds"], home["overUnder"]])
 
         df = pd.DataFrame(arr, columns=["team","odds","overUnder"])
@@ -174,5 +172,24 @@ if __name__ == "__main__":
         'FEED_FORMAT': 'csv'
     })
 
+    import argparse
+
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--date", help="whats the date or * for all")
+    args = parser.parse_args()
+
+    date_list = [now.date()]
+    date_search = now.date()
+
+    if args.date == "*":
+        date_list = utils.get_dates("2017-18")
+        date_search = "*"
+
+    VegasInsiderOdds.start_urls = [
+        "http://www.vegasinsider.com/nba/scoreboard/scores.cfm/game_date/" + x.strftime("%Y-%m-%d") for x in date_list]
+
     injuryProcess.crawl(VegasInsiderOdds)
+
     injuryProcess.start()
+
+    buildDatabase.create_vegas_table(date_search)
