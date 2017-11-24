@@ -1,5 +1,7 @@
 #!/usr/bin/env python
 
+import os
+
 from dateutil import parser
 from sqlalchemy import Column, DateTime, String, Integer, ForeignKey, Date, Float, Numeric, Boolean
 from sqlalchemy import UniqueConstraint
@@ -10,7 +12,7 @@ from sqlalchemy.sql import select
 
 settings = {
     "mysql_user": "root",
-    "mysql_pwd": "",
+    "mysql_pwd": os.environ['MYSQL_PASSWORD'] or "",
     "mysql_host":"127.0.0.1",
     "mysql_db": "fantasy"
 }
