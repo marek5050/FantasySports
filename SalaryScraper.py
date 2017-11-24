@@ -64,8 +64,8 @@ if __name__ == "__main__":
         'FEED_FORMAT': 'csv'
     })
 
-    # injuryProcess.crawl(SalaryScraper)
-    # injuryProcess.start()
+    injuryProcess.crawl(SalaryScraper)
+    injuryProcess.start()
 
     for date in date_list:
         # print(date)
