@@ -6,6 +6,8 @@ import pandas as pd
 import scrapy
 from scrapy.crawler import CrawlerProcess
 
+import utils
+
 now = datetime.datetime.now()
 
 ordinal = lambda n: "%d%s" % (n,"tsnrhtdd"[(n/10%10!=1)*(n%10<4)*n%10::4])
@@ -20,7 +22,6 @@ import buildDatabase
 #  Only to 2016-10-25
 class SalaryScraper(scrapy.Spider):
     name = "SalaryScraper"
-    start_urls = ["https://swishanalytics.com/optimus/nba/daily-fantasy-salary-changes?date="+x.strftime("%Y-%m-%d") for x in date_list]
 
     def parse(self, response):
         items = []
@@ -61,11 +62,30 @@ if __name__ == "__main__":
         'FEED_FORMAT': 'csv'
     })
 
+    import argparse
+
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--date", help="whats the date or * for all")
+    args = parser.parse_args()
+
+    date_list = [now.date()]
+    date_search = now.date()
+
+    if args.date == "*":
+        date_list = utils.get_dates("2017-18")
+        date_search = "*"
+
+    start_urls = [
+        "https://swishanalytics.com/optimus/nba/daily-fantasy-salary-changes?date=" + x.strftime("%Y-%m-%d") for x
+        in date_list]
+
+    SalaryScraper.start_urls = start_urls
+
     injuryProcess.crawl(SalaryScraper)
     injuryProcess.start()
 
     for date in date_list:
         # print(date)
-        df = buildDatabase.build_salary(date.date())
+        df = buildDatabase.build_salary(date_search)
         if len(df)>0:
             buildDatabase.create_salary_table(df)

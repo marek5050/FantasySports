@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="289189b2-db15-4b29-8e00-7ee0c0b6a1fa" name="Default" comment="Fixed Teams use buildDat">
+    <list default="true" id="289189b2-db15-4b29-8e00-7ee0c0b6a1fa" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/old_salaries/dk_2017-11-24.csv" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Vegas.py" afterPath="$PROJECT_DIR$/Vegas.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SalaryScraper.py" afterPath="$PROJECT_DIR$/SalaryScraper.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/buildDatabase.py" afterPath="$PROJECT_DIR$/buildDatabase.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/utils.py" afterPath="$PROJECT_DIR$/utils.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/old_salaries/fd_2017-11-24.csv" afterPath="$PROJECT_DIR$/data/old_salaries/fd_2017-11-24.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/old_salaries/yah_2017-11-24.csv" afterPath="$PROJECT_DIR$/data/old_salaries/yah_2017-11-24.csv" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -21,7 +23,7 @@
     <SUITE FILE_PATH="coverage/NBA$Calculate_Penalties.coverage" NAME="Calculate Penalties Coverage Results" MODIFIED="1485978539756" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/NBA$RotoNews.coverage" NAME="RotoNews Coverage Results" MODIFIED="1511539357708" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/NBA$VegasOddsAll.coverage" NAME="VegasOddsAll Coverage Results" MODIFIED="1486067222019" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/NBA$Build_Database.coverage" NAME="Build Database Coverage Results" MODIFIED="1511553757441" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/NBA$Build_Database.coverage" NAME="Build Database Coverage Results" MODIFIED="1511559864744" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/NBA$Vegas.coverage" NAME="Vegas Coverage Results" MODIFIED="1511557983739" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/NBA$Calculate.coverage" NAME="Calculate Averages Coverage Results" MODIFIED="1484166049383" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/NBA$Injuries.coverage" NAME="Injuries Coverage Results" MODIFIED="1511214894527" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
@@ -35,8 +37,8 @@
     <SUITE FILE_PATH="coverage/NBA$Updates.coverage" NAME="Team updates Coverage Results" MODIFIED="1483804883967" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/NBA$Defense.coverage" NAME="Defense Coverage Results" MODIFIED="1510374004990" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/NBA$DB_Update.coverage" NAME="DB Update Coverage Results" MODIFIED="1486050412251" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/models" />
-    <SUITE FILE_PATH="coverage/NBA$SalaryScraper.coverage" NAME="SalaryScraper Coverage Results" MODIFIED="1511544898455" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/NBA$QueryDatabase.coverage" NAME="QueryDatabase Coverage Results" MODIFIED="1485872084633" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/models" />
+    <SUITE FILE_PATH="coverage/NBA$SalaryScraper.coverage" NAME="SalaryScraper Coverage Results" MODIFIED="1511560338608" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/NBA$Setup_CRON_jobs.coverage" NAME="Setup CRON jobs Coverage Results" MODIFIED="1509828165161" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/NBA$Calculate_Scores.coverage" NAME="Calculate Scores Coverage Results" MODIFIED="1511270856805" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/NBA$Append_LSTM.coverage" NAME="Append LSTM Coverage Results" MODIFIED="1486067927046" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
@@ -57,72 +59,66 @@
     <favorites_list name="NBA" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.8691796">
-      <split-first>
-        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="mysql.py" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/mysql.py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="60">
-                  <caret line="12" column="0" lean-forward="true" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-                  <folding>
-                    <element signature="e#23#32#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="utils.py" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/utils.py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="171">
-                  <caret line="127" column="11" lean-forward="false" selection-start-line="127" selection-start-column="4" selection-end-line="127" selection-end-column="11" />
-                  <folding>
-                    <element signature="e#25#40#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="Vegas.py" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/Vegas.py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="265">
-                  <caret line="47" column="43" lean-forward="true" selection-start-line="47" selection-start-column="43" selection-end-line="47" selection-end-column="43" />
-                  <folding>
-                    <element signature="e#25#40#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-first>
-      <split-second>
-        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="sqltypes.py" pinned="false" current-in-tab="true">
-            <entry file="file://$USER_HOME$/anaconda/lib/python3.5/site-packages/sqlalchemy/sql/sqltypes.py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="47">
-                  <caret line="502" column="8" lean-forward="false" selection-start-line="502" selection-start-column="8" selection-end-line="502" selection-end-column="8" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="RotoNews.py" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/RotoNews.py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="345">
-                  <caret line="27" column="0" lean-forward="false" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-second>
-    </splitter>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="mysql.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mysql.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="12" column="0" lean-forward="true" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+              <folding>
+                <element signature="e#23#32#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="buildDatabase.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/buildDatabase.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="569">
+              <caret line="292" column="0" lean-forward="false" selection-start-line="292" selection-start-column="0" selection-end-line="292" selection-end-column="0" />
+              <folding>
+                <marker date="1511560334000" expanded="true" signature="2578:2643" ph="SELECT * FRO... game" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="utils.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/utils.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="171">
+              <caret line="128" column="11" lean-forward="false" selection-start-line="128" selection-start-column="4" selection-end-line="128" selection-end-column="11" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SalaryScraper.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/SalaryScraper.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="231">
+              <caret line="85" column="0" lean-forward="true" selection-start-line="85" selection-start-column="0" selection-end-line="85" selection-end-column="0" />
+              <folding>
+                <element signature="e#25#40#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Vegas.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Vegas.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="282">
+              <caret line="187" column="119" lean-forward="true" selection-start-line="173" selection-start-column="0" selection-end-line="187" selection-end-column="119" />
+              <folding>
+                <element signature="e#25#40#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -134,8 +130,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>Garret</find>
-      <find>garrett</find>
       <find>westbr</find>
       <find>westbrook</find>
       <find>westb</find>
@@ -164,6 +158,8 @@
       <find>item[</find>
       <find>fixTeam</find>
       <find>buildDatabase.fixTeam</find>
+      <find>sala</find>
+      <find>d not locate gam</find>
     </findStrings>
     <replaceStrings>
       <replace>,Bkn,</replace>
@@ -254,13 +250,13 @@
         <option value="$PROJECT_DIR$/PlayerNews.py" />
         <option value="$PROJECT_DIR$/RotoNews.py" />
         <option value="$PROJECT_DIR$/SalaryScrape.py" />
-        <option value="$PROJECT_DIR$/SalaryScraper.py" />
         <option value="$USER_HOME$/anaconda/lib/python3.5/site-packages/nba_py/__init__.py" />
         <option value="$PROJECT_DIR$/mysql.py" />
         <option value="$PROJECT_DIR$/calculate.py" />
         <option value="$PROJECT_DIR$/utils.py" />
-        <option value="$PROJECT_DIR$/buildDatabase.py" />
         <option value="$PROJECT_DIR$/Vegas.py" />
+        <option value="$PROJECT_DIR$/SalaryScraper.py" />
+        <option value="$PROJECT_DIR$/buildDatabase.py" />
       </list>
     </option>
   </component>
@@ -315,7 +311,7 @@
               <item name="NBA" type="b2602c69:ProjectViewProjectNode" />
               <item name="NBA" type="462c0819:PsiDirectoryNode" />
               <item name="data" type="462c0819:PsiDirectoryNode" />
-              <item name="vegas" type="462c0819:PsiDirectoryNode" />
+              <item name="old_salaries" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="NBA" type="b2602c69:ProjectViewProjectNode" />
@@ -365,7 +361,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.Vegas">
+  <component name="RunManager" selected="Python.SalaryScraper">
     <configuration name="Append LSTM" type="PythonConfigurationType" factoryName="Python">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -1216,7 +1212,14 @@
       <option name="project" value="LOCAL" />
       <updated>1511556359179</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="FixTeam moved to Utils.">
+      <created>1511558003352</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1511558003352</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TodoView">
@@ -1230,6 +1233,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="804" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32914925" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.41151685" sideWeight="0.24248926" order="11" side_tool="true" content_ui="tabs" />
@@ -1242,8 +1246,8 @@
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3258427" sideWeight="0.4828326" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24964234" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22206303" sideWeight="0.50829875" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.34978843" sideWeight="0.7575107" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2653791" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.34978843" sideWeight="0.7575107" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.04506438" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -1285,7 +1289,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$/degenerate" />
     </ignored-roots>
-    <MESSAGE value="Updated Mathematica file. Added results explorer." />
     <MESSAGE value="Added Vegas odds and O/U into the penalties.&#10;Added Defence vs Position into penalties. &#10; &#10;Removed Basketball-reference dependency.&#10;Updated Mathematica to allow 3 from the same team. &#10;&#10;" />
     <MESSAGE value="Replaced HistoryWithResults with a single file -- it contains the full history. &#10;Newest Salary information&#10;&#10;Modified penalties based on Vegas data." />
     <MESSAGE value="Adding most recent output files." />
@@ -1310,7 +1313,8 @@
     <MESSAGE value="Use environment password" />
     <MESSAGE value="tired. :D" />
     <MESSAGE value="Fixed Vegas" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixed Vegas" />
+    <MESSAGE value="FixTeam moved to Utils." />
+    <option name="LAST_COMMIT_MESSAGE" value="FixTeam moved to Utils." />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -1355,21 +1359,6 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/buildDatabase.py</url>
-          <line>269</line>
-          <option name="timeStamp" value="550" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/buildDatabase.py</url>
-          <line>247</line>
-          <option name="timeStamp" value="552" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/buildDatabase.py</url>
-          <line>242</line>
-          <option name="timeStamp" value="553" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/buildDatabase.py</url>
           <line>195</line>
           <option name="timeStamp" value="566" />
         </line-breakpoint>
@@ -1384,32 +1373,11 @@
           </properties>
         </breakpoint>
       </default-breakpoints>
-      <option name="time" value="570" />
+      <option name="time" value="573" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/data/vegas/2017-11-09.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="0" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/vegas/2017-11-07.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" column="18" lean-forward="false" selection-start-line="20" selection-start-column="18" selection-end-line="20" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/vegas/2017-11-08.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="17" lean-forward="false" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/data/vegas/2017-11-06.csv">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1565,14 +1533,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/RotoNews.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="27" column="0" lean-forward="false" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/anaconda/lib/python3.5/site-packages/pandas/core/indexes/base.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
@@ -1584,13 +1544,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
           <caret line="14" column="47" lean-forward="true" selection-start-line="14" selection-start-column="47" selection-end-line="14" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/old_salaries/dk_2017-11-24.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="24" lean-forward="false" selection-start-line="0" selection-start-column="13" selection-end-line="0" selection-end-column="24" />
         </state>
       </provider>
     </entry>
@@ -1636,22 +1589,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="274">
           <caret line="42" column="30" lean-forward="true" selection-start-line="42" selection-start-column="30" selection-end-line="42" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/anaconda/lib/python3.5/site-packages/sqlalchemy/sql/sqltypes.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="47">
-          <caret line="502" column="8" lean-forward="false" selection-start-line="502" selection-start-column="8" selection-end-line="502" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SalaryScraper.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1707,13 +1644,60 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/buildDatabase.py">
+    <entry file="file://$USER_HOME$/anaconda/lib/python3.5/site-packages/pandas/core/series.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="598" column="0" lean-forward="false" selection-start-line="598" selection-start-column="0" selection-end-line="598" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/utils.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="128" column="11" lean-forward="false" selection-start-line="128" selection-start-column="4" selection-end-line="128" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/vegas/2017-11-23.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/save_player.csv">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
-          <caret line="8" column="0" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+          <caret line="8" column="24" lean-forward="true" selection-start-line="8" selection-start-column="24" selection-end-line="8" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RotoNews.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="96">
+          <caret line="27" column="0" lean-forward="true" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/anaconda/lib/python3.5/site-packages/sqlalchemy/sql/sqltypes.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1555">
+          <caret line="502" column="8" lean-forward="false" selection-start-line="502" selection-start-column="8" selection-end-line="502" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Vegas.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="282">
+          <caret line="187" column="119" lean-forward="true" selection-start-line="173" selection-start-column="0" selection-end-line="187" selection-end-column="119" />
           <folding>
-            <element signature="e#0#11#0" expanded="true" />
-            <marker date="1511557957000" expanded="true" signature="2578:2643" ph="SELECT * FRO... game" />
+            <element signature="e#25#40#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1728,28 +1712,36 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/anaconda/lib/python3.5/site-packages/pandas/core/series.py">
+    <entry file="file://$PROJECT_DIR$/buildDatabase.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="598" column="0" lean-forward="false" selection-start-line="598" selection-start-column="0" selection-end-line="598" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/utils.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="127" column="11" lean-forward="false" selection-start-line="127" selection-start-column="4" selection-end-line="127" selection-end-column="11" />
+        <state relative-caret-position="569">
+          <caret line="292" column="0" lean-forward="false" selection-start-line="292" selection-start-column="0" selection-end-line="292" selection-end-column="0" />
           <folding>
-            <element signature="e#25#40#0" expanded="true" />
+            <marker date="1511560334000" expanded="true" signature="2578:2643" ph="SELECT * FRO... game" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Vegas.py">
+    <entry file="file://$PROJECT_DIR$/data/old_salaries/dk_2017-11-24.csv">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="265">
-          <caret line="47" column="43" lean-forward="true" selection-start-line="47" selection-start-column="43" selection-end-line="47" selection-end-column="43" />
+          <caret line="21" column="39" lean-forward="true" selection-start-line="21" selection-start-column="39" selection-end-line="21" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/old_salaries/dk_2017-11-21.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SalaryScraper.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="85" column="0" lean-forward="true" selection-start-line="85" selection-start-column="0" selection-end-line="85" selection-end-column="0" />
           <folding>
             <element signature="e#25#40#0" expanded="true" />
           </folding>

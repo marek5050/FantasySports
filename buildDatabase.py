@@ -138,7 +138,7 @@ def get_player(id=None, name=None):
 def build_salary(_date):
     import glob
     import pandas as pd
-    print("build_salary")
+    print("build_salary: %s" % (_date))
     main = pd.DataFrame()
     path = r'./data/old_salaries'  # use your path
     allFiles = glob.glob("%s/dk_%s.csv" %(path,_date))
@@ -206,7 +206,8 @@ def create_vegas_table(_date):
                session.add(Vegas(**_line))
                session.commit()
            else:
-               print("Could not locate game: %s with %s , len(%d) " % (_line["GAME_DATE"],_line["team"], len(game)))
+               print("Vegas: could not locate game: %s with %s , len(%d) " % (
+               _line["GAME_DATE"], _line["team"], len(game)))
 
         except Exception as e:
             print(e)
@@ -281,13 +282,13 @@ def create_salary_table(df):
     session.close()
 
 
-    # https://data.nba.com/data/10s/v2015/json/mobile_teams/nba/2017/league/00_full_schedule_week.json
-    # seasons = ["2016-17","2017-18"]
-    # create_seasons_table(seasons)
-    # create_game_table(seasons)
-    # create_players_table(seasons)
-    # create_player_logs(seasons)
+# https://data.nba.com/data/10s/v2015/json/mobile_teams/nba/2017/league/00_full_schedule_week.json
+seasons = ["2016-17", "2017-18"]
+# create_seasons_table(seasons)
+# create_game_table(seasons)
+# create_players_table(seasons)
+# create_player_logs(seasons)
 
     # create_vegas_table("*")
 # create_game_table()
-# create_salary_table()
+# create_all_salaries()
