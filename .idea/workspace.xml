@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="289189b2-db15-4b29-8e00-7ee0c0b6a1fa" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mysql.py" afterPath="$PROJECT_DIR$/mysql.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/buildDatabase.py" afterPath="$PROJECT_DIR$/buildDatabase.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -59,25 +59,24 @@
     <splitter split-orientation="horizontal" split-proportion="0.5924214">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="mysql.py" pinned="false" current-in-tab="true">
+          <file leaf-file-name="mysql.py" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/mysql.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="255">
-                  <caret line="23" column="0" lean-forward="true" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
-                  <folding>
-                    <element signature="e#23#50#0" expanded="true" />
-                  </folding>
+                <state relative-caret-position="165">
+                  <caret line="18" column="30" lean-forward="true" selection-start-line="18" selection-start-column="30" selection-end-line="18" selection-end-column="30" />
+                  <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="buildDatabase.py" pinned="false" current-in-tab="false">
+          <file leaf-file-name="buildDatabase.py" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/buildDatabase.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="0">
-                  <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+                <state relative-caret-position="319">
+                  <caret line="303" column="21" lean-forward="true" selection-start-line="303" selection-start-column="21" selection-end-line="303" selection-end-column="21" />
                   <folding>
-                    <marker date="1511549962000" expanded="true" signature="2578:2643" ph="SELECT * FRO... game" />
+                    <element signature="e#0#11#0" expanded="true" />
+                    <marker date="1511550139000" expanded="true" signature="2578:2643" ph="SELECT * FRO... game" />
                   </folding>
                 </state>
               </provider>
@@ -263,10 +262,10 @@
         <option value="$PROJECT_DIR$/PlayerNews.py" />
         <option value="$PROJECT_DIR$/RotoNews.py" />
         <option value="$PROJECT_DIR$/SalaryScrape.py" />
-        <option value="$PROJECT_DIR$/buildDatabase.py" />
         <option value="$PROJECT_DIR$/SalaryScraper.py" />
         <option value="$PROJECT_DIR$/utils.py" />
         <option value="$PROJECT_DIR$/mysql.py" />
+        <option value="$PROJECT_DIR$/buildDatabase.py" />
       </list>
     </option>
   </component>
@@ -1186,7 +1185,14 @@
       <option name="project" value="LOCAL" />
       <updated>1511549963521</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="Use environment password">
+      <created>1511550083371</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1511550083372</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TodoView">
@@ -1277,7 +1283,8 @@
     <MESSAGE value="Fixed Merge conflicts." />
     <MESSAGE value="cleanup" />
     <MESSAGE value="Removed extra imports." />
-    <option name="LAST_COMMIT_MESSAGE" value="Removed extra imports." />
+    <MESSAGE value="Use environment password" />
+    <option name="LAST_COMMIT_MESSAGE" value="Use environment password" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -1322,17 +1329,17 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/buildDatabase.py</url>
-          <line>286</line>
+          <line>281</line>
           <option name="timeStamp" value="550" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/buildDatabase.py</url>
-          <line>264</line>
+          <line>259</line>
           <option name="timeStamp" value="552" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/buildDatabase.py</url>
-          <line>259</line>
+          <line>254</line>
           <option name="timeStamp" value="553" />
         </line-breakpoint>
       </breakpoints>
@@ -1715,16 +1722,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/buildDatabase.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-          <folding>
-            <marker date="1511549962000" expanded="true" signature="2578:2643" ph="SELECT * FRO... game" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/utils.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
@@ -1735,10 +1732,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/mysql.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="23" column="0" lean-forward="true" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+        <state relative-caret-position="165">
+          <caret line="18" column="30" lean-forward="true" selection-start-line="18" selection-start-column="30" selection-end-line="18" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/buildDatabase.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="319">
+          <caret line="303" column="21" lean-forward="true" selection-start-line="303" selection-start-column="21" selection-end-line="303" selection-end-column="21" />
           <folding>
-            <element signature="e#23#50#0" expanded="true" />
+            <element signature="e#0#11#0" expanded="true" />
+            <marker date="1511550139000" expanded="true" signature="2578:2643" ph="SELECT * FRO... game" />
           </folding>
         </state>
       </provider>

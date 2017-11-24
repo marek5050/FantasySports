@@ -90,12 +90,7 @@ def get_player(id=None, name=None):
 # "2016-17" = 21701143
 # "SELECT * FROM fantasy.game where id > 21700000 AND id <= 21701000;"
 
-#https://data.nba.com/data/10s/v2015/json/mobile_teams/nba/2017/league/00_full_schedule_week.json
-# seasons = ["2016-17","2017-18"]
-# create_seasons_table(seasons)
-# create_game_table(seasons)
-# create_players_table()
-# create_player_logs(seasons)
+
 
 #
 #
@@ -296,6 +291,14 @@ def create_salary_table(df):
 
     print("Player_miss: %d , game_miss: %d, failed: %d"%(len(player_miss),len(game_miss), len(failed)))
     session.close()
+
+
+    # https://data.nba.com/data/10s/v2015/json/mobile_teams/nba/2017/league/00_full_schedule_week.json
+    # seasons = ["2016-17","2017-18"]
+    # create_seasons_table(seasons)
+    # create_game_table(seasons)
+    # create_players_table()
+    # create_player_logs(seasons)
 
 # create_vegas_table()
 # create_game_table()
