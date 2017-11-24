@@ -10,19 +10,23 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     42639,       1008]
-NotebookOptionsPosition[     41602,        969]
-NotebookOutlinePosition[     41959,        985]
-CellTagsIndexPosition[     41916,        982]
+NotebookDataLength[     44041,       1049]
+NotebookOptionsPosition[     42813,       1004]
+NotebookOutlinePosition[     43170,       1020]
+CellTagsIndexPosition[     43127,       1017]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
 Notebook[{
+
+Cell[CellGroupData[{
 Cell[BoxData[{
  RowBox[{
-  RowBox[{
-   RowBox[{"date", " ", "=", " ", 
-    RowBox[{"DateString", "[", "\"\<ISODate\>\"", "]"}]}], ";"}], 
+  RowBox[{"date", " ", "=", " ", 
+   RowBox[{"DateString", "[", "\"\<ISODate\>\"", "]"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"date", " ", "=", " ", "\"\<predict_me_fina\>\""}], 
   "\[IndentingNewLine]", 
   RowBox[{"(*", 
    RowBox[{
@@ -33,8 +37,8 @@ Cell[BoxData[{
    RowBox[{"Import", "[", 
     RowBox[{
      RowBox[{
-     "\"\</Users/marek5050/machinelearning/NBA/data/predictions/\>\"", "<>", 
-      "date", "<>", "\"\<.csv\>\""}], ",", "\"\<CSV\>\""}], "]"}]}], 
+     "\"\</Users/marek5050/machinelearning/NBA/data/\>\"", "<>", "date", 
+      "<>", "\"\<.csv\>\""}], ",", "\"\<CSV\>\""}], "]"}]}], 
   ";"}], "\[IndentingNewLine]", 
  RowBox[{
   RowBox[{"first", "=", " ", 
@@ -82,7 +86,38 @@ Cell[BoxData[{
    3.720215284558762*^9}, {3.7202157729691153`*^9, 3.7202158135112047`*^9}, {
    3.720215871923682*^9, 3.720215887112191*^9}, {3.720215993886286*^9, 
    3.7202160181385098`*^9}, {3.720216396547949*^9, 3.72021639788223*^9}, {
-   3.720218772090148*^9, 3.7202188369048767`*^9}}],
+   3.720218772090148*^9, 3.7202188369048767`*^9}, {3.720554017118421*^9, 
+   3.720554033540255*^9}}],
+
+Cell[BoxData["\<\"predict_me_fina\"\>"], "Output",
+ CellChangeTimes->{{3.720554027246292*^9, 3.720554034440884*^9}}],
+
+Cell[BoxData[
+ TemplateBox[{
+  "Import","nffil",
+   "\"File not found during \\!\\(\\*RowBox[{\\\"Import\\\"}]\\).\"",2,8,4,
+   17595420097635880069,"Local"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{{3.720554027345091*^9, 3.720554034460948*^9}}],
+
+Cell[BoxData[
+ TemplateBox[{
+  "First","normal",
+   "\"Nonatomic expression expected at position \
+\\!\\(\\*RowBox[{\\\"1\\\"}]\\) in \\!\\(\\*RowBox[{\\\"First\\\", \\\"[\\\", \
+\\\"$Failed\\\", \\\"]\\\"}]\\).\"",2,9,5,17595420097635880069,"Local"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{{3.720554027345091*^9, 3.720554034478114*^9}}],
+
+Cell[BoxData[
+ TemplateBox[{
+  "Delete","partw",
+   "\"Part \\!\\(\\*RowBox[{\\\"1\\\"}]\\) of \
+\\!\\(\\*RowBox[{\\\"$Failed\\\"}]\\) does not exist.\"",2,10,6,
+   17595420097635880069,"Local"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{{3.720554027345091*^9, 3.720554034494894*^9}}]
+}, Open  ]],
 
 Cell[BoxData[{
  RowBox[{
@@ -984,32 +1019,38 @@ CellTagsIndex->{}
 *)
 (*NotebookFileOutline
 Notebook[{
-Cell[558, 20, 3751, 64, 180, "Input"],
-Cell[4312, 86, 2389, 68, 264, "Input"],
-Cell[6704, 156, 19861, 493, 1650, "Input"],
 Cell[CellGroupData[{
-Cell[26590, 653, 1010, 16, 75, "Input"],
-Cell[27603, 671, 2462, 43, 180, "Output"]
+Cell[580, 22, 3875, 67, 201, "Input"],
+Cell[4458, 91, 116, 1, 32, "Output"],
+Cell[4577, 94, 265, 6, 24, "Message"],
+Cell[4845, 102, 358, 7, 24, "Message"],
+Cell[5206, 111, 302, 7, 24, "Message"]
+}, Open  ]],
+Cell[5523, 121, 2389, 68, 264, "Input"],
+Cell[7915, 191, 19861, 493, 1629, "Input"],
+Cell[CellGroupData[{
+Cell[27801, 688, 1010, 16, 75, "Input"],
+Cell[28814, 706, 2462, 43, 180, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[30102, 719, 242, 4, 32, "Input"],
-Cell[30347, 725, 1719, 34, 180, "Output"]
+Cell[31313, 754, 242, 4, 32, "Input"],
+Cell[31558, 760, 1719, 34, 180, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[32103, 764, 291, 5, 32, "Input"],
-Cell[32397, 771, 1904, 36, 180, "Output"]
+Cell[33314, 799, 291, 5, 32, "Input"],
+Cell[33608, 806, 1904, 36, 180, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[34338, 812, 499, 10, 54, "Input"],
-Cell[34840, 824, 2005, 29, 32, "Output"]
+Cell[35549, 847, 499, 10, 54, "Input"],
+Cell[36051, 859, 2005, 29, 32, "Output"]
 }, Open  ]],
-Cell[36860, 856, 712, 13, 32, "Input"],
-Cell[37575, 871, 912, 19, 32, "Input"],
+Cell[38071, 891, 712, 13, 32, "Input"],
+Cell[38786, 906, 912, 19, 32, "Input"],
 Cell[CellGroupData[{
-Cell[38512, 894, 2194, 48, 222, "Input"],
-Cell[40709, 944, 225, 3, 54, "Output"]
+Cell[39723, 929, 2194, 48, 222, "Input"],
+Cell[41920, 979, 225, 3, 54, "Output"]
 }, Open  ]],
-Cell[40949, 950, 649, 17, 130, "Input"]
+Cell[42160, 985, 649, 17, 130, "Input"]
 }
 ]
 *)

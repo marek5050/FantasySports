@@ -25,7 +25,7 @@ with urllib.request.urlopen(news_link) as url:
     # recent_news["GTD"] = recent_news["Injured_Status"].str.contains("GTD", case=False)
     # recent_news["skip"] = recent_news["Out"] | recent_news["Probable"] | recent_news["Questionable"] | recent_news[
     #     "GTD"]
-
+    news = []
     for idx,update in recent_news.iterrows():
            try:
                pn = PlayerNews(**update)
@@ -36,8 +36,13 @@ with urllib.request.urlopen(news_link) as url:
 
                session.add(pn)
                session.commit()
+               news.append(pn)
            except Exception as e:
                session.rollback()
                print(e)
+
+    print("New: %d" % (len(news)))
+    print(news)
+
 
 session.close()
