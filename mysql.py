@@ -12,7 +12,7 @@ from sqlalchemy.sql import select
 
 settings = {
     "mysql_user": "root",
-    "mysql_pwd": os.getenv('MYSQL_PASSWORD', ""),
+    "mysql_pwd": os.getenv('MYSQL_PASSWORD', "snowDIhawk123$$!"),
     "mysql_host":"127.0.0.1",
     "mysql_db": "fantasy"
 }
