@@ -44,5 +44,4 @@ with urllib.request.urlopen(news_link) as url:
     print("New: %d" % (len(news)))
     print(news)
 
-
 session.close()

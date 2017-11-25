@@ -43,8 +43,9 @@ def create_player_logs(seasons):
     session = get_session()
     _players = session.execute(select([Player]))
     _players = _players.fetchall()
+    created = 0
+    errors = []
     for _player in _players:
-        print(_player.PERSON_ID)
         for season in seasons:
             try:
                logs = player.PlayerGameLogs(_player.PERSON_ID, season=season).info()
@@ -52,14 +53,16 @@ def create_player_logs(seasons):
                    try:
                        session.add(PlayerLog(**item))
                        session.commit()
+                       created = created + 1
                    except Exception as e:
-                       print(e)
+                       errors.append(e)
                        session.rollback()
 
             except Exception as e:
                 print("failed ")
                 print(e)
     session.close()
+    return created, errors
 
 def create_seasons_table(seasons):
     session = get_session()
@@ -288,6 +291,7 @@ seasons = ["2016-17", "2017-18"]
 # create_game_table(seasons)
 # create_players_table(seasons)
 # create_player_logs(seasons)
+# create_dk_player_map()
 
     # create_vegas_table("*")
 # create_game_table()
