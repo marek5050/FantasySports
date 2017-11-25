@@ -81,8 +81,8 @@ if __name__ == "__main__":
 
     SalaryScraper.start_urls = start_urls
 
-    injuryProcess.crawl(SalaryScraper)
-    injuryProcess.start()
+    # injuryProcess.crawl(SalaryScraper)
+    # injuryProcess.start()
 
     for date in date_list:
         # print(date)
