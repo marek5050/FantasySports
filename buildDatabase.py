@@ -38,13 +38,17 @@ def create_game_table(seasons):
 
 ## Need Teams
 
-def create_player_logs(seasons):
+def create_player_logs(seasons, verbose = False):
     session = get_session()
     _players = session.execute(select([Player]))
     _players = _players.fetchall()
+    if verbose:
+         print("players: %d"%(len(_players)))
     created = 0
     errors = []
     for _player in _players:
+        if verbose:
+              print(_player["DISPLAY_FIRST_LAST"])
         for season in seasons:
             try:
                logs = player.PlayerGameLogs(_player.PERSON_ID, season=season).info()

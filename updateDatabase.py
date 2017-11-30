@@ -34,9 +34,10 @@ if __name__ == "__main__":
     args = parser.parse_args()
 
     seasons = args.date.split(",")
+    print("Season: %s "% (args.date))
     created = 0
     if len(seasons) > 0:
-        created = buildDatabase.create_player_logs(seasons)
+        created = buildDatabase.create_player_logs(seasons,verbose=True)
     else:
         print("Did not find a valid season value: %s" % (args.date))
 

@@ -2,3 +2,4 @@
 */.DS_Store
 twitter.csv
 ./models/mysql.py
+mysqlconfig.json
