@@ -69,23 +69,22 @@ if __name__ == "__main__":
     args = parser.parse_args()
 
     date_list = [now.date()]
-    date_search = now.date()
+    date_search = "2017-1*"
 
     if args.date == "*":
         date_list = utils.get_dates("2017-18")
         date_search = "*"
 
-    start_urls = [
-        "https://swishanalytics.com/optimus/nba/daily-fantasy-salary-changes?date=" + x.strftime("%Y-%m-%d") for x
-        in date_list]
-
-    SalaryScraper.start_urls = start_urls
+    # start_urls = [
+    #     "https://swishanalytics.com/optimus/nba/daily-fantasy-salary-changes?date=" + x.strftime("%Y-%m-%d") for x
+    #     in date_list]
+    #
+    # SalaryScraper.start_urls = start_urls
 
     # injuryProcess.crawl(SalaryScraper)
     # injuryProcess.start()
 
     for date in date_list:
-        # print(date)
         df = buildDatabase.build_salary(date_search)
         if len(df)>0:
             buildDatabase.create_salary_table(df)

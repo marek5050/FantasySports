@@ -65,6 +65,75 @@ def get_player_logs_season(season):
     return logs
 
 
+def toNBA(name):
+    name = str.strip(name)
+    if name == "J.R. Smith":
+        name = "JR Smith"
+    if name == "A.J. Hammons":
+        name = "AJ Hammons"
+
+    if name == "Wayne Selden Jr.":
+        name = "Wayne Selden"
+
+    if name == "Vince Hunter":
+        name = "Vincent Hunter"
+
+    if name == "C.J. Miles":
+        name = "CJ Miles"
+    if name == "T.J. Warren":
+        name = "TJ Warren"
+
+    if name == "C.J. Wilcox":
+        name = "CJ Wilcox"
+
+    if name == "Juancho Hernangomez":
+        name = "Juan Hernangomez"
+
+    if name == "Dennis Smith, Jr.":
+        name = "Dennis Smith Jr."
+
+    if name == "Matt Williams":
+        name = "Matt Williams Jr."
+
+    if name == "K.J. McDaniels":
+        name = "KJ McDaniels"
+
+    if name == "Wesley Iwundu":
+        name = "Wes Iwundu"
+
+    if name == "Frank Mason III":
+        name = "Frank Mason"
+
+    if name == "C.J. McCollum":
+        name = "CJ McCollum"
+    if name == "Nene Hilario":
+        name = "Nene"
+    if name == "Luc Richard Mbah a Moute":
+        name = "Luc Mbah a Moute"
+    if name == "J.J. Redick":
+        name = "JJ Redick"
+    if name == "Otto Porter":
+        name = "Otto Porter Jr."
+    if name == "P.J. Tucker":
+        name = "PJ Tucker"
+    return name
+
+
+def toDraftKings(name):
+    if name == "C.J. McCollum":
+        name = "CJ McCollum"
+    if name == "Nene Hilario":
+        name = "Nene"
+    if name == "Luc Richard Mbah a Moute":
+        name = "Luc Mbah a Moute"
+    if name == "J.J. Redick":
+        name = "JJ Redick"
+    if name == "Otto Porter":
+        name = "Otto Porter Jr."
+    if name == "P.J. Tucker":
+        name = "PJ Tucker"
+    return name
+
 def get_player(id=None, name=None, firstName = None, lastName = None):
     session = sql.get_session()
 
@@ -73,18 +142,15 @@ def get_player(id=None, name=None, firstName = None, lastName = None):
     if id is not None:
         q = q.filter(sql.Player.PERSON_ID == id)
     elif name is not None:
-        import re
-        p = re.compile('([A-Z])\.([A-Z])\. (.+)')
-        res = p.match(name)
-        if res != None:
-            name = "%s%s %s" % (res.group(1),res.group(2),res.group(3))
-        # name = name.replace("J.J.","JJ").replace("J.R.","JR")
+        name = toNBA(name)
+
         q = q.filter(sql.Player.DISPLAY_FIRST_LAST == name)
     elif firstName is not None and lastName is not None:
         q = q.filter(sql.Player.DISPLAY_FIRST_LAST == "%s %s" %(firstName,lastName))
 
+    player = q.first()
     session.close()
-    return q.first()
+    return player
 
 def get_games(season=None, beforeToday=True):
     session = sql.get_session()
@@ -120,6 +186,7 @@ def get_game(date=None, team=None, to_date=None):
 
     if team is not None:
         # team = team.lower()
+        team = fixTeam(team)
         q = q.filter(or_(sql.Game.h_abrv == team, sql.Game.v_abrv == team))
     game = q.all()
     session.close()

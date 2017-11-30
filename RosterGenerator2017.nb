@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[    114689,       2654]
-NotebookOptionsPosition[    110690,       2540]
-NotebookOutlinePosition[    111047,       2556]
-CellTagsIndexPosition[    111004,       2553]
+NotebookDataLength[     97764,       2183]
+NotebookOptionsPosition[     95657,       2117]
+NotebookOutlinePosition[     96014,       2133]
+CellTagsIndexPosition[     95971,       2130]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -26,7 +26,7 @@ Cell[BoxData[{
    RowBox[{"DateString", "[", "\"\<ISODate\>\"", "]"}]}], 
   ";"}], "\[IndentingNewLine]", 
  RowBox[{
-  RowBox[{"date", " ", "=", " ", "\"\<predict_me_final3\>\""}], 
+  RowBox[{"date", " ", "=", " ", "\"\<1125Preditions\>\""}], 
   "\[IndentingNewLine]", 
   RowBox[{"(*", 
    RowBox[{
@@ -88,40 +88,24 @@ Cell[BoxData[{
    3.7202160181385098`*^9}, {3.720216396547949*^9, 3.72021639788223*^9}, {
    3.720218772090148*^9, 3.7202188369048767`*^9}, {3.720554017118421*^9, 
    3.72055404353261*^9}, 3.7205541557793407`*^9, {3.720570204432065*^9, 
-   3.7205702052618723`*^9}, {3.720570609197898*^9, 3.720570610157948*^9}}],
+   3.7205702052618723`*^9}, {3.720570609197898*^9, 3.720570610157948*^9}, 
+   3.72064214983246*^9, {3.720653681923065*^9, 3.720653681965266*^9}, {
+   3.7206540382254972`*^9, 3.720654081409412*^9}, {3.720654117086738*^9, 
+   3.720654117237974*^9}, {3.720654336902349*^9, 3.7206544167011967`*^9}}],
 
-Cell[BoxData["\<\"predict_me\"\>"], "Output",
- CellChangeTimes->{3.720554329371533*^9, 3.720554428597529*^9, 
-  3.720554852429287*^9, 3.7205548826597643`*^9, 3.7205556091256723`*^9, 
-  3.72056557529473*^9, 3.720570208969747*^9}]
+Cell[BoxData["\<\"1125Preditions\"\>"], "Output",
+ CellChangeTimes->{
+  3.720554329371533*^9, 3.720554428597529*^9, 3.720554852429287*^9, 
+   3.7205548826597643`*^9, 3.7205556091256723`*^9, 3.72056557529473*^9, 
+   3.720570208969747*^9, 3.7205706142044697`*^9, 3.7205738337305593`*^9, {
+   3.720642150416238*^9, 3.7206421534502153`*^9}, 3.7206422168871527`*^9, {
+   3.720642419544098*^9, 3.720642478030178*^9}, 3.720642605756044*^9, 
+   3.720642640338022*^9, 3.7206536847970953`*^9, {3.720654028188877*^9, 
+   3.72065413757066*^9}, 3.720654206639092*^9, {3.720654292667631*^9, 
+   3.7206544177312927`*^9}}]
 }, Open  ]],
-
-Cell[CellGroupData[{
-
-Cell[BoxData[{"Name", "\[IndentingNewLine]", "DKFPS"}], "Input",
- CellChangeTimes->{{3.720554280046495*^9, 3.720554316822715*^9}}],
-
-Cell[BoxData["2"], "Output",
- CellChangeTimes->{{3.720554282502552*^9, 3.7205543317628736`*^9}, 
-   3.7205544303929167`*^9, {3.720554854231655*^9, 3.720554882730854*^9}, 
-   3.720565575341056*^9, 3.720570209041088*^9}],
-
-Cell[BoxData["7"], "Output",
- CellChangeTimes->{{3.720554282502552*^9, 3.7205543317628736`*^9}, 
-   3.7205544303929167`*^9, {3.720554854231655*^9, 3.720554882730854*^9}, 
-   3.720565575341056*^9, 3.7205702090522337`*^9}]
-}, Open  ]],
-
-Cell[CellGroupData[{
 
 Cell[BoxData[{
- RowBox[{
-  RowBox[{"DKFPS", "=", 
-   RowBox[{"First", "@", 
-    RowBox[{"Flatten", "@", 
-     RowBox[{"Position", "[", 
-      RowBox[{"first", ",", "\"\<DKFPS\>\""}], "]"}]}]}]}], 
-  ";"}], "\[IndentingNewLine]", 
  RowBox[{
   RowBox[{"RandomForest", " ", "=", " ", 
    RowBox[{"First", "@", 
@@ -177,61 +161,20 @@ Cell[BoxData[{
     RowBox[{"Flatten", "@", 
      RowBox[{"Position", "[", 
       RowBox[{"first", ",", "\"\<Name\>\""}], "]"}]}]}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"OU", " ", "=", " ", 
+   RowBox[{"First", "@", 
+    RowBox[{"Flatten", "@", 
+     RowBox[{"Position", "[", 
+      RowBox[{"first", ",", "\"\<ou\>\""}], "]"}]}]}]}], 
   ";"}], "\[IndentingNewLine]"}], "Input",
  CellChangeTimes->{{3.720217081908287*^9, 3.7202172480042753`*^9}, {
    3.720217332093297*^9, 3.7202173528575077`*^9}, {3.720217432552031*^9, 
    3.72021747761017*^9}, {3.7202175330015087`*^9, 3.720217534680209*^9}, {
    3.720217571139933*^9, 3.720217657749398*^9}, {3.720217738646405*^9, 
-   3.720217740157131*^9}, 3.720554313351285*^9}],
-
-Cell[BoxData[
- TemplateBox[{
-  "First","nofirst",
-   "\"\\!\\(\\*RowBox[{\\\"{\\\", \\\"}\\\"}]\\) has zero length and no first \
-element.\"",2,190,27,17595420097635880069,"Local"},
-  "MessageTemplate"]], "Message", "MSG",
- CellChangeTimes->{3.720570209102968*^9}],
-
-Cell[BoxData[
- TemplateBox[{
-  "First","nofirst",
-   "\"\\!\\(\\*RowBox[{\\\"{\\\", \\\"}\\\"}]\\) has zero length and no first \
-element.\"",2,194,28,17595420097635880069,"Local"},
-  "MessageTemplate"]], "Message", "MSG",
- CellChangeTimes->{3.720570209119787*^9}],
-
-Cell[BoxData[
- TemplateBox[{
-  "First","nofirst",
-   "\"\\!\\(\\*RowBox[{\\\"{\\\", \\\"}\\\"}]\\) has zero length and no first \
-element.\"",2,195,29,17595420097635880069,"Local"},
-  "MessageTemplate"]], "Message", "MSG",
- CellChangeTimes->{3.7205702091364326`*^9}],
-
-Cell[BoxData[
- TemplateBox[{
-  "First","nofirst",
-   "\"\\!\\(\\*RowBox[{\\\"{\\\", \\\"}\\\"}]\\) has zero length and no first \
-element.\"",2,196,30,17595420097635880069,"Local"},
-  "MessageTemplate"]], "Message", "MSG",
- CellChangeTimes->{3.7205702091533403`*^9}],
-
-Cell[BoxData[
- TemplateBox[{
-  "First","nofirst",
-   "\"\\!\\(\\*RowBox[{\\\"{\\\", \\\"}\\\"}]\\) has zero length and no first \
-element.\"",2,197,31,17595420097635880069,"Local"},
-  "MessageTemplate"]], "Message", "MSG",
- CellChangeTimes->{3.7205702091699057`*^9}],
-
-Cell[BoxData[
- TemplateBox[{
-  "First","nofirst",
-   "\"\\!\\(\\*RowBox[{\\\"{\\\", \\\"}\\\"}]\\) has zero length and no first \
-element.\"",2,198,32,17595420097635880069,"Local"},
-  "MessageTemplate"]], "Message", "MSG",
- CellChangeTimes->{3.720570209186919*^9}]
-}, Open  ]],
+   3.720217740157131*^9}, 3.720554313351285*^9, {3.720642597130308*^9, 
+   3.720642626497569*^9}, {3.7206539551609488`*^9, 3.720653986019504*^9}}],
 
 Cell[BoxData[
  RowBox[{
@@ -657,7 +600,7 @@ Cell[BoxData[
           RowBox[{"{", 
            RowBox[{
            "Name", ",", " ", "algo", ",", "Pos", ",", " ", "Team", ",", " ", 
-            "Salary"}], "}"}]}], "]"}], "]"}], ",", " ", 
+            "OU", ",", "Salary"}], "}"}]}], "]"}], "]"}], ",", " ", 
        RowBox[{
         RowBox[{
          RowBox[{"#", "==", "1"}], "&"}], "/@", "res"}]}], "]"}]}]}], 
@@ -726,7 +669,8 @@ Cell[BoxData[
    3.720022398437935*^9}, {3.720022572916254*^9, 3.7200225793953342`*^9}, {
    3.7202112977590637`*^9, 3.720211298071376*^9}, {3.720217699044055*^9, 
    3.720217763615734*^9}, {3.7202178227681303`*^9, 3.7202178602119827`*^9}, 
-   3.7202179939198513`*^9}],
+   3.7202179939198513`*^9, {3.720642634945052*^9, 3.7206426380792*^9}, {
+   3.720654243879842*^9, 3.7206542444462557`*^9}}],
 
 Cell[CellGroupData[{
 
@@ -750,163 +694,72 @@ Cell[BoxData[
 
 Cell[BoxData[
  TemplateBox[{
-  "Part","pkspec1",
-   "\"The expression \\!\\(\\*RowBox[{\\\"First\\\", \\\"[\\\", RowBox[{\\\"{\
-\\\", \\\"}\\\"}], \\\"]\\\"}]\\) cannot be used as a part specification.\"",
-   2,200,33,17595420097635880069,"Local"},
+  "Part","partw",
+   "\"Part \\!\\(\\*RowBox[{\\\"22\\\"}]\\) of \\!\\(\\*RowBox[{\\\"{\\\", \
+RowBox[{\\\"\\\\\\\"max(s2.salary)\\\\\\\"\\\", \\\",\\\", \
+\\\"\\\\\\\"avg(s2.salary)\\\\\\\"\\\", \\\",\\\", \\\"\\\\\\\"min(s2.salary)\
+\\\\\\\"\\\", \\\",\\\", \\\"\\\\\\\"stddev(s2.salary)\\\\\\\"\\\", \
+\\\",\\\", \\\"\\\\\\\"avg(t2.DKFPS)\\\\\\\"\\\", \\\",\\\", \
+\\\"\\\\\\\"std(t2.DKFPS)\\\\\\\"\\\", \\\",\\\", \\\"\\\\\\\"min(t2.DKFPS)\\\
+\\\\\"\\\", \\\",\\\", RowBox[{\\\"\[LeftSkeleton]\\\", \\\"7\\\", \\\"\
+\[RightSkeleton]\\\"}], \\\",\\\", \\\"\\\\\\\"OPP\\\\\\\"\\\", \\\",\\\", \\\
+\"\\\\\\\"Target\\\\\\\"\\\", \\\",\\\", \\\"\\\\\\\"game_id\\\\\\\"\\\", \
+\\\",\\\", \\\"\\\\\\\"Name\\\\\\\"\\\", \\\",\\\", \
+\\\"\\\\\\\"AdaBoost\\\\\\\"\\\", \\\",\\\", \\\"\\\\\\\"Neural Network\\\\\\\
+\"\\\", \\\",\\\", \\\"\\\\\\\"Random Forest\\\\\\\"\\\"}], \\\"}\\\"}]\\) \
+does not exist.\"",2,216,196,17596076421717715481,"Local"},
   "MessageTemplate"]], "Message", "MSG",
- CellChangeTimes->{3.720570209233933*^9}],
+ CellChangeTimes->{{3.720654028391242*^9, 3.720654137902317*^9}, 
+   3.720654206779831*^9, 3.720654258209812*^9, {3.7206542927754374`*^9, 
+   3.7206543052314167`*^9}, {3.720654372529009*^9, 3.720654396212247*^9}}],
 
 Cell[BoxData[
  TemplateBox[{
-  "Part","pkspec1",
-   "\"The expression \\!\\(\\*RowBox[{\\\"First\\\", \\\"[\\\", RowBox[{\\\"{\
-\\\", \\\"}\\\"}], \\\"]\\\"}]\\) cannot be used as a part specification.\"",
-   2,200,34,17595420097635880069,"Local"},
-  "MessageTemplate"]], "Message", "MSG",
- CellChangeTimes->{3.720570209257739*^9}],
-
-Cell[BoxData[
- TemplateBox[{
-  "Part","pkspec1",
-   "\"The expression \\!\\(\\*RowBox[{\\\"First\\\", \\\"[\\\", RowBox[{\\\"{\
-\\\", \\\"}\\\"}], \\\"]\\\"}]\\) cannot be used as a part specification.\"",
-   2,200,35,17595420097635880069,"Local"},
-  "MessageTemplate"]], "Message", "MSG",
- CellChangeTimes->{3.7205702092725*^9}],
-
-Cell[BoxData[
- TemplateBox[{
-  "General","stop",
-   "\"Further output of \\!\\(\\*StyleBox[RowBox[{\\\"Part\\\", \\\"::\\\", \
-\\\"pkspec1\\\"}], \\\"MessageName\\\"]\\) will be suppressed during this \
-calculation.\"",2,200,36,17595420097635880069,"Local"},
-  "MessageTemplate"]], "Message", "MSG",
- CellChangeTimes->{3.720570209287168*^9}],
-
-Cell[BoxData[
- TemplateBox[{
-  "StringContainsQ","strse",
-   "\"String or list of strings expected at position \\!\\(\\*RowBox[{\\\"1\\\
-\"}]\\) in \\!\\(\\*RowBox[{\\\"StringContainsQ\\\", \\\"[\\\", \
-RowBox[{RowBox[{\\\"{\\\", RowBox[{RowBox[{\\\"{\\\", \
-RowBox[{\\\"\\\\\\\"continuous\\\\\\\"\\\", \\\",\\\", \\\"\\\\\\\"continuous\
-\\\\\\\"\\\", \\\",\\\", \\\"\\\\\\\"continuous\\\\\\\"\\\", \\\",\\\", \
-\\\"\\\\\\\"continuous\\\\\\\"\\\", \\\",\\\", \\\"\\\\\\\"continuous\\\\\\\"\
-\\\", \\\",\\\", \\\"\\\\\\\"continuous\\\\\\\"\\\", \\\",\\\", \
-\\\"\\\\\\\"continuous\\\\\\\"\\\", \\\",\\\", \
-RowBox[{\\\"\[LeftSkeleton]\\\", \\\"8\\\", \\\"\[RightSkeleton]\\\"}], \\\",\
-\\\", \\\"\\\\\\\"continuous\\\\\\\"\\\", \\\",\\\", \\\"\\\\\\\"continuous\\\
-\\\\\"\\\", \\\",\\\", \\\"\\\\\\\"string\\\\\\\"\\\", \\\",\\\", \
-\\\"\\\\\\\"continuous\\\\\\\"\\\", \\\",\\\", \\\"\\\\\\\"continuous\\\\\\\"\
-\\\", \\\",\\\", \\\"\\\\\\\"continuous\\\\\\\"\\\"}], \\\"}\\\"}], \
+  "LinearProgramming","lprank1",
+   "\"\\!\\(\\*RowBox[{\\\"-\\\", RowBox[{RowBox[{\\\"{\\\", RowBox[{RowBox[{\
+\\\"{\\\", RowBox[{\\\"\\\\\\\"max(s2.salary)\\\\\\\"\\\", \\\",\\\", \
+\\\"\\\\\\\"avg(s2.salary)\\\\\\\"\\\", \\\",\\\", \\\"\\\\\\\"min(s2.salary)\
+\\\\\\\"\\\", \\\",\\\", \\\"\\\\\\\"stddev(s2.salary)\\\\\\\"\\\", \
+\\\",\\\", \\\"\\\\\\\"avg(t2.DKFPS)\\\\\\\"\\\", \\\",\\\", \
+\\\"\\\\\\\"std(t2.DKFPS)\\\\\\\"\\\", \\\",\\\", RowBox[{\\\"\[LeftSkeleton]\
+\\\", \\\"9\\\", \\\"\[RightSkeleton]\\\"}], \\\",\\\", \
+\\\"\\\\\\\"Target\\\\\\\"\\\", \\\",\\\", \\\"\\\\\\\"game_id\\\\\\\"\\\", \
+\\\",\\\", \\\"\\\\\\\"Name\\\\\\\"\\\", \\\",\\\", \
+\\\"\\\\\\\"AdaBoost\\\\\\\"\\\", \\\",\\\", \\\"\\\\\\\"Neural Network\\\\\\\
+\"\\\", \\\",\\\", \\\"\\\\\\\"Random Forest\\\\\\\"\\\"}], \\\"}\\\"}], \
 \\\",\\\", RowBox[{\\\"\[LeftSkeleton]\\\", \\\"49\\\", \
 \\\"\[RightSkeleton]\\\"}], \\\",\\\", RowBox[{\\\"\[LeftSkeleton]\\\", \
-\\\"188\\\", \\\"\[RightSkeleton]\\\"}]}], \\\"}\\\"}], \\\",\\\", \\\"\\\\\\\
-\"SG\\\\\\\"\\\"}], \\\"]\\\"}]\\).\"",2,200,38,17595420097635880069,"Local"},
-  
+\\\"179\\\", \\\"\[RightSkeleton]\\\"}]}], \\\"}\\\"}], \\\"\
+\[LeftDoubleBracket]\\\", RowBox[{\\\"All\\\", \\\",\\\", \\\"22\\\"}], \\\"\
+\[RightDoubleBracket]\\\"}]}]\\) is not a vector.\"",2,216,197,
+   17596076421717715481,"Local"},
   "MessageTemplate"]], "Message", "MSG",
- CellChangeTimes->{3.7205702093044*^9}],
+ CellChangeTimes->{{3.720654028391242*^9, 3.720654137902317*^9}, 
+   3.720654206779831*^9, 3.720654258209812*^9, {3.7206542927754374`*^9, 
+   3.7206543052314167`*^9}, {3.720654372529009*^9, 3.720654396230529*^9}}],
 
 Cell[BoxData[
  TemplateBox[{
-  "StringContainsQ","strse",
-   "\"String or list of strings expected at position \\!\\(\\*RowBox[{\\\"1\\\
-\"}]\\) in \\!\\(\\*RowBox[{\\\"StringContainsQ\\\", \\\"[\\\", \
-RowBox[{\\\"All\\\", \\\",\\\", \\\"\\\\\\\"SG\\\\\\\"\\\"}], \\\"]\\\"}]\\).\
-\"",2,200,39,17595420097635880069,"Local"},
+  "Part","partw",
+   "\"Part \\!\\(\\*RowBox[{\\\"{\\\", RowBox[{\\\"19\\\", \\\",\\\", \
+\\\"22\\\", \\\",\\\", \\\"11\\\", \\\",\\\", \\\"12\\\", \\\",\\\", \\\"13\\\
+\", \\\",\\\", \\\"1\\\"}], \\\"}\\\"}]\\) of \\!\\(\\*RowBox[{\\\"{\\\", \
+RowBox[{\\\"\\\\\\\"max(s2.salary)\\\\\\\"\\\", \\\",\\\", \
+\\\"\\\\\\\"avg(s2.salary)\\\\\\\"\\\", \\\",\\\", \\\"\\\\\\\"min(s2.salary)\
+\\\\\\\"\\\", \\\",\\\", \\\"\\\\\\\"stddev(s2.salary)\\\\\\\"\\\", \
+\\\",\\\", \\\"\\\\\\\"avg(t2.DKFPS)\\\\\\\"\\\", \\\",\\\", \
+\\\"\\\\\\\"std(t2.DKFPS)\\\\\\\"\\\", \\\",\\\", \\\"\\\\\\\"min(t2.DKFPS)\\\
+\\\\\"\\\", \\\",\\\", RowBox[{\\\"\[LeftSkeleton]\\\", \\\"7\\\", \\\"\
+\[RightSkeleton]\\\"}], \\\",\\\", \\\"\\\\\\\"OPP\\\\\\\"\\\", \\\",\\\", \\\
+\"\\\\\\\"Target\\\\\\\"\\\", \\\",\\\", \\\"\\\\\\\"game_id\\\\\\\"\\\", \
+\\\",\\\", \\\"\\\\\\\"Name\\\\\\\"\\\", \\\",\\\", \
+\\\"\\\\\\\"AdaBoost\\\\\\\"\\\", \\\",\\\", \\\"\\\\\\\"Neural Network\\\\\\\
+\"\\\", \\\",\\\", \\\"\\\\\\\"Random Forest\\\\\\\"\\\"}], \\\"}\\\"}]\\) \
+does not exist.\"",2,216,198,17596076421717715481,"Local"},
   "MessageTemplate"]], "Message", "MSG",
- CellChangeTimes->{3.720570209319612*^9}],
-
-Cell[BoxData[
- TemplateBox[{
-  "StringContainsQ","strse",
-   "\"String or list of strings expected at position \\!\\(\\*RowBox[{\\\"1\\\
-\"}]\\) in \\!\\(\\*RowBox[{\\\"StringContainsQ\\\", \\\"[\\\", \
-RowBox[{RowBox[{\\\"First\\\", \\\"[\\\", RowBox[{\\\"{\\\", \\\"}\\\"}], \
-\\\"]\\\"}], \\\",\\\", \\\"\\\\\\\"SG\\\\\\\"\\\"}], \\\"]\\\"}]\\).\"",2,
-   200,40,17595420097635880069,"Local"},
-  "MessageTemplate"]], "Message", "MSG",
- CellChangeTimes->{3.720570209333856*^9}],
-
-Cell[BoxData[
- TemplateBox[{
-  "General","stop",
-   "\"Further output of \\!\\(\\*StyleBox[RowBox[{\\\"StringContainsQ\\\", \\\
-\"::\\\", \\\"strse\\\"}], \\\"MessageName\\\"]\\) will be suppressed during \
-this calculation.\"",2,200,41,17595420097635880069,"Local"},
-  "MessageTemplate"]], "Message", "MSG",
- CellChangeTimes->{3.720570209348257*^9}],
-
-Cell[BoxData[
- TemplateBox[{
-  "StringMatchQ","strse",
-   "\"String or list of strings expected at position \\!\\(\\*RowBox[{\\\"1\\\
-\"}]\\) in \\!\\(\\*RowBox[{\\\"StringMatchQ\\\", \\\"[\\\", RowBox[{RowBox[{\
-\\\"{\\\", RowBox[{RowBox[{\\\"{\\\", \
-RowBox[{\\\"\\\\\\\"continuous\\\\\\\"\\\", \\\",\\\", \\\"\\\\\\\"continuous\
-\\\\\\\"\\\", \\\",\\\", \\\"\\\\\\\"continuous\\\\\\\"\\\", \\\",\\\", \
-\\\"\\\\\\\"continuous\\\\\\\"\\\", \\\",\\\", \\\"\\\\\\\"continuous\\\\\\\"\
-\\\", \\\",\\\", \\\"\\\\\\\"continuous\\\\\\\"\\\", \\\",\\\", RowBox[{\\\"\
-\[LeftSkeleton]\\\", \\\"9\\\", \\\"\[RightSkeleton]\\\"}], \\\",\\\", \\\"\\\
-\\\\\"continuous\\\\\\\"\\\", \\\",\\\", \\\"\\\\\\\"continuous\\\\\\\"\\\", \
-\\\",\\\", \\\"\\\\\\\"string\\\\\\\"\\\", \\\",\\\", \
-\\\"\\\\\\\"continuous\\\\\\\"\\\", \\\",\\\", \\\"\\\\\\\"continuous\\\\\\\"\
-\\\", \\\",\\\", \\\"\\\\\\\"continuous\\\\\\\"\\\"}], \\\"}\\\"}], \
-\\\",\\\", RowBox[{\\\"\[LeftSkeleton]\\\", \\\"49\\\", \
-\\\"\[RightSkeleton]\\\"}], \\\",\\\", RowBox[{\\\"\[LeftSkeleton]\\\", \
-\\\"188\\\", \\\"\[RightSkeleton]\\\"}]}], \\\"}\\\"}], \\\",\\\", \\\"\\\\\\\
-\"C\\\\\\\"\\\"}], \\\"]\\\"}]\\).\"",2,200,42,17595420097635880069,"Local"},
-  "MessageTemplate"]], "Message", "MSG",
- CellChangeTimes->{3.720570209362596*^9}],
-
-Cell[BoxData[
- TemplateBox[{
-  "StringMatchQ","strse",
-   "\"String or list of strings expected at position \\!\\(\\*RowBox[{\\\"1\\\
-\"}]\\) in \\!\\(\\*RowBox[{\\\"StringMatchQ\\\", \\\"[\\\", \
-RowBox[{\\\"All\\\", \\\",\\\", \\\"\\\\\\\"C\\\\\\\"\\\"}], \
-\\\"]\\\"}]\\).\"",2,200,43,17595420097635880069,"Local"},
-  "MessageTemplate"]], "Message", "MSG",
- CellChangeTimes->{3.720570209377122*^9}],
-
-Cell[BoxData[
- TemplateBox[{
-  "StringMatchQ","strse",
-   "\"String or list of strings expected at position \\!\\(\\*RowBox[{\\\"1\\\
-\"}]\\) in \\!\\(\\*RowBox[{\\\"StringMatchQ\\\", \\\"[\\\", RowBox[{RowBox[{\
-\\\"First\\\", \\\"[\\\", RowBox[{\\\"{\\\", \\\"}\\\"}], \\\"]\\\"}], \
-\\\",\\\", \\\"\\\\\\\"C\\\\\\\"\\\"}], \\\"]\\\"}]\\).\"",2,200,44,
-   17595420097635880069,"Local"},
-  "MessageTemplate"]], "Message", "MSG",
- CellChangeTimes->{3.7205702093912363`*^9}],
-
-Cell[BoxData[
- TemplateBox[{
-  "General","stop",
-   "\"Further output of \\!\\(\\*StyleBox[RowBox[{\\\"StringMatchQ\\\", \
-\\\"::\\\", \\\"strse\\\"}], \\\"MessageName\\\"]\\) will be suppressed \
-during this calculation.\"",2,200,45,17595420097635880069,"Local"},
-  "MessageTemplate"]], "Message", "MSG",
- CellChangeTimes->{3.720570209405459*^9}],
-
-Cell[BoxData[
- TemplateBox[{
-  "LinearProgramming","lprank2",
-   "\"\\!\\(\\*RowBox[{\\\"{\\\", RowBox[{\\\"\[LeftSkeleton]\\\", \\\"1\\\", \
-\\\"\[RightSkeleton]\\\"}], \\\"}\\\"}]\\) is not a matrix.\"",2,200,46,
-   17595420097635880069,"Local"},
-  "MessageTemplate"]], "Message", "MSG",
- CellChangeTimes->{3.720570209468135*^9}],
-
-Cell[BoxData[
- TemplateBox[{
-  "LinearProgramming","lprank2",
-   "\"\\!\\(\\*RowBox[{\\\"{\\\", RowBox[{\\\"\[LeftSkeleton]\\\", \\\"1\\\", \
-\\\"\[RightSkeleton]\\\"}], \\\"}\\\"}]\\) is not a matrix.\"",2,200,47,
-   17595420097635880069,"Local"},
-  "MessageTemplate"]], "Message", "MSG",
- CellChangeTimes->{3.720570209632345*^9}],
+ CellChangeTimes->{{3.720654028391242*^9, 3.720654137902317*^9}, 
+   3.720654206779831*^9, 3.720654258209812*^9, {3.7206542927754374`*^9, 
+   3.7206543052314167`*^9}, {3.720654372529009*^9, 3.720654396245903*^9}}],
 
 Cell[BoxData[
  TemplateBox[{
@@ -914,56 +767,54 @@ Cell[BoxData[
    "\"Warning: \\!\\(\\*RowBox[{\\\"Integers\\\", \\\"\[Equal]\\\", \
 \\\"1\\\"}]\\) is not a valid domain specification and is ignored. Domain \
 specification must be Reals, Integers, or of the form {dom1, dom2,...}, where \
-dom1, doma2, etc. are either Reals or Integers.\"",2,200,48,
-   17595420097635880069,"Local"},
+dom1, doma2, etc. are either Reals or Integers.\"",2,216,199,
+   17596076421717715481,"Local"},
   "MessageTemplate"]], "Message", "MSG",
- CellChangeTimes->{3.7205702096821632`*^9}],
+ CellChangeTimes->{{3.720654028391242*^9, 3.720654137902317*^9}, 
+   3.720654206779831*^9, 3.720654258209812*^9, {3.7206542927754374`*^9, 
+   3.7206543052314167`*^9}, {3.720654372529009*^9, 3.720654396261429*^9}}],
 
 Cell[BoxData[
  TemplateBox[{
   "LinearProgramming","lprank1",
-   "\"\\!\\(\\*RowBox[{RowBox[{\\\"{\\\", RowBox[{RowBox[{\\\"-\\\", \\\"\\\\\
-\\\"continuous\\\\\\\"\\\"}], \\\",\\\", RowBox[{\\\"-\\\", \
-\\\"\\\\\\\"meta\\\\\\\"\\\"}], \\\",\\\", RowBox[{\\\"-\\\", \
-\\\"25.18819444444445`\\\"}], \\\",\\\", RowBox[{\\\"-\\\", \
-\\\"12.022261904761905`\\\"}], \\\",\\\", RowBox[{\\\"-\\\", \
-\\\"20.676428571428573`\\\"}], \\\",\\\", RowBox[{\\\"\[LeftSkeleton]\\\", \\\
-\"41\\\", \\\"\[RightSkeleton]\\\"}], \\\",\\\", RowBox[{\\\"-\\\", \
-\\\"25.491190476190475`\\\"}], \\\",\\\", RowBox[{\\\"-\\\", \
-\\\"30.659761904761904`\\\"}], \\\",\\\", RowBox[{\\\"-\\\", \
-\\\"14.046369047619049`\\\"}], \\\",\\\", RowBox[{\\\"-\\\", \
-\\\"42.95744047619047`\\\"}], \\\",\\\", RowBox[{\\\"\[LeftSkeleton]\\\", \
-\\\"188\\\", \\\"\[RightSkeleton]\\\"}]}], \\\"}\\\"}], \\\"\[Equal]\\\", \
-\\\"1\\\"}]\\) is not a vector.\"",2,200,49,17595420097635880069,"Local"},
+   "\"\\!\\(\\*RowBox[{RowBox[{\\\"-\\\", RowBox[{RowBox[{\\\"{\\\", \
+RowBox[{RowBox[{\\\"{\\\", RowBox[{\\\"\\\\\\\"max(s2.salary)\\\\\\\"\\\", \\\
+\",\\\", \\\"\\\\\\\"avg(s2.salary)\\\\\\\"\\\", \\\",\\\", \
+\\\"\\\\\\\"min(s2.salary)\\\\\\\"\\\", \\\",\\\", \
+\\\"\\\\\\\"stddev(s2.salary)\\\\\\\"\\\", \\\",\\\", \
+\\\"\\\\\\\"avg(t2.DKFPS)\\\\\\\"\\\", \\\",\\\", \\\"\\\\\\\"std(t2.DKFPS)\\\
+\\\\\"\\\", \\\",\\\", RowBox[{\\\"\[LeftSkeleton]\\\", \\\"9\\\", \\\"\
+\[RightSkeleton]\\\"}], \\\",\\\", \\\"\\\\\\\"Target\\\\\\\"\\\", \\\",\\\", \
+\\\"\\\\\\\"game_id\\\\\\\"\\\", \\\",\\\", \\\"\\\\\\\"Name\\\\\\\"\\\", \
+\\\",\\\", \\\"\\\\\\\"AdaBoost\\\\\\\"\\\", \\\",\\\", \\\"\\\\\\\"Neural \
+Network\\\\\\\"\\\", \\\",\\\", \\\"\\\\\\\"Random Forest\\\\\\\"\\\"}], \
+\\\"}\\\"}], \\\",\\\", RowBox[{\\\"\[LeftSkeleton]\\\", \\\"49\\\", \\\"\
+\[RightSkeleton]\\\"}], \\\",\\\", RowBox[{\\\"\[LeftSkeleton]\\\", \\\"179\\\
+\", \\\"\[RightSkeleton]\\\"}]}], \\\"}\\\"}], \\\"\[LeftDoubleBracket]\\\", \
+RowBox[{\\\"\[LeftSkeleton]\\\", \\\"1\\\", \\\"\[RightSkeleton]\\\"}], \\\"\
+\[RightDoubleBracket]\\\"}]}], \\\"\[Equal]\\\", \\\"1\\\"}]\\) is not a \
+vector.\"",2,216,200,17596076421717715481,"Local"},
   "MessageTemplate"]], "Message", "MSG",
- CellChangeTimes->{3.720570209697712*^9}],
+ CellChangeTimes->{{3.720654028391242*^9, 3.720654137902317*^9}, 
+   3.720654206779831*^9, 3.720654258209812*^9, {3.7206542927754374`*^9, 
+   3.7206543052314167`*^9}, {3.720654372529009*^9, 3.7206543962779427`*^9}}],
 
 Cell[BoxData[
  TemplateBox[{
   "Pick","incomp",
-   "\"Expressions \\!\\(\\*RowBox[{RowBox[{\\\"{\\\", RowBox[{RowBox[{\\\"{\\\
-\", RowBox[{\\\"\\\\\\\"continuous\\\\\\\"\\\", \\\",\\\", \
-\\\"\\\\\\\"continuous\\\\\\\"\\\", \\\",\\\", \\\"\\\\\\\"continuous\\\\\\\"\
-\\\", \\\",\\\", \\\"\\\\\\\"continuous\\\\\\\"\\\", \\\",\\\", \
-\\\"\\\\\\\"continuous\\\\\\\"\\\", \\\",\\\", \\\"\\\\\\\"continuous\\\\\\\"\
-\\\", \\\",\\\", \\\"\\\\\\\"continuous\\\\\\\"\\\", \\\",\\\", RowBox[{\\\"\
-\[LeftSkeleton]\\\", \\\"7\\\", \\\"\[RightSkeleton]\\\"}], \\\",\\\", \\\"\\\
-\\\\\"continuous\\\\\\\"\\\", \\\",\\\", \\\"\\\\\\\"continuous\\\\\\\"\\\", \
-\\\",\\\", \\\"\\\\\\\"continuous\\\\\\\"\\\", \\\",\\\", \
-\\\"\\\\\\\"string\\\\\\\"\\\", \\\",\\\", \
-\\\"\\\\\\\"continuous\\\\\\\"\\\", \\\",\\\", \\\"\\\\\\\"continuous\\\\\\\"\
-\\\", \\\",\\\", \\\"\\\\\\\"continuous\\\\\\\"\\\"}], \\\"}\\\"}], \
-\\\",\\\", RowBox[{\\\"\[LeftSkeleton]\\\", \\\"49\\\", \
-\\\"\[RightSkeleton]\\\"}], \\\",\\\", RowBox[{\\\"\[LeftSkeleton]\\\", \
-\\\"188\\\", \\\"\[RightSkeleton]\\\"}]}], \\\"}\\\"}], \\\"\
-\[LeftDoubleBracket]\\\", RowBox[{\\\"All\\\", \\\",\\\", RowBox[{\\\"\
-\[LeftSkeleton]\\\", \\\"1\\\", \\\"\[RightSkeleton]\\\"}]}], \\\"\
-\[RightDoubleBracket]\\\"}]\\) and \
-\\!\\(\\*RowBox[{\\\"LinearProgramming\\\", \\\"[\\\", RowBox[{\\\"\
-\[LeftSkeleton]\\\", \\\"1\\\", \\\"\[RightSkeleton]\\\"}], \\\"]\\\"}]\\) \
-have incompatible shapes.\"",2,200,50,17595420097635880069,"Local"},
+   "\"Expressions \\!\\(\\*RowBox[{RowBox[{\\\"{\\\", RowBox[{\\\"\
+\[LeftSkeleton]\\\", \\\"1\\\", \\\"\[RightSkeleton]\\\"}], \\\"}\\\"}], \\\"\
+\[LeftDoubleBracket]\\\", RowBox[{\\\"All\\\", \\\",\\\", RowBox[{\\\"{\\\", \
+RowBox[{\\\"19\\\", \\\",\\\", \\\"22\\\", \\\",\\\", \\\"11\\\", \\\",\\\", \
+\\\"12\\\", \\\",\\\", \\\"13\\\", \\\",\\\", \\\"1\\\"}], \\\"}\\\"}]}], \
+\\\"\[RightDoubleBracket]\\\"}]\\) and \\!\\(\\*RowBox[{\\\"LinearProgramming\
+\\\", \\\"[\\\", RowBox[{\\\"\[LeftSkeleton]\\\", \\\"1\\\", \\\"\
+\[RightSkeleton]\\\"}], \\\"]\\\"}]\\) have incompatible shapes.\"",2,216,201,
+   17596076421717715481,"Local"},
   "MessageTemplate"]], "Message", "MSG",
- CellChangeTimes->{3.720570209842348*^9}],
+ CellChangeTimes->{{3.720654028391242*^9, 3.720654137902317*^9}, 
+   3.720654206779831*^9, 3.720654258209812*^9, {3.7206542927754374`*^9, 
+   3.7206543052314167`*^9}, {3.720654372529009*^9, 3.720654396293668*^9}}],
 
 Cell[BoxData[
  InterpretationBox[
@@ -979,10 +830,10 @@ Cell[BoxData[
              RowBox[{
               RowBox[{"{", 
                
-               RowBox[{"\<\"continuous\"\>", ",", "\<\"continuous\"\>", 
-                ",", "\<\"continuous\"\>", ",", "\<\"continuous\"\>", 
-                ",", "\<\"continuous\"\>", ",", 
-                TemplateBox[{"11"},
+               RowBox[{"\<\"max(s2.salary)\"\>", 
+                ",", "\<\"avg(s2.salary)\"\>", ",", "\<\"min(s2.salary)\"\>", 
+                ",", "\<\"stddev(s2.salary)\"\>", ",", 
+                TemplateBox[{"13"},
                  "OutputSizeLimit`Skeleton",
                  DisplayFunction->(FrameBox[
                    
@@ -994,11 +845,10 @@ Cell[BoxData[
                     ShowStringCharacters -> False}, BaselinePosition -> 
                    Baseline, ContentPadding -> False, 
                    FrameMargins -> {{1, 1}, {1, 2}}, FrameStyle -> None, 
-                   RoundingRadius -> 7]& )], ",", "\<\"continuous\"\>", 
-                ",", "\<\"string\"\>", ",", "\<\"continuous\"\>", 
-                ",", "\<\"continuous\"\>", ",", "\<\"continuous\"\>"}], "}"}],
-               ",", 
-              TemplateBox[{"236"},
+                   RoundingRadius -> 7]& )], ",", "\<\"Name\"\>", 
+                ",", "\<\"AdaBoost\"\>", ",", "\<\"Neural Network\"\>", 
+                ",", "\<\"Random Forest\"\>"}], "}"}], ",", 
+              TemplateBox[{"227"},
                "OutputSizeLimit`Skeleton",
                DisplayFunction->(FrameBox[
                  
@@ -1103,7 +953,7 @@ Cell[BoxData[
            Appearance->None,
            
            ButtonFunction:>OutputSizeLimit`ButtonFunction[
-            OutputSizeLimit`Defer, 200, 17595420097635880069, 5/2],
+            OutputSizeLimit`Defer, 216, 17596076421717715481, 5/2],
            Enabled->True,
            Evaluator->Automatic,
            Method->"Queued"], 
@@ -1133,7 +983,7 @@ Cell[BoxData[
            Appearance->None,
            
            ButtonFunction:>OutputSizeLimit`ButtonFunction[
-            OutputSizeLimit`Defer, 200, 17595420097635880069, 5 2],
+            OutputSizeLimit`Defer, 216, 17596076421717715481, 5 2],
            Enabled->True,
            Evaluator->Automatic,
            Method->"Queued"], 
@@ -1163,7 +1013,7 @@ Cell[BoxData[
            Appearance->None,
            
            ButtonFunction:>OutputSizeLimit`ButtonFunction[
-            OutputSizeLimit`Defer, 200, 17595420097635880069, Infinity],
+            OutputSizeLimit`Defer, 216, 17596076421717715481, Infinity],
            Enabled->True,
            Evaluator->Automatic,
            Method->"Queued"], 
@@ -1230,7 +1080,7 @@ Cell[BoxData[
     StripOnInput->False],
    Deploy,
    DefaultBaseStyle->"Deploy"],
-  Out[200]]], "Output",
+  Out[216]]], "Output",
  CellChangeTimes->{{3.694967993816155*^9, 3.694968002908949*^9}, {
    3.694968051080192*^9, 3.6949680560203876`*^9}, 3.694969058632531*^9, 
    3.69496908942449*^9, 3.694969212956287*^9, 3.6949787399278812`*^9, {
@@ -1249,7 +1099,12 @@ Cell[BoxData[
    3.7202191445138187`*^9, 3.720219682311116*^9, 3.720554213836796*^9, {
    3.72055434176077*^9, 3.72055434634418*^9}, 3.720554440750331*^9, {
    3.720554863661622*^9, 3.720554883121211*^9}, 3.720565575763194*^9, 
-   3.720570210058507*^9}]
+   3.720570210058507*^9, 3.7205706144801826`*^9, 3.720573833963657*^9, 
+   3.720642154030019*^9, 3.720642217193478*^9, {3.7206424198449087`*^9, 
+   3.720642478388773*^9}, 3.720642606131744*^9, 3.7206426406560993`*^9, {
+   3.720654028472012*^9, 3.720654137985867*^9}, 3.7206542068479652`*^9, 
+   3.7206542582927027`*^9, {3.7206542928441553`*^9, 3.720654305301371*^9}, {
+   3.7206543726943293`*^9, 3.720654396311297*^9}}]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -1262,154 +1117,13 @@ Cell[BoxData[
 
 Cell[BoxData[
  TemplateBox[{
-  "Part","pkspec1",
-   "\"The expression \\!\\(\\*RowBox[{\\\"First\\\", \\\"[\\\", RowBox[{\\\"{\
-\\\", \\\"}\\\"}], \\\"]\\\"}]\\) cannot be used as a part specification.\"",
-   2,201,51,17595420097635880069,"Local"},
+  "LinearProgramming","mreal",
+   "\"Input data contains numbers that cannot be coerced into machine \
+reals.\"",2,217,202,17596076421717715481,"Local"},
   "MessageTemplate"]], "Message", "MSG",
- CellChangeTimes->{3.7205702101991243`*^9}],
-
-Cell[BoxData[
- TemplateBox[{
-  "Part","pkspec1",
-   "\"The expression \\!\\(\\*RowBox[{\\\"First\\\", \\\"[\\\", RowBox[{\\\"{\
-\\\", \\\"}\\\"}], \\\"]\\\"}]\\) cannot be used as a part specification.\"",
-   2,201,52,17595420097635880069,"Local"},
-  "MessageTemplate"]], "Message", "MSG",
- CellChangeTimes->{3.7205702102167997`*^9}],
-
-Cell[BoxData[
- TemplateBox[{
-  "Part","pkspec1",
-   "\"The expression \\!\\(\\*RowBox[{\\\"First\\\", \\\"[\\\", RowBox[{\\\"{\
-\\\", \\\"}\\\"}], \\\"]\\\"}]\\) cannot be used as a part specification.\"",
-   2,201,53,17595420097635880069,"Local"},
-  "MessageTemplate"]], "Message", "MSG",
- CellChangeTimes->{3.720570210230989*^9}],
-
-Cell[BoxData[
- TemplateBox[{
-  "General","stop",
-   "\"Further output of \\!\\(\\*StyleBox[RowBox[{\\\"Part\\\", \\\"::\\\", \
-\\\"pkspec1\\\"}], \\\"MessageName\\\"]\\) will be suppressed during this \
-calculation.\"",2,201,54,17595420097635880069,"Local"},
-  "MessageTemplate"]], "Message", "MSG",
- CellChangeTimes->{3.720570210245694*^9}],
-
-Cell[BoxData[
- TemplateBox[{
-  "StringContainsQ","strse",
-   "\"String or list of strings expected at position \\!\\(\\*RowBox[{\\\"1\\\
-\"}]\\) in \\!\\(\\*RowBox[{\\\"StringContainsQ\\\", \\\"[\\\", \
-RowBox[{RowBox[{\\\"{\\\", RowBox[{RowBox[{\\\"{\\\", \
-RowBox[{\\\"\\\\\\\"continuous\\\\\\\"\\\", \\\",\\\", \\\"\\\\\\\"continuous\
-\\\\\\\"\\\", \\\",\\\", \\\"\\\\\\\"continuous\\\\\\\"\\\", \\\",\\\", \
-\\\"\\\\\\\"continuous\\\\\\\"\\\", \\\",\\\", \\\"\\\\\\\"continuous\\\\\\\"\
-\\\", \\\",\\\", \\\"\\\\\\\"continuous\\\\\\\"\\\", \\\",\\\", \
-\\\"\\\\\\\"continuous\\\\\\\"\\\", \\\",\\\", \
-RowBox[{\\\"\[LeftSkeleton]\\\", \\\"8\\\", \\\"\[RightSkeleton]\\\"}], \\\",\
-\\\", \\\"\\\\\\\"continuous\\\\\\\"\\\", \\\",\\\", \\\"\\\\\\\"continuous\\\
-\\\\\"\\\", \\\",\\\", \\\"\\\\\\\"string\\\\\\\"\\\", \\\",\\\", \
-\\\"\\\\\\\"continuous\\\\\\\"\\\", \\\",\\\", \\\"\\\\\\\"continuous\\\\\\\"\
-\\\", \\\",\\\", \\\"\\\\\\\"continuous\\\\\\\"\\\"}], \\\"}\\\"}], \
-\\\",\\\", RowBox[{\\\"\[LeftSkeleton]\\\", \\\"49\\\", \
-\\\"\[RightSkeleton]\\\"}], \\\",\\\", RowBox[{\\\"\[LeftSkeleton]\\\", \
-\\\"188\\\", \\\"\[RightSkeleton]\\\"}]}], \\\"}\\\"}], \\\",\\\", \\\"\\\\\\\
-\"SG\\\\\\\"\\\"}], \\\"]\\\"}]\\).\"",2,201,55,17595420097635880069,"Local"},
-  
-  "MessageTemplate"]], "Message", "MSG",
- CellChangeTimes->{3.7205702102596827`*^9}],
-
-Cell[BoxData[
- TemplateBox[{
-  "StringContainsQ","strse",
-   "\"String or list of strings expected at position \\!\\(\\*RowBox[{\\\"1\\\
-\"}]\\) in \\!\\(\\*RowBox[{\\\"StringContainsQ\\\", \\\"[\\\", \
-RowBox[{\\\"All\\\", \\\",\\\", \\\"\\\\\\\"SG\\\\\\\"\\\"}], \\\"]\\\"}]\\).\
-\"",2,201,56,17595420097635880069,"Local"},
-  "MessageTemplate"]], "Message", "MSG",
- CellChangeTimes->{3.7205702102769613`*^9}],
-
-Cell[BoxData[
- TemplateBox[{
-  "StringContainsQ","strse",
-   "\"String or list of strings expected at position \\!\\(\\*RowBox[{\\\"1\\\
-\"}]\\) in \\!\\(\\*RowBox[{\\\"StringContainsQ\\\", \\\"[\\\", \
-RowBox[{RowBox[{\\\"First\\\", \\\"[\\\", RowBox[{\\\"{\\\", \\\"}\\\"}], \
-\\\"]\\\"}], \\\",\\\", \\\"\\\\\\\"SG\\\\\\\"\\\"}], \\\"]\\\"}]\\).\"",2,
-   201,57,17595420097635880069,"Local"},
-  "MessageTemplate"]], "Message", "MSG",
- CellChangeTimes->{3.720570210290827*^9}],
-
-Cell[BoxData[
- TemplateBox[{
-  "General","stop",
-   "\"Further output of \\!\\(\\*StyleBox[RowBox[{\\\"StringContainsQ\\\", \\\
-\"::\\\", \\\"strse\\\"}], \\\"MessageName\\\"]\\) will be suppressed during \
-this calculation.\"",2,201,58,17595420097635880069,"Local"},
-  "MessageTemplate"]], "Message", "MSG",
- CellChangeTimes->{3.720570210305081*^9}],
-
-Cell[BoxData[
- TemplateBox[{
-  "StringMatchQ","strse",
-   "\"String or list of strings expected at position \\!\\(\\*RowBox[{\\\"1\\\
-\"}]\\) in \\!\\(\\*RowBox[{\\\"StringMatchQ\\\", \\\"[\\\", RowBox[{RowBox[{\
-\\\"{\\\", RowBox[{RowBox[{\\\"{\\\", \
-RowBox[{\\\"\\\\\\\"continuous\\\\\\\"\\\", \\\",\\\", \\\"\\\\\\\"continuous\
-\\\\\\\"\\\", \\\",\\\", \\\"\\\\\\\"continuous\\\\\\\"\\\", \\\",\\\", \
-\\\"\\\\\\\"continuous\\\\\\\"\\\", \\\",\\\", \\\"\\\\\\\"continuous\\\\\\\"\
-\\\", \\\",\\\", \\\"\\\\\\\"continuous\\\\\\\"\\\", \\\",\\\", RowBox[{\\\"\
-\[LeftSkeleton]\\\", \\\"9\\\", \\\"\[RightSkeleton]\\\"}], \\\",\\\", \\\"\\\
-\\\\\"continuous\\\\\\\"\\\", \\\",\\\", \\\"\\\\\\\"continuous\\\\\\\"\\\", \
-\\\",\\\", \\\"\\\\\\\"string\\\\\\\"\\\", \\\",\\\", \
-\\\"\\\\\\\"continuous\\\\\\\"\\\", \\\",\\\", \\\"\\\\\\\"continuous\\\\\\\"\
-\\\", \\\",\\\", \\\"\\\\\\\"continuous\\\\\\\"\\\"}], \\\"}\\\"}], \
-\\\",\\\", RowBox[{\\\"\[LeftSkeleton]\\\", \\\"49\\\", \
-\\\"\[RightSkeleton]\\\"}], \\\",\\\", RowBox[{\\\"\[LeftSkeleton]\\\", \
-\\\"188\\\", \\\"\[RightSkeleton]\\\"}]}], \\\"}\\\"}], \\\",\\\", \\\"\\\\\\\
-\"C\\\\\\\"\\\"}], \\\"]\\\"}]\\).\"",2,201,59,17595420097635880069,"Local"},
-  "MessageTemplate"]], "Message", "MSG",
- CellChangeTimes->{3.7205702103194513`*^9}],
-
-Cell[BoxData[
- TemplateBox[{
-  "StringMatchQ","strse",
-   "\"String or list of strings expected at position \\!\\(\\*RowBox[{\\\"1\\\
-\"}]\\) in \\!\\(\\*RowBox[{\\\"StringMatchQ\\\", \\\"[\\\", \
-RowBox[{\\\"All\\\", \\\",\\\", \\\"\\\\\\\"C\\\\\\\"\\\"}], \
-\\\"]\\\"}]\\).\"",2,201,60,17595420097635880069,"Local"},
-  "MessageTemplate"]], "Message", "MSG",
- CellChangeTimes->{3.72057021033453*^9}],
-
-Cell[BoxData[
- TemplateBox[{
-  "StringMatchQ","strse",
-   "\"String or list of strings expected at position \\!\\(\\*RowBox[{\\\"1\\\
-\"}]\\) in \\!\\(\\*RowBox[{\\\"StringMatchQ\\\", \\\"[\\\", RowBox[{RowBox[{\
-\\\"First\\\", \\\"[\\\", RowBox[{\\\"{\\\", \\\"}\\\"}], \\\"]\\\"}], \
-\\\",\\\", \\\"\\\\\\\"C\\\\\\\"\\\"}], \\\"]\\\"}]\\).\"",2,201,61,
-   17595420097635880069,"Local"},
-  "MessageTemplate"]], "Message", "MSG",
- CellChangeTimes->{3.720570210349086*^9}],
-
-Cell[BoxData[
- TemplateBox[{
-  "General","stop",
-   "\"Further output of \\!\\(\\*StyleBox[RowBox[{\\\"StringMatchQ\\\", \
-\\\"::\\\", \\\"strse\\\"}], \\\"MessageName\\\"]\\) will be suppressed \
-during this calculation.\"",2,201,62,17595420097635880069,"Local"},
-  "MessageTemplate"]], "Message", "MSG",
- CellChangeTimes->{3.720570210364016*^9}],
-
-Cell[BoxData[
- TemplateBox[{
-  "LinearProgramming","lprank2",
-   "\"\\!\\(\\*RowBox[{\\\"{\\\", RowBox[{\\\"\[LeftSkeleton]\\\", \\\"1\\\", \
-\\\"\[RightSkeleton]\\\"}], \\\"}\\\"}]\\) is not a matrix.\"",2,201,63,
-   17595420097635880069,"Local"},
-  "MessageTemplate"]], "Message", "MSG",
- CellChangeTimes->{3.7205702104480867`*^9}],
+ CellChangeTimes->{{3.720654028518165*^9, 3.72065413803643*^9}, 
+   3.7206542068957148`*^9, 3.720654292896044*^9, {3.720654372740532*^9, 
+   3.7206543963626833`*^9}}],
 
 Cell[BoxData[
  TemplateBox[{
@@ -1417,65 +1131,85 @@ Cell[BoxData[
    "\"Warning: \\!\\(\\*RowBox[{\\\"Integers\\\", \\\"\[Equal]\\\", \
 \\\"1\\\"}]\\) is not a valid domain specification and is ignored. Domain \
 specification must be Reals, Integers, or of the form {dom1, dom2,...}, where \
-dom1, doma2, etc. are either Reals or Integers.\"",2,201,64,
-   17595420097635880069,"Local"},
+dom1, doma2, etc. are either Reals or Integers.\"",2,217,203,
+   17596076421717715481,"Local"},
   "MessageTemplate"]], "Message", "MSG",
- CellChangeTimes->{3.720570210462368*^9}],
+ CellChangeTimes->{{3.720654028518165*^9, 3.72065413803643*^9}, 
+   3.7206542068957148`*^9, 3.720654292896044*^9, {3.720654372740532*^9, 
+   3.7206543963797693`*^9}}],
 
 Cell[BoxData[
  TemplateBox[{
   "LinearProgramming","lprank1",
    "\"\\!\\(\\*RowBox[{RowBox[{\\\"{\\\", RowBox[{RowBox[{\\\"-\\\", \\\"\\\\\
-\\\"continuous\\\\\\\"\\\"}], \\\",\\\", RowBox[{\\\"-\\\", \
-\\\"\\\\\\\"meta\\\\\\\"\\\"}], \\\",\\\", RowBox[{\\\"-\\\", \
-\\\"31.75`\\\"}], \\\",\\\", RowBox[{\\\"-\\\", \\\"10.`\\\"}], \\\",\\\", \
-RowBox[{\\\"-\\\", \\\"18.5`\\\"}], \\\",\\\", RowBox[{\\\"-\\\", \
-\\\"6.`\\\"}], \\\",\\\", RowBox[{\\\"-\\\", \\\"10.25`\\\"}], \\\",\\\", \
-RowBox[{\\\"-\\\", \\\"6.`\\\"}], \\\",\\\", RowBox[{\\\"-\\\", \
-\\\"8.5`\\\"}], \\\",\\\", RowBox[{\\\"-\\\", \\\"6.75`\\\"}], \\\",\\\", \
-RowBox[{\\\"-\\\", \\\"29.75`\\\"}], \\\",\\\", RowBox[{\\\"-\\\", \
-\\\"11.5`\\\"}], \\\",\\\", RowBox[{\\\"-\\\", \\\"14.25`\\\"}], \\\",\\\", \
-RowBox[{\\\"\[LeftSkeleton]\\\", \\\"25\\\", \\\"\[RightSkeleton]\\\"}], \
-\\\",\\\", RowBox[{\\\"-\\\", \\\"12.25`\\\"}], \\\",\\\", RowBox[{\\\"-\\\", \
-\\\"13.5`\\\"}], \\\",\\\", RowBox[{\\\"-\\\", \\\"26.75`\\\"}], \\\",\\\", \
-RowBox[{\\\"-\\\", \\\"9.75`\\\"}], \\\",\\\", RowBox[{\\\"-\\\", \
-\\\"31.75`\\\"}], \\\",\\\", RowBox[{\\\"-\\\", \\\"15.5`\\\"}], \\\",\\\", \
-RowBox[{\\\"-\\\", \\\"28.25`\\\"}], \\\",\\\", RowBox[{\\\"-\\\", \
-\\\"36.5`\\\"}], \\\",\\\", RowBox[{\\\"-\\\", \\\"22.75`\\\"}], \\\",\\\", \
-RowBox[{\\\"-\\\", \\\"29.25`\\\"}], \\\",\\\", RowBox[{\\\"-\\\", \\\"18.`\\\
-\"}], \\\",\\\", RowBox[{\\\"-\\\", \\\"44.25`\\\"}], \\\",\\\", RowBox[{\\\"\
-\[LeftSkeleton]\\\", \\\"188\\\", \\\"\[RightSkeleton]\\\"}]}], \\\"}\\\"}], \
-\\\"\[Equal]\\\", \\\"1\\\"}]\\) is not a vector.\"",2,201,65,
-   17595420097635880069,"Local"},
+\\\"Neural Network\\\\\\\"\\\"}], \\\",\\\", RowBox[{\\\"-\\\", \\\"13\\\"}], \
+\\\",\\\", RowBox[{\\\"-\\\", \\\"18.75`\\\"}], \\\",\\\", RowBox[{\\\"-\\\", \
+\\\"27.25`\\\"}], \\\",\\\", RowBox[{\\\"-\\\", \\\"5\\\"}], \\\",\\\", \
+RowBox[{\\\"-\\\", \\\"8.25`\\\"}], \\\",\\\", RowBox[{\\\"-\\\", \\\"11.5`\\\
+\"}], \\\",\\\", RowBox[{\\\"-\\\", \\\"26.75`\\\"}], \\\",\\\", \
+RowBox[{\\\"-\\\", \\\"28.5`\\\"}], \\\",\\\", RowBox[{\\\"-\\\", \
+\\\"11.25`\\\"}], \\\",\\\", RowBox[{\\\"-\\\", \\\"34.25`\\\"}], \\\",\\\", \
+RowBox[{\\\"-\\\", \\\"12.75`\\\"}], \\\",\\\", RowBox[{\\\"-\\\", \
+\\\"19.5`\\\"}], \\\",\\\", RowBox[{\\\"\[LeftSkeleton]\\\", \\\"25\\\", \\\"\
+\[RightSkeleton]\\\"}], \\\",\\\", RowBox[{\\\"-\\\", \\\"11.75`\\\"}], \\\",\
+\\\", RowBox[{\\\"-\\\", \\\"7.5`\\\"}], \\\",\\\", RowBox[{\\\"-\\\", \\\"28\
+\\\"}], \\\",\\\", RowBox[{\\\"-\\\", \\\"14.75`\\\"}], \\\",\\\", RowBox[{\\\
+\"-\\\", \\\"22.25`\\\"}], \\\",\\\", RowBox[{\\\"-\\\", \\\"14.5`\\\"}], \
+\\\",\\\", RowBox[{\\\"-\\\", \\\"41.75`\\\"}], \\\",\\\", RowBox[{\\\"-\\\", \
+\\\"27.75`\\\"}], \\\",\\\", RowBox[{\\\"-\\\", \\\"5.25`\\\"}], \\\",\\\", \
+RowBox[{\\\"-\\\", \\\"17.25`\\\"}], \\\",\\\", RowBox[{\\\"-\\\", \
+\\\"11\\\"}], \\\",\\\", RowBox[{\\\"-\\\", \\\"32\\\"}], \\\",\\\", RowBox[{\
+\\\"\[LeftSkeleton]\\\", \\\"179\\\", \\\"\[RightSkeleton]\\\"}]}], \
+\\\"}\\\"}], \\\"\[Equal]\\\", \\\"1\\\"}]\\) is not a vector.\"",2,217,204,
+   17596076421717715481,"Local"},
   "MessageTemplate"]], "Message", "MSG",
- CellChangeTimes->{3.720570210477071*^9}],
+ CellChangeTimes->{{3.720654028518165*^9, 3.72065413803643*^9}, 
+   3.7206542068957148`*^9, 3.720654292896044*^9, {3.720654372740532*^9, 
+   3.720654396395001*^9}}],
 
 Cell[BoxData[
  TemplateBox[{
   "Pick","incomp",
-   "\"Expressions \\!\\(\\*RowBox[{RowBox[{\\\"{\\\", RowBox[{RowBox[{\\\"{\\\
-\", RowBox[{\\\"\\\\\\\"continuous\\\\\\\"\\\", \\\",\\\", \
-\\\"\\\\\\\"continuous\\\\\\\"\\\", \\\",\\\", \\\"\\\\\\\"continuous\\\\\\\"\
-\\\", \\\",\\\", \\\"\\\\\\\"continuous\\\\\\\"\\\", \\\",\\\", \
-\\\"\\\\\\\"continuous\\\\\\\"\\\", \\\",\\\", \\\"\\\\\\\"continuous\\\\\\\"\
-\\\", \\\",\\\", \\\"\\\\\\\"continuous\\\\\\\"\\\", \\\",\\\", RowBox[{\\\"\
-\[LeftSkeleton]\\\", \\\"7\\\", \\\"\[RightSkeleton]\\\"}], \\\",\\\", \\\"\\\
-\\\\\"continuous\\\\\\\"\\\", \\\",\\\", \\\"\\\\\\\"continuous\\\\\\\"\\\", \
-\\\",\\\", \\\"\\\\\\\"continuous\\\\\\\"\\\", \\\",\\\", \
-\\\"\\\\\\\"string\\\\\\\"\\\", \\\",\\\", \
-\\\"\\\\\\\"continuous\\\\\\\"\\\", \\\",\\\", \\\"\\\\\\\"continuous\\\\\\\"\
-\\\", \\\",\\\", \\\"\\\\\\\"continuous\\\\\\\"\\\"}], \\\"}\\\"}], \
-\\\",\\\", RowBox[{\\\"\[LeftSkeleton]\\\", \\\"49\\\", \
-\\\"\[RightSkeleton]\\\"}], \\\",\\\", RowBox[{\\\"\[LeftSkeleton]\\\", \
-\\\"188\\\", \\\"\[RightSkeleton]\\\"}]}], \\\"}\\\"}], \\\"\
-\[LeftDoubleBracket]\\\", RowBox[{\\\"All\\\", \\\",\\\", RowBox[{\\\"\
-\[LeftSkeleton]\\\", \\\"1\\\", \\\"\[RightSkeleton]\\\"}]}], \\\"\
-\[RightDoubleBracket]\\\"}]\\) and \
-\\!\\(\\*RowBox[{\\\"LinearProgramming\\\", \\\"[\\\", RowBox[{\\\"\
-\[LeftSkeleton]\\\", \\\"1\\\", \\\"\[RightSkeleton]\\\"}], \\\"]\\\"}]\\) \
-have incompatible shapes.\"",2,201,66,17595420097635880069,"Local"},
+   "\"Expressions \\!\\(\\*RowBox[{\\\"{\\\", RowBox[{RowBox[{\\\"{\\\", \
+RowBox[{\\\"\\\\\\\"AdaBoost\\\\\\\"\\\", \\\",\\\", \\\"\\\\\\\"Neural \
+Network\\\\\\\"\\\", \\\",\\\", \\\"\\\\\\\"Team\\\\\\\"\\\", \\\",\\\", \\\"\
+\\\\\\\"ou\\\\\\\"\\\", \\\",\\\", \\\"\\\\\\\"odds\\\\\\\"\\\", \\\",\\\", \
+\\\"\\\\\\\"max(s2.salary)\\\\\\\"\\\"}], \\\"}\\\"}], \\\",\\\", \
+RowBox[{\\\"{\\\", RowBox[{\\\"\\\\\\\"Marreese Speights\\\\\\\"\\\", \\\",\\\
+\", \\\"13\\\", \\\",\\\", \\\"\\\\\\\"PF/C\\\\\\\"\\\", \\\",\\\", \
+\\\"\\\\\\\"ORL\\\\\\\"\\\", \\\",\\\", \\\"221\\\", \\\",\\\", \
+\\\"3100\\\"}], \\\"}\\\"}], \\\",\\\", RowBox[{\\\"\[LeftSkeleton]\\\", \
+\\\"47\\\", \\\"\[RightSkeleton]\\\"}], \\\",\\\", RowBox[{\\\"{\\\", \
+RowBox[{\\\"\\\\\\\"C.J. McCollum\\\\\\\"\\\", \\\",\\\", \\\"32\\\", \\\",\\\
+\", \\\"\\\\\\\"PG/SG\\\\\\\"\\\", \\\",\\\", \\\"\\\\\\\"POR\\\\\\\"\\\", \\\
+\",\\\", \\\"202\\\", \\\",\\\", \\\"6900\\\"}], \\\"}\\\"}], \\\",\\\", \
+RowBox[{\\\"\[LeftSkeleton]\\\", \\\"179\\\", \\\"\[RightSkeleton]\\\"}]}], \
+\\\"}\\\"}]\\) and \\!\\(\\*RowBox[{\\\"LinearProgramming\\\", \\\"[\\\", \
+RowBox[{RowBox[{RowBox[{\\\"{\\\", RowBox[{RowBox[{\\\"-\\\", \
+\\\"\\\\\\\"Neural Network\\\\\\\"\\\"}], \\\",\\\", RowBox[{\\\"-\\\", \
+\\\"13\\\"}], \\\",\\\", RowBox[{\\\"-\\\", \\\"18.75`\\\"}], \\\",\\\", \
+RowBox[{\\\"-\\\", \\\"27.25`\\\"}], \\\",\\\", RowBox[{\\\"-\\\", \
+\\\"5\\\"}], \\\",\\\", RowBox[{\\\"-\\\", \\\"8.25`\\\"}], \\\",\\\", \
+RowBox[{\\\"-\\\", \\\"11.5`\\\"}], \\\",\\\", RowBox[{\\\"-\\\", \
+\\\"26.75`\\\"}], \\\",\\\", RowBox[{\\\"-\\\", \\\"28.5`\\\"}], \\\",\\\", \
+RowBox[{\\\"-\\\", \\\"11.25`\\\"}], \\\",\\\", RowBox[{\\\"-\\\", \\\"34.25`\
+\\\"}], \\\",\\\", RowBox[{\\\"\[LeftSkeleton]\\\", \\\"29\\\", \\\"\
+\[RightSkeleton]\\\"}], \\\",\\\", RowBox[{\\\"-\\\", \\\"28\\\"}], \
+\\\",\\\", RowBox[{\\\"-\\\", \\\"14.75`\\\"}], \\\",\\\", RowBox[{\\\"-\\\", \
+\\\"22.25`\\\"}], \\\",\\\", RowBox[{\\\"-\\\", \\\"14.5`\\\"}], \\\",\\\", \
+RowBox[{\\\"-\\\", \\\"41.75`\\\"}], \\\",\\\", RowBox[{\\\"-\\\", \\\"27.75`\
+\\\"}], \\\",\\\", RowBox[{\\\"-\\\", \\\"5.25`\\\"}], \\\",\\\", \
+RowBox[{\\\"-\\\", \\\"17.25`\\\"}], \\\",\\\", RowBox[{\\\"-\\\", \
+\\\"11\\\"}], \\\",\\\", RowBox[{\\\"-\\\", \\\"32\\\"}], \\\",\\\", RowBox[{\
+\\\"\[LeftSkeleton]\\\", \\\"179\\\", \\\"\[RightSkeleton]\\\"}]}], \
+\\\"}\\\"}], \\\"\[Equal]\\\", \\\"1\\\"}], \\\",\\\", RowBox[{\\\"\
+\[LeftSkeleton]\\\", \\\"3\\\", \\\"\[RightSkeleton]\\\"}], \\\",\\\", \
+RowBox[{\\\"Integers\\\", \\\"\[Equal]\\\", \\\"1\\\"}]}], \\\"]\\\"}]\\) \
+have incompatible shapes.\"",2,217,205,17596076421717715481,"Local"},
   "MessageTemplate"]], "Message", "MSG",
- CellChangeTimes->{3.7205702106178513`*^9}],
+ CellChangeTimes->{{3.720654028518165*^9, 3.72065413803643*^9}, 
+   3.7206542068957148`*^9, 3.720654292896044*^9, {3.720654372740532*^9, 
+   3.720654396410446*^9}}],
 
 Cell[BoxData[
  InterpretationBox[
@@ -1486,60 +1220,14 @@ Cell[BoxData[
         TagBox[
          RowBox[{"Pick", "[", 
           RowBox[{
-           RowBox[{
-            RowBox[{"{", 
-             RowBox[{
-              RowBox[{"{", 
-               
-               RowBox[{"\<\"continuous\"\>", ",", "\<\"continuous\"\>", 
-                ",", "\<\"continuous\"\>", ",", "\<\"continuous\"\>", 
-                ",", "\<\"continuous\"\>", ",", 
-                TemplateBox[{"11"},
-                 "OutputSizeLimit`Skeleton",
-                 DisplayFunction->(FrameBox[
-                   
-                   RowBox[{
-                    "\" \[CenterEllipsis]\"", #, "\"\[CenterEllipsis] \""}], 
-                   Background -> GrayLevel[0.75], 
-                   BaseStyle -> {
-                    "Deploy", FontColor -> GrayLevel[1], FontSize -> Smaller, 
-                    ShowStringCharacters -> False}, BaselinePosition -> 
-                   Baseline, ContentPadding -> False, 
-                   FrameMargins -> {{1, 1}, {1, 2}}, FrameStyle -> None, 
-                   RoundingRadius -> 7]& )], ",", "\<\"continuous\"\>", 
-                ",", "\<\"string\"\>", ",", "\<\"continuous\"\>", 
-                ",", "\<\"continuous\"\>", ",", "\<\"continuous\"\>"}], "}"}],
-               ",", 
-              TemplateBox[{"236"},
-               "OutputSizeLimit`Skeleton",
-               DisplayFunction->(FrameBox[
-                 
-                 RowBox[{
-                  "\" \[CenterEllipsis]\"", #, "\"\[CenterEllipsis] \""}], 
-                 Background -> GrayLevel[0.75], 
-                 BaseStyle -> {
-                  "Deploy", FontColor -> GrayLevel[1], FontSize -> Smaller, 
-                   ShowStringCharacters -> False}, BaselinePosition -> 
-                 Baseline, ContentPadding -> False, 
-                 FrameMargins -> {{1, 1}, {1, 2}}, FrameStyle -> None, 
-                 RoundingRadius -> 7]& )], ",", 
-              RowBox[{"{", 
-               TemplateBox[{"1"},
-                "OutputSizeLimit`Skeleton",
-                DisplayFunction->(FrameBox[
-                  
-                  RowBox[{
-                   "\" \[CenterEllipsis]\"", #, "\"\[CenterEllipsis] \""}], 
-                  Background -> GrayLevel[0.75], 
-                  BaseStyle -> {
-                   "Deploy", FontColor -> GrayLevel[1], FontSize -> Smaller, 
-                    ShowStringCharacters -> False}, BaselinePosition -> 
-                  Baseline, ContentPadding -> False, 
-                  FrameMargins -> {{1, 1}, {1, 2}}, FrameStyle -> None, 
-                  RoundingRadius -> 7]& )], "}"}]}], "}"}], 
-            "\[LeftDoubleBracket]", 
-            RowBox[{"All", ",", 
-             TemplateBox[{"1"},
+           RowBox[{"{", 
+            RowBox[{
+             RowBox[{"{", 
+              
+              RowBox[{"\<\"AdaBoost\"\>", ",", "\<\"Neural Network\"\>", 
+               ",", "\<\"Team\"\>", ",", "\<\"ou\"\>", ",", "\<\"odds\"\>", 
+               ",", "\<\"max(s2.salary)\"\>"}], "}"}], ",", 
+             TemplateBox[{"227"},
               "OutputSizeLimit`Skeleton",
               DisplayFunction->(FrameBox[
                 
@@ -1551,17 +1239,25 @@ Cell[BoxData[
                   ShowStringCharacters -> False}, BaselinePosition -> 
                 Baseline, ContentPadding -> False, 
                 FrameMargins -> {{1, 1}, {1, 2}}, FrameStyle -> None, 
-                RoundingRadius -> 7]& )]}], "\[RightDoubleBracket]"}], ",", 
-           TemplateBox[{"1"},
-            "OutputSizeLimit`Skeleton",
-            DisplayFunction->(FrameBox[
-              RowBox[{"\" \[CenterEllipsis]\"", #, "\"\[CenterEllipsis] \""}],
+                RoundingRadius -> 7]& )], ",", 
+             RowBox[{"{", 
+              
+              RowBox[{"\<\"Bogdan Bogdanovic\"\>", ",", "17.5`", 
+               ",", "\<\"SG/SF\"\>", ",", "\<\"SAC\"\>", ",", "203", ",", 
+               "3800"}], "}"}]}], "}"}], ",", 
+           RowBox[{"LinearProgramming", "[", 
+            TemplateBox[{"1"},
+             "OutputSizeLimit`Skeleton",
+             DisplayFunction->(FrameBox[
+               
+               RowBox[{
+                "\" \[CenterEllipsis]\"", #, "\"\[CenterEllipsis] \""}], 
                Background -> GrayLevel[0.75], 
-              BaseStyle -> {
-               "Deploy", FontColor -> GrayLevel[1], FontSize -> Smaller, 
-                ShowStringCharacters -> False}, BaselinePosition -> Baseline, 
-              ContentPadding -> False, FrameMargins -> {{1, 1}, {1, 2}}, 
-              FrameStyle -> None, RoundingRadius -> 7]& )]}], "]"}],
+               BaseStyle -> {
+                "Deploy", FontColor -> GrayLevel[1], FontSize -> Smaller, 
+                 ShowStringCharacters -> False}, BaselinePosition -> Baseline,
+                ContentPadding -> False, FrameMargins -> {{1, 1}, {1, 2}}, 
+               FrameStyle -> None, RoundingRadius -> 7]& )], "]"}]}], "]"}],
          Short[#, 5]& ],
         BaseStyle->{Deployed -> False},
         StripOnInput->False]},
@@ -1615,7 +1311,7 @@ Cell[BoxData[
            Appearance->None,
            
            ButtonFunction:>OutputSizeLimit`ButtonFunction[
-            OutputSizeLimit`Defer, 201, 17595420097635880069, 5/2],
+            OutputSizeLimit`Defer, 217, 17596076421717715481, 5/2],
            Enabled->True,
            Evaluator->Automatic,
            Method->"Queued"], 
@@ -1645,7 +1341,7 @@ Cell[BoxData[
            Appearance->None,
            
            ButtonFunction:>OutputSizeLimit`ButtonFunction[
-            OutputSizeLimit`Defer, 201, 17595420097635880069, 5 2],
+            OutputSizeLimit`Defer, 217, 17596076421717715481, 5 2],
            Enabled->True,
            Evaluator->Automatic,
            Method->"Queued"], 
@@ -1675,7 +1371,7 @@ Cell[BoxData[
            Appearance->None,
            
            ButtonFunction:>OutputSizeLimit`ButtonFunction[
-            OutputSizeLimit`Defer, 201, 17595420097635880069, Infinity],
+            OutputSizeLimit`Defer, 217, 17596076421717715481, Infinity],
            Enabled->True,
            Evaluator->Automatic,
            Method->"Queued"], 
@@ -1742,7 +1438,7 @@ Cell[BoxData[
     StripOnInput->False],
    Deploy,
    DefaultBaseStyle->"Deploy"],
-  Out[201]]], "Output",
+  Out[217]]], "Output",
  CellChangeTimes->{
   3.720017892850765*^9, 3.720022600213407*^9, 3.720118639521853*^9, 
    3.7201238970414877`*^9, 3.7201245921241627`*^9, 3.720125204749469*^9, 
@@ -1751,7 +1447,12 @@ Cell[BoxData[
    3.720218041917704*^9, 3.720218060811124*^9}, {3.720218828190402*^9, 
    3.720218844190666*^9}, {3.720219062917576*^9, 3.720219090768279*^9}, 
    3.720219144841426*^9, 3.720219682640636*^9, 3.720554443622188*^9, 
-   3.7205548831920023`*^9, 3.720565575834732*^9, 3.720570210787269*^9}]
+   3.7205548831920023`*^9, 3.720565575834732*^9, 3.720570210787269*^9, 
+   3.720570614550624*^9, 3.720573834030538*^9, 3.720642154386201*^9, 
+   3.7206422172587233`*^9, {3.720642419908744*^9, 3.720642478445734*^9}, 
+   3.720642606211956*^9, 3.720642640709984*^9, {3.720654028592854*^9, 
+   3.7206541381078568`*^9}, 3.720654206963381*^9, 3.720654292967771*^9, {
+   3.720654372812284*^9, 3.720654396429068*^9}}]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -1765,154 +1466,13 @@ Cell[BoxData[
 
 Cell[BoxData[
  TemplateBox[{
-  "Part","pkspec1",
-   "\"The expression \\!\\(\\*RowBox[{\\\"First\\\", \\\"[\\\", RowBox[{\\\"{\
-\\\", \\\"}\\\"}], \\\"]\\\"}]\\) cannot be used as a part specification.\"",
-   2,202,67,17595420097635880069,"Local"},
+  "LinearProgramming","mreal",
+   "\"Input data contains numbers that cannot be coerced into machine \
+reals.\"",2,218,206,17596076421717715481,"Local"},
   "MessageTemplate"]], "Message", "MSG",
- CellChangeTimes->{3.720570210831997*^9}],
-
-Cell[BoxData[
- TemplateBox[{
-  "Part","pkspec1",
-   "\"The expression \\!\\(\\*RowBox[{\\\"First\\\", \\\"[\\\", RowBox[{\\\"{\
-\\\", \\\"}\\\"}], \\\"]\\\"}]\\) cannot be used as a part specification.\"",
-   2,202,68,17595420097635880069,"Local"},
-  "MessageTemplate"]], "Message", "MSG",
- CellChangeTimes->{3.7205702108489428`*^9}],
-
-Cell[BoxData[
- TemplateBox[{
-  "Part","pkspec1",
-   "\"The expression \\!\\(\\*RowBox[{\\\"First\\\", \\\"[\\\", RowBox[{\\\"{\
-\\\", \\\"}\\\"}], \\\"]\\\"}]\\) cannot be used as a part specification.\"",
-   2,202,69,17595420097635880069,"Local"},
-  "MessageTemplate"]], "Message", "MSG",
- CellChangeTimes->{3.720570210863596*^9}],
-
-Cell[BoxData[
- TemplateBox[{
-  "General","stop",
-   "\"Further output of \\!\\(\\*StyleBox[RowBox[{\\\"Part\\\", \\\"::\\\", \
-\\\"pkspec1\\\"}], \\\"MessageName\\\"]\\) will be suppressed during this \
-calculation.\"",2,202,70,17595420097635880069,"Local"},
-  "MessageTemplate"]], "Message", "MSG",
- CellChangeTimes->{3.720570210877898*^9}],
-
-Cell[BoxData[
- TemplateBox[{
-  "StringContainsQ","strse",
-   "\"String or list of strings expected at position \\!\\(\\*RowBox[{\\\"1\\\
-\"}]\\) in \\!\\(\\*RowBox[{\\\"StringContainsQ\\\", \\\"[\\\", \
-RowBox[{RowBox[{\\\"{\\\", RowBox[{RowBox[{\\\"{\\\", \
-RowBox[{\\\"\\\\\\\"continuous\\\\\\\"\\\", \\\",\\\", \\\"\\\\\\\"continuous\
-\\\\\\\"\\\", \\\",\\\", \\\"\\\\\\\"continuous\\\\\\\"\\\", \\\",\\\", \
-\\\"\\\\\\\"continuous\\\\\\\"\\\", \\\",\\\", \\\"\\\\\\\"continuous\\\\\\\"\
-\\\", \\\",\\\", \\\"\\\\\\\"continuous\\\\\\\"\\\", \\\",\\\", \
-\\\"\\\\\\\"continuous\\\\\\\"\\\", \\\",\\\", \
-RowBox[{\\\"\[LeftSkeleton]\\\", \\\"8\\\", \\\"\[RightSkeleton]\\\"}], \\\",\
-\\\", \\\"\\\\\\\"continuous\\\\\\\"\\\", \\\",\\\", \\\"\\\\\\\"continuous\\\
-\\\\\"\\\", \\\",\\\", \\\"\\\\\\\"string\\\\\\\"\\\", \\\",\\\", \
-\\\"\\\\\\\"continuous\\\\\\\"\\\", \\\",\\\", \\\"\\\\\\\"continuous\\\\\\\"\
-\\\", \\\",\\\", \\\"\\\\\\\"continuous\\\\\\\"\\\"}], \\\"}\\\"}], \
-\\\",\\\", RowBox[{\\\"\[LeftSkeleton]\\\", \\\"49\\\", \
-\\\"\[RightSkeleton]\\\"}], \\\",\\\", RowBox[{\\\"\[LeftSkeleton]\\\", \
-\\\"188\\\", \\\"\[RightSkeleton]\\\"}]}], \\\"}\\\"}], \\\",\\\", \\\"\\\\\\\
-\"SG\\\\\\\"\\\"}], \\\"]\\\"}]\\).\"",2,202,71,17595420097635880069,"Local"},
-  
-  "MessageTemplate"]], "Message", "MSG",
- CellChangeTimes->{3.720570210892181*^9}],
-
-Cell[BoxData[
- TemplateBox[{
-  "StringContainsQ","strse",
-   "\"String or list of strings expected at position \\!\\(\\*RowBox[{\\\"1\\\
-\"}]\\) in \\!\\(\\*RowBox[{\\\"StringContainsQ\\\", \\\"[\\\", \
-RowBox[{\\\"All\\\", \\\",\\\", \\\"\\\\\\\"SG\\\\\\\"\\\"}], \\\"]\\\"}]\\).\
-\"",2,202,72,17595420097635880069,"Local"},
-  "MessageTemplate"]], "Message", "MSG",
- CellChangeTimes->{3.720570210907609*^9}],
-
-Cell[BoxData[
- TemplateBox[{
-  "StringContainsQ","strse",
-   "\"String or list of strings expected at position \\!\\(\\*RowBox[{\\\"1\\\
-\"}]\\) in \\!\\(\\*RowBox[{\\\"StringContainsQ\\\", \\\"[\\\", \
-RowBox[{RowBox[{\\\"First\\\", \\\"[\\\", RowBox[{\\\"{\\\", \\\"}\\\"}], \
-\\\"]\\\"}], \\\",\\\", \\\"\\\\\\\"SG\\\\\\\"\\\"}], \\\"]\\\"}]\\).\"",2,
-   202,73,17595420097635880069,"Local"},
-  "MessageTemplate"]], "Message", "MSG",
- CellChangeTimes->{3.720570210922226*^9}],
-
-Cell[BoxData[
- TemplateBox[{
-  "General","stop",
-   "\"Further output of \\!\\(\\*StyleBox[RowBox[{\\\"StringContainsQ\\\", \\\
-\"::\\\", \\\"strse\\\"}], \\\"MessageName\\\"]\\) will be suppressed during \
-this calculation.\"",2,202,74,17595420097635880069,"Local"},
-  "MessageTemplate"]], "Message", "MSG",
- CellChangeTimes->{3.720570210937167*^9}],
-
-Cell[BoxData[
- TemplateBox[{
-  "StringMatchQ","strse",
-   "\"String or list of strings expected at position \\!\\(\\*RowBox[{\\\"1\\\
-\"}]\\) in \\!\\(\\*RowBox[{\\\"StringMatchQ\\\", \\\"[\\\", RowBox[{RowBox[{\
-\\\"{\\\", RowBox[{RowBox[{\\\"{\\\", \
-RowBox[{\\\"\\\\\\\"continuous\\\\\\\"\\\", \\\",\\\", \\\"\\\\\\\"continuous\
-\\\\\\\"\\\", \\\",\\\", \\\"\\\\\\\"continuous\\\\\\\"\\\", \\\",\\\", \
-\\\"\\\\\\\"continuous\\\\\\\"\\\", \\\",\\\", \\\"\\\\\\\"continuous\\\\\\\"\
-\\\", \\\",\\\", \\\"\\\\\\\"continuous\\\\\\\"\\\", \\\",\\\", RowBox[{\\\"\
-\[LeftSkeleton]\\\", \\\"9\\\", \\\"\[RightSkeleton]\\\"}], \\\",\\\", \\\"\\\
-\\\\\"continuous\\\\\\\"\\\", \\\",\\\", \\\"\\\\\\\"continuous\\\\\\\"\\\", \
-\\\",\\\", \\\"\\\\\\\"string\\\\\\\"\\\", \\\",\\\", \
-\\\"\\\\\\\"continuous\\\\\\\"\\\", \\\",\\\", \\\"\\\\\\\"continuous\\\\\\\"\
-\\\", \\\",\\\", \\\"\\\\\\\"continuous\\\\\\\"\\\"}], \\\"}\\\"}], \
-\\\",\\\", RowBox[{\\\"\[LeftSkeleton]\\\", \\\"49\\\", \
-\\\"\[RightSkeleton]\\\"}], \\\",\\\", RowBox[{\\\"\[LeftSkeleton]\\\", \
-\\\"188\\\", \\\"\[RightSkeleton]\\\"}]}], \\\"}\\\"}], \\\",\\\", \\\"\\\\\\\
-\"C\\\\\\\"\\\"}], \\\"]\\\"}]\\).\"",2,202,75,17595420097635880069,"Local"},
-  "MessageTemplate"]], "Message", "MSG",
- CellChangeTimes->{3.720570210951743*^9}],
-
-Cell[BoxData[
- TemplateBox[{
-  "StringMatchQ","strse",
-   "\"String or list of strings expected at position \\!\\(\\*RowBox[{\\\"1\\\
-\"}]\\) in \\!\\(\\*RowBox[{\\\"StringMatchQ\\\", \\\"[\\\", \
-RowBox[{\\\"All\\\", \\\",\\\", \\\"\\\\\\\"C\\\\\\\"\\\"}], \
-\\\"]\\\"}]\\).\"",2,202,76,17595420097635880069,"Local"},
-  "MessageTemplate"]], "Message", "MSG",
- CellChangeTimes->{3.720570210966732*^9}],
-
-Cell[BoxData[
- TemplateBox[{
-  "StringMatchQ","strse",
-   "\"String or list of strings expected at position \\!\\(\\*RowBox[{\\\"1\\\
-\"}]\\) in \\!\\(\\*RowBox[{\\\"StringMatchQ\\\", \\\"[\\\", RowBox[{RowBox[{\
-\\\"First\\\", \\\"[\\\", RowBox[{\\\"{\\\", \\\"}\\\"}], \\\"]\\\"}], \
-\\\",\\\", \\\"\\\\\\\"C\\\\\\\"\\\"}], \\\"]\\\"}]\\).\"",2,202,77,
-   17595420097635880069,"Local"},
-  "MessageTemplate"]], "Message", "MSG",
- CellChangeTimes->{3.7205702109810963`*^9}],
-
-Cell[BoxData[
- TemplateBox[{
-  "General","stop",
-   "\"Further output of \\!\\(\\*StyleBox[RowBox[{\\\"StringMatchQ\\\", \
-\\\"::\\\", \\\"strse\\\"}], \\\"MessageName\\\"]\\) will be suppressed \
-during this calculation.\"",2,202,78,17595420097635880069,"Local"},
-  "MessageTemplate"]], "Message", "MSG",
- CellChangeTimes->{3.7205702109958344`*^9}],
-
-Cell[BoxData[
- TemplateBox[{
-  "LinearProgramming","lprank2",
-   "\"\\!\\(\\*RowBox[{\\\"{\\\", RowBox[{\\\"\[LeftSkeleton]\\\", \\\"1\\\", \
-\\\"\[RightSkeleton]\\\"}], \\\"}\\\"}]\\) is not a matrix.\"",2,202,79,
-   17595420097635880069,"Local"},
-  "MessageTemplate"]], "Message", "MSG",
- CellChangeTimes->{3.72057021106516*^9}],
+ CellChangeTimes->{{3.72065402863334*^9, 3.720654138151919*^9}, 
+   3.720654207013213*^9, 3.720654293014291*^9, {3.720654372858704*^9, 
+   3.720654396478919*^9}}],
 
 Cell[BoxData[
  TemplateBox[{
@@ -1920,57 +1480,61 @@ Cell[BoxData[
    "\"Warning: \\!\\(\\*RowBox[{\\\"Integers\\\", \\\"\[Equal]\\\", \
 \\\"1\\\"}]\\) is not a valid domain specification and is ignored. Domain \
 specification must be Reals, Integers, or of the form {dom1, dom2,...}, where \
-dom1, doma2, etc. are either Reals or Integers.\"",2,202,80,
-   17595420097635880069,"Local"},
+dom1, doma2, etc. are either Reals or Integers.\"",2,218,207,
+   17596076421717715481,"Local"},
   "MessageTemplate"]], "Message", "MSG",
- CellChangeTimes->{3.720570211079769*^9}],
+ CellChangeTimes->{{3.72065402863334*^9, 3.720654138151919*^9}, 
+   3.720654207013213*^9, 3.720654293014291*^9, {3.720654372858704*^9, 
+   3.720654396497294*^9}}],
 
 Cell[BoxData[
  TemplateBox[{
   "LinearProgramming","lprank1",
    "\"\\!\\(\\*RowBox[{RowBox[{\\\"{\\\", RowBox[{RowBox[{\\\"-\\\", \\\"\\\\\
-\\\"continuous\\\\\\\"\\\"}], \\\",\\\", RowBox[{\\\"-\\\", \
-\\\"\\\\\\\"meta\\\\\\\"\\\"}], \\\",\\\", RowBox[{\\\"-\\\", \
-\\\"28.78446295474366`\\\"}], \\\",\\\", RowBox[{\\\"-\\\", \
-\\\"9.42522580337942`\\\"}], \\\",\\\", RowBox[{\\\"-\\\", \
-\\\"22.922076052067652`\\\"}], \\\",\\\", RowBox[{\\\"-\\\", \
-\\\"8.442100607678764`\\\"}], \\\",\\\", RowBox[{\\\"\[LeftSkeleton]\\\", \
-\\\"40\\\", \\\"\[RightSkeleton]\\\"}], \\\",\\\", RowBox[{\\\"-\\\", \
-\\\"24.993747024596274`\\\"}], \\\",\\\", RowBox[{\\\"-\\\", \
-\\\"36.28252007856748`\\\"}], \\\",\\\", RowBox[{\\\"-\\\", \
-\\\"14.088582992687446`\\\"}], \\\",\\\", RowBox[{\\\"-\\\", \
-\\\"40.68183489600945`\\\"}], \\\",\\\", RowBox[{\\\"\[LeftSkeleton]\\\", \
-\\\"188\\\", \\\"\[RightSkeleton]\\\"}]}], \\\"}\\\"}], \\\"\[Equal]\\\", \
-\\\"1\\\"}]\\) is not a vector.\"",2,202,81,17595420097635880069,"Local"},
+\\\"Random Forest\\\\\\\"\\\"}], \\\",\\\", RowBox[{\\\"-\\\", \
+\\\"17.07816359`\\\"}], \\\",\\\", RowBox[{\\\"-\\\", \\\"22.02770188`\\\"}], \
+\\\",\\\", RowBox[{\\\"-\\\", \\\"31.05302407`\\\"}], \\\",\\\", \
+RowBox[{\\\"-\\\", \\\"8.010647138`\\\"}], \\\",\\\", RowBox[{\\\"-\\\", \
+\\\"11.190164`\\\"}], \\\",\\\", RowBox[{\\\"-\\\", \\\"17.61180757`\\\"}], \
+\\\",\\\", RowBox[{\\\"\[LeftSkeleton]\\\", \\\"37\\\", \
+\\\"\[RightSkeleton]\\\"}], \\\",\\\", RowBox[{\\\"-\\\", \
+\\\"32.42827887`\\\"}], \\\",\\\", RowBox[{\\\"-\\\", \\\"26.18545982`\\\"}], \
+\\\",\\\", RowBox[{\\\"-\\\", \\\"9.024499364`\\\"}], \\\",\\\", \
+RowBox[{\\\"-\\\", \\\"14.75030815`\\\"}], \\\",\\\", RowBox[{\\\"-\\\", \
+\\\"10.99797198`\\\"}], \\\",\\\", RowBox[{\\\"-\\\", \\\"35.38768839`\\\"}], \
+\\\",\\\", RowBox[{\\\"\[LeftSkeleton]\\\", \\\"179\\\", \\\"\[RightSkeleton]\
+\\\"}]}], \\\"}\\\"}], \\\"\[Equal]\\\", \\\"1\\\"}]\\) is not a vector.\"",2,
+   218,208,17596076421717715481,"Local"},
   "MessageTemplate"]], "Message", "MSG",
- CellChangeTimes->{3.720570211094364*^9}],
+ CellChangeTimes->{{3.72065402863334*^9, 3.720654138151919*^9}, 
+   3.720654207013213*^9, 3.720654293014291*^9, {3.720654372858704*^9, 
+   3.7206543965123987`*^9}}],
 
 Cell[BoxData[
  TemplateBox[{
   "Pick","incomp",
-   "\"Expressions \\!\\(\\*RowBox[{RowBox[{\\\"{\\\", RowBox[{RowBox[{\\\"{\\\
-\", RowBox[{\\\"\\\\\\\"continuous\\\\\\\"\\\", \\\",\\\", \
-\\\"\\\\\\\"continuous\\\\\\\"\\\", \\\",\\\", \\\"\\\\\\\"continuous\\\\\\\"\
-\\\", \\\",\\\", \\\"\\\\\\\"continuous\\\\\\\"\\\", \\\",\\\", \
-\\\"\\\\\\\"continuous\\\\\\\"\\\", \\\",\\\", \\\"\\\\\\\"continuous\\\\\\\"\
-\\\", \\\",\\\", \\\"\\\\\\\"continuous\\\\\\\"\\\", \\\",\\\", RowBox[{\\\"\
-\[LeftSkeleton]\\\", \\\"7\\\", \\\"\[RightSkeleton]\\\"}], \\\",\\\", \\\"\\\
-\\\\\"continuous\\\\\\\"\\\", \\\",\\\", \\\"\\\\\\\"continuous\\\\\\\"\\\", \
-\\\",\\\", \\\"\\\\\\\"continuous\\\\\\\"\\\", \\\",\\\", \
-\\\"\\\\\\\"string\\\\\\\"\\\", \\\",\\\", \
-\\\"\\\\\\\"continuous\\\\\\\"\\\", \\\",\\\", \\\"\\\\\\\"continuous\\\\\\\"\
-\\\", \\\",\\\", \\\"\\\\\\\"continuous\\\\\\\"\\\"}], \\\"}\\\"}], \
-\\\",\\\", RowBox[{\\\"\[LeftSkeleton]\\\", \\\"49\\\", \
-\\\"\[RightSkeleton]\\\"}], \\\",\\\", RowBox[{\\\"\[LeftSkeleton]\\\", \
-\\\"188\\\", \\\"\[RightSkeleton]\\\"}]}], \\\"}\\\"}], \\\"\
-\[LeftDoubleBracket]\\\", RowBox[{\\\"All\\\", \\\",\\\", RowBox[{\\\"\
-\[LeftSkeleton]\\\", \\\"1\\\", \\\"\[RightSkeleton]\\\"}]}], \\\"\
-\[RightDoubleBracket]\\\"}]\\) and \
+   "\"Expressions \\!\\(\\*RowBox[{\\\"{\\\", RowBox[{RowBox[{\\\"{\\\", \
+RowBox[{\\\"\\\\\\\"AdaBoost\\\\\\\"\\\", \\\",\\\", \\\"\\\\\\\"Random \
+Forest\\\\\\\"\\\", \\\",\\\", \\\"\\\\\\\"Team\\\\\\\"\\\", \\\",\\\", \
+\\\"\\\\\\\"ou\\\\\\\"\\\", \\\",\\\", \\\"\\\\\\\"odds\\\\\\\"\\\", \
+\\\",\\\", \\\"\\\\\\\"max(s2.salary)\\\\\\\"\\\"}], \\\"}\\\"}], \\\",\\\", \
+RowBox[{\\\"{\\\", RowBox[{\\\"\\\\\\\"Marreese Speights\\\\\\\"\\\", \\\",\\\
+\", \\\"17.07816359`\\\", \\\",\\\", \\\"\\\\\\\"PF/C\\\\\\\"\\\", \\\",\\\", \
+\\\"\\\\\\\"ORL\\\\\\\"\\\", \\\",\\\", \\\"221\\\", \\\",\\\", \
+\\\"3100\\\"}], \\\"}\\\"}], \\\",\\\", RowBox[{\\\"\[LeftSkeleton]\\\", \
+\\\"47\\\", \\\"\[RightSkeleton]\\\"}], \\\",\\\", RowBox[{\\\"{\\\", \
+RowBox[{\\\"\\\\\\\"C.J. McCollum\\\\\\\"\\\", \\\",\\\", \
+\\\"35.38768839`\\\", \\\",\\\", \\\"\\\\\\\"PG/SG\\\\\\\"\\\", \\\",\\\", \\\
+\"\\\\\\\"POR\\\\\\\"\\\", \\\",\\\", \\\"202\\\", \\\",\\\", \\\"6900\\\"}], \
+\\\"}\\\"}], \\\",\\\", RowBox[{\\\"\[LeftSkeleton]\\\", \\\"179\\\", \\\"\
+\[RightSkeleton]\\\"}]}], \\\"}\\\"}]\\) and \
 \\!\\(\\*RowBox[{\\\"LinearProgramming\\\", \\\"[\\\", RowBox[{\\\"\
 \[LeftSkeleton]\\\", \\\"1\\\", \\\"\[RightSkeleton]\\\"}], \\\"]\\\"}]\\) \
-have incompatible shapes.\"",2,202,82,17595420097635880069,"Local"},
+have incompatible shapes.\"",2,218,209,17596076421717715481,"Local"},
   "MessageTemplate"]], "Message", "MSG",
- CellChangeTimes->{3.720570211228731*^9}],
+ CellChangeTimes->{{3.72065402863334*^9, 3.720654138151919*^9}, 
+   3.720654207013213*^9, 3.720654293014291*^9, {3.720654372858704*^9, 
+   3.7206543965276747`*^9}}],
 
 Cell[BoxData[
  InterpretationBox[
@@ -1981,60 +1545,14 @@ Cell[BoxData[
         TagBox[
          RowBox[{"Pick", "[", 
           RowBox[{
-           RowBox[{
-            RowBox[{"{", 
-             RowBox[{
-              RowBox[{"{", 
-               
-               RowBox[{"\<\"continuous\"\>", ",", "\<\"continuous\"\>", 
-                ",", "\<\"continuous\"\>", ",", "\<\"continuous\"\>", 
-                ",", "\<\"continuous\"\>", ",", 
-                TemplateBox[{"11"},
-                 "OutputSizeLimit`Skeleton",
-                 DisplayFunction->(FrameBox[
-                   
-                   RowBox[{
-                    "\" \[CenterEllipsis]\"", #, "\"\[CenterEllipsis] \""}], 
-                   Background -> GrayLevel[0.75], 
-                   BaseStyle -> {
-                    "Deploy", FontColor -> GrayLevel[1], FontSize -> Smaller, 
-                    ShowStringCharacters -> False}, BaselinePosition -> 
-                   Baseline, ContentPadding -> False, 
-                   FrameMargins -> {{1, 1}, {1, 2}}, FrameStyle -> None, 
-                   RoundingRadius -> 7]& )], ",", "\<\"continuous\"\>", 
-                ",", "\<\"string\"\>", ",", "\<\"continuous\"\>", 
-                ",", "\<\"continuous\"\>", ",", "\<\"continuous\"\>"}], "}"}],
-               ",", 
-              TemplateBox[{"236"},
-               "OutputSizeLimit`Skeleton",
-               DisplayFunction->(FrameBox[
-                 
-                 RowBox[{
-                  "\" \[CenterEllipsis]\"", #, "\"\[CenterEllipsis] \""}], 
-                 Background -> GrayLevel[0.75], 
-                 BaseStyle -> {
-                  "Deploy", FontColor -> GrayLevel[1], FontSize -> Smaller, 
-                   ShowStringCharacters -> False}, BaselinePosition -> 
-                 Baseline, ContentPadding -> False, 
-                 FrameMargins -> {{1, 1}, {1, 2}}, FrameStyle -> None, 
-                 RoundingRadius -> 7]& )], ",", 
-              RowBox[{"{", 
-               TemplateBox[{"1"},
-                "OutputSizeLimit`Skeleton",
-                DisplayFunction->(FrameBox[
-                  
-                  RowBox[{
-                   "\" \[CenterEllipsis]\"", #, "\"\[CenterEllipsis] \""}], 
-                  Background -> GrayLevel[0.75], 
-                  BaseStyle -> {
-                   "Deploy", FontColor -> GrayLevel[1], FontSize -> Smaller, 
-                    ShowStringCharacters -> False}, BaselinePosition -> 
-                  Baseline, ContentPadding -> False, 
-                  FrameMargins -> {{1, 1}, {1, 2}}, FrameStyle -> None, 
-                  RoundingRadius -> 7]& )], "}"}]}], "}"}], 
-            "\[LeftDoubleBracket]", 
-            RowBox[{"All", ",", 
-             TemplateBox[{"1"},
+           RowBox[{"{", 
+            RowBox[{
+             RowBox[{"{", 
+              
+              RowBox[{"\<\"AdaBoost\"\>", ",", "\<\"Random Forest\"\>", 
+               ",", "\<\"Team\"\>", ",", "\<\"ou\"\>", ",", "\<\"odds\"\>", 
+               ",", "\<\"max(s2.salary)\"\>"}], "}"}], ",", 
+             TemplateBox[{"227"},
               "OutputSizeLimit`Skeleton",
               DisplayFunction->(FrameBox[
                 
@@ -2046,17 +1564,25 @@ Cell[BoxData[
                   ShowStringCharacters -> False}, BaselinePosition -> 
                 Baseline, ContentPadding -> False, 
                 FrameMargins -> {{1, 1}, {1, 2}}, FrameStyle -> None, 
-                RoundingRadius -> 7]& )]}], "\[RightDoubleBracket]"}], ",", 
-           TemplateBox[{"1"},
-            "OutputSizeLimit`Skeleton",
-            DisplayFunction->(FrameBox[
-              RowBox[{"\" \[CenterEllipsis]\"", #, "\"\[CenterEllipsis] \""}],
+                RoundingRadius -> 7]& )], ",", 
+             RowBox[{"{", 
+              
+              RowBox[{"\<\"Bogdan Bogdanovic\"\>", ",", "16.23982117`", 
+               ",", "\<\"SG/SF\"\>", ",", "\<\"SAC\"\>", ",", "203", ",", 
+               "3800"}], "}"}]}], "}"}], ",", 
+           RowBox[{"LinearProgramming", "[", 
+            TemplateBox[{"1"},
+             "OutputSizeLimit`Skeleton",
+             DisplayFunction->(FrameBox[
+               
+               RowBox[{
+                "\" \[CenterEllipsis]\"", #, "\"\[CenterEllipsis] \""}], 
                Background -> GrayLevel[0.75], 
-              BaseStyle -> {
-               "Deploy", FontColor -> GrayLevel[1], FontSize -> Smaller, 
-                ShowStringCharacters -> False}, BaselinePosition -> Baseline, 
-              ContentPadding -> False, FrameMargins -> {{1, 1}, {1, 2}}, 
-              FrameStyle -> None, RoundingRadius -> 7]& )]}], "]"}],
+               BaseStyle -> {
+                "Deploy", FontColor -> GrayLevel[1], FontSize -> Smaller, 
+                 ShowStringCharacters -> False}, BaselinePosition -> Baseline,
+                ContentPadding -> False, FrameMargins -> {{1, 1}, {1, 2}}, 
+               FrameStyle -> None, RoundingRadius -> 7]& )], "]"}]}], "]"}],
          Short[#, 5]& ],
         BaseStyle->{Deployed -> False},
         StripOnInput->False]},
@@ -2110,7 +1636,7 @@ Cell[BoxData[
            Appearance->None,
            
            ButtonFunction:>OutputSizeLimit`ButtonFunction[
-            OutputSizeLimit`Defer, 202, 17595420097635880069, 5/2],
+            OutputSizeLimit`Defer, 218, 17596076421717715481, 5/2],
            Enabled->True,
            Evaluator->Automatic,
            Method->"Queued"], 
@@ -2140,7 +1666,7 @@ Cell[BoxData[
            Appearance->None,
            
            ButtonFunction:>OutputSizeLimit`ButtonFunction[
-            OutputSizeLimit`Defer, 202, 17595420097635880069, 5 2],
+            OutputSizeLimit`Defer, 218, 17596076421717715481, 5 2],
            Enabled->True,
            Evaluator->Automatic,
            Method->"Queued"], 
@@ -2170,7 +1696,7 @@ Cell[BoxData[
            Appearance->None,
            
            ButtonFunction:>OutputSizeLimit`ButtonFunction[
-            OutputSizeLimit`Defer, 202, 17595420097635880069, Infinity],
+            OutputSizeLimit`Defer, 218, 17596076421717715481, Infinity],
            Enabled->True,
            Evaluator->Automatic,
            Method->"Queued"], 
@@ -2237,7 +1763,7 @@ Cell[BoxData[
     StripOnInput->False],
    Deploy,
    DefaultBaseStyle->"Deploy"],
-  Out[202]]], "Output",
+  Out[218]]], "Output",
  CellChangeTimes->{
   3.720018079875511*^9, 3.720018920512621*^9, 3.720022619363309*^9, 
    3.720037210113595*^9, 3.7201186425917377`*^9, 3.720121105403234*^9, 
@@ -2248,7 +1774,11 @@ Cell[BoxData[
    3.720218844371922*^9}, {3.720219063099307*^9, 3.720219090942381*^9}, 
    3.7202191450206757`*^9, 3.720219682809875*^9, 3.720554445511566*^9, 
    3.720554883317451*^9, 3.7205556149015303`*^9, 3.7205655761769733`*^9, 
-   3.720570211403411*^9}]
+   3.720570211403411*^9, 3.7205706145966883`*^9, 3.7205738340795937`*^9, 
+   3.720642154754593*^9, 3.720642217328939*^9, {3.720642419972457*^9, 
+   3.720642478503929*^9}, 3.720642606280355*^9, 3.720642640779682*^9, {
+   3.7206540287054777`*^9, 3.720654138218362*^9}, 3.720654207081004*^9, 
+   3.720654293081909*^9, {3.72065437292689*^9, 3.72065439654606*^9}}]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -2295,7 +1825,12 @@ Cell[BoxData[
    3.720211236133946*^9, {3.720218828449605*^9, 3.7202188444095697`*^9}, 
    3.720218928312099*^9, {3.720219063153714*^9, 3.72021909099472*^9}, 
    3.720219145079905*^9, 3.720219682844716*^9, 3.720554883363221*^9, 
-   3.720565576219125*^9, 3.720570211459402*^9}]
+   3.720565576219125*^9, 3.720570211459402*^9, 3.720570614634636*^9, 
+   3.720573834131712*^9, 3.7206421548538437`*^9, 3.72064221736304*^9, {
+   3.720642420002769*^9, 3.720642478564196*^9}, 3.720642606336289*^9, 
+   3.720642640814986*^9, {3.720654028752878*^9, 3.7206541382700357`*^9}, 
+   3.7206542071300097`*^9, 3.720654293131764*^9, {3.720654372975438*^9, 
+   3.720654396597355*^9}}]
 }, Open  ]],
 
 Cell[BoxData[
@@ -2340,85 +1875,114 @@ Cell[BoxData[
  TemplateBox[{
   "Pick","incomp",
    "\"Expressions \\!\\(\\*RowBox[{\\\"{\\\", \
-RowBox[{\\\"\[LeftSkeleton]\\\", \\\"1\\\", \\\"\[RightSkeleton]\\\"}], \\\"}\
-\\\"}]\\) and \\!\\(\\*RowBox[{RowBox[{\\\"{\\\", RowBox[{RowBox[{\\\"-\\\", \
-\\\"\\\\\\\"continuous\\\\\\\"\\\"}], \\\",\\\", RowBox[{\\\"-\\\", \
-\\\"\\\\\\\"meta\\\\\\\"\\\"}], \\\",\\\", RowBox[{\\\"-\\\", \
-\\\"28.78446295474366`\\\"}], \\\",\\\", RowBox[{\\\"-\\\", \
-\\\"9.42522580337942`\\\"}], \\\",\\\", RowBox[{\\\"-\\\", \
-\\\"22.922076052067652`\\\"}], \\\",\\\", RowBox[{\\\"-\\\", \
-\\\"8.442100607678764`\\\"}], \\\",\\\", RowBox[{\\\"\[LeftSkeleton]\\\", \
-\\\"40\\\", \\\"\[RightSkeleton]\\\"}], \\\",\\\", RowBox[{\\\"-\\\", \
-\\\"24.993747024596274`\\\"}], \\\",\\\", RowBox[{\\\"-\\\", \
-\\\"36.28252007856748`\\\"}], \\\",\\\", RowBox[{\\\"-\\\", \
-\\\"14.088582992687446`\\\"}], \\\",\\\", RowBox[{\\\"-\\\", \
-\\\"40.68183489600945`\\\"}], \\\",\\\", RowBox[{\\\"\[LeftSkeleton]\\\", \
-\\\"188\\\", \\\"\[RightSkeleton]\\\"}]}], \\\"}\\\"}], \\\"\[Equal]\\\", \
-\\\"1\\\"}]\\) have incompatible shapes.\"",2,205,83,17595420097635880069,
-   "Local"},
+RowBox[{\\\"\\\\\\\"AdaBoost\\\\\\\"\\\", \\\",\\\", \\\"\\\\\\\"Random \
+Forest\\\\\\\"\\\", \\\",\\\", \\\"\\\\\\\"Team\\\\\\\"\\\", \\\",\\\", \
+\\\"\\\\\\\"ou\\\\\\\"\\\", \\\",\\\", \\\"\\\\\\\"odds\\\\\\\"\\\", \
+\\\",\\\", \\\"\\\\\\\"max(s2.salary)\\\\\\\"\\\"}], \\\"}\\\"}]\\) and \
+\\!\\(\\*RowBox[{RowBox[{\\\"{\\\", RowBox[{RowBox[{\\\"-\\\", \
+\\\"\\\\\\\"Random Forest\\\\\\\"\\\"}], \\\",\\\", RowBox[{\\\"-\\\", \
+\\\"17.07816359`\\\"}], \\\",\\\", RowBox[{\\\"-\\\", \\\"22.02770188`\\\"}], \
+\\\",\\\", RowBox[{\\\"-\\\", \\\"31.05302407`\\\"}], \\\",\\\", \
+RowBox[{\\\"-\\\", \\\"8.010647138`\\\"}], \\\",\\\", RowBox[{\\\"-\\\", \
+\\\"11.190164`\\\"}], \\\",\\\", RowBox[{\\\"-\\\", \\\"17.61180757`\\\"}], \
+\\\",\\\", RowBox[{\\\"\[LeftSkeleton]\\\", \\\"37\\\", \
+\\\"\[RightSkeleton]\\\"}], \\\",\\\", RowBox[{\\\"-\\\", \
+\\\"32.42827887`\\\"}], \\\",\\\", RowBox[{\\\"-\\\", \\\"26.18545982`\\\"}], \
+\\\",\\\", RowBox[{\\\"-\\\", \\\"9.024499364`\\\"}], \\\",\\\", \
+RowBox[{\\\"-\\\", \\\"14.75030815`\\\"}], \\\",\\\", RowBox[{\\\"-\\\", \
+\\\"10.99797198`\\\"}], \\\",\\\", RowBox[{\\\"-\\\", \\\"35.38768839`\\\"}], \
+\\\",\\\", RowBox[{\\\"\[LeftSkeleton]\\\", \\\"179\\\", \\\"\[RightSkeleton]\
+\\\"}]}], \\\"}\\\"}], \\\"\[Equal]\\\", \\\"1\\\"}]\\) have incompatible \
+shapes.\"",2,221,210,17596076421717715481,"Local"},
   "MessageTemplate"]], "Message", "MSG",
- CellChangeTimes->{3.720570211515493*^9}],
+ CellChangeTimes->{{3.720654028817052*^9, 3.72065413835634*^9}, 
+   3.720654207198744*^9, 3.720654293200831*^9, {3.720654373094639*^9, 
+   3.720654396663226*^9}}],
+
+Cell[BoxData[
+ TemplateBox[{
+  "Pick","incomp",
+   "\"Expressions \\!\\(\\*RowBox[{\\\"{\\\", RowBox[{RowBox[{\\\"{\\\", \
+RowBox[{\\\"\\\\\\\"max(s2.salary)\\\\\\\"\\\", \\\",\\\", \
+\\\"\\\\\\\"avg(s2.salary)\\\\\\\"\\\", \\\",\\\", \\\"\\\\\\\"min(s2.salary)\
+\\\\\\\"\\\", \\\",\\\", \\\"\\\\\\\"stddev(s2.salary)\\\\\\\"\\\", \
+\\\",\\\", \\\"\\\\\\\"avg(t2.DKFPS)\\\\\\\"\\\", \\\",\\\", \
+\\\"\\\\\\\"std(t2.DKFPS)\\\\\\\"\\\", \\\",\\\", RowBox[{\\\"\[LeftSkeleton]\
+\\\", \\\"9\\\", \\\"\[RightSkeleton]\\\"}], \\\",\\\", \
+\\\"\\\\\\\"Target\\\\\\\"\\\", \\\",\\\", \\\"\\\\\\\"game_id\\\\\\\"\\\", \
+\\\",\\\", \\\"\\\\\\\"Name\\\\\\\"\\\", \\\",\\\", \
+\\\"\\\\\\\"AdaBoost\\\\\\\"\\\", \\\",\\\", \\\"\\\\\\\"Neural Network\\\\\\\
+\"\\\", \\\",\\\", \\\"\\\\\\\"Random Forest\\\\\\\"\\\"}], \\\"}\\\"}], \
+\\\",\\\", RowBox[{\\\"\[LeftSkeleton]\\\", \\\"49\\\", \
+\\\"\[RightSkeleton]\\\"}], \\\",\\\", RowBox[{\\\"\[LeftSkeleton]\\\", \
+\\\"179\\\", \\\"\[RightSkeleton]\\\"}]}], \\\"}\\\"}]\\) and \
+\\!\\(\\*RowBox[{RowBox[{\\\"-\\\", RowBox[{RowBox[{\\\"{\\\", \
+RowBox[{RowBox[{\\\"{\\\", RowBox[{\\\"\\\\\\\"max(s2.salary)\\\\\\\"\\\", \\\
+\",\\\", \\\"\\\\\\\"avg(s2.salary)\\\\\\\"\\\", \\\",\\\", \
+\\\"\\\\\\\"min(s2.salary)\\\\\\\"\\\", \\\",\\\", \
+\\\"\\\\\\\"stddev(s2.salary)\\\\\\\"\\\", \\\",\\\", \
+\\\"\\\\\\\"avg(t2.DKFPS)\\\\\\\"\\\", \\\",\\\", \\\"\\\\\\\"std(t2.DKFPS)\\\
+\\\\\"\\\", \\\",\\\", RowBox[{\\\"\[LeftSkeleton]\\\", \\\"9\\\", \\\"\
+\[RightSkeleton]\\\"}], \\\",\\\", \\\"\\\\\\\"Target\\\\\\\"\\\", \\\",\\\", \
+\\\"\\\\\\\"game_id\\\\\\\"\\\", \\\",\\\", \\\"\\\\\\\"Name\\\\\\\"\\\", \
+\\\",\\\", \\\"\\\\\\\"AdaBoost\\\\\\\"\\\", \\\",\\\", \\\"\\\\\\\"Neural \
+Network\\\\\\\"\\\", \\\",\\\", \\\"\\\\\\\"Random Forest\\\\\\\"\\\"}], \
+\\\"}\\\"}], \\\",\\\", RowBox[{\\\"\[LeftSkeleton]\\\", \\\"49\\\", \\\"\
+\[RightSkeleton]\\\"}], \\\",\\\", RowBox[{\\\"\[LeftSkeleton]\\\", \\\"179\\\
+\", \\\"\[RightSkeleton]\\\"}]}], \\\"}\\\"}], \\\"\[LeftDoubleBracket]\\\", \
+RowBox[{\\\"\[LeftSkeleton]\\\", \\\"1\\\", \\\"\[RightSkeleton]\\\"}], \\\"\
+\[RightDoubleBracket]\\\"}]}], \\\"\[Equal]\\\", \\\"1\\\"}]\\) have \
+incompatible shapes.\"",2,221,211,17596076421717715481,"Local"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{{3.720654028817052*^9, 3.72065413835634*^9}, 
+   3.720654207198744*^9, 3.720654293200831*^9, {3.720654373094639*^9, 
+   3.7206543966827383`*^9}}],
 
 Cell[BoxData[
  TemplateBox[{
   "Pick","incomp",
    "\"Expressions \\!\\(\\*RowBox[{\\\"{\\\", \
-RowBox[{\\\"\[LeftSkeleton]\\\", \\\"1\\\", \\\"\[RightSkeleton]\\\"}], \\\"}\
-\\\"}]\\) and \\!\\(\\*RowBox[{RowBox[{\\\"{\\\", RowBox[{RowBox[{\\\"-\\\", \
-\\\"\\\\\\\"continuous\\\\\\\"\\\"}], \\\",\\\", RowBox[{\\\"-\\\", \
-\\\"\\\\\\\"meta\\\\\\\"\\\"}], \\\",\\\", RowBox[{\\\"-\\\", \
-\\\"25.18819444444445`\\\"}], \\\",\\\", RowBox[{\\\"-\\\", \
-\\\"12.022261904761905`\\\"}], \\\",\\\", RowBox[{\\\"-\\\", \
-\\\"20.676428571428573`\\\"}], \\\",\\\", RowBox[{\\\"\[LeftSkeleton]\\\", \\\
-\"41\\\", \\\"\[RightSkeleton]\\\"}], \\\",\\\", RowBox[{\\\"-\\\", \
-\\\"25.491190476190475`\\\"}], \\\",\\\", RowBox[{\\\"-\\\", \
-\\\"30.659761904761904`\\\"}], \\\",\\\", RowBox[{\\\"-\\\", \
-\\\"14.046369047619049`\\\"}], \\\",\\\", RowBox[{\\\"-\\\", \
-\\\"42.95744047619047`\\\"}], \\\",\\\", RowBox[{\\\"\[LeftSkeleton]\\\", \
-\\\"188\\\", \\\"\[RightSkeleton]\\\"}]}], \\\"}\\\"}], \\\"\[Equal]\\\", \
-\\\"1\\\"}]\\) have incompatible shapes.\"",2,205,84,17595420097635880069,
+RowBox[{\\\"\\\\\\\"AdaBoost\\\\\\\"\\\", \\\",\\\", \\\"\\\\\\\"Neural \
+Network\\\\\\\"\\\", \\\",\\\", \\\"\\\\\\\"Team\\\\\\\"\\\", \\\",\\\", \\\"\
+\\\\\\\"ou\\\\\\\"\\\", \\\",\\\", \\\"\\\\\\\"odds\\\\\\\"\\\", \\\",\\\", \
+\\\"\\\\\\\"max(s2.salary)\\\\\\\"\\\"}], \\\"}\\\"}]\\) and \
+\\!\\(\\*RowBox[{RowBox[{\\\"{\\\", RowBox[{RowBox[{\\\"-\\\", \
+\\\"\\\\\\\"Neural Network\\\\\\\"\\\"}], \\\",\\\", RowBox[{\\\"-\\\", \
+\\\"13\\\"}], \\\",\\\", RowBox[{\\\"-\\\", \\\"18.75`\\\"}], \\\",\\\", \
+RowBox[{\\\"-\\\", \\\"27.25`\\\"}], \\\",\\\", RowBox[{\\\"-\\\", \
+\\\"5\\\"}], \\\",\\\", RowBox[{\\\"-\\\", \\\"8.25`\\\"}], \\\",\\\", \
+RowBox[{\\\"-\\\", \\\"11.5`\\\"}], \\\",\\\", RowBox[{\\\"-\\\", \
+\\\"26.75`\\\"}], \\\",\\\", RowBox[{\\\"-\\\", \\\"28.5`\\\"}], \\\",\\\", \
+RowBox[{\\\"-\\\", \\\"11.25`\\\"}], \\\",\\\", RowBox[{\\\"-\\\", \\\"34.25`\
+\\\"}], \\\",\\\", RowBox[{\\\"-\\\", \\\"12.75`\\\"}], \\\",\\\", RowBox[{\\\
+\"-\\\", \\\"19.5`\\\"}], \\\",\\\", RowBox[{\\\"\[LeftSkeleton]\\\", \
+\\\"25\\\", \\\"\[RightSkeleton]\\\"}], \\\",\\\", RowBox[{\\\"-\\\", \
+\\\"11.75`\\\"}], \\\",\\\", RowBox[{\\\"-\\\", \\\"7.5`\\\"}], \\\",\\\", \
+RowBox[{\\\"-\\\", \\\"28\\\"}], \\\",\\\", RowBox[{\\\"-\\\", \
+\\\"14.75`\\\"}], \\\",\\\", RowBox[{\\\"-\\\", \\\"22.25`\\\"}], \\\",\\\", \
+RowBox[{\\\"-\\\", \\\"14.5`\\\"}], \\\",\\\", RowBox[{\\\"-\\\", \
+\\\"41.75`\\\"}], \\\",\\\", RowBox[{\\\"-\\\", \\\"27.75`\\\"}], \\\",\\\", \
+RowBox[{\\\"-\\\", \\\"5.25`\\\"}], \\\",\\\", RowBox[{\\\"-\\\", \
+\\\"17.25`\\\"}], \\\",\\\", RowBox[{\\\"-\\\", \\\"11\\\"}], \\\",\\\", \
+RowBox[{\\\"-\\\", \\\"32\\\"}], \\\",\\\", RowBox[{\\\"\[LeftSkeleton]\\\", \
+\\\"179\\\", \\\"\[RightSkeleton]\\\"}]}], \\\"}\\\"}], \\\"\[Equal]\\\", \
+\\\"1\\\"}]\\) have incompatible shapes.\"",2,221,212,17596076421717715481,
    "Local"},
   "MessageTemplate"]], "Message", "MSG",
- CellChangeTimes->{3.720570211533784*^9}],
-
-Cell[BoxData[
- TemplateBox[{
-  "Pick","incomp",
-   "\"Expressions \\!\\(\\*RowBox[{\\\"{\\\", \
-RowBox[{\\\"\[LeftSkeleton]\\\", \\\"1\\\", \\\"\[RightSkeleton]\\\"}], \\\"}\
-\\\"}]\\) and \\!\\(\\*RowBox[{RowBox[{\\\"{\\\", RowBox[{RowBox[{\\\"-\\\", \
-\\\"\\\\\\\"continuous\\\\\\\"\\\"}], \\\",\\\", RowBox[{\\\"-\\\", \
-\\\"\\\\\\\"meta\\\\\\\"\\\"}], \\\",\\\", RowBox[{\\\"-\\\", \
-\\\"31.75`\\\"}], \\\",\\\", RowBox[{\\\"-\\\", \\\"10.`\\\"}], \\\",\\\", \
-RowBox[{\\\"-\\\", \\\"18.5`\\\"}], \\\",\\\", RowBox[{\\\"-\\\", \
-\\\"6.`\\\"}], \\\",\\\", RowBox[{\\\"-\\\", \\\"10.25`\\\"}], \\\",\\\", \
-RowBox[{\\\"-\\\", \\\"6.`\\\"}], \\\",\\\", RowBox[{\\\"-\\\", \
-\\\"8.5`\\\"}], \\\",\\\", RowBox[{\\\"-\\\", \\\"6.75`\\\"}], \\\",\\\", \
-RowBox[{\\\"-\\\", \\\"29.75`\\\"}], \\\",\\\", RowBox[{\\\"-\\\", \
-\\\"11.5`\\\"}], \\\",\\\", RowBox[{\\\"-\\\", \\\"14.25`\\\"}], \\\",\\\", \
-RowBox[{\\\"\[LeftSkeleton]\\\", \\\"25\\\", \\\"\[RightSkeleton]\\\"}], \
-\\\",\\\", RowBox[{\\\"-\\\", \\\"12.25`\\\"}], \\\",\\\", RowBox[{\\\"-\\\", \
-\\\"13.5`\\\"}], \\\",\\\", RowBox[{\\\"-\\\", \\\"26.75`\\\"}], \\\",\\\", \
-RowBox[{\\\"-\\\", \\\"9.75`\\\"}], \\\",\\\", RowBox[{\\\"-\\\", \
-\\\"31.75`\\\"}], \\\",\\\", RowBox[{\\\"-\\\", \\\"15.5`\\\"}], \\\",\\\", \
-RowBox[{\\\"-\\\", \\\"28.25`\\\"}], \\\",\\\", RowBox[{\\\"-\\\", \
-\\\"36.5`\\\"}], \\\",\\\", RowBox[{\\\"-\\\", \\\"22.75`\\\"}], \\\",\\\", \
-RowBox[{\\\"-\\\", \\\"29.25`\\\"}], \\\",\\\", RowBox[{\\\"-\\\", \\\"18.`\\\
-\"}], \\\",\\\", RowBox[{\\\"-\\\", \\\"44.25`\\\"}], \\\",\\\", RowBox[{\\\"\
-\[LeftSkeleton]\\\", \\\"188\\\", \\\"\[RightSkeleton]\\\"}]}], \\\"}\\\"}], \
-\\\"\[Equal]\\\", \\\"1\\\"}]\\) have incompatible shapes.\"",2,205,85,
-   17595420097635880069,"Local"},
-  "MessageTemplate"]], "Message", "MSG",
- CellChangeTimes->{3.720570211549675*^9}],
+ CellChangeTimes->{{3.720654028817052*^9, 3.72065413835634*^9}, 
+   3.720654207198744*^9, 3.720654293200831*^9, {3.720654373094639*^9, 
+   3.720654396699278*^9}}],
 
 Cell[BoxData[
  TemplateBox[{
   "General","stop",
    "\"Further output of \\!\\(\\*StyleBox[RowBox[{\\\"Pick\\\", \\\"::\\\", \
 \\\"incomp\\\"}], \\\"MessageName\\\"]\\) will be suppressed during this \
-calculation.\"",2,205,86,17595420097635880069,"Local"},
+calculation.\"",2,221,213,17596076421717715481,"Local"},
   "MessageTemplate"]], "Message", "MSG",
- CellChangeTimes->{3.720570211564961*^9}]
+ CellChangeTimes->{{3.720654028817052*^9, 3.72065413835634*^9}, 
+   3.720654207198744*^9, 3.720654293200831*^9, {3.720654373094639*^9, 
+   3.720654396717477*^9}}]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -2479,9 +2043,11 @@ Cell[BoxData[
    "\"Heads \\!\\(\\*RowBox[{\\\"List\\\"}]\\) and \
 \\!\\(\\*RowBox[{\\\"Pick\\\"}]\\) at positions \
 \\!\\(\\*RowBox[{\\\"1\\\"}]\\) and \\!\\(\\*RowBox[{\\\"2\\\"}]\\) are \
-expected to be the same.\"",2,206,87,17595420097635880069,"Local"},
+expected to be the same.\"",2,222,214,17596076421717715481,"Local"},
   "MessageTemplate"]], "Message", "MSG",
- CellChangeTimes->{3.720570211614676*^9}],
+ CellChangeTimes->{{3.720654028916561*^9, 3.720654138470595*^9}, 
+   3.720654207296115*^9, 3.7206542933157387`*^9, {3.7206543732303953`*^9, 
+   3.720654396779222*^9}}],
 
 Cell[BoxData[
  TemplateBox[{
@@ -2489,9 +2055,11 @@ Cell[BoxData[
    "\"Heads \\!\\(\\*RowBox[{\\\"List\\\"}]\\) and \
 \\!\\(\\*RowBox[{\\\"Pick\\\"}]\\) at positions \
 \\!\\(\\*RowBox[{\\\"1\\\"}]\\) and \\!\\(\\*RowBox[{\\\"2\\\"}]\\) are \
-expected to be the same.\"",2,206,88,17595420097635880069,"Local"},
+expected to be the same.\"",2,222,215,17596076421717715481,"Local"},
   "MessageTemplate"]], "Message", "MSG",
- CellChangeTimes->{3.720570211631686*^9}],
+ CellChangeTimes->{{3.720654028916561*^9, 3.720654138470595*^9}, 
+   3.720654207296115*^9, 3.7206542933157387`*^9, {3.7206543732303953`*^9, 
+   3.720654396798134*^9}}],
 
 Cell[BoxData[
  TemplateBox[{
@@ -2499,24 +2067,33 @@ Cell[BoxData[
    "\"Heads \\!\\(\\*RowBox[{\\\"List\\\"}]\\) and \
 \\!\\(\\*RowBox[{\\\"Pick\\\"}]\\) at positions \
 \\!\\(\\*RowBox[{\\\"1\\\"}]\\) and \\!\\(\\*RowBox[{\\\"2\\\"}]\\) are \
-expected to be the same.\"",2,206,89,17595420097635880069,"Local"},
+expected to be the same.\"",2,222,216,17596076421717715481,"Local"},
   "MessageTemplate"]], "Message", "MSG",
- CellChangeTimes->{3.720570211645998*^9}],
+ CellChangeTimes->{{3.720654028916561*^9, 3.720654138470595*^9}, 
+   3.720654207296115*^9, 3.7206542933157387`*^9, {3.7206543732303953`*^9, 
+   3.720654396813745*^9}}],
 
 Cell[BoxData[
  TemplateBox[{
   "General","stop",
    "\"Further output of \\!\\(\\*StyleBox[RowBox[{\\\"Join\\\", \\\"::\\\", \
 \\\"heads\\\"}], \\\"MessageName\\\"]\\) will be suppressed during this \
-calculation.\"",2,206,90,17595420097635880069,"Local"},
+calculation.\"",2,222,217,17596076421717715481,"Local"},
   "MessageTemplate"]], "Message", "MSG",
- CellChangeTimes->{3.720570211660531*^9}],
+ CellChangeTimes->{{3.720654028916561*^9, 3.720654138470595*^9}, 
+   3.720654207296115*^9, 3.7206542933157387`*^9, {3.7206543732303953`*^9, 
+   3.720654396829014*^9}}],
 
 Cell[BoxData["\<\"/Users/marek5050/machinelearning/NBA/data/generatedRosters2/\
-predict_me.csv\"\>"], "Output",
+1125Preditions.csv\"\>"], "Output",
  CellChangeTimes->{{3.720219081647643*^9, 3.720219091080298*^9}, 
    3.720219145194056*^9, 3.720219682952256*^9, 3.720554883434215*^9, 
-   3.720565576299111*^9, 3.7205702116749763`*^9}]
+   3.720565576299111*^9, 3.7205702116749763`*^9, 3.720570614719419*^9, 
+   3.720573834193893*^9, 3.720642155251134*^9, 3.720642217443248*^9, {
+   3.720642420073389*^9, 3.720642478641967*^9}, 3.720642606403829*^9, 
+   3.7206426408912487`*^9, {3.720654028979743*^9, 3.720654138541525*^9}, 
+   3.720654207363405*^9, 3.7206542933830633`*^9, {3.720654373298108*^9, 
+   3.720654396845159*^9}}]
 }, Open  ]],
 
 Cell[BoxData[
@@ -2556,106 +2133,58 @@ CellTagsIndex->{}
 (*NotebookFileOutline
 Notebook[{
 Cell[CellGroupData[{
-Cell[580, 22, 3993, 68, 180, "Input"],
-Cell[4576, 92, 228, 3, 32, "Output"]
+Cell[580, 22, 4211, 71, 180, "Input"],
+Cell[4794, 95, 606, 9, 32, "Output"]
+}, Open  ]],
+Cell[5415, 107, 2517, 69, 264, "Input"],
+Cell[7935, 178, 19968, 494, 1650, "Input"],
+Cell[CellGroupData[{
+Cell[27928, 676, 1010, 16, 75, "Input"],
+Cell[28941, 694, 1228, 19, 77, "Message"],
+Cell[30172, 715, 1472, 23, 77, "Message"],
+Cell[31647, 740, 1378, 21, 77, "Message"],
+Cell[33028, 763, 636, 11, 60, "Message"],
+Cell[33667, 776, 1537, 23, 94, "Message"],
+Cell[35207, 801, 942, 15, 42, "Message"],
+Cell[36152, 818, 12581, 288, 186, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[4841, 100, 130, 1, 54, "Input"],
-Cell[4974, 103, 218, 3, 32, "Output"],
-Cell[5195, 108, 220, 3, 32, "Output"]
+Cell[48770, 1111, 242, 4, 32, "Input"],
+Cell[49015, 1117, 390, 8, 42, "Message"],
+Cell[49408, 1127, 589, 11, 60, "Message"],
+Cell[50000, 1140, 1821, 27, 93, "Message"],
+Cell[51824, 1169, 2907, 42, 144, "Message"],
+Cell[54734, 1213, 9879, 241, 162, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[5452, 116, 2415, 68, 264, "Input"],
-Cell[7870, 186, 264, 6, 24, "Message"],
-Cell[8137, 194, 264, 6, 24, "Message"],
-Cell[8404, 202, 266, 6, 24, "Message"],
-Cell[8673, 210, 266, 6, 24, "Message"],
-Cell[8942, 218, 266, 6, 24, "Message"],
-Cell[9211, 226, 264, 6, 24, "Message"]
-}, Open  ]],
-Cell[9490, 235, 19861, 493, 1629, "Input"],
-Cell[CellGroupData[{
-Cell[29376, 732, 1010, 16, 75, "Input"],
-Cell[30389, 750, 331, 7, 24, "Message"],
-Cell[30723, 759, 331, 7, 24, "Message"],
-Cell[31057, 768, 329, 7, 24, "Message"],
-Cell[31389, 777, 341, 7, 42, "Message"],
-Cell[31733, 786, 1354, 22, 76, "Message"],
-Cell[33090, 810, 408, 8, 42, "Message"],
-Cell[33501, 820, 478, 9, 42, "Message"],
-Cell[33982, 831, 350, 7, 42, "Message"],
-Cell[34335, 840, 1297, 20, 77, "Message"],
-Cell[35635, 862, 401, 8, 42, "Message"],
-Cell[36039, 872, 473, 9, 42, "Message"],
-Cell[36515, 883, 347, 7, 42, "Message"],
-Cell[36865, 892, 331, 7, 24, "Message"],
-Cell[37199, 901, 331, 7, 24, "Message"],
-Cell[37533, 910, 465, 9, 60, "Message"],
-Cell[38001, 921, 1039, 17, 76, "Message"],
-Cell[39043, 940, 1570, 25, 93, "Message"],
-Cell[40616, 967, 12234, 284, 186, "Output"]
+Cell[64650, 1459, 291, 5, 32, "Input"],
+Cell[64944, 1466, 386, 8, 42, "Message"],
+Cell[65333, 1476, 585, 11, 60, "Message"],
+Cell[65921, 1489, 1331, 21, 76, "Message"],
+Cell[67255, 1512, 1556, 24, 93, "Message"],
+Cell[68814, 1538, 9979, 242, 162, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[52887, 1256, 242, 4, 32, "Input"],
-Cell[53132, 1262, 333, 7, 24, "Message"],
-Cell[53468, 1271, 333, 7, 24, "Message"],
-Cell[53804, 1280, 331, 7, 24, "Message"],
-Cell[54138, 1289, 341, 7, 42, "Message"],
-Cell[54482, 1298, 1358, 22, 76, "Message"],
-Cell[55843, 1322, 410, 8, 42, "Message"],
-Cell[56256, 1332, 478, 9, 42, "Message"],
-Cell[56737, 1343, 350, 7, 42, "Message"],
-Cell[57090, 1352, 1299, 20, 77, "Message"],
-Cell[58392, 1374, 400, 8, 42, "Message"],
-Cell[58795, 1384, 471, 9, 42, "Message"],
-Cell[59269, 1395, 347, 7, 42, "Message"],
-Cell[59619, 1404, 333, 7, 24, "Message"],
-Cell[59955, 1413, 463, 9, 60, "Message"],
-Cell[60421, 1424, 1719, 26, 93, "Message"],
-Cell[62143, 1452, 1572, 25, 93, "Message"],
-Cell[63718, 1479, 11515, 274, 186, "Output"]
+Cell[78830, 1785, 499, 10, 54, "Input"],
+Cell[79332, 1797, 2414, 35, 32, "Output"]
+}, Open  ]],
+Cell[81761, 1835, 712, 13, 32, "Input"],
+Cell[CellGroupData[{
+Cell[82498, 1852, 912, 19, 32, "Input"],
+Cell[83413, 1873, 1657, 26, 110, "Message"],
+Cell[85073, 1901, 2442, 37, 146, "Message"],
+Cell[87518, 1940, 2152, 33, 110, "Message"],
+Cell[89673, 1975, 462, 9, 42, "Message"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[75270, 1758, 291, 5, 32, "Input"],
-Cell[75564, 1765, 331, 7, 24, "Message"],
-Cell[75898, 1774, 333, 7, 24, "Message"],
-Cell[76234, 1783, 331, 7, 24, "Message"],
-Cell[76568, 1792, 341, 7, 42, "Message"],
-Cell[76912, 1801, 1356, 22, 76, "Message"],
-Cell[78271, 1825, 408, 8, 42, "Message"],
-Cell[78682, 1835, 478, 9, 42, "Message"],
-Cell[79163, 1846, 350, 7, 42, "Message"],
-Cell[79516, 1855, 1297, 20, 77, "Message"],
-Cell[80816, 1877, 401, 8, 42, "Message"],
-Cell[81220, 1887, 473, 9, 42, "Message"],
-Cell[81696, 1898, 349, 7, 42, "Message"],
-Cell[82048, 1907, 330, 7, 24, "Message"],
-Cell[82381, 1916, 463, 9, 60, "Message"],
-Cell[82847, 1927, 1098, 18, 76, "Message"],
-Cell[83948, 1947, 1570, 25, 93, "Message"],
-Cell[85521, 1974, 11613, 276, 186, "Output"]
+Cell[90172, 1989, 2194, 48, 222, "Input"],
+Cell[92369, 2039, 501, 10, 24, "Message"],
+Cell[92873, 2051, 501, 10, 24, "Message"],
+Cell[93377, 2063, 501, 10, 24, "Message"],
+Cell[93881, 2075, 466, 9, 42, "Message"],
+Cell[94350, 2086, 639, 9, 54, "Output"]
 }, Open  ]],
-Cell[CellGroupData[{
-Cell[97171, 2255, 499, 10, 54, "Input"],
-Cell[97673, 2267, 2075, 30, 32, "Output"]
-}, Open  ]],
-Cell[99763, 2300, 712, 13, 32, "Input"],
-Cell[CellGroupData[{
-Cell[100500, 2317, 912, 19, 32, "Input"],
-Cell[101415, 2338, 1232, 21, 76, "Message"],
-Cell[102650, 2361, 1173, 20, 76, "Message"],
-Cell[103826, 2383, 1849, 28, 93, "Message"],
-Cell[105678, 2413, 340, 7, 42, "Message"]
-}, Open  ]],
-Cell[CellGroupData[{
-Cell[106055, 2425, 2194, 48, 222, "Input"],
-Cell[108252, 2475, 374, 8, 24, "Message"],
-Cell[108629, 2485, 374, 8, 24, "Message"],
-Cell[109006, 2495, 374, 8, 24, "Message"],
-Cell[109383, 2505, 339, 7, 42, "Message"],
-Cell[109725, 2514, 297, 4, 54, "Output"]
-}, Open  ]],
-Cell[110037, 2521, 649, 17, 96, "Input"]
+Cell[95004, 2098, 649, 17, 96, "Input"]
 }
 ]
 *)

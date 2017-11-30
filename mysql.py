@@ -10,6 +10,8 @@ from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import sessionmaker, relationship
 from sqlalchemy.sql import select
 
+import utils
+
 settings = {
     "mysql_user": "root",
     "mysql_pwd": os.getenv('MYSQL_PASSWORD', ""),
@@ -47,7 +49,6 @@ class Player(MysqlBase):
     logs = None
     __logs = relationship("PlayerLog", lazy='joined')
     news = relationship("PlayerNews", lazy='joined')
-    # df_logs = None
 
     def __repr__(self):
         return'<Player {0} {1}: {2}>'.format(self.PERSON_ID,
@@ -99,6 +100,50 @@ class Game(MysqlBase):
                                                self.h_abrv,
                                                self.v_abrv)
 
+
+class DKPlayer(MysqlBase):
+    __tablename__ = 'dk_player_list'
+
+    # id = Column(Integer, primary_key=True, unique=True)
+    # Date = Column(DateTime)
+    Position = Column(String(10))
+    Name = Column(String(50))
+    # Salary = Column(Integer)
+    # GameInfo = Column(String(30))
+    # AvgPointsPerGame = Column(Numeric(5,2))
+    # teamAbbrev = Column(String(5))
+    Player_ID = Column(Integer, ForeignKey(Player.PERSON_ID), primary_key=True, unique=True)
+
+    # GameID = Column(Integer, ForeignKey(Game.id))
+
+
+    def __init__(self, **row):
+
+        # _date = parser.parse(" ".join(row["GameInfo"].split(" ")[1:3]))
+        # row["Date"] = _date
+        # g = utils.get_game(_date- datetime.timedelta(days=1), row["teamAbbrev"], to_date=_date + datetime.timedelta(days=1))
+        # if len(g) > 0:
+        #     row["GameID"]=g[0].id
+        # else:
+        #     print("failed to find %s" % (row))
+
+        p = utils.get_player(name=row["Name"])
+        if p is not None:
+            table = dict()
+            table["Player_ID"] = p.PERSON_ID
+            table["Position"] = row["Position"]
+            table["Name"] = row["Name"]
+            if table is not None:
+                super().__init__(**table)
+        else:
+            print("could not find player: %s" % (row))
+
+        return
+
+    def __repr__(self):
+        return '<DKPlayer {0} {1}: {2}>'.format(self.Player_ID,
+                                                self.DISPLAY_FIRST_LAST,
+                                                self.TEAM_ABBREVIATION)
 
 class Salary(MysqlBase):
     __tablename__ ='salary'

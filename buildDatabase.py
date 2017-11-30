@@ -4,7 +4,6 @@ import urllib.request
 
 from nba_py import player
 
-import utils
 from mysql import *
 
 
@@ -271,8 +270,8 @@ def create_salary_table(df):
                    session.add(Salary(**item))
                    session.commit()
                 except Exception as e:
-                   print("Failed creating salary:%s: %s - %s" %(item["GAME_DATE"], item["player_name"], item["salary"]))
-                   print("Error: %s" % (e))
+                    # print("Failed creating salary:%s: %s - %s" %(item["GAME_DATE"], item["player_name"], item["salary"]))
+                    # print("Error: %s" % (e))
                    failed.append(item)
                    session.rollback()
 
