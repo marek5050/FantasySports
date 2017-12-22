@@ -1,0 +1,6 @@
+.DS_Store
+projections
+league
+*.pyc
+dist
+node_modules
