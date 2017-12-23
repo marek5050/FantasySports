@@ -7,6 +7,7 @@ import matplotlib.pyplot as plt
 
 # Import data
 data = pd.read_csv('./1222Train2.csv')
+logs_path = '/Users/marek5050/machinelearning/NBA/tensorflow'
 
 # Drop date variable
 # data = data.drop(['DATE'], 1)
@@ -106,7 +107,19 @@ mse_test = []
 
 # Run
 epochs = 10
-for e in range(epochs):
+
+# Create a summary to monitor cost tensor
+tf.summary.scalar("loss", mse)
+
+# op to write logs to Tensorboard
+summary_writer = tf.summary.FileWriter(logs_path, graph=tf.get_default_graph())
+
+
+merged_summary_op = tf.summary.merge_all()
+
+for epoch in range(epochs):
+    avg_cost = 0.
+    total_batch = int(n / batch_size)
 
     # Shuffle training data
     shuffle_indices = np.random.permutation(np.arange(len(y_train)))
@@ -119,8 +132,13 @@ for e in range(epochs):
         batch_x = X_train[start:start + batch_size]
         batch_y = y_train[start:start + batch_size]
         # Run optimizer with batch
-        net.run(opt, feed_dict={X: batch_x, Y: batch_y})
+        _, c, summary = net.run([opt,mse,merged_summary_op], feed_dict={X: batch_x, Y: batch_y})
 
+        # Write logs at every iteration
+        summary_writer.add_summary(summary, epoch * total_batch + i)
+        # Compute average loss
+        avg_cost += c / total_batch
+        print("Epoch:", '%04d' % (epoch + 1), "cost=", "{:.9f}".format(avg_cost))
         # Show progress
         if np.mod(i, 50) == 0:
             # MSE train and test
@@ -131,7 +149,7 @@ for e in range(epochs):
             # Prediction
             pred = net.run(out, feed_dict={X: X_test})
             line2.set_ydata(pred)
-            plt.title('Epoch ' + str(e) + ', Batch ' + str(i))
+            plt.title('Epoch ' + str(epoch) + ', Batch ' + str(i))
             plt.pause(0.01)
 
 
