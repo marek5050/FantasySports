@@ -1,12 +1,12 @@
 import glob
-
+import pandas as pd
 
 def build_dk_salaries():
     print("build_dk_salaries")
     _vegas = pd.DataFrame()
     found = 0
     notfound = 0
-    path = r'data/play'  # use your path
+    path = r'data/salaries'  # use your path
     allFiles = glob.glob(path + "/*.csv")
     print("Number of files: %d" % (len(allFiles)))
     for _file in allFiles:
@@ -48,6 +48,6 @@ if __name__ == "__main__":
             session.add(DKPlayer(**item.to_dict()))
             session.commit()
         except Exception as e:
-            # print(e)
+            print(e)
             session.rollback()
     session.close()

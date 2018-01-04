@@ -4,14 +4,15 @@ from flask.ext.cors import CORS
 app = Flask(__name__)
 CORS(app)
 
-from degenerate import PlayerPool
-from degenerate import Optimizer
-from degenerate import RosterDefinition
+# import degenerate
+from degenerate.player_pool import PlayerPool
+from degenerate.optimizer import Optimizer
+from degenerate.roster_definition import RosterDefinition
 
 NUMBER_OF_LINEUPS = 3
 UNIQUE_PLAYERS = 8
 
-player_pool = PlayerPool().from_csv('projections/cfb_week11_late.csv')
+player_pool = PlayerPool().from_csv('./projections/sample-nba.csv')
 optimizer = Optimizer()
 
 roster_definition = RosterDefinition.DK_CFB
@@ -33,9 +34,9 @@ def post_optimize():
                                                  roster_definition, \
                                                  rosters, UNIQUE_PLAYERS))
 
-    return jsonify({"rosters": map(lambda x: x.__json__(), rosters)})
+    return jsonify({"rosters": [x.__json__() for x in rosters]})
 
 
 if __name__ == "__main__":
-    app.debug = True
+    # app.debug = True
     app.run()

@@ -4,4 +4,7 @@
     <option name="URL" value="http://localhost:8888/?token=e14b3440960ea99495e3452cb72c210b9a6c2bd13135ebbc" />
   </component>
   <component name="ProjectRootManager" version="2" project-jdk-name="Python 3.5.2 (~/anaconda/bin/python)" project-jdk-type="Python SDK" />
+  <component name="PythonCompatibilityInspectionAdvertiser">
+    <option name="version" value="2" />
+  </component>
 </project>

@@ -1,104 +1,104 @@
 avg_pts,date,fantasy_pts,fpts_diff,nickname,player_id,player_name,pos_main,salary,salary_change,salary_change_html,salary_diff,salary_diff_percentage
-18.24,2017-11-10,19.69,+1.45,Pistons,329873,Ish Smith,PG,12,-14.3,"<td class=""width-15 red"" id=""salary-col"">-$2 (-14.3%)</td>",-2,-14.3
-27.39  ,2017-11-10,27.38      ,-0.01    ,Celtics  ,937647   ,Jayson Tatum            ,PF      ,22    ,10.0         ,"<td class=""width-15 green"" id=""salary-col"">+$2 (10.0%)</td>",2          ,10.0
-15.19  ,2017-11-10,22.08      ,+6.89    ,Celtics  ,296379   ,Aron Baynes             ,C       ,11    ,10.0         ,"<td class=""width-15 green"" id=""salary-col"">+$1 (10.0%)</td>",1          ,10.0
-39.38,2017-11-10,33.58,-5.80,Pacers,553166,Victor Oladipo,SG,33,-5.7,"<td class=""width-15 red"" id=""salary-col"">-$2 (-5.7%)</td>",-2,-5.7
-19.91  ,2017-11-10,22.55      ,+2.64    ,Heat     ,604288   ,Josh Richardson         ,SF      ,17    ,-5.6         ,"<td class=""width-15 red"" id=""salary-col"">-$1 (-5.6%)</td>"  ,-1         ,-5.6
-21.58,2017-11-11,22.39,+0.81,Rockets,329715,Ryan Anderson,PF,19,5.6,"<td class=""width-15 green"" id=""salary-col"">+$1 (5.6%)</td>",1,5.6
-39.91  ,2017-11-10,45.17      ,+5.26    ,Thunder  ,469218   ,Paul George             ,SF      ,36    ,-5.3         ,"<td class=""width-15 red"" id=""salary-col"">-$2 (-5.3%)</td>"  ,-2         ,-5.3
-41.66,2017-11-10,42.40,+0.74,Pistons,614746,Andre Drummond,C,41,5.1,"<td class=""width-15 green"" id=""salary-col"">+$2 (5.1%)</td>",2,5.1
-28.04,2017-11-10,29.28,+1.24,Pacers,329683,Thaddeus Young,PF,25,-3.8,"<td class=""width-15 red"" id=""salary-col"">-$1 (-3.8%)</td>",-1,-3.8
-38.51  ,2017-11-10,39.05      ,+0.54    ,Heat     ,513234   ,Hassan Whiteside        ,C       ,39    ,2.6          ,"<td class=""width-15 green"" id=""salary-col"">+$1 (2.6%)</td>" ,1          ,2.6
-16.69,2017-11-10,14.24,-2.45,Pacers,511057,Lance Stephenson,SG,10,0.0,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0,0.0
-19.76,2017-11-10,19.95,+0.19,Pacers,552805,Cory Joseph,PG,10,0.0,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0,0.0
-22.12,2017-11-10,22.81,+0.69,Pacers,599812,Bojan Bogdanovic,SF,13,0.0,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0,0.0
-32.94,2017-11-10,34.42,+1.48,Pacers,843762,Myles Turner,C,31,0.0,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0,0.0
-14.86  ,2017-11-10,14.37      ,-0.49    ,Thunder  ,174063   ,Raymond Felton          ,PG      ,10    ,0.0          ,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>" ,0          ,0.0
-21.85  ,2017-11-11,20.28      ,-1.57    ,Mavericks,3234     ,Dirk Nowitzki           ,C       ,14    ,0.0          ,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>" ,0          ,0.0
-7.57   ,2017-11-10,13.00      ,+5.43    ,Thunder  ,399599   ,Patrick Patterson       ,PF      ,10    ,0.0          ,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>" ,0          ,0.0
-13.69  ,2017-11-10,22.03      ,+8.34    ,Thunder  ,548635   ,Andre Roberson          ,SG      ,10    ,0.0          ,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>" ,0          ,0.0
-30.95  ,2017-11-11,28.50      ,-2.45    ,Mavericks,552336   ,Harrison Barnes         ,PF      ,25    ,0.0          ,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>" ,0          ,0.0
+18.02,2017-11-10,19.69,+1.67,Pistons,329873,Ish Smith,PG,12,-14.3,"<td class=""width-15 red"" id=""salary-col"">-$2 (-14.3%)</td>",-2,-14.3
+26.67,2017-11-10,27.38,+0.71,Celtics,937647,Jayson Tatum,PF,22,10.0,"<td class=""width-15 green"" id=""salary-col"">+$2 (10.0%)</td>",2,10.0
+14.96,2017-11-10,22.08,+7.12,Celtics,296379,Aron Baynes,C,11,10.0,"<td class=""width-15 green"" id=""salary-col"">+$1 (10.0%)</td>",1,10.0
+42.41,2017-11-10,33.58,-8.83,Pacers,553166,Victor Oladipo,SG,33,-5.7,"<td class=""width-15 red"" id=""salary-col"">-$2 (-5.7%)</td>",-2,-5.7
+22.54,2017-11-10,22.55,+0.01,Heat,604288,Josh Richardson,SF,17,-5.6,"<td class=""width-15 red"" id=""salary-col"">-$1 (-5.6%)</td>",-1,-5.6
+19.76,2017-11-11,22.39,+2.63,Rockets,329715,Ryan Anderson,PF,19,5.6,"<td class=""width-15 green"" id=""salary-col"">+$1 (5.6%)</td>",1,5.6
+37.79,2017-11-10,45.17,+7.38,Thunder,469218,Paul George,SF,36,-5.3,"<td class=""width-15 red"" id=""salary-col"">-$2 (-5.3%)</td>",-2,-5.3
+42.27,2017-11-10,42.40,+0.13,Pistons,614746,Andre Drummond,C,41,5.1,"<td class=""width-15 green"" id=""salary-col"">+$2 (5.1%)</td>",2,5.1
+28.60,2017-11-10,29.28,+0.68,Pacers,329683,Thaddeus Young,PF,25,-3.8,"<td class=""width-15 red"" id=""salary-col"">-$1 (-3.8%)</td>",-1,-3.8
+37.08,2017-11-10,39.05,+1.97,Heat,513234,Hassan Whiteside,C,39,2.6,"<td class=""width-15 green"" id=""salary-col"">+$1 (2.6%)</td>",1,2.6
+18.39,2017-11-09,8.41,-9.98,Raptors,853408,Pascal Siakam,PF,10,0.0,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0,0.0
+25.09,2017-11-11,25.98,+0.89,Rockets,229738,Trevor Ariza,SF,20,0.0,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0,0.0
+27.45,2017-11-10,27.08,-0.37,Pacers,295432,Darren Collison,PG,26,0.0,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0,0.0
+54.08,2017-11-11,54.78,+0.70,Rockets,395388,James Harden,SG,55,0.0,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0,0.0
+19.43,2017-11-10,14.24,-5.19,Pacers,511057,Lance Stephenson,SG,10,0.0,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0,0.0
+17.95,2017-11-10,19.95,+2.00,Pacers,552805,Cory Joseph,PG,10,0.0,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0,0.0
+20.71,2017-11-10,22.81,+2.10,Pacers,599812,Bojan Bogdanovic,SF,13,0.0,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0,0.0
+32.02,2017-11-10,34.42,+2.40,Pacers,843762,Myles Turner,C,31,0.0,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0,0.0
+13.98,2017-11-10,14.37,+0.39,Thunder,174063,Raymond Felton,PG,10,0.0,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0,0.0
+22.31,2017-11-11,20.28,-2.03,Mavericks,3234,Dirk Nowitzki,C,14,0.0,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0,0.0
+8.03,2017-11-10,13.00,+4.97,Thunder,399599,Patrick Patterson,PF,10,0.0,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0,0.0
+16.76,2017-11-10,22.03,+5.27,Thunder,548635,Andre Roberson,SG,10,0.0,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0,0.0
+31.10,2017-11-11,28.50,-2.60,Mavericks,552336,Harrison Barnes,PF,25,0.0,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0,0.0
 5.19,2017-11-11,4.12,-1.07,Mavericks,606701,Dorian Finney-Smith,SF,10,0.0,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0,0.0
-19.30  ,2017-11-10,26.00      ,+6.70    ,Thunder  ,699826   ,Jerami Grant            ,PF      ,11    ,0.0          ,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>" ,0          ,0.0
-8.19   ,2017-11-10,14.41      ,+6.22    ,Thunder  ,739963   ,Alex Abrines            ,SG      ,10    ,0.0          ,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>" ,0          ,0.0
-10.68,2017-11-10,10.12,-0.56,Pistons,887661,Luke Kennard,SG,10,0.0,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0,0.0
-10.91  ,2017-11-10,11.58      ,+0.67    ,Celtics  ,1066725  ,Daniel Theis            ,PF      ,10    ,0.0          ,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>" ,0          ,0.0
-12.75  ,2017-11-09,10.65      ,-2.10    ,Raptors  ,900535   ,OG Anunoby              ,SF      ,10    ,0.0          ,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>" ,0          ,0.0
-3.06,2017-11-10,1.72,-1.34,Pacers,57795,Damien Wilkins,SG,10,0.0,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0,0.0
-7.32   ,2017-11-10,22.31      ,+14.99   ,Thunder  ,786414   ,Dakari Johnson          ,C       ,10    ,0.0          ,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>" ,0          ,0.0
-4.68   ,2017-11-11,3.60       ,-1.08    ,Rockets  ,242307   ,Bobby Brown             ,PG      ,10    ,0.0          ,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>" ,0          ,0.0
-2.63,2017-11-09,1.16,-1.47,Raptors,567423,Alfonzo McKinnie,PF,10,0.0,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0,0.0
-11.20,2017-11-10,0.45,-10.75,Heat,745825,Jordan Mickey,PF,10,0.0,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0,0.0
-7.40   ,2017-11-10,6.80       ,-0.60    ,Thunder  ,552307   ,Josh Huestis            ,SF      ,10    ,0.0          ,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>" ,0          ,0.0
-1.50,2017-11-10,1.16,-0.34,Thunder,57819,Nick Collison,C,10,0.0,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0,0.0
-3.59,2017-11-10,1.51,-2.08,Celtics,610597,Abdel Nader,PF,10,0.0,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0,0.0
-3.06,2017-11-11,2.26,-0.80,Rockets,746335,Demetrius Jackson,PG,10,0.0,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0,0.0
-4.52   ,2017-11-11,1.96       ,-2.56    ,Rockets  ,908263   ,Zhou Qi                 ,PF      ,10    ,0.0          ,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>" ,0          ,0.0
+17.48,2017-11-10,26.00,+8.52,Thunder,699826,Jerami Grant,PF,11,0.0,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0,0.0
+9.64,2017-11-10,14.41,+4.77,Thunder,739963,Alex Abrines,SG,10,0.0,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0,0.0
+11.50,2017-11-10,10.12,-1.38,Pistons,887661,Luke Kennard,SG,10,0.0,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0,0.0
+12.29,2017-11-10,11.58,-0.71,Celtics,1066725,Daniel Theis,PF,10,0.0,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0,0.0
+13.09,2017-11-09,10.65,-2.44,Raptors,900535,OG Anunoby,SF,10,0.0,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0,0.0
+2.67,2017-11-10,1.72,-0.95,Pacers,57795,Damien Wilkins,SG,10,0.0,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0,0.0
+6.87,2017-11-10,22.31,+15.44,Thunder,786414,Dakari Johnson,C,10,0.0,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0,0.0
+3.91,2017-11-11,3.60,-0.31,Rockets,242307,Bobby Brown,PG,10,0.0,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0,0.0
+2.61,2017-11-09,1.16,-1.45,Raptors,567423,Alfonzo McKinnie,PF,10,0.0,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0,0.0
+13.86,2017-11-10,0.45,-13.41,Heat,745825,Jordan Mickey,PF,10,0.0,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0,0.0
+6.60,2017-11-10,6.80,+0.20,Thunder,552307,Josh Huestis,SF,10,0.0,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0,0.0
+3.93,2017-11-10,1.16,-2.77,Thunder,57819,Nick Collison,C,10,0.0,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0,0.0
+4.14,2017-11-10,1.51,-2.63,Celtics,610597,Abdel Nader,PF,10,0.0,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0,0.0
+2.81,2017-11-11,2.26,-0.55,Rockets,746335,Demetrius Jackson,PG,10,0.0,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0,0.0
+4.07,2017-11-11,1.96,-2.11,Rockets,908263,Zhou Qi,PF,10,0.0,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0,0.0
 2.13,2017-11-10,1.40,-0.73,Pacers,946716,Ike Anigbogu,C,10,0.0,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0,0.0
-32.81  ,2017-11-10,36.10      ,+3.29    ,Celtics  ,280587   ,Al Horford              ,C       ,29    ,0.0          ,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>" ,0          ,0.0
+34.01,2017-11-10,36.10,+2.09,Celtics,280587,Al Horford,C,29,0.0,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0,0.0
 5.27,2017-11-11,1.66,-3.61,Mavericks,846868,Gian Clavell,PG,10,0.0,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0,0.0
 -,2017-11-10,0.68,-,Pistons,879539,Luis Montero,SF,10,0.0,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0,0.0
 0.00,2017-11-10,0.99,+0.99,Thunder,848283,Daniel Hamilton,SF,10,0.0,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0,0.0
-11.78  ,2017-11-10,9.52       ,-2.26    ,Heat     ,329670   ,Wayne Ellington         ,SG      ,10    ,0.0          ,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>" ,0          ,0.0
-26.73  ,2017-11-10,26.51      ,-0.22    ,Heat     ,398037   ,James Johnson           ,PF      ,25    ,0.0          ,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>" ,0          ,0.0
-28.15,2017-11-10,29.40,+1.25,Pistons,462444,Reggie Jackson,PG,23,0.0,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0,0.0
-25.77,2017-11-10,27.56,+1.79,Pistons,513607,Avery Bradley,SG,23,0.0,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0,0.0
-10.81,2017-11-10,11.13,+0.32,Pistons,551321,Langston Galloway,SG,10,0.0,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0,0.0
+15.08,2017-11-10,9.52,-5.56,Heat,329670,Wayne Ellington,SG,10,0.0,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0,0.0
+26.25,2017-11-10,26.51,+0.26,Heat,398037,James Johnson,PF,25,0.0,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0,0.0
+25.80,2017-11-10,29.40,+3.60,Pistons,462444,Reggie Jackson,PG,23,0.0,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0,0.0
+23.43,2017-11-10,27.56,+4.13,Pistons,513607,Avery Bradley,SG,23,0.0,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0,0.0
+11.68,2017-11-10,11.13,-0.55,Pistons,551321,Langston Galloway,SG,10,0.0,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0,0.0
 6.87,2017-11-10,0.31,-6.56,Heat,552199,Okaro White,PF,10,0.0,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0,0.0
-29.20,2017-11-10,30.98,+1.78,Pistons,552523,Tobias Harris,PF,24,0.0,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0,0.0
-18.55  ,2017-11-10,18.84      ,+0.29    ,Heat     ,842298   ,Justise Winslow         ,SF      ,11    ,0.0          ,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>" ,0          ,0.0
-16.61  ,2017-11-09,12.11      ,-4.50    ,Raptors  ,292394   ,C.J. Miles              ,SF      ,10    ,0.0          ,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>" ,0          ,0.0
-22.95  ,2017-11-09,26.56      ,+3.61    ,Raptors  ,456450   ,Serge Ibaka             ,PF      ,22    ,0.0          ,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>" ,0          ,0.0
-23.70  ,2017-11-10,21.27      ,-2.43    ,Celtics  ,469089   ,Marcus Morris           ,SF      ,18    ,0.0          ,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>" ,0          ,0.0
-17.18  ,2017-11-09,19.93      ,+2.75    ,Raptors  ,609861   ,Norman Powell           ,SF      ,12    ,0.0          ,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>" ,0          ,0.0
-25.55  ,2017-11-10,34.52      ,+8.97    ,Celtics  ,697132   ,Marcus Smart            ,SG      ,20    ,0.0          ,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>" ,0          ,0.0
-16.52,2017-11-09,13.28,-3.24,Raptors,744102,Delon Wright,PG,10,0.0,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0,0.0
-5.18   ,2017-11-10,5.85       ,+0.67    ,Celtics  ,792415   ,Semi Ojeleye            ,PF      ,10    ,0.0          ,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>" ,0          ,0.0
-18.61  ,2017-11-09,8.41       ,-10.20   ,Raptors  ,853408   ,Pascal Siakam           ,PF      ,10    ,0.0          ,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>" ,0          ,0.0
-24.99  ,2017-11-11,25.98      ,+0.99    ,Rockets  ,229738   ,Trevor Ariza            ,SF      ,20    ,0.0          ,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>" ,0          ,0.0
-28.37  ,2017-11-10,27.08      ,-1.29    ,Pacers   ,295432   ,Darren Collison         ,PG      ,26    ,0.0          ,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>" ,0          ,0.0
-52.77  ,2017-11-11,54.78      ,+2.01    ,Rockets  ,395388   ,James Harden            ,SG      ,55    ,0.0          ,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>" ,0          ,0.0
-28.38,2017-11-11,29.21,+0.84,Rockets,401085,Eric Gordon,SG,27,0.0,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0,0.0
-11.42  ,2017-11-11,5.48       ,-5.94    ,Rockets  ,551761   ,Tarik Black             ,C       ,10    ,0.0          ,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>" ,0          ,0.0
-34.23  ,2017-11-11,36.06      ,+1.83    ,Rockets  ,830647   ,Clint Capela            ,C       ,26    ,0.0          ,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>" ,0          ,0.0
-26.96,2017-11-10,25.81,-1.15,Pacers,850111,Domantas Sabonis,PF,20,0.0,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0,0.0
-22.52  ,2017-11-11,22.98      ,+0.46    ,Mavericks,295809   ,Wesley Matthews         ,SF      ,16    ,0.0          ,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>" ,0          ,0.0
-47.72  ,2017-11-10,65.33      ,+17.61   ,Thunder  ,329830   ,Russell Westbrook       ,PG      ,58    ,0.0          ,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>" ,0          ,0.0
-14.13  ,2017-11-11,12.61      ,-1.52    ,Mavericks,552309   ,Dwight Powell           ,PF      ,10    ,0.0          ,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>" ,0          ,0.0
-14.53  ,2017-11-11,14.99      ,+0.46    ,Mavericks,555263   ,Salah Mejri             ,C       ,12    ,0.0          ,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>" ,0          ,0.0
-17.47  ,2017-11-11,22.23      ,+4.76    ,Mavericks,698635   ,Yogi Ferrell            ,PG      ,12    ,0.0          ,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>" ,0          ,0.0
-11.87  ,2017-11-11,11.06      ,-0.81    ,Mavericks,699947   ,Nerlens Noel            ,C       ,12    ,0.0          ,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>" ,0          ,0.0
-14.11,2017-11-10,12.37,-1.74,Pistons,229905,Anthony Tolliver,SF,10,0.0,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0,0.0
-9.72,2017-11-10,0.47,-9.25,Heat,957486,Bam Adebayo,C,10,0.0,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0,0.0
-6.16   ,2017-11-10,9.91       ,+3.75    ,Celtics  ,623253   ,Shane Larkin            ,PG      ,10    ,0.0          ,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>" ,0          ,0.0
-4.05,2017-11-10,2.59,-1.46,Celtics,920087,Guerschon Yabusele,C,10,0.0,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0,0.0
-7.69,2017-11-10,5.43,-2.26,Pacers,946720,TJ Leaf,PF,10,0.0,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0,0.0
-26.41  ,2017-11-11,28.31      ,+1.90    ,Mavericks,942015   ,Dennis Smith Jr.        ,PG      ,22    ,0.0          ,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>" ,0          ,0.0
-22.38  ,2017-11-11,21.65      ,-0.73    ,Mavericks,173520   ,J.J. Barea              ,PG      ,13    ,0.0          ,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>" ,0          ,0.0
-1.22   ,2017-11-10,2.72       ,+1.50    ,Thunder  ,1057002  ,Terrance Ferguson       ,SG      ,10    ,0.0          ,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>" ,0          ,0.0
-3.74,2017-11-10,1.84,-1.90,Pacers,553721,Joe Young,SG,10,0.0,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0,0.0
-7.65   ,2017-11-11,3.28       ,-4.37    ,Mavericks,1072048  ,Maxi Kleber             ,PF      ,10    ,0.0          ,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>" ,0          ,0.0
+28.11,2017-11-10,30.98,+2.87,Pistons,552523,Tobias Harris,PF,24,0.0,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0,0.0
+17.95,2017-11-10,18.84,+0.89,Heat,842298,Justise Winslow,SF,11,0.0,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0,0.0
+16.03,2017-11-09,12.11,-3.92,Raptors,292394,C.J. Miles,SF,10,0.0,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0,0.0
+26.43,2017-11-09,26.56,+0.13,Raptors,456450,Serge Ibaka,PF,22,0.0,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0,0.0
+22.63,2017-11-10,21.27,-1.36,Celtics,469089,Marcus Morris,SF,18,0.0,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0,0.0
+15.22,2017-11-09,19.93,+4.71,Raptors,609861,Norman Powell,SF,12,0.0,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0,0.0
+24.09,2017-11-10,34.52,+10.43,Celtics,697132,Marcus Smart,SG,20,0.0,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0,0.0
+16.46,2017-11-09,13.28,-3.18,Raptors,744102,Delon Wright,PG,10,0.0,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0,0.0
+6.00,2017-11-10,5.85,-0.15,Celtics,792415,Semi Ojeleye,PF,10,0.0,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0,0.0
+26.13,2017-11-10,27.90,+1.77,Celtics,883436,Jaylen Brown,SG,19,0.0,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0,0.0
+18.14,2017-11-11,19.14,+1.00,Rockets,229602,P.J. Tucker,SF,10,0.0,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0,0.0
+16.10,2017-11-10,5.80,-10.30,Pacers,253995,Al Jefferson,C,10,0.0,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0,0.0
+16.32,2017-11-11,18.23,+1.91,Rockets,295436,Luc Richard Mbah a Moute,SF,11,0.0,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0,0.0
+25.57,2017-11-11,29.21,+3.64,Rockets,401085,Eric Gordon,SG,27,0.0,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0,0.0
+7.67,2017-11-11,5.48,-2.19,Rockets,551761,Tarik Black,C,10,0.0,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0,0.0
+35.40,2017-11-11,36.06,+0.66,Rockets,830647,Clint Capela,C,26,0.0,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0,0.0
+24.77,2017-11-10,25.81,+1.04,Pacers,850111,Domantas Sabonis,PF,20,0.0,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0,0.0
+22.01,2017-11-11,22.98,+0.97,Mavericks,295809,Wesley Matthews,SF,16,0.0,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0,0.0
+51.44,2017-11-10,65.33,+13.89,Thunder,329830,Russell Westbrook,PG,58,0.0,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0,0.0
+16.08,2017-11-11,12.61,-3.47,Mavericks,552309,Dwight Powell,PF,10,0.0,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0,0.0
+12.49,2017-11-11,14.99,+2.50,Mavericks,555263,Salah Mejri,C,12,0.0,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0,0.0
+18.77,2017-11-11,22.23,+3.46,Mavericks,698635,Yogi Ferrell,PG,12,0.0,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0,0.0
+11.87,2017-11-11,11.06,-0.81,Mavericks,699947,Nerlens Noel,C,12,0.0,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0,0.0
+13.51,2017-11-10,12.37,-1.14,Pistons,229905,Anthony Tolliver,SF,10,0.0,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0,0.0
+15.73,2017-11-10,0.47,-15.26,Heat,957486,Bam Adebayo,C,10,0.0,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0,0.0
+7.76,2017-11-10,9.91,+2.15,Celtics,623253,Shane Larkin,PG,10,0.0,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0,0.0
+4.31,2017-11-10,2.59,-1.72,Celtics,920087,Guerschon Yabusele,C,10,0.0,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0,0.0
+6.24,2017-11-10,5.43,-0.81,Pacers,946720,TJ Leaf,PF,10,0.0,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0,0.0
+25.82,2017-11-11,28.31,+2.49,Mavericks,942015,Dennis Smith Jr.,PG,22,0.0,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0,0.0
+23.63,2017-11-11,21.65,-1.98,Mavericks,173520,J.J. Barea,PG,13,0.0,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0,0.0
+2.55,2017-11-10,2.72,+0.18,Thunder,1057002,Terrance Ferguson,SG,10,0.0,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0,0.0
+3.89,2017-11-10,1.84,-2.05,Pacers,553721,Joe Young,SG,10,0.0,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0,0.0
+13.34,2017-11-11,3.28,-10.06,Mavericks,1072048,Maxi Kleber,PF,10,0.0,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0,0.0
 -,2017-11-10,0.38,-,Heat,692688,Matt Williams,SG,10,0.0,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0,0.0
-11.07,2017-11-10,1.18,-9.89,Pistons,882284,Henry Ellenson,PF,10,0.0,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0,0.0
-8.77,2017-11-10,7.34,-1.43,Pistons,553542,Eric Moreland,PF,10,0.0,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0,0.0
-0.50   ,2017-11-11,0.55       ,+0.05    ,Rockets  ,609816   ,Briante Weber           ,PG      ,10    ,0.0          ,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>" ,0          ,0.0
-10.65,2017-11-10,1.84,-8.81,Pistons,553331,Boban Marjanovic,C,10,0.0,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0,0.0
-2.00,2017-11-10,0.94,-1.06,Thunder,398428,Kyle Singler,SG,10,0.0,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0,0.0
--,2017-11-10,0.48,-,Celtics,844150,Kadeem Allen,SG,10,0.0,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0,0.0
-3.49,2017-11-11,0.24,-3.25,Mavericks,457334,Jeff Withey,C,10,0.0,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0,0.0
-31.42  ,2017-11-10,31.90      ,+0.48    ,Heat     ,456456   ,Goran Dragic            ,PG      ,29    ,0.0          ,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>" ,0          ,0.0
-18.85  ,2017-11-10,16.68      ,-2.17    ,Heat     ,514882   ,Kelly Olynyk            ,C       ,16    ,0.0          ,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>" ,0          ,0.0
-25.25  ,2017-11-10,26.55      ,+1.30    ,Heat     ,552007   ,Dion Waiters            ,SG      ,23    ,0.0          ,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>" ,0          ,0.0
-8.42,2017-11-10,18.81,+10.39,Pistons,552335,Reggie Bullock,SG,10,0.0,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0,0.0
-19.90  ,2017-11-10,20.72      ,+0.82    ,Heat     ,571786   ,Tyler Johnson           ,PG      ,13    ,0.0          ,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>" ,0          ,0.0
-32.82  ,2017-11-09,31.60      ,-1.22    ,Raptors  ,266394   ,Kyle Lowry              ,PG      ,32    ,0.0          ,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>" ,0          ,0.0
-38.55  ,2017-11-09,39.49      ,+0.94    ,Raptors  ,457594   ,DeMar DeRozan           ,SG      ,35    ,0.0          ,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>" ,0          ,0.0
-21.34  ,2017-11-09,25.54      ,+4.20    ,Raptors  ,599780   ,Jonas Valanciunas       ,C       ,17    ,0.0          ,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>" ,0          ,0.0
-14.49  ,2017-11-09,5.50       ,-8.99    ,Raptors  ,639296   ,Lucas Nogueira          ,C       ,10    ,0.0          ,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>" ,0          ,0.0
-12.06  ,2017-11-09,9.53       ,-2.53    ,Raptors  ,707832   ,Fred VanVleet           ,PG      ,10    ,0.0          ,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>" ,0          ,0.0
-20.49  ,2017-11-10,21.63      ,+1.14    ,Celtics  ,786293   ,Terry Rozier            ,PG      ,11    ,0.0          ,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>" ,0          ,0.0
-15.38  ,2017-11-09,10.16      ,-5.22    ,Raptors  ,844478   ,Jakob Poeltl            ,PF      ,11    ,0.0          ,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>" ,0          ,0.0
-28.02  ,2017-11-10,27.90      ,-0.12    ,Celtics  ,883436   ,Jaylen Brown            ,SG      ,19    ,0.0          ,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>" ,0          ,0.0
-19.30  ,2017-11-11,19.14      ,-0.16    ,Rockets  ,229602   ,P.J. Tucker             ,SF      ,10    ,0.0          ,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>" ,0          ,0.0
-17.29  ,2017-11-10,5.80       ,-11.49   ,Pacers   ,253995   ,Al Jefferson            ,C       ,10    ,0.0          ,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>" ,0          ,0.0
-18.70  ,2017-11-11,18.23      ,-0.47    ,Rockets  ,295436   ,Luc Richard Mbah a Moute,SF      ,11    ,0.0          ,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>" ,0          ,0.0
+7.52,2017-11-10,1.18,-6.34,Pistons,882284,Henry Ellenson,PF,10,0.0,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0,0.0
+9.43,2017-11-10,7.34,-2.09,Pistons,553542,Eric Moreland,PF,10,0.0,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0,0.0
+1.78,2017-11-11,0.55,-1.23,Rockets,609816,Briante Weber,PG,10,0.0,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0,0.0
+8.50,2017-11-10,1.84,-6.66,Pistons,553331,Boban Marjanovic,C,10,0.0,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0,0.0
+3.70,2017-11-10,0.94,-2.76,Thunder,398428,Kyle Singler,SG,10,0.0,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0,0.0
+1.20,2017-11-10,0.48,-0.72,Celtics,844150,Kadeem Allen,SG,10,0.0,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0,0.0
+3.40,2017-11-11,0.24,-3.16,Mavericks,457334,Jeff Withey,C,10,0.0,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0,0.0
+28.78,2017-11-10,31.90,+3.12,Heat,456456,Goran Dragic,PG,29,0.0,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0,0.0
+21.36,2017-11-10,16.68,-4.68,Heat,514882,Kelly Olynyk,C,16,0.0,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0,0.0
+24.37,2017-11-10,26.55,+2.18,Heat,552007,Dion Waiters,SG,23,0.0,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0,0.0
+10.63,2017-11-10,18.81,+8.18,Pistons,552335,Reggie Bullock,SG,10,0.0,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0,0.0
+21.22,2017-11-10,20.72,-0.50,Heat,571786,Tyler Johnson,PG,13,0.0,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0,0.0
+35.25,2017-11-09,31.60,-3.65,Raptors,266394,Kyle Lowry,PG,32,0.0,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0,0.0
+39.32,2017-11-09,39.49,+0.17,Raptors,457594,DeMar DeRozan,SG,35,0.0,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0,0.0
+22.59,2017-11-09,25.54,+2.95,Raptors,599780,Jonas Valanciunas,C,17,0.0,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0,0.0
+12.60,2017-11-09,5.50,-7.10,Raptors,639296,Lucas Nogueira,C,10,0.0,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0,0.0
+14.96,2017-11-09,9.53,-5.43,Raptors,707832,Fred VanVleet,PG,10,0.0,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0,0.0
+19.26,2017-11-10,21.63,+2.37,Celtics,786293,Terry Rozier,PG,11,0.0,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0,0.0
+16.81,2017-11-09,10.16,-6.65,Raptors,844478,Jakob Poeltl,PF,11,0.0,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0,0.0

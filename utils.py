@@ -66,7 +66,11 @@ def get_player_logs_season(season):
 
 
 def toNBA(name):
-    name = str.strip(name)
+    try:
+        name = str.strip(name)
+    except Exception as e:
+        print("exception:%s " % e)
+
     if name == "J.R. Smith":
         name = "JR Smith"
     if name == "A.J. Hammons":
@@ -152,22 +156,73 @@ def get_player(id=None, name=None, firstName = None, lastName = None):
     session.close()
     return player
 
-def get_games(season=None, beforeToday=True):
+def get_boxscores(season=None, beforeToday=True, includeToday=True):
     session = sql.get_session()
     q = session.query(sql.Game)
     if season is not None:
         s = session.query(sql.Season).filter(sql.Season.SEASON_IDS.like(season)).first()
         q = q.filter(sql.Game.id >= s.start).filter(sql.Game.id <= s.end)
     if beforeToday:
-        now = datetime.datetime.now()
-        q = q.filter(sql.Game.dt < now)
+        if includeToday:
+            now = datetime.datetime.now()+datetime.timedelta(1)
+            q = q.filter(sql.Game.dt <= now)
+        else:
+            now = datetime.datetime.now()
+            q = q.filter(sql.Game.dt < now)
+
+    session.close()
+    return pd.DataFrame([getattr(x, "__dict__") for x in q.all()])
+
+
+def get_games(season=None, beforeToday=True, includeToday=True):
+    session = sql.get_session()
+    q = session.query(sql.Game)
+    if season is not None:
+        s = session.query(sql.Season).filter(sql.Season.SEASON_IDS.like(season)).first()
+        q = q.filter(sql.Game.id >= s.start).filter(sql.Game.id <= s.end)
+    if beforeToday:
+        if includeToday:
+            now = datetime.datetime.now()+datetime.timedelta(1)
+            q = q.filter(sql.Game.dt <= now)
+        else:
+            now = datetime.datetime.now()
+            q = q.filter(sql.Game.dt < now)
+
     session.close()
 
     return pd.DataFrame([getattr(x, "__dict__") for x in q.all()])
 
+def get_playoff_games(season=None, beforeToday=True, includeToday=False):
+    session = sql.get_session()
+    q = session.query(sql.Game)
+    if season is not None:
+        s = session.query(sql.Season).filter(sql.Season.SEASON_IDS.like(season)).all()
+        if len(s) > 1 and s[1].end is not None and s[1].start is not None:
+            q = q.filter(sql.Game.id >= s[1].start).filter(sql.Game.id <= s[1].end)
 
-def get_dates(season=None, beforeToday=True):
-    games = get_games(season,beforeToday)
+    if beforeToday:
+        if includeToday:
+            now = datetime.datetime.now()+datetime.timedelta(1)
+            q = q.filter(sql.Game.dt <= now)
+        else:
+            now = datetime.datetime.now()
+            q = q.filter(sql.Game.dt < now)
+
+    session.close()
+
+    return pd.DataFrame([getattr(x, "__dict__") for x in q.all()])
+
+def get_all_games(season=None, beforeToday=True,includeToday=True):
+    games = get_games(season,beforeToday, includeToday=includeToday)
+    return games
+
+def get_all_boxscore_ids(season=None):
+    games = get_boxscores(season)
+    return games
+
+
+def get_dates(season=None, beforeToday=True,includeToday=True):
+    games = get_games(season,beforeToday, includeToday=includeToday)
     date_list = games["dt"].dt.date.unique()
     return date_list
 
@@ -206,4 +261,15 @@ def fixTeam(abb):
         return "GSW"
     if abb == "PHO":
         return "PHX"
+    if abb == "UTH":
+        return "UTA"
     return abb
+
+
+def truncate(f, n):
+    '''Truncates/pads a float f to n decimal places without rounding'''
+    s = '{}'.format(f)
+    if 'e' in s or 'E' in s:
+        return '{0:.{1}f}'.format(f, n)
+    i, p, d = s.partition('.')
+    return '.'.join([i, (d+'0'*n)[:n]])

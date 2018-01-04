@@ -1,27 +1,27 @@
 avg_pts,date,fantasy_pts,fpts_diff,nickname,player_id,player_name,pos_main,salary,salary_change,salary_change_html,salary_diff,salary_diff_percentage
-23.17  ,2017-11-19,26.10      ,+2.93    ,Bulls   ,712595   ,Denzel Valentine        ,SG      ,"5,300",12.8         ,"<td class=""width-15 green"" id=""salary-col"">+$600 (12.8%)</td>",600        ,12.8
-27.31  ,2017-11-19,24.03      ,-3.28    ,Bulls   ,750703   ,Bobby Portis            ,PF      ,"5,200",-11.9        ,"<td class=""width-15 red"" id=""salary-col"">-$700 (-11.9%)</td>" ,-700       ,-11.9
-27.41  ,2017-11-19,26.75      ,-0.66    ,Lakers  ,602730   ,Kentavious Caldwell-Pope,SG      ,"5,200",-7.1         ,"<td class=""width-15 red"" id=""salary-col"">-$400 (-7.1%)</td>"  ,-400       ,-7.1
-21.20  ,2017-11-19,18.82      ,-2.38    ,Bulls   ,552319   ,Jerian Grant            ,PG      ,"4,600",-6.1         ,"<td class=""width-15 red"" id=""salary-col"">-$300 (-6.1%)</td>"  ,-300       ,-6.1
-33.49  ,2017-11-19,35.57      ,+2.08    ,Lakers  ,946714   ,Lonzo Ball              ,PG      ,"7,400",5.7          ,"<td class=""width-15 green"" id=""salary-col"">+$400 (5.7%)</td>" ,400        ,5.7
-27.48  ,2017-11-19,28.38      ,+0.90    ,Bulls   ,698968   ,Kris Dunn               ,PG      ,"5,600",5.7          ,"<td class=""width-15 green"" id=""salary-col"">+$300 (5.7%)</td>" ,300        ,5.7
-23.33  ,2017-11-19,23.35      ,+0.02    ,Lakers  ,551975   ,Jordan Clarkson         ,PG      ,"5,200",-5.5         ,"<td class=""width-15 red"" id=""salary-col"">-$300 (-5.5%)</td>"  ,-300       ,-5.5
-27.42  ,2017-11-19,30.76      ,+3.34    ,Lakers  ,330047   ,Brook Lopez             ,C       ,"6,000",5.3          ,"<td class=""width-15 green"" id=""salary-col"">+$300 (5.3%)</td>" ,300        ,5.3
-28.26  ,2017-11-19,30.32      ,+2.06    ,Lakers  ,844476   ,Kyle Kuzma              ,SF      ,"7,200",4.3          ,"<td class=""width-15 green"" id=""salary-col"">+$300 (4.3%)</td>" ,300        ,4.3
-24.63  ,2017-11-19,26.44      ,+1.82    ,Bulls   ,330050   ,Robin Lopez             ,C       ,"5,000",-3.8         ,"<td class=""width-15 red"" id=""salary-col"">-$200 (-3.8%)</td>"  ,-200       ,-3.8
-25.18  ,2017-11-19,28.77      ,+3.59    ,Lakers  ,786412   ,Julius Randle           ,PF      ,"5,200",2.0          ,"<td class=""width-15 green"" id=""salary-col"">+$100 (2.0%)</td>" ,100        ,2.0
-27.32  ,2017-11-19,28.34      ,+1.02    ,Bulls   ,395365   ,Justin Holiday          ,SG      ,"6,300",-1.6         ,"<td class=""width-15 red"" id=""salary-col"">-$100 (-1.6%)</td>"  ,-100       ,-1.6
-30.52  ,2017-11-19,33.33      ,+2.81    ,Bulls   ,949131   ,Lauri Markkanen         ,PF      ,"6,500",1.6          ,"<td class=""width-15 green"" id=""salary-col"">+$100 (1.6%)</td>" ,100        ,1.6
-7.82   ,2017-11-19,10.45      ,+2.63    ,Lakers  ,263217   ,Corey Brewer            ,SG      ,"3,000",0.0          ,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>"   ,0          ,0.0
-10.21  ,2017-11-19,2.72       ,-7.49    ,Bulls   ,920098   ,Paul Zipser             ,SG      ,"3,800",0.0          ,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>"   ,0          ,0.0
+22.82,2017-11-19,26.10,+3.28,Bulls,712595,Denzel Valentine,SG,"5,300",12.8,"<td class=""width-15 green"" id=""salary-col"">+$600 (12.8%)</td>",600,12.8
+24.92,2017-11-19,24.03,-0.89,Bulls,750703,Bobby Portis,PF,"5,200",-11.9,"<td class=""width-15 red"" id=""salary-col"">-$700 (-11.9%)</td>",-700,-11.9
+28.40,2017-11-19,26.75,-1.65,Lakers,602730,Kentavious Caldwell-Pope,SG,"5,200",-7.1,"<td class=""width-15 red"" id=""salary-col"">-$400 (-7.1%)</td>",-400,-7.1
+20.69,2017-11-19,18.82,-1.87,Bulls,552319,Jerian Grant,PG,"4,600",-6.1,"<td class=""width-15 red"" id=""salary-col"">-$300 (-6.1%)</td>",-300,-6.1
+33.41,2017-11-19,35.57,+2.16,Lakers,946714,Lonzo Ball,PG,"7,400",5.7,"<td class=""width-15 green"" id=""salary-col"">+$400 (5.7%)</td>",400,5.7
+31.27,2017-11-19,28.38,-2.89,Bulls,698968,Kris Dunn,PG,"5,600",5.7,"<td class=""width-15 green"" id=""salary-col"">+$300 (5.7%)</td>",300,5.7
+22.97,2017-11-19,23.35,+0.38,Lakers,551975,Jordan Clarkson,PG,"5,200",-5.5,"<td class=""width-15 red"" id=""salary-col"">-$300 (-5.5%)</td>",-300,-5.5
+24.71,2017-11-19,30.76,+6.05,Lakers,330047,Brook Lopez,C,"6,000",5.3,"<td class=""width-15 green"" id=""salary-col"">+$300 (5.3%)</td>",300,5.3
+29.80,2017-11-19,30.32,+0.52,Lakers,844476,Kyle Kuzma,SF,"7,200",4.3,"<td class=""width-15 green"" id=""salary-col"">+$300 (4.3%)</td>",300,4.3
+24.57,2017-11-19,26.44,+1.87,Bulls,330050,Robin Lopez,C,"5,000",-3.8,"<td class=""width-15 red"" id=""salary-col"">-$200 (-3.8%)</td>",-200,-3.8
+24.37,2017-11-19,28.77,+4.40,Lakers,786412,Julius Randle,PF,"5,200",2.0,"<td class=""width-15 green"" id=""salary-col"">+$100 (2.0%)</td>",100,2.0
+27.05,2017-11-19,28.34,+1.29,Bulls,395365,Justin Holiday,SG,"6,300",-1.6,"<td class=""width-15 red"" id=""salary-col"">-$100 (-1.6%)</td>",-100,-1.6
+29.40,2017-11-19,33.33,+3.93,Bulls,949131,Lauri Markkanen,PF,"6,500",1.6,"<td class=""width-15 green"" id=""salary-col"">+$100 (1.6%)</td>",100,1.6
+7.66,2017-11-19,10.45,+2.79,Lakers,263217,Corey Brewer,SG,"3,000",0.0,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0,0.0
+9.76,2017-11-19,2.72,-7.04,Bulls,920098,Paul Zipser,SG,"3,800",0.0,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0,0.0
 0.94,2017-11-19,2.16,+1.22,Lakers,552380,Vander Blue,PG,"3,000",0.0,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0,0.0
-11.54  ,2017-11-19,11.05      ,-0.49    ,Bulls   ,886386   ,Antonio Blakeney        ,PG      ,"3,000",0.0          ,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>"   ,0          ,0.0
-7.02   ,2017-11-19,4.07       ,-2.95    ,Bulls   ,329825   ,Quincy Pondexter        ,SG      ,"3,000",0.0          ,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>"   ,0          ,0.0
-9.56   ,2017-11-19,10.85      ,+1.29    ,Bulls   ,839018   ,Cristiano Felicio       ,PF      ,"3,000",0.0          ,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>"   ,0          ,0.0
-7.90   ,2017-11-19,4.90       ,-3.00    ,Lakers  ,229912   ,Andrew Bogut            ,C       ,"3,000",0.0          ,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>"   ,0          ,0.0
-7.59   ,2017-11-19,5.56       ,-2.03    ,Lakers  ,741892   ,Josh Hart               ,PG      ,"3,000",0.0          ,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>"   ,0          ,0.0
+10.68,2017-11-19,11.05,+0.37,Bulls,886386,Antonio Blakeney,PG,"3,000",0.0,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0,0.0
+5.44,2017-11-19,4.07,-1.37,Bulls,329825,Quincy Pondexter,SG,"3,000",0.0,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0,0.0
+8.76,2017-11-19,10.85,+2.09,Bulls,839018,Cristiano Felicio,PF,"3,000",0.0,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0,0.0
+7.04,2017-11-19,4.90,-2.14,Lakers,229912,Andrew Bogut,C,"3,000",0.0,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0,0.0
+9.98,2017-11-19,5.56,-4.42,Lakers,741892,Josh Hart,PG,"3,000",0.0,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0,0.0
 1.50,2017-11-19,0.41,-1.09,Bulls,697940,Ryan Arcidiacono,PG,"3,000",0.0,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0,0.0
-4.73   ,2017-11-19,1.71       ,-3.02    ,Lakers  ,786387   ,Tyler Ennis             ,PG      ,"3,000",0.0          ,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>"   ,0          ,0.0
-28.70  ,2017-11-19,28.78      ,+0.08    ,Lakers  ,887665   ,Brandon Ingram          ,SG      ,"6,200",0.0          ,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>"   ,0          ,0.0
-7.91   ,2017-11-19,1.20       ,-6.71    ,Bulls   ,789776   ,Kay Felder              ,PG      ,"3,000",0.0          ,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>"   ,0          ,0.0
-1.60   ,2017-11-19,2.50       ,+0.90    ,Lakers  ,920093   ,Ivica Zubac             ,C       ,"3,400",0.0          ,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>"   ,0          ,0.0
+4.40,2017-11-19,1.71,-2.69,Lakers,786387,Tyler Ennis,PG,"3,000",0.0,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0,0.0
+30.75,2017-11-19,28.78,-1.97,Lakers,887665,Brandon Ingram,SG,"6,200",0.0,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0,0.0
+7.50,2017-11-19,1.20,-6.30,Bulls,789776,Kay Felder,PG,"3,000",0.0,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0,0.0
+1.33,2017-11-19,2.50,+1.17,Lakers,920093,Ivica Zubac,C,"3,400",0.0,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0,0.0

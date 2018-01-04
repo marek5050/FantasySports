@@ -175,6 +175,7 @@ if __name__ == "__main__":
 
     parser = argparse.ArgumentParser()
     parser.add_argument("--date", help="whats the date or * for all")
+    parser.add_argument("--last", help="last x games")
     args = parser.parse_args()
 
     date_list = [now.date()]
@@ -183,12 +184,78 @@ if __name__ == "__main__":
     if args.date == "*":
         date_list = utils.get_dates("2017-18")
         date_search = "*"
+    elif args.date != "":
+        date_list = utils.get_dates("2017-18")
+        date_search = args.date
+
+    if args.last != "":
+            date_list = utils.get_dates("2017-18", beforeToday=True, includeToday=True)
+            date_list = date_list[int(args.last)*-1:]
+            date_search = date_list
 
     VegasInsiderOdds.start_urls = [
         "http://www.vegasinsider.com/nba/scoreboard/scores.cfm/game_date/" + x.strftime("%Y-%m-%d") for x in date_list]
+       #"http://www.vegasinsider.com/nba/scoreboard/scores.cfm/game_date/12-21-2017"
 
     injuryProcess.crawl(VegasInsiderOdds)
 
     injuryProcess.start()
 
-    buildDatabase.create_vegas_table(date_search)
+    df = buildDatabase.build_vegas(date_list)
+
+    buildDatabase.create_vegas_table(df)
+
+    # import urllib
+    # import urllib.request, json
+    # import unicodedata
+    #
+    # import json
+    #
+    #
+    # def json_load_byteified(file_handle):
+    #     return _byteify(
+    #         json.load(file_handle, object_hook=_byteify),
+    #         ignore_dicts=True
+    #     )
+    #
+    #
+    # def json_loads_byteified(json_text):
+    #     return _byteify(
+    #         json.loads(json_text, object_hook=_byteify),
+    #         ignore_dicts=True
+    #     )
+    #
+    #
+    # def _byteify(data, ignore_dicts=False):
+    #     # if this is a unicode string, return its string representation
+    #     if isinstance(data, unicode):
+    #         return data.encode('utf-8')
+    #     # if this is a list of values, return list of byteified values
+    #     if isinstance(data, list):
+    #         return [_byteify(item, ignore_dicts=True) for item in data]
+    #     # if this is a dictionary, return dictionary of byteified keys and values
+    #     # but only if we haven't already byteified it
+    #     if isinstance(data, dict) and not ignore_dicts:
+    #         return {
+    #             _byteify(key, ignore_dicts=True): _byteify(value, ignore_dicts=True)
+    #             for key, value in data.iteritems()
+    #         }
+    #     # if it's anything else, return it in its original form
+    #     return data
+    #
+    # req = urllib.request.Request(
+    #     'http://cdn.espn.com/core/api/v0/nav/index?&device=desktop&country=us&lang=en&region=us&site=espn&edition-host=espn.com&one-site=true&site-type=full')
+    # req.add_header('Origin', 'http://www.espn.com')
+    # req.add_header('Referer', 'http://www.espn.com/nba/scoreboard/_/date/20171122')
+    # req.add_header('Accept', '*/*')
+    # req.add_header('Accept-Encoding', 'deflate')
+    # req.add_header('Connection', 'keep-alive')
+    # req.add_header('User-Agent',
+    #                'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36')
+    # req.add_header('Accept-Language', 'en-US,en;q=0.9,cs;q=0.8')
+    # with urllib.request.urlopen(req) as url:
+    #     #    print(url)
+    #     #    respp = unicode(url.read(), errors='replace')
+    #     #    str_response = .decode('utf-8')
+    #     print(url.read().decode())
+    #     _recap = json_loads_byteified(url.read())

@@ -1,0 +1,138 @@
+<!DOCTYPE html><html><head>
+    <meta charset="utf-8">
+    <title>Orange Report</title>
+
+    <style>
+    html, body, table {
+        font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+        font-size: 13px;
+        margin:0px;
+        padding:0;
+        border:0 none;
+    }
+
+    h1, h2 , h3, h4, h5 {
+       padding: 1px;
+       font-size:100%;
+    }
+
+    h1 {
+        color: white;
+        background-color: black;
+        padding: 4px;
+        margin-top: 12px;
+        margin-bottom: 6px;
+    }
+
+    h2 {
+        border-bottom: 1px solid black;
+        padding-left: 2px;
+    }
+
+    ul, table, p {
+        padding: 10px;
+    }
+
+    table {
+        margin-left: -6px;
+    }
+
+    span.timestamp {
+        position: absolute;
+        right: 40px;
+        color:#ddd;
+    }
+
+    div.selected, div.normal {
+        margin: 5px;
+    }
+
+    div.selected {
+        background: #ddd;
+    }
+    @media print{
+        div.selected {
+            background: inherit;
+        }
+        ::-webkit-input-placeholder {
+            color: transparent;
+        }
+    }
+
+    div.content {
+        margin-left: 15px;
+    }
+
+    th, td {
+        text-align: left;
+        padding: 2px 6px 2px 6px;
+    }
+
+    th {
+        font-weight: bold;
+    }
+
+    @media screen {
+        td, th {
+            white-space: nowrap;
+        }
+    }
+
+    .caption {
+        text-align: center;
+        font-size: 90%;
+    }
+
+    img {
+        display: block;
+        margin: auto;
+        max-height: 20cm;
+    }
+
+    span.legend-square {
+        width: 1em;
+        height: 1em;
+        margin-right: 6px;
+        display: inline-block;
+    }
+
+    span.legend-item {
+        margin-right: 24px;
+    }
+
+    textarea {
+        border: 1px solid silver;
+        font-style: italic;
+        width: 100%;
+        height: 4em;
+    }
+
+    .textwrapper {
+        padding: 15px;
+    }
+
+    div.normal textarea:invalid {
+        display: none;
+    }
+
+    div.selected textarea {
+        display: block;
+    }
+
+    @media print{
+        section.section, img {
+            page-break-inside: avoid;
+        }
+    }
+    </style>
+
+
+</head><body>
+
+ 
+
+<div id="4824074712" class="normal" onclick="pybridge._select_item(this.id)"><section class="section"><h1>Test &amp; Score <span class="timestamp">Sat Dec 23 17, 11:47:30</span></h1><div class="content">
+<h2>Settings</h2><ul><b>Sampling type:</b> 2-fold Cross validation<br></ul><h2>Scores</h2><table>
+<tbody><tr><th style="color:black;border:0;background:transparent;text-align:left;vertical-align:middle;">Method</th><th style="color:black;border:0;background:transparent;text-align:left;vertical-align:middle;">MSE</th><th style="color:black;border:0;background:transparent;text-align:left;vertical-align:middle;">RMSE</th><th style="color:black;border:0;background:transparent;text-align:left;vertical-align:middle;">MAE</th><th style="color:black;border:0;background:transparent;text-align:left;vertical-align:middle;">R2</th></tr><tr><td style="color:black;border:0;background:transparent;text-align:left;vertical-align:middle;">AdaBoost</td><td style="color:black;border:0;background:transparent;text-align:left;vertical-align:middle;">105.827</td><td style="color:black;border:0;background:transparent;text-align:left;vertical-align:middle;">10.287</td><td style="color:black;border:0;background:transparent;text-align:left;vertical-align:middle;">7.970</td><td style="color:black;border:0;background:transparent;text-align:left;vertical-align:middle;">0.467</td></tr><tr><td style="color:#ff0000;border:0;background:transparent;text-align:left;vertical-align:middle;">Random Forest (error)</td><td style="color:black;border:0;background:transparent;text-align:left;vertical-align:middle;"></td><td style="color:black;border:0;background:transparent;text-align:left;vertical-align:middle;"></td><td style="color:black;border:0;background:transparent;text-align:left;vertical-align:middle;"></td><td style="color:black;border:0;background:transparent;text-align:left;vertical-align:middle;"></td></tr><tr><td style="color:black;border:1px solid black;background:transparent;text-align:left;vertical-align:middle;">Neural Network</td><td style="color:black;border:1px solid black;background:transparent;text-align:left;vertical-align:middle;">86.847</td><td style="color:black;border:1px solid black;background:transparent;text-align:left;vertical-align:middle;">9.319</td><td style="color:black;border:1px solid black;background:transparent;text-align:left;vertical-align:middle;">7.316</td><td style="color:black;border:1px solid black;background:transparent;text-align:left;vertical-align:middle;">0.563</td></tr></tbody></table></div></section>
+
+<div class="textwrapper"><textarea placeholder="Write a comment..." oninput="this.innerHTML = this.value;pybridge._add_comment(this.parentNode.parentNode.id, this.value);"></textarea></div></div></body></html>

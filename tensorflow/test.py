@@ -28,10 +28,13 @@ data_train = data[np.arange(train_start, train_end), :]
 data_test = data[np.arange(test_start, test_end), :]
 
 # Scale data
-scaler = MinMaxScaler(feature_range=(-1, 1))
-scaler.fit(data_train)
-data_train = scaler.transform(data_train)
-data_test = scaler.transform(data_test)
+Trainscaler = MinMaxScaler(feature_range=(-1, 1))
+Trainscaler.fit(data_train)
+data_train = Trainscaler.transform(data_train)
+
+Testscaler = MinMaxScaler(feature_range=(-1, 1))
+Testscaler.fit(data_test)
+data_test = Testscaler.transform(data_test)
 
 # Build X and y
 X_train = data_train[:, 1:]
@@ -108,14 +111,22 @@ mse_test = []
 # Run
 epochs = 10
 
+
+
+# with tf.name_scope('Accuracy'):
+#     # Accuracy
+#     acc = tf.equal(tf.argmax(out, 1), tf.argmax(Y, 1))
+#     acc = tf.reduce_mean(tf.cast(acc, tf.float32))
+
 # Create a summary to monitor cost tensor
 tf.summary.scalar("loss", mse)
+# # Create a summary to monitor accuracy tensor
+# tf.summary.scalar("accuracy", acc)
+
+merged_summary_op = tf.summary.merge_all()
 
 # op to write logs to Tensorboard
 summary_writer = tf.summary.FileWriter(logs_path, graph=tf.get_default_graph())
-
-
-merged_summary_op = tf.summary.merge_all()
 
 for epoch in range(epochs):
     avg_cost = 0.
@@ -155,4 +166,16 @@ for epoch in range(epochs):
 
 # Print final MSE after Training
 mse_final = net.run(mse, feed_dict={X: data[:, 1:], Y: data[:,0]})
+
+pred = net.run(out, feed_dict={X: X_test})
+# np.savetxt("foo.csv", data_test_save, delimiter=",")
 print(mse_final)
+
+# mse_final = net.run(mse, feed_dict={X: data[:, 1:], Y: data[:,0]})
+# print("Accuracy:", acc.eval({X: X_test, Y: y_test}))
+
+
+print("Hello World")
+print("Run the command line:\n" \
+      "--> tensorboard --logdir=`pwd` --host 127.0.0.1 " \
+      "\nThen open http://127.0.0.1:6006/ into your web browser")

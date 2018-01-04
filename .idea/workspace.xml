@@ -1,8 +1,147 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="289189b2-db15-4b29-8e00-7ee0c0b6a1fa" name="Default" comment="">
+    <list default="true" id="289189b2-db15-4b29-8e00-7ee0c0b6a1fa" name="Default" comment="Merged.">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/calendar/finished_schedule_2016.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/play/171229.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/play/171230.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/play/DKSalaries171226.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/play/DKSalariesDec23.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/preprocess.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/schedule.sh" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tensorflow/events.out.tfevents.1514028658.spaceship.local" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tensorflow/events.out.tfevents.1514028774.spaceship.local" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/nba_cache.sqlite" afterPath="$PROJECT_DIR$/nba_cache.sqlite" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.ipynb_checkpoints/CalculatePlayer-checkpoint.ipynb" afterPath="$PROJECT_DIR$/.ipynb_checkpoints/CalculatePlayer-checkpoint.ipynb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CalculatePlayer.ipynb" afterPath="$PROJECT_DIR$/CalculatePlayer.ipynb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Orange.ows" afterPath="$PROJECT_DIR$/Orange.ows" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SalaryScraper.py" afterPath="$PROJECT_DIR$/SalaryScraper.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Vegas.py" afterPath="$PROJECT_DIR$/Vegas.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/addDraftKingInformation.py" afterPath="$PROJECT_DIR$/addDraftKingInformation.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/buildDatabase.py" afterPath="$PROJECT_DIR$/buildDatabase.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/old_salaries/dk_2017-10-17.csv" afterPath="$PROJECT_DIR$/data/old_salaries/dk_2017-10-17.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/old_salaries/dk_2017-10-18.csv" afterPath="$PROJECT_DIR$/data/old_salaries/dk_2017-10-18.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/old_salaries/dk_2017-10-19.csv" afterPath="$PROJECT_DIR$/data/old_salaries/dk_2017-10-19.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/old_salaries/dk_2017-10-20.csv" afterPath="$PROJECT_DIR$/data/old_salaries/dk_2017-10-20.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/old_salaries/dk_2017-10-21.csv" afterPath="$PROJECT_DIR$/data/old_salaries/dk_2017-10-21.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/old_salaries/dk_2017-10-22.csv" afterPath="$PROJECT_DIR$/data/old_salaries/dk_2017-10-22.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/old_salaries/dk_2017-10-23.csv" afterPath="$PROJECT_DIR$/data/old_salaries/dk_2017-10-23.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/old_salaries/dk_2017-10-24.csv" afterPath="$PROJECT_DIR$/data/old_salaries/dk_2017-10-24.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/old_salaries/dk_2017-10-25.csv" afterPath="$PROJECT_DIR$/data/old_salaries/dk_2017-10-25.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/old_salaries/dk_2017-10-26.csv" afterPath="$PROJECT_DIR$/data/old_salaries/dk_2017-10-26.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/old_salaries/dk_2017-10-27.csv" afterPath="$PROJECT_DIR$/data/old_salaries/dk_2017-10-27.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/old_salaries/dk_2017-10-28.csv" afterPath="$PROJECT_DIR$/data/old_salaries/dk_2017-10-28.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/old_salaries/dk_2017-10-29.csv" afterPath="$PROJECT_DIR$/data/old_salaries/dk_2017-10-29.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/old_salaries/dk_2017-10-30.csv" afterPath="$PROJECT_DIR$/data/old_salaries/dk_2017-10-30.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/old_salaries/dk_2017-10-31.csv" afterPath="$PROJECT_DIR$/data/old_salaries/dk_2017-10-31.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/old_salaries/dk_2017-11-01.csv" afterPath="$PROJECT_DIR$/data/old_salaries/dk_2017-11-01.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/old_salaries/dk_2017-11-02.csv" afterPath="$PROJECT_DIR$/data/old_salaries/dk_2017-11-02.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/old_salaries/dk_2017-11-03.csv" afterPath="$PROJECT_DIR$/data/old_salaries/dk_2017-11-03.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/old_salaries/dk_2017-11-04.csv" afterPath="$PROJECT_DIR$/data/old_salaries/dk_2017-11-04.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/old_salaries/dk_2017-11-05.csv" afterPath="$PROJECT_DIR$/data/old_salaries/dk_2017-11-05.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/old_salaries/dk_2017-11-06.csv" afterPath="$PROJECT_DIR$/data/old_salaries/dk_2017-11-06.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/old_salaries/dk_2017-11-07.csv" afterPath="$PROJECT_DIR$/data/old_salaries/dk_2017-11-07.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/old_salaries/dk_2017-11-08.csv" afterPath="$PROJECT_DIR$/data/old_salaries/dk_2017-11-08.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/old_salaries/dk_2017-11-09.csv" afterPath="$PROJECT_DIR$/data/old_salaries/dk_2017-11-09.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/old_salaries/dk_2017-11-10.csv" afterPath="$PROJECT_DIR$/data/old_salaries/dk_2017-11-10.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/old_salaries/dk_2017-11-11.csv" afterPath="$PROJECT_DIR$/data/old_salaries/dk_2017-11-11.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/old_salaries/dk_2017-11-12.csv" afterPath="$PROJECT_DIR$/data/old_salaries/dk_2017-11-12.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/old_salaries/dk_2017-11-13.csv" afterPath="$PROJECT_DIR$/data/old_salaries/dk_2017-11-13.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/old_salaries/dk_2017-11-14.csv" afterPath="$PROJECT_DIR$/data/old_salaries/dk_2017-11-14.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/old_salaries/dk_2017-11-15.csv" afterPath="$PROJECT_DIR$/data/old_salaries/dk_2017-11-15.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/old_salaries/dk_2017-11-16.csv" afterPath="$PROJECT_DIR$/data/old_salaries/dk_2017-11-16.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/old_salaries/dk_2017-11-17.csv" afterPath="$PROJECT_DIR$/data/old_salaries/dk_2017-11-17.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/old_salaries/dk_2017-11-18.csv" afterPath="$PROJECT_DIR$/data/old_salaries/dk_2017-11-18.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/old_salaries/dk_2017-11-19.csv" afterPath="$PROJECT_DIR$/data/old_salaries/dk_2017-11-19.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/old_salaries/dk_2017-11-20.csv" afterPath="$PROJECT_DIR$/data/old_salaries/dk_2017-11-20.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/old_salaries/dk_2017-11-21.csv" afterPath="$PROJECT_DIR$/data/old_salaries/dk_2017-11-21.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/old_salaries/dk_2017-11-24.csv" afterPath="$PROJECT_DIR$/data/old_salaries/dk_2017-11-24.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/old_salaries/fd_2017-10-17.csv" afterPath="$PROJECT_DIR$/data/old_salaries/fd_2017-10-17.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/old_salaries/fd_2017-10-18.csv" afterPath="$PROJECT_DIR$/data/old_salaries/fd_2017-10-18.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/old_salaries/fd_2017-10-19.csv" afterPath="$PROJECT_DIR$/data/old_salaries/fd_2017-10-19.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/old_salaries/fd_2017-10-20.csv" afterPath="$PROJECT_DIR$/data/old_salaries/fd_2017-10-20.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/old_salaries/fd_2017-10-21.csv" afterPath="$PROJECT_DIR$/data/old_salaries/fd_2017-10-21.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/old_salaries/fd_2017-10-22.csv" afterPath="$PROJECT_DIR$/data/old_salaries/fd_2017-10-22.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/old_salaries/fd_2017-10-23.csv" afterPath="$PROJECT_DIR$/data/old_salaries/fd_2017-10-23.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/old_salaries/fd_2017-10-24.csv" afterPath="$PROJECT_DIR$/data/old_salaries/fd_2017-10-24.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/old_salaries/fd_2017-10-25.csv" afterPath="$PROJECT_DIR$/data/old_salaries/fd_2017-10-25.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/old_salaries/fd_2017-10-26.csv" afterPath="$PROJECT_DIR$/data/old_salaries/fd_2017-10-26.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/old_salaries/fd_2017-10-27.csv" afterPath="$PROJECT_DIR$/data/old_salaries/fd_2017-10-27.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/old_salaries/fd_2017-10-28.csv" afterPath="$PROJECT_DIR$/data/old_salaries/fd_2017-10-28.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/old_salaries/fd_2017-10-29.csv" afterPath="$PROJECT_DIR$/data/old_salaries/fd_2017-10-29.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/old_salaries/fd_2017-10-30.csv" afterPath="$PROJECT_DIR$/data/old_salaries/fd_2017-10-30.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/old_salaries/fd_2017-10-31.csv" afterPath="$PROJECT_DIR$/data/old_salaries/fd_2017-10-31.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/old_salaries/fd_2017-11-01.csv" afterPath="$PROJECT_DIR$/data/old_salaries/fd_2017-11-01.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/old_salaries/fd_2017-11-02.csv" afterPath="$PROJECT_DIR$/data/old_salaries/fd_2017-11-02.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/old_salaries/fd_2017-11-03.csv" afterPath="$PROJECT_DIR$/data/old_salaries/fd_2017-11-03.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/old_salaries/fd_2017-11-04.csv" afterPath="$PROJECT_DIR$/data/old_salaries/fd_2017-11-04.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/old_salaries/fd_2017-11-05.csv" afterPath="$PROJECT_DIR$/data/old_salaries/fd_2017-11-05.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/old_salaries/fd_2017-11-06.csv" afterPath="$PROJECT_DIR$/data/old_salaries/fd_2017-11-06.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/old_salaries/fd_2017-11-07.csv" afterPath="$PROJECT_DIR$/data/old_salaries/fd_2017-11-07.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/old_salaries/fd_2017-11-08.csv" afterPath="$PROJECT_DIR$/data/old_salaries/fd_2017-11-08.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/old_salaries/fd_2017-11-09.csv" afterPath="$PROJECT_DIR$/data/old_salaries/fd_2017-11-09.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/old_salaries/fd_2017-11-10.csv" afterPath="$PROJECT_DIR$/data/old_salaries/fd_2017-11-10.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/old_salaries/fd_2017-11-11.csv" afterPath="$PROJECT_DIR$/data/old_salaries/fd_2017-11-11.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/old_salaries/fd_2017-11-12.csv" afterPath="$PROJECT_DIR$/data/old_salaries/fd_2017-11-12.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/old_salaries/fd_2017-11-13.csv" afterPath="$PROJECT_DIR$/data/old_salaries/fd_2017-11-13.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/old_salaries/fd_2017-11-14.csv" afterPath="$PROJECT_DIR$/data/old_salaries/fd_2017-11-14.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/old_salaries/fd_2017-11-15.csv" afterPath="$PROJECT_DIR$/data/old_salaries/fd_2017-11-15.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/old_salaries/fd_2017-11-16.csv" afterPath="$PROJECT_DIR$/data/old_salaries/fd_2017-11-16.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/old_salaries/fd_2017-11-17.csv" afterPath="$PROJECT_DIR$/data/old_salaries/fd_2017-11-17.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/old_salaries/fd_2017-11-18.csv" afterPath="$PROJECT_DIR$/data/old_salaries/fd_2017-11-18.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/old_salaries/fd_2017-11-19.csv" afterPath="$PROJECT_DIR$/data/old_salaries/fd_2017-11-19.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/old_salaries/fd_2017-11-20.csv" afterPath="$PROJECT_DIR$/data/old_salaries/fd_2017-11-20.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/old_salaries/fd_2017-11-21.csv" afterPath="$PROJECT_DIR$/data/old_salaries/fd_2017-11-21.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/old_salaries/fd_2017-11-24.csv" afterPath="$PROJECT_DIR$/data/old_salaries/fd_2017-11-24.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/old_salaries/yah_2017-10-17.csv" afterPath="$PROJECT_DIR$/data/old_salaries/yah_2017-10-17.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/old_salaries/yah_2017-10-18.csv" afterPath="$PROJECT_DIR$/data/old_salaries/yah_2017-10-18.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/old_salaries/yah_2017-10-19.csv" afterPath="$PROJECT_DIR$/data/old_salaries/yah_2017-10-19.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/old_salaries/yah_2017-10-20.csv" afterPath="$PROJECT_DIR$/data/old_salaries/yah_2017-10-20.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/old_salaries/yah_2017-10-21.csv" afterPath="$PROJECT_DIR$/data/old_salaries/yah_2017-10-21.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/old_salaries/yah_2017-10-22.csv" afterPath="$PROJECT_DIR$/data/old_salaries/yah_2017-10-22.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/old_salaries/yah_2017-10-23.csv" afterPath="$PROJECT_DIR$/data/old_salaries/yah_2017-10-23.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/old_salaries/yah_2017-10-24.csv" afterPath="$PROJECT_DIR$/data/old_salaries/yah_2017-10-24.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/old_salaries/yah_2017-10-25.csv" afterPath="$PROJECT_DIR$/data/old_salaries/yah_2017-10-25.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/old_salaries/yah_2017-10-26.csv" afterPath="$PROJECT_DIR$/data/old_salaries/yah_2017-10-26.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/old_salaries/yah_2017-10-27.csv" afterPath="$PROJECT_DIR$/data/old_salaries/yah_2017-10-27.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/old_salaries/yah_2017-10-28.csv" afterPath="$PROJECT_DIR$/data/old_salaries/yah_2017-10-28.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/old_salaries/yah_2017-10-29.csv" afterPath="$PROJECT_DIR$/data/old_salaries/yah_2017-10-29.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/old_salaries/yah_2017-10-30.csv" afterPath="$PROJECT_DIR$/data/old_salaries/yah_2017-10-30.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/old_salaries/yah_2017-10-31.csv" afterPath="$PROJECT_DIR$/data/old_salaries/yah_2017-10-31.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/old_salaries/yah_2017-11-01.csv" afterPath="$PROJECT_DIR$/data/old_salaries/yah_2017-11-01.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/old_salaries/yah_2017-11-02.csv" afterPath="$PROJECT_DIR$/data/old_salaries/yah_2017-11-02.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/old_salaries/yah_2017-11-03.csv" afterPath="$PROJECT_DIR$/data/old_salaries/yah_2017-11-03.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/old_salaries/yah_2017-11-04.csv" afterPath="$PROJECT_DIR$/data/old_salaries/yah_2017-11-04.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/old_salaries/yah_2017-11-05.csv" afterPath="$PROJECT_DIR$/data/old_salaries/yah_2017-11-05.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/old_salaries/yah_2017-11-06.csv" afterPath="$PROJECT_DIR$/data/old_salaries/yah_2017-11-06.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/old_salaries/yah_2017-11-07.csv" afterPath="$PROJECT_DIR$/data/old_salaries/yah_2017-11-07.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/old_salaries/yah_2017-11-08.csv" afterPath="$PROJECT_DIR$/data/old_salaries/yah_2017-11-08.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/old_salaries/yah_2017-11-09.csv" afterPath="$PROJECT_DIR$/data/old_salaries/yah_2017-11-09.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/old_salaries/yah_2017-11-10.csv" afterPath="$PROJECT_DIR$/data/old_salaries/yah_2017-11-10.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/old_salaries/yah_2017-11-11.csv" afterPath="$PROJECT_DIR$/data/old_salaries/yah_2017-11-11.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/old_salaries/yah_2017-11-12.csv" afterPath="$PROJECT_DIR$/data/old_salaries/yah_2017-11-12.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/old_salaries/yah_2017-11-13.csv" afterPath="$PROJECT_DIR$/data/old_salaries/yah_2017-11-13.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/old_salaries/yah_2017-11-14.csv" afterPath="$PROJECT_DIR$/data/old_salaries/yah_2017-11-14.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/old_salaries/yah_2017-11-15.csv" afterPath="$PROJECT_DIR$/data/old_salaries/yah_2017-11-15.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/old_salaries/yah_2017-11-16.csv" afterPath="$PROJECT_DIR$/data/old_salaries/yah_2017-11-16.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/old_salaries/yah_2017-11-17.csv" afterPath="$PROJECT_DIR$/data/old_salaries/yah_2017-11-17.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/old_salaries/yah_2017-11-18.csv" afterPath="$PROJECT_DIR$/data/old_salaries/yah_2017-11-18.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/old_salaries/yah_2017-11-19.csv" afterPath="$PROJECT_DIR$/data/old_salaries/yah_2017-11-19.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/old_salaries/yah_2017-11-20.csv" afterPath="$PROJECT_DIR$/data/old_salaries/yah_2017-11-20.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/old_salaries/yah_2017-11-21.csv" afterPath="$PROJECT_DIR$/data/old_salaries/yah_2017-11-21.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/play/DKSalaries_11_24.csv" afterPath="$PROJECT_DIR$/data/play/DKSalaries_11_24.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/play/DKSalaries_nov_24.csv" afterPath="$PROJECT_DIR$/data/play/DKSalaries_nov_24.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/play/DKSalaries_nov_25.csv" afterPath="$PROJECT_DIR$/data/play/DKSalaries_nov_25.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/degenerate/app.py" afterPath="$PROJECT_DIR$/degenerate/app.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/degenerate/degenerate/optimizer.py" afterPath="$PROJECT_DIR$/degenerate/degenerate/optimizer.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/degenerate/degenerate/player_pool.py" afterPath="$PROJECT_DIR$/degenerate/degenerate/player_pool.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mysql.py" afterPath="$PROJECT_DIR$/mysql.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/response_espn.json" afterPath="$PROJECT_DIR$/response_espn.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tensorflow/test.py" afterPath="$PROJECT_DIR$/tensorflow/test.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/utils.py" afterPath="$PROJECT_DIR$/utils.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -16,10 +155,14 @@
     <SUITE FILE_PATH="coverage/NBA$Temp.coverage" NAME="Temp Coverage Results" MODIFIED="1485298432278" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/NBA$HistoricalDFS.coverage" NAME="HistoricalDFS Coverage Results" MODIFIED="1484943316311" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/NBA$Calculate_Penalties.coverage" NAME="Calculate Penalties Coverage Results" MODIFIED="1485978539756" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/NBA$VegasOddsAll.coverage" NAME="VegasOddsAll Coverage Results" MODIFIED="1486067222019" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/NBA$optimize_nba.coverage" NAME="optimize_nba Coverage Results" MODIFIED="1513952980446" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/degenerate" />
+    <SUITE FILE_PATH="coverage/NBA$TensorFlow.coverage" NAME="TensorFlow Coverage Results" MODIFIED="1514031452816" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tensorflow" />
     <SUITE FILE_PATH="coverage/NBA$RotoNews.coverage" NAME="RotoNews Coverage Results" MODIFIED="1511653440221" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/NBA$Build_Database.coverage" NAME="Build Database Coverage Results" MODIFIED="1511559864744" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/NBA$Vegas.coverage" NAME="Vegas Coverage Results" MODIFIED="1511652804742" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/NBA$VegasOddsAll.coverage" NAME="VegasOddsAll Coverage Results" MODIFIED="1513871401089" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/NBA$Build_Database.coverage" NAME="Build Database Coverage Results" MODIFIED="1514838785921" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/NBA$optimize.coverage" NAME="optimize Coverage Results" MODIFIED="1513941460402" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/degenerate" />
+    <SUITE FILE_PATH="coverage/NBA$Vegas_Today.coverage" NAME="Vegas Today Coverage Results" MODIFIED="1514730748204" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/NBA$Vegas.coverage" NAME="Vegas Coverage Results" MODIFIED="1514730778547" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/NBA$Calculate.coverage" NAME="Calculate Averages Coverage Results" MODIFIED="1484166049383" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/NBA$Injuries.coverage" NAME="Injuries Coverage Results" MODIFIED="1511214894527" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/NBA$Team_updates.coverage" NAME="Team updates Coverage Results" MODIFIED="1484343854608" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
@@ -29,178 +172,113 @@
     <SUITE FILE_PATH="coverage/NBA$blah.coverage" NAME="blah Coverage Results" MODIFIED="1484965588491" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/NBA$Targets.coverage" NAME="Targets Coverage Results" MODIFIED="1510374001759" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/NBA$Daily_Injuries.coverage" NAME="Daily Injuries Coverage Results" MODIFIED="1509825020112" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/NBA$Preprocess.coverage" NAME="Preprocess Coverage Results" MODIFIED="1514680008701" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/NBA$SalaryScraper_Today.coverage" NAME="SalaryScraper Today Coverage Results" MODIFIED="1514539977918" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/NBA$Updates.coverage" NAME="Team updates Coverage Results" MODIFIED="1483804883967" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/NBA$Defense.coverage" NAME="Defense Coverage Results" MODIFIED="1510374004990" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/NBA$DB_Update.coverage" NAME="DB Update Coverage Results" MODIFIED="1511636547576" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/NBA$DB_Update.coverage" NAME="DB Update Coverage Results" MODIFIED="1512009881625" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/NBA$QueryDatabase.coverage" NAME="QueryDatabase Coverage Results" MODIFIED="1485872084633" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/models" />
-    <SUITE FILE_PATH="coverage/NBA$SalaryScraper.coverage" NAME="SalaryScraper Coverage Results" MODIFIED="1511663456613" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/NBA$SalaryScraper.coverage" NAME="SalaryScraper Coverage Results" MODIFIED="1514309499842" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/NBA$Setup_CRON_jobs.coverage" NAME="Setup CRON jobs Coverage Results" MODIFIED="1509828165161" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/NBA$Calculate_Scores.coverage" NAME="Calculate Scores Coverage Results" MODIFIED="1511270856805" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/NBA$Append_LSTM.coverage" NAME="Append LSTM Coverage Results" MODIFIED="1486067927046" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/NBA$addDraftKing.coverage" NAME="addDraftKing Coverage Results" MODIFIED="1511652245052" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/NBA$addDraftKing.coverage" NAME="addDraftKing Coverage Results" MODIFIED="1514295851080" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/NBA$app.coverage" NAME="app Coverage Results" MODIFIED="1513970450059" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/degenerate" />
     <SUITE FILE_PATH="coverage/NBA$Calculate_Averages_Simple.coverage" NAME="Calculate Averages Simple Coverage Results" MODIFIED="1485978440345" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
   </component>
   <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
     <option name="GROUP_SCHEMA" value="true" />
     <option name="GROUP_CONTENTS" value="false" />
     <option name="SORT_POSITIONED" value="false" />
     <option name="SHOW_TABLE_DETAILS" value="true" />
     <option name="SHOW_EMPTY_GROUPS" value="false" />
     <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <expand />
+    <select />
   </component>
   <component name="FavoritesManager">
     <favorites_list name="NBA" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="buildDatabase.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/buildDatabase.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="242">
-              <caret line="254" column="0" lean-forward="false" selection-start-line="254" selection-start-column="0" selection-end-line="254" selection-end-column="0" />
-              <folding>
-                <marker date="1512008761000" expanded="true" signature="1522:2085" ph="..." />
-                <marker date="1512008761000" expanded="true" signature="1522:2132" ph="..." />
-                <marker date="1512008761000" expanded="true" signature="1553:2085" ph="..." />
-                <marker date="1512008761000" expanded="true" signature="1570:1991" ph="..." />
-                <marker date="1512008761000" expanded="true" signature="1704:1991" ph="..." />
-                <marker date="1512008761000" expanded="true" signature="1728:1867" ph="..." />
-                <marker date="1512008761000" expanded="true" signature="1909:1991" ph="..." />
-                <marker date="1512008761000" expanded="true" signature="2027:2085" ph="..." />
-                <marker date="1512008761000" expanded="true" signature="2168:2407" ph="..." />
-                <marker date="1512008761000" expanded="true" signature="2222:2387" ph="..." />
-                <marker date="1512008761000" expanded="true" signature="2235:2304" ph="..." />
-                <marker date="1512008761000" expanded="true" signature="2335:2387" ph="..." />
-                <marker date="1512008761000" expanded="true" signature="2445:2704" ph="..." />
-                <marker date="1512008761000" expanded="true" signature="2706:4064" ph="..." />
-                <marker date="1512008761000" expanded="true" signature="2794:2859" ph="SELECT * FRO... game" />
-                <marker date="1512008761000" expanded="true" signature="4090:4843" ph="..." />
-                <marker date="1512008761000" expanded="true" signature="4380:4686" ph="..." />
-                <marker date="1512008761000" expanded="true" signature="4393:4587" ph="..." />
-                <marker date="1512008761000" expanded="true" signature="4618:4686" ph="..." />
-                <marker date="1512008761000" expanded="true" signature="4713:4826" ph="..." />
-                <marker date="1512008761000" expanded="true" signature="4869:5575" ph="..." />
-                <marker date="1512008761000" expanded="true" signature="5169:5464" ph="..." />
-                <marker date="1512008761000" expanded="true" signature="5182:5365" ph="..." />
-                <marker date="1512008761000" expanded="true" signature="5396:5464" ph="..." />
-                <marker date="1512008761000" expanded="true" signature="5607:6751" ph="..." />
-                <marker date="1512008761000" expanded="true" signature="5718:6731" ph="..." />
-                <marker date="1512008761000" expanded="true" signature="5782:6647" ph="..." />
-                <marker date="1512008761000" expanded="true" signature="5887:6122" ph="..." />
-                <marker date="1512008761000" expanded="true" signature="6151:6489" ph="..." />
-                <marker date="1512008761000" expanded="true" signature="6506:6647" ph="..." />
-                <marker date="1512008761000" expanded="true" signature="6679:6731" ph="..." />
-                <marker date="1512008761000" expanded="true" signature="6817:6926" ph="..." />
-                <marker date="1512008761000" expanded="true" signature="6956:9455" ph="..." />
-                <marker date="1512008761000" expanded="true" signature="7092:7179" ph="..." />
-                <marker date="1512008761000" expanded="true" signature="7215:9330" ph="..." />
-                <marker date="1512008761000" expanded="true" signature="7393:9108" ph="..." />
-                <marker date="1512008761000" expanded="true" signature="7867:8067" ph="..." />
-                <marker date="1512008761000" expanded="true" signature="8416:8821" ph="..." />
-                <marker date="1512008761000" expanded="true" signature="8558:8682" ph="..." />
-                <marker date="1512008761000" expanded="true" signature="8860:9108" ph="..." />
-                <marker date="1512008761000" expanded="true" signature="8881:9031" ph="..." />
-                <marker date="1512008761000" expanded="true" signature="9127:9330" ph="..." />
-                <marker date="1512008761000" expanded="true" signature="9590:9814" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="response.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/response.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="88">
-              <caret line="9" column="12" lean-forward="false" selection-start-line="9" selection-start-column="12" selection-end-line="9" selection-end-column="12" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="response_espn.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/response_espn.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="190">
-              <caret line="139" column="35" lean-forward="false" selection-start-line="139" selection-start-column="35" selection-end-line="139" selection-end-column="35" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="game_cast_response.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/game_cast_response.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="44966">
-              <caret line="3601" column="30" lean-forward="false" selection-start-line="3601" selection-start-column="30" selection-end-line="3601" selection-end-column="30" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="game_cast_response2.json" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/game_cast_response2.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="336">
-              <caret line="8511" column="0" lean-forward="false" selection-start-line="8511" selection-start-column="0" selection-end-line="8511" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="utils.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/utils.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="353">
-              <caret line="152" column="0" lean-forward="false" selection-start-line="152" selection-start-column="0" selection-end-line="152" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SalaryScraper.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/SalaryScraper.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="351">
-              <caret line="89" column="35" lean-forward="false" selection-start-line="89" selection-start-column="35" selection-end-line="89" selection-end-column="35" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="dk_2016-10-25.csv" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/data/old_salaries/dk_2016-10-25.csv">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="140">
-              <caret line="13" column="59" lean-forward="false" selection-start-line="13" selection-start-column="59" selection-end-line="13" selection-end-column="59" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="dk_2016-10-26.csv" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/data/old_salaries/dk_2016-10-26.csv">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="88" column="47" lean-forward="false" selection-start-line="88" selection-start-column="47" selection-end-line="88" selection-end-column="47" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="yah_2017-11-25.csv" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/data/old_salaries/yah_2017-11-25.csv">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="5" column="57" lean-forward="false" selection-start-line="5" selection-start-column="43" selection-end-line="5" selection-end-column="57" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <splitter split-orientation="horizontal" split-proportion="0.379247">
+      <split-first>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+          <file leaf-file-name="buildDatabase.py" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/buildDatabase.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="203">
+                  <caret line="364" column="30" lean-forward="false" selection-start-line="364" selection-start-column="30" selection-end-line="364" selection-end-column="30" />
+                  <folding>
+                    <element signature="e#0#11#0" expanded="true" />
+                    <marker date="1514663637000" expanded="true" signature="4736:4801" ph="SELECT * FRO... game" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="mysql.py" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/mysql.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="173">
+                  <caret line="627" column="22" lean-forward="false" selection-start-line="627" selection-start-column="22" selection-end-line="627" selection-end-column="22" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="utils.py" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/utils.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="267">
+                  <caret line="173" column="0" lean-forward="false" selection-start-line="173" selection-start-column="0" selection-end-line="173" selection-end-column="0" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="preprocess.py" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/preprocess.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="159">
+                  <caret line="23" column="29" lean-forward="false" selection-start-line="23" selection-start-column="17" selection-end-line="23" selection-end-column="29" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="Vegas.py" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/Vegas.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="101">
+                  <caret line="87" column="30" lean-forward="false" selection-start-line="87" selection-start-column="30" selection-end-line="87" selection-end-column="30" />
+                  <folding>
+                    <element signature="e#25#40#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-first>
+      <split-second>
+        <leaf>
+          <file leaf-file-name="schedule.sh" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/schedule.sh">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="105">
+                  <caret line="7" column="25" lean-forward="true" selection-start-line="7" selection-start-column="25" selection-end-line="7" selection-end-column="25" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-second>
+    </splitter>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -212,42 +290,38 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>kanter</find>
-      <find>saturda</find>
-      <find>players</find>
-      <find>Killed</find>
-      <find>C.J. wil</find>
-      <find>sql.pla</find>
-      <find>__init__</find>
+      <find>advanced</find>
+      <find>game_id</find>
+      <find>playerlog</find>
+      <find>double</find>
+      <find>fourfacr</find>
       <find>init</find>
-      <find>get_ga</find>
-      <find>get_game</find>
-      <find>dkplayer</find>
-      <find>datetime</find>
-      <find>Luc Mbah a Moute</find>
-      <find>player</find>
-      <find>person_id</find>
-      <find>Player_ID</find>
-      <find>Game</find>
-      <find>found</find>
-      <find>get_pla</find>
-      <find>no pla</find>
-      <find>dkPla</find>
-      <find>&quot;Name&quot;</find>
-      <find />
-      <find>,</find>
-      <find>set_</find>
-      <find>constra</find>
-      <find>McConnel</find>
-      <find>Dennis Smith</find>
-      <find>clipper</find>
-      <find>utah</find>
+      <find>init__</find>
+      <find>boxscore</find>
+      <find>player.id</find>
+      <find>OFF_RATING</find>
+      <find>error</find>
+      <find>DataError</find>
+      <find>builddata</find>
+      <find>fourfactor</find>
+      <find>fourfact</find>
+      <find>cons</find>
+      <find>constrai</find>
+      <find>build_</find>
+      <find>shiftedOFF_RAT</find>
+      <find>seasontype</find>
+      <find>seasonty</find>
+      <find>400</find>
+      <find>shiftedMINavg</find>
+      <find>save_csv</find>
+      <find>####</find>
+      <find>calculat</find>
+      <find>dkfps</find>
+      <find>DKFPS</find>
+      <find>sql</find>
+      <find>mysql</find>
     </findStrings>
     <replaceStrings>
-      <replace>,Bkn,</replace>
-      <replace>NO</replace>
-      <replace>NOP</replace>
-      <replace>SA</replace>
       <replace>,SA,</replace>
       <replace>,1,</replace>
       <replace>\n</replace>
@@ -273,6 +347,9 @@
       <replace>=</replace>
       <replace>1\.000\,200\.000\n</replace>
       <replace>utils.fixTeam</replace>
+      <replace>print\($1\)</replace>
+      <replace>00,0\n</replace>
+      <replace>&quot;,</replace>
       <replace>,</replace>
     </replaceStrings>
     <dirStrings>
@@ -289,25 +366,12 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/InjurySpider.py" />
-        <option value="$PROJECT_DIR$/data/final2/2017-11-18.csv" />
-        <option value="$PROJECT_DIR$/data/final2/2017-11-18_2.csv" />
-        <option value="$PROJECT_DIR$/data/final2/2017-11-18_3.csv" />
-        <option value="$PROJECT_DIR$/data/final2/2017-11-18_4.csv" />
-        <option value="$PROJECT_DIR$/data/injuries/2017-11-182.csv" />
-        <option value="$PROJECT_DIR$/data/final2/2017-11-18_5.csv" />
-        <option value="$PROJECT_DIR$/data/final2/2017-11-19_1.csv" />
-        <option value="$PROJECT_DIR$/predict_me.csv" />
-        <option value="$PROJECT_DIR$/data/final2/2017-02-01.csv" />
         <option value="$PROJECT_DIR$/data/injuries/2017-11-202.csv" />
         <option value="$PROJECT_DIR$/predictions.csv" />
         <option value="$PROJECT_DIR$/data/generatedRosters2/2017-11-20.csv" />
         <option value="$PROJECT_DIR$/resultsExplorer.py" />
-        <option value="$PROJECT_DIR$/response.json" />
         <option value="$PROJECT_DIR$/extras.json" />
-        <option value="$PROJECT_DIR$/CalculatePlayer.ipynb" />
         <option value="$PROJECT_DIR$/requirements.txt" />
-        <option value="$PROJECT_DIR$/degenerate/optimize_nba.py" />
         <option value="$PROJECT_DIR$/playerdata.csv" />
         <option value="$USER_HOME$/anaconda/lib/python3.5/site-packages/nba_py/constants.py" />
         <option value="$PROJECT_DIR$/models/models.py" />
@@ -325,21 +389,34 @@
         <option value="$PROJECT_DIR$/SalaryScrape.py" />
         <option value="$USER_HOME$/anaconda/lib/python3.5/site-packages/nba_py/__init__.py" />
         <option value="$PROJECT_DIR$/calculate.py" />
-        <option value="$PROJECT_DIR$/Vegas.py" />
         <option value="$PROJECT_DIR$/predict_me_final.csv" />
         <option value="$PROJECT_DIR$/data/generatedRosters2/predict_me_final3.csv" />
         <option value="$PROJECT_DIR$/updateDatabase.py" />
         <option value="$PROJECT_DIR$/RotoNews.py" />
-        <option value="$PROJECT_DIR$/data/play/DKSalaries_nov_24.csv" />
-        <option value="$PROJECT_DIR$/data/play/DKSalaries_11_24.csv" />
-        <option value="$PROJECT_DIR$/mysql.py" />
-        <option value="$PROJECT_DIR$/addDraftKingInformation.py" />
-        <option value="$PROJECT_DIR$/SalaryScraper.py" />
-        <option value="$PROJECT_DIR$/buildDatabase.py" />
-        <option value="$PROJECT_DIR$/utils.py" />
-        <option value="$PROJECT_DIR$/response_espn.json" />
         <option value="$PROJECT_DIR$/game_cast_response.json" />
         <option value="$PROJECT_DIR$/game_cast_response2.json" />
+        <option value="$PROJECT_DIR$/degenerate/optimize.py" />
+        <option value="$PROJECT_DIR$/degenerate/projections/sample-nba.csv" />
+        <option value="$PROJECT_DIR$/degenerate/optimize_nba.py" />
+        <option value="$PROJECT_DIR$/data/play/DKSalaries_nov_25.csv" />
+        <option value="$PROJECT_DIR$/data/play/DKSalaries_11_24.csv" />
+        <option value="$PROJECT_DIR$/data/play/DKSalaries_nov_24.csv" />
+        <option value="$PROJECT_DIR$/degenerate/degenerate/optimizer.py" />
+        <option value="$PROJECT_DIR$/degenerate/degenerate/player_pool.py" />
+        <option value="$PROJECT_DIR$/degenerate/app.py" />
+        <option value="$PROJECT_DIR$/tensorflow/test.py" />
+        <option value="$PROJECT_DIR$/CalculatePlayer.ipynb" />
+        <option value="$PROJECT_DIR$/addDraftKingInformation.py" />
+        <option value="$PROJECT_DIR$/data/calendar/finished_schedule_2016.json" />
+        <option value="$PROJECT_DIR$/SalaryScraper.py" />
+        <option value="$PROJECT_DIR$/Vegas.py" />
+        <option value="$PROJECT_DIR$/response.json" />
+        <option value="$PROJECT_DIR$/response_espn.json" />
+        <option value="$PROJECT_DIR$/utils.py" />
+        <option value="$PROJECT_DIR$/buildDatabase.py" />
+        <option value="$PROJECT_DIR$/schedule.sh" />
+        <option value="$PROJECT_DIR$/preprocess.py" />
+        <option value="$PROJECT_DIR$/mysql.py" />
       </list>
     </option>
   </component>
@@ -356,9 +433,28 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="y" value="23" />
-    <option name="width" value="1193" />
-    <option name="height" value="804" />
+    <option name="y" value="60" />
+    <option name="width" value="1440" />
+    <option name="height" value="737" />
+  </component>
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State>
+            <id />
+          </State>
+          <State>
+            <id>Python</id>
+          </State>
+        </expanded-state>
+        <selected-state>
+          <State>
+            <id>PyCompatibilityInspection</id>
+          </State>
+        </selected-state>
+      </profile-state>
+    </entry>
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -376,7 +472,6 @@
     </navigator>
     <panes>
       <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -384,31 +479,11 @@
               <item name="NBA" type="b2602c69:ProjectViewProjectNode" />
               <item name="NBA" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="NBA" type="b2602c69:ProjectViewProjectNode" />
-              <item name="NBA" type="462c0819:PsiDirectoryNode" />
-              <item name="data" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="NBA" type="b2602c69:ProjectViewProjectNode" />
-              <item name="NBA" type="462c0819:PsiDirectoryNode" />
-              <item name="data" type="462c0819:PsiDirectoryNode" />
-              <item name="vegas" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="NBA" type="b2602c69:ProjectViewProjectNode" />
-              <item name="NBA" type="462c0819:PsiDirectoryNode" />
-              <item name="data" type="462c0819:PsiDirectoryNode" />
-              <item name="vegas2" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="NBA" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -420,14 +495,15 @@
     <property name="settings.editor.selected.configurable" value="terminal" />
     <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file:///Users/marek5050/machinelearning/NBA/models/mysql.py" />
     <property name="com.intellij.database.dataSource.DataSourceTemplate" value="MySQL" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/data/play" />
+      <recent name="$PROJECT_DIR$/tensorflow" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/data/predictions" />
       <recent name="$PROJECT_DIR$/data" />
-      <recent name="$PROJECT_DIR$/data/final2" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
@@ -436,132 +512,6 @@
       <recent name="$PROJECT_DIR$/data/output/old" />
       <recent name="$PROJECT_DIR$/data/final/old" />
     </key>
-  </component>
-  <component name="RestoreUpdateTree" date="Moments ago" ActionInfo="_Update">
-    <UpdatedFiles>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Updated from server" />
-        <option name="myStatusName" value="Changed on server" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="CHANGED_ON_SERVER" />
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Updated" />
-          <option name="myStatusName" value="Changed" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="UPDATED" />
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/.gitignore</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/__pycache__/buildDatabase.cpython-35.pyc</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/__pycache__/mysql.cpython-35.pyc</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/__pycache__/utils.cpython-35.pyc</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/buildDatabase.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/data/injuries/2017-11-24.csv</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/data/old_salaries/dk_2017-11-24.csv</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/data/old_salaries/fd_2017-11-24.csv</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/mysql.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/requirements.txt</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/updateDatabase.py</PATH>
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Created" />
-          <option name="myStatusName" value="Created" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="CREATED" />
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/__pycache__/buildDatabase.cpython-36.pyc</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/__pycache__/mysql.cpython-36.pyc</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/__pycache__/utils.cpython-36.pyc</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/data/vegas/2017-11-24.csv</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/nba_cache.sqlite</PATH>
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Deleted" />
-          <option name="myStatusName" value="Deleted" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="true" />
-          <option name="myId" value="REMOVED_FROM_REPOSITORY" />
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/data/old_salaries/yah_2017-11-24.csv</PATH>
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Restored" />
-          <option name="myStatusName" value="Will be restored" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="RESTORED" />
-        </FILE-GROUP>
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Modified" />
-        <option name="myStatusName" value="Modified" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="MODIFIED" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Skipped" />
-        <option name="myStatusName" value="Skipped" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="SKIPPED" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Merged with conflicts" />
-        <option name="myStatusName" value="Will be merged with conflicts" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="MERGED_WITH_CONFLICTS" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Merged with tree conflicts" />
-        <option name="myStatusName" value="Merged with tree conflicts" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="MERGED_WITH_TREE_CONFLICT" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Merged with property conflicts" />
-        <option name="myStatusName" value="Will be merged with property conflicts" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="MERGED_WITH_PROPERTY_CONFLICT" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Merged" />
-        <option name="myStatusName" value="Will be merged" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="MERGED" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Not in repository" />
-        <option name="myStatusName" value="Not in repository" />
-        <option name="mySupportsDeletion" value="true" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="UNKNOWN" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Locally added" />
-        <option name="myStatusName" value="Locally added" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="LOCALLY_ADDED" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Locally removed" />
-        <option name="myStatusName" value="Locally removed" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="LOCALLY_REMOVED" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Switched" />
-        <option name="myStatusName" value="Switched" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="SWITCHED" />
-      </FILE-GROUP>
-    </UpdatedFiles>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -575,7 +525,31 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.SalaryScraper">
+  <component name="RunManager" selected="Bash.Daily">
+    <configuration name="All Update" type="PythonConfigurationType" factoryName="Python">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="$USER_HOME$/anaconda/bin/python" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="NBA" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/SalaryScraper.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <method>
+        <option name="RunConfigurationTask" enabled="true" run_configuration_name="DB Update" run_configuration_type="PythonConfigurationType" />
+        <option name="RunConfigurationTask" enabled="true" run_configuration_name="SalaryScraper" run_configuration_type="PythonConfigurationType" />
+        <option name="RunConfigurationTask" enabled="true" run_configuration_name="RotoNews" run_configuration_type="PythonConfigurationType" />
+        <option name="RunConfigurationTask" enabled="true" run_configuration_name="Vegas" run_configuration_type="PythonConfigurationType" />
+      </method>
+    </configuration>
     <configuration name="Append LSTM" type="PythonConfigurationType" factoryName="Python">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -726,6 +700,16 @@
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
     </configuration>
+    <configuration name="Daily" type="BashConfigurationType" factoryName="Bash">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="INTERPRETER_PATH" value="/bin/bash" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/schedule.sh" />
+      <option name="PARAMETERS" value="" />
+      <module name="" />
+      <envs />
+    </configuration>
     <configuration name="Defense" type="PythonConfigurationType" factoryName="Python">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -798,6 +782,24 @@
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
     </configuration>
+    <configuration name="Preprocess" type="PythonConfigurationType" factoryName="Python">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="$USER_HOME$/anaconda/bin/python" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="NBA" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/preprocess.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+    </configuration>
     <configuration name="Projections" type="PythonConfigurationType" factoryName="Python">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -852,6 +854,24 @@
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
     </configuration>
+    <configuration name="SalaryScraper Today" type="PythonConfigurationType" factoryName="Python">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="$USER_HOME$/anaconda/bin/python" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="NBA" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/SalaryScraper.py" />
+      <option name="PARAMETERS" value="--last 2" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+    </configuration>
     <configuration name="SalaryScraper" type="PythonConfigurationType" factoryName="Python">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -866,7 +886,7 @@
       <module name="NBA" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/SalaryScraper.py" />
-      <option name="PARAMETERS" value="--date 2017-1*" />
+      <option name="PARAMETERS" value="--date *" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
     </configuration>
@@ -942,7 +962,25 @@
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
     </configuration>
-    <configuration name="Vegas" type="PythonConfigurationType" factoryName="Python">
+    <configuration name="TensorFlow" type="PythonConfigurationType" factoryName="Python">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tensorflow" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="NBA" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/tensorflow/test.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+    </configuration>
+    <configuration name="Vegas Today" type="PythonConfigurationType" factoryName="Python">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -960,6 +998,24 @@
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
     </configuration>
+    <configuration name="Vegas" type="PythonConfigurationType" factoryName="Python">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="$USER_HOME$/anaconda/bin/python" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="NBA" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Vegas.py" />
+      <option name="PARAMETERS" value="--last 5" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+    </configuration>
     <configuration name="VegasOddsAll" type="PythonConfigurationType" factoryName="Python">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -974,7 +1030,7 @@
       <module name="NBA" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Vegas.py" />
-      <option name="PARAMETERS" value="" />
+      <option name="PARAMETERS" value="--date *" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
     </configuration>
@@ -1205,6 +1261,24 @@
       <module name="NBA" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/addDraftKingInformation.py" />
+      <option name="PARAMETERS" value="--date 2017" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+    </configuration>
+    <configuration name="app" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/degenerate" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="NBA" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/degenerate/app.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -1227,6 +1301,42 @@
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
     </configuration>
+    <configuration name="optimize" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/degenerate" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="NBA" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/degenerate/optimize.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+    </configuration>
+    <configuration name="optimize_nba" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/degenerate" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="NBA" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/degenerate/optimize_nba.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+    </configuration>
     <configuration name="temp" type="PythonConfigurationType" factoryName="Python">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -1245,36 +1355,55 @@
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
     </configuration>
-    <list size="25">
-      <item index="0" class="java.lang.String" itemvalue="Python.Calculate Scores" />
-      <item index="1" class="java.lang.String" itemvalue="Python.Projections" />
-      <item index="2" class="java.lang.String" itemvalue="Python.Calculate Penalties" />
-      <item index="3" class="java.lang.String" itemvalue="Python.Append LSTM" />
-      <item index="4" class="java.lang.String" itemvalue="Python.Build Database" />
-      <item index="5" class="java.lang.String" itemvalue="Python.DB Update" />
-      <item index="6" class="java.lang.String" itemvalue="Python.QueryDatabase" />
-      <item index="7" class="java.lang.String" itemvalue="Python.Temp" />
-      <item index="8" class="java.lang.String" itemvalue="Python.temp" />
-      <item index="9" class="java.lang.String" itemvalue="Python.addDraftKing" />
-      <item index="10" class="java.lang.String" itemvalue="Python.Defense" />
-      <item index="11" class="java.lang.String" itemvalue="Python.HistoricalDFS" />
-      <item index="12" class="java.lang.String" itemvalue="Python.Calculate Averages" />
-      <item index="13" class="java.lang.String" itemvalue="Python.Calculate Averages Simple" />
-      <item index="14" class="java.lang.String" itemvalue="Python.blah" />
-      <item index="15" class="java.lang.String" itemvalue="Python.News" />
-      <item index="16" class="java.lang.String" itemvalue="Python.Targets" />
-      <item index="17" class="java.lang.String" itemvalue="Python.Injuries" />
-      <item index="18" class="java.lang.String" itemvalue="Python.RotoNews" />
-      <item index="19" class="java.lang.String" itemvalue="Python.Daily Injuries" />
-      <item index="20" class="java.lang.String" itemvalue="Python.Setup CRON jobs" />
-      <item index="21" class="java.lang.String" itemvalue="Python.Team updates" />
-      <item index="22" class="java.lang.String" itemvalue="Python.Vegas" />
-      <item index="23" class="java.lang.String" itemvalue="Python.SalaryScraper" />
-      <item index="24" class="java.lang.String" itemvalue="Python.VegasOddsAll" />
+    <list size="34">
+      <item index="0" class="java.lang.String" itemvalue="Bash.Daily" />
+      <item index="1" class="java.lang.String" itemvalue="Python.Calculate Scores" />
+      <item index="2" class="java.lang.String" itemvalue="Python.Projections" />
+      <item index="3" class="java.lang.String" itemvalue="Python.Calculate Penalties" />
+      <item index="4" class="java.lang.String" itemvalue="Python.Append LSTM" />
+      <item index="5" class="java.lang.String" itemvalue="Python.Build Database" />
+      <item index="6" class="java.lang.String" itemvalue="Python.Preprocess" />
+      <item index="7" class="java.lang.String" itemvalue="Python.DB Update" />
+      <item index="8" class="java.lang.String" itemvalue="Python.QueryDatabase" />
+      <item index="9" class="java.lang.String" itemvalue="Python.Temp" />
+      <item index="10" class="java.lang.String" itemvalue="Python.temp" />
+      <item index="11" class="java.lang.String" itemvalue="Python.addDraftKing" />
+      <item index="12" class="java.lang.String" itemvalue="Python.Defense" />
+      <item index="13" class="java.lang.String" itemvalue="Python.HistoricalDFS" />
+      <item index="14" class="java.lang.String" itemvalue="Python.Calculate Averages" />
+      <item index="15" class="java.lang.String" itemvalue="Python.Calculate Averages Simple" />
+      <item index="16" class="java.lang.String" itemvalue="Python.blah" />
+      <item index="17" class="java.lang.String" itemvalue="Python.News" />
+      <item index="18" class="java.lang.String" itemvalue="Python.Targets" />
+      <item index="19" class="java.lang.String" itemvalue="Python.Injuries" />
+      <item index="20" class="java.lang.String" itemvalue="Python.RotoNews" />
+      <item index="21" class="java.lang.String" itemvalue="Python.Daily Injuries" />
+      <item index="22" class="java.lang.String" itemvalue="Python.Setup CRON jobs" />
+      <item index="23" class="java.lang.String" itemvalue="Python.Team updates" />
+      <item index="24" class="java.lang.String" itemvalue="Python.Vegas" />
+      <item index="25" class="java.lang.String" itemvalue="Python.Vegas Today" />
+      <item index="26" class="java.lang.String" itemvalue="Python.SalaryScraper" />
+      <item index="27" class="java.lang.String" itemvalue="Python.SalaryScraper Today" />
+      <item index="28" class="java.lang.String" itemvalue="Python.All Update" />
+      <item index="29" class="java.lang.String" itemvalue="Python.VegasOddsAll" />
+      <item index="30" class="java.lang.String" itemvalue="Python.TensorFlow" />
+      <item index="31" class="java.lang.String" itemvalue="Python.optimize" />
+      <item index="32" class="java.lang.String" itemvalue="Python.optimize_nba" />
+      <item index="33" class="java.lang.String" itemvalue="Python.app" />
     </list>
+    <recent_temporary>
+      <list size="3">
+        <item index="0" class="java.lang.String" itemvalue="Python.app" />
+        <item index="1" class="java.lang.String" itemvalue="Python.optimize_nba" />
+        <item index="2" class="java.lang.String" itemvalue="Python.optimize" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="ShelveChangesManager" show_recycled="false">
     <option name="remove_strategy" value="false" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -1473,7 +1602,21 @@
       <option name="project" value="LOCAL" />
       <updated>1511639092933</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="Merged.">
+      <created>1512008780371</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1512008780371</updated>
+    </task>
+    <task id="LOCAL-00029" summary="Working optimizer">
+      <created>1513941789857</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1513941789857</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="TodoView">
@@ -1486,27 +1629,29 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1193" height="804" extended-state="0" />
+    <frame x="0" y="60" width="1440" height="737" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32914925" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.325811" sideWeight="0.5317116" order="11" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.325811" sideWeight="0.46828845" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.27094972" sideWeight="0.481402" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32722145" sideWeight="0.6981402" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3638928" sideWeight="0.4792561" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.35447437" sideWeight="0.49170125" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32907802" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3460993" sideWeight="0.35550788" order="11" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32554516" sideWeight="0.6380544" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.325811" sideWeight="0.4648132" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.17912772" sideWeight="0.8748212" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.45015576" sideWeight="0.7467811" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22103004" sideWeight="0.49170125" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.10085837" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.325811" sideWeight="0.4828326" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24964234" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3800623" sideWeight="0.64449215" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22206303" sideWeight="0.50829875" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.34978843" sideWeight="0.75238925" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Data View" active="false" anchor="right" auto_hide="true" internal_type="SLIDING" type="FLOATING" visible="false" show_stripe_button="false" weight="0.58082974" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" x="314" y="70" width="812" height="709" />
+      <window_info id="Data View" active="false" anchor="right" auto_hide="true" internal_type="SLIDING" type="FLOATING" visible="false" show_stripe_button="false" weight="0.58082974" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" x="155" y="289" width="1278" height="414" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection Results" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32907802" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -1515,6 +1660,7 @@
   </component>
   <component name="UnknownFeatures">
     <option featureType="com.intellij.fileTypeFactory" implementationName="*.csv" />
+    <option featureType="com.intellij.fileTypeFactory" implementationName="*.md" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -1542,8 +1688,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$/degenerate" />
     </ignored-roots>
-    <MESSAGE value="Adding test and training data sets." />
-    <MESSAGE value="Fixed training and test sets." />
     <MESSAGE value="Calculating outputs DKFPS" />
     <MESSAGE value="renamed files to help with DKFPS calculations" />
     <MESSAGE value="Saving the output with the actual scores for train and test." />
@@ -1567,7 +1711,9 @@
     <MESSAGE value="Made the Salary scraper uniform with the other scrapers." />
     <MESSAGE value="Updated news and generated rosters." />
     <MESSAGE value="Updated PlayerNews and Score retrieval" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated PlayerNews and Score retrieval" />
+    <MESSAGE value="Merged." />
+    <MESSAGE value="Working optimizer" />
+    <option name="LAST_COMMIT_MESSAGE" value="Working optimizer" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -1579,11 +1725,6 @@
           <url>file://$USER_HOME$/anaconda/lib/python3.5/site-packages/nba_py/player.py</url>
           <line>187</line>
           <option name="timeStamp" value="166" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$USER_HOME$/anaconda/lib/python3.5/site-packages/nba_py/player.py</url>
-          <line>159</line>
-          <option name="timeStamp" value="167" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/GameInjurySpider.py</url>
@@ -1602,19 +1743,118 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/buildDatabase.py</url>
-          <line>36</line>
+          <line>48</line>
           <option name="timeStamp" value="494" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/buildDatabase.py</url>
-          <line>202</line>
-          <option name="timeStamp" value="566" />
+          <url>file://$PROJECT_DIR$/Vegas.py</url>
+          <line>159</line>
+          <option name="timeStamp" value="604" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <condition expression="q.first() == None" language="Python" />
+          <url>file://$PROJECT_DIR$/Vegas.py</url>
+          <line>124</line>
+          <option name="timeStamp" value="605" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/utils.py</url>
-          <line>150</line>
-          <option name="timeStamp" value="601" />
+          <line>71</line>
+          <option name="timeStamp" value="652" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/degenerate/optimize_nba.py</url>
+          <line>112</line>
+          <option name="timeStamp" value="657" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/degenerate/degenerate/player_pool.py</url>
+          <line>20</line>
+          <option name="timeStamp" value="662" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$USER_HOME$/anaconda/lib/python3.5/site-packages/tensorflow/python/feature_column/feature_column.py</url>
+          <line>1528</line>
+          <option name="timeStamp" value="673" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$USER_HOME$/anaconda/lib/python3.5/site-packages/tensorflow/contrib/framework/python/framework/tensor_util.py</url>
+          <line>46</line>
+          <option name="timeStamp" value="674" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/tensorflow/test.py</url>
+          <line>178</line>
+          <option name="timeStamp" value="684" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/tensorflow/test.py</url>
+          <line>171</line>
+          <option name="timeStamp" value="686" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/buildDatabase.py</url>
+          <line>264</line>
+          <option name="timeStamp" value="692" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/buildDatabase.py</url>
+          <line>75</line>
+          <option name="timeStamp" value="698" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/buildDatabase.py</url>
+          <line>76</line>
+          <option name="timeStamp" value="701" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/buildDatabase.py</url>
+          <line>101</line>
+          <option name="timeStamp" value="702" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/buildDatabase.py</url>
+          <line>105</line>
+          <option name="timeStamp" value="703" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/buildDatabase.py</url>
+          <line>108</line>
+          <option name="timeStamp" value="704" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/preprocess.py</url>
+          <line>44</line>
+          <option name="timeStamp" value="711" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/preprocess.py</url>
+          <line>41</line>
+          <option name="timeStamp" value="713" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/buildDatabase.py</url>
+          <line>422</line>
+          <option name="timeStamp" value="756" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/utils.py</url>
+          <line>200</line>
+          <option name="timeStamp" value="762" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/mysql.py</url>
+          <line>161</line>
+          <option name="timeStamp" value="769" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/buildDatabase.py</url>
+          <line>365</line>
+          <option name="timeStamp" value="770" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/mysql.py</url>
+          <line>189</line>
+          <option name="timeStamp" value="771" />
         </line-breakpoint>
       </breakpoints>
       <breakpoints-dialog>
@@ -1627,423 +1867,405 @@
           </properties>
         </breakpoint>
       </default-breakpoints>
-      <option name="time" value="604" />
+      <option name="time" value="772" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$USER_HOME$/anaconda/lib/python3.5/site-packages/MySQLdb/connections.py">
+    <entry file="file://$PROJECT_DIR$/data/play/DKSalariesDec23.csv">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-375">
-          <caret line="269" column="0" lean-forward="false" selection-start-line="269" selection-start-column="0" selection-end-line="269" selection-end-column="0" />
+        <state relative-caret-position="2370">
+          <caret line="158" column="71" lean-forward="true" selection-start-line="158" selection-start-column="71" selection-end-line="158" selection-end-column="71" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/anaconda/lib/python3.5/site-packages/scrapy/crawler.py">
+    <entry file="file://$PROJECT_DIR$/degenerate/app.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="139" column="8" lean-forward="false" selection-start-line="139" selection-start-column="8" selection-end-line="139" selection-end-column="8" />
+        <state relative-caret-position="140">
+          <caret line="29" column="0" lean-forward="false" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tensorflow/test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="163">
+          <caret line="86" column="22" lean-forward="false" selection-start-line="85" selection-start-column="22" selection-end-line="86" selection-end-column="22" />
+          <folding>
+            <element signature="e#9#32#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/vegas/2017-12-25.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/vegas/2017-04-16.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/calendar/full_schedule.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="124">
+          <caret line="193" column="16" lean-forward="false" selection-start-line="193" selection-start-column="14" selection-end-line="193" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/helpers/typeshed/stdlib/3/datetime.pyi">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/data/vegas/2017-11-24.csv">
+    <entry file="file://$PROJECT_DIR$/data/calendar/finished_schedule_2016.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="17" lean-forward="true" selection-start-line="18" selection-start-column="17" selection-end-line="18" selection-end-column="17" />
+        <state relative-caret-position="86">
+          <caret line="71226" column="20" lean-forward="true" selection-start-line="71226" selection-start-column="20" selection-end-line="71226" selection-end-column="20" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/calculate.py">
+    <entry file="file://$PROJECT_DIR$/171227Predict2.csv">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="140" column="0" lean-forward="true" selection-start-line="140" selection-start-column="0" selection-end-line="141" selection-end-column="0" />
+        <state relative-caret-position="90">
+          <caret line="6" column="93" lean-forward="true" selection-start-line="1" selection-start-column="94" selection-end-line="6" selection-end-column="93" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/data/vegas/2017-11-23.csv">
+    <entry file="file://$PROJECT_DIR$/updateDatabase.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+        <state relative-caret-position="600">
+          <caret line="40" column="9" lean-forward="true" selection-start-line="40" selection-start-column="9" selection-end-line="40" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SALARYPlayerListGameLogs.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="12" column="33" lean-forward="false" selection-start-line="12" selection-start-column="33" selection-end-line="12" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/vegas/2017-04-15.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HistoricalDFS.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="157">
+          <caret line="73" column="12" lean-forward="true" selection-start-line="73" selection-start-column="12" selection-end-line="73" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/vegas/2017-04-14.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/temp2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-268">
+          <caret line="146" column="4" lean-forward="true" selection-start-line="146" selection-start-column="4" selection-end-line="146" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/play/171229.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="21" lean-forward="true" selection-start-line="5" selection-start-column="21" selection-end-line="5" selection-end-column="21" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/save_player.csv">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="24" lean-forward="true" selection-start-line="8" selection-start-column="24" selection-end-line="8" selection-end-column="24" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/vegas/2017-12-28.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="0" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/response_espn.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" column="21" lean-forward="true" selection-start-line="19" selection-start-column="21" selection-end-line="19" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/response.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="6" column="4" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="48" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/anaconda/lib/python3.5/site-packages/nba_py/draftcombine.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="12" column="15" lean-forward="false" selection-start-line="12" selection-start-column="8" selection-end-line="12" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/anaconda/lib/python3.5/codecs.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="308" column="0" lean-forward="false" selection-start-line="308" selection-start-column="0" selection-end-line="308" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/anaconda/lib/python3.5/site-packages/sqlalchemy/orm/state.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="123">
+          <caret line="410" column="0" lean-forward="false" selection-start-line="410" selection-start-column="0" selection-end-line="410" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$USER_HOME$/anaconda/lib/python3.5/site-packages/sqlalchemy/sql/sqltypes.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1555">
-          <caret line="502" column="8" lean-forward="false" selection-start-line="502" selection-start-column="8" selection-end-line="502" selection-end-column="8" />
+        <state relative-caret-position="189">
+          <caret line="702" column="13" lean-forward="true" selection-start-line="702" selection-start-column="13" selection-end-line="702" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/data/old_salaries/dk_2017-11-24.csv">
+    <entry file="file://$USER_HOME$/anaconda/lib/python3.5/site-packages/sqlalchemy/ext/declarative/api.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="265">
-          <caret line="21" column="39" lean-forward="true" selection-start-line="21" selection-start-column="39" selection-end-line="21" selection-end-column="39" />
+        <state relative-caret-position="135">
+          <caret line="201" column="42" lean-forward="false" selection-start-line="201" selection-start-column="42" selection-end-line="201" selection-end-column="42" />
+          <folding>
+            <element signature="e#300#345#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/data/old_salaries/dk_2017-11-21.csv">
+    <entry file="file://$USER_HOME$/anaconda/lib/python3.5/site-packages/sqlalchemy/orm/exc.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="226">
+          <caret line="48" column="45" lean-forward="false" selection-start-line="48" selection-start-column="45" selection-end-line="48" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/anaconda/lib/python3.5/site-packages/sqlalchemy/orm/session.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="123">
+          <caret line="871" column="8" lean-forward="false" selection-start-line="871" selection-start-column="8" selection-end-line="871" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/anaconda/lib/python3.5/site-packages/sqlalchemy/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Target_2.csv">
+    <entry file="file://$USER_HOME$/anaconda/lib/python3.5/site-packages/_mysql_exceptions.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="48" lean-forward="false" selection-start-line="11" selection-start-column="48" selection-end-line="11" selection-end-column="48" />
+        <state relative-caret-position="135">
+          <caret line="42" column="15" lean-forward="false" selection-start-line="42" selection-start-column="6" selection-end-line="42" selection-end-column="15" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/predict_me_final.csv">
+    <entry file="file://$PROJECT_DIR$/SalaryScraper.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" column="46" lean-forward="false" selection-start-line="19" selection-start-column="46" selection-end-line="19" selection-end-column="46" />
+        <state relative-caret-position="177">
+          <caret line="83" column="35" lean-forward="false" selection-start-line="83" selection-start-column="35" selection-end-line="83" selection-end-column="35" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/predict_me.csv">
+    <entry file="file://$USER_HOME$/anaconda/lib/python3.5/site-packages/nba_py/constants.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="14" lean-forward="false" selection-start-line="13" selection-start-column="14" selection-end-line="13" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/final2/2017-11-19_1.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/generatedRosters2/predict_me.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="257">
-          <caret line="1" column="21816" lean-forward="true" selection-start-line="1" selection-start-column="21816" selection-end-line="1" selection-end-column="21816" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/generatedRosters2/predict_me_final3.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="34" lean-forward="false" selection-start-line="3" selection-start-column="34" selection-end-line="3" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/generatedRosters2/predict_me_final.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="34" lean-forward="false" selection-start-line="3" selection-start-column="34" selection-end-line="3" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/anaconda/lib/python3.5/site-packages/requests/sessions.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="483" column="20" lean-forward="true" selection-start-line="483" selection-start-column="20" selection-end-line="483" selection-end-column="20" />
+        <state relative-caret-position="11055">
+          <caret line="737" column="31" lean-forward="false" selection-start-line="737" selection-start-column="28" selection-end-line="737" selection-end-column="31" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$USER_HOME$/anaconda/lib/python3.5/site-packages/nba_py/player.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="705" column="0" lean-forward="true" selection-start-line="705" selection-start-column="0" selection-end-line="705" selection-end-column="0" />
+        <state relative-caret-position="1470">
+          <caret line="99" column="6" lean-forward="false" selection-start-line="99" selection-start-column="6" selection-end-line="99" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/anaconda/lib/python3.5/http/client.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="116">
+          <caret line="1197" column="0" lean-forward="false" selection-start-line="1197" selection-start-column="0" selection-end-line="1197" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/anaconda/lib/python3.5/site-packages/urllib3/connectionpool.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="116">
+          <caret line="600" column="0" lean-forward="false" selection-start-line="600" selection-start-column="0" selection-end-line="600" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/anaconda/lib/python3.5/site-packages/requests/adapters.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="6180">
+          <caret line="439" column="0" lean-forward="false" selection-start-line="439" selection-start-column="0" selection-end-line="439" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/171229Data.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/pydevd.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="550">
+          <caret line="1598" column="0" lean-forward="false" selection-start-line="1598" selection-start-column="0" selection-end-line="1598" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/degenerate/optimize_nba.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="0" lean-forward="true" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/anaconda/lib/python3.5/site-packages/requests/sessions.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="116">
+          <caret line="507" column="0" lean-forward="false" selection-start-line="507" selection-start-column="0" selection-end-line="507" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/anaconda/lib/python3.5/site-packages/requests_cache/core.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="116">
+          <caret line="125" column="0" lean-forward="false" selection-start-line="125" selection-start-column="0" selection-end-line="125" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/anaconda/lib/python3.5/site-packages/nba_py/game.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="123">
+          <caret line="72" column="0" lean-forward="false" selection-start-line="72" selection-start-column="0" selection-end-line="72" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#41#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/anaconda/lib/python3.5/site-packages/nba_py/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="123">
+          <caret line="83" column="0" lean-forward="false" selection-start-line="83" selection-start-column="0" selection-end-line="83" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/anaconda/lib/python3.5/site-packages/requests/api.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="116">
+          <caret line="71" column="0" lean-forward="false" selection-start-line="71" selection-start-column="0" selection-end-line="71" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Vegas.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="321">
-          <caret line="194" column="0" lean-forward="true" selection-start-line="166" selection-start-column="0" selection-end-line="194" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/anaconda/lib/python3.5/site-packages/requests/api.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="199">
-          <caret line="33" column="35" lean-forward="true" selection-start-line="33" selection-start-column="35" selection-end-line="33" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/anaconda/lib/python3.5/argparse.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-320">
-          <caret line="1298" column="8" lean-forward="false" selection-start-line="1298" selection-start-column="8" selection-end-line="1298" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/injuries/2017-11-25.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="45" lean-forward="true" selection-start-line="14" selection-start-column="45" selection-end-line="14" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/anaconda/lib/python3.5/site-packages/nba_py/constants.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="219">
-          <caret line="285" column="29" lean-forward="true" selection-start-line="285" selection-start-column="29" selection-end-line="285" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/updateDatabase.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="262">
-          <caret line="38" column="42" lean-forward="false" selection-start-line="38" selection-start-column="42" selection-end-line="38" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/anaconda/lib/python3.5/site-packages/nba_py/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="17" lean-forward="true" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/RotoNews.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="172">
-          <caret line="32" column="40" lean-forward="false" selection-start-line="32" selection-start-column="40" selection-end-line="32" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/old_salaries/fd_2017-11-24.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/play/DKSalaries_nov_18_2.csv" />
-    <entry file="file://$USER_HOME$/anaconda/lib/python3.5/site-packages/pandas/core/series.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="1084" column="0" lean-forward="false" selection-start-line="1084" selection-start-column="0" selection-end-line="1084" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/play/DKSalaries_nov_24.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="29" lean-forward="true" selection-start-line="12" selection-start-column="29" selection-end-line="12" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/play/DKSalaries_nov_25.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="291" column="36" lean-forward="true" selection-start-line="291" selection-start-column="36" selection-end-line="291" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/play/DKSalaries_nov_21.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="12" lean-forward="false" selection-start-line="10" selection-start-column="12" selection-end-line="10" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/play/DKSalaries_nov_19_2.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="33" lean-forward="false" selection-start-line="11" selection-start-column="33" selection-end-line="11" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/play/DKSalaries_nov_20.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="30" lean-forward="false" selection-start-line="11" selection-start-column="30" selection-end-line="11" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/play/DKSalaries_nov_19.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/play/DKSalaries_nov_18.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="13" lean-forward="true" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/play/DKSalaries.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="34" lean-forward="true" selection-start-line="13" selection-start-column="34" selection-end-line="13" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/play/DKSalaries_11_24.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="37" lean-forward="false" selection-start-line="7" selection-start-column="37" selection-end-line="7" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/addDraftKingInformation.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="825">
-          <caret line="55" column="22" lean-forward="true" selection-start-line="55" selection-start-column="22" selection-end-line="55" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/old_salaries/dk_2016-10-25.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="13" column="59" lean-forward="false" selection-start-line="13" selection-start-column="59" selection-end-line="13" selection-end-column="59" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/old_salaries/dk_2016-10-26.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="88" column="47" lean-forward="false" selection-start-line="88" selection-start-column="47" selection-end-line="88" selection-end-column="47" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/old_salaries/yah_2017-11-25.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="57" lean-forward="false" selection-start-line="5" selection-start-column="43" selection-end-line="5" selection-end-column="57" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/anaconda/lib/python3.5/site-packages/sqlalchemy/orm/state.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="410" column="0" lean-forward="false" selection-start-line="410" selection-start-column="0" selection-end-line="410" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mysql.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="250">
-          <caret line="138" column="0" lean-forward="false" selection-start-line="138" selection-start-column="0" selection-end-line="138" selection-end-column="0" />
+        <state relative-caret-position="101">
+          <caret line="87" column="30" lean-forward="false" selection-start-line="87" selection-start-column="30" selection-end-line="87" selection-end-column="30" />
           <folding>
-            <element signature="e#23#32#0" expanded="true" />
+            <element signature="e#25#40#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/SalaryScraper.py">
+    <entry file="file://$PROJECT_DIR$/preprocess.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="351">
-          <caret line="89" column="35" lean-forward="false" selection-start-line="89" selection-start-column="35" selection-end-line="89" selection-end-column="35" />
+        <state relative-caret-position="159">
+          <caret line="23" column="29" lean-forward="false" selection-start-line="23" selection-start-column="17" selection-end-line="23" selection-end-column="29" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/utils.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="353">
-          <caret line="152" column="0" lean-forward="false" selection-start-line="152" selection-start-column="0" selection-end-line="152" selection-end-column="0" />
+        <state relative-caret-position="267">
+          <caret line="173" column="0" lean-forward="false" selection-start-line="173" selection-start-column="0" selection-end-line="173" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/buildDatabase.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="254" column="0" lean-forward="false" selection-start-line="254" selection-start-column="0" selection-end-line="254" selection-end-column="0" />
+        <state relative-caret-position="203">
+          <caret line="364" column="30" lean-forward="false" selection-start-line="364" selection-start-column="30" selection-end-line="364" selection-end-column="30" />
           <folding>
-            <marker date="1512008761000" expanded="true" signature="1522:2085" ph="..." />
-            <marker date="1512008761000" expanded="true" signature="1522:2132" ph="..." />
-            <marker date="1512008761000" expanded="true" signature="1553:2085" ph="..." />
-            <marker date="1512008761000" expanded="true" signature="1570:1991" ph="..." />
-            <marker date="1512008761000" expanded="true" signature="1704:1991" ph="..." />
-            <marker date="1512008761000" expanded="true" signature="1728:1867" ph="..." />
-            <marker date="1512008761000" expanded="true" signature="1909:1991" ph="..." />
-            <marker date="1512008761000" expanded="true" signature="2027:2085" ph="..." />
-            <marker date="1512008761000" expanded="true" signature="2168:2407" ph="..." />
-            <marker date="1512008761000" expanded="true" signature="2222:2387" ph="..." />
-            <marker date="1512008761000" expanded="true" signature="2235:2304" ph="..." />
-            <marker date="1512008761000" expanded="true" signature="2335:2387" ph="..." />
-            <marker date="1512008761000" expanded="true" signature="2445:2704" ph="..." />
-            <marker date="1512008761000" expanded="true" signature="2706:4064" ph="..." />
-            <marker date="1512008761000" expanded="true" signature="2794:2859" ph="SELECT * FRO... game" />
-            <marker date="1512008761000" expanded="true" signature="4090:4843" ph="..." />
-            <marker date="1512008761000" expanded="true" signature="4380:4686" ph="..." />
-            <marker date="1512008761000" expanded="true" signature="4393:4587" ph="..." />
-            <marker date="1512008761000" expanded="true" signature="4618:4686" ph="..." />
-            <marker date="1512008761000" expanded="true" signature="4713:4826" ph="..." />
-            <marker date="1512008761000" expanded="true" signature="4869:5575" ph="..." />
-            <marker date="1512008761000" expanded="true" signature="5169:5464" ph="..." />
-            <marker date="1512008761000" expanded="true" signature="5182:5365" ph="..." />
-            <marker date="1512008761000" expanded="true" signature="5396:5464" ph="..." />
-            <marker date="1512008761000" expanded="true" signature="5607:6751" ph="..." />
-            <marker date="1512008761000" expanded="true" signature="5718:6731" ph="..." />
-            <marker date="1512008761000" expanded="true" signature="5782:6647" ph="..." />
-            <marker date="1512008761000" expanded="true" signature="5887:6122" ph="..." />
-            <marker date="1512008761000" expanded="true" signature="6151:6489" ph="..." />
-            <marker date="1512008761000" expanded="true" signature="6506:6647" ph="..." />
-            <marker date="1512008761000" expanded="true" signature="6679:6731" ph="..." />
-            <marker date="1512008761000" expanded="true" signature="6817:6926" ph="..." />
-            <marker date="1512008761000" expanded="true" signature="6956:9455" ph="..." />
-            <marker date="1512008761000" expanded="true" signature="7092:7179" ph="..." />
-            <marker date="1512008761000" expanded="true" signature="7215:9330" ph="..." />
-            <marker date="1512008761000" expanded="true" signature="7393:9108" ph="..." />
-            <marker date="1512008761000" expanded="true" signature="7867:8067" ph="..." />
-            <marker date="1512008761000" expanded="true" signature="8416:8821" ph="..." />
-            <marker date="1512008761000" expanded="true" signature="8558:8682" ph="..." />
-            <marker date="1512008761000" expanded="true" signature="8860:9108" ph="..." />
-            <marker date="1512008761000" expanded="true" signature="8881:9031" ph="..." />
-            <marker date="1512008761000" expanded="true" signature="9127:9330" ph="..." />
-            <marker date="1512008761000" expanded="true" signature="9590:9814" ph="..." />
+            <element signature="e#0#11#0" expanded="true" />
+            <marker date="1514663637000" expanded="true" signature="4736:4801" ph="SELECT * FRO... game" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/response.json">
+    <entry file="file://$PROJECT_DIR$/PlayerCalculations.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="9" column="12" lean-forward="false" selection-start-line="9" selection-start-column="12" selection-end-line="9" selection-end-column="12" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/response_espn.json">
+    <entry file="file://$PROJECT_DIR$/PlayerNews.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="139" column="35" lean-forward="false" selection-start-line="139" selection-start-column="35" selection-end-line="139" selection-end-column="35" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/game_cast_response.json">
+    <entry file="file://$PROJECT_DIR$/schedule.sh">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="44966">
-          <caret line="3601" column="30" lean-forward="false" selection-start-line="3601" selection-start-column="30" selection-end-line="3601" selection-end-column="30" />
+        <state relative-caret-position="105">
+          <caret line="7" column="25" lean-forward="true" selection-start-line="7" selection-start-column="25" selection-end-line="7" selection-end-column="25" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/game_cast_response2.json">
+    <entry file="file://$PROJECT_DIR$/mysql.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="8511" column="0" lean-forward="false" selection-start-line="8511" selection-start-column="0" selection-end-line="8511" selection-end-column="0" />
+        <state relative-caret-position="173">
+          <caret line="627" column="22" lean-forward="false" selection-start-line="627" selection-start-column="22" selection-end-line="627" selection-end-column="22" />
           <folding />
         </state>
       </provider>

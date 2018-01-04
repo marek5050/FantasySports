@@ -66,25 +66,35 @@ if __name__ == "__main__":
 
     parser = argparse.ArgumentParser()
     parser.add_argument("--date", help="whats the date or * for all")
+    parser.add_argument("--last", help="last x games")
+
     args = parser.parse_args()
 
     date_list = [now.date()]
-    date_search = "2017-1*"
+    date_search = now.date()
 
     if args.date == "*":
-        date_list = utils.get_dates("2017-18")
+        date_list = utils.get_dates("2017-18", beforeToday=True)
         date_search = "*"
+    elif args.date != "":
+        date_list = [args.date]
+        date_search = args.date
 
-    # start_urls = [
-    #     "https://swishanalytics.com/optimus/nba/daily-fantasy-salary-changes?date=" + x.strftime("%Y-%m-%d") for x
-    #     in date_list]
-    #
-    # SalaryScraper.start_urls = start_urls
+    if args.last != "":
+            date_list = utils.get_dates("2017-18", beforeToday=True, includeToday=True)
+            date_list = date_list[int(args.last)*-1:]
+            date_search = date_list
 
-    # injuryProcess.crawl(SalaryScraper)
-    # injuryProcess.start()
+    start_urls = [
+        "https://swishanalytics.com/optimus/nba/daily-fantasy-salary-changes?date=" + x.strftime("%Y-%m-%d") for x
+        in date_list]
+
+    SalaryScraper.start_urls = start_urls
+
+    injuryProcess.crawl(SalaryScraper)
+    injuryProcess.start()
 
     for date in date_list:
-        df = buildDatabase.build_salary(date_search)
+        df = buildDatabase.build_salary(date)
         if len(df)>0:
             buildDatabase.create_salary_table(df)

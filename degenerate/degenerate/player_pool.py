@@ -1,13 +1,13 @@
 import csv
 
-from degenerate import Player
+from .player import Player
 
 
 class PlayerPool:
     def from_csv(self, filename):
         self.players = []
 
-        with open(filename, 'rb') as csv_file:
+        with open(filename, 'r') as csv_file:
             csv_data = csv.DictReader(csv_file, skipinitialspace=True)
 
             for row in csv_data:
@@ -33,4 +33,4 @@ class PlayerPool:
         return filter(lambda x: x.lock, self.players)
 
     def as_json(self):
-        return map(lambda x: x.__json__(), self.players)
+        return [x.__json__() for x in self.players]

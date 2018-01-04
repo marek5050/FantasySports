@@ -1,5 +1,5 @@
 from ortools.linear_solver import pywraplp
-from roster import Roster
+from degenerate.roster import Roster
 
 
 class Optimizer:

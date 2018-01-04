@@ -9,12 +9,12 @@ from sqlalchemy import create_engine
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import sessionmaker, relationship
 from sqlalchemy.sql import select
-
+import pandas as pd
 import utils
 
 settings = {
     "mysql_user": "root",
-    "mysql_pwd": os.getenv('MYSQL_PASSWORD', "snowDIhawk123$$!"),
+    "mysql_pwd": "",
     "mysql_host":"127.0.0.1",
     "mysql_db": "fantasy"
 }
@@ -27,8 +27,6 @@ settings = {
 
 
 MysqlBase = declarative_base()
-
-import pandas as pd
 
 class Player(MysqlBase):
     __tablename__ ='playerlist'
@@ -101,12 +99,281 @@ class Game(MysqlBase):
                                                self.v_abrv)
 
 
+class Boxscore(MysqlBase):
+    __tablename__ = 'boxscore'
+    __table_args__ = (UniqueConstraint('GAME_ID', 'TEAM_ID',"PLAYER_ID", name='_player_per_game_per_per_team'),)
+
+    id = Column(Integer,primary_key=True)
+    GAME_ID = Column(Integer, ForeignKey(Game.id))
+    TEAM_ID = Column(Integer)
+    PLAYER_ID = Column(Integer, ForeignKey(Player.PERSON_ID))
+    START_POSITION=Column(String(2))
+    COMMENT=Column(String(200))
+    MIN=Column(String(8))
+    FGM = Column(Integer)
+    FGA = Column(Integer)
+    FG_PCT = Column(Float)
+    FG3M = Column(Integer)
+    FG3A = Column(Integer)
+    FG3_PCT = Column(Float)
+    FTM = Column(Integer)
+    FTA = Column(Integer)
+    FT_PCT = Column(Float)
+    OREB = Column(Integer)
+    DREB = Column(Integer)
+    REB = Column(Integer)
+    TO = Column(Integer)
+    AST = Column(Integer)
+    STL = Column(Integer)
+    BLK = Column(Integer)
+    PF = Column(Integer)
+    PTS = Column(Integer)
+    PLUS_MINUS = Column(Integer)
+    DKFPS = Column(Float)
+    DblDbl = Column(Integer)
+    TriDbl = Column(Integer)
+
+# #####
+    def __init__(self,**row):
+        # {'PTS': 19, 'FG3A': 4, 'BLK': 0, 'MIN': '30:05', 'TEAM_ID': 1610612752, 'FG_PCT': 0.444, 'REB': 5, 'TO': 4,
+        #  'FGM': 8, 'FG3M': 1, 'FT_PCT': 1.0, 'GAME_ID': '0021600001', 'PLAYER_NAME': 'Carmelo Anthony', 'DREB': 4,
+        #  'PF': 5, 'AST': 3, 'START_POSITION': 'F', 'PLAYER_ID': 2546, 'FGA': 18, 'STL': 1, 'OREB': 1, 'FG3_PCT': 0.25,
+        #  'COMMENT': '', 'FTM': 2, 'TEAM_CITY': 'New York', 'PLUS_MINUS': -19.0, 'TEAM_ABBREVIATION': 'NYK', 'FTA': 2}
+        del(row["TEAM_CITY"])
+        del (row["TEAM_ABBREVIATION"])
+        del (row["PLAYER_NAME"])
+        for k in row.keys():
+            if row[k] != row[k]:
+                row[k]=None
+            elif isinstance(row[k], float):
+                row[k] = utils.truncate(row[k],3)
+
+        if row is not None:
+            super().__init__(**row)
+            self.DKFPS = self.calculateDKFPS()
+            p = pd.DataFrame(data=[row], columns=['PTS', 'BLK', 'STL', 'AST', 'REB', 'FG3M', 'TO'])
+            p = p.apply(pd.to_numeric)
+            bonus = p[p >= 10].count(axis=1, numeric_only=True)[0]
+            if bonus == 2:
+                self.DblDbl = 1
+            elif bonus >= 3:
+                self.DblDbl = 1
+                self.TriDbl = 1
+        return
+
+    def loadAll(self):
+        print("Hello world")
+        session = get_session()
+        q = session.query(Boxscore).all()
+
+    def calculateDKFPS(self):
+        '''
+        Point = +1 PT
+        Made 3pt. shot = +0.5 PTs
+        Rebound = +1.25 PTs
+        Assist = +1.5 PTs
+        Steal = +2 PTs
+        Block = +2 PTs
+        Turnover = -0.5 PTs
+        Double-Double = +1.5PTs (MAX 1 PER PLAYER: Points, Rebounds, Assists, Blocks, Steals)
+        Triple-Double = +3PTs (MAX 1 PER PLAYER: Points, Rebounds, Assists, Blocks, Steals)
+        '''
+        try:
+            keys = ['PTS', 'BLK', 'STL', 'AST', 'REB', 'FG3M', 'TO']
+            try:
+                values = [getattr(self, x) for x in ['PTS', 'BLK', 'STL', 'AST', 'REB', 'FG3M', 'TO']]
+            except Exception as e:
+                print("Failed to get attributed")
+                print(e)
+                pass
+
+            p = pd.DataFrame(data=[values], columns=keys)
+            p = p.apply(pd.to_numeric)
+            p["Bonus"] = p[p >= 10].count(axis=1, numeric_only=True)
+            p.loc[p["Bonus"] < 2, "Bonus"] = 0.0
+            p.loc[p["Bonus"] == 2, "Bonus"] = 1.5
+            p.loc[p["Bonus"] > 2, "Bonus"] = 4.5
+            p["DKFPS"] = 1 * (p.PTS) + 0.5 * (p.FG3M) + 1.25 * (p.REB) + 1.5 * (p.AST) + 2 * (p.STL) + 2 * (
+            p.BLK) - 0.5 * (p.TO) + p.Bonus
+            return p["DKFPS"].values[0]
+        except Exception as ee:
+            print("There was an exception")
+            print(ee)
+            pass
+
+        return
+
+    def __repr__(self):
+        return'<Player {0} {1}: {2}@{3}>'.format(self.id,
+                                               self.PLAYER_ID,
+                                               self.GAME_ID,
+                                               self.TEAM_ID)
+
+
+class BoxscoreAdvanced(MysqlBase):
+    __tablename__ = 'boxscore_advanced'
+    __table_args__ = (UniqueConstraint('GAME_ID', 'TEAM_ID',"PLAYER_ID", name='_player_per_game_per_per_team'),)
+
+
+    id = Column(Integer,primary_key=True)
+    GAME_ID = Column(Integer, ForeignKey(Game.id))
+    TEAM_ID = Column(Integer)
+    PLAYER_ID = Column(Integer, ForeignKey(Player.PERSON_ID))
+    OFF_RATING = Column(Float(precision=2))
+    DEF_RATING = Column(Float)
+    NET_RATING = Column(Float)
+    AST_PCT = Column(Float)
+    AST_TOV = Column(Float)
+    AST_RATIO = Column(Float)
+    OREB_PCT = Column(Float)
+    DREB_PCT = Column(Float)
+    REB_PCT = Column(Float)
+    TM_TOV_PCT = Column(Float)
+    EFG_PCT = Column(Float)
+    TS_PCT = Column(Float)
+    USG_PCT = Column(Float)
+    PACE = Column(Float)
+    PIE = Column(Float)
+
+
+    def __init__(self,**row):
+        import math
+        # {'PIE': 0.081000000000000003, 'COMMENT': '', 'PLAYER_ID': 2546, 'OFF_RATING': 88.0, 'AST_RATIO': 11.6,
+        #  'EFG_PCT': 0.47199999999999998, 'AST_PCT': 0.23100000000000001, 'TEAM_ID': 1610612752, 'MIN': '30:05',
+        #  'OREB_PCT': 0.029000000000000001, 'GAME_ID': '0021600001', 'AST_TOV': 0.75, 'TM_TOV_PCT': 15.5, 'PACE': 102.75,
+        #  'DEF_RATING': 111.59999999999999, 'USG_PCT': 0.32000000000000001, 'START_POSITION': 'F',
+        #  'REB_PCT': 0.083000000000000004, 'TS_PCT': 0.503, 'NET_RATING': -23.699999999999999, 'DREB_PCT': 0.16}
+        del(row["TEAM_CITY"])
+        del (row["TEAM_ABBREVIATION"])
+        del (row["PLAYER_NAME"])
+        del (row["COMMENT"])
+        del (row["START_POSITION"])
+        del (row["MIN"])
+        for k in row.keys():
+            if row[k] != row[k]:
+                row[k]=None
+            elif isinstance(row[k], float):
+                row[k] = utils.truncate(row[k],3)
+
+        if row is not None:
+            super().__init__(**row)
+        return
+
+    def __repr__(self):
+        return'<Boxscore Adv {0} {1}: {2}@{3}>'.format(self.id,
+                                               self.PLAYER_ID,
+                                               self.GAME_ID,
+                                               self.TEAM_ID)
+class BoxscoreMisc(MysqlBase):
+    __tablename__ = 'boxscore_misc'
+    __table_args__ = (UniqueConstraint('GAME_ID', 'TEAM_ID',"PLAYER_ID", name='_player_per_game_per_per_team'),)
+
+    __columns__ = ['GAME_ID', 'TEAM_ID', 'TEAM_ABBREVIATION', 'TEAM_CITY', 'PLAYER_ID',
+       'PLAYER_NAME', 'START_POSITION', 'COMMENT', 'MIN', 'PTS_OFF_TOV',
+       'PTS_2ND_CHANCE', 'PTS_FB', 'PTS_PAINT', 'OPP_PTS_OFF_TOV',
+       'OPP_PTS_2ND_CHANCE', 'OPP_PTS_FB', 'OPP_PTS_PAINT', 'BLK', 'BLKA',
+       'PF', 'PFD']
+
+    id = Column(Integer,primary_key=True)
+    GAME_ID = Column(Integer, ForeignKey(Game.id))
+    TEAM_ID = Column(Integer)
+    PLAYER_ID = Column(Integer, ForeignKey(Player.PERSON_ID))
+    PTS_OFF_TOV = Column(Integer)
+    PTS_2ND_CHANCE = Column(Integer)
+    PTS_FB = Column(Integer)
+    PTS_PAINT = Column(Integer)
+    OPP_PTS_OFF_TOV = Column(Integer)
+    OPP_PTS_2ND_CHANCE = Column(Integer)
+    OPP_PTS_FB = Column(Integer)
+    OPP_PTS_PAINT = Column(Integer)
+    BLK = Column(Integer)
+    BLKA = Column(Integer)
+    PF = Column(Integer)
+    PFD = Column(Integer)
+
+
+    def __init__(self,**row):
+        # ['GAME_ID', 'TEAM_ID', 'TEAM_ABBREVIATION', 'TEAM_CITY', 'PLAYER_ID',
+        #  'PLAYER_NAME', 'START_POSITION', 'COMMENT', 'MIN', 'PTS_OFF_TOV',
+        #  'PTS_2ND_CHANCE', 'PTS_FB', 'PTS_PAINT', 'OPP_PTS_OFF_TOV',
+        #  'OPP_PTS_2ND_CHANCE', 'OPP_PTS_FB', 'OPP_PTS_PAINT', 'BLK', 'BLKA',
+        #  'PF', 'PFD']
+        del(row["TEAM_CITY"])
+        del (row["TEAM_ABBREVIATION"])
+        del (row["PLAYER_NAME"])
+        del (row["COMMENT"])
+        del (row["START_POSITION"])
+        del (row["MIN"])
+        for k in row.keys():
+            if row[k] != row[k]:
+                row[k]=None
+            elif isinstance(row[k], float):
+                row[k] = utils.truncate(row[k],3)
+
+        if row is not None:
+            super().__init__(**row)
+        return
+
+    def __repr__(self):
+        return'<Boxscore Adv {0} {1}: {2}@{3}>'.format(self.id,
+                                               self.PLAYER_ID,
+                                               self.GAME_ID,
+                                               self.TEAM_ID)
+class BoxscoreFourFactors(MysqlBase):
+    __tablename__ = 'boxscore_four_factors'
+    __table_args__ = (UniqueConstraint('GAME_ID', 'TEAM_ID',"PLAYER_ID", name='_player_per_game_per_per_team'),)
+
+    id = Column(Integer,primary_key=True)
+    GAME_ID = Column(Integer, ForeignKey(Game.id))
+    TEAM_ID = Column(Integer)
+    PLAYER_ID = Column(Integer, ForeignKey(Player.PERSON_ID))
+    EFG_PCT = Column(Float)
+    FTA_RATE = Column(Float)
+    TM_TOV_PCT = Column(Float)
+    OREB_PCT = Column(Float)
+    OPP_EFG_PCT = Column(Float)
+    OPP_FTA_RATE = Column(Float)
+    OPP_TOV_PCT = Column(Float)
+    OPP_OREB_PCT = Column(Float)
+
+    def __init__(self,**row):
+        # {'PTS': 19, 'FG3A': 4, 'BLK': 0, 'MIN': '30:05', 'TEAM_ID': 1610612752, 'FG_PCT': 0.444, 'REB': 5, 'TO': 4,
+        #  'FGM': 8, 'FG3M': 1, 'FT_PCT': 1.0, 'GAME_ID': '0021600001', 'PLAYER_NAME': 'Carmelo Anthony', 'DREB': 4,
+        #  'PF': 5, 'AST': 3, 'START_POSITION': 'F', 'PLAYER_ID': 2546, 'FGA': 18, 'STL': 1, 'OREB': 1, 'FG3_PCT': 0.25,
+        #  'COMMENT': '', 'FTM': 2, 'TEAM_CITY': 'New York', 'PLUS_MINUS': -19.0, 'TEAM_ABBREVIATION': 'NYK', 'FTA': 2}
+        del (row["TEAM_CITY"])
+        del (row["TEAM_ABBREVIATION"])
+        del (row["PLAYER_NAME"])
+        del (row["COMMENT"])
+        del (row["START_POSITION"])
+        del (row["MIN"])
+
+        for k in row.keys():
+            if row[k] != row[k]:
+                row[k]=None
+            elif isinstance(row[k], float):
+                row[k] = utils.truncate(row[k],3)
+
+
+        if row is not None:
+            super().__init__(**row)
+
+        return
+
+
+    def __repr__(self):
+        return'<FourFactors {0} {1}: {2}@{3}>'.format(self.id,
+                                               self.PLAYER_ID,
+                                               self.GAME_ID,
+                                               self.TEAM_ID)
 class DKPlayer(MysqlBase):
     __tablename__ = 'dk_player_list'
 
     # id = Column(Integer, primary_key=True, unique=True)
     # Date = Column(DateTime)
     Position = Column(String(10))
+    pos1 = Column(String(10))
+    pos2= Column(String(10))
     Name = Column(String(50))
     # Salary = Column(Integer)
     # GameInfo = Column(String(30))
@@ -132,6 +399,15 @@ class DKPlayer(MysqlBase):
             table = dict()
             table["Player_ID"] = p.PERSON_ID
             table["Position"] = row["Position"]
+
+            pos = row["Position"].split("/")
+            if len(pos) >= 2:
+                table["pos1"] = pos[0]
+                table["pos2"] = pos[1]
+            else:
+                table["pos1"] = pos[0]
+                table["pos2"] = ""
+
             table["Name"] = row["Name"]
             if table is not None:
                 super().__init__(**table)
@@ -148,6 +424,7 @@ class DKPlayer(MysqlBase):
 class Salary(MysqlBase):
     __tablename__ ='salary'
     __table_args__ = (UniqueConstraint('GAME_ID', 'Player_ID', name='_player_per_game_per_season'),)
+
     #{"player_id":"712595",
     # "player_name":"Denzel Valentine",
     # "nickname":"Bulls",
@@ -232,10 +509,12 @@ class PlayerLog(MysqlBase,object):
     PLUS_MINUS = Column(String(32))
     VIDEO_AVAILABLE = Column(String(32))
     DKFPS = Column(Float)
+    TEAM = Column(String(32))
     valid = 1
 
     def __init__(self,**row):
         row["GAME_DATE"] = parser.parse(row["GAME_DATE"]).date()
+        row["TEAM"] = row["MATCHUP"].strip().split(" ")[0]
         if row is not None:
             super().__init__(**row)
         self.DKFPS = self.calculateDKFPS()

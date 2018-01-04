@@ -1,53 +1,53 @@
 avg_pts,date,fantasy_pts,fpts_diff,nickname,player_id,player_name,pos_main,salary,salary_change,salary_change_html,salary_diff,salary_diff_percentage
-15.38  ,2017-10-13,9.66       ,-5.72    ,Rockets  ,168013   ,Nene Hilario            ,C       ,"3,500" ,0.0          ,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0          ,0.0
-39.93  ,2017-10-13,42.16      ,+2.24    ,Rockets  ,229598   ,Chris Paul              ,PG      ,"8,800" ,0.0          ,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0          ,0.0
-24.99  ,2017-10-13,23.81      ,-1.18    ,Rockets  ,229738   ,Trevor Ariza            ,SF      ,"5,600" ,0.0          ,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0          ,0.0
-18.70  ,2017-10-13,4.17       ,-14.53   ,Rockets  ,295436   ,Luc Richard Mbah a Moute,PF      ,"3,200" ,0.0          ,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0          ,0.0
-21.58,2017-10-13,17.61,-3.97,Rockets,329715,Ryan Anderson,PF,"4,700",0.0,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0,0.0
-44.42  ,2017-10-13,46.26      ,+1.84    ,Warriors ,338365   ,Stephen Curry           ,PG      ,"9,700" ,0.0          ,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0          ,0.0
-28.38,2017-10-13,20.85,-7.53,Rockets,401085,Eric Gordon,SG,"5,200",0.0,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0,0.0
-34.37  ,2017-10-13,35.61      ,+1.24    ,Warriors ,468895   ,Draymond Green          ,PF      ,"8,300" ,0.0          ,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0          ,0.0
-11.42  ,2017-10-13,6.24       ,-5.18    ,Rockets  ,551761   ,Tarik Black             ,PF      ,"3,000" ,0.0          ,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0          ,0.0
-4.77   ,2017-10-13,0.79       ,-3.98    ,Rockets  ,786399   ,Troy Williams           ,SF      ,"3,000" ,0.0          ,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0          ,0.0
-6.73   ,2017-10-13,11.40      ,+4.68    ,Warriors ,847005   ,Patrick Mccaw           ,SG      ,"3,000" ,0.0          ,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0          ,0.0
-16.11  ,2017-10-13,10.07      ,-6.04    ,Cavaliers,253997   ,J.R. Smith              ,SG      ,"3,400" ,0.0          ,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0          ,0.0
-32.81  ,2017-10-11,30.38      ,-2.43    ,Celtics  ,280587   ,Al Horford              ,C       ,"7,200" ,0.0          ,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0          ,0.0
-35.28  ,2017-10-13,35.45      ,+0.17    ,Cavaliers,395374   ,Kevin Love              ,PF      ,"7,000" ,0.0          ,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0          ,0.0
+14.66,2017-10-13,9.66,-5.00,Rockets,168013,Nene Hilario,C,"3,500",0.0,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0,0.0
+42.33,2017-10-13,42.16,-0.17,Rockets,229598,Chris Paul,PG,"8,800",0.0,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0,0.0
+25.09,2017-10-13,23.81,-1.28,Rockets,229738,Trevor Ariza,SF,"5,600",0.0,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0,0.0
+16.32,2017-10-13,4.17,-12.15,Rockets,295436,Luc Richard Mbah a Moute,PF,"3,200",0.0,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0,0.0
+19.76,2017-10-13,17.61,-2.15,Rockets,329715,Ryan Anderson,PF,"4,700",0.0,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0,0.0
+45.13,2017-10-13,46.26,+1.13,Warriors,338365,Stephen Curry,PG,"9,700",0.0,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0,0.0
+25.57,2017-10-13,20.85,-4.72,Rockets,401085,Eric Gordon,SG,"5,200",0.0,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0,0.0
+36.03,2017-10-13,35.61,-0.42,Warriors,468895,Draymond Green,PF,"8,300",0.0,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0,0.0
+7.67,2017-10-13,6.24,-1.43,Rockets,551761,Tarik Black,PF,"3,000",0.0,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0,0.0
+3.33,2017-10-13,0.79,-2.54,Rockets,786399,Troy Williams,SF,"3,000",0.0,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0,0.0
+9.77,2017-10-13,11.40,+1.63,Warriors,847005,Patrick Mccaw,SG,"3,000",0.0,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0,0.0
+17.28,2017-10-13,10.07,-7.21,Cavaliers,253997,J.R. Smith,SG,"3,400",0.0,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0,0.0
+34.01,2017-10-11,30.38,-3.63,Celtics,280587,Al Horford,C,"7,200",0.0,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0,0.0
+36.13,2017-10-13,35.45,-0.68,Cavaliers,395374,Kevin Love,PF,"7,000",0.0,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0,0.0
 3.20,2017-10-11,36.79,+33.59,Celtics,477667,Gordon Hayward,SF,"7,600",0.0,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0,0.0
-16.28  ,2017-10-13,22.29      ,+6.01    ,Cavaliers,552381   ,Jae Crowder             ,PF      ,"4,500" ,0.0          ,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0          ,0.0
-16.52  ,2017-10-13,4.26       ,-12.26   ,Cavaliers,58293    ,Kyle Korver             ,SG      ,"3,200" ,0.0          ,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0          ,0.0
-25.55  ,2017-10-11,24.25      ,-1.30    ,Celtics  ,697132   ,Marcus Smart            ,PG      ,"5,300" ,0.0          ,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0          ,0.0
-5.18   ,2017-10-11,2.51       ,-2.67    ,Celtics  ,792415   ,Semi Ojeleye            ,SF      ,"3,000" ,0.0          ,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0          ,0.0
-27.39  ,2017-10-11,18.03      ,-9.36    ,Celtics  ,937647   ,Jayson Tatum            ,SF      ,"3,500" ,0.0          ,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0          ,0.0
-13.13,2017-10-13,6.78,-6.35,Cavaliers,457186,Iman Shumpert,SG,"3,000",0.0,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0,0.0
-5.81   ,2017-10-13,5.16       ,-0.65    ,Cavaliers,296475   ,Jose Calderon           ,PG      ,"3,000" ,0.0          ,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0          ,0.0
-8.68   ,2017-10-13,2.61       ,-6.07    ,Cavaliers,65871    ,Channing Frye           ,C       ,"3,000" ,0.0          ,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0          ,0.0
-4.52   ,2017-10-13,0.90       ,-3.62    ,Rockets  ,908263   ,Zhou Qi                 ,C       ,"3,000" ,0.0          ,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0          ,0.0
-3.59,2017-10-11,0.72,-2.87,Celtics,610597,Abdel Nader,SG,"3,000",0.0,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0,0.0
-2.10,2017-10-11,0.89,-1.21,Celtics,750682,Jabari Bird,SG,"3,000",0.0,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0,0.0
-12.69  ,2017-10-13,11.41      ,-1.28    ,Warriors ,214168   ,Zaza Pachulia           ,C       ,"3,800" ,0.0          ,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0          ,0.0
-19.30  ,2017-10-13,10.89      ,-8.41    ,Rockets  ,229602   ,P.J. Tucker             ,SF      ,"3,900" ,0.0          ,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0          ,0.0
-12.38  ,2017-10-13,11.49      ,-0.89    ,Warriors ,253980   ,Shaun Livingston        ,PG      ,"3,000" ,0.0          ,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0          ,0.0
-45.03  ,2017-10-13,46.57      ,+1.54    ,Warriors ,329525   ,Kevin Durant            ,SF      ,"9,800" ,0.0          ,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0          ,0.0
-10.09  ,2017-10-13,11.87      ,+1.78    ,Warriors ,333212   ,JaVale McGee            ,C       ,"3,300" ,0.0          ,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0          ,0.0
-52.77  ,2017-10-13,52.67      ,-0.10    ,Rockets  ,395388   ,James Harden            ,SG      ,"11,000",0.0          ,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0          ,0.0
-31.07  ,2017-10-13,28.49      ,-2.58    ,Warriors ,457611   ,Klay Thompson           ,SG      ,"6,800" ,0.0          ,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0          ,0.0
-12.86  ,2017-10-13,8.64       ,-4.22    ,Warriors ,503779   ,Omri Casspi             ,SF      ,"3,000" ,0.0          ,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0          ,0.0
-16.67  ,2017-10-13,11.90      ,-4.77    ,Warriors ,57934    ,David West              ,PF      ,"3,100" ,0.0          ,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0          ,0.0
-34.23  ,2017-10-13,31.09      ,-3.14    ,Rockets  ,830647   ,Clint Capela            ,C       ,"6,000" ,0.0          ,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0          ,0.0
-52.69  ,2017-10-13,47.20      ,-5.49    ,Cavaliers,214152   ,LeBron James            ,SF      ,"10,400",0.0          ,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0          ,0.0
-17.11  ,2017-10-13,7.19       ,-9.92    ,Cavaliers,266367   ,Jeff Green              ,SF      ,"3,000" ,0.0          ,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0          ,0.0
-15.19  ,2017-10-11,12.15      ,-3.04    ,Celtics  ,296379   ,Aron Baynes             ,C       ,"3,200" ,0.0          ,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0          ,0.0
+15.43,2017-10-13,22.29,+6.86,Cavaliers,552381,Jae Crowder,PF,"4,500",0.0,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0,0.0
+16.35,2017-10-13,4.26,-12.09,Cavaliers,58293,Kyle Korver,SG,"3,200",0.0,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0,0.0
+24.09,2017-10-11,24.25,+0.16,Celtics,697132,Marcus Smart,PG,"5,300",0.0,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0,0.0
+6.00,2017-10-11,2.51,-3.49,Celtics,792415,Semi Ojeleye,SF,"3,000",0.0,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0,0.0
+26.67,2017-10-11,18.03,-8.64,Celtics,937647,Jayson Tatum,SF,"3,500",0.0,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0,0.0
+12.12,2017-10-13,6.78,-5.34,Cavaliers,457186,Iman Shumpert,SG,"3,000",0.0,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0,0.0
+11.17,2017-10-13,5.16,-6.01,Cavaliers,296475,Jose Calderon,PG,"3,000",0.0,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0,0.0
+9.47,2017-10-13,2.61,-6.86,Cavaliers,65871,Channing Frye,C,"3,000",0.0,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0,0.0
+4.07,2017-10-13,0.90,-3.17,Rockets,908263,Zhou Qi,C,"3,000",0.0,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0,0.0
+4.14,2017-10-11,0.72,-3.42,Celtics,610597,Abdel Nader,SG,"3,000",0.0,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0,0.0
+3.97,2017-10-11,0.89,-3.08,Celtics,750682,Jabari Bird,SG,"3,000",0.0,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0,0.0
+14.82,2017-10-13,11.41,-3.41,Warriors,214168,Zaza Pachulia,C,"3,800",0.0,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0,0.0
+18.14,2017-10-13,10.89,-7.25,Rockets,229602,P.J. Tucker,SF,"3,900",0.0,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0,0.0
+11.37,2017-10-13,11.49,+0.12,Warriors,253980,Shaun Livingston,PG,"3,000",0.0,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0,0.0
+47.98,2017-10-13,46.57,-1.41,Warriors,329525,Kevin Durant,SF,"9,800",0.0,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0,0.0
+9.68,2017-10-13,11.87,+2.19,Warriors,333212,JaVale McGee,C,"3,300",0.0,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0,0.0
+54.08,2017-10-13,52.67,-1.41,Rockets,395388,James Harden,SG,"11,000",0.0,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0,0.0
+32.11,2017-10-13,28.49,-3.62,Warriors,457611,Klay Thompson,SG,"6,800",0.0,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0,0.0
+16.01,2017-10-13,8.64,-7.37,Warriors,503779,Omri Casspi,SF,"3,000",0.0,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0,0.0
+18.14,2017-10-13,11.90,-6.24,Warriors,57934,David West,PF,"3,100",0.0,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0,0.0
+35.40,2017-10-13,31.09,-4.31,Rockets,830647,Clint Capela,C,"6,000",0.0,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0,0.0
+55.57,2017-10-13,47.20,-8.37,Cavaliers,214152,LeBron James,SF,"10,400",0.0,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0,0.0
+19.13,2017-10-13,7.19,-11.94,Cavaliers,266367,Jeff Green,SF,"3,000",0.0,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0,0.0
+14.96,2017-10-11,12.15,-2.81,Celtics,296379,Aron Baynes,C,"3,200",0.0,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0,0.0
 18.51,2017-10-13,25.48,+6.97,Cavaliers,399612,Derrick Rose,PG,"5,500",0.0,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0,0.0
-38.15  ,2017-10-11,38.47      ,+0.32    ,Celtics  ,551768   ,Kyrie Irving            ,PG      ,"8,200" ,0.0          ,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0          ,0.0
-13.71,2017-10-13,15.31,+1.60,Cavaliers,552806,Tristan Thompson,C,"5,200",0.0,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0,0.0
-23.88  ,2017-10-13,28.08      ,+4.20    ,Cavaliers,61849    ,Dwyane Wade             ,SG      ,"6,000" ,0.0          ,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0          ,0.0
-20.49  ,2017-10-11,10.82      ,-9.67    ,Celtics  ,786293   ,Terry Rozier            ,SG      ,"3,100" ,0.0          ,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0          ,0.0
-28.02  ,2017-10-11,21.09      ,-6.93    ,Celtics  ,883436   ,Jaylen Brown            ,SG      ,"3,700" ,0.0          ,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0          ,0.0
-10.91  ,2017-10-11,0.99       ,-9.92    ,Celtics  ,1066725  ,Daniel Theis            ,PF      ,"3,000" ,0.0          ,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0          ,0.0
-9.31,2017-10-13,3.99,-5.32,Warriors,743701,Jordan Bell,PF,"3,000",0.0,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0,0.0
-6.16   ,2017-10-11,1.60       ,-4.56    ,Celtics  ,623253   ,Shane Larkin            ,PG      ,"3,000" ,0.0          ,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0          ,0.0
-10.85  ,2017-10-13,8.90       ,-1.95    ,Warriors ,263228   ,Nick Young              ,SG      ,"3,000" ,0.0          ,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0          ,0.0
-3.50   ,2017-10-13,1.02       ,-2.48    ,Cavaliers,842611   ,Cedi Osman              ,SF      ,"3,000" ,0.0          ,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0          ,0.0
-4.68   ,2017-10-13,0.80       ,-3.88    ,Rockets  ,242307   ,Bobby Brown             ,PG      ,"3,000" ,0.0          ,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0          ,0.0
-11.38  ,2017-10-13,2.63       ,-8.75    ,Warriors ,846499   ,Kevon Looney            ,PF      ,"3,000" ,0.0          ,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0          ,0.0
+38.15,2017-10-11,38.47,+0.32,Celtics,551768,Kyrie Irving,PG,"8,200",0.0,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0,0.0
+12.08,2017-10-13,15.31,+3.23,Cavaliers,552806,Tristan Thompson,C,"5,200",0.0,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0,0.0
+24.81,2017-10-13,28.08,+3.27,Cavaliers,61849,Dwyane Wade,SG,"6,000",0.0,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0,0.0
+19.26,2017-10-11,10.82,-8.44,Celtics,786293,Terry Rozier,SG,"3,100",0.0,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0,0.0
+26.13,2017-10-11,21.09,-5.04,Celtics,883436,Jaylen Brown,SG,"3,700",0.0,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0,0.0
+12.29,2017-10-11,0.99,-11.30,Celtics,1066725,Daniel Theis,PF,"3,000",0.0,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0,0.0
+14.88,2017-10-13,3.99,-10.89,Warriors,743701,Jordan Bell,PF,"3,000",0.0,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0,0.0
+7.76,2017-10-11,1.60,-6.16,Celtics,623253,Shane Larkin,PG,"3,000",0.0,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0,0.0
+10.57,2017-10-13,8.90,-1.67,Warriors,263228,Nick Young,SG,"3,000",0.0,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0,0.0
+4.98,2017-10-13,1.02,-3.96,Cavaliers,842611,Cedi Osman,SF,"3,000",0.0,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0,0.0
+3.91,2017-10-13,0.80,-3.11,Rockets,242307,Bobby Brown,PG,"3,000",0.0,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0,0.0
+9.24,2017-10-13,2.63,-6.61,Warriors,846499,Kevon Looney,PF,"3,000",0.0,"<td class=""width-15 green"" id=""salary-col"">+$0 (0.0%)</td>",0,0.0
