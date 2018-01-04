@@ -154,6 +154,8 @@ class Boxscore(MysqlBase):
             p = pd.DataFrame(data=[row], columns=['PTS', 'BLK', 'STL', 'AST', 'REB', 'FG3M', 'TO'])
             p = p.apply(pd.to_numeric)
             bonus = p[p >= 10].count(axis=1, numeric_only=True)[0]
+            self.DblDbl=0
+            self.TriDbl=0
             if bonus == 2:
                 self.DblDbl = 1
             elif bonus >= 3:

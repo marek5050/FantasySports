@@ -12,6 +12,8 @@ team_abbrev = "SAC,DAL,LAC,MIL,LAL,SAS,DEN,MIN,PHX,UTA,,ATL,HOU,GSW,CLE,OKC,MIA,
 team_names = "Kings,Mavericks,Clippers,Bucks,Lakers,Spurs,Nuggets,Timberwolves,Suns,Jazz,,Hawks,Rockets,Warriors,Cavaliers,Thunder,Heat,Hornets,Pacers,Pelicans,Knicks,Pistons,Celtics,Wizards,Raptors,76ers,Nets,Grizzlies,Magic,Bulls,Trail Blazers".split(
     ",")
 
+import datetime
+now = datetime.datetime.now()
 
 def get_abbrev(team_name):
     for i, item in enumerate(team_names):
@@ -50,7 +52,6 @@ def create_game_table(seasons):
 
 
 def create_game_table_2(seasons):
-    import datetime
     from dateutil.parser import parse
     session = get_session()
     for year in seasons:
@@ -344,7 +345,7 @@ def create_salary_table(df):
     session.close()
 
 
-def build_game_stats(seasons, id_filter=0):
+def build_game_stats(seasons, id_filter=0, last_n=0):
     from nba_py import game
     session = get_session()
     failed = []
@@ -353,7 +354,7 @@ def build_game_stats(seasons, id_filter=0):
         games = utils.get_all_games(season,beforeToday=True,includeToday=False)
         _exists = utils.get_all_boxscore_ids(season)
         newgames = pd.concat([_exists, games,_exists]).drop_duplicates(keep=False)
-        for idx, grow in newgames[newgames["id"]>=id_filter].iterrows():
+        for idx, grow in newgames[(newgames["id"]>=id_filter) & (newgames["dt"] >= (now - datetime.timedelta(days=last_n)))].iterrows():
             print("Game: %s" % grow["id"])
             game_id = str(grow["id"]).zfill(10)
             boxscore = game.Boxscore(game_id).player_stats()
@@ -378,7 +379,7 @@ def build_game_stats(seasons, id_filter=0):
                     session.rollback()
                 except Exception as e:
                     # print("Failed creating salary:%s: %s - %s" %(item["GAME_DATE"], item["player_name"], item["salary"]))
-                    print("Error: %s" % e)
+                    print("Other Error: %s" % e)
                     failed.append(row)
                     session.rollback()
     print("Done.")
@@ -424,11 +425,22 @@ def build_postseason_game_stats(seasons, id_filter=0):
 
 
 if __name__ == "__main__":
+    import datetime
+    import argparse
+
+
     print("Starting DatabaseBuild")
 
     # https://data.nba.com/data/10s/v2015/json/mobile_teams/nba/2017/league/00_full_schedule_week.json
     # seasons = ["2016-17", "2017-18"]
     seasons = ["2017-18"]
+
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--date", help="whats the date or * for all")
+    parser.add_argument("--last", help="last x games")
+
+    args = parser.parse_args()
+
     # create_seasons_table(seasons)
     # create_game_table(seasons)
     # create_players_table(seasons)
@@ -437,7 +449,7 @@ if __name__ == "__main__":
     # create_vegas_table()
     # create_game_table()
     # create_all_salaries()
-    build_game_stats(seasons)
+    build_game_stats(seasons,0,int(args.last))
 
     # kk = player.PlayerLastNGamesSplits(team_id=1610612742)
     # kkk = kk.last10()
