@@ -4,3 +4,4 @@ twitter.csv
 ./models/mysql.py
 mysqlconfig.json
 *.csv
+__pycache__/*

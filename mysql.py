@@ -18,12 +18,12 @@ settings = {
     "mysql_host":"127.0.0.1",
     "mysql_db": "fantasy"
 }
-# settings = {
-#     "mysql_user": "root",
-#     "mysql_pwd": "snowDIhawk123$$!",
-#     "mysql_host":"192.241.219.36",
-#     "mysql_db": "fantasy"
-# }
+settings = {
+     "mysql_user": "root",
+     "mysql_pwd": "snowDIhawk123$$!",
+     "mysql_host":"192.241.219.36",
+     "mysql_db": "fantasy"
+}
 
 
 MysqlBase = declarative_base()
@@ -185,9 +185,9 @@ class Boxscore(MysqlBase):
             try:
                 values = [getattr(self, x) for x in ['PTS', 'BLK', 'STL', 'AST', 'REB', 'FG3M', 'TO']]
             except Exception as e:
-                print("Failed to get attributed")
+                print("Failed to get attributes")
                 print(e)
-                pass
+                return 0
 
             p = pd.DataFrame(data=[values], columns=keys)
             p = p.apply(pd.to_numeric)
@@ -197,13 +197,14 @@ class Boxscore(MysqlBase):
             p.loc[p["Bonus"] > 2, "Bonus"] = 4.5
             p["DKFPS"] = 1 * (p.PTS) + 0.5 * (p.FG3M) + 1.25 * (p.REB) + 1.5 * (p.AST) + 2 * (p.STL) + 2 * (
             p.BLK) - 0.5 * (p.TO) + p.Bonus
+            if p["DKFPS"].values[0] != p["DKFPS"].values[0]:
+                         return 0
             return p["DKFPS"].values[0]
         except Exception as ee:
             print("There was an exception")
             print(ee)
-            pass
 
-        return
+        return 0
 
     def __repr__(self):
         return'<Player {0} {1}: {2}@{3}>'.format(self.id,
