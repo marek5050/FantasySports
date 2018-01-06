@@ -569,9 +569,111 @@ class PlayerLog(MysqlBase,object):
                                                self.GAME_DATE,
                                                self.PTS)
 
+class Team(MysqlBase):
+    __tablename__ ='teamlist'
 
+    TEAM_ID = Column(String(24), primary_key=True, unique=True)
+    LEAGUE_ID=Column(String(2))
+    MIN_YEAR=Column(Integer)
+    MAX_YEAR=Column(Integer)
+    ABBREVIATION=Column(String(3))
 
+    def __repr__(self):
+        return'<Team {0} >'.format(self.TEAM_ID)
 
+    def getLogs(self,session = None):
+        if not session:
+            session = get_session()
+        _logs = session.execute(select([PlayerLog]).where(PlayerLog.Player_ID == self.PERSON_ID))
+        self.logs = pd.DataFrame(data=_logs.fetchall(), columns=_logs.keys())
+        return self.logs
+
+class TeamLogs(MysqlBase):
+    __tablename__ = 'teamlogs'
+    __columns__ = ['Team_ID','Game_ID', 'MATCHUP','WL','W','L','MIN','FGM','FGA'
+                   'FG_PCT','FG3M','FG3A','FG3_PCT','FTM','FTA','FT_PCT','OREB','DREB','REB'
+                   'AST','STL','BLK','TOV','PF','PTS','PLUS_MINUS', 'VIDEO_AVAILABLE', "DKFPS"]
+    __table_args__ = (UniqueConstraint('Team_ID', 'GAME_DATE', name='_team_per_date'),)
+
+    id = Column(Integer, primary_key=True)
+    Team_ID = Column(String(24), ForeignKey(Team.TEAM_ID))
+    Game_ID = Column(Integer, ForeignKey(Game.id))
+    GAME_DATE = Column(Date)
+    MATCHUP = Column(String(32))
+    WL = Column(String(32))
+    W = Column(Integer)
+    L = Column(Integer)
+    W_PCT = Column(Float)
+    MIN  = Column(Integer)
+    FGM = Column(Integer)
+    FGA = Column(Integer)
+    FG_PCT = Column(Float)
+    FG3M = Column(Integer)
+    FG3A = Column(Integer)
+    FG3_PCT = Column(Float)
+    FTM = Column(Integer)
+    FTA = Column(Integer)
+    FT_PCT = Column(Float)
+    OREB = Column(Integer)
+    DREB = Column(Integer)
+    REB = Column(Integer)
+    AST = Column(Integer)
+    STL = Column(Integer)
+    BLK = Column(Integer)
+    TOV = Column(Integer)
+    PF = Column(Integer)
+    PTS = Column(Integer)
+    DKFPS = Column(Float)
+
+    def __init__(self, **row):
+        row["GAME_DATE"] = parser.parse(row["GAME_DATE"]).date()
+        if row is not None:
+            super().__init__(**row)
+        self.DKFPS = self.calculateDKFPS()
+        return
+
+    def calculateDKFPS(self):
+        '''
+        Point = +1 PT
+        Made 3pt. shot = +0.5 PTs
+        Rebound = +1.25 PTs
+        Assist = +1.5 PTs
+        Steal = +2 PTs
+        Block = +2 PTs
+        Turnover = -0.5 PTs
+        Double-Double = +1.5PTs (MAX 1 PER PLAYER: Points, Rebounds, Assists, Blocks, Steals)
+        Triple-Double = +3PTs (MAX 1 PER PLAYER: Points, Rebounds, Assists, Blocks, Steals)
+        '''
+
+        try:
+            keys = ['PTS', 'BLK', 'STL', 'AST', 'REB', 'FG3M', 'TOV']
+            try:
+                values = [getattr(self, x) for x in ['PTS', 'BLK', 'STL', 'AST', 'REB', 'FG3M', 'TOV']]
+            except Exception as e:
+                print("Failed to get attributed")
+                print(e)
+                pass
+
+            p = pd.DataFrame(data=[values], columns=keys)
+            p = p.apply(pd.to_numeric)
+            p["Bonus"] = p[p >= 10].count(axis=1, numeric_only=True)
+            p.loc[p["Bonus"] < 2, "Bonus"] = 0.0
+            p.loc[p["Bonus"] == 2, "Bonus"] = 1.5
+            p.loc[p["Bonus"] > 2, "Bonus"] = 4.5
+            p["DKFPS"] = 1 * (p.PTS) + 0.5 * (p.FG3M) + 1.25 * (p.REB) + 1.5 * (p.AST) + 2 * (p.STL) + 2 * (
+                p.BLK) - 0.5 * (p.TOV) + p.Bonus
+            return p["DKFPS"].values[0]
+        except Exception as ee:
+            print("There was an exception")
+            print(ee)
+            pass
+
+        return
+
+    def __repr__(self):
+        return '<TeamLog {0} {1}: {2}>'.format(self.TEAM_ID,
+                                                 self.GAME_DATE,
+                                                 self.PTS)
 class PlayerNews(MysqlBase):
     __tablename__ ='playernews'
     __table_args__ = (UniqueConstraint('RotoId', 'UpdateId', name='_roto_id_per_update_id'),)

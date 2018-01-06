@@ -1,6 +1,6 @@
 import pandas as pd
 players = pd.read_csv("/Users/marek5050/machinelearning/NBA/171230Full.csv")
-players.columns
+print(players.columns)
 gr = None
 
 all_columns= ['id', 'fantasy_pts', 'avg_pts', 'fpts_diff', 'Name', 'date',
@@ -25,13 +25,11 @@ shifted_cols = ["shiftedDKFPS","shiftedsalaryavg","shiftedsalarystd",
                 "shiftedDEF_RAT","shiftedOFF_RAT","shiftedNET_RAT",
                 "shiftedDKFPSavg", "shiftedMIN","shiftedMINavg", "shiftedMINstd",
                 "shiftedDKFPSstd","shiftedOFF_RATINGavg","shiftedDEF_RATINGavg","shiftedNET_RATINGavg"]
-save_csv = ["Name","TEAM","ou","odds","Position","GAME_DATE","Game_ID",
+save_csv = ["Name","TEAM","ou","odds","Position","GAME_DATE","diff_dates","Game_ID",
             "Home","OPP","PACE","AST","TO","ORR","DRR","REBR","EFF FG%","TS%",
             "OFF EFF","DEF EFF","DKFPS","salary"]+shifted_cols
            # +rolling_avg_cols++rolling_mean_cols+rolling_std_cols
 players[rolling_avg_cols]=players[rolling_avg_cols].fillna(0)
-
-
 # def avg_vs_team(x):
 #     return x[0:-1].mean()
 # averaged_team = players.groupby(["Player_ID","TEAM"])["DKFPS"].apply(avg_vs_team)
@@ -99,7 +97,25 @@ c["shiftedsalarystd"] = c.groupby(["Player_ID"])["salarystd"].shift(1)
 c["shiftedDKFPSstd"] = c.groupby(["Player_ID"])["DKFPSstd"].shift(1)
 c[["shiftedOFF_RATINGavg","shiftedDEF_RATINGavg","shiftedNET_RATINGavg"]]=c.groupby(["Player_ID"])[["OFF_RATINGavg","DEF_RATINGavg","NET_RATINGavg"]].shift(1)
 len(c)
-kk =c.dropna()
+
+for id, player in c.groupby(["Player_ID"]):
+    print(len(player))
+
+# Winning/Lossing streaks
+c["GAME_DATE"] = pd.to_datetime(c["GAME_DATE"])
+grp2 = c.groupby(["Player_ID"])["GAME_DATE"]
+
+c["diff_dates"] = grp2.diff()
+print(c[["Player_ID","diff_dates","GAME_DATE"]].head())
+
+kk = c.dropna()
+# for rowidx, row in c[1:].iterrows():
+#     pastData = c[rowidx-1].dt - row.dt
+#     players[rowidx,"oppavg"]=pastData["DKFPS"].mean()
+
+
+
+
 
 predict = c[c["GAME_DATE"] == "2017-12-30"]
 train = c[c["GAME_DATE"] != "2017-12-30"]
