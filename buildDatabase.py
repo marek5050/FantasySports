@@ -1,6 +1,8 @@
 import json
 import urllib
 import urllib.request
+
+import _mysql_exceptions
 from nba_py.constants import *
 from _mysql_exceptions import DataError
 from nba_py import player
@@ -384,6 +386,45 @@ def build_game_stats(seasons, id_filter=0, last_n=0):
                     session.rollback()
     print("Done.")
 
+def build_team_stats(seasons):
+    from nba_py import team
+    from nba_py import constants
+    session = get_session()
+
+    errors=[]
+    teams = team.TeamList().info()
+
+    created = 0
+    for season in seasons:
+        for idx,tm in teams[pd.to_numeric(teams["MAX_YEAR"])>=2017].iterrows():
+            atm = Team(**tm)
+            try:
+                session.add(atm)
+                session.commit()
+            except Exception as e:
+                session.rollback()
+                print("Team exists %s" % e)
+
+            normal_tm = team.TeamGameLogs(tm["TEAM_ID"], season=season).info()
+            playoffs_tm = team.TeamGameLogs(tm["TEAM_ID"], season=season, season_type=constants.SeasonType.Playoffs).info()
+            games = normal_tm.append(playoffs_tm)
+            for idx,log in games.iterrows():
+                try:
+                    session.add(TeamLogs(**log))
+                    session.commit()
+                    created = created + 1
+                except _mysql_exceptions.IntegrityError:
+                    print("Integrity error: %s" % e )
+                    session.rollback()
+                    pass
+                except Exception as e:
+                    print(e)
+                    errors.append(e)
+                    session.rollback()
+
+    print("Created: %d, Errored: %d" % (created, len(errors)))
+    if len(errors) > 0:
+        print(errors[0])
 
 def build_postseason_game_stats(seasons, id_filter=0):
     session = get_session()
@@ -433,7 +474,7 @@ if __name__ == "__main__":
 
     # https://data.nba.com/data/10s/v2015/json/mobile_teams/nba/2017/league/00_full_schedule_week.json
     # seasons = ["2016-17", "2017-18"]
-    seasons = ["2017-18"]
+    seasons = ["2016-17","2017-18"]
 
     parser = argparse.ArgumentParser()
     parser.add_argument("--date", help="whats the date or * for all")
@@ -450,7 +491,8 @@ if __name__ == "__main__":
     # create_game_table()
     # create_all_salaries()
     build_game_stats(seasons,0,int(args.last))
-
+    # build_team_stats(seasons)
+    #
     # kk = player.PlayerLastNGamesSplits(team_id=1610612742)
     # kkk = kk.last10()
     # kkk = kk.last15()
