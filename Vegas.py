@@ -86,17 +86,21 @@ class VegasInsiderOdds(scrapy.Spider):
             if "PK" in overUnder:
                 odds = "1"
                 overUnder = odds
-            odds = float(odds.replace("\xa0",""))
-            overUnder = float(overUnder.replace("\xa0",""))
+            try: 
+               odds = float(odds.replace("\xa0",""))
+               overUnder = float(overUnder.replace("\xa0",""))
 
-            away["team"] = utils.fixTeam(cells[0])
-            away["odds"] = -1*odds if oddsIdx == 3 else odds
-            away["overUnder"] = overUnder
-            arr.append([away["team"],away["odds"],away["overUnder"]])
-            home["team"] = utils.fixTeam(cells[2])
-            home["odds"] = odds if oddsIdx == 3 else -1*odds
-            home["overUnder"] = overUnder
-            arr.append([home["team"], home["odds"], home["overUnder"]])
+               away["team"] = utils.fixTeam(cells[0])
+               away["odds"] = -1*odds if oddsIdx == 3 else odds
+               away["overUnder"] = overUnder
+               arr.append([away["team"],away["odds"],away["overUnder"]])
+               home["team"] = utils.fixTeam(cells[2])
+               home["odds"] = odds if oddsIdx == 3 else -1*odds
+               home["overUnder"] = overUnder
+               arr.append([home["team"], home["odds"], home["overUnder"]])
+            except Exception as e:
+               print(e)
+               print(response.url)
 
         df = pd.DataFrame(arr, columns=["team","odds","overUnder"])
         try:

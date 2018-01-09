@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+cd /root/FantasySports
 echo "----- ROTONEWS SCRAPER "
 python3 RotoNews.py
 echo "----- VEGAS SCRAPER "
