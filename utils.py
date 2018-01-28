@@ -109,6 +109,9 @@ def toNBA(name):
     if name == "R.J. Hunter":
         name = "RJ Hunter"
 
+    if name == "Andrew White III":
+        name = "Andrew White"
+
     if name == "Juancho Hernangomez":
         name = "Juan Hernangomez"
 
