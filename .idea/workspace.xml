@@ -2,12 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="289189b2-db15-4b29-8e00-7ee0c0b6a1fa" name="Default" comment="Merged.">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fantsylabs.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swishanalytics.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/nba_cache.sqlite" afterPath="$PROJECT_DIR$/nba_cache.sqlite" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.ipynb_checkpoints/CalculatePlayer-checkpoint.ipynb" afterPath="$PROJECT_DIR$/.ipynb_checkpoints/CalculatePlayer-checkpoint.ipynb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CalculatePlayer.ipynb" afterPath="$PROJECT_DIR$/CalculatePlayer.ipynb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/buildDatabase.py" afterPath="$PROJECT_DIR$/buildDatabase.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mysql.py" afterPath="$PROJECT_DIR$/mysql.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/preprocess.py" afterPath="$PROJECT_DIR$/preprocess.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/schedule.sh" afterPath="$PROJECT_DIR$/schedule.sh" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/updateDatabase.py" afterPath="$PROJECT_DIR$/updateDatabase.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/utils.py" afterPath="$PROJECT_DIR$/utils.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -25,7 +29,7 @@
     <SUITE FILE_PATH="coverage/NBA$TensorFlow.coverage" NAME="TensorFlow Coverage Results" MODIFIED="1514031452816" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tensorflow" />
     <SUITE FILE_PATH="coverage/NBA$RotoNews.coverage" NAME="RotoNews Coverage Results" MODIFIED="1511653440221" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/NBA$VegasOddsAll.coverage" NAME="VegasOddsAll Coverage Results" MODIFIED="1513871401089" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/NBA$Build_Database.coverage" NAME="Build Database Coverage Results" MODIFIED="1515198550609" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/NBA$Build_Database.coverage" NAME="Build Database Coverage Results" MODIFIED="1515884215823" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/NBA$optimize.coverage" NAME="optimize Coverage Results" MODIFIED="1513941460402" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/degenerate" />
     <SUITE FILE_PATH="coverage/NBA$Vegas_Today.coverage" NAME="Vegas Today Coverage Results" MODIFIED="1514730748204" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/NBA$Vegas.coverage" NAME="Vegas Coverage Results" MODIFIED="1514730778547" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
@@ -38,7 +42,7 @@
     <SUITE FILE_PATH="coverage/NBA$blah.coverage" NAME="blah Coverage Results" MODIFIED="1484965588491" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/NBA$Targets.coverage" NAME="Targets Coverage Results" MODIFIED="1510374001759" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/NBA$Daily_Injuries.coverage" NAME="Daily Injuries Coverage Results" MODIFIED="1509825020112" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/NBA$Preprocess.coverage" NAME="Preprocess Coverage Results" MODIFIED="1515194351189" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/NBA$Preprocess.coverage" NAME="Preprocess Coverage Results" MODIFIED="1515259881454" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/NBA$SalaryScraper_Today.coverage" NAME="SalaryScraper Today Coverage Results" MODIFIED="1514539977918" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/NBA$Updates.coverage" NAME="Team updates Coverage Results" MODIFIED="1483804883967" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/NBA$Defense.coverage" NAME="Defense Coverage Results" MODIFIED="1510374004990" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
@@ -70,79 +74,63 @@
     <favorites_list name="NBA" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.39963996">
-      <split-first>
-        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="mysql.py" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/mysql.py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="-1008">
-                  <caret line="629" column="25" lean-forward="false" selection-start-line="629" selection-start-column="25" selection-end-line="629" selection-end-column="25" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="utils.py" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/utils.py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="267">
-                  <caret line="173" column="0" lean-forward="false" selection-start-line="173" selection-start-column="0" selection-end-line="173" selection-end-column="0" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="preprocess.py" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/preprocess.py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="-242">
-                  <caret line="76" column="28" lean-forward="true" selection-start-line="76" selection-start-column="28" selection-end-line="76" selection-end-column="28" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="updateDatabase.py" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/updateDatabase.py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="106">
-                  <caret line="33" column="88" lean-forward="false" selection-start-line="33" selection-start-column="88" selection-end-line="33" selection-end-column="88" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="update.py" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/update.py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="0">
-                  <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-first>
-      <split-second>
-        <leaf>
-          <file leaf-file-name="buildDatabase.py" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/buildDatabase.py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="221">
-                  <caret line="493" column="4" lean-forward="false" selection-start-line="493" selection-start-column="4" selection-end-line="493" selection-end-column="4" />
-                  <folding>
-                    <element signature="e#0#11#0" expanded="true" />
-                    <marker date="1515251202000" expanded="true" signature="4788:4853" ph="SELECT * FRO... game" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-second>
-    </splitter>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="buildDatabase.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/buildDatabase.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="365">
+              <caret line="516" column="41" lean-forward="true" selection-start-line="516" selection-start-column="41" selection-end-line="516" selection-end-column="41" />
+              <folding>
+                <element signature="e#0#11#0" expanded="true" />
+                <marker date="1515884208000" expanded="true" signature="9377:9442" ph="SELECT * FRO... game" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="mysql.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mysql.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="22" column="37" lean-forward="false" selection-start-line="22" selection-start-column="21" selection-end-line="22" selection-end-column="37" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ReferenceSpider.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ReferenceSpider.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="216">
+              <caret line="23" column="46" lean-forward="false" selection-start-line="23" selection-start-column="46" selection-end-line="23" selection-end-column="46" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="utils.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/utils.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-34">
+              <caret line="91" column="25" lean-forward="false" selection-start-line="91" selection-start-column="25" selection-end-line="91" selection-end-column="25" />
+              <folding>
+                <element signature="e#25#40#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="game.py" pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/anaconda/lib/python3.5/site-packages/nba_py/game.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1065">
+              <caret line="72" column="0" lean-forward="false" selection-start-line="72" selection-start-column="0" selection-end-line="72" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -154,36 +142,36 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>seasonty</find>
-      <find>400</find>
-      <find>shiftedMINavg</find>
-      <find>save_csv</find>
-      <find>####</find>
-      <find>calculat</find>
-      <find>dkfps</find>
-      <find>DKFPS</find>
-      <find>sql</find>
-      <find>mysql</find>
-      <find>arg</find>
-      <find>timedeta</find>
-      <find>datetime</find>
-      <find>date</find>
+      <find>injurystatus</find>
+      <find>injurystatus&quot;:</find>
+      <find>injurystatus&quot;: &quot;</find>
+      <find>positiontype</find>
+      <find>Score</find>
+      <find>Actualp</find>
+      <find>points</find>
+      <find>playerlist</find>
+      <find>create_players_table</find>
+      <find>IntegrityError</find>
+      <find>fetch</find>
+      <find>getall</find>
+      <find>get_all_pla</find>
+      <find>Starting DatabaseBuild</find>
+      <find>transaction_iso</find>
+      <find>Player</find>
+      <find>PLAYERCODE</find>
+      <find>read_sq</find>
+      <find>q.state</find>
+      <find>GAME_ID</find>
+      <find>join</find>
+      <find>load</find>
+      <find>raiseload</find>
+      <find>get_all_games</find>
+      <find>game_id</find>
       <find>boxscore</find>
-      <find>nba_py</find>
-      <find>playerlogs</find>
-      <find>playerlog</find>
-      <find>teamlog</find>
-      <find>session</find>
-      <find>&quot; &quot;</find>
-      <find>' '</find>
-      <find>teams</find>
-      <find>team</find>
-      <find>Player(</find>
-      <find>Team(</find>
-      <find>teamlogs</find>
-      <find>W =</find>
-      <find>W =</find>
-      <find>vali</find>
+      <find>replace</find>
+      <find>reddi</find>
+      <find>utils</find>
+      <find>Jose Juan Barea</find>
     </findStrings>
     <replaceStrings>
       <replace>,SA,</replace>
@@ -231,14 +219,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/predictions.csv" />
-        <option value="$PROJECT_DIR$/data/generatedRosters2/2017-11-20.csv" />
-        <option value="$PROJECT_DIR$/resultsExplorer.py" />
-        <option value="$PROJECT_DIR$/extras.json" />
-        <option value="$PROJECT_DIR$/requirements.txt" />
-        <option value="$PROJECT_DIR$/playerdata.csv" />
-        <option value="$USER_HOME$/anaconda/lib/python3.5/site-packages/nba_py/constants.py" />
-        <option value="$PROJECT_DIR$/models/models.py" />
         <option value="$PROJECT_DIR$/Naother.json" />
         <option value="$PROJECT_DIR$/alembic.ini" />
         <option value="$PROJECT_DIR$/data/old_salaries/dk_2016-10-25.csv" />
@@ -275,13 +255,21 @@
         <option value="$PROJECT_DIR$/Vegas.py" />
         <option value="$PROJECT_DIR$/response.json" />
         <option value="$PROJECT_DIR$/response_espn.json" />
-        <option value="$PROJECT_DIR$/utils.py" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/updateDatabase.py" />
-        <option value="$PROJECT_DIR$/preprocess.py" />
-        <option value="$PROJECT_DIR$/mysql.py" />
         <option value="$PROJECT_DIR$/schedule.sh" />
+        <option value="$PROJECT_DIR$/171230Full.csv" />
+        <option value="$PROJECT_DIR$/preprocess.py" />
+        <option value="$PROJECT_DIR$/FantasyLabs.py" />
+        <option value="$PROJECT_DIR$/fantsylabs.json" />
+        <option value="$PROJECT_DIR$/data/fantasylabs/1_5_2018.json" />
+        <option value="$PROJECT_DIR$/swishanalytics.json" />
+        <option value="$PROJECT_DIR$/data/fantasylabs/2016-10-30.json" />
+        <option value="$PROJECT_DIR$/data/fantasylabs/2016-10-25.json" />
+        <option value="$USER_HOME$/anaconda/lib/python3.5/site-packages/sqlalchemy/dialects/mysql/base.py" />
+        <option value="$PROJECT_DIR$/mysql.py" />
         <option value="$PROJECT_DIR$/buildDatabase.py" />
+        <option value="$PROJECT_DIR$/utils.py" />
       </list>
     </option>
   </component>
@@ -298,9 +286,9 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-1" />
-    <option name="y" value="60" />
-    <option name="width" value="1440" />
+    <option name="x" value="193" />
+    <option name="y" value="59" />
+    <option name="width" value="1246" />
     <option name="height" value="737" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
@@ -337,7 +325,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -349,28 +337,11 @@
               <item name="NBA" type="b2602c69:ProjectViewProjectNode" />
               <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
             </path>
-            <path>
-              <item name="NBA" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="&lt; Python 3.5.2 (~/anaconda/bin/python) &gt;" type="70bed36:NamedLibraryElementNode" />
-            </path>
-            <path>
-              <item name="NBA" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="&lt; Python 3.5.2 (~/anaconda/bin/python) &gt;" type="70bed36:NamedLibraryElementNode" />
-              <item name="python3.5" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="NBA" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="&lt; Python 3.5.2 (~/anaconda/bin/python) &gt;" type="70bed36:NamedLibraryElementNode" />
-              <item name="site-packages" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -380,24 +351,24 @@
     <property name="js.eslint.eslintPackage" value="" />
     <property name="js-jscs-nodeInterpreter" value="/usr/local/bin/node" />
     <property name="settings.editor.selected.configurable" value="terminal" />
-    <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file:///Users/marek5050/machinelearning/NBA/models/mysql.py" />
+    <property name="SearchEverywhereHistoryKey" value="salary&#9;FILE&#9;file:///Users/marek5050/machinelearning/NBA/SalaryScraper.py" />
     <property name="com.intellij.database.dataSource.DataSourceTemplate" value="MySQL" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/data/play" />
-      <recent name="$PROJECT_DIR$/tensorflow" />
-      <recent name="$PROJECT_DIR$" />
-      <recent name="$PROJECT_DIR$/data/predictions" />
-      <recent name="$PROJECT_DIR$/data" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/data" />
       <recent name="$PROJECT_DIR$/models" />
       <recent name="$PROJECT_DIR$/data/output/old" />
       <recent name="$PROJECT_DIR$/data/final/old" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/data/play" />
+      <recent name="$PROJECT_DIR$/tensorflow" />
+      <recent name="$PROJECT_DIR$/data/predictions" />
+      <recent name="$PROJECT_DIR$/data" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -469,7 +440,7 @@
       <module name="NBA" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/buildDatabase.py" />
-      <option name="PARAMETERS" value="--last 3" />
+      <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
     </configuration>
@@ -1516,22 +1487,22 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1" y="60" width="1440" height="737" extended-state="0" />
+    <frame x="193" y="59" width="1246" height="737" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32907802" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3460993" sideWeight="0.35550788" order="11" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32554516" sideWeight="0.6380544" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.325811" sideWeight="0.4648132" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32554516" sideWeight="0.4648132" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2975078" sideWeight="0.8748212" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25077882" sideWeight="0.7467811" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20529328" sideWeight="0.49170125" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25077882" sideWeight="0.7467811" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2450166" sideWeight="0.49170125" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.10085837" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.325811" sideWeight="0.4828326" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24964234" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3800623" sideWeight="0.64449215" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22206303" sideWeight="0.50829875" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Data View" active="false" anchor="right" auto_hide="true" internal_type="SLIDING" type="FLOATING" visible="false" show_stripe_button="false" weight="0.58082974" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" x="123" y="382" width="1317" height="339" />
+      <window_info id="Data View" active="false" anchor="right" auto_hide="true" internal_type="SLIDING" type="FLOATING" visible="false" show_stripe_button="false" weight="0.58082974" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" x="41" y="390" width="1317" height="323" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -1630,17 +1601,17 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/buildDatabase.py</url>
-          <line>52</line>
+          <line>62</line>
           <option name="timeStamp" value="494" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/Vegas.py</url>
-          <line>159</line>
+          <line>163</line>
           <option name="timeStamp" value="604" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/Vegas.py</url>
-          <line>124</line>
+          <line>128</line>
           <option name="timeStamp" value="605" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
@@ -1680,93 +1651,98 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/buildDatabase.py</url>
-          <line>267</line>
+          <line>324</line>
           <option name="timeStamp" value="692" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/buildDatabase.py</url>
-          <line>78</line>
+          <line>135</line>
           <option name="timeStamp" value="698" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/buildDatabase.py</url>
-          <line>79</line>
+          <line>136</line>
           <option name="timeStamp" value="701" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/buildDatabase.py</url>
-          <line>104</line>
+          <line>161</line>
           <option name="timeStamp" value="702" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/buildDatabase.py</url>
-          <line>108</line>
+          <line>165</line>
           <option name="timeStamp" value="703" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/buildDatabase.py</url>
-          <line>111</line>
+          <line>168</line>
           <option name="timeStamp" value="704" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/preprocess.py</url>
-          <line>42</line>
+          <line>43</line>
           <option name="timeStamp" value="711" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/preprocess.py</url>
-          <line>39</line>
+          <line>40</line>
           <option name="timeStamp" value="713" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/buildDatabase.py</url>
-          <line>464</line>
+          <line>535</line>
           <option name="timeStamp" value="756" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/utils.py</url>
-          <line>200</line>
+          <line>211</line>
           <option name="timeStamp" value="762" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/mysql.py</url>
-          <line>162</line>
-          <option name="timeStamp" value="778" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/buildDatabase.py</url>
-          <line>379</line>
+          <line>447</line>
           <option name="timeStamp" value="780" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/buildDatabase.py</url>
-          <line>384</line>
+          <line>453</line>
           <option name="timeStamp" value="781" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/preprocess.py</url>
-          <line>119</line>
+          <line>139</line>
           <option name="timeStamp" value="782" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/preprocess.py</url>
-          <line>108</line>
+          <line>121</line>
           <option name="timeStamp" value="791" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/preprocess.py</url>
-          <line>104</line>
+          <line>117</line>
           <option name="timeStamp" value="792" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/preprocess.py</url>
-          <line>101</line>
-          <option name="timeStamp" value="793" />
+          <url>file://$PROJECT_DIR$/buildDatabase.py</url>
+          <line>110</line>
+          <option name="timeStamp" value="820" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/buildDatabase.py</url>
-          <line>365</line>
-          <option name="timeStamp" value="795" />
+          <line>109</line>
+          <option name="timeStamp" value="823" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/buildDatabase.py</url>
+          <line>507</line>
+          <option name="timeStamp" value="825" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/buildDatabase.py</url>
+          <line>36</line>
+          <option name="timeStamp" value="832" />
         </line-breakpoint>
       </breakpoints>
       <breakpoints-dialog>
@@ -1779,363 +1755,15 @@
           </properties>
         </breakpoint>
       </default-breakpoints>
-      <option name="time" value="815" />
+      <option name="time" value="850" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/data/vegas/2017-04-16.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/calendar/full_schedule.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="124">
-          <caret line="193" column="16" lean-forward="false" selection-start-line="193" selection-start-column="14" selection-end-line="193" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_HOME_DIR$/helpers/typeshed/stdlib/3/datetime.pyi">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/calendar/finished_schedule_2016.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="86">
-          <caret line="71226" column="20" lean-forward="true" selection-start-line="71226" selection-start-column="20" selection-end-line="71226" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/171227Predict2.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="93" lean-forward="true" selection-start-line="1" selection-start-column="94" selection-end-line="6" selection-end-column="93" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SALARYPlayerListGameLogs.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="12" column="33" lean-forward="false" selection-start-line="12" selection-start-column="33" selection-end-line="12" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/vegas/2017-04-15.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/HistoricalDFS.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="157">
-          <caret line="73" column="12" lean-forward="true" selection-start-line="73" selection-start-column="12" selection-end-line="73" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/vegas/2017-04-14.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/temp2.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-268">
-          <caret line="146" column="4" lean-forward="true" selection-start-line="146" selection-start-column="4" selection-end-line="146" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/play/171229.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="21" lean-forward="true" selection-start-line="5" selection-start-column="21" selection-end-line="5" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/save_player.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/vegas/2017-12-28.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="0" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/response_espn.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" column="21" lean-forward="true" selection-start-line="19" selection-start-column="21" selection-end-line="19" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/response.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="6" column="4" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="48" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/anaconda/lib/python3.5/site-packages/nba_py/draftcombine.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="12" column="15" lean-forward="false" selection-start-line="12" selection-start-column="8" selection-end-line="12" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/anaconda/lib/python3.5/site-packages/sqlalchemy/orm/state.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="123">
-          <caret line="410" column="0" lean-forward="false" selection-start-line="410" selection-start-column="0" selection-end-line="410" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/anaconda/lib/python3.5/site-packages/sqlalchemy/sql/sqltypes.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="702" column="13" lean-forward="true" selection-start-line="702" selection-start-column="13" selection-end-line="702" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/anaconda/lib/python3.5/site-packages/sqlalchemy/ext/declarative/api.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="201" column="42" lean-forward="false" selection-start-line="201" selection-start-column="42" selection-end-line="201" selection-end-column="42" />
-          <folding>
-            <element signature="e#300#345#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/anaconda/lib/python3.5/site-packages/sqlalchemy/orm/exc.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="226">
-          <caret line="48" column="45" lean-forward="false" selection-start-line="48" selection-start-column="45" selection-end-line="48" selection-end-column="45" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/anaconda/lib/python3.5/site-packages/sqlalchemy/orm/session.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="123">
-          <caret line="871" column="8" lean-forward="false" selection-start-line="871" selection-start-column="8" selection-end-line="871" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/anaconda/lib/python3.5/site-packages/sqlalchemy/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/anaconda/lib/python3.5/site-packages/_mysql_exceptions.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="42" column="15" lean-forward="false" selection-start-line="42" selection-start-column="6" selection-end-line="42" selection-end-column="15" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/anaconda/lib/python3.5/site-packages/nba_py/player.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1470">
-          <caret line="99" column="6" lean-forward="false" selection-start-line="99" selection-start-column="6" selection-end-line="99" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/anaconda/lib/python3.5/http/client.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="116">
-          <caret line="1197" column="0" lean-forward="false" selection-start-line="1197" selection-start-column="0" selection-end-line="1197" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/anaconda/lib/python3.5/site-packages/urllib3/connectionpool.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="116">
-          <caret line="600" column="0" lean-forward="false" selection-start-line="600" selection-start-column="0" selection-end-line="600" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/anaconda/lib/python3.5/site-packages/requests/adapters.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="6180">
-          <caret line="439" column="0" lean-forward="false" selection-start-line="439" selection-start-column="0" selection-end-line="439" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/171229Data.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/pydevd.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="550">
-          <caret line="1598" column="0" lean-forward="false" selection-start-line="1598" selection-start-column="0" selection-end-line="1598" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/degenerate/optimize_nba.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="0" lean-forward="true" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#10#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/anaconda/lib/python3.5/site-packages/requests/sessions.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="116">
-          <caret line="507" column="0" lean-forward="false" selection-start-line="507" selection-start-column="0" selection-end-line="507" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/anaconda/lib/python3.5/site-packages/requests_cache/core.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="116">
-          <caret line="125" column="0" lean-forward="false" selection-start-line="125" selection-start-column="0" selection-end-line="125" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/anaconda/lib/python3.5/site-packages/nba_py/game.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="123">
-          <caret line="72" column="0" lean-forward="false" selection-start-line="72" selection-start-column="0" selection-end-line="72" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#41#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/anaconda/lib/python3.5/site-packages/requests/api.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="116">
-          <caret line="71" column="0" lean-forward="false" selection-start-line="71" selection-start-column="0" selection-end-line="71" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/utils.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="267">
-          <caret line="173" column="0" lean-forward="false" selection-start-line="173" selection-start-column="0" selection-end-line="173" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/PlayerCalculations.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/PlayerNews.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="11" lean-forward="true" selection-start-line="2" selection-start-column="11" selection-end-line="2" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SalaryScraper.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="65" column="0" lean-forward="true" selection-start-line="64" selection-start-column="0" selection-end-line="65" selection-end-column="0" />
-          <folding>
-            <element signature="e#25#40#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/preprocess.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-242">
-          <caret line="76" column="28" lean-forward="true" selection-start-line="76" selection-start-column="28" selection-end-line="76" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/anaconda/lib/python3.5/site-packages/nba_py/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="123">
-          <caret line="83" column="0" lean-forward="false" selection-start-line="83" selection-start-column="0" selection-end-line="83" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/anaconda/lib/python3.5/codecs.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="304" column="9" lean-forward="false" selection-start-line="304" selection-start-column="9" selection-end-line="304" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/anaconda/lib/python3.5/site-packages/nba_py/constants.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="19" lean-forward="false" selection-start-line="7" selection-start-column="19" selection-end-line="7" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/anaconda/lib/python3.5/site-packages/nba_py/team.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="14" lean-forward="true" selection-start-line="4" selection-start-column="14" selection-end-line="4" selection-end-column="14" />
-          <folding>
-            <element signature="e#0#41#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/updateDatabase.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="106">
           <caret line="33" column="88" lean-forward="false" selection-start-line="33" selection-start-column="88" selection-end-line="33" selection-end-column="88" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2147,29 +1775,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mysql.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1008">
-          <caret line="629" column="25" lean-forward="false" selection-start-line="629" selection-start-column="25" selection-end-line="629" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/schedule.sh">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
           <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Vegas.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="191">
-          <caret line="250" column="26" lean-forward="true" selection-start-line="250" selection-start-column="26" selection-end-line="250" selection-end-column="26" />
-          <folding>
-            <element signature="e#25#40#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -2177,17 +1786,262 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SalaryScraper.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="214">
+          <caret line="88" column="76" lean-forward="false" selection-start-line="88" selection-start-column="9" selection-end-line="88" selection-end-column="76" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/171230Full.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="29" lean-forward="false" selection-start-line="1" selection-start-column="29" selection-end-line="1" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PlayerDataFantasyLabs.csv" />
+    <entry file="file://$PROJECT_DIR$/FantasyLabs.py" />
+    <entry file="file://$PROJECT_DIR$/response.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="24" lean-forward="false" selection-start-line="17" selection-start-column="24" selection-end-line="17" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Vegas.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="258" column="0" lean-forward="false" selection-start-line="245" selection-start-column="0" selection-end-line="258" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/anaconda/lib/python3.5/json/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="181" column="4" lean-forward="false" selection-start-line="181" selection-start-column="4" selection-end-line="181" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/preprocess.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="75" lean-forward="true" selection-start-line="2" selection-start-column="75" selection-end-line="2" selection-end-column="75" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/fantasylabs/1_5_2018.json" />
+    <entry file="file://$PROJECT_DIR$/data/fantasylabs/2017-10-17.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-78863">
+          <caret line="0" column="1617" lean-forward="false" selection-start-line="0" selection-start-column="1617" selection-end-line="0" selection-end-column="1617" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/anaconda/lib/python3.5/ssl.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="116">
+          <caret line="936" column="0" lean-forward="false" selection-start-line="936" selection-start-column="0" selection-end-line="936" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/swishanalytics.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3392">
+          <caret line="827" column="5" lean-forward="false" selection-start-line="827" selection-start-column="5" selection-end-line="827" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fantsylabs.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="91">
+          <caret line="71960" column="16" lean-forward="true" selection-start-line="71960" selection-start-column="16" selection-end-line="71960" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/anaconda/lib/python3.5/site-packages/pandas/core/frame.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="206">
+          <caret line="4462" column="18" lean-forward="true" selection-start-line="4462" selection-start-column="18" selection-end-line="4462" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/pydevd.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="1598" column="0" lean-forward="false" selection-start-line="1598" selection-start-column="0" selection-end-line="1598" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/fantasylabs/2016-10-02.json" />
+    <entry file="file://$PROJECT_DIR$/data/fantasylabs/2018-01-06.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/fantasylabs/2016-10-05.json" />
+    <entry file="file://$PROJECT_DIR$/data/fantasylabs/2016-10-04.json" />
+    <entry file="file://$PROJECT_DIR$/data/fantasylabs/2016-10-03.json" />
+    <entry file="file://$PROJECT_DIR$/data/fantasylabs/2016-10-01.json" />
+    <entry file="file://$PROJECT_DIR$/data/fantasylabs/2016-10-10.json" />
+    <entry file="file://$PROJECT_DIR$/data/fantasylabs/2016-10-12.json" />
+    <entry file="file://$PROJECT_DIR$/data/fantasylabs/2016-10-17.json" />
+    <entry file="file://$PROJECT_DIR$/data/fantasylabs/2016-10-18.json" />
+    <entry file="file://$PROJECT_DIR$/data/fantasylabs/2016-10-19.json" />
+    <entry file="file://$PROJECT_DIR$/data/fantasylabs/2016-10-20.json" />
+    <entry file="file://$PROJECT_DIR$/data/fantasylabs/2016-10-21.json" />
+    <entry file="file://$PROJECT_DIR$/data/fantasylabs/2016-10-26.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="0" column="889" lean-forward="false" selection-start-line="0" selection-start-column="889" selection-end-line="0" selection-end-column="889" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/fantasylabs/2016-10-30.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="19" lean-forward="false" selection-start-line="4" selection-start-column="19" selection-end-line="4" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/fantasylabs/2016-12-10.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="95" lean-forward="false" selection-start-line="0" selection-start-column="95" selection-end-line="0" selection-end-column="95" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/fantasylabs/2016-10-25.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="254">
+          <caret line="16507" column="20" lean-forward="true" selection-start-line="16507" selection-start-column="20" selection-end-line="16507" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/anaconda/lib/python3.5/site-packages/nba_py/player.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#53#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/anaconda/lib/python3.5/codecs.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="308" column="0" lean-forward="false" selection-start-line="308" selection-start-column="0" selection-end-line="308" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/anaconda/lib/python3.5/site-packages/sqlalchemy/dialects/mysql/base.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="1570" column="22" lean-forward="true" selection-start-line="1570" selection-start-column="22" selection-end-line="1570" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/anaconda/lib/python3.5/site-packages/requests/sessions.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="116">
+          <caret line="617" column="0" lean-forward="false" selection-start-line="617" selection-start-column="0" selection-end-line="617" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/anaconda/lib/python3.5/site-packages/requests/adapters.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="263">
+          <caret line="489" column="33" lean-forward="false" selection-start-line="489" selection-start-column="18" selection-end-line="489" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/anaconda/lib/python3.5/site-packages/requests/api.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="116">
+          <caret line="71" column="0" lean-forward="false" selection-start-line="71" selection-start-column="0" selection-end-line="71" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Library/Caches/PyCharm2017.2/python_stubs/-20178883/builtins.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="123">
+          <caret line="1338" column="6" lean-forward="false" selection-start-line="1338" selection-start-column="6" selection-end-line="1338" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/anaconda/lib/python3.5/site-packages/requests/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="933" column="25" lean-forward="false" selection-start-line="933" selection-start-column="11" selection-end-line="933" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/anaconda/lib/python3.5/site-packages/nba_py/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="158">
+          <caret line="85" column="25" lean-forward="false" selection-start-line="85" selection-start-column="9" selection-end-line="85" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/anaconda/lib/python3.5/socket.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="572" column="22" lean-forward="false" selection-start-line="572" selection-start-column="22" selection-end-line="572" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/anaconda/lib/python3.5/site-packages/nba_py/game.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1065">
+          <caret line="72" column="0" lean-forward="false" selection-start-line="72" selection-start-column="0" selection-end-line="72" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/buildDatabase.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="493" column="4" lean-forward="false" selection-start-line="493" selection-start-column="4" selection-end-line="493" selection-end-column="4" />
+        <state relative-caret-position="365">
+          <caret line="516" column="41" lean-forward="true" selection-start-line="516" selection-start-column="41" selection-end-line="516" selection-end-column="41" />
           <folding>
             <element signature="e#0#11#0" expanded="true" />
-            <marker date="1515251202000" expanded="true" signature="4788:4853" ph="SELECT * FRO... game" />
+            <marker date="1515884208000" expanded="true" signature="9377:9442" ph="SELECT * FRO... game" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mysql.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="22" column="37" lean-forward="false" selection-start-line="22" selection-start-column="21" selection-end-line="22" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ReferenceSpider.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="23" column="46" lean-forward="false" selection-start-line="23" selection-start-column="46" selection-end-line="23" selection-end-column="46" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/utils.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-34">
+          <caret line="91" column="25" lean-forward="false" selection-start-line="91" selection-start-column="25" selection-end-line="91" selection-end-column="25" />
+          <folding>
+            <element signature="e#25#40#0" expanded="true" />
           </folding>
         </state>
       </provider>

@@ -1,5 +1,7 @@
 import pandas as pd
-players = pd.read_csv("/Users/marek5050/machinelearning/NBA/171230Full.csv")
+
+players = pd.read_csv("/Users/marek5050/machinelearning/NBA/180106Players.csv")
+teams = pd.read_csv("/Users/marek5050/machinelearning/NBA/180106Teams.csv")
 print(players.columns)
 gr = None
 
@@ -98,10 +100,22 @@ c["shiftedDKFPSstd"] = c.groupby(["Player_ID"])["DKFPSstd"].shift(1)
 c[["shiftedOFF_RATINGavg","shiftedDEF_RATINGavg","shiftedNET_RATINGavg"]]=c.groupby(["Player_ID"])[["OFF_RATINGavg","DEF_RATINGavg","NET_RATINGavg"]].shift(1)
 len(c)
 
-for id, player in c.groupby(["Player_ID"]):
-    print(len(player))
+c["WLStreak"] = "-"
 
-# Winning/Lossing streaks
+for id, player_rows in c.groupby(["Player_ID"]):
+    last = None
+    count = 0
+    for idx in reversed(range(len(player_rows))):
+        if last is None:
+            last = player_rows.iloc[idx]["WL"]
+
+        if player_rows.iloc[idx]["WL"] == last:
+            count = count + 1
+        else:
+            break
+    print("Streak: %d" % count)
+
+# Days since rest
 c["GAME_DATE"] = pd.to_datetime(c["GAME_DATE"])
 grp2 = c.groupby(["Player_ID"])["GAME_DATE"]
 

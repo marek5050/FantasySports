@@ -1,7 +1,6 @@
 #!/usr/bin/env python
 
-import os
-
+import pandas as pd
 from dateutil import parser
 from sqlalchemy import Column, DateTime, String, Integer, ForeignKey, Date, Float, Numeric, Boolean
 from sqlalchemy import UniqueConstraint
@@ -9,7 +8,7 @@ from sqlalchemy import create_engine
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import sessionmaker, relationship
 from sqlalchemy.sql import select
-import pandas as pd
+
 import utils
 
 settings = {
@@ -18,12 +17,12 @@ settings = {
     "mysql_host":"127.0.0.1",
     "mysql_db": "fantasy"
 }
-settings = {
-     "mysql_user": "root",
-     "mysql_pwd": "snowDIhawk123$$!",
-     "mysql_host":"192.241.219.36",
-     "mysql_db": "fantasy"
-}
+# settings = {
+#      "mysql_user": "root",
+#      "mysql_pwd": "snowDIhawk123$$!",
+#      "mysql_host":"192.241.219.36",
+#      "mysql_db": "fantasy"
+# }
 
 
 MysqlBase = declarative_base()
@@ -37,7 +36,7 @@ class Player(MysqlBase):
     ROSTERSTATUS = Column(String(32))
     FROM_YEAR = Column(String(32))
     TO_YEAR = Column(String(32))
-    PLAYERCODE = Column(String(32))
+    PLAYERCODE = Column(String(100))
     TEAM_ID = Column(String(32))
     TEAM_CITY = Column(String(32))
     TEAM_NAME = Column(String(32))
@@ -240,7 +239,6 @@ class BoxscoreAdvanced(MysqlBase):
 
 
     def __init__(self,**row):
-        import math
         # {'PIE': 0.081000000000000003, 'COMMENT': '', 'PLAYER_ID': 2546, 'OFF_RATING': 88.0, 'AST_RATIO': 11.6,
         #  'EFG_PCT': 0.47199999999999998, 'AST_PCT': 0.23100000000000001, 'TEAM_ID': 1610612752, 'MIN': '30:05',
         #  'OREB_PCT': 0.029000000000000001, 'GAME_ID': '0021600001', 'AST_TOV': 0.75, 'TM_TOV_PCT': 15.5, 'PACE': 102.75,

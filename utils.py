@@ -3,6 +3,7 @@
 import datetime
 
 import pandas as pd
+from sqlalchemy.orm import raiseload
 from sqlalchemy.sql import select
 
 import mysql as sql
@@ -76,6 +77,21 @@ def toNBA(name):
     if name == "A.J. Hammons":
         name = "AJ Hammons"
 
+    if name == "Jose Juan Barea":
+        name = "J.J. Barea"
+
+    if name == "Taurean Waller-Prince":
+        name = "Taurean Prince"
+
+    if name == "Brad Beal":
+        name = "Bradley Beal"
+
+    if name == "Domas Sabonis":
+        name = "Domantas Sabonis"
+
+    if name == "Ishmael Smith":
+        name = "Ish Smith"
+
     if name == "Wayne Selden Jr.":
         name = "Wayne Selden"
 
@@ -89,6 +105,9 @@ def toNBA(name):
 
     if name == "C.J. Wilcox":
         name = "CJ Wilcox"
+
+    if name == "R.J. Hunter":
+        name = "RJ Hunter"
 
     if name == "Juancho Hernangomez":
         name = "Juan Hernangomez"
@@ -158,25 +177,18 @@ def get_player(id=None, name=None, firstName = None, lastName = None):
 
 def get_boxscores(season=None, beforeToday=True, includeToday=True):
     session = sql.get_session()
-    q = session.query(sql.Game)
+    q = session.query(sql.Boxscore).options(raiseload('*'))
     if season is not None:
         s = session.query(sql.Season).filter(sql.Season.SEASON_IDS.like(season)).first()
-        q = q.filter(sql.Game.id >= s.start).filter(sql.Game.id <= s.end)
-    if beforeToday:
-        if includeToday:
-            now = datetime.datetime.now()+datetime.timedelta(1)
-            q = q.filter(sql.Game.dt <= now)
-        else:
-            now = datetime.datetime.now()
-            q = q.filter(sql.Game.dt < now)
+        q = q.filter(sql.Boxscore.GAME_ID >= s.start).filter(sql.Boxscore.GAME_ID <= s.end)
 
     session.close()
-    return pd.DataFrame([getattr(x, "__dict__") for x in q.all()])
+    return pd.read_sql_query(q.statement, session.bind)
 
 
 def get_games(season=None, beforeToday=True, includeToday=True):
     session = sql.get_session()
-    q = session.query(sql.Game)
+    q = session.query(sql.Game).options(raiseload('*'))
     if season is not None:
         s = session.query(sql.Season).filter(sql.Season.SEASON_IDS.like(season)).first()
         q = q.filter(sql.Game.id >= s.start).filter(sql.Game.id <= s.end)
@@ -190,7 +202,7 @@ def get_games(season=None, beforeToday=True, includeToday=True):
 
     session.close()
 
-    return pd.DataFrame([getattr(x, "__dict__") for x in q.all()])
+    return pd.read_sql_query(q.statement, session.bind)
 
 def get_playoff_games(season=None, beforeToday=True, includeToday=False):
     session = sql.get_session()
@@ -212,14 +224,28 @@ def get_playoff_games(season=None, beforeToday=True, includeToday=False):
 
     return pd.DataFrame([getattr(x, "__dict__") for x in q.all()])
 
+
+def get_all_playerlist():
+    session = sql.get_session()
+    q = session.query(sql.Player).options(raiseload('*'))
+    session.close()
+
+    return pd.read_sql(q.statement, session.bind)
+
 def get_all_games(season=None, beforeToday=True,includeToday=True):
     games = get_games(season,beforeToday, includeToday=includeToday)
     return games
 
-def get_all_boxscore_ids(season=None):
+
+def get_all_boxscores(season=None):
     games = get_boxscores(season)
     return games
 
+
+def get_playoff_dates(season=None, beforeToday=True, includeToday=True):
+    games = get_playoff_games(season, beforeToday, includeToday=includeToday)
+    date_list = games["dt"].dt.date.unique()
+    return date_list
 
 def get_dates(season=None, beforeToday=True,includeToday=True):
     games = get_games(season,beforeToday, includeToday=includeToday)

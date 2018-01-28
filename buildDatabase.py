@@ -1,11 +1,12 @@
 import json
+import time
 import urllib
 import urllib.request
 
 import _mysql_exceptions
-from nba_py.constants import *
 from _mysql_exceptions import DataError
 from nba_py import player
+from nba_py.constants import *
 
 from mysql import *
 
@@ -23,14 +24,24 @@ def get_abbrev(team_name):
             return team_abbrev[i]
 
 
+def diff_pd(key_column, pd_main, pd_remove):
+    newpls = pd.DataFrame(columns=pd_main.columns)
+    newpls = newpls.append(pd_main[~pd_main[key_column].isin(pd_remove[key_column])])
+    return newpls
+
 def create_players_table(seasons):
     session = get_session()
     for season in seasons:
-        pl = player.PlayerList(season=season, only_current=1).info()
-        for idx, row1 in pl.iterrows():
+        existing = utils.get_all_playerlist()
+        playerlist = player.PlayerList(season=season, only_current=0).info()
+        newpls = diff_pd("PERSON_ID", playerlist, existing)
+        for row in newpls:
             try:
-                session.add(Player(**row1.to_dict()))
+                session.add(Player(**row.to_dict()))
                 session.commit()
+            except _mysql_exceptions.IntegrityError as e:
+                session.rollback()
+                pass
             except Exception as e:
                 print(e)
                 session.rollback()
@@ -52,6 +63,56 @@ def create_game_table(seasons):
                     session.rollback()
     session.close()
 
+
+# curl 'https://www.fantasylabs.com/api/playermodel/2/1_5_2018/?modelId=1334171&projOnly=true'
+# -H 'accept-encoding: gzip, deflate, br'
+# -H 'accept-language: en-US,en;q=0.9,cs;q=0.8'
+# -H 'user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.84 Safari/537.36'
+# -H 'accept: application/json, text/plain, */*'
+# -H 'referer: https://www.fantasylabs.com/nba/player-models/?date=01052018'
+# -H 'authority: www.fantasylabs.com'
+# -H 'cookie: __cfduid=d8041bd5e2c6ec745af466ba778fd023a1515254710; _ga=GA1.2.1475239769.1515254755; _gid=GA1.2.1595455753.1515254755; LD_T=8549e3f1-a71d-49aa-a76a-d42739371156; LD_U=https%3A%2F%2Fwww.fantasylabs.com%2F; __zlcmid=kLh1gqaToPqjTO; .AspNet.Cookies=GFxcgNHxRIXulIP66PjrwE7LTy5IZSbCMsRriegIF0n-QB6QS1YFePa6UavrW3R3hB6ACC6OqA146KwcvFES5WrXP5Mklcf_JLVed3CdgTLiX7eue77yrYd4ILAC12BjvZTsza-_HBH38rqSTM6hhojdPyaEa-Luom5YGqpMUqO8_eGHnYl2F400Xx2rOWrMETWF-bopi4Ay5DFath33dcTbwpdTHEtuoCAc4PKzuUNi68DC4kgX8QmiRcJME1o7Gy2ZDMHsdmOqgjayeM40GaOJW0EX8Un7S5Cxu7Lbd-b2itIW9VjQjlhzGTFas3IuDyL4E9CyfjDXXMv7_zLhHY0nUMEzWKWR3Ds8eUmcYEPM81kdlU3MBI5lI0f15GmV4ZexlD6pYfcL8cQjrnnjKN1iBknRLqVye-lv3EGoyzEWDgYhMJAoq0SoxG6xNm-TkKKhqjPSW6vqPPiIrfHLPg; flid=9PzbGgOnsUaxyh_ZyjHRRw; hasmembership=True; LD_R=https%3A%2F%2Fwww.fantasylabs.com%2Faccount%2Flogin%2F; __distillery=241b08a_6bfb2ade-905d-49f3-bc80-ce7ca27334a1-2dfd9fdad-39e0bec02bda-0015; LD_S=1515271236836; _gat=1' --compressed
+def create_fantasylabs_table(seasons):
+    import time
+    import os.path
+    _date = "1_5_2018"
+    # session = get_session()
+    for year in seasons:
+        games = utils.get_dates(year, beforeToday=True, includeToday=False)
+        all_dates = utils.get_playoff_dates(year, beforeToday=True, includeToday=False)
+        # games = games.append(post_games)
+
+        urls = [["https://www.fantasylabs.com/api/playermodel/2/%s/?modelId=1334171&projOnly=true" % (
+        _date.strftime("%-m_%-d_%Y")), _date]
+                for _date in all_dates]
+        for url, _date in urls:
+            filename = "./data/fantasylabs/%s.json" % (_date)
+            try:
+                if os.path.isfile(filename):
+                    continue
+
+                req = urllib.request.Request(url)
+                req.add_header('Referer', 'https://www.fantasylabs.com/nba/player-models/?date=01052018')
+                req.add_header('Accept', '*/*')
+                req.add_header('Accept-Encoding', 'deflate')
+                req.add_header('authority', 'www.fantasylabs.com')
+                req.add_header('User-Agent',
+                               'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36')
+                req.add_header('cookie',
+                               '__cfduid=d8041bd5e2c6ec745af466ba778fd023a1515254710; _ga=GA1.2.1475239769.1515254755; _gid=GA1.2.1595455753.1515254755; LD_T=8549e3f1-a71d-49aa-a76a-d42739371156; LD_U=https%3A%2F%2Fwww.fantasylabs.com%2F; __zlcmid=kLh1gqaToPqjTO; .AspNet.Cookies=GFxcgNHxRIXulIP66PjrwE7LTy5IZSbCMsRriegIF0n-QB6QS1YFePa6UavrW3R3hB6ACC6OqA146KwcvFES5WrXP5Mklcf_JLVed3CdgTLiX7eue77yrYd4ILAC12BjvZTsza-_HBH38rqSTM6hhojdPyaEa-Luom5YGqpMUqO8_eGHnYl2F400Xx2rOWrMETWF-bopi4Ay5DFath33dcTbwpdTHEtuoCAc4PKzuUNi68DC4kgX8QmiRcJME1o7Gy2ZDMHsdmOqgjayeM40GaOJW0EX8Un7S5Cxu7Lbd-b2itIW9VjQjlhzGTFas3IuDyL4E9CyfjDXXMv7_zLhHY0nUMEzWKWR3Ds8eUmcYEPM81kdlU3MBI5lI0f15GmV4ZexlD6pYfcL8cQjrnnjKN1iBknRLqVye-lv3EGoyzEWDgYhMJAoq0SoxG6xNm-TkKKhqjPSW6vqPPiIrfHLPg; flid=9PzbGgOnsUaxyh_ZyjHRRw; hasmembership=True; LD_R=https%3A%2F%2Fwww.fantasylabs.com%2Faccount%2Flogin%2F; __distillery=241b08a_6bfb2ade-905d-49f3-bc80-ce7ca27334a1-2dfd9fdad-39e0bec02bda-0015; LD_S=1515292932362; _gat=1')
+                with urllib.request.urlopen(req) as urlreq:
+                    _data = urlreq.read().decode()
+                    f = open(filename, "w")
+                    f.write(_data)
+                    f.close()
+                    time.sleep(2)
+                    print("Finished %s" % _date)
+            except Exception as e:
+                print("Error %s" % e)
+                print("Date: %s" % _date)
+
+    print("Finished")
+    # session.close()
 
 def create_game_table_2(seasons):
     from dateutil.parser import parse
@@ -274,7 +335,6 @@ def create_vegas_table(df):
     session.close()
 
 
-import datetime
 import pandas as pd
 
 
@@ -347,43 +407,57 @@ def create_salary_table(df):
     session.close()
 
 
-def build_game_stats(seasons, id_filter=0, last_n=0):
+def build_game_stats(seasons, id_filter=0, last_n=365):
     from nba_py import game
+    import requests
     session = get_session()
     failed = []
     good = 0
     for season in seasons:
         games = utils.get_all_games(season,beforeToday=True,includeToday=False)
-        _exists = utils.get_all_boxscore_ids(season)
-        newgames = pd.concat([_exists, games,_exists]).drop_duplicates(keep=False)
-        for idx, grow in newgames[(newgames["id"]>=id_filter) & (newgames["dt"] >= (now - datetime.timedelta(days=last_n)))].iterrows():
+        games["GAME_ID"] = games["id"]
+
+        _exists = utils.get_all_boxscores(season)
+        _existing_ids = pd.DataFrame(_exists["GAME_ID"].unique(), columns=["GAME_ID"])
+
+        newgames = diff_pd("GAME_ID", games, _existing_ids)
+        for idx, grow in newgames.iterrows():
+
             print("Game: %s" % grow["id"])
             game_id = str(grow["id"]).zfill(10)
             boxscore = game.Boxscore(game_id).player_stats()
-            advboxscore = game.BoxscoreAdvanced(game_id).sql_players_advanced()
-            fourfactors = game.BoxscoreFourFactors(game_id).sql_players_four_factors()
-            boxmisc = game.BoxscoreMisc(game_id).sql_players_misc()
             for idx, row in boxscore.iterrows():
-                try:
-                    box = Boxscore(**row)
-                    adv = BoxscoreAdvanced(**advboxscore.iloc[idx])
-                    ff = BoxscoreFourFactors(**fourfactors.iloc[idx])
-                    misc = BoxscoreMisc(**boxmisc.iloc[idx])
-                    session.add(box)
-                    session.add(adv)
-                    session.add(ff)
-                    session.add(misc)
-                    session.commit()
-                    good+=1
-                except DataError as e:
-                    print("Data error: %s " %e)
-                    failed.append(row)
-                    session.rollback()
-                except Exception as e:
-                    # print("Failed creating salary:%s: %s - %s" %(item["GAME_DATE"], item["player_name"], item["salary"]))
-                    print("Other Error: %s" % e)
-                    failed.append(row)
-                    session.rollback()
+                for i in range(0, 4):
+                    try:
+                        advboxscore = game.BoxscoreAdvanced(game_id).sql_players_advanced()
+                        fourfactors = game.BoxscoreFourFactors(game_id).sql_players_four_factors()
+                        boxmisc = game.BoxscoreMisc(game_id).sql_players_misc()
+                        box = Boxscore(**row)
+                        adv = BoxscoreAdvanced(**advboxscore.iloc[idx])
+                        ff = BoxscoreFourFactors(**fourfactors.iloc[idx])
+                        misc = BoxscoreMisc(**boxmisc.iloc[idx])
+                        session.add(box)
+                        session.add(adv)
+                        session.add(ff)
+                        session.add(misc)
+                        session.commit()
+                        good += 1
+                        break
+                    except requests.exceptions.ConnectionError as e:
+                        print("Connection error: %s" % e)
+                        time.sleep(3)
+                    except DataError as e:
+                        print("Data error: %s " % e)
+                        failed.append(row)
+                        session.rollback()
+                        break
+                    except Exception as e:
+                        print("Failed creating Boxscore:%s" % (row))
+                        print("Other Error: %s" % e)
+                        failed.append(row)
+                        session.rollback()
+                        break
+                    time.sleep(1)
     print("Done.")
 
 def build_team_stats(seasons):
@@ -485,13 +559,15 @@ if __name__ == "__main__":
     # create_seasons_table(seasons)
     # create_game_table(seasons)
     # create_players_table(seasons)
+    build_game_stats(seasons)
     # create_player_logs(seasons)
     # build_salary()
     # create_vegas_table()
     # create_game_table()
     # create_all_salaries()
-    build_game_stats(seasons,0,int(args.last))
+    # build_game_stats(seasons,0,int(args.last))
     # build_team_stats(seasons)
+    # create_fantasylabs_table(seasons)
     #
     # kk = player.PlayerLastNGamesSplits(team_id=1610612742)
     # kkk = kk.last10()
