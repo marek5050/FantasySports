@@ -37,7 +37,7 @@ service-identity==16.0.0
 six==1.10.0
 SQLAlchemy==1.1.15
 ssh-import-id==5.5
-Twisted==17.9.0
+Twisted==19.7.0
 ufw==0.35
 unattended-upgrades==0.1
 urllib3==1.13.1
