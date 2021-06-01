@@ -40,6 +40,6 @@ ssh-import-id==5.5
 Twisted==19.7.0
 ufw==0.35
 unattended-upgrades==0.1
-urllib3==1.13.1
+urllib3==1.26.5
 virtualenv==15.0.1
 zope.interface==4.1.3
